@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.667
+Interface nativa com solicitações QR fictícias e respostas de teste.
+
+2
+00:00:08.767 --> 00:00:17.433
+Salvar usa um destino escolhido; cancelar permite tentar novamente.
+
+3
+00:00:17.533 --> 00:00:26.200
+Outro cenário revisa a solicitação; imprimir abre a visualização do Android.
+
+4
+00:00:26.300 --> 00:00:34.967
+Um QR não autoriza pagamentos; este passeio avançado não define as funções da demonstração básica.

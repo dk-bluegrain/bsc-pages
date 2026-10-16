@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.050
+Interface bancaire native avec jeton fictif et réponses simulées.
+
+2
+00:00:08.150 --> 00:00:16.200
+Le contrat et le consentement précèdent l’inscription et le contrôle d’approbation.
+
+3
+00:00:16.300 --> 00:00:24.350
+L’approbation simulée précède le code ; la dissociation exige confirmation.
+
+4
+00:00:24.450 --> 00:00:32.500
+La démo de base ne génère aucun jeton bancaire ; autorisation et validation restent en suspens.

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:15.117
+Demo-Zahlung und simulierte Bankverifizierung; ausschließlich fiktive Daten.
+
+2
+00:00:15.217 --> 00:00:30.333
+Die Dienstleistungszahlung in der Demo erfordert Prüfung und Testcode.
+
+3
+00:00:30.433 --> 00:00:45.550
+Das erweiterte Szenario behält die Prüfung bei und wartet auf ausdrückliche SMS-Verifizierung.
+
+4
+00:00:45.650 --> 00:01:00.767
+Die einfache Demo enthält keine erweiterte Bankverifizierung; es wurde kein echtes Geld gezahlt.

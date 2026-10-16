@@ -1,0 +1,31 @@
+{
+  "coordinateSpace": {
+    "width": 540,
+    "height": 1200
+  },
+  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Rings are synchronized in the input action inside Android, not reconstructed in post-production.",
+  "events": [
+    {
+      "type": "typing",
+      "timeSeconds": 1.4,
+      "epochMs": 1792185073588,
+      "scenario": 1,
+      "characters": 9
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 5.895,
+      "epochMs": 1792185078083,
+      "scenario": 1,
+      "characters": 13
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 11.419,
+      "epochMs": 1792185083607,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 702.25
+    }
+  ]
+}

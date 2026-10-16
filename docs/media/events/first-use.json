@@ -1,0 +1,89 @@
+{
+  "coordinateSpace": {
+    "width": 540,
+    "height": 1200
+  },
+  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Rings are synchronized in the input action inside Android, not reconstructed in post-production.",
+  "events": [
+    {
+      "type": "tap",
+      "timeSeconds": 1.4,
+      "epochMs": 1792185116634,
+      "scenario": 1,
+      "x": 131.0,
+      "y": 843.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 5.469,
+      "epochMs": 1792185120703,
+      "scenario": 1,
+      "x": 70.0,
+      "y": 82.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 10.2,
+      "epochMs": 1792185130028,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 752.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 14.452,
+      "epochMs": 1792185134280,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 1101.5
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 18.379,
+      "epochMs": 1792185138207,
+      "scenario": 2,
+      "x": 60.75,
+      "y": 931.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 22.654,
+      "epochMs": 1792185142482,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 1039.0
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 26.8,
+      "epochMs": 1792185151752,
+      "scenario": 3,
+      "x": 270.0,
+      "y": 830.0
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 31.601,
+      "epochMs": 1792185156553,
+      "scenario": 3,
+      "x": 453.5,
+      "y": 1084.5
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 35.836,
+      "epochMs": 1792185160788,
+      "scenario": 3,
+      "x": 270.0,
+      "y": 264.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 44.02,
+      "epochMs": 1792185168972,
+      "scenario": 3,
+      "x": 270.0,
+      "y": 413.25
+    }
+  ]
+}

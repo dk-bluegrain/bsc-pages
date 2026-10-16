@@ -1,0 +1,110 @@
+{
+  "coordinateSpace": {
+    "width": 540,
+    "height": 1200
+  },
+  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Rings are synchronized in the input action inside Android, not reconstructed in post-production.",
+  "events": [
+    {
+      "type": "typing",
+      "timeSeconds": 1.4,
+      "epochMs": 1792185182358,
+      "scenario": 1,
+      "characters": 9
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 6.04,
+      "epochMs": 1792185186998,
+      "scenario": 1,
+      "characters": 13
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 11.663,
+      "epochMs": 1792185192621,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 702.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 15.813,
+      "epochMs": 1792185196771,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 687.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 19.667,
+      "epochMs": 1792185200625,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 996.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 23.485,
+      "epochMs": 1792185204443,
+      "scenario": 1,
+      "x": 135.75,
+      "y": 511.25
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 27.186,
+      "epochMs": 1792185208144,
+      "scenario": 1,
+      "characters": 6
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 31.397,
+      "epochMs": 1792185212355,
+      "scenario": 1,
+      "x": 190.0,
+      "y": 247.0
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 35.561,
+      "epochMs": 1792185216519,
+      "scenario": 1,
+      "x": 307.25,
+      "y": 700.0
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 39.667,
+      "epochMs": 1792185659148,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 830.0
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 44.407,
+      "epochMs": 1792185663888,
+      "scenario": 2,
+      "x": 227.25,
+      "y": 430.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 48.798,
+      "epochMs": 1792185668279,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 1102.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 52.789,
+      "epochMs": 1792185672270,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 408.25
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "coordinateSpace": {
+    "width": 540,
+    "height": 1200
+  },
+  "events": [
+    {
+      "type": "tap",
+      "timeSeconds": 0.452,
+      "epochMs": 1792185134280,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 1101.5,
+      "sourceChapter": "first-use"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 4.379,
+      "epochMs": 1792185138207,
+      "scenario": 2,
+      "x": 60.75,
+      "y": 931.25,
+      "sourceChapter": "first-use"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 9.419,
+      "epochMs": 1792185083607,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 702.25,
+      "sourceChapter": "login"
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 17.51,
+      "epochMs": 1792185125093,
+      "scenario": 1,
+      "characters": 6,
+      "sourceChapter": "verification"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 21.775,
+      "epochMs": 1792185129358,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 702.25,
+      "sourceChapter": "verification"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 26.675,
+      "epochMs": 1792185086165,
+      "scenario": 1,
+      "x": 472.75,
+      "y": 262.0,
+      "sourceChapter": "accounts"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 30.533,
+      "epochMs": 1792185090023,
+      "scenario": 1,
+      "x": 385.25,
+      "y": 262.0,
+      "sourceChapter": "accounts"
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 32.186,
+      "epochMs": 1792185208144,
+      "scenario": 1,
+      "characters": 6,
+      "sourceChapter": "history"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 36.397,
+      "epochMs": 1792185212355,
+      "scenario": 1,
+      "x": 190.0,
+      "y": 247.0,
+      "sourceChapter": "history"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 42.821,
+      "epochMs": 1792185248955,
+      "scenario": 1,
+      "x": 325.0,
+      "y": 306.25,
+      "sourceChapter": "statements"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 46.935,
+      "epochMs": 1792185253069,
+      "scenario": 1,
+      "x": 177.75,
+      "y": 382.75,
+      "sourceChapter": "statements"
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 50.819,
+      "epochMs": 1792185305734,
+      "scenario": 1,
+      "characters": 6,
+      "sourceChapter": "transfers"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 54.996,
+      "epochMs": 1792185309911,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 555.5,
+      "sourceChapter": "transfers"
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 57.239,
+      "epochMs": 1792185469468,
+      "scenario": 1,
+      "characters": 6,
+      "sourceChapter": "payments"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 61.176,
+      "epochMs": 1792185473405,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 467.5,
+      "sourceChapter": "payments"
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 74.549,
+      "epochMs": 1792185402663,
+      "scenario": 1,
+      "characters": 6,
+      "sourceChapter": "cards"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 78.909,
+      "epochMs": 1792185407023,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 553.0,
+      "sourceChapter": "cards"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 82.748,
+      "epochMs": 1792185516353,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 676.0,
+      "sourceChapter": "token"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 86.554,
+      "epochMs": 1792185520159,
+      "scenario": 1,
+      "x": 138.0,
+      "y": 555.25,
+      "sourceChapter": "token"
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 90.956,
+      "epochMs": 1792185546407,
+      "scenario": 1,
+      "characters": 6,
+      "sourceChapter": "qr"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 94.988,
+      "epochMs": 1792185550439,
+      "scenario": 1,
+      "x": 396.75,
+      "y": 1016.0,
+      "sourceChapter": "qr"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 97.846,
+      "epochMs": 1792185594236,
+      "scenario": 1,
+      "x": 70.0,
+      "y": 193.75,
+      "sourceChapter": "settings"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 101.69,
+      "epochMs": 1792185598080,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 749.25,
+      "sourceChapter": "settings"
+    }
+  ]
+}

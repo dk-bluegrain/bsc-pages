@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:21.200
+Interface bancária nativa com dados fictícios e respostas simuladas.
+
+2
+00:00:21.300 --> 00:00:42.500
+A pergunta de segurança e o token mantêm campos separados.
+
+3
+00:00:42.600 --> 00:01:03.800
+Um dispositivo não aprovado bloqueia o acesso; a troca de senha exige confirmação.
+
+4
+00:01:03.900 --> 00:01:25.100
+Essas verificações avançadas não estão incluídas na demonstração básica.

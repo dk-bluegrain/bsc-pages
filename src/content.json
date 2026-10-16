@@ -1,0 +1,1033 @@
+{
+  "languages": {
+    "es": {
+      "name": "Español",
+      "title": "BSC · Una mirada a la app",
+      "tagline": "Tu banca, con más claridad.",
+      "intro": "Explora una app Android independiente inspirada en BSC en Línea: cuentas, movimientos y operaciones en una interfaz nativa. Prueba la edición demo sin conexión o conoce los límites de la edición bancaria experimental.",
+      "demoTitle": "Demo sin conexión",
+      "demoBody": "Cuentas y movimientos ficticios, búsqueda, transferencias y pagos simulados, beneficiarios, perfil, privacidad de saldos y exportación CSV. Sin conexión al banco ni dinero real. Esta demo básica no incluye todos los flujos avanzados de los videos.",
+      "demoAction": "Descargar APK demo",
+      "liveTitle": "Edición bancaria experimental",
+      "liveBody": "App independiente con conexión bancaria configurada. La autorización del banco y la validación con la cuenta de su titular siguen pendientes. No se ha establecido la compatibilidad actual con el servicio del banco.",
+      "liveAction": "Descargar APK experimental",
+      "warning": "La edición bancaria es independiente y experimental. La autorización del banco y la validación con una cuenta de su titular siguen sin resolverse. Restaurar la configuración no demuestra que el acceso funcione. No es una app oficial ni una publicación de Google Play.",
+      "overviewTitle": "La app en pocos minutos",
+      "overviewBody": "Un recorrido por la interfaz nativa con datos ficticios. Los flujos bancarios avanzados se muestran mediante transportes bancarios simulados; su presencia en el recorrido no implica que estén disponibles en la demo básica descargable.",
+      "chaptersTitle": "Explora cada recorrido",
+      "simulatedLabel": "Simulación de la interfaz bancaria",
+      "demoLabel": "Incluido en la demo básica",
+      "handoffLabel": "Continuación en un canal oficial",
+      "compareTitle": "Elige qué quieres explorar",
+      "requirementsTitle": "Requisitos de Android",
+      "requirementsBody": "Android 8.0 o posterior (API 26). APK firmado para instalación directa. Para la edición bancaria se requiere conexión y, cuando el banco lo solicite, aprobación del dispositivo y autorización de cada operación. No introduzcas credenciales en este sitio.",
+      "installTitle": "Cómo instalar",
+      "versionLabel": "Versión",
+      "privacyLabel": "Privacidad",
+      "supportLabel": "Ayuda y comentarios",
+      "supportBody": "Escribe a bluegrain.lcc@gmail.com para informar problemas de la app. No envíes contraseñas, códigos, documentos de identidad ni datos de tu cuenta. Para asistencia bancaria, utiliza los canales oficiales del banco.",
+      "transcriptLabel": "Transcripción",
+      "screenshotsLabel": "Capturas de pantalla",
+      "speedLabel": "Velocidad",
+      "closeLabel": "Cerrar",
+      "skipLabel": "Ir al contenido",
+      "privacyTitle": "Privacidad del sitio y de la app",
+      "privacyIntro": "Este sitio estático presenta la app. El sitio, la demo sin conexión y la edición bancaria tienen alcances de datos distintos, descritos a continuación.",
+      "installSteps": [
+        "Elige la demo sin conexión o lee las limitaciones de la edición bancaria experimental antes de descargarla.",
+        "Descarga el APK y el archivo de sumas SHA-256 de la misma versión. Compara la suma del archivo antes de instalarlo.",
+        "Abre el APK y, si Android lo solicita, permite la instalación desde la app que utilizaste para descargarlo. Desactiva ese permiso después.",
+        "Abre la app y lee sus avisos y condiciones. La demo solo usa datos ficticios; la edición bancaria conserva los controles de acceso y autorización del banco.",
+        "El APK bancario conserva com.santacruz.modern y usa una clave de distribución propia. No puede actualizar una instalación de Santa Cruz Modern con otra firma. Si Android bloquea la actualización, conserva la app existente y sus datos; usa la demo separada o contacta con soporte."
+      ],
+      "chapters": [
+        {
+          "id": "first-use",
+          "title": "Primeros pasos",
+          "body": "Lee el aviso de app independiente, abre los términos y la política de privacidad y acepta de forma expresa antes de continuar. Elige entre siete idiomas; la selección cambia la interfaz, no el texto recibido del banco.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "login",
+          "title": "Acceso y huella",
+          "body": "Recorre el acceso manual, la opción de recordar usuario y contraseña con protección biométrica y la eliminación del acceso guardado. La huella desbloquea credenciales cifradas; no sustituye la aprobación del banco. La demo básica no necesita credenciales bancarias.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "verification",
+          "title": "Verificación y dispositivo",
+          "body": "Consulta los pasos de verificación, la aprobación del dispositivo y la configuración que el banco pueda exigir al acceder. Un código SMS editable solo se envía al pulsar Verificar. Las comprobaciones externas de identidad continúan en la página HTTPS ofrecida por el banco.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "accounts",
+          "title": "Cuentas y saldos",
+          "body": "Consulta cuentas y monedas, distingue saldos por cuenta y oculta o muestra los importes. Los datos de este recorrido son ficticios. La demo básica permite explorar cuentas y privacidad de saldos sin conexión.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "history",
+          "title": "Movimientos y CSV",
+          "body": "Abre el historial, busca movimientos y revisa los filtros de entradas y salidas. Exporta un CSV de forma explícita y elige la app con la que compartirlo. La demo básica ofrece historial, búsqueda y exportación con registros ficticios.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "statements",
+          "title": "Estados de cuenta y PDF",
+          "body": "Explora períodos ofrecidos, vista previa de PDF, guardado individual o por selección y uso compartido. Elige el destino con el selector de archivos de Android. Los PDF de la demostración son sintéticos; estos flujos no forman parte de la demo básica.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "transfers",
+          "title": "Transferencias",
+          "body": "Compara transferencias entre cuentas propias, a beneficiarios del mismo banco y a otros bancos. Selecciona las cuentas, revisa moneda, importe, comisiones y concepto y confirma antes de autorizar. La demo básica simula transferencias entre cuentas propias y a beneficiarios guardados.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "payments",
+          "title": "Pagos de servicios y tarjetas",
+          "body": "Selecciona un servicio o una tarjeta, comprueba la cuenta de origen y revisa el importe antes de confirmar. El recorrido avanzado simula las validaciones y autorizaciones bancarias. La demo básica ofrece pagos de prueba con comprobantes sin dinero real.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "beneficiaries",
+          "title": "Beneficiarios",
+          "body": "Busca y valida destinatarios, revisa sus datos y confirma por separado el guardado o la eliminación. Validar no envía dinero ni guarda automáticamente un beneficiario. La demo básica permite administrar destinatarios ficticios.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "cards",
+          "title": "Tarjetas y controles",
+          "body": "Consulta detalles y controles de uso, los pasos por pérdida o robo y los avisos de viaje. Revisa el alcance de cada cambio y su confirmación. Son flujos bancarios simulados; la demo básica no incluye estos controles ni garantiza su disponibilidad en el banco.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "token",
+          "title": "Token BSC",
+          "body": "Lee el contrato y consiente por separado la inscripción y el almacenamiento cifrado. Recorre verificación, generación de códigos y desvinculación. La identificación externa se realiza en el canal indicado por el banco. La demo básica no inscribe ni genera un token bancario.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "qr",
+          "title": "QR y solicitudes de pago",
+          "body": "Explora cómo compartir los datos de una cuenta o una solicitud de pago, escanear o introducir un código, revisar el destinatario y guardar o imprimir un QR cuando el flujo lo permita. Un QR no autoriza un pago: el registro del beneficiario y la transferencia conservan sus confirmaciones. Los formatos de terceros no compatibles quedan fuera.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        },
+        {
+          "id": "settings",
+          "title": "Ajustes, ayuda y resultados inciertos",
+          "body": "Cambia idioma y perfil, revisa los controles de demo, consulta ayuda y cierra sesión. Ante un resultado incierto, comprueba el historial o el estado real en el banco antes de conciliarlo. La conciliación no repite ni cancela una operación anterior. El perfil y los ajustes de demo usan solo datos ficticios.",
+          "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
+        }
+      ],
+      "privacySections": [
+        {
+          "title": "Sitio estático",
+          "body": "Este sitio no tiene acceso bancario, formularios de credenciales, analítica ni servicio backend propio. La selección de idioma y la reproducción de contenido se realizan en el navegador. No escribas aquí datos bancarios."
+        },
+        {
+          "title": "Alojamiento y enlaces",
+          "body": "GitHub Pages aloja el sitio y GitHub Releases distribuye los APK. GitHub puede tratar datos de conexión, como la dirección IP y los registros de solicitudes, conforme a su propia política. Los enlaces de soporte, del banco o de otros servicios abren destinos externos con sus propias condiciones."
+        },
+        {
+          "title": "Demo sin conexión",
+          "body": "La demo usa identidades, cuentas y movimientos ficticios y no se conecta al banco. Sus cambios se guardan localmente. Restablecer la demo o borrar los datos de la app elimina ese estado local; desinstalar elimina sus datos privados. Los archivos que hayas exportado a otro destino pueden permanecer allí."
+        },
+        {
+          "title": "Edición bancaria",
+          "body": "La app envía solicitudes al banco al usar sus funciones. Si eliges recordar el acceso, las credenciales se cifran con Android Keystore y requieren autenticación biométrica fuerte. El token requiere consentimiento explícito para el contrato y el almacenamiento cifrado de su semilla. Las sesiones y los códigos generados no se guardan de forma persistente. Consulta la política incluida en la app para conocer el tratamiento completo."
+        },
+        {
+          "title": "Archivos y servicios del dispositivo",
+          "body": "La vista previa de estados de cuenta usa una caché privada. Los PDF guardados en un destino que elijas pueden permanecer tras cerrar sesión o desinstalar y sincronizarse según el proveedor. Compartir PDF, CSV o QR entrega el archivo a la app seleccionada; las copias que conserve dependen de ella. La identificación externa y los módulos de Android o Google utilizados por funciones opcionales tienen sus propias condiciones."
+        },
+        {
+          "title": "Límites y contacto",
+          "body": "Esta es una app independiente y experimental. Siguen pendientes la autorización del banco y la validación con la cuenta de su titular; no se ha establecido compatibilidad actual. No se incluye una publicación en Google Play. Contacto: bluegrain.lcc@gmail.com. No envíes credenciales ni información bancaria personal."
+        }
+      ]
+    },
+    "en": {
+      "name": "English",
+      "title": "BSC · A closer look",
+      "tagline": "Banking, made clearer.",
+      "intro": "Explore an independent Android app inspired by BSC en Línea: accounts, transactions and everyday operations in a native interface. Try the offline demo or learn about the limits of the experimental banking edition.",
+      "demoTitle": "Offline demo",
+      "demoBody": "Fictional accounts and transactions, search, simulated transfers and payments, beneficiaries, profile settings, balance privacy and CSV export. No bank connection or real money. This basic demo does not include every advanced flow shown in the videos.",
+      "demoAction": "Download demo APK",
+      "liveTitle": "Experimental banking edition",
+      "liveBody": "An independent app with banking connectivity configured. Bank authorization and validation with an account belonging to its owner remain unresolved. Current compatibility with the bank’s service has not been established.",
+      "liveAction": "Download experimental APK",
+      "warning": "The banking edition is independent and experimental. Bank authorization and owner-account validation remain unresolved. Restoring configuration does not prove that access works. This is not an official app or a Google Play release.",
+      "overviewTitle": "A short tour of the app",
+      "overviewBody": "See the native interface using fictional data. Advanced banking flows use fake bank transports; their appearance in the tour does not mean they are available in the downloadable basic demo.",
+      "chaptersTitle": "Explore the walkthroughs",
+      "simulatedLabel": "Simulated banking interface",
+      "demoLabel": "Included in the basic demo",
+      "handoffLabel": "Continues through an official channel",
+      "compareTitle": "Choose your edition",
+      "requirementsTitle": "Android requirements",
+      "requirementsBody": "Android 8.0 or later (API 26). A signed APK for direct installation. The banking edition requires connectivity and, when requested by the bank, device approval and operation authorization. Never enter credentials on this website.",
+      "installTitle": "How to install",
+      "versionLabel": "Version",
+      "privacyLabel": "Privacy",
+      "supportLabel": "Help and feedback",
+      "supportBody": "Report app issues to bluegrain.lcc@gmail.com. Do not send passwords, codes, identity documents or account details. For banking support, use the bank’s official channels.",
+      "transcriptLabel": "Transcript",
+      "screenshotsLabel": "Screenshots",
+      "speedLabel": "Playback speed",
+      "closeLabel": "Close",
+      "skipLabel": "Skip to content",
+      "privacyTitle": "Website and app privacy",
+      "privacyIntro": "This static website presents the app. The website, offline demo and banking edition handle different data, as described below.",
+      "installSteps": [
+        "Choose the offline demo, or read the experimental banking edition’s limitations before downloading it.",
+        "Download the APK and SHA-256 checksum file for the same version. Compare the file’s checksum before installing.",
+        "Open the APK. If Android asks, allow installation from the app you used to download it. Disable that permission afterwards.",
+        "Open the app and read its notices and terms. The demo uses fictional data only; the banking edition retains the bank’s access and authorization controls.",
+        "The banking APK keeps com.santacruz.modern and uses a dedicated distribution key. It cannot update a Santa Cruz Modern installation signed with another key. If Android blocks the update, preserve the existing app and its data; use the separate demo or contact support."
+      ],
+      "chapters": [
+        {
+          "id": "first-use",
+          "title": "Getting started",
+          "body": "Read the independent-app notice, open the terms and privacy policy, and explicitly accept before continuing. Choose from seven languages; this changes app text, not text supplied by the bank.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "login",
+          "title": "Login and biometrics",
+          "body": "Explore manual login, optional biometric protection for remembered username and password, and removal of saved access. Biometrics unlock encrypted credentials; they do not replace bank approval. The basic demo needs no banking credentials.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "verification",
+          "title": "Verification and device approval",
+          "body": "Follow verification, device approval and any login setup required by the bank. An editable SMS code is sent only when you tap Verify. External identity checks continue on the HTTPS page supplied by the bank.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "accounts",
+          "title": "Accounts and balances",
+          "body": "Browse accounts and currencies, distinguish each account’s balance, and hide or reveal amounts. All data in this walkthrough is fictional. The basic demo supports offline accounts and balance privacy.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "history",
+          "title": "Transactions and CSV",
+          "body": "Open history, search transactions and inspect incoming and outgoing filters. Explicitly export a CSV and choose an app to share it with. The basic demo offers history, search and export using fictional records.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "statements",
+          "title": "Statements and PDFs",
+          "body": "Explore available periods, PDF previews, individual or selected-period saving, and sharing. Choose a destination with Android’s file picker. Demonstration PDFs are synthetic; these flows are not part of the basic demo.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "transfers",
+          "title": "Transfers",
+          "body": "Compare own-account, same-bank and other-bank transfers. Select accounts, review currency, amount, fees and memo, then confirm before authorizing. The basic demo simulates transfers between own accounts and to saved beneficiaries.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "payments",
+          "title": "Service and credit-card payments",
+          "body": "Select a service or credit card, check the source account and review the amount before confirming. The advanced walkthrough simulates bank validation and authorization. The basic demo provides test payments and receipts without real money.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "beneficiaries",
+          "title": "Beneficiaries",
+          "body": "Look up and validate recipients, review their details and separately confirm saving or deletion. Validation does not send money or automatically save a beneficiary. The basic demo manages fictional recipients.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "cards",
+          "title": "Cards and controls",
+          "body": "Explore card details, usage controls, loss or theft reporting, and travel notices. Review each change’s scope and confirmation. These banking flows are simulated; the basic demo does not include these controls or establish their availability at the bank.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "token",
+          "title": "Token BSC",
+          "body": "Read the contract and separately consent to enrollment and encrypted storage. Follow verification, code generation and unlinking. External identification takes place through the channel supplied by the bank. The basic demo does not enroll or generate a banking token.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "qr",
+          "title": "QR and payment requests",
+          "body": "Explore sharing account details or a payment request, scanning or entering a code, reviewing the recipient, and saving or printing a QR where supported by the flow. A QR never authorizes a payment: beneficiary registration and transfers retain their confirmations. Unsupported third-party formats are outside this flow.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        },
+        {
+          "id": "settings",
+          "title": "Settings, help and uncertain outcomes",
+          "body": "Change language and profile, explore demo controls, open help and log out. If an outcome is uncertain, check the bank’s actual history or status before reconciling it. Reconciliation neither repeats nor cancels the earlier operation. Demo profile and settings use fictional data only.",
+          "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
+        }
+      ],
+      "privacySections": [
+        {
+          "title": "Static website",
+          "body": "This website has no banking login, credential forms, analytics or backend service of its own. Language selection and content playback take place in your browser. Do not enter banking information here."
+        },
+        {
+          "title": "Hosting and external links",
+          "body": "GitHub Pages hosts the website and GitHub Releases distributes the APKs. GitHub may process connection data, such as IP addresses and request logs, under its own policy. Support, bank and other service links lead to external destinations with their own terms."
+        },
+        {
+          "title": "Offline demo",
+          "body": "The demo uses fictional identities, accounts and transactions and does not connect to the bank. Changes are stored locally. Resetting the demo or clearing app data removes that local state; uninstalling removes its private app data. Files exported elsewhere may remain at their destination."
+        },
+        {
+          "title": "Banking edition",
+          "body": "The app sends requests to the bank when you use banking features. If you choose to remember access, credentials are encrypted with Android Keystore and require strong biometric authentication. Token enrollment requires explicit consent to the contract and encrypted seed storage. Sessions and generated codes are not stored persistently. Read the in-app policy for the full data handling details."
+        },
+        {
+          "title": "Files and device services",
+          "body": "Statement previews use a private cache. PDFs saved to a destination you choose may remain after logout or uninstallation and may sync under that provider’s settings. Sharing a PDF, CSV or QR gives the file to your chosen app; any copies it retains are governed by that app. External identity checks and Android or Google modules used for optional features have their own terms."
+        },
+        {
+          "title": "Limits and contact",
+          "body": "This is an independent, experimental app. Bank authorization and owner-account validation remain unresolved; current compatibility has not been established. This work does not include a Google Play submission. Contact: bluegrain.lcc@gmail.com. Do not send credentials or personal banking information."
+        }
+      ]
+    },
+    "de": {
+      "name": "Deutsch",
+      "title": "BSC · Die App im Überblick",
+      "tagline": "Banking, klarer gestaltet.",
+      "intro": "Entdecken Sie eine unabhängige Android-App, inspiriert von BSC en Línea: Konten, Buchungen und Bankvorgänge in einer nativen Oberfläche. Probieren Sie die Offline-Demo aus oder informieren Sie sich über die Grenzen der experimentellen Banking-Ausgabe.",
+      "demoTitle": "Offline-Demo",
+      "demoBody": "Fiktive Konten und Buchungen, Suche, simulierte Überweisungen und Zahlungen, Begünstigte, Profil, ausgeblendete Salden und CSV-Export. Keine Bankverbindung und kein echtes Geld. Diese einfache Demo enthält nicht alle erweiterten Abläufe der Videos.",
+      "demoAction": "Demo-APK herunterladen",
+      "liveTitle": "Experimentelle Banking-Ausgabe",
+      "liveBody": "Unabhängige App mit eingerichteter Bankanbindung. Die Genehmigung durch die Bank und die Prüfung mit einem Konto des Inhabers stehen weiterhin aus. Die aktuelle Kompatibilität mit dem Bankdienst ist nicht nachgewiesen.",
+      "liveAction": "Experimentelle APK herunterladen",
+      "warning": "Die Banking-Ausgabe ist unabhängig und experimentell. Die Genehmigung durch die Bank und die Prüfung mit einem Konto des Inhabers sind ungeklärt. Wiederhergestellte Einstellungen belegen keinen funktionierenden Zugang. Dies ist weder eine offizielle App noch eine Veröffentlichung bei Google Play.",
+      "overviewTitle": "Ein kurzer Rundgang durch die App",
+      "overviewBody": "Sehen Sie die native Oberfläche mit fiktiven Daten. Erweiterte Bankabläufe verwenden simulierte Bankanbindungen. Ihre Darstellung bedeutet nicht, dass sie in der einfachen Demo zum Herunterladen verfügbar sind.",
+      "chaptersTitle": "Die Abläufe entdecken",
+      "simulatedLabel": "Simulierte Banking-Oberfläche",
+      "demoLabel": "In der einfachen Demo enthalten",
+      "handoffLabel": "Weiter in einem offiziellen Kanal",
+      "compareTitle": "Wählen Sie Ihre Ausgabe",
+      "requirementsTitle": "Android-Anforderungen",
+      "requirementsBody": "Android 8.0 oder neuer (API 26). Signierte APK zur direkten Installation. Die Banking-Ausgabe benötigt eine Verbindung und gegebenenfalls die vom Bankdienst verlangte Gerätefreigabe und Autorisierung. Geben Sie auf dieser Website keine Zugangsdaten ein.",
+      "installTitle": "So installieren Sie die App",
+      "versionLabel": "Version",
+      "privacyLabel": "Datenschutz",
+      "supportLabel": "Hilfe und Feedback",
+      "supportBody": "Melden Sie App-Probleme an bluegrain.lcc@gmail.com. Senden Sie keine Passwörter, Codes, Ausweisdokumente oder Kontodaten. Bei Bankfragen wenden Sie sich an die offiziellen Kanäle der Bank.",
+      "transcriptLabel": "Transkript",
+      "screenshotsLabel": "Bildschirmfotos",
+      "speedLabel": "Wiedergabegeschwindigkeit",
+      "closeLabel": "Schließen",
+      "skipLabel": "Zum Inhalt springen",
+      "privacyTitle": "Datenschutz für Website und App",
+      "privacyIntro": "Diese statische Website stellt die App vor. Website, Offline-Demo und Banking-Ausgabe verarbeiten unterschiedliche Daten, wie nachfolgend erläutert.",
+      "installSteps": [
+        "Wählen Sie die Offline-Demo oder lesen Sie vor dem Herunterladen die Einschränkungen der experimentellen Banking-Ausgabe.",
+        "Laden Sie die APK und die SHA-256-Prüfsummendatei derselben Version herunter. Vergleichen Sie vor der Installation die Prüfsumme der Datei.",
+        "Öffnen Sie die APK. Erlauben Sie bei einer Android-Nachfrage die Installation über die zum Herunterladen verwendete App. Deaktivieren Sie diese Berechtigung anschließend.",
+        "Öffnen Sie die App und lesen Sie Hinweise und Bedingungen. Die Demo verwendet nur fiktive Daten; die Banking-Ausgabe behält die Zugangs- und Autorisierungskontrollen der Bank bei.",
+        "Die Banking-APK behält com.santacruz.modern und verwendet einen eigenen Distributionsschlüssel. Eine anders signierte Installation von Santa Cruz Modern lässt sich damit nicht aktualisieren. Blockiert Android das Update, behalten Sie die vorhandene App und ihre Daten; nutzen Sie die separate Demo oder kontaktieren Sie den Support."
+      ],
+      "chapters": [
+        {
+          "id": "first-use",
+          "title": "Erste Schritte",
+          "body": "Lesen Sie den Hinweis zur unabhängigen App, öffnen Sie Bedingungen und Datenschutzhinweise und stimmen Sie vor dem Fortfahren ausdrücklich zu. Wählen Sie zwischen sieben Sprachen. Die Auswahl ändert App-Texte, nicht die von der Bank gelieferten Texte.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "login",
+          "title": "Anmeldung und Biometrie",
+          "body": "Entdecken Sie die manuelle Anmeldung, den optionalen biometrischen Schutz für gespeicherten Benutzernamen und Passwort sowie das Löschen gespeicherter Zugangsdaten. Biometrie entsperrt verschlüsselte Zugangsdaten und ersetzt keine Bankfreigabe. Die einfache Demo benötigt keine Bankzugangsdaten.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "verification",
+          "title": "Verifizierung und Gerätefreigabe",
+          "body": "Sehen Sie Verifizierung, Gerätefreigabe und gegebenenfalls von der Bank verlangte Einrichtungsschritte. Ein bearbeitbarer SMS-Code wird erst mit Prüfen gesendet. Externe Identitätsprüfungen werden auf der von der Bank bereitgestellten HTTPS-Seite fortgesetzt.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "accounts",
+          "title": "Konten und Salden",
+          "body": "Entdecken Sie Konten und Währungen, ordnen Sie Salden dem jeweiligen Konto zu und blenden Sie Beträge ein oder aus. Alle Daten dieses Rundgangs sind fiktiv. Die einfache Demo bietet Konten und das Ausblenden von Salden ohne Bankverbindung.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "history",
+          "title": "Buchungen und CSV",
+          "body": "Öffnen Sie den Verlauf, suchen Sie Buchungen und sehen Sie Filter für Ein- und Ausgänge. Exportieren Sie bewusst eine CSV-Datei und wählen Sie eine App zum Teilen. Die einfache Demo bietet Verlauf, Suche und Export mit fiktiven Einträgen.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "statements",
+          "title": "Kontoauszüge und PDF",
+          "body": "Entdecken Sie angebotene Zeiträume, PDF-Vorschau, Speichern einzelner oder ausgewählter Zeiträume und Teilen. Wählen Sie das Ziel über die Android-Dateiauswahl. Die gezeigten PDFs sind künstlich erstellt; diese Abläufe gehören nicht zur einfachen Demo.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "transfers",
+          "title": "Überweisungen",
+          "body": "Vergleichen Sie Überweisungen zwischen eigenen Konten sowie an Begünstigte derselben oder einer anderen Bank. Wählen Sie Konten, prüfen Sie Währung, Betrag, Gebühren und Verwendungszweck und bestätigen Sie vor der Autorisierung. Die einfache Demo simuliert Überweisungen zwischen eigenen Konten und an gespeicherte Begünstigte.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "payments",
+          "title": "Dienstleistungs- und Kreditkartenzahlungen",
+          "body": "Wählen Sie einen Dienst oder eine Kreditkarte, prüfen Sie das Belastungskonto und den Betrag vor der Bestätigung. Der erweiterte Rundgang simuliert Bankprüfungen und Autorisierung. Die einfache Demo bietet Testzahlungen und Belege ohne echtes Geld.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "beneficiaries",
+          "title": "Begünstigte",
+          "body": "Suchen und prüfen Sie Empfänger, kontrollieren Sie deren Daten und bestätigen Sie Speichern oder Löschen gesondert. Eine Prüfung sendet kein Geld und speichert keinen Begünstigten automatisch. In der einfachen Demo verwalten Sie fiktive Empfänger.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "cards",
+          "title": "Karten und Nutzungskontrollen",
+          "body": "Entdecken Sie Kartendetails, Nutzungskontrollen, Verlust- oder Diebstahlmeldungen und Reisehinweise. Prüfen Sie Umfang und Bestätigung jeder Änderung. Diese Bankabläufe sind simuliert; die einfache Demo enthält diese Kontrollen nicht und belegt keine Verfügbarkeit bei der Bank.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "token",
+          "title": "Token BSC",
+          "body": "Lesen Sie den Vertrag und stimmen Sie Registrierung und verschlüsselter Speicherung ausdrücklich zu. Sehen Sie Verifizierung, Codeerzeugung und Aufhebung der Verknüpfung. Die externe Identifizierung erfolgt über den von der Bank vorgegebenen Kanal. Die einfache Demo registriert oder erzeugt keinen Banktoken.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "qr",
+          "title": "QR und Zahlungsanforderungen",
+          "body": "Entdecken Sie das Teilen von Kontodaten oder einer Zahlungsanforderung, das Scannen oder Eingeben eines Codes, die Empfängerprüfung und gegebenenfalls das Speichern oder Drucken eines QR-Codes. Ein QR-Code autorisiert keine Zahlung. Empfängerregistrierung und Überweisung erfordern weiterhin ihre Bestätigungen. Nicht unterstützte Drittanbieterformate sind ausgeschlossen.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        },
+        {
+          "id": "settings",
+          "title": "Einstellungen, Hilfe und unklare Ergebnisse",
+          "body": "Ändern Sie Sprache und Profil, entdecken Sie Demo-Einstellungen, öffnen Sie Hilfe und melden Sie sich ab. Prüfen Sie bei einem unklaren Ergebnis den tatsächlichen Bankverlauf oder Status, bevor Sie es abgleichen. Der Abgleich wiederholt oder storniert keinen früheren Vorgang. Demo-Profil und Einstellungen verwenden ausschließlich fiktive Daten.",
+          "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
+        }
+      ],
+      "privacySections": [
+        {
+          "title": "Statische Website",
+          "body": "Diese Website hat weder Bankanmeldung noch Formulare für Zugangsdaten, Analysedienste oder einen eigenen Backend-Dienst. Sprachauswahl und Wiedergabe erfolgen im Browser. Geben Sie hier keine Bankdaten ein."
+        },
+        {
+          "title": "Hosting und externe Links",
+          "body": "GitHub Pages stellt die Website bereit; GitHub Releases verteilt die APKs. GitHub kann Verbindungsdaten wie IP-Adressen und Anfrageprotokolle nach seiner eigenen Datenschutzrichtlinie verarbeiten. Support-, Bank- und andere Dienstlinks führen zu externen Anbietern mit eigenen Bedingungen."
+        },
+        {
+          "title": "Offline-Demo",
+          "body": "Die Demo verwendet fiktive Identitäten, Konten und Buchungen und stellt keine Bankverbindung her. Änderungen werden lokal gespeichert. Das Zurücksetzen der Demo oder Löschen der App-Daten entfernt diesen lokalen Zustand; eine Deinstallation entfernt die privaten App-Daten. Bereits exportierte Dateien können am Ziel verbleiben."
+        },
+        {
+          "title": "Banking-Ausgabe",
+          "body": "Bei der Nutzung von Bankfunktionen sendet die App Anfragen an die Bank. Wenn Sie Zugangsdaten speichern lassen, werden sie mit Android Keystore verschlüsselt und erfordern starke biometrische Authentifizierung. Die Token-Registrierung verlangt ausdrückliche Zustimmung zum Vertrag und zur verschlüsselten Speicherung des geheimen Token-Schlüssels. Sitzungen und erzeugte Codes werden nicht dauerhaft gespeichert. Einzelheiten finden Sie in der Datenschutzerklärung der App."
+        },
+        {
+          "title": "Dateien und Gerätedienste",
+          "body": "Kontoauszugsvorschauen verwenden einen privaten Cache. Am gewählten Ziel gespeicherte PDFs können nach Abmeldung oder Deinstallation bestehen bleiben und je nach Anbieter synchronisiert werden. Beim Teilen von PDF, CSV oder QR erhält die gewählte App die Datei; deren aufbewahrte Kopien unterliegen ihren Regeln. Externe Identitätsprüfungen und Android- oder Google-Module für optionale Funktionen haben eigene Bedingungen."
+        },
+        {
+          "title": "Grenzen und Kontakt",
+          "body": "Diese App ist unabhängig und experimentell. Die Bankgenehmigung und Prüfung mit einem Konto des Inhabers sind ungeklärt; aktuelle Kompatibilität ist nicht nachgewiesen. Eine Einreichung bei Google Play ist nicht Teil dieses Vorhabens. Kontakt: bluegrain.lcc@gmail.com. Senden Sie keine Zugangsdaten oder persönlichen Bankinformationen."
+        }
+      ]
+    },
+    "fr": {
+      "name": "Français",
+      "title": "BSC · Découvrez l’application",
+      "tagline": "Une banque plus lisible.",
+      "intro": "Découvrez une application Android indépendante inspirée de BSC en Línea : comptes, opérations et démarches dans une interface native. Essayez la démo hors ligne ou consultez les limites de l’édition bancaire expérimentale.",
+      "demoTitle": "Démo hors ligne",
+      "demoBody": "Comptes et opérations fictifs, recherche, virements et paiements simulés, bénéficiaires, profil, masquage des soldes et export CSV. Aucune connexion à la banque ni argent réel. Cette démo de base ne comprend pas tous les parcours avancés des vidéos.",
+      "demoAction": "Télécharger l’APK de démo",
+      "liveTitle": "Édition bancaire expérimentale",
+      "liveBody": "Application indépendante dont la connexion bancaire est configurée. L’autorisation de la banque et la validation avec le compte de son titulaire restent en suspens. La compatibilité actuelle avec les services de la banque n’est pas établie.",
+      "liveAction": "Télécharger l’APK expérimental",
+      "warning": "L’édition bancaire est indépendante et expérimentale. L’autorisation de la banque et la validation avec un compte de son titulaire restent en suspens. Restaurer la configuration ne prouve pas que l’accès fonctionne. Ce n’est ni une application officielle ni une publication sur Google Play.",
+      "overviewTitle": "Un aperçu de l’application",
+      "overviewBody": "Découvrez l’interface native avec des données fictives. Les parcours bancaires avancés utilisent des connexions bancaires simulées ; leur présence dans la visite ne signifie pas qu’ils sont disponibles dans la démo de base téléchargeable.",
+      "chaptersTitle": "Explorez les parcours",
+      "simulatedLabel": "Interface bancaire simulée",
+      "demoLabel": "Inclus dans la démo de base",
+      "handoffLabel": "Suite sur un canal officiel",
+      "compareTitle": "Choisissez votre édition",
+      "requirementsTitle": "Configuration Android",
+      "requirementsBody": "Android 8.0 ou version ultérieure (API 26). APK signé à installer directement. L’édition bancaire nécessite une connexion et, lorsque la banque le demande, l’approbation de l’appareil et l’autorisation des opérations. Ne saisissez jamais d’identifiants sur ce site.",
+      "installTitle": "Comment installer",
+      "versionLabel": "Version",
+      "privacyLabel": "Confidentialité",
+      "supportLabel": "Aide et commentaires",
+      "supportBody": "Signalez les problèmes de l’application à bluegrain.lcc@gmail.com. N’envoyez ni mots de passe, ni codes, ni pièces d’identité, ni coordonnées de compte. Pour l’assistance bancaire, utilisez les canaux officiels de la banque.",
+      "transcriptLabel": "Transcription",
+      "screenshotsLabel": "Captures d’écran",
+      "speedLabel": "Vitesse de lecture",
+      "closeLabel": "Fermer",
+      "skipLabel": "Aller au contenu",
+      "privacyTitle": "Confidentialité du site et de l’application",
+      "privacyIntro": "Ce site statique présente l’application. Le site, la démo hors ligne et l’édition bancaire traitent des données différentes, comme expliqué ci-dessous.",
+      "installSteps": [
+        "Choisissez la démo hors ligne ou lisez les limites de l’édition bancaire expérimentale avant de la télécharger.",
+        "Téléchargez l’APK et le fichier de sommes SHA-256 de la même version. Comparez la somme du fichier avant l’installation.",
+        "Ouvrez l’APK. Si Android le demande, autorisez l’installation depuis l’application utilisée pour le télécharger. Désactivez ensuite cette autorisation.",
+        "Ouvrez l’application et lisez ses avertissements et conditions. La démo utilise uniquement des données fictives ; l’édition bancaire conserve les contrôles d’accès et d’autorisation de la banque.",
+        "L’APK bancaire conserve com.santacruz.modern et utilise une clé de distribution dédiée. Il ne peut pas mettre à jour une installation de Santa Cruz Modern portant une autre signature. Si Android bloque la mise à jour, conservez l’application existante et ses données ; utilisez la démo distincte ou contactez l’assistance."
+      ],
+      "chapters": [
+        {
+          "id": "first-use",
+          "title": "Premiers pas",
+          "body": "Lisez l’avis concernant l’application indépendante, ouvrez les conditions et la politique de confidentialité, puis acceptez explicitement avant de continuer. Choisissez parmi sept langues ; ce choix modifie les textes de l’application, pas ceux fournis par la banque.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "login",
+          "title": "Connexion et biométrie",
+          "body": "Découvrez la connexion manuelle, la protection biométrique facultative des identifiants mémorisés et leur suppression. La biométrie déverrouille les identifiants chiffrés ; elle ne remplace pas l’approbation bancaire. La démo de base ne nécessite aucun identifiant bancaire.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "verification",
+          "title": "Vérification et appareil",
+          "body": "Suivez la vérification, l’approbation de l’appareil et la configuration de connexion éventuellement demandée par la banque. Un code SMS modifiable n’est envoyé qu’après une pression sur Vérifier. Les contrôles d’identité externes se poursuivent sur la page HTTPS fournie par la banque.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "accounts",
+          "title": "Comptes et soldes",
+          "body": "Parcourez les comptes et les devises, identifiez le solde de chaque compte et masquez ou affichez les montants. Toutes les données du parcours sont fictives. La démo de base permet de consulter des comptes et de masquer les soldes hors ligne.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "history",
+          "title": "Opérations et CSV",
+          "body": "Ouvrez l’historique, recherchez des opérations et explorez les filtres des entrées et sorties. Exportez explicitement un CSV et choisissez l’application de partage. La démo de base propose historique, recherche et export avec des enregistrements fictifs.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "statements",
+          "title": "Relevés et PDF",
+          "body": "Découvrez les périodes proposées, l’aperçu PDF, l’enregistrement d’une période ou d’une sélection et le partage. Choisissez la destination dans le sélecteur de fichiers Android. Les PDF présentés sont synthétiques ; ces parcours ne font pas partie de la démo de base.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "transfers",
+          "title": "Virements",
+          "body": "Comparez les virements entre vos comptes, vers la même banque ou une autre banque. Sélectionnez les comptes, vérifiez devise, montant, frais et motif, puis confirmez avant d’autoriser. La démo de base simule les virements entre comptes et vers des bénéficiaires enregistrés.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "payments",
+          "title": "Paiements de services et de cartes",
+          "body": "Sélectionnez un service ou une carte de crédit, vérifiez le compte débité et le montant avant de confirmer. Le parcours avancé simule la validation et l’autorisation bancaires. La démo de base propose des paiements de test et des reçus sans argent réel.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "beneficiaries",
+          "title": "Bénéficiaires",
+          "body": "Recherchez et validez des destinataires, vérifiez leurs coordonnées, puis confirmez séparément l’enregistrement ou la suppression. La validation n’envoie pas d’argent et n’enregistre pas automatiquement un bénéficiaire. La démo de base gère des destinataires fictifs.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "cards",
+          "title": "Cartes et contrôles",
+          "body": "Découvrez les détails des cartes, les contrôles d’utilisation, les démarches en cas de perte ou de vol et les avis de voyage. Vérifiez la portée et la confirmation de chaque modification. Ces parcours bancaires sont simulés ; la démo de base ne comprend pas ces contrôles et ne prouve pas leur disponibilité auprès de la banque.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "token",
+          "title": "Token BSC",
+          "body": "Lisez le contrat et consentez explicitement à l’inscription et au stockage chiffré. Suivez la vérification, la génération de codes et la dissociation. L’identification externe passe par le canal fourni par la banque. La démo de base n’inscrit ni ne génère de jeton bancaire.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "qr",
+          "title": "QR et demandes de paiement",
+          "body": "Découvrez le partage de coordonnées de compte ou d’une demande de paiement, la lecture ou la saisie d’un code, la vérification du destinataire et, lorsque le parcours le permet, l’enregistrement ou l’impression du QR. Un QR n’autorise jamais un paiement : l’inscription du bénéficiaire et le virement conservent leurs confirmations. Les formats tiers non pris en charge sont exclus.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        },
+        {
+          "id": "settings",
+          "title": "Réglages, aide et résultats incertains",
+          "body": "Changez de langue et de profil, explorez les commandes de démo, ouvrez l’aide et déconnectez-vous. Si un résultat est incertain, vérifiez l’historique ou l’état réel auprès de la banque avant de le rapprocher. Le rapprochement ne répète ni n’annule l’opération précédente. Le profil et les réglages de démo utilisent uniquement des données fictives.",
+          "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
+        }
+      ],
+      "privacySections": [
+        {
+          "title": "Site statique",
+          "body": "Ce site ne propose ni connexion bancaire, ni formulaire d’identifiants, ni analyse d’audience, ni service backend propre. Le choix de langue et la lecture du contenu se font dans votre navigateur. Ne saisissez aucune donnée bancaire ici."
+        },
+        {
+          "title": "Hébergement et liens externes",
+          "body": "GitHub Pages héberge le site et GitHub Releases distribue les APK. GitHub peut traiter des données de connexion, dont l’adresse IP et les journaux de requêtes, selon sa propre politique. Les liens d’assistance, bancaires et autres mènent à des services externes soumis à leurs propres conditions."
+        },
+        {
+          "title": "Démo hors ligne",
+          "body": "La démo utilise des identités, comptes et opérations fictifs sans connexion à la banque. Les modifications restent locales. Réinitialiser la démo ou effacer les données de l’application supprime cet état local ; la désinstallation supprime ses données privées. Les fichiers exportés ailleurs peuvent y rester."
+        },
+        {
+          "title": "Édition bancaire",
+          "body": "L’application envoie des requêtes à la banque lorsque vous utilisez ses fonctions bancaires. Si vous mémorisez les identifiants, ils sont chiffrés avec Android Keystore et nécessitent une authentification biométrique forte. Le jeton nécessite un consentement explicite au contrat et au stockage chiffré de sa clé secrète. Les sessions et les codes générés ne sont pas conservés durablement. Consultez la politique intégrée pour le traitement complet des données."
+        },
+        {
+          "title": "Fichiers et services de l’appareil",
+          "body": "Les aperçus de relevés utilisent un cache privé. Les PDF enregistrés à la destination choisie peuvent subsister après déconnexion ou désinstallation et être synchronisés selon le fournisseur. Partager un PDF, CSV ou QR remet le fichier à l’application choisie ; ses copies éventuelles relèvent de cette application. Les contrôles d’identité externes et les modules Android ou Google des fonctions facultatives ont leurs propres conditions."
+        },
+        {
+          "title": "Limites et contact",
+          "body": "Cette application est indépendante et expérimentale. L’autorisation de la banque et la validation avec le compte de son titulaire restent en suspens ; la compatibilité actuelle n’est pas établie. Ce projet ne comprend pas de soumission à Google Play. Contact : bluegrain.lcc@gmail.com. N’envoyez aucun identifiant ni donnée bancaire personnelle."
+        }
+      ]
+    },
+    "ru": {
+      "name": "Русский",
+      "title": "BSC · Знакомство с приложением",
+      "tagline": "Банковские операции — понятнее.",
+      "intro": "Познакомьтесь с независимым Android-приложением, вдохновлённым BSC en Línea: счета, операции и платежи в нативном интерфейсе. Попробуйте демоверсию без подключения к банку или узнайте об ограничениях экспериментальной банковской версии.",
+      "demoTitle": "Демоверсия без подключения к банку",
+      "demoBody": "Вымышленные счета и операции, поиск, имитация переводов и платежей, получатели, профиль, скрытие остатков и экспорт CSV. Без подключения к банку и реальных денег. Эта базовая демоверсия не включает все расширенные сценарии из видео.",
+      "demoAction": "Скачать APK демоверсии",
+      "liveTitle": "Экспериментальная банковская версия",
+      "liveBody": "Независимое приложение с настроенным подключением к банку. Разрешение банка и проверка с использованием счёта его владельца пока не получены. Совместимость с текущим банковским сервисом не подтверждена.",
+      "liveAction": "Скачать экспериментальный APK",
+      "warning": "Банковская версия является независимой и экспериментальной. Вопросы разрешения банка и проверки со счётом его владельца остаются открытыми. Восстановление настроек не доказывает работоспособность доступа. Это не официальное приложение и не публикация в Google Play.",
+      "overviewTitle": "Краткий обзор приложения",
+      "overviewBody": "Нативный интерфейс с вымышленными данными. В расширенных банковских сценариях используется имитация обмена с банком. Их наличие в обзоре не означает, что они доступны в базовой демоверсии для скачивания.",
+      "chaptersTitle": "Подробные сценарии",
+      "simulatedLabel": "Имитация банковского интерфейса",
+      "demoLabel": "Есть в базовой демоверсии",
+      "handoffLabel": "Продолжение в официальном канале",
+      "compareTitle": "Выберите версию",
+      "requirementsTitle": "Требования к Android",
+      "requirementsBody": "Android 8.0 или новее (API 26). Подписанный APK для прямой установки. Банковской версии нужны подключение и, по требованию банка, одобрение устройства и авторизация операций. Не вводите учётные данные на этом сайте.",
+      "installTitle": "Как установить",
+      "versionLabel": "Версия",
+      "privacyLabel": "Конфиденциальность",
+      "supportLabel": "Помощь и обратная связь",
+      "supportBody": "Сообщайте о проблемах приложения по адресу bluegrain.lcc@gmail.com. Не отправляйте пароли, коды, удостоверения личности или реквизиты счёта. По банковским вопросам обращайтесь в официальные каналы банка.",
+      "transcriptLabel": "Текст видео",
+      "screenshotsLabel": "Снимки экрана",
+      "speedLabel": "Скорость воспроизведения",
+      "closeLabel": "Закрыть",
+      "skipLabel": "Перейти к содержимому",
+      "privacyTitle": "Конфиденциальность сайта и приложения",
+      "privacyIntro": "Этот статический сайт представляет приложение. Сайт, демоверсия без подключения к банку и банковская версия обрабатывают разные данные, как описано ниже.",
+      "installSteps": [
+        "Выберите демоверсию без подключения к банку или ознакомьтесь с ограничениями экспериментальной банковской версии перед скачиванием.",
+        "Скачайте APK и файл контрольных сумм SHA-256 той же версии. Перед установкой сравните контрольную сумму файла.",
+        "Откройте APK. Если Android запросит разрешение, разрешите установку из приложения, которым вы скачали файл. Затем отключите это разрешение.",
+        "Откройте приложение и прочитайте уведомления и условия. Демоверсия использует только вымышленные данные; банковская версия сохраняет банковские проверки доступа и авторизации.",
+        "Банковский APK сохраняет com.santacruz.modern и использует отдельный ключ распространения. Он не обновит установленную Santa Cruz Modern с другой подписью. Если Android блокирует обновление, сохраните существующее приложение и его данные; используйте отдельную демоверсию или обратитесь в поддержку."
+      ],
+      "chapters": [
+        {
+          "id": "first-use",
+          "title": "Первое знакомство",
+          "body": "Прочитайте уведомление о независимом приложении, откройте условия и политику конфиденциальности и явно примите их перед продолжением. Выберите один из семи языков: меняется текст приложения, но не текст, полученный от банка.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "login",
+          "title": "Вход и биометрия",
+          "body": "Посмотрите ручной вход, необязательное сохранение имени пользователя и пароля с биометрической защитой и удаление сохранённого доступа. Биометрия открывает зашифрованные учётные данные, но не заменяет одобрение банка. Для базовой демоверсии банковские учётные данные не нужны.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "verification",
+          "title": "Проверка и одобрение устройства",
+          "body": "Посмотрите проверку, одобрение устройства и настройку входа, которую может потребовать банк. Редактируемый SMS-код отправляется только после нажатия «Проверить». Внешняя проверка личности продолжается на HTTPS-странице, предоставленной банком.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "accounts",
+          "title": "Счета и остатки",
+          "body": "Просмотрите счета и валюты, различайте остатки по счетам, скрывайте и показывайте суммы. Все данные в сценарии вымышлены. Базовая демоверсия позволяет просматривать счета и скрывать остатки без подключения к банку.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "history",
+          "title": "Операции и CSV",
+          "body": "Откройте историю, найдите операции и изучите фильтры поступлений и списаний. Явно экспортируйте CSV и выберите приложение для отправки. В базовой демоверсии доступны история, поиск и экспорт вымышленных записей.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "statements",
+          "title": "Выписки и PDF",
+          "body": "Изучите доступные периоды, просмотр PDF, сохранение отдельного периода или выбранных периодов и отправку файлов. Выберите место сохранения через системный диалог Android. PDF для показа созданы искусственно; этих сценариев нет в базовой демоверсии.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "transfers",
+          "title": "Переводы",
+          "body": "Сравните переводы между своими счетами, получателям в том же банке и в другие банки. Выберите счета, проверьте валюту, сумму, комиссию и назначение платежа, затем подтвердите перед авторизацией. Базовая демоверсия имитирует переводы между своими счетами и сохранённым получателям.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "payments",
+          "title": "Оплата услуг и кредитных карт",
+          "body": "Выберите услугу или кредитную карту, проверьте счёт списания и сумму перед подтверждением. Расширенный сценарий имитирует банковские проверки и авторизацию. Базовая демоверсия предлагает тестовые платежи и квитанции без реальных денег.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "beneficiaries",
+          "title": "Получатели",
+          "body": "Найдите и проверьте получателя, просмотрите его данные и отдельно подтвердите сохранение или удаление. Проверка не отправляет деньги и не сохраняет получателя автоматически. Базовая демоверсия позволяет управлять вымышленными получателями.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "cards",
+          "title": "Карты и настройки использования",
+          "body": "Посмотрите данные карт, настройки использования, действия при потере или краже и уведомления о поездке. Проверяйте область действия и подтверждение каждого изменения. Эти банковские сценарии имитируются; базовая демоверсия не содержит этих настроек и не подтверждает их доступность в банке.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "token",
+          "title": "Token BSC",
+          "body": "Прочитайте договор и явно согласитесь на подключение и зашифрованное хранение. Посмотрите проверку, генерацию кодов и отключение токена. Внешняя идентификация проходит через канал, указанный банком. Базовая демоверсия не подключает и не создаёт банковский токен.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "qr",
+          "title": "QR и запросы платежа",
+          "body": "Посмотрите отправку реквизитов счёта или запроса платежа, сканирование или ввод кода, проверку получателя, а также сохранение или печать QR, если сценарий это поддерживает. QR не авторизует платёж: регистрация получателя и перевод по-прежнему требуют подтверждений. Неподдерживаемые сторонние форматы исключены.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        },
+        {
+          "id": "settings",
+          "title": "Настройки, помощь и неопределённый результат",
+          "body": "Измените язык и профиль, изучите настройки демоверсии, откройте помощь и выйдите из сеанса. При неопределённом результате сначала проверьте фактическую историю или статус в банке, затем выполните сверку. Сверка не повторяет и не отменяет предыдущую операцию. Профиль и настройки демоверсии используют только вымышленные данные.",
+          "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
+        }
+      ],
+      "privacySections": [
+        {
+          "title": "Статический сайт",
+          "body": "На сайте нет банковского входа, форм для учётных данных, аналитики или собственного серверного приложения. Выбор языка и воспроизведение материалов выполняются в браузере. Не вводите здесь банковские данные."
+        },
+        {
+          "title": "Хостинг и внешние ссылки",
+          "body": "Сайт размещён на GitHub Pages, APK распространяются через GitHub Releases. GitHub может обрабатывать данные подключения, включая IP-адреса и журналы запросов, по своей политике. Ссылки на поддержку, банк и другие сервисы ведут на внешние ресурсы с собственными условиями."
+        },
+        {
+          "title": "Демоверсия без подключения к банку",
+          "body": "Демоверсия использует вымышленные личности, счета и операции и не подключается к банку. Изменения хранятся локально. Сброс демоверсии или очистка данных приложения удаляет это состояние; удаление приложения удаляет его закрытые данные. Экспортированные в другое место файлы могут сохраниться там."
+        },
+        {
+          "title": "Банковская версия",
+          "body": "При использовании банковских функций приложение отправляет запросы в банк. Если вы выбираете сохранение доступа, учётные данные шифруются с помощью Android Keystore и требуют строгой биометрической аутентификации. Подключение токена требует явного согласия с договором и зашифрованным хранением секретного ключа. Сеансы и сгенерированные коды не сохраняются постоянно. Полное описание обработки данных приведено в политике внутри приложения."
+        },
+        {
+          "title": "Файлы и службы устройства",
+          "body": "Для просмотра выписок используется закрытый кеш. PDF, сохранённые в выбранное место, могут остаться после выхода или удаления приложения и синхронизироваться согласно настройкам поставщика. При отправке PDF, CSV или QR файл получает выбранное приложение; сохранённые им копии регулируются его правилами. Для внешней проверки личности и модулей Android или Google в необязательных функциях действуют отдельные условия."
+        },
+        {
+          "title": "Ограничения и контакт",
+          "body": "Приложение является независимым и экспериментальным. Разрешение банка и проверка со счётом его владельца остаются открытыми вопросами; текущая совместимость не подтверждена. Подача в Google Play в эту работу не входит. Контакт: bluegrain.lcc@gmail.com. Не отправляйте учётные данные и личную банковскую информацию."
+        }
+      ]
+    },
+    "uk": {
+      "name": "Українська",
+      "title": "BSC · Знайомство із застосунком",
+      "tagline": "Банківські операції — зрозуміліше.",
+      "intro": "Ознайомтеся з незалежним Android-застосунком, натхненним BSC en Línea: рахунки, операції та платежі в нативному інтерфейсі. Спробуйте демоверсію без підключення до банку або дізнайтеся про обмеження експериментальної банківської версії.",
+      "demoTitle": "Демоверсія без підключення до банку",
+      "demoBody": "Вигадані рахунки й операції, пошук, імітація переказів і платежів, одержувачі, профіль, приховування залишків та експорт CSV. Без підключення до банку й реальних грошей. Ця базова демоверсія не містить усіх розширених сценаріїв із відео.",
+      "demoAction": "Завантажити APK демоверсії",
+      "liveTitle": "Експериментальна банківська версія",
+      "liveBody": "Незалежний застосунок із налаштованим підключенням до банку. Дозвіл банку та перевірка з використанням рахунку його власника досі не отримані. Сумісність із поточним банківським сервісом не підтверджена.",
+      "liveAction": "Завантажити експериментальний APK",
+      "warning": "Банківська версія є незалежною та експериментальною. Питання дозволу банку та перевірки з рахунком його власника залишаються відкритими. Відновлення налаштувань не доводить працездатність доступу. Це не офіційний застосунок і не публікація в Google Play.",
+      "overviewTitle": "Короткий огляд застосунку",
+      "overviewBody": "Нативний інтерфейс із вигаданими даними. Розширені банківські сценарії використовують імітацію обміну з банком. Їхня наявність в огляді не означає, що вони доступні в базовій демоверсії для завантаження.",
+      "chaptersTitle": "Докладні сценарії",
+      "simulatedLabel": "Імітація банківського інтерфейсу",
+      "demoLabel": "Є в базовій демоверсії",
+      "handoffLabel": "Продовження в офіційному каналі",
+      "compareTitle": "Виберіть версію",
+      "requirementsTitle": "Вимоги до Android",
+      "requirementsBody": "Android 8.0 або новіший (API 26). Підписаний APK для прямого встановлення. Банківській версії потрібне підключення та, на вимогу банку, схвалення пристрою й авторизація операцій. Не вводьте облікові дані на цьому сайті.",
+      "installTitle": "Як установити",
+      "versionLabel": "Версія",
+      "privacyLabel": "Конфіденційність",
+      "supportLabel": "Допомога та відгуки",
+      "supportBody": "Повідомляйте про проблеми застосунку на bluegrain.lcc@gmail.com. Не надсилайте паролі, коди, документи, що посвідчують особу, або реквізити рахунку. З банківських питань звертайтеся через офіційні канали банку.",
+      "transcriptLabel": "Текст відео",
+      "screenshotsLabel": "Знімки екрана",
+      "speedLabel": "Швидкість відтворення",
+      "closeLabel": "Закрити",
+      "skipLabel": "Перейти до вмісту",
+      "privacyTitle": "Конфіденційність сайту й застосунку",
+      "privacyIntro": "Цей статичний сайт представляє застосунок. Сайт, демоверсія без підключення до банку та банківська версія обробляють різні дані, як описано нижче.",
+      "installSteps": [
+        "Виберіть демоверсію без підключення до банку або ознайомтеся з обмеженнями експериментальної банківської версії перед завантаженням.",
+        "Завантажте APK та файл контрольних сум SHA-256 тієї самої версії. Перед установленням порівняйте контрольну суму файлу.",
+        "Відкрийте APK. Якщо Android запитає дозвіл, дозвольте встановлення із застосунку, яким ви завантажили файл. Потім вимкніть цей дозвіл.",
+        "Відкрийте застосунок і прочитайте повідомлення та умови. Демоверсія використовує лише вигадані дані; банківська версія зберігає банківські перевірки доступу й авторизації.",
+        "Банківський APK зберігає com.santacruz.modern і використовує окремий ключ розповсюдження. Він не оновить установлену Santa Cruz Modern з іншим підписом. Якщо Android блокує оновлення, збережіть наявний застосунок і його дані; скористайтеся окремою демоверсією або зверніться до підтримки."
+      ],
+      "chapters": [
+        {
+          "id": "first-use",
+          "title": "Перші кроки",
+          "body": "Прочитайте повідомлення про незалежний застосунок, відкрийте умови та політику конфіденційності й явно прийміть їх перед продовженням. Виберіть одну із семи мов: змінюється текст застосунку, але не текст, отриманий від банку.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "login",
+          "title": "Вхід і біометрія",
+          "body": "Перегляньте ручний вхід, необов’язкове збереження імені користувача й пароля з біометричним захистом та видалення збереженого доступу. Біометрія відкриває зашифровані облікові дані, але не замінює схвалення банку. Для базової демоверсії банківські облікові дані не потрібні.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "verification",
+          "title": "Перевірка та схвалення пристрою",
+          "body": "Перегляньте перевірку, схвалення пристрою та налаштування входу, які може вимагати банк. Редагований SMS-код надсилається лише після натискання «Перевірити». Зовнішня перевірка особи продовжується на HTTPS-сторінці, наданій банком.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "accounts",
+          "title": "Рахунки та залишки",
+          "body": "Переглядайте рахунки й валюти, розрізняйте залишки за рахунками, приховуйте та показуйте суми. Усі дані сценарію вигадані. Базова демоверсія дає змогу переглядати рахунки й приховувати залишки без підключення до банку.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "history",
+          "title": "Операції та CSV",
+          "body": "Відкрийте історію, знайдіть операції та перегляньте фільтри надходжень і списань. Явно експортуйте CSV та виберіть застосунок для надсилання. Базова демоверсія пропонує історію, пошук та експорт вигаданих записів.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "statements",
+          "title": "Виписки та PDF",
+          "body": "Ознайомтеся з доступними періодами, переглядом PDF, збереженням окремого періоду або вибраних періодів і надсиланням файлів. Виберіть місце збереження через системний діалог Android. PDF для показу створені штучно; цих сценаріїв немає в базовій демоверсії.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "transfers",
+          "title": "Перекази",
+          "body": "Порівняйте перекази між власними рахунками, одержувачам у тому самому банку та в інші банки. Виберіть рахунки, перевірте валюту, суму, комісію та призначення платежу, потім підтвердьте перед авторизацією. Базова демоверсія імітує перекази між власними рахунками та збереженим одержувачам.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "payments",
+          "title": "Оплата послуг і кредитних карток",
+          "body": "Виберіть послугу або кредитну картку, перевірте рахунок списання та суму перед підтвердженням. Розширений сценарій імітує банківські перевірки й авторизацію. Базова демоверсія пропонує тестові платежі та квитанції без реальних грошей.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "beneficiaries",
+          "title": "Одержувачі",
+          "body": "Знайдіть і перевірте одержувача, перегляньте його дані та окремо підтвердьте збереження або видалення. Перевірка не надсилає гроші й не зберігає одержувача автоматично. Базова демоверсія дає змогу керувати вигаданими одержувачами.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "cards",
+          "title": "Картки й налаштування використання",
+          "body": "Перегляньте дані карток, налаштування використання, дії в разі втрати чи крадіжки та повідомлення про подорож. Перевіряйте сферу дії й підтвердження кожної зміни. Ці банківські сценарії імітуються; базова демоверсія не містить цих налаштувань і не підтверджує їхню доступність у банку.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "token",
+          "title": "Token BSC",
+          "body": "Прочитайте договір і явно погодьтеся на підключення та зашифроване зберігання. Перегляньте перевірку, створення кодів і від’єднання токена. Зовнішня ідентифікація проходить через канал, указаний банком. Базова демоверсія не підключає й не створює банківський токен.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "qr",
+          "title": "QR і запити платежу",
+          "body": "Перегляньте надсилання реквізитів рахунку або запиту платежу, сканування чи введення коду, перевірку одержувача, а також збереження чи друк QR, якщо сценарій це підтримує. QR не авторизує платіж: реєстрація одержувача й переказ надалі потребують підтверджень. Непідтримувані сторонні формати не входять до цього сценарію.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        },
+        {
+          "id": "settings",
+          "title": "Налаштування, допомога та невизначений результат",
+          "body": "Змініть мову й профіль, перегляньте налаштування демоверсії, відкрийте допомогу та вийдіть із сеансу. За невизначеного результату спочатку перевірте фактичну історію чи статус у банку, а потім виконайте звірку. Звірка не повторює й не скасовує попередню операцію. Профіль і налаштування демоверсії використовують лише вигадані дані.",
+          "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
+        }
+      ],
+      "privacySections": [
+        {
+          "title": "Статичний сайт",
+          "body": "На сайті немає банківського входу, форм для облікових даних, аналітики чи власного серверного застосунку. Вибір мови й відтворення матеріалів відбуваються в браузері. Не вводьте тут банківські дані."
+        },
+        {
+          "title": "Хостинг і зовнішні посилання",
+          "body": "Сайт розміщено на GitHub Pages, APK розповсюджуються через GitHub Releases. GitHub може обробляти дані підключення, зокрема IP-адреси й журнали запитів, за власною політикою. Посилання на підтримку, банк та інші сервіси ведуть до зовнішніх ресурсів із власними умовами."
+        },
+        {
+          "title": "Демоверсія без підключення до банку",
+          "body": "Демоверсія використовує вигадані особи, рахунки й операції та не підключається до банку. Зміни зберігаються локально. Скидання демоверсії або очищення даних застосунку видаляє цей стан; видалення застосунку видаляє його приватні дані. Експортовані в інше місце файли можуть залишитися там."
+        },
+        {
+          "title": "Банківська версія",
+          "body": "Під час використання банківських функцій застосунок надсилає запити до банку. Якщо ви вибираєте збереження доступу, облікові дані шифруються за допомогою Android Keystore та потребують сильної біометричної автентифікації. Підключення токена вимагає явної згоди з договором і зашифрованим зберіганням секретного ключа. Сеанси та створені коди не зберігаються постійно. Повний опис обробки даних наведено в політиці всередині застосунку."
+        },
+        {
+          "title": "Файли та служби пристрою",
+          "body": "Для перегляду виписок використовується приватний кеш. PDF, збережені у вибране місце, можуть залишитися після виходу чи видалення застосунку та синхронізуватися відповідно до налаштувань постачальника. Під час надсилання PDF, CSV або QR файл отримує вибраний застосунок; збережені ним копії регулюються його правилами. Для зовнішньої перевірки особи та модулів Android чи Google в необов’язкових функціях діють окремі умови."
+        },
+        {
+          "title": "Обмеження та контакт",
+          "body": "Застосунок є незалежним та експериментальним. Дозвіл банку й перевірка з рахунком його власника залишаються відкритими питаннями; поточна сумісність не підтверджена. Подання до Google Play до цієї роботи не входить. Контакт: bluegrain.lcc@gmail.com. Не надсилайте облікові дані чи особисту банківську інформацію."
+        }
+      ]
+    },
+    "pt": {
+      "name": "Português",
+      "title": "BSC · Conheça o aplicativo",
+      "tagline": "Seu banco, com mais clareza.",
+      "intro": "Conheça um aplicativo Android independente inspirado no BSC en Línea: contas, transações e operações em uma interface nativa. Experimente a demonstração offline ou conheça os limites da edição bancária experimental.",
+      "demoTitle": "Demonstração offline",
+      "demoBody": "Contas e transações fictícias, pesquisa, transferências e pagamentos simulados, beneficiários, perfil, privacidade dos saldos e exportação CSV. Sem conexão com o banco nem dinheiro real. Esta demonstração básica não inclui todos os fluxos avançados dos vídeos.",
+      "demoAction": "Baixar APK de demonstração",
+      "liveTitle": "Edição bancária experimental",
+      "liveBody": "Aplicativo independente com conexão bancária configurada. A autorização do banco e a validação com a conta de seu titular continuam pendentes. A compatibilidade atual com o serviço do banco não foi estabelecida.",
+      "liveAction": "Baixar APK experimental",
+      "warning": "A edição bancária é independente e experimental. A autorização do banco e a validação com uma conta de seu titular continuam pendentes. Restaurar a configuração não comprova que o acesso funciona. Este não é um aplicativo oficial nem uma publicação no Google Play.",
+      "overviewTitle": "Um breve passeio pelo aplicativo",
+      "overviewBody": "Veja a interface nativa com dados fictícios. Os fluxos bancários avançados usam conexões bancárias simuladas; sua presença no passeio não significa que estejam disponíveis na demonstração básica para download.",
+      "chaptersTitle": "Explore cada passo a passo",
+      "simulatedLabel": "Interface bancária simulada",
+      "demoLabel": "Incluído na demonstração básica",
+      "handoffLabel": "Continua em um canal oficial",
+      "compareTitle": "Escolha sua edição",
+      "requirementsTitle": "Requisitos do Android",
+      "requirementsBody": "Android 8.0 ou posterior (API 26). APK assinado para instalação direta. A edição bancária exige conexão e, quando solicitado pelo banco, aprovação do dispositivo e autorização das operações. Nunca insira credenciais neste site.",
+      "installTitle": "Como instalar",
+      "versionLabel": "Versão",
+      "privacyLabel": "Privacidade",
+      "supportLabel": "Ajuda e comentários",
+      "supportBody": "Relate problemas do aplicativo para bluegrain.lcc@gmail.com. Não envie senhas, códigos, documentos de identidade ou dados da sua conta. Para atendimento bancário, use os canais oficiais do banco.",
+      "transcriptLabel": "Transcrição",
+      "screenshotsLabel": "Capturas de tela",
+      "speedLabel": "Velocidade de reprodução",
+      "closeLabel": "Fechar",
+      "skipLabel": "Ir para o conteúdo",
+      "privacyTitle": "Privacidade do site e do aplicativo",
+      "privacyIntro": "Este site estático apresenta o aplicativo. O site, a demonstração offline e a edição bancária tratam dados diferentes, conforme descrito abaixo.",
+      "installSteps": [
+        "Escolha a demonstração offline ou leia as limitações da edição bancária experimental antes de baixá-la.",
+        "Baixe o APK e o arquivo de somas SHA-256 da mesma versão. Compare a soma do arquivo antes de instalar.",
+        "Abra o APK. Se o Android solicitar, permita a instalação pelo aplicativo que você usou para baixar o arquivo. Depois desative essa permissão.",
+        "Abra o aplicativo e leia os avisos e termos. A demonstração usa apenas dados fictícios; a edição bancária mantém os controles de acesso e autorização do banco.",
+        "O APK bancário mantém com.santacruz.modern e usa uma chave de distribuição própria. Ele não atualiza uma instalação do Santa Cruz Modern com outra assinatura. Se o Android bloquear a atualização, preserve o aplicativo existente e seus dados; use a demonstração separada ou entre em contato com o suporte."
+      ],
+      "chapters": [
+        {
+          "id": "first-use",
+          "title": "Primeiros passos",
+          "body": "Leia o aviso de aplicativo independente, abra os termos e a política de privacidade e aceite expressamente antes de continuar. Escolha entre sete idiomas; a seleção altera o texto do aplicativo, não o texto fornecido pelo banco.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "login",
+          "title": "Acesso e biometria",
+          "body": "Conheça o acesso manual, a proteção biométrica opcional do usuário e da senha salvos e a exclusão do acesso salvo. A biometria desbloqueia credenciais criptografadas; não substitui a aprovação do banco. A demonstração básica não precisa de credenciais bancárias.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "verification",
+          "title": "Verificação e dispositivo",
+          "body": "Acompanhe a verificação, a aprovação do dispositivo e as configurações de acesso que o banco possa exigir. Um código SMS editável só é enviado ao tocar em Verificar. As verificações externas de identidade continuam na página HTTPS fornecida pelo banco.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "accounts",
+          "title": "Contas e saldos",
+          "body": "Veja contas e moedas, identifique o saldo de cada conta e oculte ou mostre os valores. Todos os dados deste passeio são fictícios. A demonstração básica oferece contas e privacidade dos saldos sem conexão com o banco.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "history",
+          "title": "Transações e CSV",
+          "body": "Abra o histórico, pesquise transações e explore os filtros de entradas e saídas. Exporte um CSV de forma explícita e escolha um aplicativo para compartilhá-lo. A demonstração básica oferece histórico, pesquisa e exportação com registros fictícios.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "statements",
+          "title": "Extratos e PDF",
+          "body": "Explore os períodos oferecidos, a visualização de PDF, o salvamento individual ou por seleção e o compartilhamento. Escolha o destino no seletor de arquivos do Android. Os PDFs apresentados são sintéticos; esses fluxos não fazem parte da demonstração básica.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "transfers",
+          "title": "Transferências",
+          "body": "Compare transferências entre contas próprias, para beneficiários do mesmo banco e para outros bancos. Selecione as contas, confira moeda, valor, tarifas e descrição e confirme antes de autorizar. A demonstração básica simula transferências entre contas próprias e para beneficiários salvos.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "payments",
+          "title": "Pagamentos de serviços e cartões",
+          "body": "Selecione um serviço ou cartão de crédito, confira a conta de origem e revise o valor antes de confirmar. O passeio avançado simula a validação e a autorização bancárias. A demonstração básica oferece pagamentos de teste e comprovantes sem dinheiro real.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "beneficiaries",
+          "title": "Beneficiários",
+          "body": "Pesquise e valide destinatários, confira seus dados e confirme separadamente o salvamento ou a exclusão. Validar não envia dinheiro nem salva automaticamente um beneficiário. A demonstração básica permite gerenciar destinatários fictícios.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "cards",
+          "title": "Cartões e controles",
+          "body": "Veja detalhes dos cartões, controles de uso, procedimentos de perda ou roubo e avisos de viagem. Confira o alcance e a confirmação de cada alteração. Esses fluxos bancários são simulados; a demonstração básica não inclui esses controles nem comprova sua disponibilidade no banco.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "token",
+          "title": "Token BSC",
+          "body": "Leia o contrato e dê consentimento explícito para a inscrição e o armazenamento criptografado. Acompanhe verificação, geração de códigos e desvinculação. A identificação externa ocorre pelo canal indicado pelo banco. A demonstração básica não inscreve nem gera um token bancário.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "qr",
+          "title": "QR e solicitações de pagamento",
+          "body": "Veja como compartilhar dados de uma conta ou uma solicitação de pagamento, escanear ou digitar um código, conferir o destinatário e salvar ou imprimir um QR quando o fluxo permitir. Um QR nunca autoriza um pagamento: o cadastro do beneficiário e a transferência mantêm suas confirmações. Formatos de terceiros não compatíveis ficam de fora.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        },
+        {
+          "id": "settings",
+          "title": "Configurações, ajuda e resultados incertos",
+          "body": "Altere idioma e perfil, explore os controles da demonstração, abra a ajuda e encerre a sessão. Se um resultado for incerto, confira o histórico ou o status real no banco antes de conciliá-lo. A conciliação não repete nem cancela a operação anterior. O perfil e as configurações da demonstração usam apenas dados fictícios.",
+          "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
+        }
+      ],
+      "privacySections": [
+        {
+          "title": "Site estático",
+          "body": "Este site não tem acesso bancário, formulários de credenciais, análise de uso nem serviço backend próprio. A seleção de idioma e a reprodução do conteúdo ocorrem no navegador. Não insira dados bancários aqui."
+        },
+        {
+          "title": "Hospedagem e links externos",
+          "body": "O GitHub Pages hospeda o site e o GitHub Releases distribui os APKs. O GitHub pode tratar dados de conexão, como endereço IP e registros de solicitações, conforme sua própria política. Links de suporte, do banco e de outros serviços levam a destinos externos com seus próprios termos."
+        },
+        {
+          "title": "Demonstração offline",
+          "body": "A demonstração usa identidades, contas e transações fictícias e não se conecta ao banco. As alterações ficam salvas localmente. Redefinir a demonstração ou limpar os dados do aplicativo remove esse estado local; desinstalar remove seus dados privados. Arquivos exportados para outro destino podem permanecer lá."
+        },
+        {
+          "title": "Edição bancária",
+          "body": "O aplicativo envia solicitações ao banco quando você usa funções bancárias. Se escolher lembrar o acesso, as credenciais serão criptografadas com o Android Keystore e exigirão autenticação biométrica forte. A inscrição do token exige consentimento explícito ao contrato e ao armazenamento criptografado da chave secreta. Sessões e códigos gerados não são armazenados de forma persistente. Consulte a política dentro do aplicativo para os detalhes completos do tratamento de dados."
+        },
+        {
+          "title": "Arquivos e serviços do dispositivo",
+          "body": "As visualizações de extratos usam um cache privado. PDFs salvos em um destino escolhido podem permanecer após encerrar a sessão ou desinstalar o aplicativo e ser sincronizados conforme o provedor. Compartilhar PDF, CSV ou QR entrega o arquivo ao aplicativo escolhido; as cópias que ele mantiver seguem suas regras. A identificação externa e os módulos Android ou Google usados por funções opcionais têm seus próprios termos."
+        },
+        {
+          "title": "Limites e contato",
+          "body": "Este aplicativo é independente e experimental. A autorização do banco e a validação com a conta de seu titular continuam pendentes; a compatibilidade atual não foi estabelecida. Este trabalho não inclui uma submissão ao Google Play. Contato: bluegrain.lcc@gmail.com. Não envie credenciais nem informações bancárias pessoais."
+        }
+      ]
+    }
+  }
+}

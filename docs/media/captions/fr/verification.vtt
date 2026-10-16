@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:21.200
+Interface bancaire native avec données fictives et réponses simulées.
+
+2
+00:00:21.300 --> 00:00:42.500
+La question de sécurité et le jeton conservent des champs distincts.
+
+3
+00:00:42.600 --> 00:01:03.800
+Un appareil non approuvé bloque l’accès ; changer le mot de passe exige confirmation.
+
+4
+00:01:03.900 --> 00:01:25.100
+Ces vérifications avancées ne sont pas incluses dans la démo de base.

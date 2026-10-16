@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:28.483
+Interfaz bancaria nativa con tarjetas ficticias y respuestas simuladas.
+
+2
+00:00:28.583 --> 00:00:57.067
+Cambiar el uso de una tarjeta exige revisión y verificación del cambio.
+
+3
+00:00:57.167 --> 00:01:25.650
+Pérdida, robo y viaje tienen escenarios separados y confirmación expresa.
+
+4
+00:01:25.750 --> 00:01:54.233
+La demo básica no incluye estos controles; la disponibilidad bancaria no está validada.

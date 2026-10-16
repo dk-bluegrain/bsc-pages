@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.400
+Interfaz bancaria nativa con datos ficticios y respuestas simuladas.
+
+2
+00:00:07.500 --> 00:00:14.900
+El acceso recordado utiliza una aprobación biométrica simulada en esta grabación.
+
+3
+00:00:15.000 --> 00:00:22.400
+Guardar y desbloquear credenciales son pasos distintos de la aprobación del banco.
+
+4
+00:00:22.500 --> 00:00:29.900
+La demo básica no incluye acceso bancario ni esta simulación biométrica.

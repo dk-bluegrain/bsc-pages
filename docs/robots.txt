@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dk-bluegrain.github.io/bsc-pages/sitemap.xml

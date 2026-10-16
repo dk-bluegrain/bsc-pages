@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:15.967
+Interfaz bancaria simulada y demo sin conexión; todos los datos son ficticios.
+
+2
+00:00:16.067 --> 00:00:32.033
+El historial permite revelar la cuenta, buscar y filtrar entradas y salidas.
+
+3
+00:00:32.133 --> 00:00:48.100
+El CSV ficticio de la demo abre el menú Compartir de Android; no se elige una app receptora.
+
+4
+00:00:48.200 --> 00:01:04.167
+La demo básica ofrece historial, búsqueda y CSV; el historial bancario avanzado se simula.

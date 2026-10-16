@@ -1,0 +1,175 @@
+{
+  "coordinateSpace": {
+    "width": 540,
+    "height": 1200
+  },
+  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Rings are synchronized in the input action inside Android, not reconstructed in post-production.",
+  "events": [
+    {
+      "type": "tap",
+      "timeSeconds": 1.4,
+      "epochMs": 1792185577790,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 830.0
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 6.099,
+      "epochMs": 1792185582489,
+      "scenario": 1,
+      "x": 453.5,
+      "y": 1084.5
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 10.105,
+      "epochMs": 1792185586495,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 555.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 17.846,
+      "epochMs": 1792185594236,
+      "scenario": 1,
+      "x": 70.0,
+      "y": 193.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 21.69,
+      "epochMs": 1792185598080,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 749.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 28.749,
+      "epochMs": 1792185605139,
+      "scenario": 1,
+      "x": 70.0,
+      "y": 193.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 32.664,
+      "epochMs": 1792185609054,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 984.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 39.506,
+      "epochMs": 1792185615896,
+      "scenario": 1,
+      "x": 70.0,
+      "y": 193.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 43.359,
+      "epochMs": 1792185619749,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 997.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 47.279,
+      "epochMs": 1792185623669,
+      "scenario": 1,
+      "x": 378.5,
+      "y": 696.75
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 55.533,
+      "epochMs": 1792185635352,
+      "scenario": 2,
+      "characters": 9
+    },
+    {
+      "type": "typing",
+      "timeSeconds": 60.192,
+      "epochMs": 1792185640011,
+      "scenario": 2,
+      "characters": 13
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 65.909,
+      "epochMs": 1792185645728,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 702.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 70.068,
+      "epochMs": 1792185649887,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 920.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 74.765,
+      "epochMs": 1792185654584,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 1100.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 78.828,
+      "epochMs": 1792185658647,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 641.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 82.687,
+      "epochMs": 1792185662506,
+      "scenario": 2,
+      "x": 123.25,
+      "y": 694.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 87.349,
+      "epochMs": 1792185667168,
+      "scenario": 2,
+      "x": 365.25,
+      "y": 867.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 91.162,
+      "epochMs": 1792185670981,
+      "scenario": 2,
+      "x": 270.0,
+      "y": 641.75
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 95.048,
+      "epochMs": 1792185674867,
+      "scenario": 2,
+      "x": 123.25,
+      "y": 694.25
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 98.869,
+      "epochMs": 1792185678688,
+      "scenario": 2,
+      "x": 358.0,
+      "y": 788.75
+    }
+  ]
+}

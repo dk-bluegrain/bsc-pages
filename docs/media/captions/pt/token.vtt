@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.050
+Interface bancária nativa com token fictício e respostas simuladas.
+
+2
+00:00:08.150 --> 00:00:16.200
+O contrato e o consentimento vêm antes da inscrição e da consulta de aprovação.
+
+3
+00:00:16.300 --> 00:00:24.350
+A aprovação simulada vem antes do código; desvincular exige confirmação.
+
+4
+00:00:24.450 --> 00:00:32.500
+A demonstração básica não gera tokens bancários; autorização e validação seguem pendentes.

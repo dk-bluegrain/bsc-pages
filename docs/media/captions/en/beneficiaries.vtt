@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:38.350
+Native banking UI with fictional data and simulated responses.
+
+2
+00:00:38.450 --> 00:01:16.800
+A code can fill recipient details without saving the recipient.
+
+3
+00:01:16.900 --> 00:01:55.250
+The demo saves a fictional recipient; simulated bank-beneficiary deletion requires confirmations.
+
+4
+00:01:55.350 --> 00:02:33.700
+The demo manages fictional recipients; these advanced banking steps are simulated.

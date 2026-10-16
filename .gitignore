@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+node_modules/
+.DS_Store
+*.apk
+*.aab
+*.jks
+*.keystore
+*.p12
+.env*
+media-work/
+raw-media/

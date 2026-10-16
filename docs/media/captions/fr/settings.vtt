@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:25.600
+Réglages de démo et rapprochement bancaire simulé ; données fictives uniquement.
+
+2
+00:00:25.700 --> 00:00:51.300
+La démo parcourt profil, sécurité, aide et déconnexion de la session de test.
+
+3
+00:00:51.400 --> 00:01:17.000
+Le rapprochement exige historique chargé et nouvelle confirmation ; il ne répète aucun paiement.
+
+4
+00:01:17.100 --> 00:01:42.700
+Le rapprochement bancaire est absent de la démo de base ; autorisation et validation restent en suspens.

@@ -1,0 +1,628 @@
+{
+  "appVersion": "1.11.0 (26)",
+  "sourceRepository": "https://github.com/dk-bluegrain/bsc",
+  "capture": "Native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only.",
+  "audio": "Silent: no music or narration.",
+  "security": "Only a disposable QA checkout permits screenshots. Distribution live screens retain FLAG_SECURE.",
+  "notEvidenceOf": "Bank authorization, owner-account validation, current live compatibility, or inclusion of all advanced flows in the basic demo.",
+  "chapters": {
+    "first-use": {
+      "duration": 50.867,
+      "durationLabel": "0:50",
+      "screenshots": [
+        "first-use-01.jpg",
+        "first-use-02.jpg",
+        "first-use-03.jpg",
+        "first-use-04.jpg",
+        "first-use-05.jpg",
+        "first-use-06.jpg",
+        "first-use-07.jpg",
+        "first-use-08.jpg",
+        "first-use-09.jpg"
+      ],
+      "sources": [
+        {
+          "test": "FirstUseNoticeTest#privacyIsAvailableBeforeTermsAndNeverAcceptsThem",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 3.889,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.489,
+          "duration": 8.8
+        },
+        {
+          "test": "FirstUseNoticeTest#bankingStaysBlockedUntilTermsOpenedAndExplicitlyAcceptedThenAcceptancePersists",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 3.936,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.536,
+          "duration": 16.6
+        },
+        {
+          "test": "ShowcaseExtraTest#languageSelection",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 3,
+          "firstNativeRingVideoTime": 4.456,
+          "eventAlignmentOffset": 0.0,
+          "trimStart": 3.056,
+          "duration": 25.467
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "login": {
+      "duration": 30.0,
+      "durationLabel": "0:30",
+      "screenshots": [
+        "login-01.jpg",
+        "login-02.jpg",
+        "login-03.jpg",
+        "login-04.jpg",
+        "login-05.jpg",
+        "login-06.jpg"
+      ],
+      "sources": [
+        {
+          "test": "LiveScreenTest#rememberingCredentialsDefaultsOnAndRequiresBiometricSaveBeforeLogin",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 14.251,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.832,
+          "duration": 15.4
+        },
+        {
+          "test": "LiveScreenTest#savedLoginWaitsForBiometricsThenSubmitsAutomatically",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": null,
+          "eventAlignmentOffset": 0.0,
+          "trimStart": 0,
+          "duration": 12.533
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "verification": {
+      "duration": 85.2,
+      "durationLabel": "1:25",
+      "screenshots": [
+        "verification-01.jpg",
+        "verification-02.jpg",
+        "verification-03.jpg",
+        "verification-04.jpg",
+        "verification-05.jpg",
+        "verification-06.jpg",
+        "verification-07.jpg",
+        "verification-08.jpg",
+        "verification-09.jpg"
+      ],
+      "sources": [
+        {
+          "test": "LiveScreenTest#combinedQuestionAndTokenRemainSeparateBeforeBankAuthentication",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 14.044,
+          "eventAlignmentOffset": -0.1,
+          "trimStart": 2.489,
+          "duration": 27.2
+        },
+        {
+          "test": "LiveScreenTest#untrustedDeviceCannotFetchAccountsOrEnrollSilently",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 14.515,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.863,
+          "duration": 15.067
+        },
+        {
+          "test": "LoginPrerequisitesScreenTest#requiredPasswordIsConfirmedAndReturnsToLoginWithoutReadingAccounts",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 3,
+          "firstNativeRingVideoTime": 15.155,
+          "eventAlignmentOffset": -0.067,
+          "trimStart": 2.166,
+          "duration": 42.933
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "accounts": {
+      "duration": 37.8,
+      "durationLabel": "0:37",
+      "screenshots": [
+        "accounts-01.jpg",
+        "accounts-02.jpg",
+        "accounts-03.jpg"
+      ],
+      "sources": [
+        {
+          "test": "ShowcaseExtraTest#accountsAndPrivacy",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 4.442,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 3.042,
+          "duration": 37.8
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "history": {
+      "duration": 64.267,
+      "durationLabel": "1:04",
+      "screenshots": [
+        "history-01.jpg",
+        "history-02.jpg",
+        "history-03.jpg",
+        "history-04.jpg",
+        "history-05.jpg",
+        "history-06.jpg"
+      ],
+      "sources": [
+        {
+          "test": "LiveScreenTest#loadedHistorySearchDirectionAndAccountDetailsWorkWithoutExtraBankCalls",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 14.737,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 3.074,
+          "duration": 38.267
+        },
+        {
+          "test": "ShowcaseExtraTest#csvExport",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 4.164,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.764,
+          "duration": 26.0
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "statements": {
+      "duration": 30.0,
+      "durationLabel": "0:30",
+      "screenshots": [
+        "statements-01.jpg",
+        "statements-02.jpg",
+        "statements-03.jpg",
+        "statements-04.jpg",
+        "statements-05.jpg",
+        "statements-06.jpg"
+      ],
+      "sources": [
+        {
+          "test": "StatementsScreenTest#listDoesNotDownloadUntilSelectedAndViewerPagesAndSharesOriginalPdf",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 4.43,
+          "eventAlignmentOffset": -0.067,
+          "trimStart": 3.03,
+          "duration": 20.867
+        },
+        {
+          "test": "StatementSavingScreenTest#bulkSelectionDoesNotDownloadUntilFolderChosenAndKeepsExactBytesAndNames",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 4.163,
+          "eventAlignmentOffset": -0.067,
+          "trimStart": 2.763,
+          "duration": 8.4
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "transfers": {
+      "duration": 155.867,
+      "durationLabel": "2:35",
+      "screenshots": [
+        "transfers-01.jpg",
+        "transfers-02.jpg",
+        "transfers-03.jpg",
+        "transfers-04.jpg",
+        "transfers-05.jpg",
+        "transfers-06.jpg",
+        "transfers-07.jpg",
+        "transfers-08.jpg",
+        "transfers-09.jpg"
+      ],
+      "sources": [
+        {
+          "test": "BankingFlowTest#transferRequiresCorrectAuthorizationAndPersistsOnceAcrossActivityRestart",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 4.345,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.945,
+          "duration": 40.2
+        },
+        {
+          "test": "LiveScreenTest#beneficiaryPreloadWaitsOnlyWhenPickerOpensAndSearchSelectsExactRecipient",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 15.167,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 3.433,
+          "duration": 41.267
+        },
+        {
+          "test": "ShowcaseExtraTest#savedBeneficiaryTransfers",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 3,
+          "firstNativeRingVideoTime": 4.181,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.781,
+          "duration": 74.4
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "payments": {
+      "duration": 60.867,
+      "durationLabel": "1:00",
+      "screenshots": [
+        "payments-01.jpg",
+        "payments-02.jpg",
+        "payments-03.jpg",
+        "payments-04.jpg",
+        "payments-05.jpg",
+        "payments-06.jpg"
+      ],
+      "sources": [
+        {
+          "test": "BankingFlowTest#servicePaymentReviewDoesNotDebitUntilConfirmed",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 4.552,
+          "eventAlignmentOffset": -0.067,
+          "trimStart": 3.152,
+          "duration": 30.533
+        },
+        {
+          "test": "AutomaticOperationCodeTest#paymentRetainsExplicitReviewThenFillsSmsAndWaitsForVerify",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 4.539,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 3.139,
+          "duration": 30.333
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "beneficiaries": {
+      "duration": 153.8,
+      "durationLabel": "2:33",
+      "screenshots": [
+        "beneficiaries-01.jpg",
+        "beneficiaries-02.jpg",
+        "beneficiaries-03.jpg",
+        "beneficiaries-04.jpg",
+        "beneficiaries-05.jpg",
+        "beneficiaries-06.jpg",
+        "beneficiaries-07.jpg",
+        "beneficiaries-08.jpg",
+        "beneficiaries-09.jpg"
+      ],
+      "sources": [
+        {
+          "test": "LiveScreenTest#scannedOtherBankRecipientPrefillsBeneficiaryFormWithoutValidatingOrSavingAutomatically",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 15.0,
+          "eventAlignmentOffset": -0.067,
+          "trimStart": 3.403,
+          "duration": 76.067
+        },
+        {
+          "test": "LiveScreenTest#bankBeneficiaryDeletionRequiresReviewAndFinalConfirmationThenReloadsList",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 14.649,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 3.111,
+          "duration": 31.267
+        },
+        {
+          "test": "ShowcaseExtraTest#saveFictionalBeneficiary",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 3,
+          "firstNativeRingVideoTime": 4.392,
+          "eventAlignmentOffset": -0.067,
+          "trimStart": 2.992,
+          "duration": 46.467
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "cards": {
+      "duration": 114.333,
+      "durationLabel": "1:54",
+      "screenshots": [
+        "cards-01.jpg",
+        "cards-02.jpg",
+        "cards-03.jpg",
+        "cards-04.jpg",
+        "cards-05.jpg",
+        "cards-06.jpg",
+        "cards-07.jpg",
+        "cards-08.jpg",
+        "cards-09.jpg"
+      ],
+      "sources": [
+        {
+          "test": "LiveCardsScreenTest#nativeUsageControlRequiresReviewThenExplicitChallengeAndOneLoadingModal",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 16.325,
+          "eventAlignmentOffset": -0.133,
+          "trimStart": 2.602,
+          "duration": 50.4
+        },
+        {
+          "test": "CardOperationsScreenTest#lossAndTheftRequireSeparateReviewBeforeSubmitting",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 4.211,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.811,
+          "duration": 24.667
+        },
+        {
+          "test": "CardOperationsScreenTest#travelCollectsDestinationsBeforeReviewAndSendsOnlyOnConfirmation",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 3,
+          "firstNativeRingVideoTime": 4.031,
+          "eventAlignmentOffset": -0.1,
+          "trimStart": 2.631,
+          "duration": 39.267
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "token": {
+      "duration": 32.6,
+      "durationLabel": "0:32",
+      "screenshots": [
+        "token-01.jpg",
+        "token-02.jpg",
+        "token-03.jpg"
+      ],
+      "sources": [
+        {
+          "test": "NativeTokenScreenTest#contractConsentAndBankProofPrecedeCodeDisplayAndUnlinkNeedsConfirmation",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 3.892,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.492,
+          "duration": 32.6
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "qr": {
+      "duration": 35.067,
+      "durationLabel": "0:35",
+      "screenshots": [
+        "qr-01.jpg",
+        "qr-02.jpg",
+        "qr-03.jpg",
+        "qr-04.jpg",
+        "qr-05.jpg"
+      ],
+      "sources": [
+        {
+          "test": "RecipientShareScreenTest#savePreservesSelectedRequestAndCancelAllowsRetry",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 3.838,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.438,
+          "duration": 26.867
+        },
+        {
+          "test": "RecipientScanScreenTest#paymentRequestShowsAmountAndPurposeBeforeExplicitRecipientReview",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 3.799,
+          "eventAlignmentOffset": -0.067,
+          "trimStart": 2.399,
+          "duration": 3.8
+        },
+        {
+          "test": "RecipientShareScreenTest#printOpensAndroidPrintPreview",
+          "emulator": "emulator-5562",
+          "passed": true,
+          "scenario": 3,
+          "firstNativeRingVideoTime": 4.181,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.781,
+          "duration": 4.4
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "settings": {
+      "duration": 102.8,
+      "durationLabel": "1:42",
+      "screenshots": [
+        "settings-01.jpg",
+        "settings-02.jpg",
+        "settings-03.jpg",
+        "settings-04.jpg",
+        "settings-05.jpg",
+        "settings-06.jpg"
+      ],
+      "sources": [
+        {
+          "test": "ShowcaseExtraTest#settingsProfileHelpAndLogout",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 1,
+          "firstNativeRingVideoTime": 3.796,
+          "eventAlignmentOffset": -0.033,
+          "trimStart": 2.396,
+          "duration": 54.133
+        },
+        {
+          "test": "LiveScreenTest#moneyReconciliationNeedsLoadedHistoryAndFreshCheckedConfirmation",
+          "emulator": "emulator-5560",
+          "passed": true,
+          "scenario": 2,
+          "firstNativeRingVideoTime": 14.4,
+          "eventAlignmentOffset": -0.067,
+          "trimStart": 2.624,
+          "duration": 48.667
+        }
+      ],
+      "fictional": true,
+      "nativeTapOverlay": true,
+      "persistentFinalMarkers": true
+    },
+    "overview": {
+      "duration": 103.733,
+      "durationLabel": "1:44",
+      "chapters": [
+        "first-use",
+        "login",
+        "verification",
+        "accounts",
+        "history",
+        "statements",
+        "transfers",
+        "payments",
+        "beneficiaries",
+        "cards",
+        "token",
+        "qr",
+        "settings"
+      ],
+      "excerpts": [
+        {
+          "chapter": "first-use",
+          "start": 14.0,
+          "duration": 8
+        },
+        {
+          "chapter": "login",
+          "start": 10.0,
+          "duration": 8
+        },
+        {
+          "chapter": "verification",
+          "start": 18.0,
+          "duration": 8
+        },
+        {
+          "chapter": "accounts",
+          "start": 11.0,
+          "duration": 8
+        },
+        {
+          "chapter": "history",
+          "start": 27.0,
+          "duration": 8
+        },
+        {
+          "chapter": "statements",
+          "start": 3.2,
+          "duration": 8
+        },
+        {
+          "chapter": "transfers",
+          "start": 20.7,
+          "duration": 8
+        },
+        {
+          "chapter": "payments",
+          "start": 14.0,
+          "duration": 8
+        },
+        {
+          "chapter": "beneficiaries",
+          "start": 40.0,
+          "duration": 8
+        },
+        {
+          "chapter": "cards",
+          "start": 30.7,
+          "duration": 8
+        },
+        {
+          "chapter": "token",
+          "start": 18.5,
+          "duration": 8
+        },
+        {
+          "chapter": "qr",
+          "start": 12.5,
+          "duration": 8
+        },
+        {
+          "chapter": "settings",
+          "start": 16.0,
+          "duration": 8
+        }
+      ],
+      "fictional": true
+    }
+  },
+  "sourceCommit": "9cd2063dc24db26e2159d3094e959dc77c64306a",
+  "tapTiming": "Actual Android input events and native markers; MP4 offsets calibrated from the first observed ring at30fps. Persistent one-second vector rings preserve markers across window transitions."
+}

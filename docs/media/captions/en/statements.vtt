@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.400
+Simulated banking UI; the PDF was created solely for demonstration.
+
+2
+00:00:07.500 --> 00:00:14.900
+The viewer offers pages, zoom and an explicit action to share the synthetic PDF.
+
+3
+00:00:15.000 --> 00:00:22.400
+Saving selected periods waits for a folder; this test’s destination is simulated.
+
+4
+00:00:22.500 --> 00:00:29.900
+Statements are absent from the basic demo; bank compatibility remains unvalidated.

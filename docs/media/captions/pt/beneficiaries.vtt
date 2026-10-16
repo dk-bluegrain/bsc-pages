@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:38.350
+Interface bancária nativa com dados fictícios e respostas simuladas.
+
+2
+00:00:38.450 --> 00:01:16.800
+Um código pode preencher dados sem salvar o destinatário.
+
+3
+00:01:16.900 --> 00:01:55.250
+A demonstração salva um destinatário fictício; excluir um beneficiário bancário simulado exige confirmações.
+
+4
+00:01:55.350 --> 00:02:33.700
+A demonstração gerencia destinatários fictícios; esses passos bancários avançados são simulados.

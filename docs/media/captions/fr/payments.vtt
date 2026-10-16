@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:15.117
+Paiement de démo et vérification bancaire simulée ; données fictives uniquement.
+
+2
+00:00:15.217 --> 00:00:30.333
+Le paiement de service en démo exige une révision et le code de test.
+
+3
+00:00:30.433 --> 00:00:45.550
+Le scénario avancé conserve la révision et attend la vérification SMS explicite.
+
+4
+00:00:45.650 --> 00:01:00.767
+La démo de base n’a pas cette vérification avancée ; aucun argent réel n’a été payé.

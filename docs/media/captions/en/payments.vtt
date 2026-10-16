@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:15.117
+A demo payment and simulated banking verification; fictional data only.
+
+2
+00:00:15.217 --> 00:00:30.333
+The demo service payment requires review and the test code.
+
+3
+00:00:30.433 --> 00:00:45.550
+The advanced scenario retains review and waits for explicit SMS verification.
+
+4
+00:00:45.650 --> 00:01:00.767
+The basic demo lacks advanced bank verification; no real money was paid.

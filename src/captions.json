@@ -1,0 +1,669 @@
+{
+  "languages": {
+    "es": {
+      "first-use": [
+        "Demostración de la interfaz nativa; sin sesión bancaria personal.",
+        "La privacidad y el selector de idioma están disponibles; la selección mostrada es español.",
+        "Abrir los términos no equivale a aceptarlos: la aceptación es expresa.",
+        "La demostración no acredita autorización del banco ni compatibilidad actual."
+      ],
+      "login": [
+        "Interfaz bancaria nativa con datos ficticios y respuestas simuladas.",
+        "El acceso recordado utiliza una aprobación biométrica simulada en esta grabación.",
+        "Guardar y desbloquear credenciales son pasos distintos de la aprobación del banco.",
+        "La demo básica no incluye acceso bancario ni esta simulación biométrica."
+      ],
+      "verification": [
+        "Interfaz bancaria nativa con datos ficticios y respuestas simuladas.",
+        "La pregunta de seguridad y el token conservan campos separados.",
+        "El dispositivo no aprobado bloquea el acceso; el cambio de contraseña exige confirmación.",
+        "Estas verificaciones avanzadas no están incluidas en la demo básica."
+      ],
+      "accounts": [
+        "Simulación sin conexión: todas las cuentas y los saldos son ficticios.",
+        "Ocultar o mostrar saldos permite revisar la privacidad de los importes.",
+        "DOP/USD y detalle de cuenta; las flechas indican la dirección de los deslizamientos.",
+        "Estas cuentas están en la demo básica; no prueban compatibilidad con el banco."
+      ],
+      "history": [
+        "Interfaz bancaria simulada y demo sin conexión; todos los datos son ficticios.",
+        "El historial permite revelar la cuenta, buscar y filtrar entradas y salidas.",
+        "El CSV ficticio de la demo abre el menú Compartir de Android; no se elige una app receptora.",
+        "La demo básica ofrece historial, búsqueda y CSV; el historial bancario avanzado se simula."
+      ],
+      "statements": [
+        "Interfaz bancaria simulada; el PDF se creó solo para la demostración.",
+        "El visor ofrece páginas, ampliación y una acción explícita para compartir el PDF sintético.",
+        "Guardar la selección espera la carpeta; el destino de esta prueba es simulado.",
+        "Los estados de cuenta no están en la demo básica; la compatibilidad bancaria sigue sin validarse."
+      ],
+      "transfers": [
+        "Transferencia sin conexión y selección bancaria simulada; solo datos ficticios.",
+        "La demo simula transferencias propias, al mismo banco y a otros bancos, con código de prueba y comprobantes locales.",
+        "Otro escenario busca y selecciona un destinatario; no envía una transferencia.",
+        "La demo básica no incluye todos estos pasos de la interfaz bancaria avanzada."
+      ],
+      "payments": [
+        "Pago de demo y verificación bancaria simulada; solo datos ficticios.",
+        "El pago de servicio en demo requiere revisión y el código de prueba.",
+        "El escenario avanzado conserva la revisión y espera la verificación expresa del SMS.",
+        "La demo básica no incluye la verificación bancaria avanzada; no se pagó dinero real."
+      ],
+      "beneficiaries": [
+        "Interfaz bancaria nativa con datos ficticios y respuestas simuladas.",
+        "Un código puede completar los datos del destinatario sin guardarlo.",
+        "La demo guarda un destinatario ficticio; eliminar un beneficiario bancario simulado exige confirmaciones.",
+        "La demo administra destinatarios ficticios; estos pasos bancarios avanzados se simulan."
+      ],
+      "cards": [
+        "Interfaz bancaria nativa con tarjetas ficticias y respuestas simuladas.",
+        "Cambiar el uso de una tarjeta exige revisión y verificación del cambio.",
+        "Pérdida, robo y viaje tienen escenarios separados y confirmación expresa.",
+        "La demo básica no incluye estos controles; la disponibilidad bancaria no está validada."
+      ],
+      "token": [
+        "Interfaz bancaria nativa con token ficticio y respuestas simuladas.",
+        "El contrato y el consentimiento preceden a la inscripción y la comprobación.",
+        "La aprobación simulada precede al código; desvincular exige confirmación.",
+        "La demo básica no genera tokens bancarios; siguen pendientes autorización y validación."
+      ],
+      "qr": [
+        "Interfaz nativa con solicitudes QR ficticias y respuestas de prueba.",
+        "Guardar usa un destino elegido; cancelar permite volver a intentarlo.",
+        "Otro escenario revisa la solicitud; imprimir abre la vista previa de Android.",
+        "Un QR no autoriza pagos; el recorrido avanzado no define las funciones de la demo básica."
+      ],
+      "settings": [
+        "Ajustes de demo y conciliación bancaria simulada; solo datos ficticios.",
+        "La demo recorre perfil, seguridad, ayuda y cierre de sesión de prueba.",
+        "La conciliación exige historial cargado y una confirmación nueva; no repite el pago.",
+        "La conciliación bancaria no está en la demo básica; autorización y validación siguen pendientes."
+      ],
+      "overview": [
+        "Recorrido nativo ficticio: aviso de independencia, privacidad, aceptación de términos y selector en español.",
+        "Acceso guardado con protección biométrica simulada; la demo básica no necesita credenciales bancarias.",
+        "Pregunta de seguridad, token, aprobación del dispositivo y cambio de contraseña requerido: verificaciones simuladas.",
+        "Demo sin conexión: cuentas ficticias, DOP/USD, privacidad de saldos y flechas de deslizamiento.",
+        "Historial bancario simulado: búsqueda y filtros; la demo comparte un CSV ficticio mediante Android.",
+        "PDF sintético: páginas, ampliación, compartir y guardado por selección con carpeta simulada.",
+        "Demo: transferencias propias, al mismo banco y a otros bancos; selección bancaria avanzada simulada.",
+        "Pago de servicio en demo y revisión con verificación SMS simulada.",
+        "Destinatario desde código, eliminación bancaria simulada y guardado de un beneficiario ficticio en la demo.",
+        "Controles de tarjeta, pérdida, robo y viaje en escenarios bancarios simulados.",
+        "Token BSC simulado: contrato, consentimiento, aprobación, código y desvinculación.",
+        "Solicitud QR ficticia: guardado, revisión del destinatario y vista previa de impresión.",
+        "Ajustes y conciliación; siguen pendientes la autorización del banco y la validación con la cuenta de su titular."
+      ]
+    },
+    "en": {
+      "first-use": [
+        "Native UI demonstration; no personal banking session.",
+        "Privacy and the language picker are available; the selection shown is Spanish.",
+        "Opening the terms does not accept them: acceptance is explicit.",
+        "The demonstration establishes neither bank authorization nor current compatibility."
+      ],
+      "login": [
+        "Native banking UI with fictional data and simulated responses.",
+        "Remembered access uses simulated biometric approval in this recording.",
+        "Saving and unlocking credentials are separate from bank approval.",
+        "The basic demo includes neither banking login nor this biometric simulation."
+      ],
+      "verification": [
+        "Native banking UI with fictional data and simulated responses.",
+        "The security question and token remain separate fields.",
+        "An unapproved device blocks access; a password change requires confirmation.",
+        "These advanced verification flows are not included in the basic demo."
+      ],
+      "accounts": [
+        "Offline simulation: all accounts and balances are fictional.",
+        "Hide or reveal balances to explore amount privacy.",
+        "DOP/USD and account details; arrows indicate swipe direction.",
+        "These accounts are in the basic demo; they do not establish bank compatibility."
+      ],
+      "history": [
+        "Simulated banking UI and offline demo; all data is fictional.",
+        "History supports revealing the account, search, and incoming/outgoing filters.",
+        "The demo’s fictional CSV opens Android’s Sharesheet; no receiving app is selected.",
+        "The basic demo has history, search and CSV; advanced banking history is simulated."
+      ],
+      "statements": [
+        "Simulated banking UI; the PDF was created solely for demonstration.",
+        "The viewer offers pages, zoom and an explicit action to share the synthetic PDF.",
+        "Saving selected periods waits for a folder; this test’s destination is simulated.",
+        "Statements are absent from the basic demo; bank compatibility remains unvalidated."
+      ],
+      "transfers": [
+        "An offline transfer and simulated bank selection; fictional data only.",
+        "The demo simulates own-account, same-bank and other-bank transfers, with a test code and local receipts.",
+        "Another scenario searches for and selects a recipient; it sends no transfer.",
+        "The basic demo does not include all these advanced banking-interface steps."
+      ],
+      "payments": [
+        "A demo payment and simulated banking verification; fictional data only.",
+        "The demo service payment requires review and the test code.",
+        "The advanced scenario retains review and waits for explicit SMS verification.",
+        "The basic demo lacks advanced bank verification; no real money was paid."
+      ],
+      "beneficiaries": [
+        "Native banking UI with fictional data and simulated responses.",
+        "A code can fill recipient details without saving the recipient.",
+        "The demo saves a fictional recipient; simulated bank-beneficiary deletion requires confirmations.",
+        "The demo manages fictional recipients; these advanced banking steps are simulated."
+      ],
+      "cards": [
+        "Native banking UI with fictional cards and simulated responses.",
+        "Changing card usage requires review and verification of the change.",
+        "Loss, theft and travel have separate scenarios and explicit confirmation.",
+        "The basic demo lacks these controls; availability at the bank is unvalidated."
+      ],
+      "token": [
+        "Native banking UI with a fictional token and simulated responses.",
+        "The contract and consent precede enrollment and the approval check.",
+        "Simulated approval precedes code display; unlinking requires confirmation.",
+        "The basic demo generates no banking tokens; authorization and validation remain unresolved."
+      ],
+      "qr": [
+        "Native UI with fictional QR requests and test responses.",
+        "Saving uses a chosen destination; cancellation allows another attempt.",
+        "Another scenario reviews the request; printing opens Android’s print preview.",
+        "A QR never authorizes payment; this advanced tour does not define basic-demo features."
+      ],
+      "settings": [
+        "Demo settings and simulated banking reconciliation; fictional data only.",
+        "The demo visits profile, security, help and test-session logout.",
+        "Reconciliation needs loaded history and fresh confirmation; it does not repeat payment.",
+        "Banking reconciliation is absent from the basic demo; authorization and validation remain unresolved."
+      ],
+      "overview": [
+        "Fictional native tour: independence notice, privacy, terms acceptance and the Spanish language selection.",
+        "Saved login with simulated biometric approval; the basic demo needs no bank credentials.",
+        "Security question, token, device approval and required password change: simulated checks.",
+        "Offline demo: fictional accounts, DOP/USD, balance privacy and swipe-direction arrows.",
+        "Simulated banking history: search and filters; the demo shares a fictional CSV through Android.",
+        "Synthetic PDF: pages, zoom, sharing and selected-period saving with a simulated folder.",
+        "Demo: own-account, same-bank and other-bank transfers; simulated advanced bank-recipient selection.",
+        "A demo service payment and review with simulated SMS verification.",
+        "Recipient details from a code, simulated bank deletion and a fictional beneficiary saved in the demo.",
+        "Card controls, loss, theft and travel in simulated banking scenarios.",
+        "Simulated Token BSC: contract, consent, approval, code and unlinking.",
+        "Fictional QR request: saving, recipient review and print preview.",
+        "Settings and reconciliation; bank authorization and owner-account validation remain unresolved."
+      ]
+    },
+    "de": {
+      "first-use": [
+        "Vorführung der nativen Oberfläche; keine persönliche Banksitzung.",
+        "Datenschutz und Sprachauswahl sind zugänglich; die gezeigte Auswahl ist Spanisch.",
+        "Das Öffnen der Bedingungen ist keine Zustimmung: Sie erfolgt ausdrücklich.",
+        "Die Vorführung belegt weder Bankgenehmigung noch aktuelle Kompatibilität."
+      ],
+      "login": [
+        "Native Banking-Oberfläche mit fiktiven Daten und simulierten Antworten.",
+        "Die Aufzeichnung verwendet eine simulierte biometrische Freigabe für gespeicherten Zugang.",
+        "Speichern und Entsperren der Zugangsdaten sind von der Bankfreigabe getrennt.",
+        "Die einfache Demo enthält weder Bankanmeldung noch diese Biometriesimulation."
+      ],
+      "verification": [
+        "Native Banking-Oberfläche mit fiktiven Daten und simulierten Antworten.",
+        "Sicherheitsfrage und Token behalten getrennte Eingabefelder.",
+        "Ein nicht freigegebenes Gerät sperrt den Zugang; Passwortänderungen benötigen Bestätigung.",
+        "Diese erweiterten Verifizierungsabläufe sind nicht in der einfachen Demo enthalten."
+      ],
+      "accounts": [
+        "Offline-Simulation: Alle Konten und Salden sind fiktiv.",
+        "Das Ein- und Ausblenden von Salden zeigt den Schutz angezeigter Beträge.",
+        "DOP/USD und Kontodetails; Pfeile zeigen die Wischrichtung.",
+        "Diese Konten sind in der einfachen Demo enthalten; Bankkompatibilität belegen sie nicht."
+      ],
+      "history": [
+        "Simulierte Banking-Oberfläche und Offline-Demo; alle Daten sind fiktiv.",
+        "Der Verlauf bietet Kontonummernanzeige, Suche und Filter für Ein- und Ausgänge.",
+        "Die fiktive Demo-CSV öffnet die Android-Teilen-Auswahl; keine Empfänger-App wird gewählt.",
+        "Die einfache Demo bietet Verlauf, Suche und CSV; der erweiterte Bankverlauf ist simuliert."
+      ],
+      "statements": [
+        "Simulierte Banking-Oberfläche; das PDF wurde nur zur Vorführung erstellt.",
+        "Die Ansicht bietet Seiten, Vergrößerung und ausdrückliches Teilen des künstlich erstellten PDFs.",
+        "Das Speichern ausgewählter Zeiträume wartet auf einen Ordner; das Testziel ist simuliert.",
+        "Kontoauszüge fehlen in der einfachen Demo; Bankkompatibilität ist ungeprüft."
+      ],
+      "transfers": [
+        "Offline-Überweisung und simulierte Bankauswahl; ausschließlich fiktive Daten.",
+        "Die Demo simuliert eigene, bankinterne und bankübergreifende Überweisungen mit Testcode und lokalen Belegen.",
+        "Ein anderes Szenario sucht und wählt einen Empfänger, ohne eine Überweisung zu senden.",
+        "Die einfache Demo enthält nicht alle diese erweiterten Banking-Schritte."
+      ],
+      "payments": [
+        "Demo-Zahlung und simulierte Bankverifizierung; ausschließlich fiktive Daten.",
+        "Die Dienstleistungszahlung in der Demo erfordert Prüfung und Testcode.",
+        "Das erweiterte Szenario behält die Prüfung bei und wartet auf ausdrückliche SMS-Verifizierung.",
+        "Die einfache Demo enthält keine erweiterte Bankverifizierung; es wurde kein echtes Geld gezahlt."
+      ],
+      "beneficiaries": [
+        "Native Banking-Oberfläche mit fiktiven Daten und simulierten Antworten.",
+        "Ein Code kann Empfängerdaten ausfüllen, ohne den Empfänger zu speichern.",
+        "Die Demo speichert einen fiktiven Empfänger; die simulierte Empfängerlöschung bei der Bank verlangt Bestätigungen.",
+        "Die Demo verwaltet fiktive Empfänger; diese erweiterten Bankschritte sind simuliert."
+      ],
+      "cards": [
+        "Native Banking-Oberfläche mit fiktiven Karten und simulierten Antworten.",
+        "Änderungen der Kartennutzung benötigen Prüfung und Verifizierung.",
+        "Verlust, Diebstahl und Reise haben eigene Szenarien mit ausdrücklicher Bestätigung.",
+        "Die einfache Demo enthält diese Kontrollen nicht; ihre Bankverfügbarkeit ist ungeprüft."
+      ],
+      "token": [
+        "Native Banking-Oberfläche mit fiktivem Token und simulierten Antworten.",
+        "Vertrag und Zustimmung gehen Registrierung und Freigabeprüfung voraus.",
+        "Die simulierte Freigabe geht der Codeanzeige voraus; das Trennen erfordert Bestätigung.",
+        "Die einfache Demo erzeugt keine Banktoken; Genehmigung und Validierung sind ungeklärt."
+      ],
+      "qr": [
+        "Native Oberfläche mit fiktiven QR-Anforderungen und Testantworten.",
+        "Beim Speichern wird ein Ziel gewählt; nach Abbruch ist ein neuer Versuch möglich.",
+        "Ein anderes Szenario prüft die Anforderung; Drucken öffnet die Android-Druckvorschau.",
+        "Ein QR autorisiert keine Zahlung; der erweiterte Rundgang definiert keine Demo-Funktionsliste."
+      ],
+      "settings": [
+        "Demo-Einstellungen und simulierter Bankabgleich; ausschließlich fiktive Daten.",
+        "Die Demo zeigt Profil, Sicherheit, Hilfe und Abmeldung der Testsitzung.",
+        "Ein Abgleich braucht geladenen Verlauf und neue Bestätigung; er wiederholt keine Zahlung.",
+        "Der Bankabgleich fehlt in der einfachen Demo; Genehmigung und Validierung bleiben ungeklärt."
+      ],
+      "overview": [
+        "Fiktiver nativer Rundgang: Unabhängigkeitshinweis, Datenschutz, Zustimmung und Sprachauswahl Spanisch.",
+        "Gespeicherter Zugang mit simulierter biometrischer Freigabe; die einfache Demo benötigt keine Bankzugangsdaten.",
+        "Sicherheitsfrage, Token, Gerätefreigabe und notwendige Passwortänderung: simulierte Prüfungen.",
+        "Offline-Demo: fiktive Konten, DOP/USD, ausgeblendete Salden und Pfeile für die Wischrichtung.",
+        "Simulierter Bankverlauf: Suche und Filter; die Demo teilt eine fiktive CSV über Android.",
+        "Künstlich erstelltes PDF: Seiten, Vergrößerung, Teilen und Auswahl speichern mit simuliertem Ordner.",
+        "Demo: eigene, bankinterne und bankübergreifende Überweisungen; simulierte erweiterte Empfängerauswahl.",
+        "Demo-Dienstleistungszahlung und Prüfung mit simulierter SMS-Verifizierung.",
+        "Empfängerdaten aus einem Code, simulierte Löschung bei der Bank und Speichern eines fiktiven Demo-Begünstigten.",
+        "Kartenkontrollen, Verlust, Diebstahl und Reise in simulierten Bankszenarien.",
+        "Simulierter Token BSC: Vertrag, Zustimmung, Freigabe, Code und Aufhebung der Verknüpfung.",
+        "Fiktive QR-Anforderung: Speichern, Empfängerprüfung und Druckvorschau.",
+        "Einstellungen und Abgleich; Bankgenehmigung und Prüfung mit einem Konto des Inhabers sind weiterhin ungeklärt."
+      ]
+    },
+    "fr": {
+      "first-use": [
+        "Démonstration de l’interface native ; aucune session bancaire personnelle.",
+        "La confidentialité et le sélecteur de langue sont accessibles ; le choix montré est l’espagnol.",
+        "Ouvrir les conditions ne les accepte pas : l’accord est explicite.",
+        "La démonstration n’établit ni autorisation bancaire ni compatibilité actuelle."
+      ],
+      "login": [
+        "Interface bancaire native avec données fictives et réponses simulées.",
+        "L’accès mémorisé utilise une approbation biométrique simulée dans cet enregistrement.",
+        "Enregistrer et déverrouiller les identifiants sont distincts de l’approbation bancaire.",
+        "La démo de base ne comprend ni connexion bancaire ni cette simulation biométrique."
+      ],
+      "verification": [
+        "Interface bancaire native avec données fictives et réponses simulées.",
+        "La question de sécurité et le jeton conservent des champs distincts.",
+        "Un appareil non approuvé bloque l’accès ; changer le mot de passe exige confirmation.",
+        "Ces vérifications avancées ne sont pas incluses dans la démo de base."
+      ],
+      "accounts": [
+        "Simulation hors ligne : tous les comptes et soldes sont fictifs.",
+        "Masquer ou afficher les soldes permet d’explorer la confidentialité des montants.",
+        "DOP/USD et détails du compte ; les flèches indiquent le sens du défilement tactile.",
+        "Ces comptes sont dans la démo de base ; ils ne prouvent pas la compatibilité bancaire."
+      ],
+      "history": [
+        "Interface bancaire simulée et démo hors ligne ; toutes les données sont fictives.",
+        "L’historique offre affichage du compte, recherche et filtres des entrées et sorties.",
+        "Le CSV fictif de la démo ouvre le partage Android ; aucune application destinataire n’est choisie.",
+        "La démo de base offre historique, recherche et CSV ; l’historique bancaire avancé est simulé."
+      ],
+      "statements": [
+        "Interface bancaire simulée ; le PDF a été créé uniquement pour la démonstration.",
+        "Le lecteur propose pages, agrandissement et partage explicite du PDF synthétique.",
+        "Enregistrer la sélection attend un dossier ; la destination de ce test est simulée.",
+        "Les relevés sont absents de la démo de base ; la compatibilité bancaire reste à valider."
+      ],
+      "transfers": [
+        "Virement hors ligne et sélection bancaire simulée ; données fictives uniquement.",
+        "La démo simule des virements entre comptes, vers la même banque ou une autre, avec code de test et reçus locaux.",
+        "Un autre scénario recherche et sélectionne un destinataire sans envoyer de virement.",
+        "La démo de base ne comprend pas toutes ces étapes bancaires avancées."
+      ],
+      "payments": [
+        "Paiement de démo et vérification bancaire simulée ; données fictives uniquement.",
+        "Le paiement de service en démo exige une révision et le code de test.",
+        "Le scénario avancé conserve la révision et attend la vérification SMS explicite.",
+        "La démo de base n’a pas cette vérification avancée ; aucun argent réel n’a été payé."
+      ],
+      "beneficiaries": [
+        "Interface bancaire native avec données fictives et réponses simulées.",
+        "Un code peut remplir les coordonnées sans enregistrer le destinataire.",
+        "La démo enregistre un destinataire fictif ; la suppression bancaire simulée exige des confirmations.",
+        "La démo gère des destinataires fictifs ; ces étapes bancaires avancées sont simulées."
+      ],
+      "cards": [
+        "Interface bancaire native avec cartes fictives et réponses simulées.",
+        "Modifier l’utilisation d’une carte exige révision et vérification du changement.",
+        "Perte, vol et voyage ont des scénarios distincts et une confirmation explicite.",
+        "La démo de base n’a pas ces contrôles ; leur disponibilité bancaire n’est pas validée."
+      ],
+      "token": [
+        "Interface bancaire native avec jeton fictif et réponses simulées.",
+        "Le contrat et le consentement précèdent l’inscription et le contrôle d’approbation.",
+        "L’approbation simulée précède le code ; la dissociation exige confirmation.",
+        "La démo de base ne génère aucun jeton bancaire ; autorisation et validation restent en suspens."
+      ],
+      "qr": [
+        "Interface native avec demandes QR fictives et réponses de test.",
+        "L’enregistrement utilise une destination choisie ; l’annulation permet de réessayer.",
+        "Un autre scénario vérifie la demande ; imprimer ouvre l’aperçu Android.",
+        "Un QR n’autorise pas de paiement ; ce parcours avancé ne définit pas les fonctions de la démo."
+      ],
+      "settings": [
+        "Réglages de démo et rapprochement bancaire simulé ; données fictives uniquement.",
+        "La démo parcourt profil, sécurité, aide et déconnexion de la session de test.",
+        "Le rapprochement exige historique chargé et nouvelle confirmation ; il ne répète aucun paiement.",
+        "Le rapprochement bancaire est absent de la démo de base ; autorisation et validation restent en suspens."
+      ],
+      "overview": [
+        "Parcours natif fictif : indépendance, confidentialité, acceptation des conditions et choix de l’espagnol.",
+        "Accès mémorisé avec approbation biométrique simulée ; la démo de base ne demande aucun identifiant bancaire.",
+        "Question de sécurité, jeton, approbation de l’appareil et changement de mot de passe requis : contrôles simulés.",
+        "Démo hors ligne : comptes fictifs, DOP/USD, masquage des soldes et flèches de défilement tactile.",
+        "Historique bancaire simulé : recherche et filtres ; la démo partage un CSV fictif via Android.",
+        "PDF synthétique : pages, agrandissement, partage et enregistrement d’une sélection dans un dossier simulé.",
+        "Démo : virements entre comptes, même banque et autre banque ; sélection bancaire avancée simulée.",
+        "Paiement de service en démo et révision avec vérification SMS simulée.",
+        "Destinataire depuis un code, suppression bancaire simulée et enregistrement d’un bénéficiaire fictif en démo.",
+        "Contrôles de carte, perte, vol et voyage dans des scénarios bancaires simulés.",
+        "Token BSC simulé : contrat, consentement, approbation, code et dissociation.",
+        "Demande QR fictive : enregistrement, vérification du destinataire et aperçu d’impression.",
+        "Réglages et rapprochement ; l’autorisation de la banque et la validation avec le compte de son titulaire restent en suspens."
+      ]
+    },
+    "ru": {
+      "first-use": [
+        "Показ нативного интерфейса; без личного банковского сеанса.",
+        "Доступны конфиденциальность и выбор языка; на записи выбран испанский.",
+        "Открытие условий не означает их принятия: требуется явное согласие.",
+        "Показ не подтверждает разрешение банка или текущую совместимость."
+      ],
+      "login": [
+        "Нативный банковский интерфейс с вымышленными данными и имитацией ответов.",
+        "На записи биометрическое одобрение сохранённого доступа имитируется.",
+        "Сохранение и разблокировка учётных данных не равны одобрению банка.",
+        "Базовая демоверсия не включает банковский вход или эту имитацию биометрии."
+      ],
+      "verification": [
+        "Нативный банковский интерфейс с вымышленными данными и имитацией ответов.",
+        "Для секретного вопроса и токена предусмотрены отдельные поля.",
+        "Неодобренное устройство блокирует доступ; смена пароля требует подтверждения.",
+        "Эти расширенные проверки не входят в базовую демоверсию."
+      ],
+      "accounts": [
+        "Имитация без подключения к банку: все счета и остатки вымышлены.",
+        "Скрывайте или показывайте остатки для проверки конфиденциальности сумм.",
+        "DOP/USD и сведения о счёте; стрелки показывают направление свайпов.",
+        "Эти счета есть в базовой демоверсии; совместимость с банком они не подтверждают."
+      ],
+      "history": [
+        "Имитация банковского интерфейса и демоверсия без банка; все данные вымышлены.",
+        "История позволяет показать номер счёта, искать и фильтровать поступления и списания.",
+        "Вымышленный CSV из демоверсии открывает меню отправки Android; приложение-получатель не выбирается.",
+        "В базовой демоверсии есть история, поиск и CSV; расширенная банковская история имитируется."
+      ],
+      "statements": [
+        "Имитация банковского интерфейса; PDF создан только для показа.",
+        "Просмотр предлагает страницы, масштаб и явную отправку искусственно созданного PDF.",
+        "Сохранение выбранных периодов ждёт папку; место назначения в тесте имитируется.",
+        "Выписок нет в базовой демоверсии; совместимость с банком не проверена."
+      ],
+      "transfers": [
+        "Перевод без банка и имитация банковского выбора; только вымышленные данные.",
+        "Демоверсия имитирует переводы между своими счетами, в тот же и другие банки с тестовым кодом и локальными квитанциями.",
+        "Другой сценарий ищет и выбирает получателя, но не отправляет перевод.",
+        "Базовая демоверсия не включает все эти расширенные банковские шаги."
+      ],
+      "payments": [
+        "Демонстрационный платёж и имитация банковской проверки; данные вымышлены.",
+        "Оплата услуги в демоверсии требует проверки и тестового кода.",
+        "Расширенный сценарий сохраняет проверку и ждёт явного подтверждения SMS.",
+        "В базовой демоверсии нет расширенной банковской проверки; реальные деньги не списывались."
+      ],
+      "beneficiaries": [
+        "Нативный банковский интерфейс с вымышленными данными и имитацией ответов.",
+        "Код может заполнить данные, не сохраняя получателя.",
+        "Демоверсия сохраняет вымышленного получателя; имитация удаления в банке требует подтверждений.",
+        "Демоверсия управляет вымышленными получателями; расширенные банковские шаги имитируются."
+      ],
+      "cards": [
+        "Нативный банковский интерфейс с вымышленными картами и имитацией ответов.",
+        "Изменение использования карты требует проверки и подтверждения изменения.",
+        "Потеря, кража и поездка имеют отдельные сценарии с явным подтверждением.",
+        "В базовой демоверсии этих настроек нет; их доступность в банке не проверена."
+      ],
+      "token": [
+        "Нативный банковский интерфейс с вымышленным токеном и имитацией ответов.",
+        "Договор и согласие предшествуют подключению и проверке одобрения.",
+        "Имитация одобрения предшествует показу кода; отключение требует подтверждения.",
+        "Базовая демоверсия не создаёт банковских токенов; разрешение и проверка остаются нерешёнными."
+      ],
+      "qr": [
+        "Нативный интерфейс с вымышленными QR-запросами и тестовыми ответами.",
+        "Сохранение использует выбранное место; после отмены можно повторить попытку.",
+        "Другой сценарий проверяет запрос; печать открывает системный просмотр Android.",
+        "QR не авторизует платёж; расширенный обзор не определяет функции базовой демоверсии."
+      ],
+      "settings": [
+        "Настройки демоверсии и имитация банковской сверки; данные вымышлены.",
+        "Демоверсия показывает профиль, безопасность, помощь и выход из тестового сеанса.",
+        "Сверка требует загруженной истории и нового подтверждения; она не повторяет платёж.",
+        "Банковской сверки нет в базовой демоверсии; разрешение и проверка остаются нерешёнными."
+      ],
+      "overview": [
+        "Вымышленный нативный обзор: независимость, конфиденциальность, принятие условий и выбор испанского языка.",
+        "Сохранённый вход с имитацией биометрического одобрения; базовой демоверсии банковские учётные данные не нужны.",
+        "Секретный вопрос, токен, одобрение устройства и обязательная смена пароля: имитация проверок.",
+        "Демоверсия без банка: вымышленные счета, DOP/USD, скрытие остатков и стрелки направления свайпов.",
+        "Имитация банковской истории: поиск и фильтры; демоверсия отправляет вымышленный CSV через меню Android.",
+        "Искусственный PDF: страницы, масштаб, отправка и сохранение выбранных периодов в имитируемую папку.",
+        "Демоверсия: переводы между своими счетами, в тот же и другие банки; имитация расширенного выбора получателя.",
+        "Оплата услуги в демоверсии и проверка с имитацией SMS-подтверждения.",
+        "Получатель из кода, имитация удаления в банке и сохранение вымышленного получателя в демоверсии.",
+        "Настройки карт, потеря, кража и поездка в имитации банковских сценариев.",
+        "Имитация Token BSC: договор, согласие, одобрение, код и отключение.",
+        "Вымышленный QR-запрос: сохранение, проверка получателя и предварительный просмотр печати.",
+        "Настройки и сверка; разрешение банка и проверка со счётом его владельца остаются открытыми вопросами."
+      ]
+    },
+    "uk": {
+      "first-use": [
+        "Показ нативного інтерфейсу; без особистого банківського сеансу.",
+        "Доступні конфіденційність і вибір мови; на записі вибрано іспанську.",
+        "Відкриття умов не означає їх прийняття: потрібна явна згода.",
+        "Показ не підтверджує дозволу банку чи поточної сумісності."
+      ],
+      "login": [
+        "Нативний банківський інтерфейс із вигаданими даними й імітацією відповідей.",
+        "На записі біометричне схвалення збереженого доступу імітується.",
+        "Збереження й розблокування облікових даних не дорівнюють схваленню банку.",
+        "Базова демоверсія не містить банківського входу чи цієї імітації біометрії."
+      ],
+      "verification": [
+        "Нативний банківський інтерфейс із вигаданими даними й імітацією відповідей.",
+        "Для таємного запитання й токена передбачено окремі поля.",
+        "Несхвалений пристрій блокує доступ; зміна пароля потребує підтвердження.",
+        "Ці розширені перевірки не входять до базової демоверсії."
+      ],
+      "accounts": [
+        "Імітація без підключення до банку: усі рахунки й залишки вигадані.",
+        "Приховуйте чи показуйте залишки для перевірки конфіденційності сум.",
+        "DOP/USD і відомості про рахунок; стрілки показують напрямок свайпів.",
+        "Ці рахунки є в базовій демоверсії; сумісність із банком вони не підтверджують."
+      ],
+      "history": [
+        "Імітація банківського інтерфейсу й демоверсія без банку; усі дані вигадані.",
+        "Історія дає змогу показати номер рахунку, шукати й фільтрувати надходження та списання.",
+        "Вигаданий CSV із демоверсії відкриває меню надсилання Android; застосунок-одержувач не вибирається.",
+        "У базовій демоверсії є історія, пошук і CSV; розширена банківська історія імітується."
+      ],
+      "statements": [
+        "Імітація банківського інтерфейсу; PDF створено лише для показу.",
+        "Перегляд пропонує сторінки, масштаб і явне надсилання штучно створеного PDF.",
+        "Збереження вибраних періодів чекає на папку; місце призначення в тесті імітується.",
+        "Виписок немає в базовій демоверсії; сумісність із банком не перевірена."
+      ],
+      "transfers": [
+        "Переказ без банку й імітація банківського вибору; лише вигадані дані.",
+        "Демоверсія імітує перекази між власними рахунками, у той самий та інші банки з тестовим кодом і локальними квитанціями.",
+        "Інший сценарій шукає й вибирає одержувача, але не надсилає переказ.",
+        "Базова демоверсія не містить усіх цих розширених банківських кроків."
+      ],
+      "payments": [
+        "Демонстраційний платіж та імітація банківської перевірки; дані вигадані.",
+        "Оплата послуги в демоверсії потребує перевірки й тестового коду.",
+        "Розширений сценарій зберігає перевірку й чекає явного підтвердження SMS.",
+        "У базовій демоверсії немає розширеної банківської перевірки; реальні гроші не списувалися."
+      ],
+      "beneficiaries": [
+        "Нативний банківський інтерфейс із вигаданими даними й імітацією відповідей.",
+        "Код може заповнити дані, не зберігаючи одержувача.",
+        "Демоверсія зберігає вигаданого одержувача; імітація видалення в банку потребує підтверджень.",
+        "Демоверсія керує вигаданими одержувачами; розширені банківські кроки імітуються."
+      ],
+      "cards": [
+        "Нативний банківський інтерфейс із вигаданими картками й імітацією відповідей.",
+        "Зміна використання картки потребує перевірки й підтвердження зміни.",
+        "Втрата, крадіжка й подорож мають окремі сценарії з явним підтвердженням.",
+        "У базовій демоверсії цих налаштувань немає; їхня доступність у банку не перевірена."
+      ],
+      "token": [
+        "Нативний банківський інтерфейс із вигаданим токеном та імітацією відповідей.",
+        "Договір і згода передують підключенню та перевірці схвалення.",
+        "Імітація схвалення передує показу коду; від’єднання потребує підтвердження.",
+        "Базова демоверсія не створює банківських токенів; дозвіл і перевірка залишаються невирішеними."
+      ],
+      "qr": [
+        "Нативний інтерфейс із вигаданими QR-запитами й тестовими відповідями.",
+        "Збереження використовує вибране місце; після скасування можна спробувати знову.",
+        "Інший сценарій перевіряє запит; друк відкриває системний перегляд Android.",
+        "QR не авторизує платіж; розширений огляд не визначає функції базової демоверсії."
+      ],
+      "settings": [
+        "Налаштування демоверсії та імітація банківської звірки; дані вигадані.",
+        "Демоверсія показує профіль, безпеку, допомогу й вихід із тестового сеансу.",
+        "Звірка потребує завантаженої історії й нового підтвердження; вона не повторює платіж.",
+        "Банківської звірки немає в базовій демоверсії; дозвіл і перевірка залишаються невирішеними."
+      ],
+      "overview": [
+        "Вигаданий нативний огляд: незалежність, конфіденційність, прийняття умов і вибір іспанської мови.",
+        "Збережений вхід з імітацією біометричного схвалення; базовій демоверсії банківські облікові дані не потрібні.",
+        "Таємне запитання, токен, схвалення пристрою й обов’язкова зміна пароля: імітація перевірок.",
+        "Демоверсія без банку: вигадані рахунки, DOP/USD, приховування залишків і стрілки напрямку свайпів.",
+        "Імітація банківської історії: пошук і фільтри; демоверсія надсилає вигаданий CSV через меню Android.",
+        "Штучний PDF: сторінки, масштаб, надсилання та збереження вибраних періодів в імітовану папку.",
+        "Демоверсія: перекази між власними рахунками, у той самий та інші банки; імітація розширеного вибору одержувача.",
+        "Оплата послуги в демоверсії та перевірка з імітацією SMS-підтвердження.",
+        "Одержувач із коду, імітація видалення в банку й збереження вигаданого одержувача в демоверсії.",
+        "Налаштування карток, втрата, крадіжка й подорож в імітації банківських сценаріїв.",
+        "Імітація Token BSC: договір, згода, схвалення, код і від’єднання.",
+        "Вигаданий QR-запит: збереження, перевірка одержувача й попередній перегляд друку.",
+        "Налаштування та звірка; дозвіл банку й перевірка з рахунком його власника залишаються відкритими питаннями."
+      ]
+    },
+    "pt": {
+      "first-use": [
+        "Demonstração da interface nativa; sem sessão bancária pessoal.",
+        "A privacidade e o seletor de idioma estão disponíveis; a seleção mostrada é espanhol.",
+        "Abrir os termos não significa aceitá-los: a aceitação é expressa.",
+        "A demonstração não comprova autorização do banco nem compatibilidade atual."
+      ],
+      "login": [
+        "Interface bancária nativa com dados fictícios e respostas simuladas.",
+        "O acesso lembrado usa aprovação biométrica simulada nesta gravação.",
+        "Salvar e desbloquear credenciais são passos distintos da aprovação bancária.",
+        "A demonstração básica não inclui acesso bancário nem esta simulação biométrica."
+      ],
+      "verification": [
+        "Interface bancária nativa com dados fictícios e respostas simuladas.",
+        "A pergunta de segurança e o token mantêm campos separados.",
+        "Um dispositivo não aprovado bloqueia o acesso; a troca de senha exige confirmação.",
+        "Essas verificações avançadas não estão incluídas na demonstração básica."
+      ],
+      "accounts": [
+        "Simulação offline: todas as contas e os saldos são fictícios.",
+        "Oculte ou mostre saldos para explorar a privacidade dos valores.",
+        "DOP/USD e detalhes da conta; as setas indicam a direção dos deslizamentos.",
+        "Essas contas estão na demonstração básica; não comprovam compatibilidade bancária."
+      ],
+      "history": [
+        "Interface bancária simulada e demonstração offline; todos os dados são fictícios.",
+        "O histórico permite revelar a conta, pesquisar e filtrar entradas e saídas.",
+        "O CSV fictício da demonstração abre o compartilhamento do Android; nenhum aplicativo destinatário é escolhido.",
+        "A demonstração básica tem histórico, pesquisa e CSV; o histórico bancário avançado é simulado."
+      ],
+      "statements": [
+        "Interface bancária simulada; o PDF foi criado apenas para a demonstração.",
+        "O visualizador oferece páginas, ampliação e uma ação explícita para compartilhar o PDF sintético.",
+        "Salvar a seleção aguarda uma pasta; o destino deste teste é simulado.",
+        "Os extratos não estão na demonstração básica; a compatibilidade bancária não foi validada."
+      ],
+      "transfers": [
+        "Transferência offline e seleção bancária simulada; apenas dados fictícios.",
+        "A demonstração simula transferências próprias, para o mesmo banco e outros bancos, com código de teste e comprovantes locais.",
+        "Outro cenário pesquisa e seleciona um destinatário, sem enviar transferência.",
+        "A demonstração básica não inclui todos esses passos bancários avançados."
+      ],
+      "payments": [
+        "Pagamento de demonstração e verificação bancária simulada; apenas dados fictícios.",
+        "O pagamento de serviço na demonstração exige revisão e o código de teste.",
+        "O cenário avançado mantém a revisão e aguarda a verificação expressa do SMS.",
+        "A demonstração básica não tem verificação bancária avançada; não houve pagamento real."
+      ],
+      "beneficiaries": [
+        "Interface bancária nativa com dados fictícios e respostas simuladas.",
+        "Um código pode preencher dados sem salvar o destinatário.",
+        "A demonstração salva um destinatário fictício; excluir um beneficiário bancário simulado exige confirmações.",
+        "A demonstração gerencia destinatários fictícios; esses passos bancários avançados são simulados."
+      ],
+      "cards": [
+        "Interface bancária nativa com cartões fictícios e respostas simuladas.",
+        "Alterar o uso de um cartão exige revisão e verificação da mudança.",
+        "Perda, roubo e viagem têm cenários separados e confirmação expressa.",
+        "A demonstração básica não inclui esses controles; a disponibilidade bancária não foi validada."
+      ],
+      "token": [
+        "Interface bancária nativa com token fictício e respostas simuladas.",
+        "O contrato e o consentimento vêm antes da inscrição e da consulta de aprovação.",
+        "A aprovação simulada vem antes do código; desvincular exige confirmação.",
+        "A demonstração básica não gera tokens bancários; autorização e validação seguem pendentes."
+      ],
+      "qr": [
+        "Interface nativa com solicitações QR fictícias e respostas de teste.",
+        "Salvar usa um destino escolhido; cancelar permite tentar novamente.",
+        "Outro cenário revisa a solicitação; imprimir abre a visualização do Android.",
+        "Um QR não autoriza pagamentos; este passeio avançado não define as funções da demonstração básica."
+      ],
+      "settings": [
+        "Configurações de demonstração e conciliação bancária simulada; apenas dados fictícios.",
+        "A demonstração percorre perfil, segurança, ajuda e encerramento da sessão de teste.",
+        "A conciliação exige histórico carregado e nova confirmação; não repete o pagamento.",
+        "A conciliação bancária não está na demonstração básica; autorização e validação seguem pendentes."
+      ],
+      "overview": [
+        "Passeio nativo fictício: independência, privacidade, aceitação dos termos e seletor em espanhol.",
+        "Acesso salvo com aprovação biométrica simulada; a demonstração básica não precisa de credenciais bancárias.",
+        "Pergunta de segurança, token, aprovação do dispositivo e troca de senha exigida: verificações simuladas.",
+        "Demonstração offline: contas fictícias, DOP/USD, privacidade dos saldos e setas de deslizamento.",
+        "Histórico bancário simulado: pesquisa e filtros; a demonstração compartilha um CSV fictício pelo Android.",
+        "PDF sintético: páginas, ampliação, compartilhamento e salvamento de seleção com pasta simulada.",
+        "Demonstração: transferências próprias, mesmo banco e outros bancos; seleção bancária avançada simulada.",
+        "Pagamento de serviço na demonstração e revisão com verificação SMS simulada.",
+        "Destinatário a partir de código, exclusão bancária simulada e salvamento de beneficiário fictício na demonstração.",
+        "Controles de cartão, perda, roubo e viagem em cenários bancários simulados.",
+        "Token BSC simulado: contrato, consentimento, aprovação, código e desvinculação.",
+        "Solicitação QR fictícia: salvamento, revisão do destinatário e visualização de impressão.",
+        "Configurações e conciliação; a autorização do banco e a validação com a conta de seu titular continuam pendentes."
+      ]
+    }
+  }
+}
