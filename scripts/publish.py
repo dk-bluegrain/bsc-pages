@@ -18,7 +18,7 @@ if status:raise SystemExit('Commit verified website sources and docs before publ
 downloads=json.loads((ROOT/'src/downloads.json').read_text());assets=[]
 for data in downloads.values():
  path=a.apk_directory/data['filename'];assert hashlib.sha256(path.read_bytes()).hexdigest()==data['sha256'];assets.append(str(path.resolve()))
-checksums=a.apk_directory/'SHA256SUMS';assert checksums.is_file();assets.append(str(checksums.resolve()))
+checksums=a.apk_directory/'SHA256SUMS';assert checksums.is_file();assets.append(str(checksums.resolve()));assets.append(str(ROOT/'RELEASE-NOTES.md'))
 release=subprocess.run(['gh','release','view',TAG,'--repo',REPO,'--json','assets,url'],capture_output=True,text=True)
 if release.returncode:
  subprocess.run(['gh','release','create',TAG,*assets,'--repo',REPO,'--target','main','--prerelease','--title','Santa Cruz Modern 1.11.0 — independent preview','--notes-file',str(ROOT/'RELEASE-NOTES.md')],check=True)

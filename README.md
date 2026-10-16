@@ -98,12 +98,14 @@ review do not certify linguistic correctness or actual bank compatibility.
 
 1. Build and verify signed APKs in the private source using its retained
    distribution key. Keep version, tag, filenames and checksums consistent.
-2. Update `VERSION`/`TAG` in `scripts/build.py`, release notes and site copy.
+2. Update version/tag metadata, output filenames and pinned source commit in
+   the private build script and website build/media/publication scripts; update
+   release notes and site copy together.
 3. Generate/review native media, then build and run static/browser checks.
 4. Push website source and generated `docs/` to `main`. For the first publication,
    enable Pages only after release assets exist. For later updates, publish
    release assets before pushing new download links.
-5. Publish the versioned APKs, `SHA256SUMS` and release notes as Release assets.
+5. Publish the versioned APKs, `SHA256SUMS` and `RELEASE-NOTES.md` as Release assets.
    The initial release is `v1.11.0-preview.1`.
 6. Configure GitHub Pages branch deployment to `main:/docs` (build type legacy).
    Verify anonymous page/media/privacy/download access and compare downloaded
@@ -116,6 +118,7 @@ gh release create v1.11.0-preview.1 \
   /absolute/private-source/distribution/santa-cruz-modern-1.11.0-demo.apk \
   /absolute/private-source/distribution/santa-cruz-modern-1.11.0-live.apk \
   /absolute/private-source/distribution/SHA256SUMS \
+  RELEASE-NOTES.md \
   --repo dk-bluegrain/bsc-pages --prerelease \
   --title 'Santa Cruz Modern 1.11.0 — independent preview' \
   --notes-file RELEASE-NOTES.md
