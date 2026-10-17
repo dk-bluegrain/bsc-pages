@@ -1,45 +1,9 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:10.544
+00:00:00.250 --> 00:00:07.786
 Simulierte Bank: Sicherheitsfrage und SMS bleiben getrennt; automatisches Ausfüllen behält Prüfen bei.
 
 2
-00:00:10.594 --> 00:00:13.849
-Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
-
-3
-00:00:13.899 --> 00:00:19.603
-Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
-
-4
-00:00:19.653 --> 00:00:24.445
-Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
-
-5
-00:00:24.495 --> 00:00:32.445
-Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
-
-6
-00:00:32.495 --> 00:00:38.817
-Simulierte Bank: Sicherheitsfrage und SMS bleiben getrennt; automatisches Ausfüllen behält Prüfen bei.
-
-7
-00:00:38.867 --> 00:00:44.093
-Simulierte Geräteregistrierung und neue biometrische Anmeldung in der App; keine stille Passwortwiederverwendung.
-
-8
-00:00:44.143 --> 00:00:50.093
-Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
-
-9
-00:00:50.143 --> 00:01:02.299
-Simulierte Geräteregistrierung und neue biometrische Anmeldung in der App; keine stille Passwortwiederverwendung.
-
-10
-00:01:02.349 --> 00:01:08.299
-Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
-
-11
-00:01:08.349 --> 00:01:15.083
+00:00:29.367 --> 00:00:37.047
 Simulierte Geräteregistrierung und neue biometrische Anmeldung in der App; keine stille Passwortwiederverwendung.

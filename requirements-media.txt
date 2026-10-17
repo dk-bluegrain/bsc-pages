@@ -1,0 +1,2 @@
+# Optional generation dependency; deployed pages use only self-hosted media.
+edge-tts==7.3.1

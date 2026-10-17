@@ -1,109 +1,17 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.502
+00:00:00.250 --> 00:00:08.074
 Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
 
 2
-00:00:05.552 --> 00:00:15.502
-Optional assistance uses Android consent for one message, not inbox access. Keyboard autofill still waits for Verify.
-
-3
-00:00:15.552 --> 00:00:21.957
-Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
-
-4
-00:00:22.007 --> 00:00:27.957
-SMS assistance is switched off only in this settings scene, then restored on. Keyboard and manual entry remain available.
-
-5
-00:00:28.007 --> 00:00:33.549
-Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
-
-6
-00:00:33.599 --> 00:00:41.549
-SMS assistance is on. Android requests per-message approval; only an approved SMS-only login auto-verifies.
-
-7
-00:00:41.599 --> 00:00:47.328
-Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
-
-8
-00:00:47.378 --> 00:00:53.328
-Ask lets you choose a channel when the bank offers alternatives. It does not change Android autofill.
-
-9
-00:00:53.378 --> 00:00:58.951
-Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
-
-10
-00:00:59.001 --> 00:01:04.951
-Email sets the preferred delivery channel when offered. SMS is restored afterwards for the other walkthroughs.
-
-11
-00:01:05.001 --> 00:01:10.688
-Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
-
-12
-00:01:10.738 --> 00:01:18.688
-SMS is the preferred bank-code delivery channel when offered; this is not a universal autofill switch.
-
-13
-00:01:18.738 --> 00:01:25.150
-Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
-
-14
-00:01:25.200 --> 00:02:39.883
+00:01:02.767 --> 00:01:09.175
 Basic demo: profile, security, help and test-session logout; fictional data only.
 
-15
-00:02:39.933 --> 00:02:56.964
+3
+00:02:04.500 --> 00:02:11.964
 Fake-bank uncertain outcome: history and fresh reconciliation acknowledgement; no repeat or cancellation of the operation.
 
-16
-00:02:57.014 --> 00:03:06.265
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-17
-00:03:06.315 --> 00:03:14.468
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-18
-00:03:14.518 --> 00:03:23.288
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-19
-00:03:23.338 --> 00:03:31.288
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-20
-00:03:31.338 --> 00:03:36.924
-Fake-bank uncertain outcome: history and fresh reconciliation acknowledgement; no repeat or cancellation of the operation.
-
-21
-00:03:36.974 --> 00:03:45.668
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-22
-00:03:45.718 --> 00:03:53.876
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-23
-00:03:53.926 --> 00:04:02.288
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-24
-00:04:02.338 --> 00:04:10.472
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-25
-00:04:10.522 --> 00:04:18.943
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-26
-00:04:18.993 --> 00:04:26.943
-Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
-
-27
-00:04:26.993 --> 00:04:33.350
-Fake-bank uncertain outcome: history and fresh reconciliation acknowledgement; no repeat or cancellation of the operation.
+4
+00:02:17.914 --> 00:02:23.938
+Check history first. Reconciliation neither repeats nor cancels the operation.

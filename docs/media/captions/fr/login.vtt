@@ -1,29 +1,13 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.375
+00:00:00.250 --> 00:00:08.242
 Accord simulé pour un seul message : vérification automatique de la connexion par SMS seul, pas du remplissage du clavier.
 
 2
-00:00:05.425 --> 00:00:08.562
-Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
+00:00:16.634 --> 00:00:23.210
+Déverrouillage biométrique simulé de l’accès mémorisé ; l’approbation bancaire reste une exigence distincte.
 
 3
-00:00:08.612 --> 00:00:12.562
-L’aide SMS est facultative. Android demande l’accord pour un message, sans accès à la boîte SMS ; la saisie manuelle reste possible.
-
-4
-00:00:12.612 --> 00:00:21.817
-Accord simulé pour un seul message : vérification automatique de la connexion par SMS seul, pas du remplissage du clavier.
-
-5
-00:00:21.867 --> 00:00:34.080
-Déverrouillage biométrique simulé de l’accès mémorisé ; l’approbation bancaire reste une exigence distincte.
-
-6
-00:00:34.130 --> 00:00:42.080
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
-
-7
-00:00:42.130 --> 00:00:48.483
-Déverrouillage biométrique simulé de l’accès mémorisé ; l’approbation bancaire reste une exigence distincte.
+00:00:25.497 --> 00:00:29.073
+Un résultat de test, avec des données fictives.

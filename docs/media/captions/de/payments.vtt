@@ -1,85 +1,33 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:30.570
+00:00:00.250 --> 00:00:05.674
 Dienst, Konto und Betrag vor dem Bestätigen und Prüfen der Zahlung im Blick.
 
 2
-00:00:30.620 --> 00:00:38.794
-Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+00:00:25.987 --> 00:00:30.667
+Prüfen Sie die Angaben. Noch ist nichts autorisiert.
 
 3
-00:00:38.844 --> 00:00:46.092
-Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+00:00:42.790 --> 00:00:46.342
+Erst prüfen, dann gesondert bestätigen.
 
 4
-00:00:46.142 --> 00:00:54.307
-Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+00:01:02.270 --> 00:01:05.510
+Ein Testergebnis mit fiktiven Daten.
 
 5
-00:00:54.357 --> 00:01:02.787
-Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+00:01:33.957 --> 00:01:38.637
+Prüfen Sie die Angaben. Noch ist nichts autorisiert.
 
 6
-00:01:02.837 --> 00:01:06.562
-Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+00:01:50.036 --> 00:01:53.588
+Erst prüfen, dann gesondert bestätigen.
 
 7
-00:01:06.612 --> 00:01:09.795
-Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+00:02:05.607 --> 00:02:09.351
+Tastatur-Autofill erfordert weiterhin Prüfen.
 
 8
-00:01:09.845 --> 00:01:15.550
-Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
-
-9
-00:01:15.600 --> 00:01:20.987
-Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
-
-10
-00:01:21.037 --> 00:01:28.987
-Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
-
-11
-00:01:29.037 --> 00:02:00.740
-Dienst, Konto und Betrag vor dem Bestätigen und Prüfen der Zahlung im Blick.
-
-12
-00:02:00.790 --> 00:02:08.962
-Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
-
-13
-00:02:09.012 --> 00:02:15.557
-Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
-
-14
-00:02:15.607 --> 00:02:23.753
-Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
-
-15
-00:02:23.803 --> 00:02:32.259
-Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
-
-16
-00:02:32.309 --> 00:02:35.990
-Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
-
-17
-00:02:36.040 --> 00:02:39.228
-Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
-
-18
-00:02:39.278 --> 00:02:44.990
-Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
-
-19
-00:02:45.040 --> 00:02:50.486
-Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
-
-20
-00:02:50.536 --> 00:02:58.486
-Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
-
-21
-00:02:58.536 --> 00:03:04.883
-Dienst, Konto und Betrag vor dem Bestätigen und Prüfen der Zahlung im Blick.
+00:02:09.865 --> 00:02:13.105
+Ein Testergebnis mit fiktiven Daten.

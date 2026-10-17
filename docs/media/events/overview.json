@@ -10,7 +10,8 @@
       "epochMs": 1792198660886,
       "scenario": 1,
       "file": "screen-003.png",
-      "sourceChapter": "login"
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 0.756
     },
     {
       "type": "screenshot",
@@ -18,7 +19,8 @@
       "epochMs": 1792198660975,
       "scenario": 1,
       "file": "screen-004.png",
-      "sourceChapter": "login"
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 0.845
     },
     {
       "type": "hold",
@@ -26,501 +28,580 @@
       "epochMs": 1792198660975,
       "scenario": 1,
       "cue": "sms-consent",
-      "durationMs": 4000,
-      "sourceChapter": "login"
+      "durationMs": 3067,
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 0.845,
+      "sourceDurationMs": 4000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 4.952,
+      "timeSeconds": 4.019,
       "epochMs": 1792198665082,
       "scenario": 1,
       "file": "screen-005.png",
-      "sourceChapter": "login"
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 4.952
     },
     {
       "type": "sms-autofill",
-      "timeSeconds": 5.213,
+      "timeSeconds": 4.28,
       "epochMs": 1792198665343,
       "scenario": 1,
       "method": "synthetic one-message consent result",
       "manualTyping": false,
-      "sourceChapter": "login"
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 5.213
     },
     {
       "type": "screenshot",
-      "timeSeconds": 5.403,
+      "timeSeconds": 4.47,
       "epochMs": 1792198665533,
       "scenario": 1,
       "file": "screen-006.png",
-      "sourceChapter": "login"
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 5.403
     },
     {
       "type": "hold",
-      "timeSeconds": 5.403,
+      "timeSeconds": 4.47,
       "epochMs": 1792198665533,
       "scenario": 1,
       "cue": "sms-login",
       "durationMs": 2000,
-      "sourceChapter": "login"
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 5.403,
+      "sourceDurationMs": 2000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 7.504,
+      "timeSeconds": 6.571,
       "epochMs": 1792198667634,
       "scenario": 1,
       "file": "screen-007.png",
-      "sourceChapter": "login"
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 7.504
     },
     {
       "type": "screenshot",
-      "timeSeconds": 7.924,
+      "timeSeconds": 6.991,
       "epochMs": 1792198668054,
       "scenario": 1,
       "file": "screen-008.png",
-      "sourceChapter": "login"
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 7.924
     },
     {
       "type": "hold",
-      "timeSeconds": 7.924,
+      "timeSeconds": 6.991,
       "epochMs": 1792198668054,
       "scenario": 1,
       "cue": "read",
-      "durationMs": 6000,
-      "sourceChapter": "login"
+      "durationMs": 4600,
+      "sourceChapter": "login",
+      "sourceTimeSeconds": 7.924,
+      "sourceDurationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 15.957,
+      "timeSeconds": 13.624,
       "epochMs": 1792197849395,
       "scenario": 1,
       "file": "screen-019.png",
-      "sourceChapter": "transfers"
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 15.957
     },
     {
       "type": "sms-autofill",
-      "timeSeconds": 16.0,
+      "timeSeconds": 13.667,
       "epochMs": 1792197849438,
       "scenario": 1,
       "method": "synthetic Android autofill callback",
       "manualTyping": false,
-      "sourceChapter": "transfers"
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 16.0
     },
     {
       "type": "screenshot",
-      "timeSeconds": 16.094,
+      "timeSeconds": 13.761,
       "epochMs": 1792197849532,
       "scenario": 1,
       "file": "screen-020.png",
-      "sourceChapter": "transfers"
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 16.094
     },
     {
       "type": "hold",
-      "timeSeconds": 16.094,
+      "timeSeconds": 13.761,
       "epochMs": 1792197849532,
       "scenario": 1,
       "cue": "sms-filled",
-      "durationMs": 5500,
-      "sourceChapter": "transfers"
+      "durationMs": 4233,
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 16.094,
+      "sourceDurationMs": 5500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 21.716,
+      "timeSeconds": 18.116,
       "epochMs": 1792197855154,
       "scenario": 1,
       "file": "screen-021.png",
-      "sourceChapter": "transfers"
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 21.716
     },
     {
       "type": "screenshot",
-      "timeSeconds": 21.824,
+      "timeSeconds": 18.224,
       "epochMs": 1792197855262,
       "scenario": 1,
       "file": "screen-022.png",
-      "sourceChapter": "transfers"
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 21.824
     },
     {
       "type": "hold",
-      "timeSeconds": 21.825,
+      "timeSeconds": 18.225,
       "epochMs": 1792197855263,
       "scenario": 1,
       "cue": "verify",
-      "durationMs": 5000,
-      "sourceChapter": "transfers"
+      "durationMs": 3800,
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 21.825,
+      "sourceDurationMs": 5000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 26.952,
+      "timeSeconds": 22.152,
       "epochMs": 1792197860390,
       "scenario": 1,
       "file": "screen-023.png",
-      "sourceChapter": "transfers"
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 26.952
     },
     {
       "type": "tap",
-      "timeSeconds": 26.953,
+      "timeSeconds": 22.153,
       "epochMs": 1792197860391,
       "scenario": 1,
       "x": 270.0,
       "y": 1081.5,
-      "sourceChapter": "transfers"
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 26.953
     },
     {
       "type": "screenshot",
-      "timeSeconds": 27.773,
+      "timeSeconds": 22.973,
       "epochMs": 1792197861211,
       "scenario": 1,
       "file": "screen-024.png",
-      "sourceChapter": "transfers"
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 27.773
     },
     {
       "type": "hold",
-      "timeSeconds": 27.774,
+      "timeSeconds": 22.974,
       "epochMs": 1792197861212,
       "scenario": 1,
       "cue": "receipt",
-      "durationMs": 8000,
-      "sourceChapter": "transfers"
+      "durationMs": 5959,
+      "sourceChapter": "transfers",
+      "sourceTimeSeconds": 27.774,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 32.489,
+      "timeSeconds": 25.822,
       "epochMs": 1792198097200,
       "scenario": 3,
       "file": "screen-009.png",
-      "sourceChapter": "first-use"
+      "sourceChapter": "first-use",
+      "sourceTimeSeconds": 32.489
     },
     {
       "type": "tap",
-      "timeSeconds": 34.0,
+      "timeSeconds": 27.333,
       "epochMs": 1792198098711,
       "scenario": 3,
       "x": 270.0,
       "y": 413.25,
-      "sourceChapter": "first-use"
+      "sourceChapter": "first-use",
+      "sourceTimeSeconds": 34.0
     },
     {
       "type": "screenshot",
-      "timeSeconds": 34.385,
+      "timeSeconds": 27.718,
       "epochMs": 1792198099096,
       "scenario": 3,
       "file": "screen-010.png",
-      "sourceChapter": "first-use"
+      "sourceChapter": "first-use",
+      "sourceTimeSeconds": 34.385
     },
     {
       "type": "hold",
-      "timeSeconds": 34.389,
+      "timeSeconds": 27.722,
       "epochMs": 1792198099100,
       "scenario": 3,
       "cue": "read",
-      "durationMs": 5000,
-      "sourceChapter": "first-use"
+      "durationMs": 3800,
+      "sourceChapter": "first-use",
+      "sourceTimeSeconds": 34.389,
+      "sourceDurationMs": 5000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 40.573,
+      "timeSeconds": 32.706,
       "epochMs": 1792197507408,
       "scenario": 2,
       "file": "screen-009.png",
-      "sourceChapter": "verification"
+      "sourceChapter": "verification",
+      "sourceTimeSeconds": 40.573
     },
     {
       "type": "screenshot",
-      "timeSeconds": 40.996,
+      "timeSeconds": 33.129,
       "epochMs": 1792197507831,
       "scenario": 2,
       "file": "screen-010.png",
-      "sourceChapter": "verification"
+      "sourceChapter": "verification",
+      "sourceTimeSeconds": 40.996
     },
     {
       "type": "hold",
-      "timeSeconds": 41.0,
+      "timeSeconds": 33.133,
       "epochMs": 1792197507835,
       "scenario": 2,
       "cue": "read",
-      "durationMs": 6000,
-      "sourceChapter": "verification"
+      "durationMs": 5600,
+      "sourceChapter": "verification",
+      "sourceTimeSeconds": 41.0,
+      "sourceDurationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 46.42,
+      "timeSeconds": 38.153,
       "epochMs": 1792197525199,
       "scenario": 1,
       "file": "screen-001.png",
-      "sourceChapter": "accounts"
+      "sourceChapter": "accounts",
+      "sourceTimeSeconds": 46.42
     },
     {
       "type": "tap",
-      "timeSeconds": 47.933,
+      "timeSeconds": 39.666,
       "epochMs": 1792197526712,
       "scenario": 1,
       "x": 479.75,
       "y": 165.75,
-      "sourceChapter": "accounts"
+      "sourceChapter": "accounts",
+      "sourceTimeSeconds": 47.933
     },
     {
       "type": "screenshot",
-      "timeSeconds": 48.485,
+      "timeSeconds": 40.218,
       "epochMs": 1792197527264,
       "scenario": 1,
       "file": "screen-002.png",
-      "sourceChapter": "accounts"
+      "sourceChapter": "accounts",
+      "sourceTimeSeconds": 48.485
     },
     {
       "type": "hold",
-      "timeSeconds": 48.486,
+      "timeSeconds": 40.219,
       "epochMs": 1792197527265,
       "scenario": 1,
       "cue": "read",
-      "durationMs": 5000,
-      "sourceChapter": "accounts"
+      "durationMs": 4933,
+      "sourceChapter": "accounts",
+      "sourceTimeSeconds": 48.486,
+      "sourceDurationMs": 5000
     },
     {
       "type": "typing",
-      "timeSeconds": 53.866,
+      "timeSeconds": 45.533,
       "epochMs": 1792197613364,
       "scenario": 1,
       "characters": 6,
       "action": "live-history-search",
-      "sourceChapter": "history"
+      "sourceChapter": "history",
+      "sourceTimeSeconds": 53.866
     },
     {
       "type": "screenshot",
-      "timeSeconds": 55.823,
+      "timeSeconds": 47.49,
       "epochMs": 1792197615321,
       "scenario": 1,
       "file": "screen-008.png",
-      "sourceChapter": "history"
+      "sourceChapter": "history",
+      "sourceTimeSeconds": 55.823
     },
     {
       "type": "hold",
-      "timeSeconds": 55.824,
+      "timeSeconds": 47.491,
       "epochMs": 1792197615322,
       "scenario": 1,
       "cue": "read",
       "durationMs": 2000,
-      "sourceChapter": "history"
+      "sourceChapter": "history",
+      "sourceTimeSeconds": 55.824,
+      "sourceDurationMs": 2000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 57.913,
+      "timeSeconds": 49.58,
       "epochMs": 1792197617411,
       "scenario": 1,
       "file": "screen-009.png",
-      "sourceChapter": "history"
+      "sourceChapter": "history",
+      "sourceTimeSeconds": 57.913
     },
     {
       "type": "tap",
-      "timeSeconds": 59.477,
+      "timeSeconds": 51.144,
       "epochMs": 1792197618975,
       "scenario": 1,
       "x": 190.0,
       "y": 247.0,
-      "sourceChapter": "history"
+      "sourceChapter": "history",
+      "sourceTimeSeconds": 59.477
     },
     {
       "type": "screenshot",
-      "timeSeconds": 60.287,
+      "timeSeconds": 51.954,
       "epochMs": 1792198430394,
       "scenario": 1,
       "file": "screen-005.png",
-      "sourceChapter": "statements"
+      "sourceChapter": "statements",
+      "sourceTimeSeconds": 60.287
     },
     {
       "type": "tap",
-      "timeSeconds": 61.799,
+      "timeSeconds": 53.466,
       "epochMs": 1792198431906,
       "scenario": 1,
       "x": 325.0,
       "y": 338.75,
-      "sourceChapter": "statements"
+      "sourceChapter": "statements",
+      "sourceTimeSeconds": 61.799
     },
     {
       "type": "screenshot",
-      "timeSeconds": 62.577,
+      "timeSeconds": 54.244,
       "epochMs": 1792198432684,
       "scenario": 1,
       "file": "screen-006.png",
-      "sourceChapter": "statements"
+      "sourceChapter": "statements",
+      "sourceTimeSeconds": 62.577
     },
     {
       "type": "hold",
-      "timeSeconds": 62.578,
+      "timeSeconds": 54.245,
       "epochMs": 1792198432685,
       "scenario": 1,
       "cue": "read",
-      "durationMs": 5000,
-      "sourceChapter": "statements"
+      "durationMs": 3800,
+      "sourceChapter": "statements",
+      "sourceTimeSeconds": 62.578,
+      "sourceDurationMs": 5000
     },
     {
       "type": "hold",
-      "timeSeconds": 66.799,
+      "timeSeconds": 57.266,
       "epochMs": 1792197445992,
       "scenario": 1,
       "cue": "receipt",
-      "durationMs": 8000,
-      "sourceChapter": "payments"
+      "durationMs": 6133,
+      "sourceChapter": "payments",
+      "sourceTimeSeconds": 66.799,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 75.797,
+      "timeSeconds": 64.397,
       "epochMs": 1792197601535,
       "scenario": 1,
       "file": "screen-013.png",
-      "sourceChapter": "beneficiaries"
+      "sourceChapter": "beneficiaries",
+      "sourceTimeSeconds": 75.797
     },
     {
       "type": "tap",
-      "timeSeconds": 75.799,
+      "timeSeconds": 64.399,
       "epochMs": 1792197601537,
       "scenario": 1,
       "x": 270.0,
       "y": 831.0,
-      "sourceChapter": "beneficiaries"
+      "sourceChapter": "beneficiaries",
+      "sourceTimeSeconds": 75.799
     },
     {
       "type": "screenshot",
-      "timeSeconds": 76.369,
+      "timeSeconds": 64.969,
       "epochMs": 1792197602107,
       "scenario": 1,
       "file": "screen-014.png",
-      "sourceChapter": "beneficiaries"
+      "sourceChapter": "beneficiaries",
+      "sourceTimeSeconds": 76.369
     },
     {
       "type": "hold",
-      "timeSeconds": 76.369,
+      "timeSeconds": 64.969,
       "epochMs": 1792197602107,
       "scenario": 1,
       "cue": "review",
-      "durationMs": 8000,
-      "sourceChapter": "beneficiaries"
+      "durationMs": 6133,
+      "sourceChapter": "beneficiaries",
+      "sourceTimeSeconds": 76.369,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 81.216,
+      "timeSeconds": 67.949,
       "epochMs": 1792197813850,
       "scenario": 1,
       "file": "screen-011.png",
-      "sourceChapter": "cards"
+      "sourceChapter": "cards",
+      "sourceTimeSeconds": 81.216
     },
     {
       "type": "tap",
-      "timeSeconds": 82.732,
+      "timeSeconds": 69.465,
       "epochMs": 1792197815366,
       "scenario": 1,
       "x": 270.0,
       "y": 878.75,
-      "sourceChapter": "cards"
+      "sourceChapter": "cards",
+      "sourceTimeSeconds": 82.732
     },
     {
       "type": "screenshot",
-      "timeSeconds": 83.32,
+      "timeSeconds": 70.053,
       "epochMs": 1792197815954,
       "scenario": 1,
       "file": "screen-012.png",
-      "sourceChapter": "cards"
+      "sourceChapter": "cards",
+      "sourceTimeSeconds": 83.32
     },
     {
       "type": "hold",
-      "timeSeconds": 83.32,
+      "timeSeconds": 70.053,
       "epochMs": 1792197815954,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 3500,
-      "sourceChapter": "cards"
+      "durationMs": 3433,
+      "sourceChapter": "cards",
+      "sourceTimeSeconds": 83.32,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 86.933,
+      "timeSeconds": 73.6,
       "epochMs": 1792197819567,
       "scenario": 1,
       "file": "screen-013.png",
-      "sourceChapter": "cards"
+      "sourceChapter": "cards",
+      "sourceTimeSeconds": 86.933
     },
     {
       "type": "screenshot",
-      "timeSeconds": 87.027,
+      "timeSeconds": 73.694,
       "epochMs": 1792197819661,
       "scenario": 1,
       "file": "screen-014.png",
-      "sourceChapter": "cards"
+      "sourceChapter": "cards",
+      "sourceTimeSeconds": 87.027
     },
     {
       "type": "hold",
-      "timeSeconds": 87.027,
+      "timeSeconds": 73.694,
       "epochMs": 1792197819661,
       "scenario": 1,
       "cue": "cards-readonly",
-      "durationMs": 8000,
-      "sourceChapter": "cards"
+      "durationMs": 5667,
+      "sourceChapter": "cards",
+      "sourceTimeSeconds": 87.027,
+      "sourceDurationMs": 8000
     },
     {
       "type": "hold",
-      "timeSeconds": 87.665,
+      "timeSeconds": 74.332,
       "epochMs": 1792197942614,
       "scenario": 1,
       "cue": "token",
-      "durationMs": 8000,
-      "sourceChapter": "token"
+      "durationMs": 5667,
+      "sourceChapter": "token",
+      "sourceTimeSeconds": 87.665,
+      "sourceDurationMs": 8000
     },
     {
       "type": "hold",
-      "timeSeconds": 94.598,
+      "timeSeconds": 78.931,
       "epochMs": 1792198158940,
       "scenario": 2,
       "cue": "review",
-      "durationMs": 4000,
-      "sourceChapter": "qr"
+      "durationMs": 3133,
+      "sourceChapter": "qr",
+      "sourceTimeSeconds": 94.598,
+      "sourceDurationMs": 4000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 98.696,
+      "timeSeconds": 82.163,
       "epochMs": 1792198163038,
       "scenario": 2,
       "file": "screen-003.png",
-      "sourceChapter": "qr"
+      "sourceChapter": "qr",
+      "sourceTimeSeconds": 98.696
     },
     {
       "type": "tap",
-      "timeSeconds": 98.703,
+      "timeSeconds": 82.17,
       "epochMs": 1792198163045,
       "scenario": 2,
       "x": 270.0,
       "y": 1019.5,
-      "sourceChapter": "qr"
+      "sourceChapter": "qr",
+      "sourceTimeSeconds": 98.703
     },
     {
       "type": "screenshot",
-      "timeSeconds": 99.574,
+      "timeSeconds": 83.041,
       "epochMs": 1792198163916,
       "scenario": 2,
       "file": "screen-004.png",
-      "sourceChapter": "qr"
+      "sourceChapter": "qr",
+      "sourceTimeSeconds": 99.574
     },
     {
       "type": "hold",
-      "timeSeconds": 99.582,
+      "timeSeconds": 83.049,
       "epochMs": 1792198163924,
       "scenario": 2,
       "cue": "review",
-      "durationMs": 8000,
-      "sourceChapter": "qr"
+      "durationMs": 7800,
+      "sourceChapter": "qr",
+      "sourceTimeSeconds": 99.582,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 101.531,
+      "timeSeconds": 84.998,
       "epochMs": 1792198242125,
       "scenario": 1,
       "file": "screen-010.png",
-      "sourceChapter": "settings"
+      "sourceChapter": "settings",
+      "sourceTimeSeconds": 101.531
     },
     {
       "type": "hold",
-      "timeSeconds": 101.531,
+      "timeSeconds": 84.998,
       "epochMs": 1792198242125,
       "scenario": 1,
       "cue": "settings-enabled",
-      "durationMs": 8000,
-      "sourceChapter": "settings"
+      "durationMs": 7800,
+      "sourceChapter": "settings",
+      "sourceTimeSeconds": 101.531,
+      "sourceDurationMs": 8000
     }
-  ]
+  ],
+  "timing": "Offsets within the original authored overview excerpts. Presentation cuts remove idle hold frames only; sourceTimeSeconds preserves the pinned input timeline."
 }

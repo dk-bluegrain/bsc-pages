@@ -1,0 +1,92 @@
+{
+  "context": {
+    "overview-cards": "Concise spoken description of the explicit Copy action and masked card number in the overview's cards excerpt. Only the last four digits are visible. Keep both meanings; fit the recorded scene without speeding up speech. Other narration reuses the existing localized caption text.",
+    "scene-review": "Spoken hint during the existing review caption: examining details has not authorized the operation.",
+    "scene-confirm": "Spoken hint during the confirmation caption: review and confirmation remain separate explicit steps; fictional scope is stated by the scene summary.",
+    "scene-consent": "Spoken hint in privacy, terms and contract reading holds: reading is not acceptance, and the choice remains explicit.",
+    "scene-verify": "Spoken hint for the existing keyboard-autofill verification caption. Restrict the statement to keyboard autofill; do not change the separate approved SMS-only login route.",
+    "scene-receipt": "Spoken hint during a test receipt/result. State that data and result are fictional; do not claim a real bank operation completed.",
+    "scene-sms-filled": "Spoken hint during a filled-code hold in an explicit-Verify route. Filling alone does not submit; keep the review and Verify action. The separate SMS-only automatic login has its own cue.",
+    "scene-uncertain": "Spoken hint during uncertain-outcome reconciliation: check history first; reconciliation neither repeats nor cancels the operation.",
+    "scene-token": "Spoken hint during generated-token display: the token code is distinct from SMS. Enrollment and fictional-test scope remain in the scene summary."
+  },
+  "languages": {
+    "es": {
+      "overview-cards": "Copia con un toque. Solo se ven los últimos cuatro dígitos de la tarjeta.",
+      "scene-review": "Revisa los datos. Aún no autorizas la operación.",
+      "scene-confirm": "Revisa y confirma por separado.",
+      "scene-consent": "Leer no es aceptar. Decide explícitamente.",
+      "scene-verify": "El teclado completa; tú pulsas Verificar.",
+      "scene-receipt": "Resultado de prueba, con datos ficticios.",
+      "scene-sms-filled": "Código completado. Revísalo y pulsa Verificar.",
+      "scene-uncertain": "Consulta el historial. Conciliar no repite ni cancela la operación.",
+      "scene-token": "El código del token no es un SMS."
+    },
+    "en": {
+      "overview-cards": "Copy with a tap. Only the last four card digits stay visible.",
+      "scene-review": "Review the details. Nothing is authorized yet.",
+      "scene-confirm": "Review, then confirm separately.",
+      "scene-consent": "Reading is not acceptance. Choose explicitly.",
+      "scene-verify": "Keyboard autofill still needs Verify.",
+      "scene-receipt": "A test result, using fictional data.",
+      "scene-sms-filled": "Code filled. Review it, then tap Verify.",
+      "scene-uncertain": "Check history first. Reconciliation neither repeats nor cancels the operation.",
+      "scene-token": "A token code is not an SMS."
+    },
+    "de": {
+      "overview-cards": "Per Tippen kopieren. Nur die letzten vier Kartenziffern bleiben sichtbar.",
+      "scene-review": "Prüfen Sie die Angaben. Noch ist nichts autorisiert.",
+      "scene-confirm": "Erst prüfen, dann gesondert bestätigen.",
+      "scene-consent": "Lesen bedeutet keine Zustimmung. Entscheiden Sie ausdrücklich.",
+      "scene-verify": "Tastatur-Autofill erfordert weiterhin Prüfen.",
+      "scene-receipt": "Ein Testergebnis mit fiktiven Daten.",
+      "scene-sms-filled": "Code prüfen, dann Prüfen wählen.",
+      "scene-uncertain": "Prüfen Sie den Verlauf. Ein Abgleich wiederholt oder storniert den Vorgang nicht.",
+      "scene-token": "Ein Token-Code ist keine SMS."
+    },
+    "fr": {
+      "overview-cards": "Copiez d’un geste. Seuls les quatre derniers chiffres restent visibles.",
+      "scene-review": "Vérifiez les détails. Rien n’est encore autorisé.",
+      "scene-confirm": "Vérifiez, puis confirmez séparément.",
+      "scene-consent": "Lire ne signifie pas accepter. Choisissez explicitement.",
+      "scene-verify": "L’autoremplissage du clavier exige toujours Vérifier.",
+      "scene-receipt": "Un résultat de test, avec des données fictives.",
+      "scene-sms-filled": "Code rempli. Appuyez ensuite sur Vérifier.",
+      "scene-uncertain": "Consultez l’historique. Le rapprochement ne répète ni n’annule l’opération.",
+      "scene-token": "Un code de jeton n’est pas un SMS."
+    },
+    "ru": {
+      "overview-cards": "Копируйте одним нажатием. Видны лишь последние четыре цифры карты.",
+      "scene-review": "Проверьте данные. Операция ещё не разрешена.",
+      "scene-confirm": "Проверьте, затем подтвердите отдельно.",
+      "scene-consent": "Прочитать не значит согласиться. Согласие — отдельный выбор.",
+      "scene-verify": "После заполнения клавиатурой нажмите «Проверить».",
+      "scene-receipt": "Тестовый результат с вымышленными данными.",
+      "scene-sms-filled": "Код заполнен. Проверьте и нажмите «Проверить».",
+      "scene-uncertain": "Сначала проверьте историю. Сверка не повторяет и не отменяет операцию.",
+      "scene-token": "Код токена — это не SMS."
+    },
+    "uk": {
+      "overview-cards": "Копіюйте одним натисканням. Видно лише останні чотири цифри картки.",
+      "scene-review": "Перевірте дані. Операцію ще не дозволено.",
+      "scene-confirm": "Перевірте, потім підтвердьте окремо.",
+      "scene-consent": "Прочитати не означає погодитися. Згода — окремий вибір.",
+      "scene-verify": "Після заповнення клавіатурою натисніть «Перевірити».",
+      "scene-receipt": "Тестовий результат із вигаданими даними.",
+      "scene-sms-filled": "Код заповнено. Перевірте й натисніть «Перевірити».",
+      "scene-uncertain": "Спочатку перевірте історію. Звірка не повторює та не скасовує операцію.",
+      "scene-token": "Код токена — це не SMS."
+    },
+    "pt": {
+      "overview-cards": "Copie com um toque. Só os quatro últimos dígitos ficam visíveis.",
+      "scene-review": "Confira os dados. Nada foi autorizado ainda.",
+      "scene-confirm": "Confira e confirme separadamente.",
+      "scene-consent": "Ler não significa aceitar. Escolha explicitamente.",
+      "scene-verify": "O teclado preenche; você toca em Verificar.",
+      "scene-receipt": "Resultado de teste, com dados fictícios.",
+      "scene-sms-filled": "Código preenchido. Confira e toque em Verificar.",
+      "scene-uncertain": "Confira o histórico. A conciliação não repete nem cancela a operação.",
+      "scene-token": "O código do token não é um SMS."
+    }
+  }
+}

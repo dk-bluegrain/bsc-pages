@@ -1,109 +1,17 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.502
+00:00:00.250 --> 00:00:08.338
 Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.
 
 2
-00:00:05.552 --> 00:00:15.502
-Optionale Hilfe nutzt Android-Zustimmung für eine Nachricht, keinen Posteingangszugriff. Tastatur-Autofill wartet auf Prüfen.
-
-3
-00:00:15.552 --> 00:00:21.957
-Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.
-
-4
-00:00:22.007 --> 00:00:27.957
-SMS-Hilfe wird nur in dieser Einstellungsszene aus- und wieder eingeschaltet. Tastatur und manuelle Eingabe bleiben verfügbar.
-
-5
-00:00:28.007 --> 00:00:33.549
-Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.
-
-6
-00:00:33.599 --> 00:00:41.549
-SMS-Hilfe ist an. Android fragt für jede Nachricht; nur eine freigegebene reine SMS-Anmeldung wird automatisch geprüft.
-
-7
-00:00:41.599 --> 00:00:47.328
-Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.
-
-8
-00:00:47.378 --> 00:00:53.328
-Nachfragen lässt Sie bei angebotenen Alternativen einen Zustellweg wählen. Das automatische Ausfüllen von Android bleibt unverändert.
-
-9
-00:00:53.378 --> 00:00:58.951
-Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.
-
-10
-00:00:59.001 --> 00:01:04.951
-E-Mail ist der bevorzugte Zustellweg, sofern angeboten. Danach wird für die übrigen Rundgänge wieder SMS gewählt.
-
-11
-00:01:05.001 --> 00:01:10.688
-Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.
-
-12
-00:01:10.738 --> 00:01:18.688
-SMS ist der bevorzugte Bank-Zustellweg, sofern angeboten; dies ist kein allgemeiner Schalter für automatisches Ausfüllen.
-
-13
-00:01:18.738 --> 00:01:25.150
-Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.
-
-14
-00:01:25.200 --> 00:02:39.883
+00:01:02.767 --> 00:01:10.087
 Einfache Demo: Profil, Sicherheit, Hilfe und Abmeldung der Testsitzung; nur fiktive Daten.
 
-15
-00:02:39.933 --> 00:02:56.964
+3
+00:02:04.500 --> 00:02:13.164
 Unklares Ergebnis bei simulierter Bank: Verlauf und neue Abgleichbestätigung; kein Wiederholen oder Stornieren des Vorgangs.
 
-16
-00:02:57.014 --> 00:03:06.265
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-17
-00:03:06.315 --> 00:03:14.468
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-18
-00:03:14.518 --> 00:03:23.288
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-19
-00:03:23.338 --> 00:03:31.288
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-20
-00:03:31.338 --> 00:03:36.924
-Unklares Ergebnis bei simulierter Bank: Verlauf und neue Abgleichbestätigung; kein Wiederholen oder Stornieren des Vorgangs.
-
-21
-00:03:36.974 --> 00:03:45.668
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-22
-00:03:45.718 --> 00:03:53.876
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-23
-00:03:53.926 --> 00:04:02.288
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-24
-00:04:02.338 --> 00:04:10.472
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-25
-00:04:10.522 --> 00:04:18.943
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-26
-00:04:18.993 --> 00:04:26.943
-Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang.
-
-27
-00:04:26.993 --> 00:04:33.350
-Unklares Ergebnis bei simulierter Bank: Verlauf und neue Abgleichbestätigung; kein Wiederholen oder Stornieren des Vorgangs.
+4
+00:02:17.914 --> 00:02:23.890
+Prüfen Sie den Verlauf. Ein Abgleich wiederholt oder storniert den Vorgang nicht.

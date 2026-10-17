@@ -13,8 +13,9 @@ and owner-account validation remain unresolved. No Google Play submission.
 
 ## Build and preview
 
-Requires Python3, FFmpeg and FFprobe; generation uses the Python standard library.
-Approved media is canonical in `docs/media/`; HTML generation preserves it.
+Requires Python3, FFmpeg and FFprobe; HTML generation uses the Python standard
+library. Optional voice generation uses `requirements-media.txt`. Approved media
+is canonical in `docs/media/`; HTML generation preserves it.
 
 ```sh
 python3 scripts/build.py
@@ -30,6 +31,8 @@ until a visitor clicks Play, so browsing chapters requests no video data. Native
 controls, playback speed, seven caption tracks, transcripts and keyboard-accessible
 screenshot dialogs are available. Each video displays its file size. Without
 JavaScript the JPG links open MP4s directly and all chapter content remains readable.
+Playback uses the selected page language's pre-rendered narration; other language
+videos are not requested. Speech generation never runs in a visitor's browser.
 
 The site has no banking login, credential collection, analytics or backend.
 
@@ -71,9 +74,10 @@ login can continue after approved one-message sharing; financial and combined-
 question flows retain explicit Verify. Assistance is enabled except initial
 pre-choice onboarding and the explicit settings off/on demonstration.
 
-Pauses are intentional: opening 5 s, navigation 3.5 s, SMS empty 3 s and filled
+Source capture pauses are intentional: opening 5 s, navigation 3.5 s, SMS empty 3 s and filled
 5.5 s, review/receipt 8 s, important consent/uncertain outcomes 10–12 s. The native
-UI stays at normal speed. A synthetic bank-response delay makes the automatic
+UI stays at normal speed. Presentation exports shorten idle holds while preserving
+every recorded action, its touch marker and readable SMS/review states. A synthetic bank-response delay makes the automatic
 login transition legible without changing production timing. The main tour leads
 with complete SMS-login and financial-fill/Verify sequences, then useful native
 interactions across all 13 groups; its total stays between 90 and 120 seconds.
@@ -93,13 +97,33 @@ encoding runs sequentially because it updates shared manifests. `--captions-only
 refreshes timed tracks/transcripts without re-encoding video. The overview builds
 only after every chapter matches the current script and expected scene count.
 
-Output is silent H.264 MP4, 540×1200, 15 fps, YUV420p and fast-start. Every media
+Canonical video is H.264 MP4, 540×1200, 15 fps, YUV420p and fast-start. The public
+players use seven localized versions with AAC mono narration. Every media
 file stays below 100 MB; the complete deployment stays below 250 MB. Actual native
 tap/swipe events retain coordinates and timestamps. An expanding contrasting ring
 lasts one second; native frame calibration aligns the persistent final overlay so
 markers survive window changes. No taps are invented. Spotlight SMS images are
 selected from the actual empty/filled hold frames. Media URLs include content
 hashes so browsers request retaken footage.
+
+To reproduce the shorter narrated presentation from its original capture export:
+
+```sh
+python3 -m venv /tmp/bsc-pages-narration
+/tmp/bsc-pages-narration/bin/pip install -r requirements-media.txt
+/tmp/bsc-pages-narration/bin/python scripts/narrate-media.py
+python3 scripts/build.py
+python3 -m unittest discover -s scripts/tests
+python3 scripts/check.py
+```
+
+The default source is the unedited media at `91f22e0`. Content-addressed speech
+clips remain in ignored `media-work/narration/`; reruns reuse them and always edit
+the original frames. `--chapter overview` renders one preview. For new captures,
+rebuild all original media, commit the source export, and pass that commit with
+`--source-ref`. Partial raw/caption regeneration over narrated exports is blocked
+because it would mix timelines. Voice selection, free alternatives and editing
+rules are recorded in [VIDEO-SCRIPTS.md](VIDEO-SCRIPTS.md#narrated-presentation).
 
 `docs/media/provenance.json` records the final capture source, script and exact
 QA APK digests. The release APK source commit is recorded separately when the

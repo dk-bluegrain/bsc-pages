@@ -43,7 +43,7 @@ with sync_playwright() as p:
    # Each chapter is directly addressable and its footage/captions are real files.
    for link in page.locator('.chapter-list a').all():
     id=link.get_attribute('href')[1:];page.evaluate('(id)=>location.hash=id',id);page.locator('#'+id).wait_for(state='visible')
-    assert page.locator('#template-video-'+id).evaluate('(t)=>t.content.querySelector("source").getAttribute("src")').split('?')[0].endswith(id+'.mp4')
+    assert page.locator('#template-video-'+id).evaluate('(t)=>t.content.querySelector("source").getAttribute("src")').split('?')[0].endswith(f'/narrated/{lang}/{id}.mp4')
    assert not media_requests,('Browsing chapters loaded media',lang,width,media_requests)
    if width==390 and lang=='es':page.screenshot(path=str(a.output/'mobile.png'),full_page=True)
    if width==1440 and lang=='en':page.goto(a.url+'en/');page.screenshot(path=str(a.output/'desktop.png'))
@@ -55,10 +55,13 @@ with sync_playwright() as p:
     assert history.evaluate('(v)=>v===document.activeElement')
     page.locator('[data-play-overview]').click();page.wait_for_timeout(300)
     page.wait_for_function('()=>document.getElementById("video-overview")?.currentTime>0')
+    page.wait_for_function('()=>document.getElementById("video-overview").webkitAudioDecodedByteCount>0')
+    assert not page.locator('#video-overview').evaluate('(v)=>v.muted')
+    assert f'/narrated/{lang}/overview.mp4' in page.locator('#video-overview').evaluate('(v)=>v.currentSrc')
     assert history.evaluate('(v)=>v.paused')
     assert all(path.endswith(('/history.mp4','/overview.mp4','/history.vtt','/overview.vtt')) for path in media_requests),media_requests
     page.locator('#video-overview').evaluate('(v)=>v.pause()')
-    video=page.locator('#video-overview');video.evaluate('(v)=>v.load()');video.evaluate('(v)=>new Promise(resolve=>{if(v.readyState>=1)resolve();else v.addEventListener("loadedmetadata",resolve,{once:true})})');assert video.evaluate('(v)=>v.duration')>=90
+    video=page.locator('#video-overview');video.evaluate('(v)=>v.load()');video.evaluate('(v)=>new Promise(resolve=>{if(v.readyState>=1)resolve();else v.addEventListener("loadedmetadata",resolve,{once:true})})');assert video.evaluate('(v)=>v.duration')>=60
     video.evaluate('(v)=>v.play()');page.wait_for_timeout(300);assert not video.evaluate('(v)=>v.paused');video.evaluate('(v)=>v.pause()')
    assert page.locator('a[href$="-demo.apk"]').count()==2 and page.locator('a[href$="-live.apk"]').count()==1
    page.goto(a.url+lang+'/privacy/');assert page.locator('h1').inner_text();assert not page.evaluate('document.documentElement.scrollWidth > innerWidth')

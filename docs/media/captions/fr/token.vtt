@@ -1,117 +1,29 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:07.329
+00:00:00.250 --> 00:00:10.138
 Token BSC simulé : contrat, consentement, approbation de test, code généré et dissociation. Le code généré n’est pas un SMS.
 
 2
-00:00:07.379 --> 00:00:17.329
-Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
+00:00:26.160 --> 00:00:29.352
+Vérifiez, puis confirmez séparément.
 
 3
-00:00:17.379 --> 00:00:23.097
-Token BSC simulé : contrat, consentement, approbation de test, code généré et dissociation. Le code généré n’est pas un SMS.
+00:00:37.695 --> 00:00:40.623
+Un code de jeton n’est pas un SMS.
 
 4
-00:00:23.147 --> 00:00:29.888
-Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
+00:01:30.234 --> 00:01:37.866
+Inscription de jeton simulée : code SMS rempli par Android et Vérifier explicite ; ce cas ne prouve pas une inscription achevée.
 
 5
-00:00:29.938 --> 00:00:35.210
-Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
+00:01:56.370 --> 00:01:59.562
+Vérifiez, puis confirmez séparément.
 
 6
-00:00:35.260 --> 00:00:43.624
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
+00:02:14.333 --> 00:02:18.173
+L’autoremplissage du clavier exige toujours Vérifier.
 
 7
-00:00:43.674 --> 00:00:51.812
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-8
-00:00:51.862 --> 00:00:58.229
-Un code généré par Token BSC n’est pas un SMS. Inscription, approbation et dissociation sont simulées avec des données fictives.
-
-9
-00:00:58.279 --> 00:01:06.403
-Un code généré par Token BSC n’est pas un SMS. Inscription, approbation et dissociation sont simulées avec des données fictives.
-
-10
-00:01:06.453 --> 00:01:14.585
-Un code généré par Token BSC n’est pas un SMS. Inscription, approbation et dissociation sont simulées avec des données fictives.
-
-11
-00:01:14.635 --> 00:01:21.227
-Un code généré par Token BSC n’est pas un SMS. Inscription, approbation et dissociation sont simulées avec des données fictives.
-
-12
-00:01:21.277 --> 00:01:29.409
-Un code généré par Token BSC n’est pas un SMS. Inscription, approbation et dissociation sont simulées avec des données fictives.
-
-13
-00:01:29.459 --> 00:01:35.954
-Un code généré par Token BSC n’est pas un SMS. Inscription, approbation et dissociation sont simulées avec des données fictives.
-
-14
-00:01:36.004 --> 00:01:44.127
-Un code généré par Token BSC n’est pas un SMS. Inscription, approbation et dissociation sont simulées avec des données fictives.
-
-15
-00:01:44.177 --> 00:01:52.579
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-16
-00:01:52.629 --> 00:02:00.579
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-17
-00:02:00.629 --> 00:02:07.017
-Token BSC simulé : contrat, consentement, approbation de test, code généré et dissociation. Le code généré n’est pas un SMS.
-
-18
-00:02:07.067 --> 00:02:14.355
-Inscription de jeton simulée : code SMS rempli par Android et Vérifier explicite ; ce cas ne prouve pas une inscription achevée.
-
-19
-00:02:14.405 --> 00:02:24.355
-Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
-
-20
-00:02:24.405 --> 00:02:29.926
-Inscription de jeton simulée : code SMS rempli par Android et Vérifier explicite ; ce cas ne prouve pas une inscription achevée.
-
-21
-00:02:29.976 --> 00:02:37.034
-Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
-
-22
-00:02:37.084 --> 00:02:42.287
-Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
-
-23
-00:02:42.337 --> 00:02:50.819
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-24
-00:02:50.869 --> 00:02:59.033
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-25
-00:02:59.083 --> 00:03:02.288
-Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
-
-26
-00:03:02.338 --> 00:03:07.983
-Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
-
-27
-00:03:08.033 --> 00:03:13.539
-Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
-
-28
-00:03:13.589 --> 00:03:21.539
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
-
-29
-00:03:21.589 --> 00:03:28.017
-Inscription de jeton simulée : code SMS rempli par Android et Vérifier explicite ; ce cas ne prouve pas une inscription achevée.
+00:02:18.591 --> 00:02:22.167
+Un résultat de test, avec des données fictives.

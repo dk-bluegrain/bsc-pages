@@ -1,29 +1,13 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.375
+00:00:00.250 --> 00:00:09.994
 Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.
 
 2
-00:00:05.425 --> 00:00:08.562
-Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
+00:00:16.634 --> 00:00:23.834
+Desbloqueo biométrico simulado del acceso guardado; la aprobación del banco es un requisito separado.
 
 3
-00:00:08.612 --> 00:00:12.562
-La ayuda SMS es opcional. Android pide aprobación para un mensaje, no acceso a la bandeja; puedes continuar manualmente.
-
-4
-00:00:12.612 --> 00:00:21.817
-Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.
-
-5
-00:00:21.867 --> 00:00:34.080
-Desbloqueo biométrico simulado del acceso guardado; la aprobación del banco es un requisito separado.
-
-6
-00:00:34.130 --> 00:00:42.080
-Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
-
-7
-00:00:42.130 --> 00:00:48.483
-Desbloqueo biométrico simulado del acceso guardado; la aprobación del banco es un requisito separado.
+00:00:25.497 --> 00:00:29.361
+Resultado de prueba, con datos ficticios.

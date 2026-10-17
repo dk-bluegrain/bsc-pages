@@ -1,45 +1,9 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:10.544
+00:00:00.250 --> 00:00:09.202
 Banco simulado: pregunta de seguridad y SMS son pasos separados; autocompletar el código conserva Verificar.
 
 2
-00:00:10.594 --> 00:00:13.849
-Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
-
-3
-00:00:13.899 --> 00:00:19.603
-El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.
-
-4
-00:00:19.653 --> 00:00:24.445
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-5
-00:00:24.495 --> 00:00:32.445
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-6
-00:00:32.495 --> 00:00:38.817
-Banco simulado: pregunta de seguridad y SMS son pasos separados; autocompletar el código conserva Verificar.
-
-7
-00:00:38.867 --> 00:00:44.093
-Registro de dispositivo y nuevo acceso biométrico simulados dentro de la app; no se reutiliza la contraseña en silencio.
-
-8
-00:00:44.143 --> 00:00:50.093
-Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
-
-9
-00:00:50.143 --> 00:01:02.299
-Registro de dispositivo y nuevo acceso biométrico simulados dentro de la app; no se reutiliza la contraseña en silencio.
-
-10
-00:01:02.349 --> 00:01:08.299
-Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
-
-11
-00:01:08.349 --> 00:01:15.083
+00:00:29.367 --> 00:00:37.359
 Registro de dispositivo y nuevo acceso biométrico simulados dentro de la app; no se reutiliza la contraseña en silencio.

@@ -1,29 +1,13 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.375
+00:00:00.250 --> 00:00:08.170
 Simulierte Freigabe einer Nachricht: automatische Prüfung nur der reinen SMS-Anmeldung, kein Tastatur-Autofill.
 
 2
-00:00:05.425 --> 00:00:08.562
-Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+00:00:16.634 --> 00:00:24.050
+Simuliertes biometrisches Entsperren gespeicherter Zugangsdaten; die Bankfreigabe bleibt ein eigener Schritt.
 
 3
-00:00:08.612 --> 00:00:12.562
-SMS-Hilfe ist optional. Android fragt für eine Nachricht, ohne Posteingangszugriff; manuelle Eingabe bleibt möglich.
-
-4
-00:00:12.612 --> 00:00:21.817
-Simulierte Freigabe einer Nachricht: automatische Prüfung nur der reinen SMS-Anmeldung, kein Tastatur-Autofill.
-
-5
-00:00:21.867 --> 00:00:34.080
-Simuliertes biometrisches Entsperren gespeicherter Zugangsdaten; die Bankfreigabe bleibt ein eigener Schritt.
-
-6
-00:00:34.130 --> 00:00:42.080
-Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
-
-7
-00:00:42.130 --> 00:00:48.483
-Simuliertes biometrisches Entsperren gespeicherter Zugangsdaten; die Bankfreigabe bleibt ein eigener Schritt.
+00:00:25.497 --> 00:00:28.737
+Ein Testergebnis mit fiktiven Daten.

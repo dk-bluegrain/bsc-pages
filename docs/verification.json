@@ -173,5 +173,69 @@
     "financialFixtureRehearsals": 5,
     "toolTests": 21,
     "result": "passed"
+  },
+  "presentation": {
+    "verifiedAt": "2026-10-17T01:41:16.423485+00:00",
+    "sourceWebsiteCommit": "91f22e0031683e2ab6616be70a37abe72720d566",
+    "pacedVideos": 14,
+    "narratedVideos": 98,
+    "captionTracks": 98,
+    "speechCuesPerLanguage": 67,
+    "originalSeconds": 1979.398,
+    "editedSeconds": 1502.134,
+    "overviewSeconds": 91.8,
+    "unitTests": 8,
+    "browserCases": 21,
+    "staticChecks": "passed",
+    "audioLevels": {
+      "es": {
+        "meanDb": -19.8,
+        "peakDb": -1.8
+      },
+      "en": {
+        "meanDb": -21.0,
+        "peakDb": -1.5
+      },
+      "de": {
+        "meanDb": -20.2,
+        "peakDb": -1.5
+      },
+      "fr": {
+        "meanDb": -20.7,
+        "peakDb": -2.0
+      },
+      "ru": {
+        "meanDb": -20.3,
+        "peakDb": -1.5
+      },
+      "uk": {
+        "meanDb": -20.3,
+        "peakDb": -1.5
+      },
+      "pt": {
+        "meanDb": -20.1,
+        "peakDb": -2.2
+      }
+    },
+    "slowNetwork": {
+      "downloadBytesPerSecond": 50000,
+      "latencyMs": 400,
+      "initialJpgRequests": 1,
+      "initialVideoOrCaptionRequests": 0,
+      "voicedPlaybackStartedAfterClickSeconds": 6.49,
+      "requestedVideos": [
+        "/media/narrated/en/overview.mp4"
+      ]
+    },
+    "idempotence": {
+      "sourceRef": "91f22e0031683e2ab6616be70a37abe72720d566",
+      "identicalFiles": 19,
+      "passed": true
+    },
+    "largestNarratedBytes": 2117927,
+    "speechProvider": "Microsoft Edge neural TTS via edge-tts 7.3.1",
+    "visitorSpeechServiceRequests": false,
+    "productionApksChanged": false,
+    "published": false
   }
 }

@@ -3,21 +3,23 @@
     "width": 540,
     "height": 1200
   },
-  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Android records each actual input and native marker. A persistent one-second overlay follows those same events across native window handoffs.",
+  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Android records each actual input and native marker. A persistent one-second overlay follows those same events across native window handoffs. Presentation cuts remove idle hold frames only; sourceTimeSeconds preserves the pinned input timeline.",
   "events": [
     {
       "type": "scene-start",
       "timeSeconds": 0,
       "epochMs": 1792198208476,
       "scenario": 1,
-      "preferredMedium": "SMS"
+      "preferredMedium": "SMS",
+      "sourceTimeSeconds": 0
     },
     {
       "type": "screenshot",
       "timeSeconds": 0.329,
       "epochMs": 1792198208855,
       "scenario": 1,
-      "file": "screen-000.png"
+      "file": "screen-000.png",
+      "sourceTimeSeconds": 0.329
     },
     {
       "type": "hold",
@@ -25,1061 +27,1243 @@
       "epochMs": 1792198208855,
       "scenario": 1,
       "cue": "opening",
-      "durationMs": 5000
+      "durationMs": 3467,
+      "sourceTimeSeconds": 0.329,
+      "sourceDurationMs": 5000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 5.46,
+      "timeSeconds": 3.927,
       "epochMs": 1792198213986,
       "scenario": 1,
-      "file": "screen-001.png"
+      "file": "screen-001.png",
+      "sourceTimeSeconds": 5.46
     },
     {
       "type": "screenshot",
-      "timeSeconds": 5.552,
+      "timeSeconds": 4.019,
       "epochMs": 1792198214078,
       "scenario": 1,
-      "file": "screen-002.png"
+      "file": "screen-002.png",
+      "sourceTimeSeconds": 5.552
     },
     {
       "type": "hold",
-      "timeSeconds": 5.552,
+      "timeSeconds": 4.019,
       "epochMs": 1792198214078,
       "scenario": 1,
       "cue": "configuration",
-      "durationMs": 10000
+      "durationMs": 6867,
+      "sourceTimeSeconds": 5.552,
+      "sourceDurationMs": 10000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 15.689,
+      "timeSeconds": 11.022,
       "epochMs": 1792198224215,
       "scenario": 1,
-      "file": "screen-003.png"
+      "file": "screen-003.png",
+      "sourceTimeSeconds": 15.689
     },
     {
       "type": "tap",
-      "timeSeconds": 17.207,
+      "timeSeconds": 12.54,
       "epochMs": 1792198225733,
       "scenario": 1,
       "x": 476.75,
-      "y": 961.5
+      "y": 961.5,
+      "sourceTimeSeconds": 17.207
     },
     {
       "type": "screenshot",
-      "timeSeconds": 18.319,
+      "timeSeconds": 13.652,
       "epochMs": 1792198226845,
       "scenario": 1,
-      "file": "screen-004.png"
+      "file": "screen-004.png",
+      "sourceTimeSeconds": 18.319
     },
     {
       "type": "hold",
-      "timeSeconds": 18.319,
+      "timeSeconds": 13.652,
       "epochMs": 1792198226845,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 18.319,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 21.921,
+      "timeSeconds": 16.188,
       "epochMs": 1792198230447,
       "scenario": 1,
-      "file": "screen-005.png"
+      "file": "screen-005.png",
+      "sourceTimeSeconds": 21.921
     },
     {
       "type": "screenshot",
-      "timeSeconds": 22.007,
+      "timeSeconds": 16.274,
       "epochMs": 1792198230533,
       "scenario": 1,
-      "file": "screen-006.png"
+      "file": "screen-006.png",
+      "sourceTimeSeconds": 22.007
     },
     {
       "type": "hold",
-      "timeSeconds": 22.007,
+      "timeSeconds": 16.274,
       "epochMs": 1792198230533,
       "scenario": 1,
       "cue": "settings-disabled",
-      "durationMs": 6000
+      "durationMs": 4133,
+      "sourceTimeSeconds": 22.007,
+      "sourceDurationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 28.107,
+      "timeSeconds": 20.507,
       "epochMs": 1792198236633,
       "scenario": 1,
-      "file": "screen-007.png"
+      "file": "screen-007.png",
+      "sourceTimeSeconds": 28.107
     },
     {
       "type": "tap",
-      "timeSeconds": 29.614,
+      "timeSeconds": 22.014,
       "epochMs": 1792198238140,
       "scenario": 1,
       "x": 476.75,
-      "y": 961.5
+      "y": 961.5,
+      "sourceTimeSeconds": 29.614
     },
     {
       "type": "screenshot",
-      "timeSeconds": 29.913,
+      "timeSeconds": 22.313,
       "epochMs": 1792198238439,
       "scenario": 1,
-      "file": "screen-008.png"
+      "file": "screen-008.png",
+      "sourceTimeSeconds": 29.913
     },
     {
       "type": "hold",
-      "timeSeconds": 29.92,
+      "timeSeconds": 22.32,
       "epochMs": 1792198238446,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 29.92,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 33.512,
+      "timeSeconds": 24.845,
       "epochMs": 1792198242038,
       "scenario": 1,
-      "file": "screen-009.png"
+      "file": "screen-009.png",
+      "sourceTimeSeconds": 33.512
     },
     {
       "type": "screenshot",
-      "timeSeconds": 33.599,
+      "timeSeconds": 24.932,
       "epochMs": 1792198242125,
       "scenario": 1,
-      "file": "screen-010.png"
+      "file": "screen-010.png",
+      "sourceTimeSeconds": 33.599
     },
     {
       "type": "hold",
-      "timeSeconds": 33.599,
+      "timeSeconds": 24.932,
       "epochMs": 1792198242125,
       "scenario": 1,
       "cue": "settings-enabled",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 33.599,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 41.71,
+      "timeSeconds": 30.51,
       "epochMs": 1792198250236,
       "scenario": 1,
-      "file": "screen-011.png"
+      "file": "screen-011.png",
+      "sourceTimeSeconds": 41.71
     },
     {
       "type": "tap",
-      "timeSeconds": 43.226,
+      "timeSeconds": 32.026,
       "epochMs": 1792198251752,
       "scenario": 1,
       "x": 89.75,
-      "y": 1099.0
+      "y": 1099.0,
+      "sourceTimeSeconds": 43.226
     },
     {
       "type": "screenshot",
-      "timeSeconds": 43.685,
+      "timeSeconds": 32.485,
       "epochMs": 1792198252211,
       "scenario": 1,
-      "file": "screen-012.png"
+      "file": "screen-012.png",
+      "sourceTimeSeconds": 43.685
     },
     {
       "type": "hold",
-      "timeSeconds": 43.686,
+      "timeSeconds": 32.486,
       "epochMs": 1792198252212,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 43.686,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 47.284,
+      "timeSeconds": 35.017,
       "epochMs": 1792198255810,
       "scenario": 1,
-      "file": "screen-013.png"
+      "file": "screen-013.png",
+      "sourceTimeSeconds": 47.284
     },
     {
       "type": "screenshot",
-      "timeSeconds": 47.377,
+      "timeSeconds": 35.11,
       "epochMs": 1792198255903,
       "scenario": 1,
-      "file": "screen-014.png"
+      "file": "screen-014.png",
+      "sourceTimeSeconds": 47.377
     },
     {
       "type": "hold",
-      "timeSeconds": 47.378,
+      "timeSeconds": 35.111,
       "epochMs": 1792198255904,
       "scenario": 1,
       "cue": "settings-ask",
-      "durationMs": 6000
+      "durationMs": 4133,
+      "sourceTimeSeconds": 47.378,
+      "sourceDurationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 53.493,
+      "timeSeconds": 39.36,
       "epochMs": 1792198262019,
       "scenario": 1,
-      "file": "screen-015.png"
+      "file": "screen-015.png",
+      "sourceTimeSeconds": 53.493
     },
     {
       "type": "tap",
-      "timeSeconds": 55.0,
+      "timeSeconds": 40.867,
       "epochMs": 1792198263526,
       "scenario": 1,
       "x": 299.75,
-      "y": 1099.0
+      "y": 1099.0,
+      "sourceTimeSeconds": 55.0
     },
     {
       "type": "screenshot",
-      "timeSeconds": 55.305,
+      "timeSeconds": 41.172,
       "epochMs": 1792198263831,
       "scenario": 1,
-      "file": "screen-016.png"
+      "file": "screen-016.png",
+      "sourceTimeSeconds": 55.305
     },
     {
       "type": "hold",
-      "timeSeconds": 55.306,
+      "timeSeconds": 41.173,
       "epochMs": 1792198263832,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 55.306,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 58.912,
+      "timeSeconds": 43.712,
       "epochMs": 1792198267438,
       "scenario": 1,
-      "file": "screen-017.png"
+      "file": "screen-017.png",
+      "sourceTimeSeconds": 58.912
     },
     {
       "type": "screenshot",
-      "timeSeconds": 59.001,
+      "timeSeconds": 43.801,
       "epochMs": 1792198267527,
       "scenario": 1,
-      "file": "screen-018.png"
+      "file": "screen-018.png",
+      "sourceTimeSeconds": 59.001
     },
     {
       "type": "hold",
-      "timeSeconds": 59.001,
+      "timeSeconds": 43.801,
       "epochMs": 1792198267527,
       "scenario": 1,
       "cue": "settings-email",
-      "durationMs": 6000
+      "durationMs": 4133,
+      "sourceTimeSeconds": 59.001,
+      "sourceDurationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 65.106,
+      "timeSeconds": 48.039,
       "epochMs": 1792198273632,
       "scenario": 1,
-      "file": "screen-019.png"
+      "file": "screen-019.png",
+      "sourceTimeSeconds": 65.106
     },
     {
       "type": "tap",
-      "timeSeconds": 66.614,
+      "timeSeconds": 49.547,
       "epochMs": 1792198275140,
       "scenario": 1,
       "x": 201.0,
-      "y": 1099.0
+      "y": 1099.0,
+      "sourceTimeSeconds": 66.614
     },
     {
       "type": "screenshot",
-      "timeSeconds": 67.011,
+      "timeSeconds": 49.944,
       "epochMs": 1792198275537,
       "scenario": 1,
-      "file": "screen-020.png"
+      "file": "screen-020.png",
+      "sourceTimeSeconds": 67.011
     },
     {
       "type": "hold",
-      "timeSeconds": 67.012,
+      "timeSeconds": 49.945,
       "epochMs": 1792198275538,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 67.012,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 70.626,
+      "timeSeconds": 52.493,
       "epochMs": 1792198279152,
       "scenario": 1,
-      "file": "screen-021.png"
+      "file": "screen-021.png",
+      "sourceTimeSeconds": 70.626
     },
     {
       "type": "screenshot",
-      "timeSeconds": 70.737,
+      "timeSeconds": 52.604,
       "epochMs": 1792198279263,
       "scenario": 1,
-      "file": "screen-022.png"
+      "file": "screen-022.png",
+      "sourceTimeSeconds": 70.737
     },
     {
       "type": "hold",
-      "timeSeconds": 70.738,
+      "timeSeconds": 52.605,
       "epochMs": 1792198279264,
       "scenario": 1,
       "cue": "settings-sms",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 70.738,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 78.91,
+      "timeSeconds": 58.243,
       "epochMs": 1792198287436,
       "scenario": 1,
-      "file": "screen-023.png"
+      "file": "screen-023.png",
+      "sourceTimeSeconds": 78.91
     },
     {
       "type": "screenshot",
-      "timeSeconds": 79.011,
+      "timeSeconds": 58.344,
       "epochMs": 1792198287537,
       "scenario": 1,
-      "file": "screen-024.png"
+      "file": "screen-024.png",
+      "sourceTimeSeconds": 79.011
     },
     {
       "type": "hold",
-      "timeSeconds": 79.013,
+      "timeSeconds": 58.346,
       "epochMs": 1792198287539,
       "scenario": 1,
       "cue": "read",
-      "durationMs": 6000
+      "durationMs": 4133,
+      "sourceTimeSeconds": 79.013,
+      "sourceDurationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 85.116,
+      "timeSeconds": 62.583,
       "epochMs": 1792198293642,
       "scenario": 1,
-      "file": "screen-025.png"
+      "file": "screen-025.png",
+      "sourceTimeSeconds": 85.116
     },
     {
       "type": "scene-end",
-      "timeSeconds": 85.117,
+      "timeSeconds": 62.584,
       "epochMs": 1792198293643,
       "scenario": 1,
-      "preferredMedium": "SMS"
+      "preferredMedium": "SMS",
+      "sourceTimeSeconds": 85.117
     },
     {
       "type": "scene-start",
-      "timeSeconds": 85.2,
+      "timeSeconds": 62.667,
       "epochMs": 1792198302183,
       "scenario": 2,
-      "preferredMedium": "SMS"
+      "preferredMedium": "SMS",
+      "sourceTimeSeconds": 85.2
     },
     {
       "type": "screenshot",
-      "timeSeconds": 85.733,
+      "timeSeconds": 63.2,
       "epochMs": 1792198302766,
       "scenario": 2,
-      "file": "screen-000.png"
+      "file": "screen-000.png",
+      "sourceTimeSeconds": 85.733
     },
     {
       "type": "hold",
-      "timeSeconds": 85.733,
+      "timeSeconds": 63.2,
       "epochMs": 1792198302766,
       "scenario": 2,
       "cue": "opening",
-      "durationMs": 5000
+      "durationMs": 3467,
+      "sourceTimeSeconds": 85.733,
+      "sourceDurationMs": 5000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 90.826,
+      "timeSeconds": 66.759,
       "epochMs": 1792198307859,
       "scenario": 2,
-      "file": "screen-001.png"
+      "file": "screen-001.png",
+      "sourceTimeSeconds": 90.826
     },
     {
       "type": "tap",
-      "timeSeconds": 92.337,
+      "timeSeconds": 68.27,
       "epochMs": 1792198309370,
       "scenario": 2,
       "x": 453.5,
-      "y": 1084.5
+      "y": 1084.5,
+      "sourceTimeSeconds": 92.337
     },
     {
       "type": "screenshot",
-      "timeSeconds": 93.021,
+      "timeSeconds": 68.954,
       "epochMs": 1792198310054,
       "scenario": 2,
-      "file": "screen-002.png"
+      "file": "screen-002.png",
+      "sourceTimeSeconds": 93.021
     },
     {
       "type": "hold",
-      "timeSeconds": 93.022,
+      "timeSeconds": 68.955,
       "epochMs": 1792198310055,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 93.022,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 96.613,
+      "timeSeconds": 71.48,
       "epochMs": 1792198313646,
       "scenario": 2,
-      "file": "screen-003.png"
+      "file": "screen-003.png",
+      "sourceTimeSeconds": 96.613
     },
     {
       "type": "tap",
-      "timeSeconds": 98.126,
+      "timeSeconds": 72.993,
       "epochMs": 1792198315159,
       "scenario": 2,
       "x": 270.0,
-      "y": 522.75
+      "y": 522.75,
+      "sourceTimeSeconds": 98.126
     },
     {
       "type": "screenshot",
-      "timeSeconds": 99.271,
+      "timeSeconds": 74.138,
       "epochMs": 1792198316304,
       "scenario": 2,
-      "file": "screen-004.png"
+      "file": "screen-004.png",
+      "sourceTimeSeconds": 99.271
     },
     {
       "type": "hold",
-      "timeSeconds": 99.272,
+      "timeSeconds": 74.139,
       "epochMs": 1792198316305,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 99.272,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 102.86,
+      "timeSeconds": 76.66,
       "epochMs": 1792198319893,
       "scenario": 2,
-      "file": "screen-005.png"
+      "file": "screen-005.png",
+      "sourceTimeSeconds": 102.86
     },
     {
       "type": "tap",
-      "timeSeconds": 107.367,
+      "timeSeconds": 81.167,
       "epochMs": 1792198324400,
       "scenario": 2,
       "x": 70.0,
-      "y": 161.25
+      "y": 161.25,
+      "sourceTimeSeconds": 107.367
     },
     {
       "type": "screenshot",
-      "timeSeconds": 107.889,
+      "timeSeconds": 81.689,
       "epochMs": 1792198324922,
       "scenario": 2,
-      "file": "screen-006.png"
+      "file": "screen-006.png",
+      "sourceTimeSeconds": 107.889
     },
     {
       "type": "hold",
-      "timeSeconds": 107.89,
+      "timeSeconds": 81.69,
       "epochMs": 1792198324923,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 107.89,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 111.481,
+      "timeSeconds": 84.214,
       "epochMs": 1792198328514,
       "scenario": 2,
-      "file": "screen-007.png"
+      "file": "screen-007.png",
+      "sourceTimeSeconds": 111.481
     },
     {
       "type": "tap",
-      "timeSeconds": 112.996,
+      "timeSeconds": 85.729,
       "epochMs": 1792198330029,
       "scenario": 2,
       "x": 270.0,
-      "y": 716.75
+      "y": 716.75,
+      "sourceTimeSeconds": 112.996
     },
     {
       "type": "screenshot",
-      "timeSeconds": 113.387,
+      "timeSeconds": 86.12,
       "epochMs": 1792198330420,
       "scenario": 2,
-      "file": "screen-008.png"
+      "file": "screen-008.png",
+      "sourceTimeSeconds": 113.387
     },
     {
       "type": "hold",
-      "timeSeconds": 113.388,
+      "timeSeconds": 86.121,
       "epochMs": 1792198330421,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 113.388,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 116.998,
+      "timeSeconds": 88.665,
       "epochMs": 1792198334031,
       "scenario": 2,
-      "file": "screen-009.png"
+      "file": "screen-009.png",
+      "sourceTimeSeconds": 116.998
     },
     {
       "type": "tap",
-      "timeSeconds": 121.513,
+      "timeSeconds": 93.18,
       "epochMs": 1792198338546,
       "scenario": 2,
       "x": 70.0,
-      "y": 161.25
+      "y": 161.25,
+      "sourceTimeSeconds": 121.513
     },
     {
       "type": "screenshot",
-      "timeSeconds": 121.847,
+      "timeSeconds": 93.514,
       "epochMs": 1792198338880,
       "scenario": 2,
-      "file": "screen-010.png"
+      "file": "screen-010.png",
+      "sourceTimeSeconds": 121.847
     },
     {
       "type": "hold",
-      "timeSeconds": 121.847,
+      "timeSeconds": 93.514,
       "epochMs": 1792198338880,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 121.847,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 125.459,
+      "timeSeconds": 96.059,
       "epochMs": 1792198342492,
       "scenario": 2,
-      "file": "screen-011.png"
+      "file": "screen-011.png",
+      "sourceTimeSeconds": 125.459
     },
     {
       "type": "tap",
-      "timeSeconds": 127.008,
+      "timeSeconds": 97.608,
       "epochMs": 1792198344041,
       "scenario": 2,
       "x": 270.0,
-      "y": 984.25
+      "y": 984.25,
+      "sourceTimeSeconds": 127.008
     },
     {
       "type": "screenshot",
-      "timeSeconds": 127.34,
+      "timeSeconds": 97.94,
       "epochMs": 1792198344373,
       "scenario": 2,
-      "file": "screen-012.png"
+      "file": "screen-012.png",
+      "sourceTimeSeconds": 127.34
     },
     {
       "type": "hold",
-      "timeSeconds": 127.34,
+      "timeSeconds": 97.94,
       "epochMs": 1792198344373,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 127.34,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 130.938,
+      "timeSeconds": 100.471,
       "epochMs": 1792198347971,
       "scenario": 2,
-      "file": "screen-013.png"
+      "file": "screen-013.png",
+      "sourceTimeSeconds": 130.938
     },
     {
       "type": "tap",
-      "timeSeconds": 135.45,
+      "timeSeconds": 104.983,
       "epochMs": 1792198352483,
       "scenario": 2,
       "x": 70.0,
-      "y": 161.25
+      "y": 161.25,
+      "sourceTimeSeconds": 135.45
     },
     {
       "type": "screenshot",
-      "timeSeconds": 135.897,
+      "timeSeconds": 105.43,
       "epochMs": 1792198352930,
       "scenario": 2,
-      "file": "screen-014.png"
+      "file": "screen-014.png",
+      "sourceTimeSeconds": 135.897
     },
     {
       "type": "hold",
-      "timeSeconds": 135.897,
+      "timeSeconds": 105.43,
       "epochMs": 1792198352930,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 135.897,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 139.548,
+      "timeSeconds": 108.015,
       "epochMs": 1792198356581,
       "scenario": 2,
-      "file": "screen-015.png"
+      "file": "screen-015.png",
+      "sourceTimeSeconds": 139.548
     },
     {
       "type": "tap",
-      "timeSeconds": 141.098,
+      "timeSeconds": 109.565,
       "epochMs": 1792198358131,
       "scenario": 2,
       "x": 270.0,
-      "y": 997.75
+      "y": 997.75,
+      "sourceTimeSeconds": 141.098
     },
     {
       "type": "screenshot",
-      "timeSeconds": 141.643,
+      "timeSeconds": 110.11,
       "epochMs": 1792198358676,
       "scenario": 2,
-      "file": "screen-016.png"
+      "file": "screen-016.png",
+      "sourceTimeSeconds": 141.643
     },
     {
       "type": "hold",
-      "timeSeconds": 141.644,
+      "timeSeconds": 110.111,
       "epochMs": 1792198358677,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 141.644,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 145.268,
+      "timeSeconds": 112.668,
       "epochMs": 1792198362301,
       "scenario": 2,
-      "file": "screen-017.png"
+      "file": "screen-017.png",
+      "sourceTimeSeconds": 145.268
     },
     {
       "type": "tap",
-      "timeSeconds": 146.778,
+      "timeSeconds": 114.178,
       "epochMs": 1792198363811,
       "scenario": 2,
       "x": 378.5,
-      "y": 696.75
+      "y": 696.75,
+      "sourceTimeSeconds": 146.778
     },
     {
       "type": "screenshot",
-      "timeSeconds": 147.024,
+      "timeSeconds": 114.424,
       "epochMs": 1792198364057,
       "scenario": 2,
-      "file": "screen-018.png"
+      "file": "screen-018.png",
+      "sourceTimeSeconds": 147.024
     },
     {
       "type": "hold",
-      "timeSeconds": 147.024,
+      "timeSeconds": 114.424,
       "epochMs": 1792198364057,
       "scenario": 2,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 147.024,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 150.633,
+      "timeSeconds": 116.966,
       "epochMs": 1792198367666,
       "scenario": 2,
-      "file": "screen-019.png"
+      "file": "screen-019.png",
+      "sourceTimeSeconds": 150.633
     },
     {
       "type": "screenshot",
-      "timeSeconds": 153.752,
+      "timeSeconds": 120.085,
       "epochMs": 1792198370785,
       "scenario": 2,
-      "file": "screen-020.png"
+      "file": "screen-020.png",
+      "sourceTimeSeconds": 153.752
     },
     {
       "type": "hold",
-      "timeSeconds": 153.753,
+      "timeSeconds": 120.086,
       "epochMs": 1792198370786,
       "scenario": 2,
       "cue": "read",
-      "durationMs": 6000
+      "durationMs": 4133,
+      "sourceTimeSeconds": 153.753,
+      "sourceDurationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 159.853,
+      "timeSeconds": 124.32,
       "epochMs": 1792198376886,
       "scenario": 2,
-      "file": "screen-021.png"
+      "file": "screen-021.png",
+      "sourceTimeSeconds": 159.853
     },
     {
       "type": "scene-end",
-      "timeSeconds": 159.854,
+      "timeSeconds": 124.321,
       "epochMs": 1792198376887,
       "scenario": 2,
-      "preferredMedium": "SMS"
+      "preferredMedium": "SMS",
+      "sourceTimeSeconds": 159.854
     },
     {
       "type": "scene-start",
-      "timeSeconds": 159.933,
+      "timeSeconds": 124.4,
       "epochMs": 1792198385124,
       "scenario": 3,
-      "preferredMedium": "SMS"
+      "preferredMedium": "SMS",
+      "sourceTimeSeconds": 159.933
     },
     {
       "type": "screenshot",
-      "timeSeconds": 160.169,
+      "timeSeconds": 124.636,
       "epochMs": 1792198385410,
       "scenario": 3,
-      "file": "screen-000.png"
+      "file": "screen-000.png",
+      "sourceTimeSeconds": 160.169
     },
     {
       "type": "hold",
-      "timeSeconds": 160.17,
+      "timeSeconds": 124.637,
       "epochMs": 1792198385411,
       "scenario": 3,
       "cue": "opening",
-      "durationMs": 5000
+      "durationMs": 3467,
+      "sourceTimeSeconds": 160.17,
+      "sourceDurationMs": 5000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 165.31,
+      "timeSeconds": 128.243,
       "epochMs": 1792198390551,
       "scenario": 3,
-      "file": "screen-001.png"
+      "file": "screen-001.png",
+      "sourceTimeSeconds": 165.31
     },
     {
       "type": "tap",
-      "timeSeconds": 166.816,
+      "timeSeconds": 129.749,
       "epochMs": 1792198392057,
       "scenario": 3,
       "x": 270.0,
-      "y": 676.25
+      "y": 676.25,
+      "sourceTimeSeconds": 166.816
     },
     {
       "type": "screenshot",
-      "timeSeconds": 167.401,
+      "timeSeconds": 130.334,
       "epochMs": 1792198392642,
       "scenario": 3,
-      "file": "screen-002.png"
+      "file": "screen-002.png",
+      "sourceTimeSeconds": 167.401
     },
     {
       "type": "hold",
-      "timeSeconds": 167.401,
+      "timeSeconds": 130.334,
       "epochMs": 1792198392642,
       "scenario": 3,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 167.401,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 170.986,
+      "timeSeconds": 132.853,
       "epochMs": 1792198396227,
       "scenario": 3,
-      "file": "screen-003.png"
+      "file": "screen-003.png",
+      "sourceTimeSeconds": 170.986
     },
     {
       "type": "tap",
-      "timeSeconds": 172.538,
+      "timeSeconds": 134.405,
       "epochMs": 1792198397779,
       "scenario": 3,
       "x": 270.0,
-      "y": 1100.25
+      "y": 1100.25,
+      "sourceTimeSeconds": 172.538
     },
     {
       "type": "screenshot",
-      "timeSeconds": 173.137,
+      "timeSeconds": 135.004,
       "epochMs": 1792198398378,
       "scenario": 3,
-      "file": "screen-004.png"
+      "file": "screen-004.png",
+      "sourceTimeSeconds": 173.137
     },
     {
       "type": "hold",
-      "timeSeconds": 173.141,
+      "timeSeconds": 135.008,
       "epochMs": 1792198398382,
       "scenario": 3,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 173.141,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 176.727,
+      "timeSeconds": 137.527,
       "epochMs": 1792198401968,
       "scenario": 3,
-      "file": "screen-005.png"
+      "file": "screen-005.png",
+      "sourceTimeSeconds": 176.727
     },
     {
       "type": "screenshot",
-      "timeSeconds": 177.014,
+      "timeSeconds": 137.814,
       "epochMs": 1792198402255,
       "scenario": 3,
-      "file": "screen-006.png"
+      "file": "screen-006.png",
+      "sourceTimeSeconds": 177.014
     },
     {
       "type": "hold",
-      "timeSeconds": 177.014,
+      "timeSeconds": 137.814,
       "epochMs": 1792198402255,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 177.014,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 185.102,
+      "timeSeconds": 143.369,
       "epochMs": 1792198410343,
       "scenario": 3,
-      "file": "screen-007.png"
+      "file": "screen-007.png",
+      "sourceTimeSeconds": 185.102
     },
     {
       "type": "tap",
-      "timeSeconds": 185.105,
+      "timeSeconds": 143.372,
       "epochMs": 1792198410346,
       "scenario": 3,
       "x": 270.0,
-      "y": 527.75
+      "y": 527.75,
+      "sourceTimeSeconds": 185.105
     },
     {
       "type": "screenshot",
-      "timeSeconds": 186.314,
+      "timeSeconds": 144.581,
       "epochMs": 1792198411555,
       "scenario": 3,
-      "file": "screen-008.png"
+      "file": "screen-008.png",
+      "sourceTimeSeconds": 186.314
     },
     {
       "type": "hold",
-      "timeSeconds": 186.315,
+      "timeSeconds": 144.582,
       "epochMs": 1792198411556,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 186.315,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 194.427,
+      "timeSeconds": 150.16,
       "epochMs": 1792198419668,
       "scenario": 3,
-      "file": "screen-009.png"
+      "file": "screen-009.png",
+      "sourceTimeSeconds": 194.427
     },
     {
       "type": "screenshot",
-      "timeSeconds": 194.518,
+      "timeSeconds": 150.251,
       "epochMs": 1792198419759,
       "scenario": 3,
-      "file": "screen-010.png"
+      "file": "screen-010.png",
+      "sourceTimeSeconds": 194.518
     },
     {
       "type": "hold",
-      "timeSeconds": 194.518,
+      "timeSeconds": 150.251,
       "epochMs": 1792198419759,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 194.518,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 202.613,
+      "timeSeconds": 155.813,
       "epochMs": 1792198427854,
       "scenario": 3,
-      "file": "screen-011.png"
+      "file": "screen-011.png",
+      "sourceTimeSeconds": 202.613
     },
     {
       "type": "tap",
-      "timeSeconds": 202.615,
+      "timeSeconds": 155.815,
       "epochMs": 1792198427856,
       "scenario": 3,
       "x": 123.25,
-      "y": 694.25
+      "y": 694.25,
+      "sourceTimeSeconds": 202.615
     },
     {
       "type": "screenshot",
-      "timeSeconds": 203.337,
+      "timeSeconds": 156.537,
       "epochMs": 1792198428578,
       "scenario": 3,
-      "file": "screen-012.png"
+      "file": "screen-012.png",
+      "sourceTimeSeconds": 203.337
     },
     {
       "type": "hold",
-      "timeSeconds": 203.338,
+      "timeSeconds": 156.538,
       "epochMs": 1792198428579,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 203.338,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 211.447,
+      "timeSeconds": 162.114,
       "epochMs": 1792198436688,
       "scenario": 3,
-      "file": "screen-013.png"
+      "file": "screen-013.png",
+      "sourceTimeSeconds": 211.447
     },
     {
       "type": "tap",
-      "timeSeconds": 212.957,
+      "timeSeconds": 163.624,
       "epochMs": 1792198438198,
       "scenario": 3,
       "x": 365.25,
-      "y": 867.75
+      "y": 867.75,
+      "sourceTimeSeconds": 212.957
     },
     {
       "type": "screenshot",
-      "timeSeconds": 213.229,
+      "timeSeconds": 163.896,
       "epochMs": 1792198438470,
       "scenario": 3,
-      "file": "screen-014.png"
+      "file": "screen-014.png",
+      "sourceTimeSeconds": 213.229
     },
     {
       "type": "hold",
-      "timeSeconds": 213.23,
+      "timeSeconds": 163.897,
       "epochMs": 1792198438471,
       "scenario": 3,
       "cue": "navigation",
-      "durationMs": 3500
+      "durationMs": 2433,
+      "sourceTimeSeconds": 213.23,
+      "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 216.843,
+      "timeSeconds": 166.443,
       "epochMs": 1792198442084,
       "scenario": 3,
-      "file": "screen-015.png"
+      "file": "screen-015.png",
+      "sourceTimeSeconds": 216.843
     },
     {
       "type": "screenshot",
-      "timeSeconds": 216.973,
+      "timeSeconds": 166.573,
       "epochMs": 1792198442214,
       "scenario": 3,
-      "file": "screen-016.png"
+      "file": "screen-016.png",
+      "sourceTimeSeconds": 216.973
     },
     {
       "type": "hold",
-      "timeSeconds": 216.974,
+      "timeSeconds": 166.574,
       "epochMs": 1792198442215,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 216.974,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 225.064,
+      "timeSeconds": 172.131,
       "epochMs": 1792198450305,
       "scenario": 3,
-      "file": "screen-017.png"
+      "file": "screen-017.png",
+      "sourceTimeSeconds": 225.064
     },
     {
       "type": "tap",
-      "timeSeconds": 225.066,
+      "timeSeconds": 172.133,
       "epochMs": 1792198450307,
       "scenario": 3,
       "x": 270.0,
-      "y": 527.75
+      "y": 527.75,
+      "sourceTimeSeconds": 225.066
     },
     {
       "type": "screenshot",
-      "timeSeconds": 225.717,
+      "timeSeconds": 172.784,
       "epochMs": 1792198450958,
       "scenario": 3,
-      "file": "screen-018.png"
+      "file": "screen-018.png",
+      "sourceTimeSeconds": 225.717
     },
     {
       "type": "hold",
-      "timeSeconds": 225.718,
+      "timeSeconds": 172.785,
       "epochMs": 1792198450959,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 225.718,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 233.824,
+      "timeSeconds": 178.357,
       "epochMs": 1792198459065,
       "scenario": 3,
-      "file": "screen-019.png"
+      "file": "screen-019.png",
+      "sourceTimeSeconds": 233.824
     },
     {
       "type": "screenshot",
-      "timeSeconds": 233.926,
+      "timeSeconds": 178.459,
       "epochMs": 1792198459167,
       "scenario": 3,
-      "file": "screen-020.png"
+      "file": "screen-020.png",
+      "sourceTimeSeconds": 233.926
     },
     {
       "type": "hold",
-      "timeSeconds": 233.926,
+      "timeSeconds": 178.459,
       "epochMs": 1792198459167,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 233.926,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 242.021,
+      "timeSeconds": 184.021,
       "epochMs": 1792198467262,
       "scenario": 3,
-      "file": "screen-021.png"
+      "file": "screen-021.png",
+      "sourceTimeSeconds": 242.021
     },
     {
       "type": "tap",
-      "timeSeconds": 242.024,
+      "timeSeconds": 184.024,
       "epochMs": 1792198467265,
       "scenario": 3,
       "x": 123.25,
-      "y": 694.25
+      "y": 694.25,
+      "sourceTimeSeconds": 242.024
     },
     {
       "type": "screenshot",
-      "timeSeconds": 242.337,
+      "timeSeconds": 184.337,
       "epochMs": 1792198467578,
       "scenario": 3,
-      "file": "screen-022.png"
+      "file": "screen-022.png",
+      "sourceTimeSeconds": 242.337
     },
     {
       "type": "hold",
-      "timeSeconds": 242.338,
+      "timeSeconds": 184.338,
       "epochMs": 1792198467579,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 242.338,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 250.433,
+      "timeSeconds": 189.9,
       "epochMs": 1792198475674,
       "scenario": 3,
-      "file": "screen-023.png"
+      "file": "screen-023.png",
+      "sourceTimeSeconds": 250.433
     },
     {
       "type": "screenshot",
-      "timeSeconds": 250.522,
+      "timeSeconds": 189.989,
       "epochMs": 1792198475763,
       "scenario": 3,
-      "file": "screen-024.png"
+      "file": "screen-024.png",
+      "sourceTimeSeconds": 250.522
     },
     {
       "type": "hold",
-      "timeSeconds": 250.522,
+      "timeSeconds": 189.989,
       "epochMs": 1792198475763,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 250.522,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 258.638,
+      "timeSeconds": 195.571,
       "epochMs": 1792198483879,
       "scenario": 3,
-      "file": "screen-025.png"
+      "file": "screen-025.png",
+      "sourceTimeSeconds": 258.638
     },
     {
       "type": "tap",
-      "timeSeconds": 258.641,
+      "timeSeconds": 195.574,
       "epochMs": 1792198483882,
       "scenario": 3,
       "x": 358.0,
-      "y": 788.75
+      "y": 788.75,
+      "sourceTimeSeconds": 258.641
     },
     {
       "type": "screenshot",
-      "timeSeconds": 258.992,
+      "timeSeconds": 195.925,
       "epochMs": 1792198484233,
       "scenario": 3,
-      "file": "screen-026.png"
+      "file": "screen-026.png",
+      "sourceTimeSeconds": 258.992
     },
     {
       "type": "hold",
-      "timeSeconds": 258.993,
+      "timeSeconds": 195.926,
       "epochMs": 1792198484234,
       "scenario": 3,
       "cue": "uncertain",
-      "durationMs": 8000
+      "durationMs": 5467,
+      "sourceTimeSeconds": 258.993,
+      "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 267.078,
+      "timeSeconds": 201.478,
       "epochMs": 1792198492319,
       "scenario": 3,
-      "file": "screen-027.png"
+      "file": "screen-027.png",
+      "sourceTimeSeconds": 267.078
     },
     {
       "type": "screenshot",
-      "timeSeconds": 267.193,
+      "timeSeconds": 201.593,
       "epochMs": 1792198492434,
       "scenario": 3,
-      "file": "screen-028.png"
+      "file": "screen-028.png",
+      "sourceTimeSeconds": 267.193
     },
     {
       "type": "hold",
-      "timeSeconds": 267.193,
+      "timeSeconds": 201.593,
       "epochMs": 1792198492434,
       "scenario": 3,
       "cue": "read",
-      "durationMs": 6000
+      "durationMs": 4133,
+      "sourceTimeSeconds": 267.193,
+      "sourceDurationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 273.276,
+      "timeSeconds": 205.809,
       "epochMs": 1792198498517,
       "scenario": 3,
-      "file": "screen-029.png"
+      "file": "screen-029.png",
+      "sourceTimeSeconds": 273.276
     },
     {
       "type": "scene-end",
-      "timeSeconds": 273.276,
+      "timeSeconds": 205.809,
       "epochMs": 1792198498517,
       "scenario": 3,
-      "preferredMedium": "SMS"
+      "preferredMedium": "SMS",
+      "sourceTimeSeconds": 273.276
     }
   ]
 }

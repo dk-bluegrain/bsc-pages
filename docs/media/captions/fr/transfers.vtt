@@ -1,129 +1,53 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:24.847
+00:00:00.250 --> 00:00:08.434
 Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
 
 2
-00:00:24.897 --> 00:00:33.086
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
+00:00:21.330 --> 00:00:25.746
+Vérifiez les détails. Rien n’est encore autorisé.
 
 3
-00:00:33.136 --> 00:00:40.117
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
+00:00:37.848 --> 00:00:41.040
+Vérifiez, puis confirmez séparément.
 
 4
-00:00:40.167 --> 00:00:48.298
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
+00:00:53.321 --> 00:00:57.161
+L’autoremplissage du clavier exige toujours Vérifier.
 
 5
-00:00:48.348 --> 00:00:56.786
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
+00:00:57.737 --> 00:01:01.313
+Un résultat de test, avec des données fictives.
 
 6
-00:00:56.836 --> 00:01:00.481
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
+00:01:28.937 --> 00:01:33.353
+Vérifiez les détails. Rien n’est encore autorisé.
 
 7
-00:01:00.531 --> 00:01:03.707
-Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
+00:01:45.179 --> 00:01:48.371
+Vérifiez, puis confirmez séparément.
 
 8
-00:01:03.757 --> 00:01:09.438
-Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
+00:02:00.873 --> 00:02:04.713
+L’autoremplissage du clavier exige toujours Vérifier.
 
 9
-00:01:09.488 --> 00:01:15.387
-Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+00:02:05.165 --> 00:02:08.741
+Un résultat de test, avec des données fictives.
 
 10
-00:01:15.437 --> 00:01:23.387
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
+00:02:36.440 --> 00:02:40.856
+Vérifiez les détails. Rien n’est encore autorisé.
 
 11
-00:01:23.437 --> 00:01:54.654
-Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
+00:02:52.554 --> 00:02:55.746
+Vérifiez, puis confirmez séparément.
 
 12
-00:01:54.704 --> 00:02:02.879
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
+00:03:11.826 --> 00:03:15.402
+Un résultat de test, avec des données fictives.
 
 13
-00:02:02.929 --> 00:02:09.635
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
-
-14
-00:02:09.685 --> 00:02:17.829
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
-
-15
-00:02:17.879 --> 00:02:26.326
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-16
-00:02:26.376 --> 00:02:30.190
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-17
-00:02:30.240 --> 00:02:33.462
-Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
-
-18
-00:02:33.512 --> 00:02:39.190
-Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
-
-19
-00:02:39.240 --> 00:02:45.015
-Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
-
-20
-00:02:45.065 --> 00:02:53.015
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
-
-21
-00:02:53.065 --> 00:03:24.357
-Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
-
-22
-00:03:24.407 --> 00:03:32.564
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
-
-23
-00:03:32.614 --> 00:03:39.207
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
-
-24
-00:03:39.257 --> 00:03:47.404
-Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
-
-25
-00:03:47.454 --> 00:03:55.885
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-26
-00:03:55.935 --> 00:03:59.571
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
-
-27
-00:03:59.621 --> 00:04:02.817
-Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
-
-28
-00:04:02.867 --> 00:04:08.497
-Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
-
-29
-00:04:08.547 --> 00:04:13.876
-Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
-
-30
-00:04:13.926 --> 00:04:21.876
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
-
-31
-00:04:21.926 --> 00:04:28.283
-Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
-
-32
-00:04:28.333 --> 00:05:16.950
+00:03:21.833 --> 00:03:27.377
 Banque simulée : rechercher et choisir un bénéficiaire sans envoyer de virement dans ce cas.

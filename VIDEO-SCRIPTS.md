@@ -36,6 +36,63 @@ hold 10–12 seconds. No speedup. All code-entry sequences show real callbacks,
 not a typed code or a static screenshot. A 1.8-second fake bank response delay
 makes the SMS-only automatic continuation legible without changing production.
 
+## Narrated presentation
+
+The capture rules above describe the original revision-4 recordings. The owner's
+later request for quicker pacing and voice-over authorizes a shorter presentation
+edit. `scripts/narrate-media.py` removes idle hold frames only, using 15 fps frame
+boundaries. It preserves every input, scene transition and SMS callback, with
+1.2 seconds after and 0.6 seconds before protected events. Reviews and consent
+keep readable holds. Native actions run at their original speed; narration is
+generated separately, without time-stretching or truncating the rendered speech.
+
+Each scene has a spoken summary in every language. Optional state descriptions
+are included only when the entire utterance fits that state. Shared cue starts
+reserve enough room for the longest translation, with no overlaps, truncated
+speech or narration crossing into another scene. Captions and transcripts match
+the actual spoken text. Most wording reuses existing localized captions;
+`src/narration-copy.json` contains context-documented concise spoken adaptations.
+Original capture source hashes, excerpt ranges and epoch input events are retained;
+edited events add `sourceTimeSeconds` and presentation metadata records every cut.
+
+### Free voice comparison and selection
+
+The generation run uses Microsoft's neural voices through
+[edge-tts](https://github.com/rany2/edge-tts), without a paid API key or subscription.
+It provides native voices for all seven site languages, including Dominican
+Spanish. Only the public narration text is sent during generation. Delivered
+MP4s contain their audio: visitors make no speech-service requests, and only the
+selected language is downloaded after Play. Regeneration depends on the online
+service; cached clips preserve this run's exact audio.
+
+Alternatives checked against their primary project/model documentation:
+
+| Option | Fit for this site |
+| --- | --- |
+| [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md) | Small local model with an English-focused voice selection and Spanish/French/Portuguese voices; its published voice list lacks German, Russian and Ukrainian. |
+| [Piper](https://github.com/OHF-Voice/piper1-gpl) | Fast offline synthesis with broad language coverage; quality and licenses depend on each individual voice model. |
+| [OmniVoice](https://github.com/k2-fsa/OmniVoice) | An open multilingual alternative with much broader language support; requires a larger PyTorch model stack. Not used for these exports. |
+
+Edge was selected for practical all-seven-language neural narration on this CPU
+host. This is a production choice for these recordings, not a universal voice
+quality ranking or independent native-speaker certification.
+
+| Page language | Voice |
+| --- | --- |
+| Spanish | es-DO-RamonaNeural |
+| English | en-US-JennyNeural |
+| German | de-DE-KatjaNeural |
+| French | fr-FR-DeniseNeural |
+| Russian | ru-RU-SvetlanaNeural |
+| Ukrainian | uk-UA-PolinaNeural |
+| Portuguese | pt-BR-FranciscaNeural |
+
+Generation uses a modest +5% speech rate, AAC mono at 24 kHz/48 kbps, loudness
+normalization and fast-start MP4. The 14 silent paced masters stay available;
+98 localized files reuse their encoded video stream without another video encode.
+The website displays the actual narrated file size and retains native audio/mute,
+speed and caption controls. No background music was added.
+
 ## first-use
 
 Understand the independent-app notice before accepting anything.

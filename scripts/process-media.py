@@ -11,6 +11,9 @@ content=json.loads((ROOT/'src/content.json').read_text())['languages'];captions=
 ids=[c['id'] for c in content['es']['chapters']];requested=a.chapter or ids
 assert len(requested)==len(set(requested)) and set(requested)<=set(ids),'Unknown/repeated chapter'
 policy=json.loads((ROOT/'src/video-scripts.json').read_text());script_hash=hashlib.sha256((ROOT/'src/video-scripts.json').read_bytes()).hexdigest()
+existing=json.loads((ROOT/'src/media.json').read_text()) if (ROOT/'src/media.json').exists() else {}
+if (a.chapter or a.captions_only) and any(info.get('pacing') or info.get('narration') for info in existing.values()):
+ raise SystemExit('Narrated presentation media is installed. Rebuild all original captures, commit that source export, then rerun narrate-media.py; partial/captions-only exports would mix timelines.')
 expected={c['id']:len(c['scenes']) for c in policy['chapters']};approved={}
 for folder in a.captures:
  for metadata in sorted(folder.glob('*/complete.json')):

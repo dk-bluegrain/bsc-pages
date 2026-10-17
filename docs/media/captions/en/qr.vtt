@@ -1,49 +1,13 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.641
+00:00:00.250 --> 00:00:08.410
 Fictional account/request QR: review, cancel saving and retry with a simulated destination; this is not payment.
 
 2
-00:00:05.691 --> 00:00:10.262
-Review the details before continuing. Opening this screen does not authorize an operation.
+00:00:51.567 --> 00:00:58.743
+Simulated QR read: review a fictional request’s amount, memo and recipient; no real camera capture.
 
 3
-00:00:10.312 --> 00:00:18.262
-Review the details before continuing. Opening this screen does not authorize an operation.
-
-4
-00:00:18.312 --> 00:00:37.572
-Fictional account/request QR: review, cancel saving and retry with a simulated destination; this is not payment.
-
-5
-00:00:37.622 --> 00:00:42.993
-Review the details before continuing. Opening this screen does not authorize an operation.
-
-6
-00:00:43.043 --> 00:00:50.993
-Review the details before continuing. Opening this screen does not authorize an operation.
-
-7
-00:00:51.043 --> 00:01:03.950
-Fictional account/request QR: review, cancel saving and retry with a simulated destination; this is not payment.
-
-8
-00:01:04.000 --> 00:01:09.558
-Simulated QR read: review a fictional request’s amount, memo and recipient; no real camera capture.
-
-9
-00:01:09.608 --> 00:01:14.542
-Review the details before continuing. Opening this screen does not authorize an operation.
-
-10
-00:01:14.592 --> 00:01:22.542
-Review the details before continuing. Opening this screen does not authorize an operation.
-
-11
-00:01:22.592 --> 00:01:28.950
-Simulated QR read: review a fictional request’s amount, memo and recipient; no real camera capture.
-
-12
-00:01:29.000 --> 00:01:46.883
+00:01:09.633 --> 00:01:15.369
 Fictional QR: Android print preview and return, without claiming a physical printout.

@@ -1,5 +1,72 @@
 # Feature-first website and native media verification
 
+## Current narrated presentation
+
+The quicker edit removes idle hold frames while keeping recorded actions at
+normal speed. The original 14 exports total 1,979.398 seconds; the edited exports
+total 1,502.134 seconds, 24.1% shorter. Individual chapters are 20.9–28.7% shorter.
+The tour changes from 108.533 to 91.8 seconds (about 1:32).
+
+Every video has narration in all seven page languages: 98 H.264/AAC MP4s, with
+67 synchronized speech cues per language and matching captions/transcripts. Edge
+neural voices were generated with `edge-tts==7.3.1`; no paid account/API key was
+used. The site serves pre-rendered local media and downloads only the selected
+language after Play. Voice choices, alternatives, scope and regeneration commands
+are in [VIDEO-SCRIPTS.md](VIDEO-SCRIPTS.md#narrated-presentation) and [README.md](README.md).
+
+The voiced English tour is 1.27 MB. The largest voiced file in any language is
+2.12 MB; the complete deployment is approximately 105.5 MiB, below the 250 MiB
+budget. Displayed durations below omit fractional seconds; sizes use decimal MB.
+
+| Video | Original | Edited | Voiced English MB |
+| --- | --- | --- | --- |
+| Overview | 1:48 | 1:31 | 1.27 |
+| Login | 0:48 | 0:35 | 0.45 |
+| Accounts | 1:01 | 0:48 | 0.38 |
+| History | 1:27 | 1:08 | 0.58 |
+| Transfers | 5:17 | 4:01 | 2.07 |
+| Payments | 3:04 | 2:19 | 1.23 |
+| Statements | 1:25 | 1:04 | 0.46 |
+| QR | 1:46 | 1:23 | 0.63 |
+| Beneficiaries | 3:09 | 2:27 | 1.14 |
+| Cards | 1:20 | 0:59 | 0.33 |
+| Token | 3:28 | 2:28 | 0.81 |
+| Settings | 4:33 | 3:25 | 1.72 |
+| Device setup | 1:15 | 0:56 | 0.68 |
+| First use | 2:31 | 1:52 | 0.99 |
+
+Verification performed locally:
+
+- Eight unit tests passed for protected action windows, hold budgets, overlapping
+  holds, translation lengths, scene boundaries and optional narration deadlines.
+- All 21 language/viewport browser combinations passed, including zero MP4/VTT
+  requests before Play, keyboard playback, the correct localized MP4, decoded
+  unmuted audio in seven languages, playback isolation and no-JavaScript links.
+- Static checks passed for all 14 paced masters, 98 narrated MP4s and 98 caption
+  tracks: language tags, durations, ordered speech cues, hashes, fast-start metadata,
+  retained input events, edited event mapping, provenance and file budgets.
+- All seven voiced tours decoded with non-silent audio and peaks between -2.2
+  and -1.5 dBFS. These measurements do not replace native-speaker listening review.
+- At simulated 50,000 download bytes/second (400 kbps) with 400 ms latency,
+  voiced playback began 6.49 seconds after Play. Initial load requested one JPG
+  and no MP4 or captions; only the English MP4 was requested after the click.
+  This is a local Chromium simulation, not a hosting/device guarantee.
+- Regenerating the tour from the pinned unedited source preserved all 19 tested
+  media, caption, manifest and event hashes. Partial raw caption regeneration is
+  rejected before it can mix original and edited timelines.
+- Sampled edited-tour frames retain both leading SMS sequences' empty/filled
+  fields and their actual simulated account/receipt results.
+
+Reports and visual samples: `/tmp/bsc-pages-narration-browser-results`.
+These website/media changes have not been published. No production APK or live
+banking behavior changed, and the earlier owner-account validation limits remain.
+
+## Original capture and website baseline
+
+The following baseline describes the earlier silent revision-4 exports. Its
+capture evidence remains applicable; the current playback and file-size results
+are recorded above.
+
 The redesigned showcase puts the main video beside the introduction, followed by
 six concrete UX benefits, actual SMS empty/filled frames and task-first chapters.
 It demonstrates implemented interactions without asserting unsupported feature

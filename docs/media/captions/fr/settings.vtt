@@ -1,109 +1,17 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.502
+00:00:00.250 --> 00:00:08.482
 Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.
 
 2
-00:00:05.552 --> 00:00:15.502
-L’aide facultative utilise l’accord Android pour un message, sans accès à la boîte SMS. Le remplissage du clavier attend Vérifier.
-
-3
-00:00:15.552 --> 00:00:21.957
-Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.
-
-4
-00:00:22.007 --> 00:00:27.957
-L’aide SMS est désactivée uniquement dans cette scène, puis réactivée. Clavier et saisie manuelle restent disponibles.
-
-5
-00:00:28.007 --> 00:00:33.549
-Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.
-
-6
-00:00:33.599 --> 00:00:41.549
-L’aide SMS est activée. Android demande l’accord par message ; seule la connexion par SMS seul approuvée est vérifiée automatiquement.
-
-7
-00:00:41.599 --> 00:00:47.328
-Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.
-
-8
-00:00:47.378 --> 00:00:53.328
-Demander permet de choisir parmi les canaux proposés par la banque. Cela ne modifie pas le remplissage automatique Android.
-
-9
-00:00:53.378 --> 00:00:58.951
-Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.
-
-10
-00:00:59.001 --> 00:01:04.951
-Courriel définit le canal de réception préféré, s’il est proposé. SMS est ensuite rétabli pour les autres parcours.
-
-11
-00:01:05.001 --> 00:01:10.688
-Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.
-
-12
-00:01:10.738 --> 00:01:18.688
-SMS est le canal bancaire préféré, s’il est proposé ; ce n’est pas un interrupteur universel du remplissage automatique.
-
-13
-00:01:18.738 --> 00:01:25.150
-Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.
-
-14
-00:01:25.200 --> 00:02:39.883
+00:01:02.767 --> 00:01:09.871
 Démo de base : profil, sécurité, aide et déconnexion de la session de test ; données fictives uniquement.
 
-15
-00:02:39.933 --> 00:02:56.964
+3
+00:02:04.500 --> 00:02:12.108
 Résultat bancaire simulé incertain : historique et nouvel accord de rapprochement ; aucune répétition ni annulation de l’opération.
 
-16
-00:02:57.014 --> 00:03:06.265
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-17
-00:03:06.315 --> 00:03:14.468
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-18
-00:03:14.518 --> 00:03:23.288
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-19
-00:03:23.338 --> 00:03:31.288
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-20
-00:03:31.338 --> 00:03:36.924
-Résultat bancaire simulé incertain : historique et nouvel accord de rapprochement ; aucune répétition ni annulation de l’opération.
-
-21
-00:03:36.974 --> 00:03:45.668
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-22
-00:03:45.718 --> 00:03:53.876
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-23
-00:03:53.926 --> 00:04:02.288
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-24
-00:04:02.338 --> 00:04:10.472
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-25
-00:04:10.522 --> 00:04:18.943
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-26
-00:04:18.993 --> 00:04:26.943
-Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération.
-
-27
-00:04:26.993 --> 00:04:33.350
-Résultat bancaire simulé incertain : historique et nouvel accord de rapprochement ; aucune répétition ni annulation de l’opération.
+4
+00:02:17.914 --> 00:02:23.626
+Consultez l’historique. Le rapprochement ne répète ni n’annule l’opération.

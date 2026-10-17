@@ -1,29 +1,13 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:05.375
+00:00:00.250 --> 00:00:08.098
 A simulated one-message approval result demonstrates automatic verification of SMS-only login, not keyboard autofill.
 
 2
-00:00:05.425 --> 00:00:08.562
-A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.
+00:00:16.634 --> 00:00:22.586
+Simulated biometric unlock of saved access; bank approval is a separate requirement.
 
 3
-00:00:08.612 --> 00:00:12.562
-SMS assistance is optional. Android asks approval for one message, never inbox access; manual entry remains available.
-
-4
-00:00:12.612 --> 00:00:21.817
-A simulated one-message approval result demonstrates automatic verification of SMS-only login, not keyboard autofill.
-
-5
-00:00:21.867 --> 00:00:34.080
-Simulated biometric unlock of saved access; bank approval is a separate requirement.
-
-6
-00:00:34.130 --> 00:00:42.080
-A test result using fictional data; it does not establish that a real banking operation completed.
-
-7
-00:00:42.130 --> 00:00:48.483
-Simulated biometric unlock of saved access; bank approval is a separate requirement.
+00:00:25.497 --> 00:00:28.641
+A test result, using fictional data.

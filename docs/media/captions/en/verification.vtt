@@ -1,45 +1,9 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:10.544
+00:00:00.250 --> 00:00:07.330
 Simulated banking: security question and SMS stay separate; code autofill retains explicit Verify.
 
 2
-00:00:10.594 --> 00:00:13.849
-A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.
-
-3
-00:00:13.899 --> 00:00:19.603
-Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.
-
-4
-00:00:19.653 --> 00:00:24.445
-Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
-
-5
-00:00:24.495 --> 00:00:32.445
-Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
-
-6
-00:00:32.495 --> 00:00:38.817
-Simulated banking: security question and SMS stay separate; code autofill retains explicit Verify.
-
-7
-00:00:38.867 --> 00:00:44.093
-Simulated device registration and fresh biometric login inside the app; no silent password replay.
-
-8
-00:00:44.143 --> 00:00:50.093
-Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
-
-9
-00:00:50.143 --> 00:01:02.299
-Simulated device registration and fresh biometric login inside the app; no silent password replay.
-
-10
-00:01:02.349 --> 00:01:08.299
-Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
-
-11
-00:01:08.349 --> 00:01:15.083
+00:00:29.367 --> 00:00:36.111
 Simulated device registration and fresh biometric login inside the app; no silent password replay.

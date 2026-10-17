@@ -3,7 +3,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
-import json,re,subprocess
+import hashlib,json,re,subprocess
 ROOT=Path(__file__).resolve().parents[1];DOCS=ROOT/'docs'
 captions=json.loads((ROOT/'src/transcripts.json').read_text())['languages'] if (ROOT/'src/transcripts.json').exists() else json.loads((ROOT/'src/captions.json').read_text())['languages']
 content=json.loads((ROOT/'src/content.json').read_text())['languages'];assert set(content)=={'es','en','de','fr','ru','uk','pt'}
@@ -17,6 +17,10 @@ expected_keys={f"{c['id']}-{i:02d}" for c in policy['chapters'] for i in range(1
 assert set(scenario_captions)==set(content)
 ux=json.loads((ROOT/'src/ux-copy.json').read_text())['languages']
 assert set(ux)==set(content)
+spoken=json.loads((ROOT/'src/narration-copy.json').read_text())
+assert set(spoken['languages'])==set(content)
+assert all(set(copy)==set(spoken['context']) for copy in spoken['languages'].values())
+audio_languages=dict(es='spa',en='eng',de='deu',fr='fra',ru='rus',uk='ukr',pt='por')
 assert policy['revision']==4 and len(policy['overview']['excerpts'])==13
 for lang,copy in ux.items():
  assert copy.keys()==ux['es'].keys() and len(copy['benefits'])==6
@@ -29,7 +33,7 @@ for lang,values in scenario_captions.items():
  assert set(values)==expected_keys and all(0<len(text)<=160 for text in values.values())
 
 class Page(HTMLParser):
- def __init__(self):super().__init__();self.refs=[];self.video=0;self.tracks=0;self.forms=0;self.ids=[];self.templates=0;self.inert=0;self.previews=0
+ def __init__(self):super().__init__();self.refs=[];self.video=0;self.tracks=0;self.forms=0;self.ids=[];self.templates=0;self.inert=0;self.previews=0;self.sources=[]
  def handle_starttag(self,tag,attrs):
   d=dict(attrs)
   if tag=='template':self.inert+=1;self.templates+=1
@@ -38,7 +42,9 @@ class Page(HTMLParser):
   if 'id' in d:self.ids.append(d['id'])
   if tag=='video':
    self.video+=1;assert self.inert and 'autoplay' not in d and 'controls' in d and 'playsinline' in d and d.get('preload')=='none'
-  if tag=='source':assert self.inert,'Video source must stay in an inert template until Play'
+  if tag=='source':
+   assert self.inert,'Video source must stay in an inert template until Play'
+   self.sources.append(d['src'])
   if tag=='track':self.tracks+=1;assert self.inert
   if 'data-play-video' in d:self.previews+=1;assert tag=='a' and '.mp4?' in d.get('href','')
   self.forms+=tag in ('form','input','iframe')
@@ -51,7 +57,9 @@ for lang,c in content.items():
   s=path.read_text();p=Page();p.feed(s)
   assert f'<html lang="{lang}">' in s and not p.forms
   assert len(p.ids)==len(set(p.ids))
-  if path.parent.name!= 'privacy':assert p.video==p.templates==p.previews==14 and p.tracks==98
+  if path.parent.name!= 'privacy':
+   assert p.video==p.templates==p.previews==14 and p.tracks==98
+   assert all(f'/narrated/{lang}/' in src for src in p.sources),'Page must use its own narrated language'
   for ref in p.refs:
    u=urlsplit(ref)
    if u.scheme or u.netloc:
@@ -74,16 +82,45 @@ for id,info in media.items():
  path=DOCS/'media'/f'{id}.mp4';assert path.stat().st_size<100*1024*1024
  result=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(path)]))
  duration=float(result['format']['duration']);assert duration>=29.9
- if id=='overview':assert 90<=duration<=120
+ if id=='overview':assert 60<=duration<=120
  assert next(x for x in result['streams'] if x['codec_type']=='video')['codec_name']=='h264'
  assert not any(x['codec_type']=='audio' for x in result['streams'])
+ pacing=info['pacing'];assert pacing['actionsAtOriginalSpeed'] and duration<pacing['sourceDuration']
+ cuts=pacing['cuts'];assert all(0<=cut['start']<cut['end']<=pacing['sourceDuration'] for cut in cuts)
+ assert all(a['end']<=b['start'] for a,b in zip(cuts,cuts[1:]))
+ assert abs(pacing['sourceDuration']-duration-sum(c['end']-c['start'] for c in cuts))<.08
+ assert abs(info['duration']-duration)<.01
+ assert set(info['narration']['languages'])==set(content)
  events=json.loads((DOCS/'media/events'/f'{id}.json').read_text())['events']
  for event in events:
   assert 0<=event['timeSeconds']<=duration
+  source_time=event['sourceTimeSeconds']
+  expected_time=source_time-sum(max(0,min(source_time,c['end'])-c['start']) for c in cuts)
+  assert abs(event['timeSeconds']-expected_time)<.002,(id,event,'bad edited event time')
+  if event['type'] not in ('hold','screenshot'):
+   assert not any(c['start']<=source_time<c['end'] for c in cuts),'A recorded action was removed'
   if event['type'] in ('tap','swipe'):
    assert 0<event['x']<540 and 0<event['y']<1200,(id,event)
  raw=path.read_bytes();assert raw.index(b'moov')<raw.index(b'mdat'),'MP4 missing fast-start metadata'
  for lang in content:
+  speech=info['narration']['languages'][lang]
+  voiced=DOCS/'media'/speech['file']
+  assert speech['file']==f'narrated/{lang}/{id}.mp4'
+  assert voiced.stat().st_size==speech['bytes']<100*1024*1024
+  assert hashlib.sha256(voiced.read_bytes()).hexdigest()==speech['sha256']
+  voiced_info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(voiced)]))
+  assert abs(float(voiced_info['format']['duration'])-duration)<.1
+  assert next(s for s in voiced_info['streams'] if s['codec_type']=='video')['codec_name']=='h264'
+  audio=next(s for s in voiced_info['streams'] if s['codec_type']=='audio')
+  assert audio['codec_name']=='aac' and audio['channels']==1 and audio['sample_rate']=='24000'
+  assert audio['tags']['language']==audio_languages[lang],(id,lang,audio.get('tags'))
+  previous=0
+  for cue in speech['cues']:
+   assert previous<=cue['start']<cue['end']<=duration+.01,(id,lang,cue)
+   previous=cue['end']
+  scenes=range(1,len(info['excerpts' if id=='overview' else 'sources'])+1)
+  assert {c['scene'] for c in speech['cues'] if c['summary']}==set(scenes),'Every scene needs a localized spoken summary'
+  voiced_raw=voiced.read_bytes();assert voiced_raw.index(b'moov')<voiced_raw.index(b'mdat')
   vtt=(DOCS/'media/captions'/lang/f'{id}.vtt').read_text();assert vtt.startswith('WEBVTT\n') and '-->' in vtt
   times=re.findall(r'(\d{2}):(\d{2}):(\d{2})\.(\d{3}) --> (\d{2}):(\d{2}):(\d{2})\.(\d{3})',vtt)
   assert times,(lang,id,'missing caption timing')
@@ -107,10 +144,12 @@ for id in ('transfers','payments'):
  assert all(source['requiresSmsAutofill'] for source in media[id]['sources'] if 'ShowcaseMoneyUxTest' in source['test'])
  assert not any('BankingFlowTest' in source['test'] for source in media[id]['sources'])
 assert {'sms-wait','sms-filled'}<=set(media['transfers']['featuredFrames'])
-for chapter,start,end in [('login',0,14.2),('transfers',13,32.2)]:
+for chapter in ('login','transfers'):
+ excerpt=next(e for e in media['overview']['excerpts'] if e['chapter']==chapter)
+ start=excerpt['playbackStart'];end=start+excerpt['playbackDuration']
  assert any(e['type']=='sms-autofill' and e.get('sourceChapter')==chapter and start<=e['timeSeconds']<=end for e in overview_events)
 size=sum(p.stat().st_size for p in DOCS.rglob('*') if p.is_file());assert size<250*1024*1024
 for p in ROOT.rglob('*'):
  if not p.is_file() or '.git' in p.parts:continue
  assert p.suffix not in ('.apk','.aab','.jks','.p12','.keystore'),f'Excluded binary in website: {p}'
-print(f'Seven languages, privacy routes, links, 14 H.264 videos, 98 caption tracks, no forms, file budgets passed ({size/1024/1024:.1f} MiB).')
+print(f'Seven languages, privacy routes, links, 14 paced videos, 98 narrated H.264/AAC videos, 98 caption tracks, action timing, no forms and file budgets passed ({size/1024/1024:.1f} MiB).')
