@@ -1,17 +1,69 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:21.200
-Interface bancária nativa com dados fictícios e respostas simuladas.
+00:00:00.000 --> 00:00:10.647
+Banco simulado: pergunta de segurança e SMS continuam separados; preencher o código mantém Verificar.
 
 2
-00:00:21.300 --> 00:00:42.500
-A pergunta de segurança e o token mantêm campos separados.
+00:00:10.697 --> 00:00:14.012
+Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.
 
 3
-00:00:42.600 --> 00:01:03.800
-Um dispositivo não aprovado bloqueia o acesso; a troca de senha exige confirmação.
+00:00:14.062 --> 00:00:19.808
+O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.
 
 4
-00:01:03.900 --> 00:01:25.100
-Essas verificações avançadas não estão incluídas na demonstração básica.
+00:00:19.858 --> 00:00:25.203
+Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+
+5
+00:00:25.253 --> 00:00:33.203
+Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+
+6
+00:00:33.253 --> 00:00:39.700
+Banco simulado: pergunta de segurança e SMS continuam separados; preencher o código mantém Verificar.
+
+7
+00:00:39.750 --> 00:00:45.110
+Banco simulado: dispositivo não aprovado exige registro, sem acesso às contas nem inscrição silenciosa.
+
+8
+00:00:45.160 --> 00:00:55.110
+Leia o texto e suas consequências. Abrir termos, privacidade ou contrato não significa aceitar.
+
+9
+00:00:55.160 --> 00:01:01.385
+Banco simulado: dispositivo não aprovado exige registro, sem acesso às contas nem inscrição silenciosa.
+
+10
+00:01:01.435 --> 00:01:11.385
+Leia o texto e suas consequências. Abrir termos, privacidade ou contrato não significa aceitar.
+
+11
+00:01:11.435 --> 00:01:23.233
+Banco simulado: dispositivo não aprovado exige registro, sem acesso às contas nem inscrição silenciosa.
+
+12
+00:01:23.283 --> 00:02:06.500
+Troca de senha exigida com banco simulado: revisar a divergência e confirmar antes de voltar ao acesso.
+
+13
+00:02:06.550 --> 00:02:11.841
+Registro de dispositivo e novo acesso biométrico simulados no aplicativo, sem reutilizar a senha silenciosamente.
+
+14
+00:02:11.891 --> 00:02:17.841
+Leia o texto e suas consequências. Abrir termos, privacidade ou contrato não significa aceitar.
+
+15
+00:02:17.891 --> 00:02:29.740
+Registro de dispositivo e novo acesso biométrico simulados no aplicativo, sem reutilizar a senha silenciosamente.
+
+16
+00:02:29.790 --> 00:02:35.740
+Leia o texto e suas consequências. Abrir termos, privacidade ou contrato não significa aceitar.
+
+17
+00:02:35.790 --> 00:02:42.350
+Registro de dispositivo e novo acesso biométrico simulados no aplicativo, sem reutilizar a senha silenciosamente.

@@ -1,17 +1,5 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:09.350
-Simulación sin conexión: todas las cuentas y los saldos son ficticios.
-
-2
-00:00:09.450 --> 00:00:18.800
-Ocultar o mostrar saldos permite revisar la privacidad de los importes.
-
-3
-00:00:18.900 --> 00:00:28.250
-DOP/USD y detalle de cuenta; las flechas indican la dirección de los deslizamientos.
-
-4
-00:00:28.350 --> 00:00:37.700
-Estas cuentas están en la demo básica; no prueban compatibilidad con el banco.
+00:00:00.000 --> 00:01:07.483
+Demo básica: saldos ficticios, ocultar importes, DOP/USD, deslizamientos y detalles de la cuenta.

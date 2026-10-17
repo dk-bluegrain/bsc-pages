@@ -1,17 +1,109 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:25.600
-Ajustes de demo y conciliación bancaria simulada; solo datos ficticios.
+00:00:00.000 --> 00:00:06.408
+Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.
 
 2
-00:00:25.700 --> 00:00:51.300
-La demo recorre perfil, seguridad, ayuda y cierre de sesión de prueba.
+00:00:06.458 --> 00:00:16.408
+La ayuda opcional usa consentimiento de Android para un mensaje, no acceso a la bandeja. El autocompletado del teclado espera a Verificar.
 
 3
-00:00:51.400 --> 00:01:17.000
-La conciliación exige historial cargado y una confirmación nueva; no repite el pago.
+00:00:16.458 --> 00:00:23.125
+Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.
 
 4
-00:01:17.100 --> 00:01:42.700
-La conciliación bancaria no está en la demo básica; autorización y validación siguen pendientes.
+00:00:23.175 --> 00:00:29.125
+La ayuda SMS se desactiva solo en este ajuste y vuelve a activarse. El teclado y la entrada manual siguen disponibles.
+
+5
+00:00:29.175 --> 00:00:34.849
+Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.
+
+6
+00:00:34.899 --> 00:00:42.849
+Ayuda SMS activada. Android pide aprobación para cada mensaje; solo el acceso exclusivamente por SMS aprobado se verifica automáticamente.
+
+7
+00:00:42.899 --> 00:00:49.417
+Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.
+
+8
+00:00:49.467 --> 00:00:55.417
+Preguntar permite elegir el canal cuando el banco ofrece alternativas. No cambia el autocompletado de Android.
+
+9
+00:00:55.467 --> 00:01:01.441
+Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.
+
+10
+00:01:01.491 --> 00:01:07.441
+Correo establece la entrega preferida cuando el banco la ofrezca. Después se restablece SMS para los demás recorridos.
+
+11
+00:01:07.491 --> 00:01:13.411
+Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.
+
+12
+00:01:13.461 --> 00:01:21.411
+SMS es la preferencia de entrega bancaria, cuando se ofrezca; no es un interruptor universal de autocompletado.
+
+13
+00:01:21.461 --> 00:01:28.167
+Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.
+
+14
+00:01:28.217 --> 00:02:42.233
+Demo básica: perfil, seguridad, ayuda y cierre de sesión de prueba; solo datos ficticios.
+
+15
+00:02:42.283 --> 00:02:59.350
+Resultado incierto con banco simulado: historial y nueva confirmación de conciliación; no repite ni cancela la operación.
+
+16
+00:02:59.400 --> 00:03:07.929
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+17
+00:03:07.979 --> 00:03:16.128
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+18
+00:03:16.178 --> 00:03:25.014
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+19
+00:03:25.064 --> 00:03:33.014
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+20
+00:03:33.064 --> 00:03:38.609
+Resultado incierto con banco simulado: historial y nueva confirmación de conciliación; no repite ni cancela la operación.
+
+21
+00:03:38.659 --> 00:03:47.968
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+22
+00:03:48.018 --> 00:03:56.249
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+23
+00:03:56.299 --> 00:04:04.562
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+24
+00:04:04.612 --> 00:04:12.762
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+25
+00:04:12.812 --> 00:04:21.190
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+26
+00:04:21.240 --> 00:04:29.190
+Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación.
+
+27
+00:04:29.240 --> 00:04:35.550
+Resultado incierto con banco simulado: historial y nueva confirmación de conciliación; no repite ni cancela la operación.

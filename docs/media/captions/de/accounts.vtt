@@ -1,17 +1,5 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:09.350
-Offline-Simulation: Alle Konten und Salden sind fiktiv.
-
-2
-00:00:09.450 --> 00:00:18.800
-Das Ein- und Ausblenden von Salden zeigt den Schutz angezeigter Beträge.
-
-3
-00:00:18.900 --> 00:00:28.250
-DOP/USD und Kontodetails; Pfeile zeigen die Wischrichtung.
-
-4
-00:00:28.350 --> 00:00:37.700
-Diese Konten sind in der einfachen Demo enthalten; Bankkompatibilität belegen sie nicht.
+00:00:00.000 --> 00:01:07.483
+Einfache Demo: fiktive Salden, Beträge ausblenden, DOP/USD, Wischgesten und Kontodetails.

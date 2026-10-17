@@ -1,27 +1,34 @@
 # Verification
 
-Android 1.11.0 (26): 279 JVM tests passed per debug/demo/live variant, 30 emulator
-integration tests and one additional unpaced card-control regression. Signed APK
-installation, offline demo accounts and live-login startup passed without
-personal credentials or real banking operations. Private source verification:
-https://github.com/dk-bluegrain/bsc/blob/main/publishing/DISTRIBUTION-VERIFICATION.json
+Android 1.12.0 (27): 281 JVM tests passed per debug/demo/live variant. The
+87-case targeted Android run and affected reruns passed, followed by language,
+SMS lifecycle and card-copy regressions. The final SMS regression run passed
+all 18 cases. Signed APK installation and offline startup passed; installed APK
+hashes match the distributed files. No personal credentials or banking
+operations were used. Detailed private source evidence:
+https://github.com/dk-bluegrain/bsc/blob/main/publishing/REVISION-VERIFICATION.md
 
-All 30 final fictional capture scenarios passed. Fourteen silent H.264 videos
-include a 104-second overview; 98 WebVTT tracks match the seven-language
-transcripts. Actual input coordinates and timestamps accompany the footage.
-Native-ring calibration and persistent vector rings preserve tap visibility.
-Complex transfer and beneficiary chapters exceed 120 seconds for readability.
+All 34 approved revision-3 fictional capture scenarios passed. Scripts preceded
+retakes and specify reading pauses, with longer holds for consent, reviews,
+receipts and uncertain outcomes. SMS assistance is enabled except for initial
+pre-choice onboarding and the configuration off/on example. SMS-only automatic
+login uses a labeled synthetic approval result; operation codes retain Verify.
+Fourteen silent H.264 videos include an approximately 104-second overview;
+98 WebVTT tracks match the seven-language transcripts. Actual input coordinates
+and timestamps accompany the footage. Native-ring calibration and persistent
+vector rings preserve tap visibility through window changes. Complex chapters
+may exceed 120 seconds for readability. Every chapter and overview received
+sampled visual review, and the final card fixture mask matches its test PAN.
 
 Static routes, local assets, privacy links, versioned downloads, codec/audio,
-fast-start metadata, caption parity, event bounds and deployment budgets passed.
-The complete docs deployment is under 20 MiB. Browser checks passed all 21
-language/viewport combinations (390, 820, 1440 px), including keyboard dialogs,
+fast-start metadata, caption timing/parity, event bounds and deployment budgets
+passed. The docs deployment is approximately 21.5 MiB. Browser checks passed all
+21 language/viewport combinations (390, 820, 1440 px), including keyboard dialogs,
 focus restoration, chapters, speed, transcripts, playback, privacy and downloads.
-Sampled visual review covered every chapter and the overview.
 
-Bank authorization, owner-account validation and current live compatibility
-remain unresolved. These checks do not certify linguistic/legal correctness.
-Native-speaker certification has not been performed. No Play submission.
+Bank authorization, owner-account validation, actual owner-device SMS consent
+and current live compatibility remain unresolved. These checks do not certify
+linguistic/legal correctness. No Play submission.
 
 Machine-readable results: [verification.json](docs/verification.json).
 Repeatable commands: [README.md](README.md).

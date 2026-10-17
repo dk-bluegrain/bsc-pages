@@ -1,17 +1,61 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:38.350
-Interface bancária nativa com dados fictícios e respostas simuladas.
+00:00:00.000 --> 00:00:32.144
+Banco simulado: colar código de destinatário, revisar e preencher dados, sem validar ou salvar automaticamente.
 
 2
-00:00:38.450 --> 00:01:16.800
-Um código pode preencher dados sem salvar o destinatário.
+00:00:32.194 --> 00:00:36.971
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 3
-00:01:16.900 --> 00:01:55.250
-A demonstração salva um destinatário fictício; excluir um beneficiário bancário simulado exige confirmações.
+00:00:37.021 --> 00:00:44.971
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 4
-00:01:55.350 --> 00:02:33.700
-A demonstração gerencia destinatários fictícios; esses passos bancários avançados são simulados.
+00:00:45.021 --> 00:00:51.500
+Banco simulado: colar código de destinatário, revisar e preencher dados, sem validar ou salvar automaticamente.
+
+5
+00:00:51.550 --> 00:01:02.652
+Exclusão de beneficiário com banco simulado: revisão, confirmação separada, código SMS preenchido e Verificar explícito.
+
+6
+00:01:02.702 --> 00:01:09.183
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+7
+00:01:09.233 --> 00:01:17.377
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+8
+00:01:17.427 --> 00:01:25.848
+A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.
+
+9
+00:01:25.898 --> 00:01:34.027
+A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.
+
+10
+00:01:34.077 --> 00:01:37.291
+Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.
+
+11
+00:01:37.341 --> 00:01:42.994
+O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.
+
+12
+00:01:43.044 --> 00:01:48.450
+Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+
+13
+00:01:48.500 --> 00:01:56.450
+Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.
+
+14
+00:01:56.500 --> 00:02:02.967
+Exclusão de beneficiário com banco simulado: revisão, confirmação separada, código SMS preenchido e Verificar explícito.
+
+15
+00:02:03.017 --> 00:03:11.883
+Demonstração básica: criar e salvar localmente beneficiário fictício de outro banco, sem validação bancária real.

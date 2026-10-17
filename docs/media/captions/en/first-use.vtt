@@ -1,17 +1,57 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:12.617
-Native UI demonstration; no personal banking session.
+00:00:00.000 --> 00:00:07.449
+Native demonstration: read privacy before accepting terms. This is not a personal banking session.
 
 2
-00:00:12.717 --> 00:00:25.333
-Privacy and the language picker are available; the selection shown is Spanish.
+00:00:07.499 --> 00:00:17.449
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
 
 3
-00:00:25.433 --> 00:00:38.050
-Opening the terms does not accept them: acceptance is explicit.
+00:00:17.499 --> 00:00:29.367
+Native demonstration: read privacy before accepting terms. This is not a personal banking session.
 
 4
-00:00:38.150 --> 00:00:50.767
-The demonstration establishes neither bank authorization nor current compatibility.
+00:00:29.417 --> 00:00:37.756
+Independent-app notice, terms and optional SMS-assistance choice; opening a document does not accept it.
+
+5
+00:00:37.806 --> 00:00:47.756
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
+
+6
+00:00:47.806 --> 00:00:53.543
+Independent-app notice, terms and optional SMS-assistance choice; opening a document does not accept it.
+
+7
+00:00:53.593 --> 00:01:00.527
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
+
+8
+00:01:00.577 --> 00:01:05.705
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
+
+9
+00:01:05.755 --> 00:01:10.131
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+10
+00:01:10.181 --> 00:01:18.305
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+11
+00:01:18.355 --> 00:01:27.093
+SMS assistance is optional. Android asks approval for one message, never inbox access; manual entry remains available.
+
+12
+00:01:27.143 --> 00:01:35.093
+SMS assistance is optional. Android asks approval for one message, never inbox access; manual entry remains available.
+
+13
+00:01:35.143 --> 00:01:41.700
+Independent-app notice, terms and optional SMS-assistance choice; opening a document does not accept it.
+
+14
+00:01:41.750 --> 00:02:31.217
+Basic offline demo: choose Spanish from the app’s seven-language selector.

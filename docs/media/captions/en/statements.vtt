@@ -1,17 +1,37 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:07.400
-Simulated banking UI; the PDF was created solely for demonstration.
+00:00:00.000 --> 00:00:05.449
+Simulated banking: statement periods and a synthetic PDF with pages, zoom and an explicit sharing action.
 
 2
-00:00:07.500 --> 00:00:14.900
-The viewer offers pages, zoom and an explicit action to share the synthetic PDF.
+00:00:05.499 --> 00:00:10.228
+Review the details before continuing. Opening this screen does not authorize an operation.
 
 3
-00:00:15.000 --> 00:00:22.400
-Saving selected periods waits for a folder; this test’s destination is simulated.
+00:00:10.278 --> 00:00:18.228
+Review the details before continuing. Opening this screen does not authorize an operation.
 
 4
-00:00:22.500 --> 00:00:29.900
-Statements are absent from the basic demo; bank compatibility remains unvalidated.
+00:00:18.278 --> 00:00:49.300
+Simulated banking: statement periods and a synthetic PDF with pages, zoom and an explicit sharing action.
+
+5
+00:00:49.350 --> 00:01:00.868
+Simulated statement saving: select synthetic PDFs for a fictional folder destination.
+
+6
+00:01:00.918 --> 00:01:05.147
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+7
+00:01:05.197 --> 00:01:13.323
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+8
+00:01:13.373 --> 00:01:18.323
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+9
+00:01:18.373 --> 00:01:24.883
+Simulated statement saving: select synthetic PDFs for a fictional folder destination.

@@ -1,17 +1,69 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:21.200
-Native Banking-Oberfläche mit fiktiven Daten und simulierten Antworten.
+00:00:00.000 --> 00:00:10.647
+Simulierte Bank: Sicherheitsfrage und SMS bleiben getrennt; automatisches Ausfüllen behält Prüfen bei.
 
 2
-00:00:21.300 --> 00:00:42.500
-Sicherheitsfrage und Token behalten getrennte Eingabefelder.
+00:00:10.697 --> 00:00:14.012
+Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
 
 3
-00:00:42.600 --> 00:01:03.800
-Ein nicht freigegebenes Gerät sperrt den Zugang; Passwortänderungen benötigen Bestätigung.
+00:00:14.062 --> 00:00:19.808
+Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
 
 4
-00:01:03.900 --> 00:01:25.100
-Diese erweiterten Verifizierungsabläufe sind nicht in der einfachen Demo enthalten.
+00:00:19.858 --> 00:00:25.203
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+5
+00:00:25.253 --> 00:00:33.203
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+6
+00:00:33.253 --> 00:00:39.700
+Simulierte Bank: Sicherheitsfrage und SMS bleiben getrennt; automatisches Ausfüllen behält Prüfen bei.
+
+7
+00:00:39.750 --> 00:00:45.110
+Simulierte Bank: Nicht freigegebenes Gerät braucht Registrierung, ohne Kontozugriff oder stille Anmeldung des Geräts.
+
+8
+00:00:45.160 --> 00:00:55.110
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+9
+00:00:55.160 --> 00:01:01.385
+Simulierte Bank: Nicht freigegebenes Gerät braucht Registrierung, ohne Kontozugriff oder stille Anmeldung des Geräts.
+
+10
+00:01:01.435 --> 00:01:11.385
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+11
+00:01:11.435 --> 00:01:23.233
+Simulierte Bank: Nicht freigegebenes Gerät braucht Registrierung, ohne Kontozugriff oder stille Anmeldung des Geräts.
+
+12
+00:01:23.283 --> 00:02:06.500
+Erforderliche Passwortänderung bei simulierter Bank: Abweichung prüfen und vor erneuter Anmeldung bestätigen.
+
+13
+00:02:06.550 --> 00:02:11.841
+Simulierte Geräteregistrierung und neue biometrische Anmeldung in der App; keine stille Passwortwiederverwendung.
+
+14
+00:02:11.891 --> 00:02:17.841
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+15
+00:02:17.891 --> 00:02:29.740
+Simulierte Geräteregistrierung und neue biometrische Anmeldung in der App; keine stille Passwortwiederverwendung.
+
+16
+00:02:29.790 --> 00:02:35.740
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+17
+00:02:35.790 --> 00:02:42.350
+Simulierte Geräteregistrierung und neue biometrische Anmeldung in der App; keine stille Passwortwiederverwendung.

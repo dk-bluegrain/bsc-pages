@@ -1,0 +1,879 @@
+{
+  "languages": {
+    "es": {
+      "first-use": [
+        "Demostración nativa: consultar la privacidad antes de aceptar los términos. No es una sesión bancaria personal.",
+        "Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.",
+        "Aviso de app independiente, términos y elección opcional de ayuda SMS; abrir un documento no equivale a aceptarlo.",
+        "Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.",
+        "La ayuda SMS es opcional. Android pide aprobación para un mensaje, no acceso a la bandeja; puedes continuar manualmente.",
+        "Demo básica sin conexión: elegir español en el selector de siete idiomas de la app."
+      ],
+      "login": [
+        "Acceso bancario simulado: opción de recordar usuario y contraseña, con aprobación biométrica de prueba.",
+        "Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.",
+        "Desbloqueo biométrico simulado del acceso guardado; la aprobación del banco es un requisito separado.",
+        "Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.",
+        "Acceso con banco simulado y SMS autocompletado por Android: el código requiere Verificar de forma expresa.",
+        "Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.",
+        "El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.",
+        "Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.",
+        "La ayuda SMS es opcional. Android pide aprobación para un mensaje, no acceso a la bandeja; puedes continuar manualmente.",
+        "Aprobación simulada de un mensaje: solo el acceso exclusivamente SMS se verifica automáticamente. Operaciones y preguntas combinadas conservan Verificar."
+      ],
+      "verification": [
+        "Banco simulado: pregunta de seguridad y SMS son pasos separados; autocompletar el código conserva Verificar.",
+        "Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.",
+        "El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.",
+        "Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.",
+        "Banco simulado: dispositivo sin aprobar y requisito de registro, sin acceso a cuentas ni inscripción silenciosa.",
+        "Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.",
+        "Cambio de contraseña requerido con banco simulado: revisar la discrepancia y confirmar antes de volver a acceder.",
+        "Registro de dispositivo y nuevo acceso biométrico simulados dentro de la app; no se reutiliza la contraseña en silencio."
+      ],
+      "accounts": [
+        "Demo básica: saldos ficticios, ocultar importes, DOP/USD, deslizamientos y detalles de la cuenta."
+      ],
+      "history": [
+        "Historial bancario simulado: revelar la cuenta, buscar movimientos y filtrar entradas y salidas.",
+        "CSV ficticio de la demo básica: revisar las opciones para compartir de Android sin enviarlo a un destinatario externo."
+      ],
+      "statements": [
+        "Banco simulado: períodos de estados de cuenta y PDF sintético con páginas, ampliación y acción de compartir.",
+        "Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.",
+        "Guardado bancario simulado: seleccionar PDF sintéticos para una carpeta de destino ficticia."
+      ],
+      "transfers": [
+        "Demo básica: transferencia entre cuentas propias, revisión y código local de prueba 123456; no es un SMS.",
+        "Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.",
+        "Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.",
+        "Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.",
+        "Transferencia con banco simulado: revisión, confirmación separada y SMS autocompletado por Android con Verificar expreso.",
+        "La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.",
+        "Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.",
+        "El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.",
+        "Banco simulado: buscar y elegir un beneficiario sin enviar una transferencia en este caso.",
+        "Demo básica: transferencias a beneficiarios guardados del mismo y otro banco, con código local 123456, no SMS."
+      ],
+      "payments": [
+        "Demo básica: pago de servicio ficticio, revisión y código local de prueba 123456; no es un SMS.",
+        "Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.",
+        "Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.",
+        "Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.",
+        "Pago con banco simulado: revisión, confirmación separada y SMS autocompletado por Android con Verificar expreso.",
+        "La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.",
+        "Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.",
+        "El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente."
+      ],
+      "beneficiaries": [
+        "Banco simulado: pegar un código de destinatario, revisar y completar datos, sin validar ni guardar automáticamente.",
+        "Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.",
+        "Eliminar un beneficiario con banco simulado: revisión, confirmación separada, SMS autocompletado y Verificar expreso.",
+        "La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.",
+        "Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.",
+        "El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.",
+        "Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.",
+        "Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.",
+        "Demo básica: crear y guardar localmente un beneficiario ficticio de otro banco, sin validación bancaria real."
+      ],
+      "cards": [
+        "Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.",
+        "Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco."
+      ],
+      "token": [
+        "Token BSC simulado: contrato, consentimiento, aprobación de prueba, código generado y desvinculación. El código no es SMS.",
+        "Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.",
+        "La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.",
+        "El código generado por Token BSC no es un SMS. Inscripción, aprobación y desvinculación se simulan con datos ficticios.",
+        "Inscripción de token simulada: SMS autocompletado por Android y Verificar expreso; este caso no acredita inscripción completada.",
+        "Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.",
+        "El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.",
+        "Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.",
+        "Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real."
+      ],
+      "qr": [
+        "QR ficticio de cuenta o solicitud: revisar, cancelar el guardado y reintentar con destino simulado; no es un pago.",
+        "Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.",
+        "Lectura de QR simulada: revisar importe, concepto y destinatario de una solicitud ficticia; sin captura de cámara real.",
+        "QR ficticio: vista previa de impresión de Android y retorno, sin afirmar que haya una impresión física."
+      ],
+      "settings": [
+        "Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.",
+        "La ayuda opcional usa consentimiento de Android para un mensaje, no acceso a la bandeja. El autocompletado del teclado espera a Verificar.",
+        "La ayuda SMS se desactiva solo en este ajuste y vuelve a activarse. El teclado y la entrada manual siguen disponibles.",
+        "Ayuda SMS activada. Android pide aprobación para cada mensaje; solo el acceso exclusivamente por SMS aprobado se verifica automáticamente.",
+        "Preguntar permite elegir el canal cuando el banco ofrece alternativas. No cambia el autocompletado de Android.",
+        "Correo establece la entrega preferida cuando el banco la ofrezca. Después se restablece SMS para los demás recorridos.",
+        "SMS es la preferencia de entrega bancaria, cuando se ofrezca; no es un interruptor universal de autocompletado.",
+        "Demo básica: perfil, seguridad, ayuda y cierre de sesión de prueba; solo datos ficticios.",
+        "Resultado incierto con banco simulado: historial y nueva confirmación de conciliación; no repite ni cancela la operación.",
+        "Resultado incierto: comprueba el historial real antes de conciliar. Conciliar no repite ni cancela la operación."
+      ],
+      "overview": [
+        "Primer uso ficticio: privacidad, términos, idioma y elección opcional de ayuda SMS con aprobación por mensaje.",
+        "Acceso simulado: aprobar un SMS verifica automáticamente solo el acceso exclusivamente SMS; el teclado conserva Verificar.",
+        "Pregunta combinada y SMS conservan Verificar; la aprobación del dispositivo y el cambio de contraseña son pasos distintos.",
+        "Demo sin conexión: cuentas ficticias, DOP/USD, privacidad de saldos y flechas de deslizamiento.",
+        "Historial bancario simulado: búsqueda y filtros; la demo comparte un CSV ficticio mediante Android.",
+        "PDF sintético: páginas, ampliación, compartir y guardado por selección con carpeta simulada.",
+        "Transferencias de demo: código 123456, no SMS. Banco simulado: revisión, código SMS autocompletado por Android y Verificar.",
+        "Pago de demo con código local; pago bancario simulado con código SMS autocompletado mediante Android y Verificar.",
+        "Código de destinatario, guardado local y eliminación bancaria simulada con código SMS autocompletado y Verificar.",
+        "Tarjetas de solo lectura: titular e identificador del banco, número completo solo si se facilita; servicios informativos sin cambios.",
+        "Token BSC simulado: contrato y desvinculación; SMS con autocompletado y Verificar. El código generado del token no es SMS.",
+        "Solicitud QR ficticia: guardado, revisión del destinatario y vista previa de impresión.",
+        "Ayuda SMS: desactivar y reactivar; entrega bancaria aparte. Autorización del banco y validación con la cuenta de su titular pendientes."
+      ]
+    },
+    "en": {
+      "first-use": [
+        "Native demonstration: read privacy before accepting terms. This is not a personal banking session.",
+        "Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.",
+        "Independent-app notice, terms and optional SMS-assistance choice; opening a document does not accept it.",
+        "Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.",
+        "SMS assistance is optional. Android asks approval for one message, never inbox access; manual entry remains available.",
+        "Basic offline demo: choose Spanish from the app’s seven-language selector."
+      ],
+      "login": [
+        "Simulated banking login: optional remembered username and password, with test biometric approval.",
+        "Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.",
+        "Simulated biometric unlock of saved access; bank approval is a separate requirement.",
+        "A test result using fictional data; it does not establish that a real banking operation completed.",
+        "Fake-bank login with Android SMS-code autofill: the code still requires explicit Verify.",
+        "A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.",
+        "Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.",
+        "A simulated one-message approval result demonstrates automatic verification of SMS-only login, not keyboard autofill.",
+        "SMS assistance is optional. Android asks approval for one message, never inbox access; manual entry remains available.",
+        "Simulated one-message approval: only SMS-only login auto-verifies. Operations and combined questions still require Verify."
+      ],
+      "verification": [
+        "Simulated banking: security question and SMS stay separate; code autofill retains explicit Verify.",
+        "A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.",
+        "Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.",
+        "Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.",
+        "Simulated banking: an unapproved device needs registration, with no account access or silent enrollment.",
+        "Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.",
+        "Required password change with a fake bank: review the mismatch and confirm before returning to login.",
+        "Simulated device registration and fresh biometric login inside the app; no silent password replay."
+      ],
+      "accounts": [
+        "Basic demo: fictional balances, amount privacy, DOP/USD, swipes and account details."
+      ],
+      "history": [
+        "Simulated banking history: reveal the account, search transactions and filter incoming/outgoing records.",
+        "Basic demo’s fictional CSV: inspect Android sharing options without sending to an external recipient."
+      ],
+      "statements": [
+        "Simulated banking: statement periods and a synthetic PDF with pages, zoom and an explicit sharing action.",
+        "Review the details before continuing. Opening this screen does not authorize an operation.",
+        "Simulated statement saving: select synthetic PDFs for a fictional folder destination."
+      ],
+      "transfers": [
+        "Basic demo: own-account transfer, review and local test code 123456; this is not SMS.",
+        "Review the details before continuing. Opening this screen does not authorize an operation.",
+        "Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.",
+        "A test result using fictional data; it does not establish that a real banking operation completed.",
+        "Fake-bank transfer: review, separate confirmation and Android SMS-code autofill with explicit Verify.",
+        "Confirmation is a separate step. This demonstration sends no instructions to the real bank.",
+        "A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.",
+        "Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.",
+        "Simulated banking: search for and choose a beneficiary without sending a transfer in this case.",
+        "Basic demo: transfers to saved same-bank/other-bank beneficiaries with local code 123456, not SMS."
+      ],
+      "payments": [
+        "Basic demo: fictional service payment, review and local test code 123456; this is not SMS.",
+        "Review the details before continuing. Opening this screen does not authorize an operation.",
+        "Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.",
+        "A test result using fictional data; it does not establish that a real banking operation completed.",
+        "Fake-bank payment: review, separate confirmation and Android SMS-code autofill with explicit Verify.",
+        "Confirmation is a separate step. This demonstration sends no instructions to the real bank.",
+        "A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.",
+        "Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically."
+      ],
+      "beneficiaries": [
+        "Simulated banking: paste a recipient code, review and prefill details, without automatic validation or saving.",
+        "Review the details before continuing. Opening this screen does not authorize an operation.",
+        "Fake-bank beneficiary deletion: review, separate confirmation, SMS-code autofill and explicit Verify.",
+        "Confirmation is a separate step. This demonstration sends no instructions to the real bank.",
+        "A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.",
+        "Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.",
+        "Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.",
+        "A test result using fictional data; it does not establish that a real banking operation completed.",
+        "Basic demo: create and save a fictional other-bank beneficiary locally, without real bank validation."
+      ],
+      "cards": [
+        "Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.",
+        "Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank."
+      ],
+      "token": [
+        "Simulated Token BSC: contract, consent, test approval, generated code and unlinking. The generated code is not SMS.",
+        "Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.",
+        "Confirmation is a separate step. This demonstration sends no instructions to the real bank.",
+        "A generated Token BSC code is not an SMS. Enrollment, approval and unlinking are simulated with fictional data.",
+        "Simulated token enrollment: Android SMS-code autofill and explicit Verify; this case does not establish completed enrollment.",
+        "A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.",
+        "Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.",
+        "Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.",
+        "A test result using fictional data; it does not establish that a real banking operation completed."
+      ],
+      "qr": [
+        "Fictional account/request QR: review, cancel saving and retry with a simulated destination; this is not payment.",
+        "Review the details before continuing. Opening this screen does not authorize an operation.",
+        "Simulated QR read: review a fictional request’s amount, memo and recipient; no real camera capture.",
+        "Fictional QR: Android print preview and return, without claiming a physical printout."
+      ],
+      "settings": [
+        "Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.",
+        "Optional assistance uses Android consent for one message, not inbox access. Keyboard autofill still waits for Verify.",
+        "SMS assistance is switched off only in this settings scene, then restored on. Keyboard and manual entry remain available.",
+        "SMS assistance is on. Android requests per-message approval; only an approved SMS-only login auto-verifies.",
+        "Ask lets you choose a channel when the bank offers alternatives. It does not change Android autofill.",
+        "Email sets the preferred delivery channel when offered. SMS is restored afterwards for the other walkthroughs.",
+        "SMS is the preferred bank-code delivery channel when offered; this is not a universal autofill switch.",
+        "Basic demo: profile, security, help and test-session logout; fictional data only.",
+        "Fake-bank uncertain outcome: history and fresh reconciliation acknowledgement; no repeat or cancellation of the operation.",
+        "Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation."
+      ],
+      "overview": [
+        "Fictional first use: privacy, terms, language and optional SMS assistance with per-message approval.",
+        "Simulated login: approved one-message sharing auto-verifies only SMS-only login; keyboard autofill retains Verify.",
+        "Combined question plus SMS retains Verify; device approval and password change remain separate steps.",
+        "Offline demo: fictional accounts, DOP/USD, balance privacy and swipe-direction arrows.",
+        "Simulated banking history: search and filters; the demo shares a fictional CSV through Android.",
+        "Synthetic PDF: pages, zoom, sharing and selected-period saving with a simulated folder.",
+        "Demo transfers: local code 123456, not SMS. Simulated bank: review, Android autofill of the SMS code and Verify.",
+        "Demo payment with a local code; simulated bank payment with Android autofill of the SMS code and Verify.",
+        "Recipient code, local save and simulated bank deletion with SMS code autofill and Verify.",
+        "Read-only cards: bank-supplied holder/identifier, full number only if supplied; informational services make no changes.",
+        "Simulated Token BSC: contract and unlinking; SMS code autofill then Verify. Generated token codes are not SMS.",
+        "Fictional QR request: saving, recipient review and print preview.",
+        "SMS assistance off then on; delivery is separate. Bank authorization and owner-account validation remain unresolved."
+      ]
+    },
+    "de": {
+      "first-use": [
+        "Native Vorführung: Datenschutz vor Zustimmung zu Bedingungen lesen. Keine persönliche Banksitzung.",
+        "Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.",
+        "Unabhängigkeitshinweis, Bedingungen und optionale SMS-Hilfe; ein Dokument zu öffnen bedeutet keine Zustimmung.",
+        "Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.",
+        "SMS-Hilfe ist optional. Android fragt für eine Nachricht, ohne Posteingangszugriff; manuelle Eingabe bleibt möglich.",
+        "Einfache Offline-Demo: Spanisch in der Sprachauswahl mit sieben Sprachen wählen."
+      ],
+      "login": [
+        "Simulierte Bankanmeldung: Zugangsdaten optional speichern, mit biometrischer Testfreigabe.",
+        "Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.",
+        "Simuliertes biometrisches Entsperren gespeicherter Zugangsdaten; die Bankfreigabe bleibt ein eigener Schritt.",
+        "Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.",
+        "Simulierte Bankanmeldung mit durch Android ausgefülltem SMS-Code: Prüfen bleibt ausdrücklich erforderlich.",
+        "Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.",
+        "Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.",
+        "Simulierte Freigabe einer Nachricht: automatische Prüfung nur der reinen SMS-Anmeldung, kein Tastatur-Autofill.",
+        "SMS-Hilfe ist optional. Android fragt für eine Nachricht, ohne Posteingangszugriff; manuelle Eingabe bleibt möglich.",
+        "Simulierte Nachrichtenfreigabe: Nur reine SMS-Anmeldung prüft automatisch. Vorgänge und kombinierte Fragen brauchen weiter Prüfen."
+      ],
+      "verification": [
+        "Simulierte Bank: Sicherheitsfrage und SMS bleiben getrennt; automatisches Ausfüllen behält Prüfen bei.",
+        "Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.",
+        "Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.",
+        "Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.",
+        "Simulierte Bank: Nicht freigegebenes Gerät braucht Registrierung, ohne Kontozugriff oder stille Anmeldung des Geräts.",
+        "Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.",
+        "Erforderliche Passwortänderung bei simulierter Bank: Abweichung prüfen und vor erneuter Anmeldung bestätigen.",
+        "Simulierte Geräteregistrierung und neue biometrische Anmeldung in der App; keine stille Passwortwiederverwendung."
+      ],
+      "accounts": [
+        "Einfache Demo: fiktive Salden, Beträge ausblenden, DOP/USD, Wischgesten und Kontodetails."
+      ],
+      "history": [
+        "Simulierter Bankverlauf: Kontonummer anzeigen, Buchungen suchen und Ein- oder Ausgänge filtern.",
+        "Fiktive CSV der einfachen Demo: Android-Teilen-Auswahl ansehen, ohne an einen externen Empfänger zu senden."
+      ],
+      "statements": [
+        "Simulierte Bank: Auszugszeiträume und künstliches PDF mit Seiten, Vergrößerung und ausdrücklicher Teilen-Aktion.",
+        "Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.",
+        "Simuliertes Speichern von Auszügen: künstliche PDFs für einen fiktiven Zielordner auswählen."
+      ],
+      "transfers": [
+        "Einfache Demo: eigene Überweisung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.",
+        "Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.",
+        "Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.",
+        "Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.",
+        "Simulierte Überweisung: Prüfung, gesonderte Bestätigung und durch Android ausgefüllter SMS-Code mit ausdrücklichem Prüfen.",
+        "Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.",
+        "Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.",
+        "Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.",
+        "Simulierte Bank: Begünstigte suchen und auswählen, ohne in diesem Fall eine Überweisung zu senden.",
+        "Einfache Demo: Überweisungen an gespeicherte Begünstigte derselben/anderer Banken, mit lokalem Code 123456, keiner SMS."
+      ],
+      "payments": [
+        "Einfache Demo: fiktive Dienstleistungszahlung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.",
+        "Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.",
+        "Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.",
+        "Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.",
+        "Simulierte Zahlung: Prüfung, gesonderte Bestätigung und durch Android ausgefüllter SMS-Code mit ausdrücklichem Prüfen.",
+        "Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.",
+        "Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.",
+        "Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch."
+      ],
+      "beneficiaries": [
+        "Simulierte Bank: Empfängercode einfügen, prüfen und vorausfüllen, ohne automatisch zu validieren oder zu speichern.",
+        "Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.",
+        "Simuliertes Löschen eines Bankbegünstigten: Prüfung, eigene Bestätigung, ausgefüllter SMS-Code und ausdrückliches Prüfen.",
+        "Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.",
+        "Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.",
+        "Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.",
+        "Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.",
+        "Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.",
+        "Einfache Demo: fiktiven Begünstigten einer anderen Bank lokal anlegen und speichern, ohne echte Bankprüfung."
+      ],
+      "cards": [
+        "Simulierte Bankkarte: gelieferter fiktiver Inhaber, Kennung und volle Testnummer; Dienste informieren ohne Änderungen.",
+        "Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert."
+      ],
+      "token": [
+        "Simulierter Token BSC: Vertrag, Zustimmung, Testfreigabe, erzeugter Code und Trennen. Der erzeugte Code ist keine SMS.",
+        "Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.",
+        "Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.",
+        "Ein erzeugter Token-BSC-Code ist keine SMS. Registrierung, Freigabe und Trennung sind mit fiktiven Daten simuliert.",
+        "Simulierte Token-Registrierung: Android füllt SMS-Code aus, dann ausdrücklich Prüfen; kein Nachweis abgeschlossener Registrierung.",
+        "Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.",
+        "Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.",
+        "Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.",
+        "Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang."
+      ],
+      "qr": [
+        "Fiktiver Konto-/Anforderungs-QR: prüfen, Speichern abbrechen und mit simuliertem Ziel erneut versuchen; keine Zahlung.",
+        "Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.",
+        "Simuliertes QR-Lesen: Betrag, Verwendungszweck und Empfänger einer fiktiven Anforderung prüfen; keine echte Kameraaufnahme.",
+        "Fiktiver QR: Android-Druckvorschau und Rückkehr, ohne einen tatsächlichen Ausdruck zu behaupten."
+      ],
+      "settings": [
+        "Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.",
+        "Optionale Hilfe nutzt Android-Zustimmung für eine Nachricht, keinen Posteingangszugriff. Tastatur-Autofill wartet auf Prüfen.",
+        "SMS-Hilfe wird nur in dieser Einstellungsszene aus- und wieder eingeschaltet. Tastatur und manuelle Eingabe bleiben verfügbar.",
+        "SMS-Hilfe ist an. Android fragt für jede Nachricht; nur eine freigegebene reine SMS-Anmeldung wird automatisch geprüft.",
+        "Nachfragen lässt Sie bei angebotenen Alternativen einen Zustellweg wählen. Das automatische Ausfüllen von Android bleibt unverändert.",
+        "E-Mail ist der bevorzugte Zustellweg, sofern angeboten. Danach wird für die übrigen Rundgänge wieder SMS gewählt.",
+        "SMS ist der bevorzugte Bank-Zustellweg, sofern angeboten; dies ist kein allgemeiner Schalter für automatisches Ausfüllen.",
+        "Einfache Demo: Profil, Sicherheit, Hilfe und Abmeldung der Testsitzung; nur fiktive Daten.",
+        "Unklares Ergebnis bei simulierter Bank: Verlauf und neue Abgleichbestätigung; kein Wiederholen oder Stornieren des Vorgangs.",
+        "Unklares Ergebnis: Vor dem Abgleich den tatsächlichen Verlauf prüfen. Der Abgleich wiederholt oder storniert keinen Vorgang."
+      ],
+      "overview": [
+        "Fiktiver Erststart: Datenschutz, Bedingungen, Sprache und optionale SMS-Hilfe mit Freigabe je Nachricht.",
+        "Simulierte Anmeldung: Freigabe einer SMS prüft nur die reine SMS-Anmeldung automatisch; Tastatur-Autofill behält Prüfen.",
+        "Kombinierte Frage und SMS behalten Prüfen; Gerätefreigabe und Passwortänderung bleiben getrennte Schritte.",
+        "Offline-Demo: fiktive Konten, DOP/USD, ausgeblendete Salden und Pfeile für die Wischrichtung.",
+        "Simulierter Bankverlauf: Suche und Filter; die Demo teilt eine fiktive CSV über Android.",
+        "Künstlich erstelltes PDF: Seiten, Vergrößerung, Teilen und Auswahl speichern mit simuliertem Ordner.",
+        "Demo-Überweisungen: lokaler Code 123456, keine SMS. Simulierte Bank: Prüfung, von Android ausgefüllter SMS-Code und Prüfen.",
+        "Demo-Zahlung mit lokalem Code; simulierte Bankzahlung mit durch Android ausgefülltem SMS-Code und Prüfen.",
+        "Empfängercode, lokales Speichern und simulierte Löschung bei der Bank mit automatisch ausgefülltem SMS-Code und Prüfen.",
+        "Karten nur lesbar: Inhaber/Kennung von der Bank, volle Nummer nur bei Lieferung; Dienste informieren ohne Änderungen.",
+        "Simulierter Token BSC: Vertrag und Trennen; SMS-Code automatisch ausfüllen, dann Prüfen. Erzeugte Token-Codes sind keine SMS.",
+        "Fiktive QR-Anforderung: Speichern, Empfängerprüfung und Druckvorschau.",
+        "SMS-Hilfe aus und wieder an; Zustellung getrennt. Bankgenehmigung und Prüfung des Inhaberkontos bleiben ungeklärt."
+      ]
+    },
+    "fr": {
+      "first-use": [
+        "Démonstration native : lire la confidentialité avant d’accepter les conditions. Aucune session bancaire personnelle.",
+        "Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.",
+        "Avis d’indépendance, conditions et choix de l’aide SMS facultative ; ouvrir un document ne vaut pas acceptation.",
+        "Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.",
+        "L’aide SMS est facultative. Android demande l’accord pour un message, sans accès à la boîte SMS ; la saisie manuelle reste possible.",
+        "Démo de base hors ligne : choisir l’espagnol dans le sélecteur des sept langues de l’application."
+      ],
+      "login": [
+        "Connexion bancaire simulée : mémorisation facultative des identifiants avec approbation biométrique de test.",
+        "Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.",
+        "Déverrouillage biométrique simulé de l’accès mémorisé ; l’approbation bancaire reste une exigence distincte.",
+        "Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.",
+        "Connexion bancaire simulée avec code SMS rempli par Android : Vérifier reste explicitement requis.",
+        "Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.",
+        "Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.",
+        "Accord simulé pour un seul message : vérification automatique de la connexion par SMS seul, pas du remplissage du clavier.",
+        "L’aide SMS est facultative. Android demande l’accord pour un message, sans accès à la boîte SMS ; la saisie manuelle reste possible.",
+        "Accord simulé pour un message : seule la connexion par SMS seul est vérifiée automatiquement. Opérations et questions combinées gardent Vérifier."
+      ],
+      "verification": [
+        "Banque simulée : question de sécurité et SMS restent distincts ; remplir le code conserve Vérifier.",
+        "Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.",
+        "Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.",
+        "Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.",
+        "Banque simulée : appareil non approuvé nécessitant l’inscription, sans accès aux comptes ni inscription silencieuse.",
+        "Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.",
+        "Changement de mot de passe requis avec banque simulée : revoir l’écart et confirmer avant de revenir à la connexion.",
+        "Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe."
+      ],
+      "accounts": [
+        "Démo de base : soldes fictifs, montants masqués, DOP/USD, gestes de défilement et détails du compte."
+      ],
+      "history": [
+        "Historique bancaire simulé : afficher le compte, rechercher des opérations et filtrer entrées et sorties.",
+        "CSV fictif de la démo de base : examiner les options de partage Android sans envoyer à un destinataire externe."
+      ],
+      "statements": [
+        "Banque simulée : périodes de relevés et PDF synthétique avec pages, agrandissement et partage explicite.",
+        "Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.",
+        "Enregistrement de relevés simulé : sélectionner des PDF synthétiques pour un dossier de destination fictif."
+      ],
+      "transfers": [
+        "Démo de base : virement entre comptes, révision et code local de test 123456 ; ce n’est pas un SMS.",
+        "Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.",
+        "Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.",
+        "Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.",
+        "Virement bancaire simulé : révision, confirmation distincte et code SMS rempli par Android avec Vérifier explicite.",
+        "La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.",
+        "Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.",
+        "Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.",
+        "Banque simulée : rechercher et choisir un bénéficiaire sans envoyer de virement dans ce cas.",
+        "Démo de base : virements vers des bénéficiaires enregistrés de la même banque ou d’une autre, avec code local 123456, pas un SMS."
+      ],
+      "payments": [
+        "Démo de base : paiement de service fictif, révision et code local de test 123456 ; ce n’est pas un SMS.",
+        "Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.",
+        "Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.",
+        "Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.",
+        "Paiement bancaire simulé : révision, confirmation distincte et code SMS rempli par Android avec Vérifier explicite.",
+        "La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.",
+        "Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.",
+        "Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement."
+      ],
+      "beneficiaries": [
+        "Banque simulée : coller un code de destinataire, revoir et préremplir, sans validation ni enregistrement automatique.",
+        "Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.",
+        "Suppression de bénéficiaire simulée : révision, confirmation distincte, code SMS rempli et Vérifier explicite.",
+        "La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.",
+        "Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.",
+        "Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.",
+        "Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.",
+        "Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.",
+        "Démo de base : créer et enregistrer localement un bénéficiaire fictif d’une autre banque, sans validation bancaire réelle."
+      ],
+      "cards": [
+        "Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.",
+        "Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit."
+      ],
+      "token": [
+        "Token BSC simulé : contrat, consentement, approbation de test, code généré et dissociation. Le code généré n’est pas un SMS.",
+        "Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.",
+        "La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.",
+        "Un code généré par Token BSC n’est pas un SMS. Inscription, approbation et dissociation sont simulées avec des données fictives.",
+        "Inscription de jeton simulée : code SMS rempli par Android et Vérifier explicite ; ce cas ne prouve pas une inscription achevée.",
+        "Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.",
+        "Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.",
+        "Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.",
+        "Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti."
+      ],
+      "qr": [
+        "QR fictif de compte/demande : révision, annulation puis nouvel essai d’enregistrement avec destination simulée ; aucun paiement.",
+        "Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.",
+        "Lecture QR simulée : revoir montant, motif et destinataire d’une demande fictive ; aucune capture réelle par caméra.",
+        "QR fictif : aperçu d’impression Android et retour, sans affirmer qu’une impression physique a lieu."
+      ],
+      "settings": [
+        "Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.",
+        "L’aide facultative utilise l’accord Android pour un message, sans accès à la boîte SMS. Le remplissage du clavier attend Vérifier.",
+        "L’aide SMS est désactivée uniquement dans cette scène, puis réactivée. Clavier et saisie manuelle restent disponibles.",
+        "L’aide SMS est activée. Android demande l’accord par message ; seule la connexion par SMS seul approuvée est vérifiée automatiquement.",
+        "Demander permet de choisir parmi les canaux proposés par la banque. Cela ne modifie pas le remplissage automatique Android.",
+        "Courriel définit le canal de réception préféré, s’il est proposé. SMS est ensuite rétabli pour les autres parcours.",
+        "SMS est le canal bancaire préféré, s’il est proposé ; ce n’est pas un interrupteur universel du remplissage automatique.",
+        "Démo de base : profil, sécurité, aide et déconnexion de la session de test ; données fictives uniquement.",
+        "Résultat bancaire simulé incertain : historique et nouvel accord de rapprochement ; aucune répétition ni annulation de l’opération.",
+        "Résultat incertain : vérifiez l’historique réel avant le rapprochement. Celui-ci ne répète ni n’annule l’opération."
+      ],
+      "overview": [
+        "Premier usage fictif : confidentialité, conditions, langue et aide SMS facultative avec accord par message.",
+        "Connexion simulée : l’accord pour un SMS ne vérifie automatiquement que la connexion par SMS seul ; le clavier garde Vérifier.",
+        "Question combinée et SMS gardent Vérifier ; approbation de l’appareil et changement de mot de passe restent distincts.",
+        "Démo hors ligne : comptes fictifs, DOP/USD, masquage des soldes et flèches de défilement tactile.",
+        "Historique bancaire simulé : recherche et filtres ; la démo partage un CSV fictif via Android.",
+        "PDF synthétique : pages, agrandissement, partage et enregistrement d’une sélection dans un dossier simulé.",
+        "Virements de démo : code local 123456, pas un SMS. Banque simulée : révision, code SMS rempli par Android et Vérifier.",
+        "Paiement de démo avec code local ; paiement bancaire simulé avec code SMS rempli par Android et Vérifier.",
+        "Code de destinataire, enregistrement local et suppression bancaire simulée avec code SMS rempli et Vérifier.",
+        "Cartes en lecture seule : titulaire/identifiant fournis, numéro complet seulement si fourni ; services informatifs sans modification.",
+        "Token BSC simulé : contrat et dissociation ; code SMS rempli puis Vérifier. Les codes générés du jeton ne sont pas des SMS.",
+        "Demande QR fictive : enregistrement, vérification du destinataire et aperçu d’impression.",
+        "Aide SMS désactivée puis réactivée ; canal distinct. Autorisation bancaire et validation du compte de son titulaire restent en suspens."
+      ]
+    },
+    "ru": {
+      "first-use": [
+        "Нативный показ: конфиденциальность до принятия условий. Это не личный банковский сеанс.",
+        "Прочитайте текст и его последствия. Открытие условий, конфиденциальности или договора не означает согласия.",
+        "Уведомление о независимости, условия и выбор необязательной помощи SMS; открытие документа не означает согласия.",
+        "Проверьте перед продолжением. Автозаполнение клавиатуры не отправляет код; у входа только по SMS отдельное согласие.",
+        "Помощь SMS необязательна. Android просит согласие на одно сообщение, без доступа к входящим; ручной ввод остаётся доступен.",
+        "Базовая демоверсия без банка: выбор испанского из семи языков приложения."
+      ],
+      "login": [
+        "Имитация банковского входа: необязательное сохранение учётных данных с тестовым биометрическим одобрением.",
+        "Проверьте перед продолжением. Автозаполнение клавиатуры не отправляет код; у входа только по SMS отдельное согласие.",
+        "Имитация биометрической разблокировки сохранённого доступа; одобрение банка остаётся отдельным требованием.",
+        "Тестовый результат с вымышленными данными; он не подтверждает выполнение реальной банковской операции.",
+        "Имитация банковского входа с автозаполнением SMS-кода Android: явное «Проверить» по-прежнему обязательно.",
+        "Ожидается вымышленный SMS-код. Необязательная помощь запрашивает согласие на одно сообщение, без доступа к входящим SMS.",
+        "Android или клавиатура заполнили вымышленный код. Проверьте и нажмите «Проверить»; этот путь не отправляет код автоматически.",
+        "Имитация согласия на одно сообщение: автоматическая проверка лишь входа только по SMS, а не автозаполнения клавиатуры.",
+        "Помощь SMS необязательна. Android просит согласие на одно сообщение, без доступа к входящим; ручной ввод остаётся доступен.",
+        "Имитация согласия на сообщение: автопроверка лишь входа только по SMS. Операции и составные вопросы требуют «Проверить»."
+      ],
+      "verification": [
+        "Имитация банка: секретный вопрос и SMS остаются отдельными шагами; автозаполнение сохраняет «Проверить».",
+        "Ожидается вымышленный SMS-код. Необязательная помощь запрашивает согласие на одно сообщение, без доступа к входящим SMS.",
+        "Android или клавиатура заполнили вымышленный код. Проверьте и нажмите «Проверить»; этот путь не отправляет код автоматически.",
+        "Проверьте перед продолжением. Автозаполнение клавиатуры не отправляет код; у входа только по SMS отдельное согласие.",
+        "Имитация банка: неодобренному устройству нужна регистрация, без доступа к счетам или скрытой регистрации.",
+        "Прочитайте текст и его последствия. Открытие условий, конфиденциальности или договора не означает согласия.",
+        "Обязательная смена пароля с имитацией банка: проверка несовпадения и подтверждение перед возвращением ко входу.",
+        "Имитация регистрации устройства и нового биометрического входа внутри приложения, без скрытого повторного использования пароля."
+      ],
+      "accounts": [
+        "Базовая демоверсия: вымышленные остатки, скрытие сумм, DOP/USD, свайпы и сведения о счёте."
+      ],
+      "history": [
+        "Имитация банковской истории: показать счёт, искать операции и фильтровать поступления и списания.",
+        "Вымышленный CSV базовой демоверсии: просмотр меню отправки Android без отправки внешнему получателю."
+      ],
+      "statements": [
+        "Имитация банка: периоды выписок и искусственный PDF со страницами, масштабом и явной отправкой.",
+        "Проверьте сведения перед продолжением. Открытие этого экрана не авторизует операцию.",
+        "Имитация сохранения выписок: выбрать искусственные PDF для вымышленной папки назначения."
+      ],
+      "transfers": [
+        "Базовая демоверсия: перевод между своими счетами, проверка и локальный тестовый код 123456; это не SMS.",
+        "Проверьте сведения перед продолжением. Открытие этого экрана не авторизует операцию.",
+        "Проверьте перед продолжением. Автозаполнение клавиатуры не отправляет код; у входа только по SMS отдельное согласие.",
+        "Тестовый результат с вымышленными данными; он не подтверждает выполнение реальной банковской операции.",
+        "Имитация перевода: проверка, отдельное подтверждение и автозаполнение SMS-кода Android с явным «Проверить».",
+        "Подтверждение — отдельный шаг. Показ не отправляет распоряжения в настоящий банк.",
+        "Ожидается вымышленный SMS-код. Необязательная помощь запрашивает согласие на одно сообщение, без доступа к входящим SMS.",
+        "Android или клавиатура заполнили вымышленный код. Проверьте и нажмите «Проверить»; этот путь не отправляет код автоматически.",
+        "Имитация банка: поиск и выбор получателя без отправки перевода в этом сценарии.",
+        "Базовая демоверсия: переводы сохранённым получателям в том же и других банках с локальным кодом 123456, не SMS."
+      ],
+      "payments": [
+        "Базовая демоверсия: вымышленная оплата услуги, проверка и локальный тестовый код 123456; это не SMS.",
+        "Проверьте сведения перед продолжением. Открытие этого экрана не авторизует операцию.",
+        "Проверьте перед продолжением. Автозаполнение клавиатуры не отправляет код; у входа только по SMS отдельное согласие.",
+        "Тестовый результат с вымышленными данными; он не подтверждает выполнение реальной банковской операции.",
+        "Имитация платежа: проверка, отдельное подтверждение и автозаполнение SMS-кода Android с явным «Проверить».",
+        "Подтверждение — отдельный шаг. Показ не отправляет распоряжения в настоящий банк.",
+        "Ожидается вымышленный SMS-код. Необязательная помощь запрашивает согласие на одно сообщение, без доступа к входящим SMS.",
+        "Android или клавиатура заполнили вымышленный код. Проверьте и нажмите «Проверить»; этот путь не отправляет код автоматически."
+      ],
+      "beneficiaries": [
+        "Имитация банка: вставка кода получателя, проверка и заполнение данных, без автоматической валидации или сохранения.",
+        "Проверьте сведения перед продолжением. Открытие этого экрана не авторизует операцию.",
+        "Имитация удаления получателя: проверка, отдельное подтверждение, автозаполнение SMS-кода и явное «Проверить».",
+        "Подтверждение — отдельный шаг. Показ не отправляет распоряжения в настоящий банк.",
+        "Ожидается вымышленный SMS-код. Необязательная помощь запрашивает согласие на одно сообщение, без доступа к входящим SMS.",
+        "Android или клавиатура заполнили вымышленный код. Проверьте и нажмите «Проверить»; этот путь не отправляет код автоматически.",
+        "Проверьте перед продолжением. Автозаполнение клавиатуры не отправляет код; у входа только по SMS отдельное согласие.",
+        "Тестовый результат с вымышленными данными; он не подтверждает выполнение реальной банковской операции.",
+        "Базовая демоверсия: создание и локальное сохранение вымышленного получателя другого банка, без реальной банковской проверки."
+      ],
+      "cards": [
+        "Карта имитируемого банка: вымышленные владелец, идентификатор и полный тестовый номер получены; сервисы информируют без изменений.",
+        "Данные карт — только для чтения; сервисы информируют без изменений. Полный номер появляется лишь при получении от банка."
+      ],
+      "token": [
+        "Имитация Token BSC: договор, согласие, тестовое одобрение, созданный код и отключение. Созданный код — не SMS.",
+        "Прочитайте текст и его последствия. Открытие условий, конфиденциальности или договора не означает согласия.",
+        "Подтверждение — отдельный шаг. Показ не отправляет распоряжения в настоящий банк.",
+        "Код, созданный Token BSC, — не SMS. Подключение, одобрение и отключение имитируются с вымышленными данными.",
+        "Имитация подключения токена: автозаполнение SMS-кода Android и явное «Проверить»; сценарий не доказывает завершение подключения.",
+        "Ожидается вымышленный SMS-код. Необязательная помощь запрашивает согласие на одно сообщение, без доступа к входящим SMS.",
+        "Android или клавиатура заполнили вымышленный код. Проверьте и нажмите «Проверить»; этот путь не отправляет код автоматически.",
+        "Проверьте перед продолжением. Автозаполнение клавиатуры не отправляет код; у входа только по SMS отдельное согласие.",
+        "Тестовый результат с вымышленными данными; он не подтверждает выполнение реальной банковской операции."
+      ],
+      "qr": [
+        "Вымышленный QR счёта или запроса: проверка, отмена сохранения и повтор с имитацией места; это не платёж.",
+        "Проверьте сведения перед продолжением. Открытие этого экрана не авторизует операцию.",
+        "Имитация чтения QR: проверка суммы, назначения и получателя вымышленного запроса; без реальной съёмки камерой.",
+        "Вымышленный QR: предварительный просмотр печати Android и возврат, без утверждения о физической распечатке."
+      ],
+      "settings": [
+        "Настройки: отключить и включить необязательную помощь SMS; Спрашивать/Почта/SMS отдельно выбирает банковскую доставку.",
+        "Необязательная помощь использует согласие Android на одно сообщение, без доступа к входящим. Автозаполнение ждёт «Проверить».",
+        "Помощь SMS отключается только в этой сцене настроек, затем включается снова. Клавиатура и ручной ввод остаются доступны.",
+        "Помощь SMS включена. Android просит согласие на каждое сообщение; автоматическая проверка — только для одобренного входа лишь по SMS.",
+        "«Спрашивать» позволяет выбрать канал из предложенных банком. Это не изменяет автозаполнение Android.",
+        "Электронная почта — предпочтительный канал, если предложен. Затем для остальных сценариев снова выбирается SMS.",
+        "SMS — предпочтительный канал доставки банковского кода, если он предложен; это не общий переключатель автозаполнения.",
+        "Базовая демоверсия: профиль, безопасность, помощь и выход из тестового сеанса; только вымышленные данные.",
+        "Неопределённый результат с имитацией банка: история и новое подтверждение сверки, без повтора или отмены операции.",
+        "Результат неопределён: перед сверкой проверьте фактическую историю. Сверка не повторяет и не отменяет операцию."
+      ],
+      "overview": [
+        "Вымышленный первый запуск: конфиденциальность, условия, язык и необязательная помощь SMS с согласием на каждое сообщение.",
+        "Имитация входа: согласие на SMS автоматически проверяет лишь вход только по SMS; клавиатура сохраняет «Проверить».",
+        "Составной вопрос и SMS сохраняют «Проверить»; одобрение устройства и смена пароля — отдельные шаги.",
+        "Демоверсия без банка: вымышленные счета, DOP/USD, скрытие остатков и стрелки направления свайпов.",
+        "Имитация банковской истории: поиск и фильтры; демоверсия отправляет вымышленный CSV через меню Android.",
+        "Искусственный PDF: страницы, масштаб, отправка и сохранение выбранных периодов в имитируемую папку.",
+        "Переводы в демоверсии: локальный код 123456, не SMS. Имитация банка: проверка, автозаполнение SMS-кода Android и «Проверить».",
+        "Платёж в демоверсии с локальным кодом; имитация банковского платежа с автозаполнением SMS-кода Android и «Проверить».",
+        "Код получателя, локальное сохранение и имитация удаления в банке с автозаполнением SMS-кода и «Проверить».",
+        "Карты только для чтения: владелец/идентификатор от банка, полный номер лишь при получении; сервисы информируют без изменений.",
+        "Имитация Token BSC: договор и отключение; автозаполнение SMS-кода и «Проверить». Сгенерированные коды токена — не SMS.",
+        "Вымышленный QR-запрос: сохранение, проверка получателя и предварительный просмотр печати.",
+        "Помощь SMS отключается и включается; доставка отдельно. Разрешение банка и проверка счёта владельца остаются нерешёнными."
+      ]
+    },
+    "uk": {
+      "first-use": [
+        "Нативний показ: конфіденційність до прийняття умов. Це не особистий банківський сеанс.",
+        "Прочитайте текст і його наслідки. Відкриття умов, конфіденційності чи договору не означає згоди.",
+        "Повідомлення про незалежність, умови й вибір необов’язкової допомоги SMS; відкриття документа не означає згоди.",
+        "Перевірте перед продовженням. Автозаповнення клавіатури не надсилає код; вхід лише за SMS має окрему згоду.",
+        "Допомога SMS необов’язкова. Android просить згоду на одне повідомлення, без доступу до вхідних; ручне введення доступне.",
+        "Базова демоверсія без банку: вибір іспанської із семи мов застосунку."
+      ],
+      "login": [
+        "Імітація банківського входу: необов’язкове збереження облікових даних із тестовим біометричним схваленням.",
+        "Перевірте перед продовженням. Автозаповнення клавіатури не надсилає код; вхід лише за SMS має окрему згоду.",
+        "Імітація біометричного розблокування збереженого доступу; схвалення банку лишається окремою вимогою.",
+        "Тестовий результат із вигаданими даними; він не підтверджує виконання реальної банківської операції.",
+        "Імітація банківського входу з автозаповненням SMS-коду Android: явне «Перевірити» залишається обов’язковим.",
+        "Очікується вигаданий SMS-код. Необов’язкова допомога запитує згоду на одне повідомлення, без доступу до вхідних SMS.",
+        "Android або клавіатура заповнили вигаданий код. Перевірте й натисніть «Перевірити»; цей шлях не надсилає код автоматично.",
+        "Імітація згоди на одне повідомлення: автоматична перевірка лише входу за SMS, а не автозаповнення клавіатури.",
+        "Допомога SMS необов’язкова. Android просить згоду на одне повідомлення, без доступу до вхідних; ручне введення доступне.",
+        "Імітація згоди на повідомлення: автоперевірка лише входу за SMS. Операції та складені запитання потребують «Перевірити»."
+      ],
+      "verification": [
+        "Імітація банку: таємне запитання й SMS лишаються окремими кроками; автозаповнення зберігає «Перевірити».",
+        "Очікується вигаданий SMS-код. Необов’язкова допомога запитує згоду на одне повідомлення, без доступу до вхідних SMS.",
+        "Android або клавіатура заповнили вигаданий код. Перевірте й натисніть «Перевірити»; цей шлях не надсилає код автоматично.",
+        "Перевірте перед продовженням. Автозаповнення клавіатури не надсилає код; вхід лише за SMS має окрему згоду.",
+        "Імітація банку: несхваленому пристрою потрібна реєстрація, без доступу до рахунків чи прихованої реєстрації.",
+        "Прочитайте текст і його наслідки. Відкриття умов, конфіденційності чи договору не означає згоди.",
+        "Обов’язкова зміна пароля з імітацією банку: перевірка невідповідності й підтвердження перед поверненням до входу.",
+        "Імітація реєстрації пристрою й нового біометричного входу в застосунку, без прихованого повторного використання пароля."
+      ],
+      "accounts": [
+        "Базова демоверсія: вигадані залишки, приховування сум, DOP/USD, свайпи й відомості про рахунок."
+      ],
+      "history": [
+        "Імітація банківської історії: показати рахунок, шукати операції та фільтрувати надходження й списання.",
+        "Вигаданий CSV базової демоверсії: перегляд меню надсилання Android без надсилання зовнішньому одержувачу."
+      ],
+      "statements": [
+        "Імітація банку: періоди виписок і штучний PDF зі сторінками, масштабом та явним надсиланням.",
+        "Перевірте відомості перед продовженням. Відкриття цього екрана не авторизує операцію.",
+        "Імітація збереження виписок: вибрати штучні PDF для вигаданої папки призначення."
+      ],
+      "transfers": [
+        "Базова демоверсія: переказ між власними рахунками, перевірка й локальний тестовий код 123456; це не SMS.",
+        "Перевірте відомості перед продовженням. Відкриття цього екрана не авторизує операцію.",
+        "Перевірте перед продовженням. Автозаповнення клавіатури не надсилає код; вхід лише за SMS має окрему згоду.",
+        "Тестовий результат із вигаданими даними; він не підтверджує виконання реальної банківської операції.",
+        "Імітація переказу: перевірка, окреме підтвердження та автозаповнення SMS-коду Android із явним «Перевірити».",
+        "Підтвердження — окремий крок. Показ не надсилає розпоряджень до справжнього банку.",
+        "Очікується вигаданий SMS-код. Необов’язкова допомога запитує згоду на одне повідомлення, без доступу до вхідних SMS.",
+        "Android або клавіатура заповнили вигаданий код. Перевірте й натисніть «Перевірити»; цей шлях не надсилає код автоматично.",
+        "Імітація банку: пошук і вибір одержувача без надсилання переказу в цьому сценарії.",
+        "Базова демоверсія: перекази збереженим одержувачам у тому самому та інших банках із локальним кодом 123456, не SMS."
+      ],
+      "payments": [
+        "Базова демоверсія: вигадана оплата послуги, перевірка й локальний тестовий код 123456; це не SMS.",
+        "Перевірте відомості перед продовженням. Відкриття цього екрана не авторизує операцію.",
+        "Перевірте перед продовженням. Автозаповнення клавіатури не надсилає код; вхід лише за SMS має окрему згоду.",
+        "Тестовий результат із вигаданими даними; він не підтверджує виконання реальної банківської операції.",
+        "Імітація платежу: перевірка, окреме підтвердження та автозаповнення SMS-коду Android із явним «Перевірити».",
+        "Підтвердження — окремий крок. Показ не надсилає розпоряджень до справжнього банку.",
+        "Очікується вигаданий SMS-код. Необов’язкова допомога запитує згоду на одне повідомлення, без доступу до вхідних SMS.",
+        "Android або клавіатура заповнили вигаданий код. Перевірте й натисніть «Перевірити»; цей шлях не надсилає код автоматично."
+      ],
+      "beneficiaries": [
+        "Імітація банку: вставлення коду одержувача, перевірка й заповнення даних, без автоматичної валідації чи збереження.",
+        "Перевірте відомості перед продовженням. Відкриття цього екрана не авторизує операцію.",
+        "Імітація видалення одержувача: перевірка, окреме підтвердження, автозаповнення SMS-коду та явне «Перевірити».",
+        "Підтвердження — окремий крок. Показ не надсилає розпоряджень до справжнього банку.",
+        "Очікується вигаданий SMS-код. Необов’язкова допомога запитує згоду на одне повідомлення, без доступу до вхідних SMS.",
+        "Android або клавіатура заповнили вигаданий код. Перевірте й натисніть «Перевірити»; цей шлях не надсилає код автоматично.",
+        "Перевірте перед продовженням. Автозаповнення клавіатури не надсилає код; вхід лише за SMS має окрему згоду.",
+        "Тестовий результат із вигаданими даними; він не підтверджує виконання реальної банківської операції.",
+        "Базова демоверсія: створення й локальне збереження вигаданого одержувача іншого банку, без реальної банківської перевірки."
+      ],
+      "cards": [
+        "Картка імітованого банку: вигадані власник, ідентифікатор і повний тестовий номер отримані; сервіси інформують без змін.",
+        "Дані карток — лише для читання; сервіси інформують без змін. Повний номер з’являється тільки після отримання від банку."
+      ],
+      "token": [
+        "Імітація Token BSC: договір, згода, тестове схвалення, створений код і від’єднання. Створений код — не SMS.",
+        "Прочитайте текст і його наслідки. Відкриття умов, конфіденційності чи договору не означає згоди.",
+        "Підтвердження — окремий крок. Показ не надсилає розпоряджень до справжнього банку.",
+        "Код, створений Token BSC, — не SMS. Підключення, схвалення й від’єднання імітуються з вигаданими даними.",
+        "Імітація підключення токена: автозаповнення SMS-коду Android і явне «Перевірити»; сценарій не доводить завершення підключення.",
+        "Очікується вигаданий SMS-код. Необов’язкова допомога запитує згоду на одне повідомлення, без доступу до вхідних SMS.",
+        "Android або клавіатура заповнили вигаданий код. Перевірте й натисніть «Перевірити»; цей шлях не надсилає код автоматично.",
+        "Перевірте перед продовженням. Автозаповнення клавіатури не надсилає код; вхід лише за SMS має окрему згоду.",
+        "Тестовий результат із вигаданими даними; він не підтверджує виконання реальної банківської операції."
+      ],
+      "qr": [
+        "Вигаданий QR рахунку чи запиту: перевірка, скасування збереження й повтор з імітацією місця; це не платіж.",
+        "Перевірте відомості перед продовженням. Відкриття цього екрана не авторизує операцію.",
+        "Імітація читання QR: перевірка суми, призначення й одержувача вигаданого запиту; без справжнього знімання камерою.",
+        "Вигаданий QR: попередній перегляд друку Android і повернення, без твердження про фізичний видрук."
+      ],
+      "settings": [
+        "Налаштування: вимкнути й увімкнути необов’язкову допомогу SMS; Запитувати/Пошта/SMS окремо вибирає банківську доставку.",
+        "Необов’язкова допомога використовує згоду Android на одне повідомлення, без доступу до вхідних. Автозаповнення чекає «Перевірити».",
+        "Допомога SMS вимикається лише в цій сцені налаштувань, потім знову вмикається. Клавіатура й ручне введення лишаються доступними.",
+        "Допомогу SMS увімкнено. Android просить згоду на кожне повідомлення; автоматична перевірка — лише для схваленого входу тільки за SMS.",
+        "«Запитувати» дає змогу вибрати канал із запропонованих банком. Це не змінює автозаповнення Android.",
+        "Електронна пошта — бажаний канал, якщо його запропоновано. Потім для решти сценаріїв знову вибирається SMS.",
+        "SMS — бажаний канал доставки банківського коду, якщо його запропоновано; це не загальний перемикач автозаповнення.",
+        "Базова демоверсія: профіль, безпека, допомога й вихід із тестового сеансу; лише вигадані дані.",
+        "Невизначений результат з імітацією банку: історія й нове підтвердження звірки, без повторення чи скасування операції.",
+        "Результат невизначений: перед звіркою перевірте фактичну історію. Звірка не повторює й не скасовує операцію."
+      ],
+      "overview": [
+        "Вигаданий перший запуск: конфіденційність, умови, мова й необов’язкова допомога SMS зі згодою на кожне повідомлення.",
+        "Імітація входу: згода на SMS автоматично перевіряє лише вхід за SMS; клавіатура зберігає «Перевірити».",
+        "Складене запитання та SMS зберігають «Перевірити»; схвалення пристрою й зміна пароля — окремі кроки.",
+        "Демоверсія без банку: вигадані рахунки, DOP/USD, приховування залишків і стрілки напрямку свайпів.",
+        "Імітація банківської історії: пошук і фільтри; демоверсія надсилає вигаданий CSV через меню Android.",
+        "Штучний PDF: сторінки, масштаб, надсилання та збереження вибраних періодів в імітовану папку.",
+        "Перекази в демоверсії: локальний код 123456, не SMS. Імітація банку: перевірка, автозаповнення SMS-коду Android і «Перевірити».",
+        "Платіж у демоверсії з локальним кодом; імітація банківського платежу з автозаповненням SMS-коду Android і «Перевірити».",
+        "Код одержувача, локальне збереження й імітація видалення в банку з автозаповненням SMS-коду і «Перевірити».",
+        "Картки лише для читання: власник/ідентифікатор від банку, повний номер тільки після отримання; сервіси інформують без змін.",
+        "Імітація Token BSC: договір і від’єднання; автозаповнення SMS-коду й «Перевірити». Створені коди токена — не SMS.",
+        "Вигаданий QR-запит: збереження, перевірка одержувача й попередній перегляд друку.",
+        "Допомога SMS вимикається й вмикається; доставка окремо. Дозвіл банку й перевірка рахунку власника залишаються невирішеними."
+      ]
+    },
+    "pt": {
+      "first-use": [
+        "Demonstração nativa: ler a privacidade antes de aceitar os termos. Não é uma sessão bancária pessoal.",
+        "Leia o texto e suas consequências. Abrir termos, privacidade ou contrato não significa aceitar.",
+        "Aviso de aplicativo independente, termos e escolha da ajuda SMS opcional; abrir um documento não significa aceitar.",
+        "Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.",
+        "A ajuda SMS é opcional. O Android pede aprovação para uma mensagem, sem acesso à caixa de SMS; a entrada manual continua disponível.",
+        "Demonstração básica offline: escolher espanhol no seletor de sete idiomas do aplicativo."
+      ],
+      "login": [
+        "Acesso bancário simulado: opção de lembrar usuário e senha, com aprovação biométrica de teste.",
+        "Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.",
+        "Desbloqueio biométrico simulado do acesso salvo; a aprovação bancária continua sendo um requisito separado.",
+        "Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.",
+        "Acesso com banco simulado e código SMS preenchido pelo Android: Verificar continua sendo explícito.",
+        "Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.",
+        "O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.",
+        "Aprovação simulada de uma mensagem: mostra a verificação automática só do acesso exclusivamente por SMS, não do preenchimento do teclado.",
+        "A ajuda SMS é opcional. O Android pede aprovação para uma mensagem, sem acesso à caixa de SMS; a entrada manual continua disponível.",
+        "Aprovação simulada de uma mensagem: só o acesso exclusivamente SMS se verifica automaticamente. Operações e perguntas combinadas mantêm Verificar."
+      ],
+      "verification": [
+        "Banco simulado: pergunta de segurança e SMS continuam separados; preencher o código mantém Verificar.",
+        "Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.",
+        "O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.",
+        "Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.",
+        "Banco simulado: dispositivo não aprovado exige registro, sem acesso às contas nem inscrição silenciosa.",
+        "Leia o texto e suas consequências. Abrir termos, privacidade ou contrato não significa aceitar.",
+        "Troca de senha exigida com banco simulado: revisar a divergência e confirmar antes de voltar ao acesso.",
+        "Registro de dispositivo e novo acesso biométrico simulados no aplicativo, sem reutilizar a senha silenciosamente."
+      ],
+      "accounts": [
+        "Demonstração básica: saldos fictícios, ocultar valores, DOP/USD, deslizamentos e detalhes da conta."
+      ],
+      "history": [
+        "Histórico bancário simulado: revelar a conta, pesquisar transações e filtrar entradas e saídas.",
+        "CSV fictício da demonstração básica: conferir opções de compartilhamento Android sem enviar a destinatário externo."
+      ],
+      "statements": [
+        "Banco simulado: períodos de extratos e PDF sintético com páginas, ampliação e ação explícita de compartilhar.",
+        "Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.",
+        "Salvamento simulado de extratos: selecionar PDFs sintéticos para uma pasta de destino fictícia."
+      ],
+      "transfers": [
+        "Demonstração básica: transferência entre contas próprias, revisão e código local de teste 123456; não é SMS.",
+        "Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.",
+        "Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.",
+        "Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.",
+        "Transferência com banco simulado: revisão, confirmação separada e código SMS preenchido pelo Android com Verificar explícito.",
+        "A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.",
+        "Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.",
+        "O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.",
+        "Banco simulado: pesquisar e escolher um beneficiário sem enviar transferência neste caso.",
+        "Demonstração básica: transferências a beneficiários salvos do mesmo e de outro banco, com código local 123456, não SMS."
+      ],
+      "payments": [
+        "Demonstração básica: pagamento fictício de serviço, revisão e código local de teste 123456; não é SMS.",
+        "Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.",
+        "Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.",
+        "Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.",
+        "Pagamento com banco simulado: revisão, confirmação separada e código SMS preenchido pelo Android com Verificar explícito.",
+        "A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.",
+        "Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.",
+        "O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente."
+      ],
+      "beneficiaries": [
+        "Banco simulado: colar código de destinatário, revisar e preencher dados, sem validar ou salvar automaticamente.",
+        "Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.",
+        "Exclusão de beneficiário com banco simulado: revisão, confirmação separada, código SMS preenchido e Verificar explícito.",
+        "A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.",
+        "Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.",
+        "O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.",
+        "Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.",
+        "Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.",
+        "Demonstração básica: criar e salvar localmente beneficiário fictício de outro banco, sem validação bancária real."
+      ],
+      "cards": [
+        "Cartão de banco simulado: titular fictício, identificador e número completo de teste fornecidos; serviços informam sem alterações.",
+        "Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco."
+      ],
+      "token": [
+        "Token BSC simulado: contrato, consentimento, aprovação de teste, código gerado e desvinculação. O código gerado não é SMS.",
+        "Leia o texto e suas consequências. Abrir termos, privacidade ou contrato não significa aceitar.",
+        "A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.",
+        "Um código gerado pelo Token BSC não é SMS. Inscrição, aprovação e desvinculação são simuladas com dados fictícios.",
+        "Inscrição simulada de token: código SMS preenchido pelo Android e Verificar explícito; este caso não comprova inscrição concluída.",
+        "Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.",
+        "O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.",
+        "Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.",
+        "Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída."
+      ],
+      "qr": [
+        "QR fictício de conta ou solicitação: revisão, cancelamento e nova tentativa de salvar com destino simulado; não é pagamento.",
+        "Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.",
+        "Leitura QR simulada: conferir valor, descrição e destinatário de solicitação fictícia; sem captura real de câmera.",
+        "QR fictício: visualização de impressão do Android e retorno, sem afirmar que houve impressão física."
+      ],
+      "settings": [
+        "Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.",
+        "A ajuda opcional usa consentimento Android para uma mensagem, sem acesso à caixa de SMS. O preenchimento do teclado espera Verificar.",
+        "A ajuda SMS é desativada apenas nesta cena de ajustes, depois reativada. O teclado e a entrada manual continuam disponíveis.",
+        "A ajuda SMS está ativada. O Android pede aprovação por mensagem; só o acesso exclusivamente por SMS aprovado se verifica automaticamente.",
+        "Perguntar permite escolher entre os canais oferecidos pelo banco. Não altera o preenchimento automático do Android.",
+        "E-mail define o canal preferido, quando oferecido. Depois, SMS é restaurado para os outros passeios.",
+        "SMS é o canal bancário preferido, quando oferecido; não é um interruptor universal de preenchimento automático.",
+        "Demonstração básica: perfil, segurança, ajuda e encerramento da sessão de teste; apenas dados fictícios.",
+        "Resultado incerto com banco simulado: histórico e nova confirmação de conciliação, sem repetir nem cancelar a operação.",
+        "Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação."
+      ],
+      "overview": [
+        "Primeiro uso fictício: privacidade, termos, idioma e ajuda SMS opcional com aprovação por mensagem.",
+        "Acesso simulado: aprovar um SMS só verifica automaticamente o acesso exclusivamente SMS; o teclado mantém Verificar.",
+        "Pergunta combinada e SMS mantêm Verificar; aprovação do dispositivo e troca de senha são passos distintos.",
+        "Demonstração offline: contas fictícias, DOP/USD, privacidade dos saldos e setas de deslizamento.",
+        "Histórico bancário simulado: pesquisa e filtros; a demonstração compartilha um CSV fictício pelo Android.",
+        "PDF sintético: páginas, ampliação, compartilhamento e salvamento de seleção com pasta simulada.",
+        "Transferências de demonstração: código local 123456, não SMS. Banco simulado: revisão, código SMS preenchido pelo Android e Verificar.",
+        "Pagamento de demonstração com código local; pagamento bancário simulado com código SMS preenchido pelo Android e Verificar.",
+        "Código de destinatário, salvamento local e exclusão bancária simulada com código SMS preenchido e Verificar.",
+        "Cartões só para leitura: titular/identificador do banco, número completo só se fornecido; serviços informam sem alterações.",
+        "Token BSC simulado: contrato e desvinculação; código SMS preenchido e Verificar. Códigos gerados pelo token não são SMS.",
+        "Solicitação QR fictícia: salvamento, revisão do destinatário e visualização de impressão.",
+        "Ajuda SMS desativada e reativada; entrega separada. Autorização do banco e validação com a conta de seu titular seguem pendentes."
+      ]
+    }
+  }
+}

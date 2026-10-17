@@ -1,17 +1,129 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:38.867
-An offline transfer and simulated bank selection; fictional data only.
+00:00:00.000 --> 00:00:27.541
+Basic demo: own-account transfer, review and local test code 123456; this is not SMS.
 
 2
-00:00:38.967 --> 00:01:17.833
-The demo simulates own-account, same-bank and other-bank transfers, with a test code and local receipts.
+00:00:27.591 --> 00:00:35.541
+Review the details before continuing. Opening this screen does not authorize an operation.
 
 3
-00:01:17.933 --> 00:01:56.800
-Another scenario searches for and selects a recipient; it sends no transfer.
+00:00:35.591 --> 00:00:41.353
+Basic demo: own-account transfer, review and local test code 123456; this is not SMS.
 
 4
-00:01:56.900 --> 00:02:35.767
-The basic demo does not include all these advanced banking-interface steps.
+00:00:41.403 --> 00:00:47.819
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+5
+00:00:47.869 --> 00:00:55.819
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+6
+00:00:55.869 --> 00:01:01.629
+Basic demo: own-account transfer, review and local test code 123456; this is not SMS.
+
+7
+00:01:01.679 --> 00:01:07.401
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+8
+00:01:07.451 --> 00:01:15.401
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+9
+00:01:15.451 --> 00:01:24.233
+Basic demo: own-account transfer, review and local test code 123456; this is not SMS.
+
+10
+00:01:24.283 --> 00:01:48.783
+Fake-bank transfer: review, separate confirmation and Android SMS-code autofill with explicit Verify.
+
+11
+00:01:48.833 --> 00:01:57.064
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+12
+00:01:57.114 --> 00:02:03.784
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+13
+00:02:03.834 --> 00:02:11.966
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+14
+00:02:12.016 --> 00:02:20.451
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+15
+00:02:20.501 --> 00:02:24.140
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+16
+00:02:24.190 --> 00:02:27.377
+A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.
+
+17
+00:02:27.427 --> 00:02:33.190
+Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.
+
+18
+00:02:33.240 --> 00:02:38.732
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+19
+00:02:38.782 --> 00:02:46.732
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+20
+00:02:46.782 --> 00:02:53.433
+Fake-bank transfer: review, separate confirmation and Android SMS-code autofill with explicit Verify.
+
+21
+00:02:53.483 --> 00:03:41.767
+Simulated banking: search for and choose a beneficiary without sending a transfer in this case.
+
+22
+00:03:41.817 --> 00:04:11.997
+Basic demo: transfers to saved same-bank/other-bank beneficiaries with local code 123456, not SMS.
+
+23
+00:04:12.047 --> 00:04:19.997
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+24
+00:04:20.047 --> 00:04:25.346
+Basic demo: transfers to saved same-bank/other-bank beneficiaries with local code 123456, not SMS.
+
+25
+00:04:25.396 --> 00:04:31.209
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+26
+00:04:31.259 --> 00:04:39.209
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+27
+00:04:39.259 --> 00:05:11.584
+Basic demo: transfers to saved same-bank/other-bank beneficiaries with local code 123456, not SMS.
+
+28
+00:05:11.634 --> 00:05:19.584
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+29
+00:05:19.634 --> 00:05:24.916
+Basic demo: transfers to saved same-bank/other-bank beneficiaries with local code 123456, not SMS.
+
+30
+00:05:24.966 --> 00:05:30.602
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+31
+00:05:30.652 --> 00:05:38.602
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+32
+00:05:38.652 --> 00:05:52.617
+Basic demo: transfers to saved same-bank/other-bank beneficiaries with local code 123456, not SMS.

@@ -1,17 +1,69 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:15.117
-A demo payment and simulated banking verification; fictional data only.
+00:00:00.000 --> 00:00:25.641
+Basic demo: fictional service payment, review and local test code 123456; this is not SMS.
 
 2
-00:00:15.217 --> 00:00:30.333
-The demo service payment requires review and the test code.
+00:00:25.691 --> 00:00:33.641
+Review the details before continuing. Opening this screen does not authorize an operation.
 
 3
-00:00:30.433 --> 00:00:45.550
-The advanced scenario retains review and waits for explicit SMS verification.
+00:00:33.691 --> 00:00:39.061
+Basic demo: fictional service payment, review and local test code 123456; this is not SMS.
 
 4
-00:00:45.650 --> 00:01:00.767
-The basic demo lacks advanced bank verification; no real money was paid.
+00:00:39.111 --> 00:00:44.912
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+5
+00:00:44.962 --> 00:00:52.912
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+6
+00:00:52.962 --> 00:00:59.433
+Basic demo: fictional service payment, review and local test code 123456; this is not SMS.
+
+7
+00:00:59.483 --> 00:01:24.120
+Fake-bank payment: review, separate confirmation and Android SMS-code autofill with explicit Verify.
+
+8
+00:01:24.170 --> 00:01:32.350
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+9
+00:01:32.400 --> 00:01:39.535
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+10
+00:01:39.585 --> 00:01:47.850
+Review the details before continuing. Opening this screen does not authorize an operation.
+
+11
+00:01:47.900 --> 00:01:56.355
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+12
+00:01:56.405 --> 00:02:00.053
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+13
+00:02:00.103 --> 00:02:03.296
+A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.
+
+14
+00:02:03.346 --> 00:02:09.002
+Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.
+
+15
+00:02:09.052 --> 00:02:14.350
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+16
+00:02:14.400 --> 00:02:22.350
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+17
+00:02:22.400 --> 00:02:28.683
+Fake-bank payment: review, separate confirmation and Android SMS-code autofill with explicit Verify.

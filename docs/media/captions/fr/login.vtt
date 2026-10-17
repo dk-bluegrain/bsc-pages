@@ -1,17 +1,85 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:07.400
-Interface bancaire native avec données fictives et réponses simulées.
+00:00:00.000 --> 00:00:17.420
+Connexion bancaire simulée : mémorisation facultative des identifiants avec approbation biométrique de test.
 
 2
-00:00:07.500 --> 00:00:14.900
-L’accès mémorisé utilise une approbation biométrique simulée dans cet enregistrement.
+00:00:17.470 --> 00:00:22.791
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
 
 3
-00:00:15.000 --> 00:00:22.400
-Enregistrer et déverrouiller les identifiants sont distincts de l’approbation bancaire.
+00:00:22.841 --> 00:00:30.791
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
 
 4
-00:00:22.500 --> 00:00:29.900
-La démo de base ne comprend ni connexion bancaire ni cette simulation biométrique.
+00:00:30.841 --> 00:00:38.100
+Connexion bancaire simulée : mémorisation facultative des identifiants avec approbation biométrique de test.
+
+5
+00:00:38.150 --> 00:00:49.906
+Déverrouillage biométrique simulé de l’accès mémorisé ; l’approbation bancaire reste une exigence distincte.
+
+6
+00:00:49.956 --> 00:00:57.906
+Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
+
+7
+00:00:57.956 --> 00:01:04.500
+Déverrouillage biométrique simulé de l’accès mémorisé ; l’approbation bancaire reste une exigence distincte.
+
+8
+00:01:04.550 --> 00:01:21.575
+Connexion bancaire simulée avec code SMS rempli par Android : Vérifier reste explicitement requis.
+
+9
+00:01:21.625 --> 00:01:26.754
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+10
+00:01:26.804 --> 00:01:34.935
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+11
+00:01:34.985 --> 00:01:38.209
+Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
+
+12
+00:01:38.259 --> 00:01:43.957
+Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
+
+13
+00:01:44.007 --> 00:01:48.661
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+14
+00:01:48.711 --> 00:01:56.661
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+15
+00:01:56.711 --> 00:02:03.167
+Connexion bancaire simulée avec code SMS rempli par Android : Vérifier reste explicitement requis.
+
+16
+00:02:03.217 --> 00:02:20.864
+Accord simulé pour un seul message : vérification automatique de la connexion par SMS seul, pas du remplissage du clavier.
+
+17
+00:02:20.914 --> 00:02:26.210
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+18
+00:02:26.260 --> 00:02:34.400
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+19
+00:02:34.450 --> 00:02:42.726
+L’aide SMS est facultative. Android demande l’accord pour un message, sans accès à la boîte SMS ; la saisie manuelle reste possible.
+
+20
+00:02:42.776 --> 00:02:50.726
+Accord simulé pour un message : seule la connexion par SMS seul est vérifiée automatiquement. Opérations et questions combinées gardent Vérifier.
+
+21
+00:02:50.776 --> 00:02:57.150
+Accord simulé pour un seul message : vérification automatique de la connexion par SMS seul, pas du remplissage du clavier.

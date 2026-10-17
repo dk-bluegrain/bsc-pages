@@ -1,12 +1,12 @@
 {
   "demo": {
-    "filename": "santa-cruz-modern-1.11.0-demo.apk",
-    "sha256": "940a4dcb7fb8cc6a2009f9cc4a43ce930e757918b37bba5784ad64f79553b316",
-    "bytes": 76655031
+    "filename": "santa-cruz-modern-1.12.0-demo.apk",
+    "sha256": "2e1ceeb538cc3ebc07b90325be97bec3bf3a3eb692a830adc018b2526cf41485",
+    "bytes": 76688495
   },
   "live": {
-    "filename": "santa-cruz-modern-1.11.0-live.apk",
-    "sha256": "77666b4fd8c2cf216aafdcaba94e9815274836edc0cf41a03ee4536f19fb67ed",
-    "bytes": 76638861
+    "filename": "santa-cruz-modern-1.12.0-live.apk",
+    "sha256": "00b78f36d800c93c29620879f292a21327ea23c2316588a3209273ee074964af",
+    "bytes": 76688709
   }
 }

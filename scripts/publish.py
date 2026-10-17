@@ -5,9 +5,9 @@ The website main branch must already exist (initial source push may precede
 Pages setup). Later updates publish assets before pushing new versioned links.
 Uses the existing gh login; no credentials are written into this repository.
 """
-import argparse,hashlib,json,subprocess,time,urllib.request
+import argparse,hashlib,json,subprocess,time,urllib.request,urllib.parse,concurrent.futures
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];REPO='dk-bluegrain/bsc-pages';TAG='v1.11.0-preview.1';SITE='https://dk-bluegrain.github.io/bsc-pages/'
+ROOT=Path(__file__).resolve().parents[1];REPO='dk-bluegrain/bsc-pages';TAG='v1.12.0-preview.1';SITE='https://dk-bluegrain.github.io/bsc-pages/'
 p=argparse.ArgumentParser();p.add_argument('--apk-directory',type=Path,required=True);a=p.parse_args()
 def gh(*args):return subprocess.check_output(['gh',*args],cwd=ROOT,text=True)
 def api(path,*args):return gh('api',path,*args)
@@ -15,17 +15,31 @@ subprocess.run(['python3','scripts/check.py'],cwd=ROOT,check=True)
 assert json.loads(gh('repo','view',REPO,'--json','visibility'))['visibility']=='PUBLIC'
 status=subprocess.check_output(['git','status','--porcelain'],cwd=ROOT,text=True)
 if status:raise SystemExit('Commit verified website sources and docs before publishing')
+expected_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
 downloads=json.loads((ROOT/'src/downloads.json').read_text());assets=[]
 for data in downloads.values():
  path=a.apk_directory/data['filename'];assert hashlib.sha256(path.read_bytes()).hexdigest()==data['sha256'];assets.append(str(path.resolve()))
 checksums=a.apk_directory/'SHA256SUMS';assert checksums.is_file();assets.append(str(checksums.resolve()));assets.append(str(ROOT/'RELEASE-NOTES.md'))
-release=subprocess.run(['gh','release','view',TAG,'--repo',REPO,'--json','assets,url'],capture_output=True,text=True)
+# Push only the verified source tag; Pages remains on the old main until assets are public.
+subprocess.run(['git','push','origin',f'{expected_commit}:refs/tags/{TAG}'],cwd=ROOT,check=True)
+release=subprocess.run(['gh','release','view',TAG,'--repo',REPO,'--json','assets,url,isDraft'],capture_output=True,text=True)
 if release.returncode:
- subprocess.run(['gh','release','create',TAG,*assets,'--repo',REPO,'--target','main','--prerelease','--title','Santa Cruz Modern 1.11.0 — independent preview','--notes-file',str(ROOT/'RELEASE-NOTES.md')],check=True)
+ subprocess.run(['gh','release','create',TAG,*assets,'--repo',REPO,'--target','main','--prerelease','--title','Santa Cruz Modern 1.12.0 — independent preview','--notes-file',str(ROOT/'RELEASE-NOTES.md')],check=True)
 else:
  data=json.loads(release.stdout);existing={x['name'] for x in data['assets']}
  missing=[p for p in assets if Path(p).name not in existing]
  if missing:subprocess.run(['gh','release','upload',TAG,*missing,'--repo',REPO],check=True)
+ # Staged previews must become public before the website links are pushed.
+ if data.get('isDraft'):
+  # GitHub's upload digest must match every local asset before the preview is published.
+  uploaded=json.loads(gh('release','view',TAG,'--repo',REPO,'--json','assets'))['assets']
+  by_name={item['name']:item for item in uploaded}
+  for asset in assets:
+   path=Path(asset);item=by_name[path.name]
+   assert item.get('state')=='uploaded' and item.get('digest')=='sha256:'+hashlib.sha256(path.read_bytes()).hexdigest(), 'Incomplete or mismatched release asset: '+path.name
+  subprocess.run(['gh','release','edit',TAG,'--repo',REPO,'--target',expected_commit,'--draft=false','--prerelease'],check=True)
+
+
 subprocess.run(['git','push','origin','main'],cwd=ROOT,check=True)
 page=subprocess.run(['gh','api',f'repos/{REPO}/pages'],capture_output=True,text=True)
 if page.returncode:
@@ -46,8 +60,19 @@ for attempt in range(60):
  time.sleep(5)
 else:raise SystemExit('Pages build still pending; resume verification without rebuilding')
 # Anonymous HTTP verification deliberately supplies no GitHub auth headers.
-for path in ('','es/','en/','de/','fr/','ru/','uk/','pt/','es/privacy/','media/overview.mp4','media/provenance.json'):
- with urllib.request.urlopen(SITE+path,timeout=45) as response:assert response.status==200
+def verify_document(path):
+ relative=path.relative_to(ROOT/'docs').as_posix()
+ digest=hashlib.sha256()
+ url=SITE+urllib.parse.quote(relative)+'?v='+expected_commit[:12]
+ with urllib.request.urlopen(url,timeout=45) as response:
+  assert response.status==200
+  while block:=response.read(1024*1024):digest.update(block)
+ assert digest.hexdigest()==hashlib.sha256(path.read_bytes()).hexdigest(), 'Anonymous deployed file differs: '+relative
+ return relative
+files=[p for p in (ROOT/'docs').rglob('*') if p.is_file() and not p.name.startswith('.')]
+with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+ verified=list(pool.map(verify_document,files))
+print('Anonymous deployed files matched:',len(verified))
 base=f'https://github.com/{REPO}/releases/download/{TAG}/'
 with urllib.request.urlopen(base+'SHA256SUMS',timeout=45) as response:published=response.read().decode()
 assert published==checksums.read_text(),'Published checksums differ'

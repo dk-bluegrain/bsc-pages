@@ -1,17 +1,9 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:15.967
-Simulated banking UI and offline demo; all data is fictional.
+00:00:00.000 --> 00:00:45.567
+Simulated banking history: reveal the account, search transactions and filter incoming/outgoing records.
 
 2
-00:00:16.067 --> 00:00:32.033
-History supports revealing the account, search, and incoming/outgoing filters.
-
-3
-00:00:32.133 --> 00:00:48.100
-The demo’s fictional CSV opens Android’s Sharesheet; no receiving app is selected.
-
-4
-00:00:48.200 --> 00:01:04.167
-The basic demo has history, search and CSV; advanced banking history is simulated.
+00:00:45.617 --> 00:01:27.283
+Basic demo’s fictional CSV: inspect Android sharing options without sending to an external recipient.

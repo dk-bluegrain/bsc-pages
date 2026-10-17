@@ -1,17 +1,117 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:08.050
-Native banking UI with a fictional token and simulated responses.
+00:00:00.000 --> 00:00:08.117
+Simulated Token BSC: contract, consent, test approval, generated code and unlinking. The generated code is not SMS.
 
 2
-00:00:08.150 --> 00:00:16.200
-The contract and consent precede enrollment and the approval check.
+00:00:08.167 --> 00:00:18.117
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
 
 3
-00:00:16.300 --> 00:00:24.350
-Simulated approval precedes code display; unlinking requires confirmation.
+00:00:18.167 --> 00:00:23.723
+Simulated Token BSC: contract, consent, test approval, generated code and unlinking. The generated code is not SMS.
 
 4
-00:00:24.450 --> 00:00:32.500
-The basic demo generates no banking tokens; authorization and validation remain unresolved.
+00:00:23.773 --> 00:00:30.707
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
+
+5
+00:00:30.757 --> 00:00:35.877
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
+
+6
+00:00:35.927 --> 00:00:44.284
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+7
+00:00:44.334 --> 00:00:52.477
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+8
+00:00:52.527 --> 00:00:58.857
+A generated Token BSC code is not an SMS. Enrollment, approval and unlinking are simulated with fictional data.
+
+9
+00:00:58.907 --> 00:01:07.035
+A generated Token BSC code is not an SMS. Enrollment, approval and unlinking are simulated with fictional data.
+
+10
+00:01:07.085 --> 00:01:15.226
+A generated Token BSC code is not an SMS. Enrollment, approval and unlinking are simulated with fictional data.
+
+11
+00:01:15.276 --> 00:01:21.852
+A generated Token BSC code is not an SMS. Enrollment, approval and unlinking are simulated with fictional data.
+
+12
+00:01:21.902 --> 00:01:30.115
+A generated Token BSC code is not an SMS. Enrollment, approval and unlinking are simulated with fictional data.
+
+13
+00:01:30.165 --> 00:01:36.607
+A generated Token BSC code is not an SMS. Enrollment, approval and unlinking are simulated with fictional data.
+
+14
+00:01:36.657 --> 00:01:44.795
+A generated Token BSC code is not an SMS. Enrollment, approval and unlinking are simulated with fictional data.
+
+15
+00:01:44.845 --> 00:01:53.179
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+16
+00:01:53.229 --> 00:02:01.179
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+17
+00:02:01.229 --> 00:02:07.700
+Simulated Token BSC: contract, consent, test approval, generated code and unlinking. The generated code is not SMS.
+
+18
+00:02:07.750 --> 00:02:15.046
+Simulated token enrollment: Android SMS-code autofill and explicit Verify; this case does not establish completed enrollment.
+
+19
+00:02:15.096 --> 00:02:25.046
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
+
+20
+00:02:25.096 --> 00:02:30.609
+Simulated token enrollment: Android SMS-code autofill and explicit Verify; this case does not establish completed enrollment.
+
+21
+00:02:30.659 --> 00:02:37.403
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
+
+22
+00:02:37.453 --> 00:02:42.572
+Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
+
+23
+00:02:42.622 --> 00:02:51.383
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+24
+00:02:51.433 --> 00:02:59.661
+Confirmation is a separate step. This demonstration sends no instructions to the real bank.
+
+25
+00:02:59.711 --> 00:03:03.076
+A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.
+
+26
+00:03:03.126 --> 00:03:08.789
+Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.
+
+27
+00:03:08.839 --> 00:03:14.186
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+28
+00:03:14.236 --> 00:03:22.186
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+29
+00:03:22.236 --> 00:03:28.550
+Simulated token enrollment: Android SMS-code autofill and explicit Verify; this case does not establish completed enrollment.

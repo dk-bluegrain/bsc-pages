@@ -3,108 +3,234 @@
     "width": 540,
     "height": 1200
   },
-  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Rings are synchronized in the input action inside Android, not reconstructed in post-production.",
+  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Android records each actual input and native marker. A persistent one-second overlay follows those same events across native window handoffs.",
   "events": [
     {
-      "type": "typing",
-      "timeSeconds": 1.4,
-      "epochMs": 1792185182358,
+      "type": "scene-start",
+      "timeSeconds": 0.15,
+      "epochMs": 1792193018975,
       "scenario": 1,
-      "characters": 9
+      "preferredMedium": "SMS"
     },
     {
-      "type": "typing",
-      "timeSeconds": 6.04,
-      "epochMs": 1792185186998,
+      "type": "hold",
+      "timeSeconds": 0.352,
+      "epochMs": 1792193019177,
       "scenario": 1,
-      "characters": 13
+      "cue": "opening",
+      "durationMs": 5000
     },
     {
       "type": "tap",
-      "timeSeconds": 11.663,
-      "epochMs": 1792185192621,
+      "timeSeconds": 7.021,
+      "epochMs": 1792193025846,
       "scenario": 1,
       "x": 270.0,
-      "y": 702.25
+      "y": 475.75
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 7.3,
+      "epochMs": 1792193026125,
+      "scenario": 1,
+      "cue": "navigation",
+      "durationMs": 3500
     },
     {
       "type": "tap",
-      "timeSeconds": 15.813,
-      "epochMs": 1792185196771,
+      "timeSeconds": 12.418,
+      "epochMs": 1792193031243,
       "scenario": 1,
       "x": 270.0,
-      "y": 687.75
+      "y": 914.75
     },
     {
-      "type": "tap",
-      "timeSeconds": 19.667,
-      "epochMs": 1792185200625,
+      "type": "hold",
+      "timeSeconds": 12.802,
+      "epochMs": 1792193031627,
       "scenario": 1,
-      "x": 270.0,
-      "y": 996.25
+      "cue": "navigation",
+      "durationMs": 3500
     },
     {
       "type": "tap",
-      "timeSeconds": 23.485,
-      "epochMs": 1792185204443,
+      "timeSeconds": 17.899,
+      "epochMs": 1792193036724,
       "scenario": 1,
       "x": 135.75,
-      "y": 511.25
+      "y": 429.75
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 18.158,
+      "epochMs": 1792193036983,
+      "scenario": 1,
+      "cue": "navigation",
+      "durationMs": 3500
     },
     {
       "type": "typing",
-      "timeSeconds": 27.186,
-      "epochMs": 1792185208144,
+      "timeSeconds": 23.299,
+      "epochMs": 1792193042124,
       "scenario": 1,
-      "characters": 6
+      "characters": 6,
+      "action": "live-history-search"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 25.321,
+      "epochMs": 1792193044146,
+      "scenario": 1,
+      "cue": "read",
+      "durationMs": 2000
     },
     {
       "type": "tap",
-      "timeSeconds": 31.397,
-      "epochMs": 1792185212355,
+      "timeSeconds": 29.012,
+      "epochMs": 1792193047837,
       "scenario": 1,
       "x": 190.0,
       "y": 247.0
     },
     {
+      "type": "hold",
+      "timeSeconds": 29.665,
+      "epochMs": 1792193048490,
+      "scenario": 1,
+      "cue": "navigation",
+      "durationMs": 3500
+    },
+    {
       "type": "tap",
-      "timeSeconds": 35.561,
-      "epochMs": 1792185216519,
+      "timeSeconds": 34.776,
+      "epochMs": 1792193053601,
       "scenario": 1,
       "x": 307.25,
-      "y": 700.0
+      "y": 618.5
     },
     {
-      "type": "tap",
-      "timeSeconds": 39.667,
-      "epochMs": 1792185659148,
+      "type": "hold",
+      "timeSeconds": 35.551,
+      "epochMs": 1792193054376,
+      "scenario": 1,
+      "cue": "navigation",
+      "durationMs": 3500
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 39.292,
+      "epochMs": 1792193058117,
+      "scenario": 1,
+      "cue": "read",
+      "durationMs": 6000
+    },
+    {
+      "type": "scene-end",
+      "timeSeconds": 45.392,
+      "epochMs": 1792193064217,
+      "scenario": 1,
+      "preferredMedium": "SMS"
+    },
+    {
+      "type": "configuration",
+      "timeSeconds": 44.602,
+      "epochMs": 1792192523631,
       "scenario": 2,
-      "x": 270.0,
-      "y": 830.0
+      "preferredMedium": "SMS"
+    },
+    {
+      "type": "scene-start",
+      "timeSeconds": 45.617,
+      "epochMs": 1792192524646,
+      "scenario": 2,
+      "preferredMedium": "SMS"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 46.301,
+      "epochMs": 1792192525330,
+      "scenario": 2,
+      "cue": "opening",
+      "durationMs": 5000
     },
     {
       "type": "tap",
-      "timeSeconds": 44.407,
-      "epochMs": 1792185663888,
+      "timeSeconds": 52.903,
+      "epochMs": 1792192531932,
       "scenario": 2,
       "x": 227.25,
       "y": 430.25
     },
     {
+      "type": "hold",
+      "timeSeconds": 53.781,
+      "epochMs": 1792192532810,
+      "scenario": 2,
+      "cue": "navigation",
+      "durationMs": 3500
+    },
+    {
       "type": "tap",
-      "timeSeconds": 48.798,
-      "epochMs": 1792185668279,
+      "timeSeconds": 58.918,
+      "epochMs": 1792192537947,
       "scenario": 2,
       "x": 270.0,
       "y": 1102.75
     },
     {
+      "type": "hold",
+      "timeSeconds": 59.683,
+      "epochMs": 1792192538712,
+      "scenario": 2,
+      "cue": "navigation",
+      "durationMs": 3500
+    },
+    {
       "type": "tap",
-      "timeSeconds": 52.789,
-      "epochMs": 1792185672270,
+      "timeSeconds": 64.807,
+      "epochMs": 1792192543836,
       "scenario": 2,
       "x": 270.0,
       "y": 408.25
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 65.039,
+      "epochMs": 1792192544068,
+      "scenario": 2,
+      "cue": "navigation",
+      "durationMs": 3500
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 68.741,
+      "epochMs": 1792192547770,
+      "scenario": 2,
+      "cue": "read",
+      "durationMs": 6000
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 74.998,
+      "epochMs": 1792192554027,
+      "scenario": 2,
+      "cue": "read",
+      "durationMs": 6000
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 81.171,
+      "epochMs": 1792192560200,
+      "scenario": 2,
+      "cue": "read",
+      "durationMs": 6000
+    },
+    {
+      "type": "scene-end",
+      "timeSeconds": 87.254,
+      "epochMs": 1792192566283,
+      "scenario": 2,
+      "preferredMedium": "SMS"
     }
   ]
 }

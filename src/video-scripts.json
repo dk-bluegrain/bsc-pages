@@ -1,0 +1,680 @@
+{
+  "revision": 3,
+  "title": "Viewer-first native video scripts",
+  "language": "Spanish UI; localized captions in seven languages",
+  "smsPolicy": {
+    "preferredMedium": "SMS",
+    "manualBankSmsTypingAllowed": false,
+    "autofillIsSubmission": false,
+    "fixture": "Synthetic system autofill or one-message consent result using fake bank SMS only; no inbox reading or personal SMS",
+    "configurationException": "settings: deliveryPreferenceReturnsToSms disables and re-enables assistance, and restores SMS delivery. First-use records the pre-consent choice.",
+    "exemptions": [
+      "Offline DEMO authorization code 123456 is not SMS.",
+      "Native Token BSC generation is not SMS.",
+      "Security-question and password entry remain explicit."
+    ],
+    "assistanceEnabled": true,
+    "automaticSubmission": "Only an approved one-message SMS-only login; keyboard autofill and operations retain Verify."
+  },
+  "timing": {
+    "openingMs": 5000,
+    "beforeActionMs": 1500,
+    "afterNavigationMs": 3500,
+    "afterTypingMs": 2000,
+    "endingMs": 6000,
+    "smsEmptyMs": 3000,
+    "smsFilledMs": 5500,
+    "reviewMs": 8000,
+    "consentMs": 10000
+  },
+  "rules": [
+    {
+      "match": [
+        "terms-open",
+        "native-token-read-contract",
+        "privacy-open-notice"
+      ],
+      "afterMs": 10000,
+      "cue": "consent"
+    },
+    {
+      "match": [
+        "terms-agree",
+        "native-token-consent"
+      ],
+      "beforeMs": 6000,
+      "afterMs": 5000,
+      "cue": "consent"
+    },
+    {
+      "match": [
+        "terms-continue",
+        "live-login",
+        "live-challenge-submit"
+      ],
+      "beforeMs": 4000,
+      "afterMs": 8000,
+      "cue": "verify"
+    },
+    {
+      "match": [
+        "transfer-next",
+        "payment-next",
+        "live-transfer-next",
+        "live-payment-next",
+        "card-operation-review"
+      ],
+      "afterMs": 8000,
+      "cue": "review"
+    },
+    {
+      "match": [
+        "live-transfer-submit",
+        "live-payment-submit",
+        "live-beneficiaries-delete",
+        "live-card-confirm"
+      ],
+      "beforeMs": 6000,
+      "afterMs": 8000,
+      "cue": "review"
+    },
+    {
+      "match": [
+        "Enviar transferencia",
+        "Enviar pago",
+        "live-beneficiaries-confirm",
+        "card-operation-confirm",
+        "native-token-enroll",
+        "native-token-disable-confirm"
+      ],
+      "beforeMs": 8000,
+      "afterMs": 8000,
+      "cue": "confirm"
+    },
+    {
+      "match": [
+        "confirm-submit",
+        "live-transaction-code-submit",
+        "live-payment-code-submit",
+        "live-beneficiaries-code-submit",
+        "native-token-answer-submit",
+        "Verificar cambio"
+      ],
+      "beforeMs": 5000,
+      "afterMs": 8000,
+      "cue": "verify"
+    },
+    {
+      "match": [
+        "recipient-scan-continue",
+        "recipient-share-save",
+        "statements-save-selected",
+        "statement-period-0"
+      ],
+      "beforeMs": 4000,
+      "afterMs": 8000,
+      "cue": "review"
+    },
+    {
+      "match": [
+        "live-history-reconcile",
+        "live-history-reconcile-checked",
+        "live-history-reconcile-confirm"
+      ],
+      "beforeMs": 8000,
+      "afterMs": 8000,
+      "cue": "uncertain"
+    },
+    {
+      "match": [
+        "native-token-check-proof",
+        "native-token-disable"
+      ],
+      "beforeMs": 6000,
+      "afterMs": 8000,
+      "cue": "token"
+    },
+    {
+      "match": [
+        "USD",
+        "DOP",
+        "balance-privacy",
+        "statement-next",
+        "statement-zoom",
+        "language-setting",
+        "language-es"
+      ],
+      "afterMs": 5000,
+      "cue": "read"
+    },
+    {
+      "match": [
+        "sms-assistance-enable",
+        "sms-assistance-skip"
+      ],
+      "beforeMs": 8000,
+      "afterMs": 8000,
+      "cue": "sms-consent"
+    },
+    {
+      "match": [
+        "live-card-reveal",
+        "live-card-copy-id"
+      ],
+      "beforeMs": 5000,
+      "afterMs": 8000,
+      "cue": "cards-readonly"
+    },
+    {
+      "match": [
+        "live-card-manage"
+      ],
+      "beforeMs": 3000,
+      "afterMs": 12000,
+      "cue": "cards-readonly"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "first-use",
+      "goal": "Understand the independent-app notice before accepting anything.",
+      "quietSetup": false,
+      "scenes": [
+        {
+          "class": "FirstUseNoticeTest",
+          "method": "privacyIsAvailableBeforeTermsAndNeverAcceptsThem",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "FirstUseNoticeTest",
+          "method": "bankingStaysBlockedUntilTermsOpenedAndExplicitlyAcceptedThenAcceptancePersists",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "ShowcaseExtraTest",
+          "method": "languageSelection",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "first-use-01",
+          "title": "Privacy before consent",
+          "direction": "Open the privacy policy; hold the opening explanation for 10 seconds. Return without accepting."
+        },
+        {
+          "id": "first-use-02",
+          "title": "Terms are a separate choice",
+          "direction": "Open terms; hold for 10 seconds. Return; pause 5 seconds with Continue disabled. Check agreement, pause 5 seconds, then Continue."
+        },
+        {
+          "id": "first-use-03",
+          "title": "Language selection",
+          "direction": "Open the language list, hold 6 seconds, choose Spanish, and hold the selected setting for 5 seconds."
+        }
+      ]
+    },
+    {
+      "id": "login",
+      "goal": "Distinguish local remembered access, simulated biometrics, and bank approval.",
+      "quietSetup": false,
+      "scenes": [
+        {
+          "class": "LiveScreenTest",
+          "method": "rememberingCredentialsDefaultsOnAndRequiresBiometricSaveBeforeLogin",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "LiveScreenTest",
+          "method": "savedLoginWaitsForBiometricsThenSubmitsAutomatically",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "LiveScreenTest",
+          "method": "rememberedSmsChannelRequestsDeliveryThenWaitsForExplicitVerification",
+          "requiresSmsAutofill": true
+        },
+        {
+          "class": "LiveScreenTest",
+          "method": "approvedSmsMessageCompletesOnlyTheCurrentSmsLoginWithoutAnExtraVerifyTap",
+          "requiresSmsAutofill": true
+        }
+      ],
+      "beats": [
+        {
+          "id": "login-01",
+          "title": "First remembered login",
+          "direction": "Show the remember checkbox and explain local biometric protection. Type fictional credentials slowly; hold 5 seconds before login. Pause 8 seconds on the resulting accounts."
+        },
+        {
+          "id": "login-02",
+          "title": "Biometric unlock",
+          "direction": "Show the prefilled identity and simulated unlock for 6 seconds. Approve the fixture callback, then hold the resulting account list for 8 seconds."
+        },
+        {
+          "id": "login-03",
+          "title": "SMS without typing a code",
+          "direction": "With remembered SMS delivery already selected, leave the empty code field visible for 3 seconds. Inject only the synthetic Android autofill callback. Hold the filled field for 5 seconds; no login replay is allowed yet. Tap Verify, then hold the result for 8 seconds."
+        },
+        {
+          "id": "login-04",
+          "title": "One-message SMS consent",
+          "direction": "SMS assistance is enabled. Hold the pending SMS field for 3 seconds. Clearly label the simulated Android one-message consent result, pause 8 seconds before fixture approval. Approve the synthetic bank message; current SMS-only login auto-verifies with no extra Verify tap. Hold authenticated result 8 seconds. Do not pretend a fake overlay is the real Android consent dialog."
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "goal": "Show the independent security steps and who controls each outcome.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "LiveScreenTest",
+          "method": "systemSmsAutofillKeepsCombinedQuestionAndWaitsForVerify",
+          "requiresSmsAutofill": true
+        },
+        {
+          "class": "LiveScreenTest",
+          "method": "untrustedDeviceCannotFetchAccountsOrEnrollSilently",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "LoginPrerequisitesScreenTest",
+          "method": "requiredPasswordIsConfirmedAndReturnsToLoginWithoutReadingAccounts",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "LiveScreenTest",
+          "method": "registrationResumesThroughBiometricsWithoutExitingOrReusingPassword",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "verification-01",
+          "title": "Question plus SMS",
+          "direction": "Enter only the fictional security answer. Leave SMS code empty for 3 seconds; autofill it; hold 5 seconds before Verify. Assert no submission happened during autofill."
+        },
+        {
+          "id": "verification-02",
+          "title": "Device approval",
+          "direction": "Show the unapproved-device screen for 10 seconds. Do not claim registration or account access."
+        },
+        {
+          "id": "verification-03",
+          "title": "Required setup",
+          "direction": "Show the password requirements; enter fictional values. Hold mismatch feedback for 5 seconds, then correct it. Hold review for 8 seconds; explicitly submit and explain the return to login for 8 seconds."
+        },
+        {
+          "id": "verification-04",
+          "title": "Registration return stays inside the app",
+          "direction": "Show device registration requirement, pause 10 seconds on consent. Request registration explicitly. Explain required fresh login, pause 6 seconds on biometric re-entry fixture. Approve biometric callback and hold accounts 8 seconds. No password is retained for silent replay."
+        }
+      ]
+    },
+    {
+      "id": "accounts",
+      "goal": "Read balances and currency before taking action.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "ShowcaseExtraTest",
+          "method": "accountsAndPrivacy",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "accounts-01",
+          "title": "Orient",
+          "direction": "Start at fictional account overview, not another login. Hold for 5 seconds."
+        },
+        {
+          "id": "accounts-02",
+          "title": "Privacy",
+          "direction": "Hide balances, hold 5 seconds; reveal, hold 5 seconds."
+        },
+        {
+          "id": "accounts-03",
+          "title": "Separate currencies",
+          "direction": "Choose USD and hold 6 seconds. Return to DOP and hold 6 seconds."
+        },
+        {
+          "id": "accounts-04",
+          "title": "Scroll and details",
+          "direction": "Show real swipe direction; pause after each scroll. Open account details and hold account identity/currency/actions for 8 seconds."
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "goal": "Understand visible records and what the CSV contains.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "LiveScreenTest",
+          "method": "loadedHistorySearchDirectionAndAccountDetailsWorkWithoutExtraBankCalls",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "ShowcaseExtraTest",
+          "method": "csvExport",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "history-01",
+          "title": "Read/search/filter",
+          "direction": "Start already signed into the fake bank. Reveal account identity, search and filter with 4-second pauses after changed results."
+        },
+        {
+          "id": "history-02",
+          "title": "Export",
+          "direction": "Open the demo CSV Sharesheet, hold 8 seconds, then return. Do not claim an external recipient received it."
+        }
+      ]
+    },
+    {
+      "id": "statements",
+      "goal": "Separate viewing, sharing, and persistent saving.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "StatementsScreenTest",
+          "method": "listDoesNotDownloadUntilSelectedAndViewerPagesAndSharesOriginalPdf",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "StatementSavingScreenTest",
+          "method": "bulkSelectionDoesNotDownloadUntilFolderChosenAndKeepsExactBytesAndNames",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "statements-01",
+          "title": "Catalogue",
+          "direction": "Hold available/unavailable periods for 6 seconds before opening."
+        },
+        {
+          "id": "statements-02",
+          "title": "PDF",
+          "direction": "Hold the synthetic PDF for 8 seconds. Pause 5 seconds after page/zoom actions. Explain sharing is explicit."
+        },
+        {
+          "id": "statements-03",
+          "title": "Save selection",
+          "direction": "Select available periods and hold the selection for 6 seconds. Press Save selected. Explain the folder callback is simulated; pause 5 seconds before it and 8 seconds after successful synthetic writes."
+        }
+      ]
+    },
+    {
+      "id": "transfers",
+      "goal": "Make the review, money confirmation and SMS verification readable.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "BankingFlowTest",
+          "method": "transferRequiresCorrectAuthorizationAndPersistsOnceAcrossActivityRestart",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "AutomaticOperationCodeTest",
+          "method": "transferRetainsExplicitReviewThenFillsSmsAndWaitsForVerify",
+          "requiresSmsAutofill": true
+        },
+        {
+          "class": "LiveScreenTest",
+          "method": "beneficiaryPreloadWaitsOnlyWhenPickerOpensAndSearchSelectsExactRecipient",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "ShowcaseExtraTest",
+          "method": "savedBeneficiaryTransfers",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "transfers-01",
+          "title": "Offline own-account example",
+          "direction": "Show source/destination, amount and currency. Hold review 8 seconds. Show a wrong DEMO code once, explain for 6 seconds; correct with DEMO code 123456, then hold the fictional receipt 8 seconds. Demo codes are not SMS."
+        },
+        {
+          "id": "transfers-02",
+          "title": "Advanced bank/SMS example",
+          "direction": "Start in an authenticated fake transfer form. Select recipient/amount, hold quote review 8 seconds, then hold the real-money confirmation dialog for 8 seconds. After confirmation, show empty SMS field 3 seconds, autofill without typing, hold filled field 5 seconds. Tap Verify explicitly; hold the fake-bank receipt 8 seconds."
+        },
+        {
+          "id": "transfers-03",
+          "title": "Recipient search",
+          "direction": "Show the pending/read/search/selection distinction; do not submit a bank transfer."
+        },
+        {
+          "id": "transfers-04",
+          "title": "Saved-recipient demo",
+          "direction": "Show same-bank and other-bank offline examples as separate cases, each with an 8-second review/receipt. Local test authorization is explicitly distinct from SMS."
+        }
+      ]
+    },
+    {
+      "id": "payments",
+      "goal": "Review the service and amount before authorization.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "BankingFlowTest",
+          "method": "servicePaymentReviewDoesNotDebitUntilConfirmed",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "AutomaticOperationCodeTest",
+          "method": "paymentRetainsExplicitReviewThenFillsSmsAndWaitsForVerify",
+          "requiresSmsAutofill": true
+        }
+      ],
+      "beats": [
+        {
+          "id": "payments-01",
+          "title": "Offline service",
+          "direction": "Hold bill/amount review 8 seconds and fictional receipt 8 seconds; the DEMO code remains a local test code."
+        },
+        {
+          "id": "payments-02",
+          "title": "Advanced SMS",
+          "direction": "Start in the fake-bank payment form. Read review and money confirmation for 8 seconds each. Empty SMS field 3 seconds, autofill callback, filled field 5 seconds, explicit Verify, fake receipt 8 seconds."
+        }
+      ]
+    },
+    {
+      "id": "beneficiaries",
+      "goal": "A scanned/pasted recipient is not automatically validated or saved.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "LiveScreenTest",
+          "method": "scannedOtherBankRecipientPrefillsBeneficiaryFormWithoutValidatingOrSavingAutomatically",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "AutomaticOperationCodeTest",
+          "method": "beneficiaryDeletionRetainsReviewAndExplicitSmsVerification",
+          "requiresSmsAutofill": true
+        },
+        {
+          "class": "ShowcaseExtraTest",
+          "method": "saveFictionalBeneficiary",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "beneficiaries-01",
+          "title": "Code review",
+          "direction": "Paste the long fictional recipient payload as one paste, not dozens of seconds of character typing. Hold the decoded recipient/currency for 8 seconds before continuation."
+        },
+        {
+          "id": "beneficiaries-02",
+          "title": "Deletion with SMS",
+          "direction": "Read deletion review for 8 seconds; confirm separately. Use SMS autofill only, hold before Verify, then explain the fake bank response for 8 seconds."
+        },
+        {
+          "id": "beneficiaries-03",
+          "title": "Local save",
+          "direction": "Create a clearly fictional other-bank recipient locally, then hold the saved result for 8 seconds. This is a separate offline scene."
+        }
+      ]
+    },
+    {
+      "id": "cards",
+      "goal": "Pause before changing controls, reporting a loss, or sending travel details.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "LiveCardsScreenTest",
+          "method": "cardServicesExplainUnavailabilityWithoutAdministrationRequests",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "cards-01",
+          "title": "Read-only details and unavailable services",
+          "direction": "Open an actual native fake-bank card. Read status and available bank fields for 8 seconds. Reveal exact card identifier and copy it; explain this is not a reconstructed PAN. Hold missing-full-number explanation. Open Manage card and hold unimplemented-services explanation 12 seconds. No card write or administration request is sent. Return to details and hold 6 seconds."
+        }
+      ]
+    },
+    {
+      "id": "token",
+      "goal": "Consent and bank approval precede any active code.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "NativeTokenScreenTest",
+          "method": "contractConsentAndBankProofPrecedeCodeDisplayAndUnlinkNeedsConfirmation",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "NativeTokenScreenTest",
+          "method": "nativeTokenSmsAutofillStillRequiresVerify",
+          "requiresSmsAutofill": true
+        }
+      ],
+      "beats": [
+        {
+          "id": "token-01",
+          "title": "Contract and proof",
+          "direction": "Hold synthetic contract 10 seconds. Hold consent explanation 8 seconds before enrollment. Hold pending proof 10 seconds; a fixture approval is explicitly simulated."
+        },
+        {
+          "id": "token-02",
+          "title": "Active and unlink",
+          "direction": "Hold generated fictitious code/status 8 seconds. Hold unlink confirmation 8 seconds before accepting, and explain result for 8 seconds."
+        },
+        {
+          "id": "token-03",
+          "title": "SMS enrollment step",
+          "direction": "A separate fake enrollment challenge uses SMS autofill, never typed SMS. Show empty/filled/Verify as in other banking scenes. Do not claim this scenario itself completed enrollment. A generated Token BSC code remains a token, not an SMS."
+        }
+      ]
+    },
+    {
+      "id": "qr",
+      "goal": "Review the request before sharing or acting on it.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "RecipientShareScreenTest",
+          "method": "savePreservesSelectedRequestAndCancelAllowsRetry",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "RecipientScanScreenTest",
+          "method": "paymentRequestShowsAmountAndPurposeBeforeExplicitRecipientReview",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "RecipientShareScreenTest",
+          "method": "printOpensAndroidPrintPreview",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "qr-01",
+          "title": "Create and save",
+          "direction": "Hold account versus payment-request modes; type short fictional purpose/amount readably. Hold completed QR card/details 8 seconds. Demonstrate save cancellation and retry without pretending a bank payment occurred."
+        },
+        {
+          "id": "qr-02",
+          "title": "Scanner review",
+          "direction": "Hold injected decoded amount/purpose/currency 8 seconds before explicit recipient review. No real camera capture is claimed."
+        },
+        {
+          "id": "qr-03",
+          "title": "Print",
+          "direction": "Hold Android print preview 8 seconds, return without claiming physical printing."
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "goal": "Show configuration once, restore SMS, and preserve uncertain outcomes.",
+      "quietSetup": true,
+      "scenes": [
+        {
+          "class": "ShowcaseSmsSettingsTest",
+          "method": "deliveryPreferenceReturnsToSms",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "ShowcaseExtraTest",
+          "method": "settingsProfileHelpAndLogout",
+          "requiresSmsAutofill": false
+        },
+        {
+          "class": "LiveScreenTest",
+          "method": "moneyReconciliationNeedsLoadedHistoryAndFreshCheckedConfirmation",
+          "requiresSmsAutofill": false
+        }
+      ],
+      "beats": [
+        {
+          "id": "settings-01",
+          "title": "Delivery configuration",
+          "direction": "Read one-message SMS consent guidance for 10 seconds. Switch SMS assistance off and hold 6 seconds; switch back on and hold 8 seconds. Then demonstrate Ask and Email delivery preferences with 6-second pauses and restore SMS delivery. All other chapters keep assistance enabled, except the initial pre-choice onboarding scene."
+        },
+        {
+          "id": "settings-02",
+          "title": "Demo settings",
+          "direction": "Show profile, security, help and logout with 6-second explanation holds."
+        },
+        {
+          "id": "settings-03",
+          "title": "Uncertain operation",
+          "direction": "Hold the blocked state/history for 10 seconds. Read reconciliation acknowledgement for 10 seconds before checking it. Confirm explicitly and hold result 8 seconds. Never imply retrying, cancelling or reversing the old operation."
+        }
+      ]
+    }
+  ],
+  "overview": {
+    "seconds": 104,
+    "chapterOrder": [
+      "first-use",
+      "login",
+      "verification",
+      "accounts",
+      "history",
+      "statements",
+      "transfers",
+      "payments",
+      "beneficiaries",
+      "cards",
+      "token",
+      "qr",
+      "settings"
+    ],
+    "direction": "13 eight-second excerpts, one per chapter. Choose stable review/result/filled-code screens; do not splice a new action into its final second. Do not accelerate source footage."
+  }
+}

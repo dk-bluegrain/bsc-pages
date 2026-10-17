@@ -1,53 +1,53 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:07.900
-Recorrido nativo ficticio: aviso de independencia, privacidad, aceptación de términos y selector en español.
+00:00:00.000 --> 00:00:07.883
+Primer uso ficticio: privacidad, términos, idioma y elección opcional de ayuda SMS con aprobación por mensaje.
 
 2
-00:00:08.000 --> 00:00:15.900
-Acceso guardado con protección biométrica simulada; la demo básica no necesita credenciales bancarias.
+00:00:07.933 --> 00:00:15.883
+Acceso simulado: aprobar un SMS verifica automáticamente solo el acceso exclusivamente SMS; el teclado conserva Verificar.
 
 3
-00:00:16.000 --> 00:00:23.900
-Pregunta de seguridad, token, aprobación del dispositivo y cambio de contraseña requerido: verificaciones simuladas.
+00:00:15.933 --> 00:00:23.883
+Pregunta combinada y SMS conservan Verificar; la aprobación del dispositivo y el cambio de contraseña son pasos distintos.
 
 4
-00:00:24.000 --> 00:00:31.900
+00:00:23.933 --> 00:00:31.883
 Demo sin conexión: cuentas ficticias, DOP/USD, privacidad de saldos y flechas de deslizamiento.
 
 5
-00:00:32.000 --> 00:00:39.900
+00:00:31.933 --> 00:00:39.816
 Historial bancario simulado: búsqueda y filtros; la demo comparte un CSV ficticio mediante Android.
 
 6
-00:00:40.000 --> 00:00:47.900
+00:00:39.866 --> 00:00:47.749
 PDF sintético: páginas, ampliación, compartir y guardado por selección con carpeta simulada.
 
 7
-00:00:48.000 --> 00:00:55.900
-Demo: transferencias propias, al mismo banco y a otros bancos; selección bancaria avanzada simulada.
+00:00:47.799 --> 00:00:55.682
+Transferencias de demo: código 123456, no SMS. Banco simulado: revisión, código SMS autocompletado por Android y Verificar.
 
 8
-00:00:56.000 --> 00:01:03.900
-Pago de servicio en demo y revisión con verificación SMS simulada.
+00:00:55.732 --> 00:01:03.615
+Pago de demo con código local; pago bancario simulado con código SMS autocompletado mediante Android y Verificar.
 
 9
-00:01:04.000 --> 00:01:11.900
-Destinatario desde código, eliminación bancaria simulada y guardado de un beneficiario ficticio en la demo.
+00:01:03.665 --> 00:01:11.548
+Código de destinatario, guardado local y eliminación bancaria simulada con código SMS autocompletado y Verificar.
 
 10
-00:01:12.000 --> 00:01:19.900
-Controles de tarjeta, pérdida, robo y viaje en escenarios bancarios simulados.
+00:01:11.598 --> 00:01:19.481
+Tarjetas de solo lectura: titular e identificador del banco, número completo solo si se facilita; servicios informativos sin cambios.
 
 11
-00:01:20.000 --> 00:01:27.900
-Token BSC simulado: contrato, consentimiento, aprobación, código y desvinculación.
+00:01:19.531 --> 00:01:27.481
+Token BSC simulado: contrato y desvinculación; SMS con autocompletado y Verificar. El código generado del token no es SMS.
 
 12
-00:01:28.000 --> 00:01:35.900
+00:01:27.531 --> 00:01:35.481
 Solicitud QR ficticia: guardado, revisión del destinatario y vista previa de impresión.
 
 13
-00:01:36.000 --> 00:01:43.733
-Ajustes y conciliación; siguen pendientes la autorización del banco y la validación con la cuenta de su titular.
+00:01:35.531 --> 00:01:43.481
+Ayuda SMS: desactivar y reactivar; entrega bancaria aparte. Autorización del banco y validación con la cuenta de su titular pendientes.

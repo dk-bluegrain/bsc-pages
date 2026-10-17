@@ -1,17 +1,85 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:07.400
-Native Banking-Oberfläche mit fiktiven Daten und simulierten Antworten.
+00:00:00.000 --> 00:00:17.420
+Simulierte Bankanmeldung: Zugangsdaten optional speichern, mit biometrischer Testfreigabe.
 
 2
-00:00:07.500 --> 00:00:14.900
-Die Aufzeichnung verwendet eine simulierte biometrische Freigabe für gespeicherten Zugang.
+00:00:17.470 --> 00:00:22.791
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
 
 3
-00:00:15.000 --> 00:00:22.400
-Speichern und Entsperren der Zugangsdaten sind von der Bankfreigabe getrennt.
+00:00:22.841 --> 00:00:30.791
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
 
 4
-00:00:22.500 --> 00:00:29.900
-Die einfache Demo enthält weder Bankanmeldung noch diese Biometriesimulation.
+00:00:30.841 --> 00:00:38.100
+Simulierte Bankanmeldung: Zugangsdaten optional speichern, mit biometrischer Testfreigabe.
+
+5
+00:00:38.150 --> 00:00:49.906
+Simuliertes biometrisches Entsperren gespeicherter Zugangsdaten; die Bankfreigabe bleibt ein eigener Schritt.
+
+6
+00:00:49.956 --> 00:00:57.906
+Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
+
+7
+00:00:57.956 --> 00:01:04.500
+Simuliertes biometrisches Entsperren gespeicherter Zugangsdaten; die Bankfreigabe bleibt ein eigener Schritt.
+
+8
+00:01:04.550 --> 00:01:21.575
+Simulierte Bankanmeldung mit durch Android ausgefülltem SMS-Code: Prüfen bleibt ausdrücklich erforderlich.
+
+9
+00:01:21.625 --> 00:01:26.754
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+10
+00:01:26.804 --> 00:01:34.935
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+11
+00:01:34.985 --> 00:01:38.209
+Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+
+12
+00:01:38.259 --> 00:01:43.957
+Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
+
+13
+00:01:44.007 --> 00:01:48.661
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+14
+00:01:48.711 --> 00:01:56.661
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+15
+00:01:56.711 --> 00:02:03.167
+Simulierte Bankanmeldung mit durch Android ausgefülltem SMS-Code: Prüfen bleibt ausdrücklich erforderlich.
+
+16
+00:02:03.217 --> 00:02:20.864
+Simulierte Freigabe einer Nachricht: automatische Prüfung nur der reinen SMS-Anmeldung, kein Tastatur-Autofill.
+
+17
+00:02:20.914 --> 00:02:26.210
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+18
+00:02:26.260 --> 00:02:34.400
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+19
+00:02:34.450 --> 00:02:42.726
+SMS-Hilfe ist optional. Android fragt für eine Nachricht, ohne Posteingangszugriff; manuelle Eingabe bleibt möglich.
+
+20
+00:02:42.776 --> 00:02:50.726
+Simulierte Nachrichtenfreigabe: Nur reine SMS-Anmeldung prüft automatisch. Vorgänge und kombinierte Fragen brauchen weiter Prüfen.
+
+21
+00:02:50.776 --> 00:02:57.150
+Simulierte Freigabe einer Nachricht: automatische Prüfung nur der reinen SMS-Anmeldung, kein Tastatur-Autofill.

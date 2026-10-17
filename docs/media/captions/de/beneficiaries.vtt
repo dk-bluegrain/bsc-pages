@@ -1,17 +1,61 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:38.350
-Native Banking-Oberfläche mit fiktiven Daten und simulierten Antworten.
+00:00:00.000 --> 00:00:32.144
+Simulierte Bank: Empfängercode einfügen, prüfen und vorausfüllen, ohne automatisch zu validieren oder zu speichern.
 
 2
-00:00:38.450 --> 00:01:16.800
-Ein Code kann Empfängerdaten ausfüllen, ohne den Empfänger zu speichern.
+00:00:32.194 --> 00:00:36.971
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 3
-00:01:16.900 --> 00:01:55.250
-Die Demo speichert einen fiktiven Empfänger; die simulierte Empfängerlöschung bei der Bank verlangt Bestätigungen.
+00:00:37.021 --> 00:00:44.971
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 4
-00:01:55.350 --> 00:02:33.700
-Die Demo verwaltet fiktive Empfänger; diese erweiterten Bankschritte sind simuliert.
+00:00:45.021 --> 00:00:51.500
+Simulierte Bank: Empfängercode einfügen, prüfen und vorausfüllen, ohne automatisch zu validieren oder zu speichern.
+
+5
+00:00:51.550 --> 00:01:02.652
+Simuliertes Löschen eines Bankbegünstigten: Prüfung, eigene Bestätigung, ausgefüllter SMS-Code und ausdrückliches Prüfen.
+
+6
+00:01:02.702 --> 00:01:09.183
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+7
+00:01:09.233 --> 00:01:17.377
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+8
+00:01:17.427 --> 00:01:25.848
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+9
+00:01:25.898 --> 00:01:34.027
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+10
+00:01:34.077 --> 00:01:37.291
+Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+
+11
+00:01:37.341 --> 00:01:42.994
+Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
+
+12
+00:01:43.044 --> 00:01:48.450
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+13
+00:01:48.500 --> 00:01:56.450
+Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
+
+14
+00:01:56.500 --> 00:02:02.967
+Simuliertes Löschen eines Bankbegünstigten: Prüfung, eigene Bestätigung, ausgefüllter SMS-Code und ausdrückliches Prüfen.
+
+15
+00:02:03.017 --> 00:03:11.883
+Einfache Demo: fiktiven Begünstigten einer anderen Bank lokal anlegen und speichern, ohne echte Bankprüfung.

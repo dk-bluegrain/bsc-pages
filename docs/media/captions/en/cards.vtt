@@ -1,17 +1,41 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:28.483
-Native banking UI with fictional cards and simulated responses.
+00:00:00.000 --> 00:00:11.016
+Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.
 
 2
-00:00:28.583 --> 00:00:57.067
-Changing card usage requires review and verification of the change.
+00:00:11.066 --> 00:00:16.396
+Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
 
 3
-00:00:57.167 --> 00:01:25.650
-Loss, theft and travel have separate scenarios and explicit confirmation.
+00:00:16.446 --> 00:00:24.621
+Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
 
 4
-00:01:25.750 --> 00:01:54.233
-The basic demo lacks these controls; availability at the bank is unvalidated.
+00:00:24.671 --> 00:00:30.168
+Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+
+5
+00:00:30.218 --> 00:00:38.168
+Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+
+6
+00:00:38.218 --> 00:00:44.054
+Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.
+
+7
+00:00:44.104 --> 00:00:52.054
+Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+
+8
+00:00:52.104 --> 00:00:55.405
+Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.
+
+9
+00:00:55.455 --> 00:01:07.405
+Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+
+10
+00:01:07.455 --> 00:01:19.550
+Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.

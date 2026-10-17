@@ -1,17 +1,41 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:28.483
-Interfaz bancaria nativa con tarjetas ficticias y respuestas simuladas.
+00:00:00.000 --> 00:00:11.016
+Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.
 
 2
-00:00:28.583 --> 00:00:57.067
-Cambiar el uso de una tarjeta exige revisión y verificación del cambio.
+00:00:11.066 --> 00:00:16.396
+Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
 
 3
-00:00:57.167 --> 00:01:25.650
-Pérdida, robo y viaje tienen escenarios separados y confirmación expresa.
+00:00:16.446 --> 00:00:24.621
+Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
 
 4
-00:01:25.750 --> 00:01:54.233
-La demo básica no incluye estos controles; la disponibilidad bancaria no está validada.
+00:00:24.671 --> 00:00:30.168
+Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+
+5
+00:00:30.218 --> 00:00:38.168
+Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+
+6
+00:00:38.218 --> 00:00:44.054
+Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.
+
+7
+00:00:44.104 --> 00:00:52.054
+Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+
+8
+00:00:52.104 --> 00:00:55.405
+Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.
+
+9
+00:00:55.455 --> 00:01:07.405
+Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+
+10
+00:01:07.455 --> 00:01:19.550
+Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.

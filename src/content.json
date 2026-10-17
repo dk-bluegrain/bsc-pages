@@ -44,19 +44,19 @@
         {
           "id": "first-use",
           "title": "Primeros pasos",
-          "body": "Lee el aviso de app independiente, abre los términos y la política de privacidad y acepta de forma expresa antes de continuar. Elige entre siete idiomas; la selección cambia la interfaz, no el texto recibido del banco.",
+          "body": "Lee el aviso de app independiente, los términos y la privacidad y acepta de forma expresa antes de continuar. Elige entre siete idiomas. En el primer uso puedes activar la ayuda SMS o continuar manualmente; Android pedirá aprobación para compartir un solo mensaje, sin acceso a la bandeja SMS.",
           "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
         },
         {
           "id": "login",
           "title": "Acceso y huella",
-          "body": "Recorre el acceso manual, la opción de recordar usuario y contraseña con protección biométrica y la eliminación del acceso guardado. La huella desbloquea credenciales cifradas; no sustituye la aprobación del banco. La demo básica no necesita credenciales bancarias.",
+          "body": "Explora el acceso manual y el guardado opcional de usuario y contraseña con protección biométrica simulada. Aprobar un mensaje mediante la ayuda SMS verifica automáticamente solo el acceso exclusivamente por SMS. El autocompletado del teclado conserva Verificar. La huella no sustituye la aprobación del banco; la demo básica no pide credenciales bancarias.",
           "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
         },
         {
           "id": "verification",
           "title": "Verificación y dispositivo",
-          "body": "Consulta los pasos de verificación, la aprobación del dispositivo y la configuración que el banco pueda exigir al acceder. Un código SMS editable solo se envía al pulsar Verificar. Las comprobaciones externas de identidad continúan en la página HTTPS ofrecida por el banco.",
+          "body": "Revisa la verificación, la aprobación del dispositivo y la configuración exigida por el banco. Las preguntas combinadas y las operaciones conservan Verificar, incluso tras aprobar un mensaje SMS. Solo el acceso exclusivamente por SMS puede verificarse automáticamente tras esa aprobación. La identificación externa continúa en la página HTTPS ofrecida por el banco.",
           "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
         },
         {
@@ -97,8 +97,8 @@
         },
         {
           "id": "cards",
-          "title": "Tarjetas y controles",
-          "body": "Consulta detalles y controles de uso, los pasos por pérdida o robo y los avisos de viaje. Revisa el alcance de cada cambio y su confirmación. Son flujos bancarios simulados; la demo básica no incluye estos controles ni garantiza su disponibilidad en el banco.",
+          "title": "Detalles de tarjetas y canales oficiales",
+          "body": "Consulta los datos de tarjeta recibidos del banco. El titular aparece si se facilita; puedes mostrar o copiar el identificador recibido. El número completo solo se muestra si lo facilita expresamente el banco y nunca se reconstruye desde dígitos ocultos. Los servicios solo ofrecen información para canales oficiales: la app no activa, bloquea ni tramita pérdida, robo o viajes. La demo básica no administra tarjetas.",
           "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
         },
         {
@@ -116,7 +116,7 @@
         {
           "id": "settings",
           "title": "Ajustes, ayuda y resultados inciertos",
-          "body": "Cambia idioma y perfil, revisa los controles de demo, consulta ayuda y cierra sesión. Ante un resultado incierto, comprueba el historial o el estado real en el banco antes de conciliarlo. La conciliación no repite ni cancela una operación anterior. El perfil y los ajustes de demo usan solo datos ficticios.",
+          "body": "Activa o desactiva la ayuda SMS y elige aparte el canal de entrega ofrecido por el banco. Los videos mantienen la ayuda activada; solo este ajuste la desactiva y vuelve a activarla. Explora también perfil, ayuda y cierre de sesión de demo. Ante un resultado incierto, comprueba el historial real antes de conciliar; conciliar no repite ni cancela la operación.",
           "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
         }
       ],
@@ -135,7 +135,7 @@
         },
         {
           "title": "Edición bancaria",
-          "body": "La app envía solicitudes al banco al usar sus funciones. Si eliges recordar el acceso, las credenciales se cifran con Android Keystore y requieren autenticación biométrica fuerte. El token requiere consentimiento explícito para el contrato y el almacenamiento cifrado de su semilla. Las sesiones y los códigos generados no se guardan de forma persistente. Consulta la política incluida en la app para conocer el tratamiento completo."
+          "body": "La app envía solicitudes al banco al usar sus funciones. Si eliges recordar el acceso, las credenciales se cifran con Android Keystore y requieren autenticación biométrica fuerte. El token requiere consentimiento explícito para el contrato y el almacenamiento cifrado de su semilla. Las sesiones y los códigos generados no se guardan de forma persistente. Consulta la política incluida en la app para conocer el tratamiento completo. La ayuda SMS es opcional: Android solicita aprobación para compartir un solo mensaje, sin permiso de lectura de la bandeja. Solo el acceso exclusivamente por SMS puede verificarse automáticamente tras esa aprobación; el teclado, las preguntas combinadas y las operaciones conservan Verificar."
         },
         {
           "title": "Archivos y servicios del dispositivo",
@@ -191,19 +191,19 @@
         {
           "id": "first-use",
           "title": "Getting started",
-          "body": "Read the independent-app notice, open the terms and privacy policy, and explicitly accept before continuing. Choose from seven languages; this changes app text, not text supplied by the bank.",
+          "body": "Read the independent-app notice, terms and privacy, then explicitly accept before continuing. Choose from seven languages. At first use, enable optional SMS assistance or continue manually; Android requests approval to share one message, without SMS-inbox access.",
           "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
         },
         {
           "id": "login",
           "title": "Login and biometrics",
-          "body": "Explore manual login, optional biometric protection for remembered username and password, and removal of saved access. Biometrics unlock encrypted credentials; they do not replace bank approval. The basic demo needs no banking credentials.",
+          "body": "Explore manual login and optional biometric protection for saved username and password, demonstrated with simulated approval. Approving one message through SMS assistance auto-verifies only SMS-only login. Keyboard autofill retains Verify. Biometrics never replaces bank approval; the basic demo needs no banking credentials.",
           "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
         },
         {
           "id": "verification",
           "title": "Verification and device approval",
-          "body": "Follow verification, device approval and any login setup required by the bank. An editable SMS code is sent only when you tap Verify. External identity checks continue on the HTTPS page supplied by the bank.",
+          "body": "Review verification, device approval and bank-required setup. Combined questions and operations retain Verify, even after approving an SMS message. Only SMS-only login may auto-verify after that approval. External identification continues on the HTTPS page supplied by the bank.",
           "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
         },
         {
@@ -244,8 +244,8 @@
         },
         {
           "id": "cards",
-          "title": "Cards and controls",
-          "body": "Explore card details, usage controls, loss or theft reporting, and travel notices. Review each change’s scope and confirmation. These banking flows are simulated; the basic demo does not include these controls or establish their availability at the bank.",
+          "title": "Card details and official channels",
+          "body": "Read card details supplied by the bank. A holder name appears if provided; reveal or copy the received identifier. A full number is shown only if explicitly supplied by the bank, never reconstructed from masked digits. Services provide official-channel information only: the app performs no activation, blocking, loss/theft reporting or travel requests. The basic demo has no card administration.",
           "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
         },
         {
@@ -263,7 +263,7 @@
         {
           "id": "settings",
           "title": "Settings, help and uncertain outcomes",
-          "body": "Change language and profile, explore demo controls, open help and log out. If an outcome is uncertain, check the bank’s actual history or status before reconciling it. Reconciliation neither repeats nor cancels the earlier operation. Demo profile and settings use fictional data only.",
+          "body": "Switch SMS assistance on or off and separately choose a delivery channel offered by the bank. Videos keep assistance enabled; only this settings scene switches it off and back on. Explore demo profile, help and logout too. For an uncertain outcome, check actual history before reconciliation; reconciliation neither repeats nor cancels the operation.",
           "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
         }
       ],
@@ -282,7 +282,7 @@
         },
         {
           "title": "Banking edition",
-          "body": "The app sends requests to the bank when you use banking features. If you choose to remember access, credentials are encrypted with Android Keystore and require strong biometric authentication. Token enrollment requires explicit consent to the contract and encrypted seed storage. Sessions and generated codes are not stored persistently. Read the in-app policy for the full data handling details."
+          "body": "The app sends requests to the bank when you use banking features. If you choose to remember access, credentials are encrypted with Android Keystore and require strong biometric authentication. Token enrollment requires explicit consent to the contract and encrypted seed storage. Sessions and generated codes are not stored persistently. Read the in-app policy for the full data handling details. SMS assistance is optional: Android requests approval to share one message, without SMS-inbox read permission. Only SMS-only login may auto-verify after that approval; keyboard autofill, combined questions and operations retain Verify."
         },
         {
           "title": "Files and device services",
@@ -338,19 +338,19 @@
         {
           "id": "first-use",
           "title": "Erste Schritte",
-          "body": "Lesen Sie den Hinweis zur unabhängigen App, öffnen Sie Bedingungen und Datenschutzhinweise und stimmen Sie vor dem Fortfahren ausdrücklich zu. Wählen Sie zwischen sieben Sprachen. Die Auswahl ändert App-Texte, nicht die von der Bank gelieferten Texte.",
+          "body": "Lesen Sie Unabhängigkeitshinweis, Bedingungen und Datenschutz und stimmen Sie vor dem Fortfahren ausdrücklich zu. Wählen Sie aus sieben Sprachen. Beim ersten Start können Sie die optionale SMS-Hilfe aktivieren oder manuell fortfahren. Android verlangt Freigabe für eine Nachricht, ohne Zugriff auf den SMS-Posteingang.",
           "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
         },
         {
           "id": "login",
           "title": "Anmeldung und Biometrie",
-          "body": "Entdecken Sie die manuelle Anmeldung, den optionalen biometrischen Schutz für gespeicherten Benutzernamen und Passwort sowie das Löschen gespeicherter Zugangsdaten. Biometrie entsperrt verschlüsselte Zugangsdaten und ersetzt keine Bankfreigabe. Die einfache Demo benötigt keine Bankzugangsdaten.",
+          "body": "Entdecken Sie manuelle Anmeldung und optionalen biometrischen Schutz gespeicherter Zugangsdaten mit simulierter Freigabe. Nachrichtenfreigabe über die SMS-Hilfe prüft nur die reine SMS-Anmeldung automatisch. Tastatur-Autofill behält Prüfen bei. Biometrie ersetzt keine Bankfreigabe; die einfache Demo benötigt keine Bankzugangsdaten.",
           "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
         },
         {
           "id": "verification",
           "title": "Verifizierung und Gerätefreigabe",
-          "body": "Sehen Sie Verifizierung, Gerätefreigabe und gegebenenfalls von der Bank verlangte Einrichtungsschritte. Ein bearbeitbarer SMS-Code wird erst mit Prüfen gesendet. Externe Identitätsprüfungen werden auf der von der Bank bereitgestellten HTTPS-Seite fortgesetzt.",
+          "body": "Sehen Sie Verifizierung, Gerätefreigabe und erforderliche Bankeinrichtung. Kombinierte Fragen und Vorgänge behalten Prüfen bei, auch nach SMS-Nachrichtenfreigabe. Nur die reine SMS-Anmeldung kann nach dieser Freigabe automatisch geprüft werden. Externe Identifizierung erfolgt auf der von der Bank angebotenen HTTPS-Seite.",
           "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
         },
         {
@@ -391,8 +391,8 @@
         },
         {
           "id": "cards",
-          "title": "Karten und Nutzungskontrollen",
-          "body": "Entdecken Sie Kartendetails, Nutzungskontrollen, Verlust- oder Diebstahlmeldungen und Reisehinweise. Prüfen Sie Umfang und Bestätigung jeder Änderung. Diese Bankabläufe sind simuliert; die einfache Demo enthält diese Kontrollen nicht und belegt keine Verfügbarkeit bei der Bank.",
+          "title": "Kartendetails und offizielle Kanäle",
+          "body": "Sehen Sie die von der Bank gelieferten Kartendaten. Der Inhaber erscheint nur, wenn übermittelt; die empfangene Kennung lässt sich anzeigen oder kopieren. Die volle Nummer erscheint nur bei ausdrücklicher Lieferung durch die Bank, nie aus verdeckten Ziffern rekonstruiert. Dienste informieren nur über offizielle Kanäle: Die App aktiviert oder sperrt keine Karten und sendet keine Verlust-, Diebstahl- oder Reiseanträge. Die einfache Demo verwaltet keine Karten.",
           "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
         },
         {
@@ -410,7 +410,7 @@
         {
           "id": "settings",
           "title": "Einstellungen, Hilfe und unklare Ergebnisse",
-          "body": "Ändern Sie Sprache und Profil, entdecken Sie Demo-Einstellungen, öffnen Sie Hilfe und melden Sie sich ab. Prüfen Sie bei einem unklaren Ergebnis den tatsächlichen Bankverlauf oder Status, bevor Sie es abgleichen. Der Abgleich wiederholt oder storniert keinen früheren Vorgang. Demo-Profil und Einstellungen verwenden ausschließlich fiktive Daten.",
+          "body": "Schalten Sie SMS-Hilfe ein oder aus und wählen Sie getrennt einen von der Bank angebotenen Zustellweg. In Videos bleibt die Hilfe an; nur diese Szene schaltet sie aus und wieder ein. Sehen Sie auch Demo-Profil, Hilfe und Abmeldung. Prüfen Sie bei unklarem Ergebnis vor dem Abgleich den tatsächlichen Verlauf; der Abgleich wiederholt oder storniert keinen Vorgang.",
           "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
         }
       ],
@@ -429,7 +429,7 @@
         },
         {
           "title": "Banking-Ausgabe",
-          "body": "Bei der Nutzung von Bankfunktionen sendet die App Anfragen an die Bank. Wenn Sie Zugangsdaten speichern lassen, werden sie mit Android Keystore verschlüsselt und erfordern starke biometrische Authentifizierung. Die Token-Registrierung verlangt ausdrückliche Zustimmung zum Vertrag und zur verschlüsselten Speicherung des geheimen Token-Schlüssels. Sitzungen und erzeugte Codes werden nicht dauerhaft gespeichert. Einzelheiten finden Sie in der Datenschutzerklärung der App."
+          "body": "Bei der Nutzung von Bankfunktionen sendet die App Anfragen an die Bank. Wenn Sie Zugangsdaten speichern lassen, werden sie mit Android Keystore verschlüsselt und erfordern starke biometrische Authentifizierung. Die Token-Registrierung verlangt ausdrückliche Zustimmung zum Vertrag und zur verschlüsselten Speicherung des geheimen Token-Schlüssels. Sitzungen und erzeugte Codes werden nicht dauerhaft gespeichert. Einzelheiten finden Sie in der Datenschutzerklärung der App. SMS-Hilfe ist optional: Android verlangt Freigabe für eine Nachricht, ohne Leseberechtigung für den SMS-Posteingang. Nur die reine SMS-Anmeldung kann danach automatisch geprüft werden; Tastatur-Autofill, kombinierte Fragen und Vorgänge behalten Prüfen bei."
         },
         {
           "title": "Dateien und Gerätedienste",
@@ -485,19 +485,19 @@
         {
           "id": "first-use",
           "title": "Premiers pas",
-          "body": "Lisez l’avis concernant l’application indépendante, ouvrez les conditions et la politique de confidentialité, puis acceptez explicitement avant de continuer. Choisissez parmi sept langues ; ce choix modifie les textes de l’application, pas ceux fournis par la banque.",
+          "body": "Lisez l’avis d’indépendance, les conditions et la confidentialité, puis acceptez explicitement avant de continuer. Choisissez parmi sept langues. Au premier usage, activez l’aide SMS facultative ou continuez manuellement ; Android demande l’accord pour partager un message, sans accès à la boîte SMS.",
           "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
         },
         {
           "id": "login",
           "title": "Connexion et biométrie",
-          "body": "Découvrez la connexion manuelle, la protection biométrique facultative des identifiants mémorisés et leur suppression. La biométrie déverrouille les identifiants chiffrés ; elle ne remplace pas l’approbation bancaire. La démo de base ne nécessite aucun identifiant bancaire.",
+          "body": "Découvrez la connexion manuelle et la protection biométrique facultative des identifiants enregistrés, avec approbation simulée. L’accord pour un message via l’aide SMS ne vérifie automatiquement que la connexion par SMS seul. Le clavier garde Vérifier. La biométrie ne remplace pas l’approbation bancaire ; la démo de base ne demande aucun identifiant bancaire.",
           "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
         },
         {
           "id": "verification",
           "title": "Vérification et appareil",
-          "body": "Suivez la vérification, l’approbation de l’appareil et la configuration de connexion éventuellement demandée par la banque. Un code SMS modifiable n’est envoyé qu’après une pression sur Vérifier. Les contrôles d’identité externes se poursuivent sur la page HTTPS fournie par la banque.",
+          "body": "Découvrez vérification, approbation de l’appareil et configuration exigée par la banque. Questions combinées et opérations gardent Vérifier, même après accord pour un SMS. Seule la connexion par SMS seul peut être vérifiée automatiquement après cet accord. L’identification externe continue sur la page HTTPS fournie par la banque.",
           "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
         },
         {
@@ -538,8 +538,8 @@
         },
         {
           "id": "cards",
-          "title": "Cartes et contrôles",
-          "body": "Découvrez les détails des cartes, les contrôles d’utilisation, les démarches en cas de perte ou de vol et les avis de voyage. Vérifiez la portée et la confirmation de chaque modification. Ces parcours bancaires sont simulés ; la démo de base ne comprend pas ces contrôles et ne prouve pas leur disponibilité auprès de la banque.",
+          "title": "Détails des cartes et canaux officiels",
+          "body": "Consultez les données de carte fournies par la banque. Le titulaire apparaît s’il est fourni ; affichez ou copiez l’identifiant reçu. Le numéro complet n’apparaît que s’il est expressément fourni par la banque, jamais reconstruit depuis des chiffres masqués. Les services renseignent uniquement sur les canaux officiels : l’application n’active ni ne bloque de carte et ne traite ni perte, ni vol, ni demande de voyage. La démo de base n’administre pas les cartes.",
           "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
         },
         {
@@ -557,7 +557,7 @@
         {
           "id": "settings",
           "title": "Réglages, aide et résultats incertains",
-          "body": "Changez de langue et de profil, explorez les commandes de démo, ouvrez l’aide et déconnectez-vous. Si un résultat est incertain, vérifiez l’historique ou l’état réel auprès de la banque avant de le rapprocher. Le rapprochement ne répète ni n’annule l’opération précédente. Le profil et les réglages de démo utilisent uniquement des données fictives.",
+          "body": "Activez ou désactivez l’aide SMS et choisissez séparément un canal proposé par la banque. Les vidéos gardent l’aide activée ; seule cette scène la désactive puis la réactive. Découvrez aussi profil, aide et déconnexion de démo. En cas de résultat incertain, vérifiez l’historique réel avant le rapprochement ; celui-ci ne répète ni n’annule l’opération.",
           "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
         }
       ],
@@ -576,7 +576,7 @@
         },
         {
           "title": "Édition bancaire",
-          "body": "L’application envoie des requêtes à la banque lorsque vous utilisez ses fonctions bancaires. Si vous mémorisez les identifiants, ils sont chiffrés avec Android Keystore et nécessitent une authentification biométrique forte. Le jeton nécessite un consentement explicite au contrat et au stockage chiffré de sa clé secrète. Les sessions et les codes générés ne sont pas conservés durablement. Consultez la politique intégrée pour le traitement complet des données."
+          "body": "L’application envoie des requêtes à la banque lorsque vous utilisez ses fonctions bancaires. Si vous mémorisez les identifiants, ils sont chiffrés avec Android Keystore et nécessitent une authentification biométrique forte. Le jeton nécessite un consentement explicite au contrat et au stockage chiffré de sa clé secrète. Les sessions et les codes générés ne sont pas conservés durablement. Consultez la politique intégrée pour le traitement complet des données. L’aide SMS est facultative : Android demande l’accord pour partager un message, sans autorisation de lecture de la boîte SMS. Seule la connexion par SMS seul peut alors être vérifiée automatiquement ; clavier, questions combinées et opérations gardent Vérifier."
         },
         {
           "title": "Fichiers et services de l’appareil",
@@ -632,19 +632,19 @@
         {
           "id": "first-use",
           "title": "Первое знакомство",
-          "body": "Прочитайте уведомление о независимом приложении, откройте условия и политику конфиденциальности и явно примите их перед продолжением. Выберите один из семи языков: меняется текст приложения, но не текст, полученный от банка.",
+          "body": "Прочитайте уведомление о независимом приложении, условия и конфиденциальность и явно примите их перед продолжением. Выберите один из семи языков. При первом запуске можно включить необязательную помощь SMS или продолжить вручную. Android запросит согласие на передачу одного сообщения, без доступа к входящим SMS.",
           "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
         },
         {
           "id": "login",
           "title": "Вход и биометрия",
-          "body": "Посмотрите ручной вход, необязательное сохранение имени пользователя и пароля с биометрической защитой и удаление сохранённого доступа. Биометрия открывает зашифрованные учётные данные, но не заменяет одобрение банка. Для базовой демоверсии банковские учётные данные не нужны.",
+          "body": "Посмотрите ручной вход и необязательную биометрическую защиту сохранённых имени пользователя и пароля с имитацией одобрения. Согласие на сообщение через помощь SMS автоматически проверяет лишь вход только по SMS. Автозаполнение клавиатуры сохраняет «Проверить». Биометрия не заменяет одобрения банка; базовая демоверсия не требует банковских учётных данных.",
           "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
         },
         {
           "id": "verification",
           "title": "Проверка и одобрение устройства",
-          "body": "Посмотрите проверку, одобрение устройства и настройку входа, которую может потребовать банк. Редактируемый SMS-код отправляется только после нажатия «Проверить». Внешняя проверка личности продолжается на HTTPS-странице, предоставленной банком.",
+          "body": "Посмотрите проверки, одобрение устройства и настройку, требуемую банком. Составные вопросы и операции сохраняют «Проверить» даже после согласия на SMS. Только вход исключительно по SMS может проверяться автоматически после такого согласия. Внешняя идентификация продолжается на HTTPS-странице банка.",
           "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
         },
         {
@@ -685,8 +685,8 @@
         },
         {
           "id": "cards",
-          "title": "Карты и настройки использования",
-          "body": "Посмотрите данные карт, настройки использования, действия при потере или краже и уведомления о поездке. Проверяйте область действия и подтверждение каждого изменения. Эти банковские сценарии имитируются; базовая демоверсия не содержит этих настроек и не подтверждает их доступность в банке.",
+          "title": "Данные карт и официальные каналы",
+          "body": "Просматривайте данные карт, полученные от банка. Имя владельца показано, если передано; полученный идентификатор можно показать или скопировать. Полный номер отображается только при явной передаче банком и никогда не восстанавливается из скрытых цифр. Сервисы лишь информируют об официальных каналах: приложение не активирует и не блокирует карты, не подаёт заявления о потере, краже или поездке. Базовая демоверсия не управляет картами.",
           "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
         },
         {
@@ -704,7 +704,7 @@
         {
           "id": "settings",
           "title": "Настройки, помощь и неопределённый результат",
-          "body": "Измените язык и профиль, изучите настройки демоверсии, откройте помощь и выйдите из сеанса. При неопределённом результате сначала проверьте фактическую историю или статус в банке, затем выполните сверку. Сверка не повторяет и не отменяет предыдущую операцию. Профиль и настройки демоверсии используют только вымышленные данные.",
+          "body": "Включите или отключите помощь SMS и отдельно выберите канал доставки, предложенный банком. В видео помощь включена; только эта сцена отключает и снова включает её. Посмотрите также профиль, помощь и выход из демоверсии. При неопределённом результате проверьте фактическую историю перед сверкой; сверка не повторяет и не отменяет операцию.",
           "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
         }
       ],
@@ -723,7 +723,7 @@
         },
         {
           "title": "Банковская версия",
-          "body": "При использовании банковских функций приложение отправляет запросы в банк. Если вы выбираете сохранение доступа, учётные данные шифруются с помощью Android Keystore и требуют строгой биометрической аутентификации. Подключение токена требует явного согласия с договором и зашифрованным хранением секретного ключа. Сеансы и сгенерированные коды не сохраняются постоянно. Полное описание обработки данных приведено в политике внутри приложения."
+          "body": "При использовании банковских функций приложение отправляет запросы в банк. Если вы выбираете сохранение доступа, учётные данные шифруются с помощью Android Keystore и требуют строгой биометрической аутентификации. Подключение токена требует явного согласия с договором и зашифрованным хранением секретного ключа. Сеансы и сгенерированные коды не сохраняются постоянно. Полное описание обработки данных приведено в политике внутри приложения. Помощь SMS необязательна: Android запрашивает согласие на передачу одного сообщения, без разрешения читать входящие SMS. После этого автоматически проверяется лишь вход только по SMS; клавиатура, составные вопросы и операции сохраняют «Проверить»."
         },
         {
           "title": "Файлы и службы устройства",
@@ -779,19 +779,19 @@
         {
           "id": "first-use",
           "title": "Перші кроки",
-          "body": "Прочитайте повідомлення про незалежний застосунок, відкрийте умови та політику конфіденційності й явно прийміть їх перед продовженням. Виберіть одну із семи мов: змінюється текст застосунку, але не текст, отриманий від банку.",
+          "body": "Прочитайте повідомлення про незалежний застосунок, умови й конфіденційність і явно прийміть їх перед продовженням. Виберіть одну із семи мов. Під час першого запуску можна ввімкнути необов’язкову допомогу SMS або продовжити вручну. Android запитає згоду на передавання одного повідомлення, без доступу до вхідних SMS.",
           "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
         },
         {
           "id": "login",
           "title": "Вхід і біометрія",
-          "body": "Перегляньте ручний вхід, необов’язкове збереження імені користувача й пароля з біометричним захистом та видалення збереженого доступу. Біометрія відкриває зашифровані облікові дані, але не замінює схвалення банку. Для базової демоверсії банківські облікові дані не потрібні.",
+          "body": "Перегляньте ручний вхід і необов’язковий біометричний захист збережених імені користувача й пароля з імітацією схвалення. Згода на повідомлення через допомогу SMS автоматично перевіряє лише вхід за SMS. Автозаповнення клавіатури зберігає «Перевірити». Біометрія не замінює схвалення банку; базова демоверсія не потребує банківських облікових даних.",
           "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
         },
         {
           "id": "verification",
           "title": "Перевірка та схвалення пристрою",
-          "body": "Перегляньте перевірку, схвалення пристрою та налаштування входу, які може вимагати банк. Редагований SMS-код надсилається лише після натискання «Перевірити». Зовнішня перевірка особи продовжується на HTTPS-сторінці, наданій банком.",
+          "body": "Перегляньте перевірки, схвалення пристрою й налаштування, які вимагає банк. Складені запитання та операції зберігають «Перевірити» навіть після згоди на SMS. Лише вхід виключно за SMS може перевірятися автоматично після такої згоди. Зовнішня ідентифікація продовжується на HTTPS-сторінці банку.",
           "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
         },
         {
@@ -832,8 +832,8 @@
         },
         {
           "id": "cards",
-          "title": "Картки й налаштування використання",
-          "body": "Перегляньте дані карток, налаштування використання, дії в разі втрати чи крадіжки та повідомлення про подорож. Перевіряйте сферу дії й підтвердження кожної зміни. Ці банківські сценарії імітуються; базова демоверсія не містить цих налаштувань і не підтверджує їхню доступність у банку.",
+          "title": "Дані карток та офіційні канали",
+          "body": "Переглядайте дані карток, отримані від банку. Ім’я власника показано, якщо передано; отриманий ідентифікатор можна показати чи скопіювати. Повний номер відображається лише за явного надання банком і ніколи не відновлюється з прихованих цифр. Сервіси лише інформують про офіційні канали: застосунок не активує й не блокує картки, не подає заяви про втрату, крадіжку чи подорож. Базова демоверсія не керує картками.",
           "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
         },
         {
@@ -851,7 +851,7 @@
         {
           "id": "settings",
           "title": "Налаштування, допомога та невизначений результат",
-          "body": "Змініть мову й профіль, перегляньте налаштування демоверсії, відкрийте допомогу та вийдіть із сеансу. За невизначеного результату спочатку перевірте фактичну історію чи статус у банку, а потім виконайте звірку. Звірка не повторює й не скасовує попередню операцію. Профіль і налаштування демоверсії використовують лише вигадані дані.",
+          "body": "Увімкніть або вимкніть допомогу SMS й окремо виберіть канал доставки, запропонований банком. У відео допомога ввімкнена; лише ця сцена вимикає та знову вмикає її. Перегляньте також профіль, допомогу й вихід із демоверсії. За невизначеного результату перевірте фактичну історію перед звіркою; звірка не повторює й не скасовує операцію.",
           "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
         }
       ],
@@ -870,7 +870,7 @@
         },
         {
           "title": "Банківська версія",
-          "body": "Під час використання банківських функцій застосунок надсилає запити до банку. Якщо ви вибираєте збереження доступу, облікові дані шифруються за допомогою Android Keystore та потребують сильної біометричної автентифікації. Підключення токена вимагає явної згоди з договором і зашифрованим зберіганням секретного ключа. Сеанси та створені коди не зберігаються постійно. Повний опис обробки даних наведено в політиці всередині застосунку."
+          "body": "Під час використання банківських функцій застосунок надсилає запити до банку. Якщо ви вибираєте збереження доступу, облікові дані шифруються за допомогою Android Keystore та потребують сильної біометричної автентифікації. Підключення токена вимагає явної згоди з договором і зашифрованим зберіганням секретного ключа. Сеанси та створені коди не зберігаються постійно. Повний опис обробки даних наведено в політиці всередині застосунку. Допомога SMS необов’язкова: Android запитує згоду на передавання одного повідомлення, без дозволу читати вхідні SMS. Після цього автоматично перевіряється лише вхід за SMS; клавіатура, складені запитання й операції зберігають «Перевірити»."
         },
         {
           "title": "Файли та служби пристрою",
@@ -926,19 +926,19 @@
         {
           "id": "first-use",
           "title": "Primeiros passos",
-          "body": "Leia o aviso de aplicativo independente, abra os termos e a política de privacidade e aceite expressamente antes de continuar. Escolha entre sete idiomas; a seleção altera o texto do aplicativo, não o texto fornecido pelo banco.",
+          "body": "Leia o aviso de aplicativo independente, os termos e a privacidade e aceite expressamente antes de continuar. Escolha entre sete idiomas. No primeiro uso, ative a ajuda SMS opcional ou continue manualmente; o Android pede aprovação para compartilhar uma mensagem, sem acesso à caixa de SMS.",
           "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
         },
         {
           "id": "login",
           "title": "Acesso e biometria",
-          "body": "Conheça o acesso manual, a proteção biométrica opcional do usuário e da senha salvos e a exclusão do acesso salvo. A biometria desbloqueia credenciais criptografadas; não substitui a aprovação do banco. A demonstração básica não precisa de credenciais bancárias.",
+          "body": "Conheça o acesso manual e a proteção biométrica opcional de usuário e senha salvos, com aprovação simulada. Aprovar uma mensagem pela ajuda SMS só verifica automaticamente o acesso exclusivamente por SMS. O preenchimento do teclado mantém Verificar. A biometria não substitui a aprovação do banco; a demonstração básica não exige credenciais bancárias.",
           "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
         },
         {
           "id": "verification",
           "title": "Verificação e dispositivo",
-          "body": "Acompanhe a verificação, a aprovação do dispositivo e as configurações de acesso que o banco possa exigir. Um código SMS editável só é enviado ao tocar em Verificar. As verificações externas de identidade continuam na página HTTPS fornecida pelo banco.",
+          "body": "Conheça verificação, aprovação do dispositivo e configuração exigida pelo banco. Perguntas combinadas e operações mantêm Verificar, mesmo após aprovar um SMS. Só o acesso exclusivamente por SMS pode ser verificado automaticamente após essa aprovação. A identificação externa continua na página HTTPS fornecida pelo banco.",
           "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
         },
         {
@@ -979,8 +979,8 @@
         },
         {
           "id": "cards",
-          "title": "Cartões e controles",
-          "body": "Veja detalhes dos cartões, controles de uso, procedimentos de perda ou roubo e avisos de viagem. Confira o alcance e a confirmação de cada alteração. Esses fluxos bancários são simulados; a demonstração básica não inclui esses controles nem comprova sua disponibilidade no banco.",
+          "title": "Detalhes dos cartões e canais oficiais",
+          "body": "Consulte os dados de cartão recebidos do banco. O titular aparece se for fornecido; mostre ou copie o identificador recebido. O número completo só aparece se fornecido expressamente pelo banco, nunca reconstruído de dígitos ocultos. Os serviços apenas informam os canais oficiais: o aplicativo não ativa, bloqueia ou encaminha perda, roubo ou solicitações de viagem. A demonstração básica não administra cartões.",
           "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
         },
         {
@@ -998,7 +998,7 @@
         {
           "id": "settings",
           "title": "Configurações, ajuda e resultados incertos",
-          "body": "Altere idioma e perfil, explore os controles da demonstração, abra a ajuda e encerre a sessão. Se um resultado for incerto, confira o histórico ou o status real no banco antes de conciliá-lo. A conciliação não repete nem cancela a operação anterior. O perfil e as configurações da demonstração usam apenas dados fictícios.",
+          "body": "Ative ou desative a ajuda SMS e escolha separadamente um canal de entrega oferecido pelo banco. Os vídeos mantêm a ajuda ativada; só esta cena a desativa e reativa. Conheça também perfil, ajuda e saída da demonstração. Se o resultado for incerto, confira o histórico real antes de conciliar; a conciliação não repete nem cancela a operação.",
           "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
         }
       ],
@@ -1017,7 +1017,7 @@
         },
         {
           "title": "Edição bancária",
-          "body": "O aplicativo envia solicitações ao banco quando você usa funções bancárias. Se escolher lembrar o acesso, as credenciais serão criptografadas com o Android Keystore e exigirão autenticação biométrica forte. A inscrição do token exige consentimento explícito ao contrato e ao armazenamento criptografado da chave secreta. Sessões e códigos gerados não são armazenados de forma persistente. Consulte a política dentro do aplicativo para os detalhes completos do tratamento de dados."
+          "body": "O aplicativo envia solicitações ao banco quando você usa funções bancárias. Se escolher lembrar o acesso, as credenciais serão criptografadas com o Android Keystore e exigirão autenticação biométrica forte. A inscrição do token exige consentimento explícito ao contrato e ao armazenamento criptografado da chave secreta. Sessões e códigos gerados não são armazenados de forma persistente. Consulte a política dentro do aplicativo para os detalhes completos do tratamento de dados. A ajuda SMS é opcional: o Android pede aprovação para compartilhar uma mensagem, sem permissão de leitura da caixa de SMS. Só o acesso exclusivamente por SMS pode ser verificado automaticamente depois; teclado, perguntas combinadas e operações mantêm Verificar."
         },
         {
           "title": "Arquivos e serviços do dispositivo",

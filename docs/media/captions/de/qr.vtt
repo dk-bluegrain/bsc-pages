@@ -1,17 +1,49 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:08.667
-Native Oberfläche mit fiktiven QR-Anforderungen und Testantworten.
+00:00:00.000 --> 00:00:05.710
+Fiktiver Konto-/Anforderungs-QR: prüfen, Speichern abbrechen und mit simuliertem Ziel erneut versuchen; keine Zahlung.
 
 2
-00:00:08.767 --> 00:00:17.433
-Beim Speichern wird ein Ziel gewählt; nach Abbruch ist ein neuer Versuch möglich.
+00:00:05.760 --> 00:00:10.929
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 3
-00:00:17.533 --> 00:00:26.200
-Ein anderes Szenario prüft die Anforderung; Drucken öffnet die Android-Druckvorschau.
+00:00:10.979 --> 00:00:18.929
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 4
-00:00:26.300 --> 00:00:34.967
-Ein QR autorisiert keine Zahlung; der erweiterte Rundgang definiert keine Demo-Funktionsliste.
+00:00:18.979 --> 00:00:36.615
+Fiktiver Konto-/Anforderungs-QR: prüfen, Speichern abbrechen und mit simuliertem Ziel erneut versuchen; keine Zahlung.
+
+5
+00:00:36.665 --> 00:00:40.965
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+6
+00:00:41.015 --> 00:00:48.965
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+7
+00:00:49.015 --> 00:01:01.233
+Fiktiver Konto-/Anforderungs-QR: prüfen, Speichern abbrechen und mit simuliertem Ziel erneut versuchen; keine Zahlung.
+
+8
+00:01:01.283 --> 00:01:06.657
+Simuliertes QR-Lesen: Betrag, Verwendungszweck und Empfänger einer fiktiven Anforderung prüfen; keine echte Kameraaufnahme.
+
+9
+00:01:06.707 --> 00:01:11.345
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+10
+00:01:11.395 --> 00:01:19.345
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+11
+00:01:19.395 --> 00:01:25.900
+Simuliertes QR-Lesen: Betrag, Verwendungszweck und Empfänger einer fiktiven Anforderung prüfen; keine echte Kameraaufnahme.
+
+12
+00:01:25.950 --> 00:01:43.750
+Fiktiver QR: Android-Druckvorschau und Rückkehr, ohne einen tatsächlichen Ausdruck zu behaupten.

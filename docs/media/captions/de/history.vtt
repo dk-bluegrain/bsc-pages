@@ -1,17 +1,9 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:15.967
-Simulierte Banking-Oberfläche und Offline-Demo; alle Daten sind fiktiv.
+00:00:00.000 --> 00:00:45.567
+Simulierter Bankverlauf: Kontonummer anzeigen, Buchungen suchen und Ein- oder Ausgänge filtern.
 
 2
-00:00:16.067 --> 00:00:32.033
-Der Verlauf bietet Kontonummernanzeige, Suche und Filter für Ein- und Ausgänge.
-
-3
-00:00:32.133 --> 00:00:48.100
-Die fiktive Demo-CSV öffnet die Android-Teilen-Auswahl; keine Empfänger-App wird gewählt.
-
-4
-00:00:48.200 --> 00:01:04.167
-Die einfache Demo bietet Verlauf, Suche und CSV; der erweiterte Bankverlauf ist simuliert.
+00:00:45.617 --> 00:01:27.283
+Fiktive CSV der einfachen Demo: Android-Teilen-Auswahl ansehen, ohne an einen externen Empfänger zu senden.

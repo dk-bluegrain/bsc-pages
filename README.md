@@ -68,7 +68,8 @@ images. No generated or original-bank UI images are substituted.
 Actual touch coordinates/epoch timestamps stay with retained raw evidence;
 `docs/media/events/` supplies scaled coordinates and MP4-relative timings.
 Native rings and swipe arrows are drawn inside the actual Android input action.
-The encoder aligns recorded event times against the first visible native ring
+The encoder aligns recorded event times against a visible native ring among
+the first actual taps
 and adds a one-second vector ring layer, preserving markers when a dialog or
 external activity replaces the window. No taps are invented. `docs/media/provenance.json` records exact scenarios and selected emulators.
 Individual files stay below 100 MB; the Pages deployment stays below 250 MB.
@@ -102,25 +103,33 @@ review do not certify linguistic correctness or actual bank compatibility.
    the private build script and website build/media/publication scripts; update
    release notes and site copy together.
 3. Generate/review native media, then build and run static/browser checks.
-4. Push website source and generated `docs/` to `main`. For the first publication,
+4. Commit website source and generated `docs/` locally. For the first publication,
    enable Pages only after release assets exist. For later updates, publish
    release assets before pushing new download links.
 5. Publish the versioned APKs, `SHA256SUMS` and `RELEASE-NOTES.md` as Release assets.
-   The initial release is `v1.11.0-preview.1`.
-6. Configure GitHub Pages branch deployment to `main:/docs` (build type legacy).
+   The current release is `v1.12.0-preview.1`.
+6. Push the committed website, then configure GitHub Pages branch deployment to `main:/docs` (build type legacy).
    Verify anonymous page/media/privacy/download access and compare downloaded
    APK hashes against `SHA256SUMS`.
 
-Example release publication after the source is committed:
+The helper tags the verified website commit, publishes and verifies staged
+release assets, then pushes Pages and anonymously compares every deployed file
+and both APK hashes:
 
 ```sh
-gh release create v1.11.0-preview.1 \
-  /absolute/private-source/distribution/santa-cruz-modern-1.11.0-demo.apk \
-  /absolute/private-source/distribution/santa-cruz-modern-1.11.0-live.apk \
+python3 scripts/publish.py --apk-directory /absolute/private-source/distribution
+```
+
+Example manual release publication after the source is committed:
+
+```sh
+gh release create v1.12.0-preview.1 \
+  /absolute/private-source/distribution/santa-cruz-modern-1.12.0-demo.apk \
+  /absolute/private-source/distribution/santa-cruz-modern-1.12.0-live.apk \
   /absolute/private-source/distribution/SHA256SUMS \
   RELEASE-NOTES.md \
   --repo dk-bluegrain/bsc-pages --prerelease \
-  --title 'Santa Cruz Modern 1.11.0 — independent preview' \
+  --title 'Santa Cruz Modern 1.12.0 — independent preview' \
   --notes-file RELEASE-NOTES.md
 ```
 
@@ -129,3 +138,33 @@ owner's installation and pending-operation/token state; the `.demo` package can
 coexist with the ordinary app. This repository never carries signing keys or
 bank integration files. The explicitly requested experimental live APK carries
 its client configuration as part of the public downloadable binary.
+
+## Revision 3 media
+
+Read [VIDEO-SCRIPTS.md](VIDEO-SCRIPTS.md) before recording. The scripts were written
+before retakes and specify 5-second openings, 3.5-second navigation holds, 8-second
+reviews/receipts and longer consent/uncertain-state explanations. Important actions
+have an additional pre-action reading hold. Chapters retain normal speed, with
+viewer-selected playback speed controls.
+
+SMS assistance stays enabled outside the initial pre-choice onboarding and the
+settings off/on demonstration. Android one-message consent and keyboard autofill
+are separate fixtures: only approved SMS-only login may auto-verify; questions and
+operations retain Verify. Videos never type a bank SMS code. The test PAN and names
+in card views are fictional bank fixture fields. Card administration now shows its
+unimplemented-services explanation, without simulated control/loss/travel writes.
+
+Generate a fresh disposable checkout with the private source's capture preparation
+script. Capture completed revision3 scenes, then encode with:
+
+```sh
+python3 scripts/process-media.py --captures /extra/dkropachev/bsc-media-v3-raw
+python3 scripts/build.py
+python3 scripts/check.py
+```
+
+Hold events generate timed captions and matching transcripts in all seven languages.
+Media URLs include the script revision hash to invalidate cached older videos.
+Each capture stores the app APK digest, script hash, actual tap timestamps and SMS
+state. Failed attempts remain outside publication. Application privacy HTML is
+exported from the same versioned seven-language resources as the APK.

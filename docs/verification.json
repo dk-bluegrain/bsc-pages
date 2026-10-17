@@ -1,16 +1,17 @@
 {
-  "version": "1.11.0 (26)",
-  "sourceCommit": "9cd2063dc24db26e2159d3094e959dc77c64306a",
-  "recordedAt": "2026-10-16T21:33:32.265972+00:00",
+  "version": "1.12.0 (27)",
+  "sourceCommit": "c8aea0f34a05311ce9a76270b7f5e251468b8728",
+  "recordedAt": "2026-10-17T00:11:17.164693+00:00",
   "capture": {
-    "scenarios": 30,
+    "scenarios": 34,
     "failures": 0,
     "fictionalDataOnly": true,
     "fakeBankTransportsOnly": true,
     "realBankOperations": false,
     "videos": 14,
-    "overviewSeconds": 104,
-    "captionTracks": 98
+    "overviewSeconds": 103.533,
+    "captionTracks": 98,
+    "storyboardRevision": 3
   },
   "websiteBrowserChecks": [
     {
@@ -120,16 +121,32 @@
     }
   ],
   "android": {
-    "jvmTestsPerVariant": 279,
+    "jvmTestsPerVariant": 281,
     "variants": [
       "debug",
       "demo",
       "live"
     ],
-    "instrumentationTests": 30,
-    "additionalCardRegressionTests": 1,
     "signedDemoAndLiveOfflineStartup": "passed",
-    "signerCertificateSHA256": "ee060319af55793ea750a3f9b0dc4f372a2ba072812d664416a704548f8f5ecd"
+    "signerCertificateSHA256": "ee060319af55793ea750a3f9b0dc4f372a2ba072812d664416a704548f8f5ecd",
+    "initialTargetedInstrumentationCases": 87,
+    "affectedReruns": "passed",
+    "latestSmsRegressionCases": 18,
+    "latestSmsRegressionResult": "passed",
+    "languageAndLargeTextScreens": 56,
+    "installedApkHashesMatch": true,
+    "signedApks": {
+      "demo": {
+        "filename": "santa-cruz-modern-1.12.0-demo.apk",
+        "sha256": "2e1ceeb538cc3ebc07b90325be97bec3bf3a3eb692a830adc018b2526cf41485",
+        "bytes": 76688495
+      },
+      "live": {
+        "filename": "santa-cruz-modern-1.12.0-live.apk",
+        "sha256": "00b78f36d800c93c29620879f292a21327ea23c2316588a3209273ee074964af",
+        "bytes": 76688709
+      }
+    }
   },
   "limits": {
     "individualMediaBytes": 104857600,
@@ -139,6 +156,7 @@
     "Bank authorization",
     "Owner-account validation",
     "Current live compatibility",
-    "Native-speaker certification"
+    "Native-speaker certification",
+    "Owner-device real SMS recognition and Android consent"
   ]
 }

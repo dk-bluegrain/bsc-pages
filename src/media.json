@@ -1,7 +1,7 @@
 {
   "first-use": {
-    "duration": 50.867,
-    "durationLabel": "0:50",
+    "duration": 151.267,
+    "durationLabel": "2:31",
     "screenshots": [
       "first-use-01.jpg",
       "first-use-02.jpg",
@@ -16,49 +16,76 @@
     "sources": [
       {
         "test": "FirstUseNoticeTest#privacyIsAvailableBeforeTermsAndNeverAcceptsThem",
-        "emulator": "emulator-5562",
+        "emulator": "emulator-5560",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 3.889,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": false,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 9.696,
         "eventAlignmentOffset": -0.033,
-        "trimStart": 2.489,
-        "duration": 8.8
+        "trimStart": 2.701,
+        "duration": 29.267
       },
       {
         "test": "FirstUseNoticeTest#bankingStaysBlockedUntilTermsOpenedAndExplicitlyAcceptedThenAcceptancePersists",
         "emulator": "emulator-5562",
         "passed": true,
         "scenario": 2,
-        "firstNativeRingVideoTime": 3.936,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 2.536,
-        "duration": 16.6
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 71.68,
+        "eventAlignmentOffset": -0.3,
+        "trimStart": 64.318,
+        "duration": 72.333
       },
       {
         "test": "ShowcaseExtraTest#languageSelection",
-        "emulator": "emulator-5562",
+        "emulator": "emulator-5560",
         "passed": true,
         "scenario": 3,
-        "firstNativeRingVideoTime": 4.456,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": false,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 10.001,
         "eventAlignmentOffset": 0.0,
-        "trimStart": 3.056,
-        "duration": 25.467
+        "trimStart": 2.865,
+        "duration": 49.667
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "login": {
-    "duration": 30.0,
-    "durationLabel": "0:30",
+    "duration": 177.2,
+    "durationLabel": "2:57",
     "screenshots": [
       "login-01.jpg",
       "login-02.jpg",
       "login-03.jpg",
       "login-04.jpg",
       "login-05.jpg",
-      "login-06.jpg"
+      "login-06.jpg",
+      "login-07.jpg",
+      "login-08.jpg",
+      "login-09.jpg",
+      "login-10.jpg",
+      "login-11.jpg",
+      "login-12.jpg"
     ],
     "sources": [
       {
@@ -66,29 +93,76 @@
         "emulator": "emulator-5560",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 14.251,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 2.832,
-        "duration": 15.4
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 25.391,
+        "eventAlignmentOffset": 0.033,
+        "trimStart": 3.727,
+        "duration": 38.0
       },
       {
         "test": "LiveScreenTest#savedLoginWaitsForBiometricsThenSubmitsAutomatically",
         "emulator": "emulator-5560",
         "passed": true,
         "scenario": 2,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
         "firstNativeRingVideoTime": null,
         "eventAlignmentOffset": 0.0,
-        "trimStart": 0,
-        "duration": 12.533
+        "trimStart": 3.928,
+        "duration": 26.4
+      },
+      {
+        "test": "LiveScreenTest#rememberedSmsChannelRequestsDeliveryThenWaitsForExplicitVerification",
+        "emulator": "emulator-5562",
+        "passed": true,
+        "scenario": 3,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 1,
+        "requiresSmsAutofill": true,
+        "firstNativeRingVideoTime": 25.832,
+        "eventAlignmentOffset": -0.033,
+        "trimStart": 4.519,
+        "duration": 58.667
+      },
+      {
+        "test": "LiveScreenTest#approvedSmsMessageCompletesOnlyTheCurrentSmsLoginWithoutAnExtraVerifyTap",
+        "emulator": "emulator-5562",
+        "passed": true,
+        "scenario": 4,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 1,
+        "requiresSmsAutofill": true,
+        "firstNativeRingVideoTime": 26.839,
+        "eventAlignmentOffset": -0.067,
+        "trimStart": 4.876,
+        "duration": 54.133
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "verification": {
-    "duration": 85.2,
-    "durationLabel": "1:25",
+    "duration": 162.4,
+    "durationLabel": "2:42",
     "screenshots": [
       "verification-01.jpg",
       "verification-02.jpg",
@@ -98,47 +172,87 @@
       "verification-06.jpg",
       "verification-07.jpg",
       "verification-08.jpg",
-      "verification-09.jpg"
+      "verification-09.jpg",
+      "verification-10.jpg",
+      "verification-11.jpg",
+      "verification-12.jpg"
     ],
     "sources": [
       {
-        "test": "LiveScreenTest#combinedQuestionAndTokenRemainSeparateBeforeBankAuthentication",
+        "test": "LiveScreenTest#systemSmsAutofillKeepsCombinedQuestionAndWaitsForVerify",
         "emulator": "emulator-5560",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 14.044,
-        "eventAlignmentOffset": -0.1,
-        "trimStart": 2.489,
-        "duration": 27.2
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 1,
+        "requiresSmsAutofill": true,
+        "firstNativeRingVideoTime": 29.76,
+        "eventAlignmentOffset": -0.067,
+        "trimStart": 5.779,
+        "duration": 39.6
       },
       {
         "test": "LiveScreenTest#untrustedDeviceCannotFetchAccountsOrEnrollSilently",
-        "emulator": "emulator-5560",
+        "emulator": "emulator-5562",
         "passed": true,
         "scenario": 2,
-        "firstNativeRingVideoTime": 14.515,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 22.829,
         "eventAlignmentOffset": -0.033,
-        "trimStart": 2.863,
-        "duration": 15.067
+        "trimStart": 5.599,
+        "duration": 43.533
       },
       {
         "test": "LoginPrerequisitesScreenTest#requiredPasswordIsConfirmedAndReturnsToLoginWithoutReadingAccounts",
         "emulator": "emulator-5560",
         "passed": true,
         "scenario": 3,
-        "firstNativeRingVideoTime": 15.155,
-        "eventAlignmentOffset": -0.067,
-        "trimStart": 2.166,
-        "duration": 42.933
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "98bb0b420b8baebaf8c623daf9184a3cbe7b4b47e60cc94897befcfb34fa31b2",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 37.521,
+        "eventAlignmentOffset": 0.0,
+        "trimStart": 4.7,
+        "duration": 43.267
+      },
+      {
+        "test": "LiveScreenTest#registrationResumesThroughBiometricsWithoutExitingOrReusingPassword",
+        "emulator": "emulator-5560",
+        "passed": true,
+        "scenario": 4,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "98bb0b420b8baebaf8c623daf9184a3cbe7b4b47e60cc94897befcfb34fa31b2",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 16.578,
+        "eventAlignmentOffset": 0.0,
+        "trimStart": 3.213,
+        "duration": 36.0
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "accounts": {
-    "duration": 37.8,
-    "durationLabel": "0:37",
+    "duration": 67.533,
+    "durationLabel": "1:07",
     "screenshots": [
       "accounts-01.jpg",
       "accounts-02.jpg",
@@ -147,22 +261,31 @@
     "sources": [
       {
         "test": "ShowcaseExtraTest#accountsAndPrivacy",
-        "emulator": "emulator-5562",
+        "emulator": "emulator-5560",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 4.442,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 10.03,
         "eventAlignmentOffset": -0.033,
-        "trimStart": 3.042,
-        "duration": 37.8
+        "trimStart": 2.911,
+        "duration": 67.533
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "history": {
-    "duration": 64.267,
-    "durationLabel": "1:04",
+    "duration": 87.333,
+    "durationLabel": "1:27",
     "screenshots": [
       "history-01.jpg",
       "history-02.jpg",
@@ -174,32 +297,47 @@
     "sources": [
       {
         "test": "LiveScreenTest#loadedHistorySearchDirectionAndAccountDetailsWorkWithoutExtraBankCalls",
-        "emulator": "emulator-5562",
+        "emulator": "emulator-5560",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 14.737,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 12.326,
         "eventAlignmentOffset": -0.033,
-        "trimStart": 3.074,
-        "duration": 38.267
+        "trimStart": 5.305,
+        "duration": 45.467
       },
       {
         "test": "ShowcaseExtraTest#csvExport",
-        "emulator": "emulator-5562",
+        "emulator": "emulator-5560",
         "passed": true,
         "scenario": 2,
-        "firstNativeRingVideoTime": 4.164,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 2.764,
-        "duration": 26.0
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 11.822,
+        "eventAlignmentOffset": -0.067,
+        "trimStart": 4.386,
+        "duration": 41.867
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "statements": {
-    "duration": 30.0,
-    "durationLabel": "0:30",
+    "duration": 84.933,
+    "durationLabel": "1:24",
     "screenshots": [
       "statements-01.jpg",
       "statements-02.jpg",
@@ -211,32 +349,47 @@
     "sources": [
       {
         "test": "StatementsScreenTest#listDoesNotDownloadUntilSelectedAndViewerPagesAndSharesOriginalPdf",
-        "emulator": "emulator-5562",
+        "emulator": "emulator-5560",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 4.43,
-        "eventAlignmentOffset": -0.067,
-        "trimStart": 3.03,
-        "duration": 20.867
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 12.257,
+        "eventAlignmentOffset": -0.033,
+        "trimStart": 2.661,
+        "duration": 49.2
       },
       {
         "test": "StatementSavingScreenTest#bulkSelectionDoesNotDownloadUntilFolderChosenAndKeepsExactBytesAndNames",
-        "emulator": "emulator-5562",
+        "emulator": "emulator-5560",
         "passed": true,
         "scenario": 2,
-        "firstNativeRingVideoTime": 4.163,
-        "eventAlignmentOffset": -0.067,
-        "trimStart": 2.763,
-        "duration": 8.4
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 9.524,
+        "eventAlignmentOffset": 0.0,
+        "trimStart": 2.604,
+        "duration": 35.733
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "transfers": {
-    "duration": 155.867,
-    "durationLabel": "2:35",
+    "duration": 352.667,
+    "durationLabel": "5:52",
     "screenshots": [
       "transfers-01.jpg",
       "transfers-02.jpg",
@@ -246,7 +399,10 @@
       "transfers-06.jpg",
       "transfers-07.jpg",
       "transfers-08.jpg",
-      "transfers-09.jpg"
+      "transfers-09.jpg",
+      "transfers-10.jpg",
+      "transfers-11.jpg",
+      "transfers-12.jpg"
     ],
     "sources": [
       {
@@ -254,39 +410,76 @@
         "emulator": "emulator-5562",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 4.345,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 11.739,
+        "eventAlignmentOffset": -0.067,
+        "trimStart": 4.394,
+        "duration": 84.133
+      },
+      {
+        "test": "AutomaticOperationCodeTest#transferRetainsExplicitReviewThenFillsSmsAndWaitsForVerify",
+        "emulator": "emulator-5562",
+        "passed": true,
+        "scenario": 2,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 1,
+        "requiresSmsAutofill": true,
+        "firstNativeRingVideoTime": 10.252,
         "eventAlignmentOffset": -0.033,
-        "trimStart": 2.945,
-        "duration": 40.2
+        "trimStart": 3.33,
+        "duration": 89.2
       },
       {
         "test": "LiveScreenTest#beneficiaryPreloadWaitsOnlyWhenPickerOpensAndSearchSelectsExactRecipient",
         "emulator": "emulator-5562",
         "passed": true,
-        "scenario": 2,
-        "firstNativeRingVideoTime": 15.167,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 3.433,
-        "duration": 41.267
+        "scenario": 3,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 15.213,
+        "eventAlignmentOffset": 0.0,
+        "trimStart": 7.996,
+        "duration": 48.333
       },
       {
         "test": "ShowcaseExtraTest#savedBeneficiaryTransfers",
         "emulator": "emulator-5562",
         "passed": true,
-        "scenario": 3,
-        "firstNativeRingVideoTime": 4.181,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 2.781,
-        "duration": 74.4
+        "scenario": 4,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 10.852,
+        "eventAlignmentOffset": -0.067,
+        "trimStart": 3.769,
+        "duration": 131.0
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "payments": {
-    "duration": 60.867,
-    "durationLabel": "1:00",
+    "duration": 148.733,
+    "durationLabel": "2:28",
     "screenshots": [
       "payments-01.jpg",
       "payments-02.jpg",
@@ -301,29 +494,44 @@
         "emulator": "emulator-5562",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 4.552,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 11.284,
         "eventAlignmentOffset": -0.067,
-        "trimStart": 3.152,
-        "duration": 30.533
+        "trimStart": 4.186,
+        "duration": 59.333
       },
       {
         "test": "AutomaticOperationCodeTest#paymentRetainsExplicitReviewThenFillsSmsAndWaitsForVerify",
         "emulator": "emulator-5562",
         "passed": true,
         "scenario": 2,
-        "firstNativeRingVideoTime": 4.539,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 3.139,
-        "duration": 30.333
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 1,
+        "requiresSmsAutofill": true,
+        "firstNativeRingVideoTime": 10.575,
+        "eventAlignmentOffset": 0.0,
+        "trimStart": 3.636,
+        "duration": 89.4
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "beneficiaries": {
-    "duration": 153.8,
-    "durationLabel": "2:33",
+    "duration": 191.933,
+    "durationLabel": "3:11",
     "screenshots": [
       "beneficiaries-01.jpg",
       "beneficiaries-02.jpg",
@@ -338,122 +546,158 @@
     "sources": [
       {
         "test": "LiveScreenTest#scannedOtherBankRecipientPrefillsBeneficiaryFormWithoutValidatingOrSavingAutomatically",
-        "emulator": "emulator-5560",
+        "emulator": "emulator-5562",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 15.0,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 12.87,
         "eventAlignmentOffset": -0.067,
-        "trimStart": 3.403,
-        "duration": 76.067
+        "trimStart": 5.784,
+        "duration": 51.4
       },
       {
-        "test": "LiveScreenTest#bankBeneficiaryDeletionRequiresReviewAndFinalConfirmationThenReloadsList",
-        "emulator": "emulator-5560",
+        "test": "AutomaticOperationCodeTest#beneficiaryDeletionRetainsReviewAndExplicitSmsVerification",
+        "emulator": "emulator-5562",
         "passed": true,
         "scenario": 2,
-        "firstNativeRingVideoTime": 14.649,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 3.111,
-        "duration": 31.267
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 1,
+        "requiresSmsAutofill": true,
+        "firstNativeRingVideoTime": 21.65,
+        "eventAlignmentOffset": -0.1,
+        "trimStart": 4.237,
+        "duration": 71.467
       },
       {
         "test": "ShowcaseExtraTest#saveFictionalBeneficiary",
-        "emulator": "emulator-5560",
+        "emulator": "emulator-5562",
         "passed": true,
         "scenario": 3,
-        "firstNativeRingVideoTime": 4.392,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 10.876,
         "eventAlignmentOffset": -0.067,
-        "trimStart": 2.992,
-        "duration": 46.467
+        "trimStart": 3.774,
+        "duration": 69.067
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "cards": {
-    "duration": 114.333,
-    "durationLabel": "1:54",
+    "duration": 79.6,
+    "durationLabel": "1:19",
     "screenshots": [
       "cards-01.jpg",
       "cards-02.jpg",
-      "cards-03.jpg",
-      "cards-04.jpg",
-      "cards-05.jpg",
-      "cards-06.jpg",
-      "cards-07.jpg",
-      "cards-08.jpg",
-      "cards-09.jpg"
+      "cards-03.jpg"
     ],
     "sources": [
       {
-        "test": "LiveCardsScreenTest#nativeUsageControlRequiresReviewThenExplicitChallengeAndOneLoadingModal",
+        "test": "LiveCardsScreenTest#cardServicesExplainUnavailabilityWithoutAdministrationRequests",
         "emulator": "emulator-5560",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 16.325,
-        "eventAlignmentOffset": -0.133,
-        "trimStart": 2.602,
-        "duration": 50.4
-      },
-      {
-        "test": "CardOperationsScreenTest#lossAndTheftRequireSeparateReviewBeforeSubmitting",
-        "emulator": "emulator-5560",
-        "passed": true,
-        "scenario": 2,
-        "firstNativeRingVideoTime": 4.211,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 12.613,
         "eventAlignmentOffset": -0.033,
-        "trimStart": 2.811,
-        "duration": 24.667
-      },
-      {
-        "test": "CardOperationsScreenTest#travelCollectsDestinationsBeforeReviewAndSendsOnlyOnConfirmation",
-        "emulator": "emulator-5560",
-        "passed": true,
-        "scenario": 3,
-        "firstNativeRingVideoTime": 4.031,
-        "eventAlignmentOffset": -0.1,
-        "trimStart": 2.631,
-        "duration": 39.267
+        "trimStart": 5.611,
+        "duration": 79.6
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "token": {
-    "duration": 32.6,
-    "durationLabel": "0:32",
+    "duration": 208.6,
+    "durationLabel": "3:28",
     "screenshots": [
       "token-01.jpg",
       "token-02.jpg",
-      "token-03.jpg"
+      "token-03.jpg",
+      "token-04.jpg",
+      "token-05.jpg",
+      "token-06.jpg"
     ],
     "sources": [
       {
         "test": "NativeTokenScreenTest#contractConsentAndBankProofPrecedeCodeDisplayAndUnlinkNeedsConfirmation",
-        "emulator": "emulator-5560",
+        "emulator": "emulator-5562",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 3.892,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 9.64,
+        "eventAlignmentOffset": 0.0,
+        "trimStart": 2.555,
+        "duration": 127.6
+      },
+      {
+        "test": "NativeTokenScreenTest#nativeTokenSmsAutofillStillRequiresVerify",
+        "emulator": "emulator-5562",
+        "passed": true,
+        "scenario": 2,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 1,
+        "requiresSmsAutofill": true,
+        "firstNativeRingVideoTime": 9.781,
         "eventAlignmentOffset": -0.033,
-        "trimStart": 2.492,
-        "duration": 32.6
+        "trimStart": 2.701,
+        "duration": 81.0
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "qr": {
-    "duration": 35.067,
-    "durationLabel": "0:35",
+    "duration": 103.8,
+    "durationLabel": "1:43",
     "screenshots": [
       "qr-01.jpg",
       "qr-02.jpg",
       "qr-03.jpg",
       "qr-04.jpg",
-      "qr-05.jpg"
+      "qr-05.jpg",
+      "qr-06.jpg",
+      "qr-07.jpg",
+      "qr-08.jpg",
+      "qr-09.jpg"
     ],
     "sources": [
       {
@@ -461,75 +705,130 @@
         "emulator": "emulator-5560",
         "passed": true,
         "scenario": 1,
-        "firstNativeRingVideoTime": 3.838,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 12.364,
         "eventAlignmentOffset": -0.033,
-        "trimStart": 2.438,
-        "duration": 26.867
+        "trimStart": 2.492,
+        "duration": 61.133
       },
       {
         "test": "RecipientScanScreenTest#paymentRequestShowsAmountAndPurposeBeforeExplicitRecipientReview",
         "emulator": "emulator-5560",
         "passed": true,
         "scenario": 2,
-        "firstNativeRingVideoTime": 3.799,
-        "eventAlignmentOffset": -0.067,
-        "trimStart": 2.399,
-        "duration": 3.8
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 12.401,
+        "eventAlignmentOffset": -0.033,
+        "trimStart": 2.686,
+        "duration": 24.667
       },
       {
         "test": "RecipientShareScreenTest#printOpensAndroidPrintPreview",
-        "emulator": "emulator-5562",
+        "emulator": "emulator-5560",
         "passed": true,
         "scenario": 3,
-        "firstNativeRingVideoTime": 4.181,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 2.781,
-        "duration": 4.4
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 9.701,
+        "eventAlignmentOffset": 0.0,
+        "trimStart": 2.514,
+        "duration": 18.0
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "settings": {
-    "duration": 102.8,
-    "durationLabel": "1:42",
+    "duration": 275.6,
+    "durationLabel": "4:35",
     "screenshots": [
       "settings-01.jpg",
       "settings-02.jpg",
       "settings-03.jpg",
       "settings-04.jpg",
       "settings-05.jpg",
-      "settings-06.jpg"
+      "settings-06.jpg",
+      "settings-07.jpg",
+      "settings-08.jpg",
+      "settings-09.jpg"
     ],
     "sources": [
+      {
+        "test": "ShowcaseSmsSettingsTest#deliveryPreferenceReturnsToSms",
+        "emulator": "emulator-5562",
+        "passed": true,
+        "scenario": 1,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "33a9cb8a884983baf5a4d36dfb4d171d523d4146dae9f064d5401cafc88f6007",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 22.44,
+        "eventAlignmentOffset": -0.233,
+        "trimStart": 4.187,
+        "duration": 88.067
+      },
       {
         "test": "ShowcaseExtraTest#settingsProfileHelpAndLogout",
         "emulator": "emulator-5560",
         "passed": true,
-        "scenario": 1,
-        "firstNativeRingVideoTime": 3.796,
-        "eventAlignmentOffset": -0.033,
-        "trimStart": 2.396,
-        "duration": 54.133
+        "scenario": 2,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 10.011,
+        "eventAlignmentOffset": 0.0,
+        "trimStart": 2.91,
+        "duration": 74.067
       },
       {
         "test": "LiveScreenTest#moneyReconciliationNeedsLoadedHistoryAndFreshCheckedConfirmation",
         "emulator": "emulator-5560",
         "passed": true,
-        "scenario": 2,
-        "firstNativeRingVideoTime": 14.4,
-        "eventAlignmentOffset": -0.067,
-        "trimStart": 2.624,
-        "duration": 48.667
+        "scenario": 3,
+        "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+        "smsPreference": "SMS",
+        "smsAssistanceEnabled": true,
+        "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+        "smsAutofillEvents": 0,
+        "requiresSmsAutofill": false,
+        "firstNativeRingVideoTime": 11.926,
+        "eventAlignmentOffset": -0.033,
+        "trimStart": 4.97,
+        "duration": 113.467
       }
     ],
     "fictional": true,
     "nativeTapOverlay": true,
-    "persistentFinalMarkers": true
+    "persistentFinalMarkers": true,
+    "storyboardRevision": 3,
+    "smsPreference": "SMS",
+    "assetRevision": "fbc9076cbb7f"
   },
   "overview": {
-    "duration": 103.733,
+    "duration": 103.533,
     "durationLabel": "1:44",
     "chapters": [
       "first-use",
@@ -549,70 +848,85 @@
     "excerpts": [
       {
         "chapter": "first-use",
-        "start": 14.0,
-        "duration": 8
+        "start": 8.099,
+        "duration": 7.933,
+        "overviewStart": 0
       },
       {
         "chapter": "login",
-        "start": 10.0,
-        "duration": 8
+        "start": 98.259,
+        "duration": 8.0,
+        "overviewStart": 7.933
       },
       {
         "chapter": "verification",
-        "start": 18.0,
-        "duration": 8
+        "start": 14.062,
+        "duration": 8.0,
+        "overviewStart": 15.933
       },
       {
         "chapter": "accounts",
         "start": 11.0,
-        "duration": 8
+        "duration": 8.0,
+        "overviewStart": 23.933
       },
       {
         "chapter": "history",
-        "start": 27.0,
-        "duration": 8
+        "start": 26.7,
+        "duration": 7.933,
+        "overviewStart": 31.933
       },
       {
         "chapter": "statements",
-        "start": 3.2,
-        "duration": 8
+        "start": 10.678,
+        "duration": 7.933,
+        "overviewStart": 39.866
       },
       {
         "chapter": "transfers",
-        "start": 20.7,
-        "duration": 8
+        "start": 147.427,
+        "duration": 7.933,
+        "overviewStart": 47.799
       },
       {
         "chapter": "payments",
-        "start": 14.0,
-        "duration": 8
+        "start": 123.346,
+        "duration": 7.933,
+        "overviewStart": 55.732
       },
       {
         "chapter": "beneficiaries",
-        "start": 40.0,
-        "duration": 8
+        "start": 97.341,
+        "duration": 7.933,
+        "overviewStart": 63.665
       },
       {
         "chapter": "cards",
-        "start": 30.7,
-        "duration": 8
+        "start": 29.7,
+        "duration": 7.933,
+        "overviewStart": 71.598
       },
       {
         "chapter": "token",
-        "start": 18.5,
-        "duration": 8
+        "start": 183.126,
+        "duration": 8.0,
+        "overviewStart": 79.531
       },
       {
         "chapter": "qr",
-        "start": 12.5,
-        "duration": 8
+        "start": 10.979,
+        "duration": 8.0,
+        "overviewStart": 87.531
       },
       {
         "chapter": "settings",
-        "start": 16.0,
-        "duration": 8
+        "start": 6.458,
+        "duration": 8.0,
+        "overviewStart": 95.531
       }
     ],
-    "fictional": true
+    "fictional": true,
+    "storyboardRevision": 3,
+    "assetRevision": "fbc9076cbb7f"
   }
 }

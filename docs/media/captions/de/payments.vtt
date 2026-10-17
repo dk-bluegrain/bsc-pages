@@ -1,17 +1,69 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:15.117
-Demo-Zahlung und simulierte Bankverifizierung; ausschließlich fiktive Daten.
+00:00:00.000 --> 00:00:25.641
+Einfache Demo: fiktive Dienstleistungszahlung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.
 
 2
-00:00:15.217 --> 00:00:30.333
-Die Dienstleistungszahlung in der Demo erfordert Prüfung und Testcode.
+00:00:25.691 --> 00:00:33.641
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 3
-00:00:30.433 --> 00:00:45.550
-Das erweiterte Szenario behält die Prüfung bei und wartet auf ausdrückliche SMS-Verifizierung.
+00:00:33.691 --> 00:00:39.061
+Einfache Demo: fiktive Dienstleistungszahlung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.
 
 4
-00:00:45.650 --> 00:01:00.767
-Die einfache Demo enthält keine erweiterte Bankverifizierung; es wurde kein echtes Geld gezahlt.
+00:00:39.111 --> 00:00:44.912
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+5
+00:00:44.962 --> 00:00:52.912
+Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
+
+6
+00:00:52.962 --> 00:00:59.433
+Einfache Demo: fiktive Dienstleistungszahlung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.
+
+7
+00:00:59.483 --> 00:01:24.120
+Simulierte Zahlung: Prüfung, gesonderte Bestätigung und durch Android ausgefüllter SMS-Code mit ausdrücklichem Prüfen.
+
+8
+00:01:24.170 --> 00:01:32.350
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+9
+00:01:32.400 --> 00:01:39.535
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+10
+00:01:39.585 --> 00:01:47.850
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+11
+00:01:47.900 --> 00:01:56.355
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+12
+00:01:56.405 --> 00:02:00.053
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+13
+00:02:00.103 --> 00:02:03.296
+Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+
+14
+00:02:03.346 --> 00:02:09.002
+Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
+
+15
+00:02:09.052 --> 00:02:14.350
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+16
+00:02:14.400 --> 00:02:22.350
+Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
+
+17
+00:02:22.400 --> 00:02:28.683
+Simulierte Zahlung: Prüfung, gesonderte Bestätigung und durch Android ausgefüllter SMS-Code mit ausdrücklichem Prüfen.

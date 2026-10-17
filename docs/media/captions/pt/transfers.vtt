@@ -1,17 +1,129 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:38.867
-Transferência offline e seleção bancária simulada; apenas dados fictícios.
+00:00:00.000 --> 00:00:27.541
+Demonstração básica: transferência entre contas próprias, revisão e código local de teste 123456; não é SMS.
 
 2
-00:00:38.967 --> 00:01:17.833
-A demonstração simula transferências próprias, para o mesmo banco e outros bancos, com código de teste e comprovantes locais.
+00:00:27.591 --> 00:00:35.541
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 3
-00:01:17.933 --> 00:01:56.800
-Outro cenário pesquisa e seleciona um destinatário, sem enviar transferência.
+00:00:35.591 --> 00:00:41.353
+Demonstração básica: transferência entre contas próprias, revisão e código local de teste 123456; não é SMS.
 
 4
-00:01:56.900 --> 00:02:35.767
-A demonstração básica não inclui todos esses passos bancários avançados.
+00:00:41.403 --> 00:00:47.819
+Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+
+5
+00:00:47.869 --> 00:00:55.819
+Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.
+
+6
+00:00:55.869 --> 00:01:01.629
+Demonstração básica: transferência entre contas próprias, revisão e código local de teste 123456; não é SMS.
+
+7
+00:01:01.679 --> 00:01:07.401
+Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+
+8
+00:01:07.451 --> 00:01:15.401
+Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.
+
+9
+00:01:15.451 --> 00:01:24.233
+Demonstração básica: transferência entre contas próprias, revisão e código local de teste 123456; não é SMS.
+
+10
+00:01:24.283 --> 00:01:48.783
+Transferência com banco simulado: revisão, confirmação separada e código SMS preenchido pelo Android com Verificar explícito.
+
+11
+00:01:48.833 --> 00:01:57.064
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+12
+00:01:57.114 --> 00:02:03.784
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+13
+00:02:03.834 --> 00:02:11.966
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+14
+00:02:12.016 --> 00:02:20.451
+A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.
+
+15
+00:02:20.501 --> 00:02:24.140
+A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.
+
+16
+00:02:24.190 --> 00:02:27.377
+Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.
+
+17
+00:02:27.427 --> 00:02:33.190
+O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.
+
+18
+00:02:33.240 --> 00:02:38.732
+Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+
+19
+00:02:38.782 --> 00:02:46.732
+Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.
+
+20
+00:02:46.782 --> 00:02:53.433
+Transferência com banco simulado: revisão, confirmação separada e código SMS preenchido pelo Android com Verificar explícito.
+
+21
+00:02:53.483 --> 00:03:41.767
+Banco simulado: pesquisar e escolher um beneficiário sem enviar transferência neste caso.
+
+22
+00:03:41.817 --> 00:04:11.997
+Demonstração básica: transferências a beneficiários salvos do mesmo e de outro banco, com código local 123456, não SMS.
+
+23
+00:04:12.047 --> 00:04:19.997
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+24
+00:04:20.047 --> 00:04:25.346
+Demonstração básica: transferências a beneficiários salvos do mesmo e de outro banco, com código local 123456, não SMS.
+
+25
+00:04:25.396 --> 00:04:31.209
+Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+
+26
+00:04:31.259 --> 00:04:39.209
+Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.
+
+27
+00:04:39.259 --> 00:05:11.584
+Demonstração básica: transferências a beneficiários salvos do mesmo e de outro banco, com código local 123456, não SMS.
+
+28
+00:05:11.634 --> 00:05:19.584
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+29
+00:05:19.634 --> 00:05:24.916
+Demonstração básica: transferências a beneficiários salvos do mesmo e de outro banco, com código local 123456, não SMS.
+
+30
+00:05:24.966 --> 00:05:30.602
+Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+
+31
+00:05:30.652 --> 00:05:38.602
+Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.
+
+32
+00:05:38.652 --> 00:05:52.617
+Demonstração básica: transferências a beneficiários salvos do mesmo e de outro banco, com código local 123456, não SMS.

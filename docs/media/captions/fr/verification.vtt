@@ -1,17 +1,69 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:21.200
-Interface bancaire native avec données fictives et réponses simulées.
+00:00:00.000 --> 00:00:10.647
+Banque simulée : question de sécurité et SMS restent distincts ; remplir le code conserve Vérifier.
 
 2
-00:00:21.300 --> 00:00:42.500
-La question de sécurité et le jeton conservent des champs distincts.
+00:00:10.697 --> 00:00:14.012
+Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
 
 3
-00:00:42.600 --> 00:01:03.800
-Un appareil non approuvé bloque l’accès ; changer le mot de passe exige confirmation.
+00:00:14.062 --> 00:00:19.808
+Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
 
 4
-00:01:03.900 --> 00:01:25.100
-Ces vérifications avancées ne sont pas incluses dans la démo de base.
+00:00:19.858 --> 00:00:25.203
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+5
+00:00:25.253 --> 00:00:33.203
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+6
+00:00:33.253 --> 00:00:39.700
+Banque simulée : question de sécurité et SMS restent distincts ; remplir le code conserve Vérifier.
+
+7
+00:00:39.750 --> 00:00:45.110
+Banque simulée : appareil non approuvé nécessitant l’inscription, sans accès aux comptes ni inscription silencieuse.
+
+8
+00:00:45.160 --> 00:00:55.110
+Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
+
+9
+00:00:55.160 --> 00:01:01.385
+Banque simulée : appareil non approuvé nécessitant l’inscription, sans accès aux comptes ni inscription silencieuse.
+
+10
+00:01:01.435 --> 00:01:11.385
+Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
+
+11
+00:01:11.435 --> 00:01:23.233
+Banque simulée : appareil non approuvé nécessitant l’inscription, sans accès aux comptes ni inscription silencieuse.
+
+12
+00:01:23.283 --> 00:02:06.500
+Changement de mot de passe requis avec banque simulée : revoir l’écart et confirmer avant de revenir à la connexion.
+
+13
+00:02:06.550 --> 00:02:11.841
+Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.
+
+14
+00:02:11.891 --> 00:02:17.841
+Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
+
+15
+00:02:17.891 --> 00:02:29.740
+Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.
+
+16
+00:02:29.790 --> 00:02:35.740
+Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
+
+17
+00:02:35.790 --> 00:02:42.350
+Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.

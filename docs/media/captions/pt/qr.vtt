@@ -1,17 +1,49 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:08.667
-Interface nativa com solicitações QR fictícias e respostas de teste.
+00:00:00.000 --> 00:00:05.710
+QR fictício de conta ou solicitação: revisão, cancelamento e nova tentativa de salvar com destino simulado; não é pagamento.
 
 2
-00:00:08.767 --> 00:00:17.433
-Salvar usa um destino escolhido; cancelar permite tentar novamente.
+00:00:05.760 --> 00:00:10.929
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 3
-00:00:17.533 --> 00:00:26.200
-Outro cenário revisa a solicitação; imprimir abre a visualização do Android.
+00:00:10.979 --> 00:00:18.929
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 4
-00:00:26.300 --> 00:00:34.967
-Um QR não autoriza pagamentos; este passeio avançado não define as funções da demonstração básica.
+00:00:18.979 --> 00:00:36.615
+QR fictício de conta ou solicitação: revisão, cancelamento e nova tentativa de salvar com destino simulado; não é pagamento.
+
+5
+00:00:36.665 --> 00:00:40.965
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+6
+00:00:41.015 --> 00:00:48.965
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+7
+00:00:49.015 --> 00:01:01.233
+QR fictício de conta ou solicitação: revisão, cancelamento e nova tentativa de salvar com destino simulado; não é pagamento.
+
+8
+00:01:01.283 --> 00:01:06.657
+Leitura QR simulada: conferir valor, descrição e destinatário de solicitação fictícia; sem captura real de câmera.
+
+9
+00:01:06.707 --> 00:01:11.345
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+10
+00:01:11.395 --> 00:01:19.345
+Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
+
+11
+00:01:19.395 --> 00:01:25.900
+Leitura QR simulada: conferir valor, descrição e destinatário de solicitação fictícia; sem captura real de câmera.
+
+12
+00:01:25.950 --> 00:01:43.750
+QR fictício: visualização de impressão do Android e retorno, sem afirmar que houve impressão física.

@@ -44,7 +44,7 @@ Cyrillic text and typographic apostrophes as UTF-8.
 | `installSteps[2]` | Third ordered installation step | Android installation permission applies to the downloading app; disable it afterwards. No promise of identical Android UI wording. |
 | `installSteps[3]` | Fourth ordered installation step | Read app notices and terms; demo fictional, bank controls remain. |
 | `installSteps[4]` | Fifth ordered installation step | Banking APK retains `com.santacruz.modern` but uses the dedicated distribution signing key. It cannot update an existing Santa Cruz Modern installation with a different signature. If Android blocks the update, preserve the existing app and its data and use the separate demo or contact support. Never recommend uninstalling to resolve this mismatch: token state and uncertain-operation markers could be lost. This refers to Santa Cruz Modern, not an official bank app. |
-| `versionLabel` | Label beside release version | Version comes from build metadata: currently 1.11.0 (26). This string is only the label. |
+| `versionLabel` | Label beside release version | Version comes from build metadata: currently 1.12.0 (27). This string is only the label. |
 | `privacyLabel` | Matching-language privacy-page link | Link to that locale's privacy page, not to a generic untranslated page. |
 | `supportLabel` | Support heading/link | App help and feedback, not bank support. |
 | `supportBody` | Support paragraph | Preserves actual project contact; forbids sending credentials, codes, identity documents or account details; sends banking issues to official channels. |
@@ -73,14 +73,14 @@ feature. None of the copy asserts current live-bank compatibility.
 | --- | --- |
 | `first-use` | Independent-app notice, opening terms and privacy, explicit acceptance, seven-language selection; supplied bank text retains its language. |
 | `login` | Manual login, remembered username AND password, strong biometric protection and removal. Biometrics never establishes bank approval. Basic demo needs no banking credentials. |
-| `verification` | Bank-required login setup, code verification and device approval. Editable SMS code is sent only by explicit Verify. External identity check uses bank-supplied HTTPS page. |
+| `verification` | Bank-required login setup, code verification and device approval. Approved one-message SMS-only login can auto-verify; keyboard autofill, security questions and operations retain explicit Verify. External identity check uses bank-supplied HTTPS page. |
 | `accounts` | Account-specific currencies and balances, hide/reveal balances. Basic demo includes fictional accounts and local balance privacy. |
 | `history` | History/search, incoming/outgoing filters and explicit CSV sharing. Basic demo claims are limited to history/search/export. |
 | `statements` | Available periods, synthetic PDF preview, individual/selected saves, Android picker and sharing; not a basic-demo feature. |
 | `transfers` | Own/same-bank/other-bank contexts, currencies, amounts, fees, memo and separate review/authorization. Basic demo limited to simulated own/saved-beneficiary transfers. |
 | `payments` | Services and credit cards, source account, amount, review and bank authorization; demo test receipts are not money movement. |
 | `beneficiaries` | Lookup/validation, review, save and deletion. Validation is neither saving nor money authorization. Basic demo uses fictional recipients. |
-| `cards` | Details, bank-defined controls, loss/theft and travel flows, scope/review/confirmation; no basic-demo card-control claim or bank-availability guarantee. |
+| `cards` | Read-only bank-supplied fields, reveal/copy of exact identifiers and full numbers only when supplied; unimplemented administration explains the limit with official handoffs, no card-write API request. |
 | `token` | Contract reading, enrollment/storage consent, verification, code generation, unlinking and official identity handoff; basic demo has no banking-token enrollment/generation. |
 | `qr` | Account/recipient sharing, payment-request context, scanning/manual entry, recipient review, saving and printing where supported. QR never authorizes writes or money. Unsupported third-party formats remain unsupported. Do not interpret a shareable account QR as a universal bank payment request. |
 | `settings` | Language/profile/demo settings, help, logout, and explicit reconciliation after actual bank history/status checking. Reconciliation neither repeats nor cancels prior operations. |

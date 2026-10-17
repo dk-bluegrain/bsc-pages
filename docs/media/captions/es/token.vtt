@@ -1,17 +1,117 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:08.050
-Interfaz bancaria nativa con token ficticio y respuestas simuladas.
+00:00:00.000 --> 00:00:08.117
+Token BSC simulado: contrato, consentimiento, aprobación de prueba, código generado y desvinculación. El código no es SMS.
 
 2
-00:00:08.150 --> 00:00:16.200
-El contrato y el consentimiento preceden a la inscripción y la comprobación.
+00:00:08.167 --> 00:00:18.117
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
 
 3
-00:00:16.300 --> 00:00:24.350
-La aprobación simulada precede al código; desvincular exige confirmación.
+00:00:18.167 --> 00:00:23.723
+Token BSC simulado: contrato, consentimiento, aprobación de prueba, código generado y desvinculación. El código no es SMS.
 
 4
-00:00:24.450 --> 00:00:32.500
-La demo básica no genera tokens bancarios; siguen pendientes autorización y validación.
+00:00:23.773 --> 00:00:30.707
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
+
+5
+00:00:30.757 --> 00:00:35.877
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
+
+6
+00:00:35.927 --> 00:00:44.284
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+7
+00:00:44.334 --> 00:00:52.477
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+8
+00:00:52.527 --> 00:00:58.857
+El código generado por Token BSC no es un SMS. Inscripción, aprobación y desvinculación se simulan con datos ficticios.
+
+9
+00:00:58.907 --> 00:01:07.035
+El código generado por Token BSC no es un SMS. Inscripción, aprobación y desvinculación se simulan con datos ficticios.
+
+10
+00:01:07.085 --> 00:01:15.226
+El código generado por Token BSC no es un SMS. Inscripción, aprobación y desvinculación se simulan con datos ficticios.
+
+11
+00:01:15.276 --> 00:01:21.852
+El código generado por Token BSC no es un SMS. Inscripción, aprobación y desvinculación se simulan con datos ficticios.
+
+12
+00:01:21.902 --> 00:01:30.115
+El código generado por Token BSC no es un SMS. Inscripción, aprobación y desvinculación se simulan con datos ficticios.
+
+13
+00:01:30.165 --> 00:01:36.607
+El código generado por Token BSC no es un SMS. Inscripción, aprobación y desvinculación se simulan con datos ficticios.
+
+14
+00:01:36.657 --> 00:01:44.795
+El código generado por Token BSC no es un SMS. Inscripción, aprobación y desvinculación se simulan con datos ficticios.
+
+15
+00:01:44.845 --> 00:01:53.179
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+16
+00:01:53.229 --> 00:02:01.179
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+17
+00:02:01.229 --> 00:02:07.700
+Token BSC simulado: contrato, consentimiento, aprobación de prueba, código generado y desvinculación. El código no es SMS.
+
+18
+00:02:07.750 --> 00:02:15.046
+Inscripción de token simulada: SMS autocompletado por Android y Verificar expreso; este caso no acredita inscripción completada.
+
+19
+00:02:15.096 --> 00:02:25.046
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
+
+20
+00:02:25.096 --> 00:02:30.609
+Inscripción de token simulada: SMS autocompletado por Android y Verificar expreso; este caso no acredita inscripción completada.
+
+21
+00:02:30.659 --> 00:02:37.403
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
+
+22
+00:02:37.453 --> 00:02:42.572
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
+
+23
+00:02:42.622 --> 00:02:51.383
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+24
+00:02:51.433 --> 00:02:59.661
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+25
+00:02:59.711 --> 00:03:03.076
+Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
+
+26
+00:03:03.126 --> 00:03:08.789
+El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.
+
+27
+00:03:08.839 --> 00:03:14.186
+Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+
+28
+00:03:14.236 --> 00:03:22.186
+Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
+
+29
+00:03:22.236 --> 00:03:28.550
+Inscripción de token simulada: SMS autocompletado por Android y Verificar expreso; este caso no acredita inscripción completada.

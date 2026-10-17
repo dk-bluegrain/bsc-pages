@@ -1,17 +1,41 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:28.483
-Interface bancaire native avec cartes fictives et réponses simulées.
+00:00:00.000 --> 00:00:11.016
+Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.
 
 2
-00:00:28.583 --> 00:00:57.067
-Modifier l’utilisation d’une carte exige révision et vérification du changement.
+00:00:11.066 --> 00:00:16.396
+Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
 
 3
-00:00:57.167 --> 00:01:25.650
-Perte, vol et voyage ont des scénarios distincts et une confirmation explicite.
+00:00:16.446 --> 00:00:24.621
+Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
 
 4
-00:01:25.750 --> 00:01:54.233
-La démo de base n’a pas ces contrôles ; leur disponibilité bancaire n’est pas validée.
+00:00:24.671 --> 00:00:30.168
+Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+
+5
+00:00:30.218 --> 00:00:38.168
+Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+
+6
+00:00:38.218 --> 00:00:44.054
+Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.
+
+7
+00:00:44.104 --> 00:00:52.054
+Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+
+8
+00:00:52.104 --> 00:00:55.405
+Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.
+
+9
+00:00:55.455 --> 00:01:07.405
+Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+
+10
+00:01:07.455 --> 00:01:19.550
+Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.

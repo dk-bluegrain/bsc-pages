@@ -1,17 +1,41 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:28.483
-Interface bancária nativa com cartões fictícios e respostas simuladas.
+00:00:00.000 --> 00:00:11.016
+Cartão de banco simulado: titular fictício, identificador e número completo de teste fornecidos; serviços informam sem alterações.
 
 2
-00:00:28.583 --> 00:00:57.067
-Alterar o uso de um cartão exige revisão e verificação da mudança.
+00:00:11.066 --> 00:00:16.396
+Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco.
 
 3
-00:00:57.167 --> 00:01:25.650
-Perda, roubo e viagem têm cenários separados e confirmação expressa.
+00:00:16.446 --> 00:00:24.621
+Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco.
 
 4
-00:01:25.750 --> 00:01:54.233
-A demonstração básica não inclui esses controles; a disponibilidade bancária não foi validada.
+00:00:24.671 --> 00:00:30.168
+Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco.
+
+5
+00:00:30.218 --> 00:00:38.168
+Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco.
+
+6
+00:00:38.218 --> 00:00:44.054
+Cartão de banco simulado: titular fictício, identificador e número completo de teste fornecidos; serviços informam sem alterações.
+
+7
+00:00:44.104 --> 00:00:52.054
+Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco.
+
+8
+00:00:52.104 --> 00:00:55.405
+Cartão de banco simulado: titular fictício, identificador e número completo de teste fornecidos; serviços informam sem alterações.
+
+9
+00:00:55.455 --> 00:01:07.405
+Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco.
+
+10
+00:01:07.455 --> 00:01:19.550
+Cartão de banco simulado: titular fictício, identificador e número completo de teste fornecidos; serviços informam sem alterações.

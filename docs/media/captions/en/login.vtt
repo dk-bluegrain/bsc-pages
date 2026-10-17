@@ -1,17 +1,85 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:07.400
-Native banking UI with fictional data and simulated responses.
+00:00:00.000 --> 00:00:17.420
+Simulated banking login: optional remembered username and password, with test biometric approval.
 
 2
-00:00:07.500 --> 00:00:14.900
-Remembered access uses simulated biometric approval in this recording.
+00:00:17.470 --> 00:00:22.791
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
 
 3
-00:00:15.000 --> 00:00:22.400
-Saving and unlocking credentials are separate from bank approval.
+00:00:22.841 --> 00:00:30.791
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
 
 4
-00:00:22.500 --> 00:00:29.900
-The basic demo includes neither banking login nor this biometric simulation.
+00:00:30.841 --> 00:00:38.100
+Simulated banking login: optional remembered username and password, with test biometric approval.
+
+5
+00:00:38.150 --> 00:00:49.906
+Simulated biometric unlock of saved access; bank approval is a separate requirement.
+
+6
+00:00:49.956 --> 00:00:57.906
+A test result using fictional data; it does not establish that a real banking operation completed.
+
+7
+00:00:57.956 --> 00:01:04.500
+Simulated biometric unlock of saved access; bank approval is a separate requirement.
+
+8
+00:01:04.550 --> 00:01:21.575
+Fake-bank login with Android SMS-code autofill: the code still requires explicit Verify.
+
+9
+00:01:21.625 --> 00:01:26.754
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+10
+00:01:26.804 --> 00:01:34.935
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+11
+00:01:34.985 --> 00:01:38.209
+A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.
+
+12
+00:01:38.259 --> 00:01:43.957
+Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.
+
+13
+00:01:44.007 --> 00:01:48.661
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+14
+00:01:48.711 --> 00:01:56.661
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+15
+00:01:56.711 --> 00:02:03.167
+Fake-bank login with Android SMS-code autofill: the code still requires explicit Verify.
+
+16
+00:02:03.217 --> 00:02:20.864
+A simulated one-message approval result demonstrates automatic verification of SMS-only login, not keyboard autofill.
+
+17
+00:02:20.914 --> 00:02:26.210
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+18
+00:02:26.260 --> 00:02:34.400
+Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
+
+19
+00:02:34.450 --> 00:02:42.726
+SMS assistance is optional. Android asks approval for one message, never inbox access; manual entry remains available.
+
+20
+00:02:42.776 --> 00:02:50.726
+Simulated one-message approval: only SMS-only login auto-verifies. Operations and combined questions still require Verify.
+
+21
+00:02:50.776 --> 00:02:57.150
+A simulated one-message approval result demonstrates automatic verification of SMS-only login, not keyboard autofill.

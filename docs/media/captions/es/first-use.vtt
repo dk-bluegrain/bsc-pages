@@ -1,17 +1,57 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:12.617
-Demostración de la interfaz nativa; sin sesión bancaria personal.
+00:00:00.000 --> 00:00:07.449
+Demostración nativa: consultar la privacidad antes de aceptar los términos. No es una sesión bancaria personal.
 
 2
-00:00:12.717 --> 00:00:25.333
-La privacidad y el selector de idioma están disponibles; la selección mostrada es español.
+00:00:07.499 --> 00:00:17.449
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
 
 3
-00:00:25.433 --> 00:00:38.050
-Abrir los términos no equivale a aceptarlos: la aceptación es expresa.
+00:00:17.499 --> 00:00:29.367
+Demostración nativa: consultar la privacidad antes de aceptar los términos. No es una sesión bancaria personal.
 
 4
-00:00:38.150 --> 00:00:50.767
-La demostración no acredita autorización del banco ni compatibilidad actual.
+00:00:29.417 --> 00:00:37.756
+Aviso de app independiente, términos y elección opcional de ayuda SMS; abrir un documento no equivale a aceptarlo.
+
+5
+00:00:37.806 --> 00:00:47.756
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
+
+6
+00:00:47.806 --> 00:00:53.543
+Aviso de app independiente, términos y elección opcional de ayuda SMS; abrir un documento no equivale a aceptarlo.
+
+7
+00:00:53.593 --> 00:01:00.527
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
+
+8
+00:01:00.577 --> 00:01:05.705
+Lee el texto y sus consecuencias. Abrir términos, privacidad o contrato no equivale a aceptar.
+
+9
+00:01:05.755 --> 00:01:10.131
+Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+
+10
+00:01:10.181 --> 00:01:18.305
+Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+
+11
+00:01:18.355 --> 00:01:27.093
+La ayuda SMS es opcional. Android pide aprobación para un mensaje, no acceso a la bandeja; puedes continuar manualmente.
+
+12
+00:01:27.143 --> 00:01:35.093
+La ayuda SMS es opcional. Android pide aprobación para un mensaje, no acceso a la bandeja; puedes continuar manualmente.
+
+13
+00:01:35.143 --> 00:01:41.700
+Aviso de app independiente, términos y elección opcional de ayuda SMS; abrir un documento no equivale a aceptarlo.
+
+14
+00:01:41.750 --> 00:02:31.217
+Demo básica sin conexión: elegir español en el selector de siete idiomas de la app.

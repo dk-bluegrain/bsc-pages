@@ -13,6 +13,8 @@ with sync_playwright() as p:
    page.on('pageerror',lambda e:errors.append(str(e)))
    response=page.goto(a.url+lang+'/');assert response.ok
    assert page.locator('html').get_attribute('lang')==lang
+   assert '1.12.0' in page.locator('header .brand small').inner_text()
+   assert page.locator('a[href*="v1.12.0-preview.1"][href$="-demo.apk"]').count()==2
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth'),(lang,width,'overflow')
    assert page.locator('video[autoplay]').count()==0
    page.locator('.phone').focus();page.keyboard.press('Enter');assert page.locator('dialog').evaluate('(d)=>d.open')
@@ -25,7 +27,7 @@ with sync_playwright() as p:
    # Each chapter is directly addressable and its footage/captions are real files.
    for link in page.locator('.chapter-list a').all():
     id=link.get_attribute('href')[1:];page.evaluate('(id)=>location.hash=id',id);page.locator('#'+id).wait_for(state='visible')
-    assert page.locator('#'+id+' video source').get_attribute('src').endswith(id+'.mp4')
+    assert page.locator('#'+id+' video source').get_attribute('src').split('?')[0].endswith(id+'.mp4')
    if width==390 and lang=='es':page.screenshot(path=str(a.output/'mobile.png'),full_page=True)
    if width==1440 and lang=='en':page.goto(a.url+'en/');page.screenshot(path=str(a.output/'desktop.png'))
    if width==820:

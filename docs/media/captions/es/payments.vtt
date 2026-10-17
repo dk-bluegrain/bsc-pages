@@ -1,17 +1,69 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:15.117
-Pago de demo y verificación bancaria simulada; solo datos ficticios.
+00:00:00.000 --> 00:00:25.641
+Demo básica: pago de servicio ficticio, revisión y código local de prueba 123456; no es un SMS.
 
 2
-00:00:15.217 --> 00:00:30.333
-El pago de servicio en demo requiere revisión y el código de prueba.
+00:00:25.691 --> 00:00:33.641
+Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
 3
-00:00:30.433 --> 00:00:45.550
-El escenario avanzado conserva la revisión y espera la verificación expresa del SMS.
+00:00:33.691 --> 00:00:39.061
+Demo básica: pago de servicio ficticio, revisión y código local de prueba 123456; no es un SMS.
 
 4
-00:00:45.650 --> 00:01:00.767
-La demo básica no incluye la verificación bancaria avanzada; no se pagó dinero real.
+00:00:39.111 --> 00:00:44.912
+Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+
+5
+00:00:44.962 --> 00:00:52.912
+Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
+
+6
+00:00:52.962 --> 00:00:59.433
+Demo básica: pago de servicio ficticio, revisión y código local de prueba 123456; no es un SMS.
+
+7
+00:00:59.483 --> 00:01:24.120
+Pago con banco simulado: revisión, confirmación separada y SMS autocompletado por Android con Verificar expreso.
+
+8
+00:01:24.170 --> 00:01:32.350
+Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
+
+9
+00:01:32.400 --> 00:01:39.535
+Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
+
+10
+00:01:39.585 --> 00:01:47.850
+Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
+
+11
+00:01:47.900 --> 00:01:56.355
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+12
+00:01:56.405 --> 00:02:00.053
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+13
+00:02:00.103 --> 00:02:03.296
+Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
+
+14
+00:02:03.346 --> 00:02:09.002
+El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.
+
+15
+00:02:09.052 --> 00:02:14.350
+Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+
+16
+00:02:14.400 --> 00:02:22.350
+Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
+
+17
+00:02:22.400 --> 00:02:28.683
+Pago con banco simulado: revisión, confirmación separada y SMS autocompletado por Android con Verificar expreso.

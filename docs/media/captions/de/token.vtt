@@ -1,17 +1,117 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:08.050
-Native Banking-Oberfläche mit fiktivem Token und simulierten Antworten.
+00:00:00.000 --> 00:00:08.117
+Simulierter Token BSC: Vertrag, Zustimmung, Testfreigabe, erzeugter Code und Trennen. Der erzeugte Code ist keine SMS.
 
 2
-00:00:08.150 --> 00:00:16.200
-Vertrag und Zustimmung gehen Registrierung und Freigabeprüfung voraus.
+00:00:08.167 --> 00:00:18.117
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
 
 3
-00:00:16.300 --> 00:00:24.350
-Die simulierte Freigabe geht der Codeanzeige voraus; das Trennen erfordert Bestätigung.
+00:00:18.167 --> 00:00:23.723
+Simulierter Token BSC: Vertrag, Zustimmung, Testfreigabe, erzeugter Code und Trennen. Der erzeugte Code ist keine SMS.
 
 4
-00:00:24.450 --> 00:00:32.500
-Die einfache Demo erzeugt keine Banktoken; Genehmigung und Validierung sind ungeklärt.
+00:00:23.773 --> 00:00:30.707
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+5
+00:00:30.757 --> 00:00:35.877
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+6
+00:00:35.927 --> 00:00:44.284
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+7
+00:00:44.334 --> 00:00:52.477
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+8
+00:00:52.527 --> 00:00:58.857
+Ein erzeugter Token-BSC-Code ist keine SMS. Registrierung, Freigabe und Trennung sind mit fiktiven Daten simuliert.
+
+9
+00:00:58.907 --> 00:01:07.035
+Ein erzeugter Token-BSC-Code ist keine SMS. Registrierung, Freigabe und Trennung sind mit fiktiven Daten simuliert.
+
+10
+00:01:07.085 --> 00:01:15.226
+Ein erzeugter Token-BSC-Code ist keine SMS. Registrierung, Freigabe und Trennung sind mit fiktiven Daten simuliert.
+
+11
+00:01:15.276 --> 00:01:21.852
+Ein erzeugter Token-BSC-Code ist keine SMS. Registrierung, Freigabe und Trennung sind mit fiktiven Daten simuliert.
+
+12
+00:01:21.902 --> 00:01:30.115
+Ein erzeugter Token-BSC-Code ist keine SMS. Registrierung, Freigabe und Trennung sind mit fiktiven Daten simuliert.
+
+13
+00:01:30.165 --> 00:01:36.607
+Ein erzeugter Token-BSC-Code ist keine SMS. Registrierung, Freigabe und Trennung sind mit fiktiven Daten simuliert.
+
+14
+00:01:36.657 --> 00:01:44.795
+Ein erzeugter Token-BSC-Code ist keine SMS. Registrierung, Freigabe und Trennung sind mit fiktiven Daten simuliert.
+
+15
+00:01:44.845 --> 00:01:53.179
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+16
+00:01:53.229 --> 00:02:01.179
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+17
+00:02:01.229 --> 00:02:07.700
+Simulierter Token BSC: Vertrag, Zustimmung, Testfreigabe, erzeugter Code und Trennen. Der erzeugte Code ist keine SMS.
+
+18
+00:02:07.750 --> 00:02:15.046
+Simulierte Token-Registrierung: Android füllt SMS-Code aus, dann ausdrücklich Prüfen; kein Nachweis abgeschlossener Registrierung.
+
+19
+00:02:15.096 --> 00:02:25.046
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+20
+00:02:25.096 --> 00:02:30.609
+Simulierte Token-Registrierung: Android füllt SMS-Code aus, dann ausdrücklich Prüfen; kein Nachweis abgeschlossener Registrierung.
+
+21
+00:02:30.659 --> 00:02:37.403
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+22
+00:02:37.453 --> 00:02:42.572
+Lesen Sie Text und Folgen. Das Öffnen von Bedingungen, Datenschutz oder Vertrag bedeutet keine Zustimmung.
+
+23
+00:02:42.622 --> 00:02:51.383
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+24
+00:02:51.433 --> 00:02:59.661
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+25
+00:02:59.711 --> 00:03:03.076
+Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+
+26
+00:03:03.126 --> 00:03:08.789
+Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
+
+27
+00:03:08.839 --> 00:03:14.186
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+28
+00:03:14.236 --> 00:03:22.186
+Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
+
+29
+00:03:22.236 --> 00:03:28.550
+Simulierte Token-Registrierung: Android füllt SMS-Code aus, dann ausdrücklich Prüfen; kein Nachweis abgeschlossener Registrierung.
