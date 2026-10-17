@@ -9,7 +9,7 @@ Android XML resources and their acceptance flow are unchanged.
 
 | Keys | Rendering and meaning |
 | --- | --- |
-| `action` | Landing-page hero and demo-card link to the separate download page. Describes choosing, not starting a download. |
+| `action` | Landing-page hero and demo-card link to the separate download page. Uses the download action wording and opens the edition choices before an APK is selected. |
 | `title`, `intro` | Download document title, metadata and opening heading/paragraph. Exactly two editions; no promise of live eligibility. |
 | `demoBadge`, `demoTitle`, `demoBody` | First edition card: offline, fictional, no bank credentials, no real transactions, limited feature scope. |
 | `liveBadge`, `liveTitle`, `liveBody` | Second edition card: explicitly unofficial and experimental, real accounts/money possible, unresolved bank permission and validation. |

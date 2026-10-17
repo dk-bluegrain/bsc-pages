@@ -1,6 +1,6 @@
 {
   "context": {
-    "action": "Landing-page hero/demo-card navigation to the separate edition-choice page; choosing, not immediately downloading.",
+    "action": "Landing-page hero/demo-card download navigation label opening the separate edition-choice page before an APK is selected.",
     "title": "Download page document title and H1: user chooses between two Android editions.",
     "intro": "Opening paragraph: offline demo or unofficial real banking after reading guide and risks.",
     "demoBadge": "Prominent demo card badge: offline, no real transactions.",
@@ -33,7 +33,7 @@
   },
   "languages": {
     "es": {
-      "action": "Elegir una app",
+      "action": "Descargar una app",
       "title": "Elige cómo quieres probarla",
       "intro": "Dos apps Android distintas. Empieza con la demo sin conexión o lee la guía completa de instalación y riesgos antes de elegir la app no oficial para banca real.",
       "demoBadge": "SIN CONEXIÓN · SIN OPERACIONES REALES",
@@ -90,7 +90,7 @@
       ]
     },
     "en": {
-      "action": "Choose an app",
+      "action": "Download an app",
       "title": "Choose how you want to try it",
       "intro": "Two separate Android apps. Start with the offline demo, or read the full installation and risk guide before choosing the unofficial app for real banking.",
       "demoBadge": "OFFLINE · NO REAL TRANSACTIONS",
@@ -147,7 +147,7 @@
       ]
     },
     "de": {
-      "action": "App auswählen",
+      "action": "App herunterladen",
       "title": "Wählen Sie, wie Sie die App ausprobieren möchten",
       "intro": "Zwei getrennte Android-Apps. Beginnen Sie mit der Offline-Demo oder lesen Sie die vollständige Installationsanleitung und die Risiken der inoffiziellen App für echtes Banking.",
       "demoBadge": "OFFLINE · KEINE ECHTEN TRANSAKTIONEN",
@@ -204,7 +204,7 @@
       ]
     },
     "fr": {
-      "action": "Choisir une application",
+      "action": "Télécharger une application",
       "title": "Choisissez comment essayer l’application",
       "intro": "Deux applications Android distinctes. Commencez par la démo hors ligne ou lisez le guide complet et les risques avant de choisir l’application non officielle pour vos comptes réels.",
       "demoBadge": "HORS LIGNE · AUCUNE OPÉRATION RÉELLE",
@@ -261,7 +261,7 @@
       ]
     },
     "ru": {
-      "action": "Выбрать приложение",
+      "action": "Скачать приложение",
       "title": "Выберите, как попробовать приложение",
       "intro": "Два отдельных приложения Android. Начните с офлайн-демо или прочитайте полное руководство и описание рисков перед выбором неофициального приложения для реальных счетов.",
       "demoBadge": "ОФЛАЙН · БЕЗ РЕАЛЬНЫХ ОПЕРАЦИЙ",
@@ -318,7 +318,7 @@
       ]
     },
     "uk": {
-      "action": "Вибрати застосунок",
+      "action": "Завантажити застосунок",
       "title": "Виберіть, як спробувати застосунок",
       "intro": "Два окремі застосунки Android. Почніть з офлайн-демо або прочитайте повний посібник та опис ризиків перед вибором неофіційного застосунку для реальних рахунків.",
       "demoBadge": "ОФЛАЙН · БЕЗ РЕАЛЬНИХ ОПЕРАЦІЙ",
@@ -375,7 +375,7 @@
       ]
     },
     "pt": {
-      "action": "Escolher um app",
+      "action": "Baixar um app",
       "title": "Escolha como experimentar",
       "intro": "Dois apps Android separados. Comece pela demo offline ou leia o guia completo e os riscos antes de escolher o app não oficial para contas reais.",
       "demoBadge": "OFFLINE · SEM TRANSAÇÕES REAIS",
