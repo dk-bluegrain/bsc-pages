@@ -1,41 +1,41 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:11.016
-Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.
+00:00:00.000 --> 00:00:11.008
+Fictional card: supplied holder and identifier, number masked except for the last four digits; services provide information without changes.
 
 2
-00:00:11.066 --> 00:00:16.396
-Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+00:00:11.058 --> 00:00:16.420
+Read-only details show only the last four digits. Copying the full number requires an explicit action; card services are not implemented.
 
 3
-00:00:16.446 --> 00:00:24.621
-Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+00:00:16.470 --> 00:00:24.641
+Read-only details show only the last four digits. Copying the full number requires an explicit action; card services are not implemented.
 
 4
-00:00:24.671 --> 00:00:30.168
-Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+00:00:24.691 --> 00:00:30.117
+Read-only details show only the last four digits. Copying the full number requires an explicit action; card services are not implemented.
 
 5
-00:00:30.218 --> 00:00:38.168
-Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+00:00:30.167 --> 00:00:38.117
+Read-only details show only the last four digits. Copying the full number requires an explicit action; card services are not implemented.
 
 6
-00:00:38.218 --> 00:00:44.054
-Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.
+00:00:38.167 --> 00:00:43.786
+Fictional card: supplied holder and identifier, number masked except for the last four digits; services provide information without changes.
 
 7
-00:00:44.104 --> 00:00:52.054
-Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+00:00:43.836 --> 00:00:51.786
+Read-only details show only the last four digits. Copying the full number requires an explicit action; card services are not implemented.
 
 8
-00:00:52.104 --> 00:00:55.405
-Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.
+00:00:51.836 --> 00:00:55.278
+Fictional card: supplied holder and identifier, number masked except for the last four digits; services provide information without changes.
 
 9
-00:00:55.455 --> 00:01:07.405
-Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank.
+00:00:55.328 --> 00:01:07.278
+Read-only details show only the last four digits. Copying the full number requires an explicit action; card services are not implemented.
 
 10
-00:01:07.455 --> 00:01:19.550
-Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.
+00:01:07.328 --> 00:01:19.417
+Fictional card: supplied holder and identifier, number masked except for the last four digits; services provide information without changes.

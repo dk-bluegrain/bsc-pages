@@ -77,8 +77,8 @@
         "Demo básica: crear y guardar localmente un beneficiario ficticio de otro banco, sin validación bancaria real."
       ],
       "cards": [
-        "Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.",
-        "Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco."
+        "Tarjeta ficticia: titular e identificador recibidos, número oculto salvo los últimos cuatro dígitos; servicios informativos sin cambios.",
+        "Solo lectura: se muestran únicamente los últimos cuatro dígitos. Copiar el número completo requiere una acción explícita; los servicios no están implementados."
       ],
       "token": [
         "Token BSC simulado: contrato, consentimiento, aprobación de prueba, código generado y desvinculación. El código no es SMS.",
@@ -202,8 +202,8 @@
         "Basic demo: create and save a fictional other-bank beneficiary locally, without real bank validation."
       ],
       "cards": [
-        "Fake-bank card: supplied fictional holder, identifier and full test number; services provide information without changes.",
-        "Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank."
+        "Fictional card: supplied holder and identifier, number masked except for the last four digits; services provide information without changes.",
+        "Read-only details show only the last four digits. Copying the full number requires an explicit action; card services are not implemented."
       ],
       "token": [
         "Simulated Token BSC: contract, consent, test approval, generated code and unlinking. The generated code is not SMS.",
@@ -327,8 +327,8 @@
         "Einfache Demo: fiktiven Begünstigten einer anderen Bank lokal anlegen und speichern, ohne echte Bankprüfung."
       ],
       "cards": [
-        "Simulierte Bankkarte: gelieferter fiktiver Inhaber, Kennung und volle Testnummer; Dienste informieren ohne Änderungen.",
-        "Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert."
+        "Fiktive Karte: übermittelte Inhaberdaten und Kennung, Nummer bis auf die letzten vier Ziffern verdeckt; Dienste informieren ohne Änderungen.",
+        "Die schreibgeschützten Details zeigen nur die letzten vier Ziffern. Die vollständige Nummer wird nur ausdrücklich kopiert; Kartendienste sind nicht implementiert."
       ],
       "token": [
         "Simulierter Token BSC: Vertrag, Zustimmung, Testfreigabe, erzeugter Code und Trennen. Der erzeugte Code ist keine SMS.",
@@ -452,8 +452,8 @@
         "Démo de base : créer et enregistrer localement un bénéficiaire fictif d’une autre banque, sans validation bancaire réelle."
       ],
       "cards": [
-        "Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.",
-        "Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit."
+        "Carte fictive : titulaire et identifiant fournis, seuls les quatre derniers chiffres du numéro sont visibles ; services sans modification.",
+        "Les détails affichent uniquement les quatre derniers chiffres. Copier le numéro complet nécessite une action explicite ; les services ne sont pas implémentés."
       ],
       "token": [
         "Token BSC simulé : contrat, consentement, approbation de test, code généré et dissociation. Le code généré n’est pas un SMS.",
@@ -577,8 +577,8 @@
         "Базовая демоверсия: создание и локальное сохранение вымышленного получателя другого банка, без реальной банковской проверки."
       ],
       "cards": [
-        "Карта имитируемого банка: вымышленные владелец, идентификатор и полный тестовый номер получены; сервисы информируют без изменений.",
-        "Данные карт — только для чтения; сервисы информируют без изменений. Полный номер появляется лишь при получении от банка."
+        "Вымышленная карта: владелец и идентификатор от банка, видны только последние четыре цифры номера; сервисы информируют без изменений.",
+        "В сведениях видны только последние четыре цифры. Полный номер копируется только по явному действию; обслуживание карт пока не реализовано."
       ],
       "token": [
         "Имитация Token BSC: договор, согласие, тестовое одобрение, созданный код и отключение. Созданный код — не SMS.",
@@ -702,8 +702,8 @@
         "Базова демоверсія: створення й локальне збереження вигаданого одержувача іншого банку, без реальної банківської перевірки."
       ],
       "cards": [
-        "Картка імітованого банку: вигадані власник, ідентифікатор і повний тестовий номер отримані; сервіси інформують без змін.",
-        "Дані карток — лише для читання; сервіси інформують без змін. Повний номер з’являється тільки після отримання від банку."
+        "Вигадана картка: власник та ідентифікатор від банку, видно лише останні чотири цифри номера; сервіси інформують без змін.",
+        "У відомостях видно лише останні чотири цифри. Повний номер копіюється лише за явною дією; обслуговування карт ще не реалізовано."
       ],
       "token": [
         "Імітація Token BSC: договір, згода, тестове схвалення, створений код і від’єднання. Створений код — не SMS.",
@@ -827,8 +827,8 @@
         "Demonstração básica: criar e salvar localmente beneficiário fictício de outro banco, sem validação bancária real."
       ],
       "cards": [
-        "Cartão de banco simulado: titular fictício, identificador e número completo de teste fornecidos; serviços informam sem alterações.",
-        "Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco."
+        "Cartão fictício: titular e identificador fornecidos, número oculto exceto os últimos quatro dígitos; serviços informativos sem alterações.",
+        "Os detalhes mostram apenas os últimos quatro dígitos. Copiar o número completo exige uma ação explícita; os serviços de cartão ainda não foram implementados."
       ],
       "token": [
         "Token BSC simulado: contrato, consentimento, aprovação de teste, código gerado e desvinculação. O código gerado não é SMS.",

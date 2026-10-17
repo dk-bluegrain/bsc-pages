@@ -13,8 +13,8 @@ with sync_playwright() as p:
    page.on('pageerror',lambda e:errors.append(str(e)))
    response=page.goto(a.url+lang+'/');assert response.ok
    assert page.locator('html').get_attribute('lang')==lang
-   assert '1.12.0' in page.locator('header .brand small').inner_text()
-   assert page.locator('a[href*="v1.12.0-preview.1"][href$="-demo.apk"]').count()==2
+   assert '1.12.1' in page.locator('header .brand small').inner_text()
+   assert page.locator('a[href*="v1.12.1-preview.1"][href$="-demo.apk"]').count()==2
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth'),(lang,width,'overflow')
    assert page.locator('video[autoplay]').count()==0
    page.locator('.phone').focus();page.keyboard.press('Enter');assert page.locator('dialog').evaluate('(d)=>d.open')

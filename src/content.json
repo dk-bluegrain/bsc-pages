@@ -98,7 +98,7 @@
         {
           "id": "cards",
           "title": "Detalles de tarjetas y canales oficiales",
-          "body": "Consulta los datos de tarjeta recibidos del banco. El titular aparece si se facilita; puedes mostrar o copiar el identificador recibido. El número completo solo se muestra si lo facilita expresamente el banco y nunca se reconstruye desde dígitos ocultos. Los servicios solo ofrecen información para canales oficiales: la app no activa, bloquea ni tramita pérdida, robo o viajes. La demo básica no administra tarjetas.",
+          "body": "Consulta los datos de tarjeta recibidos del banco. El titular aparece si se facilita; puedes mostrar o copiar el identificador recibido. El número siempre muestra solo los últimos cuatro dígitos. El número completo solo se puede copiar mediante una acción explícita si lo facilita el banco. Los servicios solo ofrecen información para canales oficiales: la app no activa, bloquea ni tramita pérdida, robo o viajes. La demo básica no administra tarjetas.",
           "notes": "Recorrido de la interfaz nativa con identidades ficticias y transportes bancarios simulados. No se ha enviado ninguna operación real. Los flujos avanzados no están todos incluidos en la demo básica descargable."
         },
         {
@@ -245,7 +245,7 @@
         {
           "id": "cards",
           "title": "Card details and official channels",
-          "body": "Read card details supplied by the bank. A holder name appears if provided; reveal or copy the received identifier. A full number is shown only if explicitly supplied by the bank, never reconstructed from masked digits. Services provide official-channel information only: the app performs no activation, blocking, loss/theft reporting or travel requests. The basic demo has no card administration.",
+          "body": "Read card details supplied by the bank. A holder name appears if provided; reveal or copy the received identifier. The number always shows only its last four digits. The full number is available only through explicit copying when supplied by the bank. Services provide official-channel information only: the app performs no activation, blocking, loss/theft reporting or travel requests. The basic demo has no card administration.",
           "notes": "Native-interface walkthrough using fictional identities and fake bank transports. No real operation was submitted. Not all advanced flows are included in the downloadable basic demo."
         },
         {
@@ -392,7 +392,7 @@
         {
           "id": "cards",
           "title": "Kartendetails und offizielle Kanäle",
-          "body": "Sehen Sie die von der Bank gelieferten Kartendaten. Der Inhaber erscheint nur, wenn übermittelt; die empfangene Kennung lässt sich anzeigen oder kopieren. Die volle Nummer erscheint nur bei ausdrücklicher Lieferung durch die Bank, nie aus verdeckten Ziffern rekonstruiert. Dienste informieren nur über offizielle Kanäle: Die App aktiviert oder sperrt keine Karten und sendet keine Verlust-, Diebstahl- oder Reiseanträge. Die einfache Demo verwaltet keine Karten.",
+          "body": "Sehen Sie die von der Bank gelieferten Kartendaten. Der Inhaber erscheint nur, wenn übermittelt; die empfangene Kennung lässt sich anzeigen oder kopieren. Die Nummer zeigt stets nur die letzten vier Ziffern. Die vollständige Nummer kann nur ausdrücklich kopiert werden, wenn sie von der Bank übermittelt wurde. Dienste informieren nur über offizielle Kanäle: Die App aktiviert oder sperrt keine Karten und sendet keine Verlust-, Diebstahl- oder Reiseanträge. Die einfache Demo verwaltet keine Karten.",
           "notes": "Rundgang durch die native Oberfläche mit fiktiven Identitäten und simulierten Bankanbindungen. Es wurde kein echter Vorgang übermittelt. Die einfache Demo zum Herunterladen enthält nicht alle erweiterten Abläufe."
         },
         {
@@ -539,7 +539,7 @@
         {
           "id": "cards",
           "title": "Détails des cartes et canaux officiels",
-          "body": "Consultez les données de carte fournies par la banque. Le titulaire apparaît s’il est fourni ; affichez ou copiez l’identifiant reçu. Le numéro complet n’apparaît que s’il est expressément fourni par la banque, jamais reconstruit depuis des chiffres masqués. Les services renseignent uniquement sur les canaux officiels : l’application n’active ni ne bloque de carte et ne traite ni perte, ni vol, ni demande de voyage. La démo de base n’administre pas les cartes.",
+          "body": "Consultez les données de carte fournies par la banque. Le titulaire apparaît s’il est fourni ; affichez ou copiez l’identifiant reçu. Le numéro affiche toujours uniquement les quatre derniers chiffres. Le numéro complet peut seulement être copié par une action explicite si la banque le fournit. Les services renseignent uniquement sur les canaux officiels : l’application n’active ni ne bloque de carte et ne traite ni perte, ni vol, ni demande de voyage. La démo de base n’administre pas les cartes.",
           "notes": "Parcours de l’interface native avec des identités fictives et des connexions bancaires simulées. Aucune opération réelle n’a été transmise. Tous les parcours avancés ne sont pas inclus dans la démo de base téléchargeable."
         },
         {
@@ -686,7 +686,7 @@
         {
           "id": "cards",
           "title": "Данные карт и официальные каналы",
-          "body": "Просматривайте данные карт, полученные от банка. Имя владельца показано, если передано; полученный идентификатор можно показать или скопировать. Полный номер отображается только при явной передаче банком и никогда не восстанавливается из скрытых цифр. Сервисы лишь информируют об официальных каналах: приложение не активирует и не блокирует карты, не подаёт заявления о потере, краже или поездке. Базовая демоверсия не управляет картами.",
+          "body": "Просматривайте данные карт, полученные от банка. Имя владельца показано, если передано; полученный идентификатор можно показать или скопировать. Номер всегда показывает только последние четыре цифры. Полный номер можно лишь явно скопировать, если его предоставил банк. Сервисы лишь информируют об официальных каналах: приложение не активирует и не блокирует карты, не подаёт заявления о потере, краже или поездке. Базовая демоверсия не управляет картами.",
           "notes": "Показ нативного интерфейса с вымышленными личностями и имитацией обмена с банком. Реальные операции не отправлялись. Базовая демоверсия для скачивания включает не все расширенные сценарии."
         },
         {
@@ -833,7 +833,7 @@
         {
           "id": "cards",
           "title": "Дані карток та офіційні канали",
-          "body": "Переглядайте дані карток, отримані від банку. Ім’я власника показано, якщо передано; отриманий ідентифікатор можна показати чи скопіювати. Повний номер відображається лише за явного надання банком і ніколи не відновлюється з прихованих цифр. Сервіси лише інформують про офіційні канали: застосунок не активує й не блокує картки, не подає заяви про втрату, крадіжку чи подорож. Базова демоверсія не керує картками.",
+          "body": "Переглядайте дані карток, отримані від банку. Ім’я власника показано, якщо передано; отриманий ідентифікатор можна показати чи скопіювати. Номер завжди показує лише останні чотири цифри. Повний номер можна лише явно скопіювати, якщо його надав банк. Сервіси лише інформують про офіційні канали: застосунок не активує й не блокує картки, не подає заяви про втрату, крадіжку чи подорож. Базова демоверсія не керує картками.",
           "notes": "Показ нативного інтерфейсу з вигаданими особами та імітацією обміну з банком. Реальні операції не надсилалися. Базова демоверсія для завантаження містить не всі розширені сценарії."
         },
         {
@@ -980,7 +980,7 @@
         {
           "id": "cards",
           "title": "Detalhes dos cartões e canais oficiais",
-          "body": "Consulte os dados de cartão recebidos do banco. O titular aparece se for fornecido; mostre ou copie o identificador recebido. O número completo só aparece se fornecido expressamente pelo banco, nunca reconstruído de dígitos ocultos. Os serviços apenas informam os canais oficiais: o aplicativo não ativa, bloqueia ou encaminha perda, roubo ou solicitações de viagem. A demonstração básica não administra cartões.",
+          "body": "Consulte os dados de cartão recebidos do banco. O titular aparece se for fornecido; mostre ou copie o identificador recebido. O número sempre mostra apenas os últimos quatro dígitos. O número completo só pode ser copiado por uma ação explícita se fornecido pelo banco. Os serviços apenas informam os canais oficiais: o aplicativo não ativa, bloqueia ou encaminha perda, roubo ou solicitações de viagem. A demonstração básica não administra cartões.",
           "notes": "Passeio pela interface nativa com identidades fictícias e conexões bancárias simuladas. Nenhuma operação real foi enviada. Nem todos os fluxos avançados estão incluídos na demonstração básica para download."
         },
         {

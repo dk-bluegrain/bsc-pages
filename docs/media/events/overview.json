@@ -132,8 +132,8 @@
     },
     {
       "type": "tap",
-      "timeSeconds": 71.653,
-      "epochMs": 1792195678131,
+      "timeSeconds": 71.678,
+      "epochMs": 1792196545031,
       "scenario": 1,
       "x": 270.0,
       "y": 657.75,
@@ -141,8 +141,8 @@
     },
     {
       "type": "hold",
-      "timeSeconds": 72.116,
-      "epochMs": 1792195678594,
+      "timeSeconds": 72.065,
+      "epochMs": 1792196545418,
       "scenario": 1,
       "cue": "cards-readonly",
       "durationMs": 8000,

@@ -1,6 +1,6 @@
 {
-  "appVersion": "1.12.0 (27)",
-  "sourceCommit": "6ee13357218005e84c3719d5ac5ff7714af83390",
+  "appVersion": "1.12.1 (28)",
+  "sourceCommit": "b9064724b95753a6adf404d3da3c54bbf9e6f50d",
   "sourceRepository": "https://github.com/dk-bluegrain/bsc",
   "capture": "Scripted native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only. Capture-only QA builds are identified by each source APK digest; distribution hashes are listed separately in downloads.json.",
   "storyboardRevision": 3,
@@ -611,7 +611,7 @@
       "assetRevision": "fbc9076cbb7f"
     },
     "cards": {
-      "duration": 79.6,
+      "duration": 79.467,
       "durationLabel": "1:19",
       "screenshots": [
         "cards-01.jpg",
@@ -627,13 +627,13 @@
           "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
           "smsPreference": "SMS",
           "smsAssistanceEnabled": true,
-          "captureBuildSha256": "1290d55f43cf338751a77d2db335080083f5efeb85619b1774489db05e6fee48",
+          "captureBuildSha256": "edf04a1639cb23be23c119c07b86b57b8b765751a075b412a9c266bdd0d9c15f",
           "smsAutofillEvents": 0,
           "requiresSmsAutofill": false,
-          "firstNativeRingVideoTime": 12.613,
+          "firstNativeRingVideoTime": 12.459,
           "eventAlignmentOffset": -0.033,
-          "trimStart": 5.611,
-          "duration": 79.6
+          "trimStart": 5.421,
+          "duration": 79.467
         }
       ],
       "fictional": true,
@@ -641,7 +641,8 @@
       "persistentFinalMarkers": true,
       "storyboardRevision": 3,
       "smsPreference": "SMS",
-      "assetRevision": "fbc9076cbb7f"
+      "scriptSha256": "fbc9076cbb7ff396418da9b8924d46701d6cf777c63c72b87e6d0f9c7aa72c98",
+      "assetRevision": "fed70f3a3539"
     },
     "token": {
       "duration": 208.6,
@@ -937,7 +938,7 @@
       ],
       "fictional": true,
       "storyboardRevision": 3,
-      "assetRevision": "fbc9076cbb7f"
+      "assetRevision": "339b8af1b101"
     }
   }
 }

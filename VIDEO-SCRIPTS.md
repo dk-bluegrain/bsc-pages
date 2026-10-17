@@ -127,7 +127,7 @@ Capture fixtures: `LiveScreenTest.scannedOtherBankRecipientPrefillsBeneficiaryFo
 Understand the useful read-only fields and implementation boundary.
 
 1. Open a card from the native fake-bank catalogue. Hold status, linked product and balances for 8 seconds.
-2. Reveal exact bank identifier and copy it; hold 8 seconds. Explain an identifier is distinct from a card number. Show holder name/full number only when bank fields supply them; never recover masked digits.
+2. Reveal exact bank identifier and copy it; hold 8 seconds. Explain an identifier is distinct from a card number. Show the holder name only when supplied. Keep the card number masked to its last four digits throughout, including after opening details or copying. Copy may use a complete supplied value, but never display or reconstruct it. Confirm the full number is absent from the captured frames.
 3. Open Manage card. Hold the unimplemented-services explanation for 12 seconds. No activation/blocking/report/travel API is called. Explain official-channel handoffs and urgent loss/theft action.
 4. Return to details and hold 6 seconds.
 

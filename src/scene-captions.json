@@ -23,7 +23,7 @@
       "sms-login": "Aprobación simulada de un mensaje: solo el acceso exclusivamente SMS se verifica automáticamente. Operaciones y preguntas combinadas conservan Verificar.",
       "settings-enabled": "Ayuda SMS activada. Android pide aprobación para cada mensaje; solo el acceso exclusivamente por SMS aprobado se verifica automáticamente.",
       "settings-disabled": "La ayuda SMS se desactiva solo en este ajuste y vuelve a activarse. El teclado y la entrada manual siguen disponibles.",
-      "cards-readonly": "Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco."
+      "cards-readonly": "Solo lectura: se muestran únicamente los últimos cuatro dígitos. Copiar el número completo requiere una acción explícita; los servicios no están implementados."
     },
     "en": {
       "opening": "Native UI with fictional data; banking responses are simulated. This is not a personal banking session.",
@@ -48,7 +48,7 @@
       "sms-login": "Simulated one-message approval: only SMS-only login auto-verifies. Operations and combined questions still require Verify.",
       "settings-enabled": "SMS assistance is on. Android requests per-message approval; only an approved SMS-only login auto-verifies.",
       "settings-disabled": "SMS assistance is switched off only in this settings scene, then restored on. Keyboard and manual entry remain available.",
-      "cards-readonly": "Card details are read-only; services provide information and make no changes. A full number appears only if supplied by the bank."
+      "cards-readonly": "Read-only details show only the last four digits. Copying the full number requires an explicit action; card services are not implemented."
     },
     "de": {
       "opening": "Native Oberfläche mit fiktiven Daten; Bankantworten sind simuliert. Dies ist keine persönliche Banksitzung.",
@@ -73,7 +73,7 @@
       "sms-login": "Simulierte Nachrichtenfreigabe: Nur reine SMS-Anmeldung prüft automatisch. Vorgänge und kombinierte Fragen brauchen weiter Prüfen.",
       "settings-enabled": "SMS-Hilfe ist an. Android fragt für jede Nachricht; nur eine freigegebene reine SMS-Anmeldung wird automatisch geprüft.",
       "settings-disabled": "SMS-Hilfe wird nur in dieser Einstellungsszene aus- und wieder eingeschaltet. Tastatur und manuelle Eingabe bleiben verfügbar.",
-      "cards-readonly": "Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert."
+      "cards-readonly": "Die schreibgeschützten Details zeigen nur die letzten vier Ziffern. Die vollständige Nummer wird nur ausdrücklich kopiert; Kartendienste sind nicht implementiert."
     },
     "fr": {
       "opening": "Interface native avec données fictives ; les réponses bancaires sont simulées. Ce n’est pas une session bancaire personnelle.",
@@ -98,7 +98,7 @@
       "sms-login": "Accord simulé pour un message : seule la connexion par SMS seul est vérifiée automatiquement. Opérations et questions combinées gardent Vérifier.",
       "settings-enabled": "L’aide SMS est activée. Android demande l’accord par message ; seule la connexion par SMS seul approuvée est vérifiée automatiquement.",
       "settings-disabled": "L’aide SMS est désactivée uniquement dans cette scène, puis réactivée. Clavier et saisie manuelle restent disponibles.",
-      "cards-readonly": "Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit."
+      "cards-readonly": "Les détails affichent uniquement les quatre derniers chiffres. Copier le numéro complet nécessite une action explicite ; les services ne sont pas implémentés."
     },
     "ru": {
       "opening": "Нативный интерфейс с вымышленными данными; ответы банка имитируются. Это не личный банковский сеанс.",
@@ -123,7 +123,7 @@
       "sms-login": "Имитация согласия на сообщение: автопроверка лишь входа только по SMS. Операции и составные вопросы требуют «Проверить».",
       "settings-enabled": "Помощь SMS включена. Android просит согласие на каждое сообщение; автоматическая проверка — только для одобренного входа лишь по SMS.",
       "settings-disabled": "Помощь SMS отключается только в этой сцене настроек, затем включается снова. Клавиатура и ручной ввод остаются доступны.",
-      "cards-readonly": "Данные карт — только для чтения; сервисы информируют без изменений. Полный номер появляется лишь при получении от банка."
+      "cards-readonly": "В сведениях видны только последние четыре цифры. Полный номер копируется только по явному действию; обслуживание карт пока не реализовано."
     },
     "uk": {
       "opening": "Нативний інтерфейс із вигаданими даними; відповіді банку імітуються. Це не особистий банківський сеанс.",
@@ -148,7 +148,7 @@
       "sms-login": "Імітація згоди на повідомлення: автоперевірка лише входу за SMS. Операції та складені запитання потребують «Перевірити».",
       "settings-enabled": "Допомогу SMS увімкнено. Android просить згоду на кожне повідомлення; автоматична перевірка — лише для схваленого входу тільки за SMS.",
       "settings-disabled": "Допомога SMS вимикається лише в цій сцені налаштувань, потім знову вмикається. Клавіатура й ручне введення лишаються доступними.",
-      "cards-readonly": "Дані карток — лише для читання; сервіси інформують без змін. Повний номер з’являється тільки після отримання від банку."
+      "cards-readonly": "У відомостях видно лише останні чотири цифри. Повний номер копіюється лише за явною дією; обслуговування карт ще не реалізовано."
     },
     "pt": {
       "opening": "Interface nativa com dados fictícios; as respostas bancárias são simuladas. Não é uma sessão bancária pessoal.",
@@ -173,7 +173,7 @@
       "sms-login": "Aprovação simulada de uma mensagem: só o acesso exclusivamente SMS se verifica automaticamente. Operações e perguntas combinadas mantêm Verificar.",
       "settings-enabled": "A ajuda SMS está ativada. O Android pede aprovação por mensagem; só o acesso exclusivamente por SMS aprovado se verifica automaticamente.",
       "settings-disabled": "A ajuda SMS é desativada apenas nesta cena de ajustes, depois reativada. O teclado e a entrada manual continuam disponíveis.",
-      "cards-readonly": "Dados de cartão só para leitura; serviços informam sem alterações. O número completo aparece apenas se fornecido pelo banco."
+      "cards-readonly": "Os detalhes mostram apenas os últimos quatro dígitos. Copiar o número completo exige uma ação explícita; os serviços de cartão ainda não foram implementados."
     }
   }
 }

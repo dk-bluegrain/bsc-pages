@@ -1,41 +1,41 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:11.016
-Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.
+00:00:00.000 --> 00:00:11.008
+Carte fictive : titulaire et identifiant fournis, seuls les quatre derniers chiffres du numéro sont visibles ; services sans modification.
 
 2
-00:00:11.066 --> 00:00:16.396
-Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+00:00:11.058 --> 00:00:16.420
+Les détails affichent uniquement les quatre derniers chiffres. Copier le numéro complet nécessite une action explicite ; les services ne sont pas implémentés.
 
 3
-00:00:16.446 --> 00:00:24.621
-Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+00:00:16.470 --> 00:00:24.641
+Les détails affichent uniquement les quatre derniers chiffres. Copier le numéro complet nécessite une action explicite ; les services ne sont pas implémentés.
 
 4
-00:00:24.671 --> 00:00:30.168
-Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+00:00:24.691 --> 00:00:30.117
+Les détails affichent uniquement les quatre derniers chiffres. Copier le numéro complet nécessite une action explicite ; les services ne sont pas implémentés.
 
 5
-00:00:30.218 --> 00:00:38.168
-Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+00:00:30.167 --> 00:00:38.117
+Les détails affichent uniquement les quatre derniers chiffres. Copier le numéro complet nécessite une action explicite ; les services ne sont pas implémentés.
 
 6
-00:00:38.218 --> 00:00:44.054
-Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.
+00:00:38.167 --> 00:00:43.786
+Carte fictive : titulaire et identifiant fournis, seuls les quatre derniers chiffres du numéro sont visibles ; services sans modification.
 
 7
-00:00:44.104 --> 00:00:52.054
-Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+00:00:43.836 --> 00:00:51.786
+Les détails affichent uniquement les quatre derniers chiffres. Copier le numéro complet nécessite une action explicite ; les services ne sont pas implémentés.
 
 8
-00:00:52.104 --> 00:00:55.405
-Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.
+00:00:51.836 --> 00:00:55.278
+Carte fictive : titulaire et identifiant fournis, seuls les quatre derniers chiffres du numéro sont visibles ; services sans modification.
 
 9
-00:00:55.455 --> 00:01:07.405
-Les cartes sont en lecture seule ; les services informent sans modification. Le numéro complet apparaît seulement si la banque le fournit.
+00:00:55.328 --> 00:01:07.278
+Les détails affichent uniquement les quatre derniers chiffres. Copier le numéro complet nécessite une action explicite ; les services ne sont pas implémentés.
 
 10
-00:01:07.455 --> 00:01:19.550
-Carte bancaire simulée : titulaire fictif, identifiant et numéro complet de test fournis ; services informatifs sans modification.
+00:01:07.328 --> 00:01:19.417
+Carte fictive : titulaire et identifiant fournis, seuls les quatre derniers chiffres du numéro sont visibles ; services sans modification.

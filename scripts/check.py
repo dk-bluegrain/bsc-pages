@@ -41,7 +41,7 @@ for lang,c in content.items():
    u=urlsplit(ref)
    if u.scheme or u.netloc:
     assert u.scheme in ('https','mailto'),f'Unexpected remote URI {path} {ref}'
-    if '/releases/download/' in ref:assert '/v1.12.0-preview.1/' in ref
+    if '/releases/download/' in ref:assert '/v1.12.1-preview.1/' in ref
     continue
    if not u.path:
     if u.fragment:assert u.fragment in p.ids, (path,ref)

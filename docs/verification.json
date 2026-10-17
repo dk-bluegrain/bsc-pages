@@ -1,7 +1,7 @@
 {
-  "version": "1.12.0 (27)",
-  "sourceCommit": "6ee13357218005e84c3719d5ac5ff7714af83390",
-  "recordedAt": "2026-10-17T00:11:17.164693+00:00",
+  "version": "1.12.1 (28)",
+  "sourceCommit": "b9064724b95753a6adf404d3da3c54bbf9e6f50d",
+  "recordedAt": "2026-10-17T00:25:36.730913+00:00",
   "capture": {
     "scenarios": 34,
     "failures": 0,
@@ -11,7 +11,11 @@
     "videos": 14,
     "overviewSeconds": 103.533,
     "captionTracks": 98,
-    "storyboardRevision": 3
+    "storyboardRevision": 3,
+    "retakenChapters": [
+      "cards"
+    ],
+    "regeneratedOverview": true
   },
   "websiteBrowserChecks": [
     {
@@ -127,26 +131,24 @@
       "demo",
       "live"
     ],
-    "signedDemoAndLiveOfflineStartup": "passed",
     "signerCertificateSHA256": "ee060319af55793ea750a3f9b0dc4f372a2ba072812d664416a704548f8f5ecd",
-    "initialTargetedInstrumentationCases": 87,
-    "affectedReruns": "passed",
-    "latestSmsRegressionCases": 18,
-    "latestSmsRegressionResult": "passed",
+    "targetedCardAndLanguageCases": 4,
+    "targetedCardAndLanguageResult": "passed",
     "languageAndLargeTextScreens": 56,
-    "installedApkHashesMatch": true,
     "signedApks": {
       "demo": {
-        "filename": "santa-cruz-modern-1.12.0-demo.apk",
-        "sha256": "2e1ceeb538cc3ebc07b90325be97bec3bf3a3eb692a830adc018b2526cf41485",
+        "filename": "santa-cruz-modern-1.12.1-demo.apk",
+        "sha256": "db44fe384140a7ffee5fdc5b0b0bf00a73317eb13d9b6501dee273fb36fc010b",
         "bytes": 76688495
       },
       "live": {
-        "filename": "santa-cruz-modern-1.12.0-live.apk",
-        "sha256": "00b78f36d800c93c29620879f292a21327ea23c2316588a3209273ee074964af",
+        "filename": "santa-cruz-modern-1.12.1-live.apk",
+        "sha256": "1a791c5fc1cd0a6bbb4624f5e3ac193e3e4cd5dea467312fc669cc99fa8002b3",
         "bytes": 76688709
       }
-    }
+    },
+    "signedDemoAndLiveOfflineStartup": "passed",
+    "installedApkHashesMatch": true
   },
   "limits": {
     "individualMediaBytes": 104857600,

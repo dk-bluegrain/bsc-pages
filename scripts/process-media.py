@@ -112,7 +112,7 @@ def vtt(id,duration,events):
   transcripts[lang][id]=list(dict.fromkeys(text for _,_,text in cues))
 
 manifest=json.loads((ROOT/'src/media.json').read_text()) if a.chapter and (ROOT/'src/media.json').exists() else {}
-SOURCE_COMMIT='6ee13357218005e84c3719d5ac5ff7714af83390'
+SOURCE_COMMIT='b9064724b95753a6adf404d3da3c54bbf9e6f50d'
 if a.captions_only:
  provenance_path=MEDIA/'provenance.json'
  provenance=json.loads(provenance_path.read_text());provenance['sourceCommit']=SOURCE_COMMIT
@@ -171,9 +171,9 @@ with tempfile.TemporaryDirectory(prefix='bsc-media-') as temp:
   run('ffmpeg','-hide_banner','-loglevel','error','-y','-f','concat','-safe','0','-i',str(concat),'-vf',f'tpad=stop_mode=clone:stop_duration=30,ass={touch_overlay}','-t',str(max(30,offset)),'-an','-c:v','libx264','-preset','veryfast','-crf','24','-pix_fmt','yuv420p','-movflags','+faststart',str(target))
   duration=probe(target);poster=MEDIA/f'{id}.jpg';shutil.copy2(MEDIA/shots[min(1,len(shots)-1)],poster)
   (MEDIA/'events').mkdir(exist_ok=True);(MEDIA/'events'/f'{id}.json').write_text(json.dumps({'coordinateSpace':{'width':540,'height':1200},'timing':'Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Android records each actual input and native marker. A persistent one-second overlay follows those same events across native window handoffs.','events':events},indent=2)+'\n')
-  manifest[id]={'duration':round(duration,3),'durationLabel':f'{int(duration)//60}:{int(duration)%60:02d}','screenshots':shots,'sources':sources,'fictional':True,'nativeTapOverlay':True,'persistentFinalMarkers':True,'storyboardRevision':3,'smsPreference':'SMS','assetRevision':selections[0][1][1]['scriptSha256'][:12]}
+  manifest[id]={'duration':round(duration,3),'durationLabel':f'{int(duration)//60}:{int(duration)%60:02d}','screenshots':shots,'sources':sources,'fictional':True,'nativeTapOverlay':True,'persistentFinalMarkers':True,'storyboardRevision':3,'smsPreference':'SMS','scriptSha256':script_hash,'assetRevision':hashlib.sha256((MEDIA/f'{id}.mp4').read_bytes()).hexdigest()[:12]}
   vtt(id,duration,events);print(id,manifest[id]['durationLabel'],flush=True)
- ready=all(manifest.get(id,{}).get('storyboardRevision')==policy['revision'] and manifest[id].get('assetRevision')==script_hash[:12] and len(manifest[id].get('sources',[]))==expected[id] for id in ids)
+ ready=all(manifest.get(id,{}).get('storyboardRevision')==policy['revision'] and (manifest[id].get('scriptSha256') or manifest[id].get('assetRevision')) in (script_hash,script_hash[:12]) and len(manifest[id].get('sources',[]))==expected[id] for id in ids)
  if ready:
   # Overview: thirteen8-second segments in the documented chapter order, no speedup.
   overview=[];overview_events=[];excerpts=[]
@@ -201,9 +201,9 @@ with tempfile.TemporaryDirectory(prefix='bsc-media-') as temp:
   concat=temp/'overview.txt';concat.write_text(''.join("file '"+str(c)+"'\n" for c in overview))
   run('ffmpeg','-hide_banner','-loglevel','error','-y','-f','concat','-safe','0','-i',str(concat),'-c','copy','-movflags','+faststart',str(MEDIA/'overview.mp4'))
   (MEDIA/'events/overview.json').write_text(json.dumps({'coordinateSpace':{'width':540,'height':1200},'events':overview_events},indent=2)+'\n')
-  duration=probe(MEDIA/'overview.mp4');shutil.copy2(MEDIA/'accounts.jpg',MEDIA/'overview.jpg');manifest['overview']={'duration':round(duration,3),'durationLabel':'1:44','chapters':ids,'excerpts':excerpts,'fictional':True,'storyboardRevision':3,'assetRevision':manifest['accounts']['assetRevision']};vtt('overview',duration,overview_events)
+  duration=probe(MEDIA/'overview.mp4');shutil.copy2(MEDIA/'accounts.jpg',MEDIA/'overview.jpg');manifest['overview']={'duration':round(duration,3),'durationLabel':'1:44','chapters':ids,'excerpts':excerpts,'fictional':True,'storyboardRevision':3,'assetRevision':hashlib.sha256((MEDIA/'overview.mp4').read_bytes()).hexdigest()[:12]};vtt('overview',duration,overview_events)
   shutil.copy2(MEDIA/'accounts-01.jpg',MEDIA/'hero.jpg')
 (ROOT/'src/transcripts.json').write_text(json.dumps({'languages':transcripts},ensure_ascii=False,indent=2)+'\n')
 (ROOT/'src/media.json').write_text(json.dumps(manifest,indent=2)+'\n')
-(MEDIA/'provenance.json').write_text(json.dumps({'appVersion':'1.12.0 (27)','sourceCommit':SOURCE_COMMIT,'sourceRepository':'https://github.com/dk-bluegrain/bsc','capture':'Scripted native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only. Capture-only QA builds are identified by each source APK digest; distribution hashes are listed separately in downloads.json.','storyboardRevision':3,'smsPolicy':'SMS assistance enabled outside initial pre-choice onboarding and the settings off/on demonstration; SMS delivery restored after configuration. Fake keyboard autofill retains Verify; a separate synthetic one-message consent result completes only SMS-only login automatically. Offline demo and generated token codes are distinct.','audio':'Silent: no music or narration.','security':'Only a disposable QA checkout permits screenshots. Distribution live screens retain FLAG_SECURE.','notEvidenceOf':'Bank authorization, owner-account validation, current live compatibility, or inclusion of all advanced flows in the basic demo.','chapters':manifest},indent=2)+'\n')
+(MEDIA/'provenance.json').write_text(json.dumps({'appVersion':'1.12.1 (28)','sourceCommit':SOURCE_COMMIT,'sourceRepository':'https://github.com/dk-bluegrain/bsc','capture':'Scripted native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only. Capture-only QA builds are identified by each source APK digest; distribution hashes are listed separately in downloads.json.','storyboardRevision':3,'smsPolicy':'SMS assistance enabled outside initial pre-choice onboarding and the settings off/on demonstration; SMS delivery restored after configuration. Fake keyboard autofill retains Verify; a separate synthetic one-message consent result completes only SMS-only login automatically. Offline demo and generated token codes are distinct.','audio':'Silent: no music or narration.','security':'Only a disposable QA checkout permits screenshots. Distribution live screens retain FLAG_SECURE.','notEvidenceOf':'Bank authorization, owner-account validation, current live compatibility, or inclusion of all advanced flows in the basic demo.','chapters':manifest},indent=2)+'\n')
 print('Scripted chapters exported; overview ready:',ready)

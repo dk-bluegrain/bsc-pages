@@ -1,41 +1,41 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:11.016
-Simulierte Bankkarte: gelieferter fiktiver Inhaber, Kennung und volle Testnummer; Dienste informieren ohne Änderungen.
+00:00:00.000 --> 00:00:11.008
+Fiktive Karte: übermittelte Inhaberdaten und Kennung, Nummer bis auf die letzten vier Ziffern verdeckt; Dienste informieren ohne Änderungen.
 
 2
-00:00:11.066 --> 00:00:16.396
-Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert.
+00:00:11.058 --> 00:00:16.420
+Die schreibgeschützten Details zeigen nur die letzten vier Ziffern. Die vollständige Nummer wird nur ausdrücklich kopiert; Kartendienste sind nicht implementiert.
 
 3
-00:00:16.446 --> 00:00:24.621
-Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert.
+00:00:16.470 --> 00:00:24.641
+Die schreibgeschützten Details zeigen nur die letzten vier Ziffern. Die vollständige Nummer wird nur ausdrücklich kopiert; Kartendienste sind nicht implementiert.
 
 4
-00:00:24.671 --> 00:00:30.168
-Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert.
+00:00:24.691 --> 00:00:30.117
+Die schreibgeschützten Details zeigen nur die letzten vier Ziffern. Die vollständige Nummer wird nur ausdrücklich kopiert; Kartendienste sind nicht implementiert.
 
 5
-00:00:30.218 --> 00:00:38.168
-Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert.
+00:00:30.167 --> 00:00:38.117
+Die schreibgeschützten Details zeigen nur die letzten vier Ziffern. Die vollständige Nummer wird nur ausdrücklich kopiert; Kartendienste sind nicht implementiert.
 
 6
-00:00:38.218 --> 00:00:44.054
-Simulierte Bankkarte: gelieferter fiktiver Inhaber, Kennung und volle Testnummer; Dienste informieren ohne Änderungen.
+00:00:38.167 --> 00:00:43.786
+Fiktive Karte: übermittelte Inhaberdaten und Kennung, Nummer bis auf die letzten vier Ziffern verdeckt; Dienste informieren ohne Änderungen.
 
 7
-00:00:44.104 --> 00:00:52.054
-Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert.
+00:00:43.836 --> 00:00:51.786
+Die schreibgeschützten Details zeigen nur die letzten vier Ziffern. Die vollständige Nummer wird nur ausdrücklich kopiert; Kartendienste sind nicht implementiert.
 
 8
-00:00:52.104 --> 00:00:55.405
-Simulierte Bankkarte: gelieferter fiktiver Inhaber, Kennung und volle Testnummer; Dienste informieren ohne Änderungen.
+00:00:51.836 --> 00:00:55.278
+Fiktive Karte: übermittelte Inhaberdaten und Kennung, Nummer bis auf die letzten vier Ziffern verdeckt; Dienste informieren ohne Änderungen.
 
 9
-00:00:55.455 --> 00:01:07.405
-Kartendaten sind nur lesbar; Dienste informieren und ändern nichts. Eine vollständige Nummer erscheint nur, wenn die Bank sie liefert.
+00:00:55.328 --> 00:01:07.278
+Die schreibgeschützten Details zeigen nur die letzten vier Ziffern. Die vollständige Nummer wird nur ausdrücklich kopiert; Kartendienste sind nicht implementiert.
 
 10
-00:01:07.455 --> 00:01:19.550
-Simulierte Bankkarte: gelieferter fiktiver Inhaber, Kennung und volle Testnummer; Dienste informieren ohne Änderungen.
+00:01:07.328 --> 00:01:19.417
+Fiktive Karte: übermittelte Inhaberdaten und Kennung, Nummer bis auf die letzten vier Ziffern verdeckt; Dienste informieren ohne Änderungen.

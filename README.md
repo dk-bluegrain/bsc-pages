@@ -107,7 +107,7 @@ review do not certify linguistic correctness or actual bank compatibility.
    enable Pages only after release assets exist. For later updates, publish
    release assets before pushing new download links.
 5. Publish the versioned APKs, `SHA256SUMS` and `RELEASE-NOTES.md` as Release assets.
-   The current release is `v1.12.0-preview.1`.
+   The current release is `v1.12.1-preview.1`.
 6. Push the committed website, then configure GitHub Pages branch deployment to `main:/docs` (build type legacy).
    Verify anonymous page/media/privacy/download access and compare downloaded
    APK hashes against `SHA256SUMS`.
@@ -123,13 +123,13 @@ python3 scripts/publish.py --apk-directory /absolute/private-source/distribution
 Example manual release publication after the source is committed:
 
 ```sh
-gh release create v1.12.0-preview.1 \
-  /absolute/private-source/distribution/santa-cruz-modern-1.12.0-demo.apk \
-  /absolute/private-source/distribution/santa-cruz-modern-1.12.0-live.apk \
+gh release create v1.12.1-preview.1 \
+  /absolute/private-source/distribution/santa-cruz-modern-1.12.1-demo.apk \
+  /absolute/private-source/distribution/santa-cruz-modern-1.12.1-live.apk \
   /absolute/private-source/distribution/SHA256SUMS \
   RELEASE-NOTES.md \
   --repo dk-bluegrain/bsc-pages --prerelease \
-  --title 'Santa Cruz Modern 1.12.0 — independent preview' \
+  --title 'Santa Cruz Modern 1.12.1 — independent preview' \
   --notes-file RELEASE-NOTES.md
 ```
 
@@ -168,3 +168,11 @@ Media URLs include the script revision hash to invalidate cached older videos.
 Each capture stores the app APK digest, script hash, actual tap timestamps and SMS
 state. Failed attempts remain outside publication. Application privacy HTML is
 exported from the same versioned seven-language resources as the APK.
+
+## Card masking update
+
+Version 1.12.1 keeps card numbers masked to their last four digits even while
+opening details or copying. PAN-shaped bank identifiers stay masked too. The
+explicit sensitive clipboard action retains the exact bank-supplied number.
+The card video and overview use the retaken native masked UI. Their media URLs
+include content hashes so browsers request the corrected footage.

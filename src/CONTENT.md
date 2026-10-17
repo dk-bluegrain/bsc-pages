@@ -80,7 +80,7 @@ feature. None of the copy asserts current live-bank compatibility.
 | `transfers` | Own/same-bank/other-bank contexts, currencies, amounts, fees, memo and separate review/authorization. Basic demo limited to simulated own/saved-beneficiary transfers. |
 | `payments` | Services and credit cards, source account, amount, review and bank authorization; demo test receipts are not money movement. |
 | `beneficiaries` | Lookup/validation, review, save and deletion. Validation is neither saving nor money authorization. Basic demo uses fictional recipients. |
-| `cards` | Read-only bank-supplied fields, reveal/copy of exact identifiers and full numbers only when supplied; unimplemented administration explains the limit with official handoffs, no card-write API request. |
+| `cards` | Read-only bank-supplied fields, bank identifiers and explicit copying of supplied full numbers; numbers always show only the last four digits; unimplemented administration explains the limit with official handoffs, no card-write API request. |
 | `token` | Contract reading, enrollment/storage consent, verification, code generation, unlinking and official identity handoff; basic demo has no banking-token enrollment/generation. |
 | `qr` | Account/recipient sharing, payment-request context, scanning/manual entry, recipient review, saving and printing where supported. QR never authorizes writes or money. Unsupported third-party formats remain unsupported. Do not interpret a shareable account QR as a universal bank payment request. |
 | `settings` | Language/profile/demo settings, help, logout, and explicit reconciliation after actual bank history/status checking. Reconciliation neither repeats nor cancels prior operations. |

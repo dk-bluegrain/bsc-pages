@@ -1,41 +1,41 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:11.016
-Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.
+00:00:00.000 --> 00:00:11.008
+Tarjeta ficticia: titular e identificador recibidos, número oculto salvo los últimos cuatro dígitos; servicios informativos sin cambios.
 
 2
-00:00:11.066 --> 00:00:16.396
-Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+00:00:11.058 --> 00:00:16.420
+Solo lectura: se muestran únicamente los últimos cuatro dígitos. Copiar el número completo requiere una acción explícita; los servicios no están implementados.
 
 3
-00:00:16.446 --> 00:00:24.621
-Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+00:00:16.470 --> 00:00:24.641
+Solo lectura: se muestran únicamente los últimos cuatro dígitos. Copiar el número completo requiere una acción explícita; los servicios no están implementados.
 
 4
-00:00:24.671 --> 00:00:30.168
-Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+00:00:24.691 --> 00:00:30.117
+Solo lectura: se muestran únicamente los últimos cuatro dígitos. Copiar el número completo requiere una acción explícita; los servicios no están implementados.
 
 5
-00:00:30.218 --> 00:00:38.168
-Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+00:00:30.167 --> 00:00:38.117
+Solo lectura: se muestran únicamente los últimos cuatro dígitos. Copiar el número completo requiere una acción explícita; los servicios no están implementados.
 
 6
-00:00:38.218 --> 00:00:44.054
-Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.
+00:00:38.167 --> 00:00:43.786
+Tarjeta ficticia: titular e identificador recibidos, número oculto salvo los últimos cuatro dígitos; servicios informativos sin cambios.
 
 7
-00:00:44.104 --> 00:00:52.054
-Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+00:00:43.836 --> 00:00:51.786
+Solo lectura: se muestran únicamente los últimos cuatro dígitos. Copiar el número completo requiere una acción explícita; los servicios no están implementados.
 
 8
-00:00:52.104 --> 00:00:55.405
-Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.
+00:00:51.836 --> 00:00:55.278
+Tarjeta ficticia: titular e identificador recibidos, número oculto salvo los últimos cuatro dígitos; servicios informativos sin cambios.
 
 9
-00:00:55.455 --> 00:01:07.405
-Datos de tarjeta de solo lectura; los servicios informan y no realizan cambios. El número completo aparece solo si lo facilita el banco.
+00:00:55.328 --> 00:01:07.278
+Solo lectura: se muestran únicamente los últimos cuatro dígitos. Copiar el número completo requiere una acción explícita; los servicios no están implementados.
 
 10
-00:01:07.455 --> 00:01:19.550
-Tarjeta de banco simulado: titular, identificador y número completo de prueba recibidos; servicios informativos sin cambios.
+00:01:07.328 --> 00:01:19.417
+Tarjeta ficticia: titular e identificador recibidos, número oculto salvo los últimos cuatro dígitos; servicios informativos sin cambios.

@@ -5,7 +5,7 @@ from html import escape as E
 import json,shutil
 ROOT=Path(__file__).resolve().parents[1];DOCS=ROOT/'docs'
 LANGS=json.loads((ROOT/'src/content.json').read_text())['languages']
-VERSION='1.12.0';TAG='v1.12.0-preview.1';BASE='https://dk-bluegrain.github.io/bsc-pages'
+VERSION='1.12.1';TAG='v1.12.1-preview.1';BASE='https://dk-bluegrain.github.io/bsc-pages'
 RELEASE=f'https://github.com/dk-bluegrain/bsc-pages/releases/download/{TAG}'
 (DOCS/'assets').mkdir(parents=True,exist_ok=True)
 for name in ('style.css','site.js','mark.svg'):shutil.copy2(ROOT/'src'/name,DOCS/'assets'/name)

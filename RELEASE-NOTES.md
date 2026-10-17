@@ -1,4 +1,4 @@
-Santa Cruz Modern 1.12.0 (27) is an independent Android preview for Android 8.0
+Santa Cruz Modern 1.12.1 (28) is an independent Android preview for Android 8.0
 (API 26) and later, targeting Android 16/API 36. This is a direct APK distribution;
 no Google Play submission is included.
 
@@ -28,19 +28,13 @@ unresolved-operation markers. The separate demo can coexist with the normal app.
 
 Changes in this preview:
 
-- Optional first-use SMS assistance and a Settings switch use Android one-message
-  User Consent without broad inbox access. An approved SMS-only login can finish
-  automatically; security questions and operations keep explicit Verify.
-- Registration returns to a fresh bank login inside the app, with biometric
-  re-entry offered once for saved access. Logout stays on the login screen.
-- Home removes the former heading, moves Refresh to the top bar and groups
-  Services above the final Beneficiaries section.
-- Card administration explains that the services are not implemented and sends
-  no administration request. Read-only fields include exact bank-supplied
-  identifiers and holder name; full card numbers appear only when supplied.
-- Videos follow written scripts, with reading pauses and clearly labeled fake
-  bank SMS/consent callbacks. All later scenes keep assistance enabled, except
-  the configuration demonstration.
+- Card numbers remain masked to their last four digits throughout details and
+  copying. PAN-shaped bank identifiers are masked too. The complete bank-supplied
+  number remains available only through the explicit sensitive clipboard action.
+- The card walkthrough, screenshots and overview were regenerated from native
+  fictional fixtures and show the masked card details.
+- Optional SMS assistance, registration re-entry, grouped home services and
+  unavailable card-service explanations from 1.12.0 are retained.
 
 The versioned privacy notice is updated. Tests use fake transports only; no
 personal credentials or real bank operations are submitted. Owner-device/account

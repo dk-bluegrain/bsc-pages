@@ -58,7 +58,7 @@
       "cards": [
         "Interfaz nativa de tarjetas de solo lectura, con datos ficticios y respuestas bancarias simuladas.",
         "Titular e identificador aparecen si los facilita el banco; mostrar o copiar conserva esos datos recibidos.",
-        "El número completo aparece solo si lo facilita el banco; nunca se reconstruye desde dígitos ocultos.",
+        "El número siempre muestra solo los últimos cuatro dígitos. El número completo solo se puede copiar mediante una acción explícita si lo facilita el banco.",
         "Los servicios solo informan y no activan ni modifican tarjetas. La demo básica no incluye administración de tarjetas."
       ],
       "token": [
@@ -153,7 +153,7 @@
       "cards": [
         "Native read-only card UI with fictional data and simulated banking responses.",
         "Holder and identifier appear if supplied by the bank; reveal/copy preserves those received values.",
-        "A full number appears only if the bank supplies it; it is never reconstructed from masked digits.",
+        "The number always shows only its last four digits. The full number is available only through explicit copying when supplied by the bank.",
         "Card services provide information and make no card changes. The basic demo has no card administration."
       ],
       "token": [
@@ -248,7 +248,7 @@
       "cards": [
         "Native Kartenansicht, nur lesbar, mit fiktiven Daten und simulierten Bankantworten.",
         "Inhaber und Kennung erscheinen, wenn die Bank sie liefert; Anzeigen/Kopieren verwendet diese empfangenen Werte.",
-        "Die vollständige Nummer erscheint nur, wenn die Bank sie liefert; sie wird nie aus verdeckten Ziffern rekonstruiert.",
+        "Die Nummer zeigt stets nur die letzten vier Ziffern. Die vollständige Nummer kann nur ausdrücklich kopiert werden, wenn sie von der Bank übermittelt wurde.",
         "Kartendienste informieren nur und ändern nichts. Die einfache Demo enthält keine Kartenverwaltung."
       ],
       "token": [
@@ -343,7 +343,7 @@
       "cards": [
         "Interface native des cartes en lecture seule, avec données fictives et réponses bancaires simulées.",
         "Titulaire et identifiant apparaissent si la banque les fournit ; afficher/copier conserve ces valeurs reçues.",
-        "Le numéro complet apparaît seulement si la banque le fournit ; il n’est jamais reconstruit depuis les chiffres masqués.",
+        "Le numéro affiche toujours uniquement les quatre derniers chiffres. Le numéro complet peut seulement être copié par une action explicite si la banque le fournit.",
         "Les services informent sans modifier les cartes. La démo de base ne comprend pas d’administration des cartes."
       ],
       "token": [
@@ -438,7 +438,7 @@
       "cards": [
         "Нативные данные карт — только для чтения, с вымышленными сведениями и имитацией ответов банка.",
         "Владелец и идентификатор показаны, если их передал банк; показ и копирование сохраняют полученные значения.",
-        "Полный номер показан лишь при получении от банка; он никогда не восстанавливается из скрытых цифр.",
+        "Номер всегда показывает только последние четыре цифры. Полный номер можно лишь явно скопировать, если его предоставил банк.",
         "Сервисы карт только информируют и ничего не меняют. В базовой демоверсии нет управления картами."
       ],
       "token": [
@@ -533,7 +533,7 @@
       "cards": [
         "Нативні дані карток — лише для читання, з вигаданими відомостями й імітацією відповідей банку.",
         "Власник та ідентифікатор показані, якщо їх передав банк; показ і копіювання зберігають отримані значення.",
-        "Повний номер показано лише після отримання від банку; він ніколи не відновлюється з прихованих цифр.",
+        "Номер завжди показує лише останні чотири цифри. Повний номер можна лише явно скопіювати, якщо його надав банк.",
         "Сервіси карток лише інформують і нічого не змінюють. У базовій демоверсії немає керування картками."
       ],
       "token": [
@@ -628,7 +628,7 @@
       "cards": [
         "Interface nativa de cartões só para leitura, com dados fictícios e respostas bancárias simuladas.",
         "Titular e identificador aparecem se o banco fornecer; mostrar/copiar preserva os valores recebidos.",
-        "O número completo aparece apenas se fornecido pelo banco; nunca é reconstruído de dígitos ocultos.",
+        "O número sempre mostra apenas os últimos quatro dígitos. O número completo só pode ser copiado por uma ação explícita se fornecido pelo banco.",
         "Os serviços só informam e não alteram cartões. A demonstração básica não inclui administração de cartões."
       ],
       "token": [
