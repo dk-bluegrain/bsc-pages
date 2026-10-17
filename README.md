@@ -23,8 +23,11 @@ python3 scripts/check.py
 python3 -m http.server 8765 --bind 127.0.0.1 --directory docs
 ```
 
-Routes are `/<language>/` and `/<language>/privacy/`; `/` renders Spanish. Chapter
-anchors stay shareable and persist when changing languages. The language selector
+Routes are `/<language>/`, `/<language>/download/` and `/<language>/privacy/`;
+`/` renders Spanish. All landing-page download actions lead to the separate
+edition-choice page. The unofficial APK link follows the bank-independence,
+security and liability disclosures and the illustrated Android installation guide.
+Chapter anchors stay shareable and persist when changing languages. The language selector
 remains available while scrolling. JPG previews appear before playback; chapter
 previews load lazily. Video players and caption tracks stay in inert templates
 until a visitor clicks Play, so browsing chapters requests no video data. Native
@@ -40,6 +43,9 @@ The site has no banking login, credential collection, analytics or backend.
 
 - `src/ux-copy.json` and `src/UX-COPY.md`: localized hero, six concrete benefits,
   SMS spotlight, task-focused chapter intros and ordered main-video cues.
+- `src/download-copy.json` and `src/DOWNLOAD-COPY.md`: seven-language edition
+  choices, developer-attributed publication rationale, security/risk notices and
+  six installation steps with real English Android 15 emulator screenshots.
 - `src/content.json` and `src/CONTENT.md`: edition/download, support, installation
   and privacy copy. Original-app feature absences are not inferred or invented.
 - `src/captions.json`, `src/scenario-captions.json`, `src/scene-captions.json` and

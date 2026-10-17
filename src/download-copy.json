@@ -1,0 +1,435 @@
+{
+  "context": {
+    "action": "Landing-page hero/demo-card navigation to the separate edition-choice page; choosing, not immediately downloading.",
+    "title": "Download page document title and H1: user chooses between two Android editions.",
+    "intro": "Opening paragraph: offline demo or unofficial real banking after reading guide and risks.",
+    "demoBadge": "Prominent demo card badge: offline, no real transactions.",
+    "liveBadge": "Prominent live card and download badge: unofficial, real money at risk.",
+    "demoTitle": "Demo choice card heading and checksum edition label.",
+    "liveTitle": "Unofficial banking choice card heading and checksum edition label.",
+    "demoBody": "Demo description: fictional data, no bank connection/credentials/money; advanced video features not all included.",
+    "liveBody": "Live description: independent and experimental, no bank endorsement/support, real-money consequences and unresolved bank permission/compatibility/validation.",
+    "guideAction": "Link to disclosures and installation guide, never directly to the real-banking APK.",
+    "whyTitle": "Heading for developer-attributed store-publication rationale.",
+    "whyBody": "Owner-supplied terms-conflict rationale in developer voice; no independent legal finding or claim that sideloading resolves it.",
+    "permissionBody": "Explains APK and temporary source-specific Android installer permission, not bank access; no root.",
+    "securityTitle": "Heading introducing concrete release safeguards and developer intent.",
+    "securityBody": "Developer intent not to include malware; project-signed releases and published SHA-256, without certification claims.",
+    "verificationBody": "Explicit audit/security/checksum limitations, possible compromise and link context for APK privacy before login.",
+    "riskTitle": "Prominent heading for voluntary installation and use at own risk.",
+    "riskBody": "Financial/data/access risks, bank terms/restrictions and unverified live capabilities; keep official access and verify uncertain outcomes.",
+    "liabilityBody": "As-is/warranty/liability disclaimer only as permitted by law; preserves non-waivable rights and liability.",
+    "guideTitle": "Illustrated installation section heading and demo-card link to that section.",
+    "guideIntro": "Android 8+ scope, source permission for both APKs, additional live-bank disclosures.",
+    "screensNote": "Actual English Android 15 emulator screenshots using demo APK; device-dependent presentation; tap to enlarge; no real banking data.",
+    "protectBody": "Keep Play Protect on; allow scans; stop on harmful warning or policy block, use official banking; never bypass protections.",
+    "downloadTitle": "Heading for real-banking APK offered after disclosures and guide.",
+    "downloadBody": "Voluntary informed-choice explanation; no bank approval or waiver of protected rights, not an acceptance form.",
+    "downloadAction": "Starts download of explicitly unofficial banking APK, can affect real money.",
+    "checksumLabel": "Heading for published filenames and digests from unchanged release metadata.",
+    "sourcesLabel": "Label for official Android and Google Play Protect help references.",
+    "backLabel": "Navigation to matching-language app tour.",
+    "steps": "Six ordered installation steps. Each title/body has the context documented in DOWNLOAD-COPY.md; images beside steps 2–5 are real English Android 15 captures. No arguments or bank/user text."
+  },
+  "languages": {
+    "es": {
+      "action": "Elegir una app",
+      "title": "Elige cómo quieres probarla",
+      "intro": "Dos apps Android distintas. Empieza con la demo sin conexión o lee la guía completa de instalación y riesgos antes de elegir la app no oficial para banca real.",
+      "demoBadge": "SIN CONEXIÓN · SIN OPERACIONES REALES",
+      "liveBadge": "NO OFICIAL · DINERO REAL EN RIESGO",
+      "demoTitle": "App de demostración",
+      "liveTitle": "App bancaria no oficial",
+      "demoBody": "Prueba cuentas ficticias, transferencias locales y comprobantes de prueba. Esta app no se conecta al banco, no necesita credenciales bancarias y no puede mover dinero real. No incluye todas las funciones avanzadas de los videos.",
+      "liveBody": "Cliente independiente y experimental diseñado para conectarse a cuentas reales de Banco Santa Cruz. El banco no lo desarrolla, aprueba, respalda ni ofrece soporte. Las operaciones aceptadas pueden afectar cuentas y mover dinero real. La autorización del banco y la compatibilidad actual siguen sin resolverse; la validación con cuentas personales está incompleta.",
+      "guideAction": "Leer la guía y los riesgos",
+      "whyTitle": "¿Por qué se descarga un APK directamente?",
+      "whyBody": "Del desarrollador: no puedo ofrecer este proyecto en Google Play ni en otras tiendas porque, según mi interpretación, publicar este cliente independiente entraría en conflicto con los términos y condiciones de Banco Santa Cruz. El banco no ha autorizado este proyecto. La distribución directa no resuelve ese conflicto ni te concede permiso del banco. Revisa los términos de tu cuenta; si tienes dudas, usa los canales oficiales del banco.",
+      "permissionBody": "Un APK es un archivo de instalación de Android. Al descargarlo de GitHub en lugar de una tienda, Android exige permiso al navegador o gestor de archivos que lo abre para instalar apps de esa fuente. Es un permiso para ese instalador, no acceso bancario para Santa Cruz Modern. Solo se necesita para instalar o actualizar; desactívalo después. No requiere rootear el teléfono.",
+      "securityTitle": "Cómo protejo la versión distribuida",
+      "securityBody": "Desarrollo y distribuyo esta aplicación teniendo en cuenta la seguridad. No incluyo intencionalmente virus, malware, software espía ni código diseñado para robar información. Las versiones llevan una firma digital con la clave de distribución del proyecto y publico sumas SHA-256 para que compares tu descarga con el archivo publicado.",
+      "verificationBody": "Estas medidas no son una auditoría de seguridad independiente ni garantizan que la app, sus dependencias, tu dispositivo o el canal de distribución estén libres de vulnerabilidades o ataques maliciosos. Una suma coincidente confirma que el archivo coincide con la versión publicada; no demuestra que el software sea seguro. Lee el aviso de privacidad del APK sobre credenciales, token y archivos antes de iniciar sesión.",
+      "riskTitle": "Tu decisión, tu riesgo",
+      "riskBody": "La instalación y el uso de la app bancaria no oficial son voluntarios y bajo tu propio riesgo. Los errores, vulnerabilidades, dispositivos comprometidos, cambios o restricciones del banco y conflictos con sus términos pueden exponer credenciales o datos personales, interrumpir el acceso o causar pérdidas económicas. No se garantiza que funcionen el inicio de sesión, la activación del token o las operaciones. Conserva acceso a los canales oficiales y consulta los registros reales del banco si un resultado es incierto.",
+      "liabilityBody": "En la máxima medida permitida por la ley aplicable, la aplicación se ofrece «tal cual», sin garantías, y el desarrollador excluye su responsabilidad por pérdidas o daños derivados de su instalación o uso, incluidas pérdidas económicas, de datos e interrupciones de acceso. Este aviso no excluye responsabilidades ni derechos que legalmente no puedan excluirse o renunciarse.",
+      "guideTitle": "Instalar en Android, paso a paso",
+      "guideIntro": "Para Android 8.0 o posterior. Ambas apps requieren el mismo permiso de instalación. Lee las advertencias adicionales sobre banca real antes de descargar la edición no oficial.",
+      "screensNote": "Capturas reales de un emulador Android 15 en inglés con un APK de demo. El texto, navegador y diseño de tu teléfono pueden variar. Toca una imagen para ampliarla. No se usan cuentas ni operaciones bancarias reales.",
+      "protectBody": "Mantén Google Play Protect activado. Si Android ofrece un análisis, deja que termine y revisa el resultado. Si detecta la app como dañina, detente y contacta al proyecto; no desactives protecciones ni omitas esa advertencia. Si una política del dispositivo o la Protección Avanzada bloquea la instalación, usa los canales bancarios oficiales.",
+      "downloadTitle": "Descargar el APK bancario no oficial",
+      "downloadBody": "Continúa solo si has leído el aviso de independencia, la guía de instalación, el aviso de privacidad y los riesgos, y decides asumirlos. La descarga no implica aprobación del banco ni renuncia a derechos protegidos por ley.",
+      "downloadAction": "Descargar APK bancario no oficial",
+      "checksumLabel": "SHA-256 publicado",
+      "sourcesLabel": "Guías de instalación y protección de Android",
+      "backLabel": "Volver al recorrido de la app",
+      "steps": [
+        {
+          "title": "Elige y verifica tu APK",
+          "body": "Usa solo los enlaces de esta página a la versión del proyecto en GitHub. Comprueba edición, versión y nombre del archivo; compara su SHA-256 con SHA256SUMS de esa misma versión. Si no coinciden, no lo instales. Cada app requiere unos 77 MB de descarga y espacio adicional para instalarse."
+        },
+        {
+          "title": "Abre el archivo descargado",
+          "body": "En tu teléfono Android, abre el APK desde Descargas del navegador o un gestor de archivos. Si Android bloquea esa fuente, toca Configuración en el aviso. También puedes buscar “Instalar apps desconocidas” en los ajustes (normalmente Apps → Acceso especial) y elegir el navegador o gestor que abrió el APK."
+        },
+        {
+          "title": "Permite solo esa fuente, temporalmente",
+          "body": "Lee la advertencia de Android. Si decides continuar, activa “Permitir desde esta fuente” para ese navegador o gestor. La captura muestra un navegador de ejemplo. No habilites otras fuentes. Vuelve al APK para continuar."
+        },
+        {
+          "title": "Revisa el instalador e instala",
+          "body": "Comprueba que elegiste Santa Cruz Modern y la edición correcta del APK; toca Instalar. Las capturas usan el paquete separado de demo. La edición bancaria puede operar con datos y dinero reales; la demo no. Deja que termine cualquier análisis; detente si aparece una advertencia de app dañina."
+        },
+        {
+          "title": "Desactiva de nuevo el permiso",
+          "body": "Después de instalar, vuelve a “Instalar apps desconocidas” y desactiva “Permitir desde esta fuente”. La app instalada seguirá funcionando. Para actualizar, descarga desde el mismo canal de versiones del proyecto y repite el permiso temporal."
+        },
+        {
+          "title": "Lee los avisos antes de usarla",
+          "body": "Abre la app y lee sus términos y aviso de privacidad antes de aceptar. La demo usa datos ficticios: nunca introduzcas credenciales bancarias reales allí. Solo la app bancaria no oficial está destinada a cuentas reales, sujeta a los controles del banco y riesgos anteriores. Si una actualización tiene una firma incompatible, conserva la app y sus datos: no la desinstales para forzarla, pues podrías perder el token y registros de operaciones inciertas. Usa la demo separada o contacta al soporte del proyecto."
+        }
+      ]
+    },
+    "en": {
+      "action": "Choose an app",
+      "title": "Choose how you want to try it",
+      "intro": "Two separate Android apps. Start with the offline demo, or read the full installation and risk guide before choosing the unofficial app for real banking.",
+      "demoBadge": "OFFLINE · NO REAL TRANSACTIONS",
+      "liveBadge": "UNOFFICIAL · REAL MONEY AT RISK",
+      "demoTitle": "Demo app",
+      "liveTitle": "Unofficial banking app",
+      "demoBody": "Try fictional accounts, local transfers and test receipts. This app does not connect to the bank, needs no banking credentials and cannot move real money. It does not include every advanced feature shown in the videos.",
+      "liveBody": "An independent, experimental client intended to connect to real Banco Santa Cruz accounts. It is not made, approved, endorsed or supported by the bank. Successful operations can affect real accounts and move real money. Bank authorization and current compatibility remain unresolved; personal-account validation is incomplete.",
+      "guideAction": "Read the guide and risks",
+      "whyTitle": "Why a direct APK download?",
+      "whyBody": "From the developer: I cannot offer this project through Google Play or other app stores because, in my understanding, publishing this independent client would conflict with Banco Santa Cruz’s terms and conditions. The bank has not authorized this project. Direct distribution does not resolve that conflict or give you permission from the bank. Review the terms that apply to your account; if you are unsure, use the bank’s official channels.",
+      "permissionBody": "An APK is an Android installation file. Because you download it from GitHub rather than an app store, Android requires permission for the browser or file manager opening it to install apps from that source. This is permission for that installer, not banking access for Santa Cruz Modern. It is needed only for installation or updates; turn it off afterwards. It does not require rooting your phone.",
+      "securityTitle": "What I do to protect the release",
+      "securityBody": "I build and distribute this application with security in mind. I do not intentionally include viruses, malware, spyware or code designed to steal your information. The releases are digitally signed with the project’s distribution key, and I publish SHA-256 checksums so you can compare your download with the released file.",
+      "verificationBody": "These safeguards are not an independent security audit or a guarantee that the app, its dependencies, your device or the distribution channel is free of vulnerabilities or malicious compromise. A matching checksum confirms that the file matches the published release; it does not prove that the software is safe. Read the APK privacy notice for credential, token and file handling before signing in.",
+      "riskTitle": "Your choice, your risk",
+      "riskBody": "Installing and using the unofficial banking app is voluntary and at your own risk. Bugs, security vulnerabilities, device compromise, bank service changes or restrictions, and conflicts with bank terms can expose credentials or personal data, interrupt access, or cause financial loss. No guarantee is made that login, token enrollment or any transaction will work. Keep access to the bank’s official channels and check actual bank records whenever an outcome is uncertain.",
+      "liabilityBody": "To the fullest extent permitted by applicable law, the application is provided “as is”, without warranties, and the developer disclaims liability for losses or damage arising from its installation or use, including financial loss, data loss and interrupted access. This notice does not exclude liability or rights that cannot lawfully be excluded or waived.",
+      "guideTitle": "Install on Android, step by step",
+      "guideIntro": "For Android 8.0 or later. The same installation permission applies to both APKs. Read the additional real-banking disclosures above before downloading the unofficial edition.",
+      "screensNote": "Actual Android 15 emulator screenshots, shown in English with a demo APK. Your phone’s wording, browser and layout may differ. Tap an image to enlarge it. No bank account or real transaction is used.",
+      "protectBody": "Keep Google Play Protect enabled. If Android offers a scan, let it complete and review the result. If the app is flagged as harmful, stop and contact the project; do not disable protections or bypass a harmful-app warning. If device policy or Advanced Protection blocks installation, use official banking channels.",
+      "downloadTitle": "Download the unofficial banking APK",
+      "downloadBody": "Continue only if you have read the independence notice, installation guide, privacy notice and risks, and choose to accept those risks. Downloading does not establish bank approval or waive rights protected by law.",
+      "downloadAction": "Download unofficial banking APK",
+      "checksumLabel": "Published SHA-256",
+      "sourcesLabel": "Android installation and protection guidance",
+      "backLabel": "Back to the app tour",
+      "steps": [
+        {
+          "title": "Choose and verify your APK",
+          "body": "Use only the links on this page to the project’s GitHub Release. Check the edition, version and filename, then compare the downloaded file’s SHA-256 with SHA256SUMS from that same release. If they differ, do not install. Both apps need about 77 MB to download; installation needs additional space."
+        },
+        {
+          "title": "Open the downloaded file",
+          "body": "On your Android phone, open the APK from your browser’s Downloads or a file manager. If Android blocks this source, choose Settings in the prompt. You can also search Android Settings for “Install unknown apps” (often under Apps → Special app access) and select the browser or file manager that opened the APK."
+        },
+        {
+          "title": "Allow only this source, temporarily",
+          "body": "Read Android’s warning. If you choose to continue, enable “Allow from this source” for the specific browser or file manager. The screenshot shows an example browser. Do not enable unrelated sources. Return to the APK to continue."
+        },
+        {
+          "title": "Review the installer and install",
+          "body": "Check that you selected Santa Cruz Modern and the correct APK edition, then tap Install. The screenshots use the separate demo package. A banking installation can work with real data and money; the demo cannot. Allow any security scan to finish; stop if a harmful-app warning appears."
+        },
+        {
+          "title": "Turn the installation permission back off",
+          "body": "After installation, return to the same “Install unknown apps” screen and disable “Allow from this source”. The installed app can still run. For a future update, download from the same project release channel and repeat the temporary permission step."
+        },
+        {
+          "title": "Read the app notices before use",
+          "body": "Open the app and read its terms and privacy notice before accepting. The demo uses fictional data; never enter real banking credentials there. Only the unofficial banking app is intended for real accounts, subject to bank checks and the risks above. If an update has a conflicting signature, keep the existing app and its data: do not uninstall to force it, because token state and uncertain-operation records could be lost. Use the separate demo or contact project support."
+        }
+      ]
+    },
+    "de": {
+      "action": "App auswählen",
+      "title": "Wählen Sie, wie Sie die App ausprobieren möchten",
+      "intro": "Zwei getrennte Android-Apps. Beginnen Sie mit der Offline-Demo oder lesen Sie die vollständige Installationsanleitung und die Risiken der inoffiziellen App für echtes Banking.",
+      "demoBadge": "OFFLINE · KEINE ECHTEN TRANSAKTIONEN",
+      "liveBadge": "INOFFIZIELL · ECHTES GELD GEFÄHRDET",
+      "demoTitle": "Demo-App",
+      "liveTitle": "Inoffizielle Banking-App",
+      "demoBody": "Testen Sie fiktive Konten, lokale Überweisungen und Testbelege. Diese App verbindet sich nicht mit der Bank, benötigt keine Bankzugangsdaten und kann kein echtes Geld bewegen. Sie enthält nicht alle erweiterten Funktionen der Videos.",
+      "liveBody": "Ein unabhängiger, experimenteller Client für den Zugriff auf echte Konten bei Banco Santa Cruz. Er wird nicht von der Bank entwickelt, genehmigt, empfohlen oder unterstützt. Erfolgreiche Vorgänge können echte Konten und Geld betreffen. Bankgenehmigung und aktuelle Kompatibilität sind ungeklärt; die Prüfung mit persönlichen Konten ist unvollständig.",
+      "guideAction": "Anleitung und Risiken lesen",
+      "whyTitle": "Warum ein direkter APK-Download?",
+      "whyBody": "Vom Entwickler: Ich kann dieses Projekt nicht über Google Play oder andere App-Stores anbieten, weil die Veröffentlichung dieses unabhängigen Clients nach meinem Verständnis mit den Geschäftsbedingungen von Banco Santa Cruz kollidieren würde. Die Bank hat das Projekt nicht autorisiert. Eine direkte Verteilung löst diesen Konflikt nicht und erteilt Ihnen keine Bankgenehmigung. Prüfen Sie die Bedingungen Ihres Kontos; nutzen Sie im Zweifel die offiziellen Bankkanäle.",
+      "permissionBody": "Eine APK ist eine Android-Installationsdatei. Beim Download von GitHub statt aus einem App-Store verlangt Android eine Installationsberechtigung für den Browser oder Dateimanager, der sie öffnet. Sie gilt für dieses Installationsprogramm und gewährt Santa Cruz Modern keinen Bankzugriff. Sie wird nur zur Installation oder Aktualisierung benötigt; schalten Sie sie danach aus. Root-Zugriff ist nicht erforderlich.",
+      "securityTitle": "Wie ich die Veröffentlichung absichere",
+      "securityBody": "Ich entwickle und verteile diese Anwendung mit Blick auf Sicherheit. Ich füge wissentlich keine Viren, Schadsoftware, Spyware oder Code zum Diebstahl Ihrer Daten hinzu. Veröffentlichungen werden mit dem Verteilungsschlüssel des Projekts digital signiert. Dazu veröffentliche ich SHA-256-Prüfsummen zum Vergleich Ihrer Datei mit der veröffentlichten Version.",
+      "verificationBody": "Diese Maßnahmen sind kein unabhängiges Sicherheitsaudit und garantieren nicht, dass App, Abhängigkeiten, Gerät oder Verteilungskanal frei von Schwachstellen oder böswilligen Manipulationen sind. Eine passende Prüfsumme bestätigt die Übereinstimmung mit der Veröffentlichung, nicht die Sicherheit der Software. Lesen Sie vor der Anmeldung den APK-Datenschutzhinweis zu Zugangsdaten, Token und Dateien.",
+      "riskTitle": "Ihre Entscheidung, Ihr Risiko",
+      "riskBody": "Installation und Nutzung der inoffiziellen Banking-App erfolgen freiwillig und auf eigenes Risiko. Fehler, Sicherheitslücken, kompromittierte Geräte, Änderungen oder Einschränkungen der Bank sowie Konflikte mit ihren Bedingungen können Zugangsdaten oder persönliche Daten offenlegen, den Zugang unterbrechen oder finanzielle Verluste verursachen. Anmeldung, Token-Aktivierung und Transaktionen werden nicht garantiert. Behalten Sie Zugang zu offiziellen Bankkanälen und prüfen Sie bei unklarem Ausgang die tatsächlichen Bankaufzeichnungen.",
+      "liabilityBody": "Soweit gesetzlich zulässig, wird die Anwendung ohne Gewähr bereitgestellt und der Entwickler schließt die Haftung für Schäden oder Verluste aus Installation oder Nutzung aus, einschließlich finanzieller Verluste, Datenverlust und Zugangsunterbrechungen. Gesetzlich nicht ausschließbare Haftung und unverzichtbare Rechte bleiben unberührt.",
+      "guideTitle": "Installation unter Android, Schritt für Schritt",
+      "guideIntro": "Für Android ab 8.0. Beide APKs benötigen dieselbe Installationsberechtigung. Lesen Sie vor dem Download der inoffiziellen Edition die zusätzlichen Hinweise zum echten Banking.",
+      "screensNote": "Echte Aufnahmen eines Android-15-Emulators auf Englisch mit einer Demo-APK. Texte, Browser und Darstellung auf Ihrem Gerät können abweichen. Bilder lassen sich antippen und vergrößern. Keine echten Bankkonten oder Transaktionen.",
+      "protectBody": "Lassen Sie Google Play Protect eingeschaltet. Lassen Sie eine angebotene Prüfung abschließen und lesen Sie das Ergebnis. Wird die App als schädlich erkannt, brechen Sie ab und kontaktieren Sie das Projekt; deaktivieren Sie keine Schutzfunktionen und umgehen Sie keine Schadsoftwarewarnung. Blockieren Geräterichtlinien oder Erweiterter Schutz die Installation, nutzen Sie offizielle Bankkanäle.",
+      "downloadTitle": "Inoffizielle Banking-APK herunterladen",
+      "downloadBody": "Fahren Sie nur fort, wenn Sie Unabhängigkeitshinweis, Installationsanleitung, Datenschutzhinweis und Risiken gelesen haben und diese Risiken eingehen möchten. Der Download ist keine Bankgenehmigung und kein Verzicht auf gesetzlich geschützte Rechte.",
+      "downloadAction": "Inoffizielle Banking-APK herunterladen",
+      "checksumLabel": "Veröffentlichte SHA-256-Prüfsumme",
+      "sourcesLabel": "Android-Anleitungen zu Installation und Schutz",
+      "backLabel": "Zurück zur App-Tour",
+      "steps": [
+        {
+          "title": "APK auswählen und prüfen",
+          "body": "Nutzen Sie nur die Links dieser Seite zum GitHub-Release des Projekts. Prüfen Sie Edition, Version und Dateinamen und vergleichen Sie die SHA-256-Prüfsumme mit SHA256SUMS derselben Veröffentlichung. Bei Abweichungen nicht installieren. Der Download benötigt je App etwa 77 MB, die Installation zusätzlichen Speicher."
+        },
+        {
+          "title": "Heruntergeladene Datei öffnen",
+          "body": "Öffnen Sie die APK auf Ihrem Android-Gerät über die Downloads des Browsers oder einen Dateimanager. Blockiert Android die Quelle, wählen Sie im Hinweis Einstellungen. Alternativ suchen Sie dort nach „Unbekannte Apps installieren“ (oft Apps → Spezieller App-Zugriff) und wählen den Browser oder Dateimanager, der die APK öffnet."
+        },
+        {
+          "title": "Nur diese Quelle vorübergehend erlauben",
+          "body": "Lesen Sie die Android-Warnung. Wenn Sie fortfahren möchten, aktivieren Sie „Dieser Quelle vertrauen“ für den betreffenden Browser oder Dateimanager. Das Bild zeigt einen Beispielbrowser. Aktivieren Sie keine anderen Quellen. Kehren Sie zur APK zurück."
+        },
+        {
+          "title": "Installationsdialog prüfen und installieren",
+          "body": "Prüfen Sie Santa Cruz Modern und die richtige APK-Edition, dann wählen Sie Installieren. Die Bilder zeigen das separate Demo-Paket. Die Banking-Edition kann echte Daten und Geld betreffen, die Demo nicht. Lassen Sie Sicherheitsprüfungen abschließen; brechen Sie bei einer Schadsoftwarewarnung ab."
+        },
+        {
+          "title": "Installationsberechtigung wieder ausschalten",
+          "body": "Kehren Sie nach der Installation zu „Unbekannte Apps installieren“ zurück und deaktivieren Sie die Erlaubnis für diese Quelle. Die installierte App funktioniert weiter. Laden Sie Updates aus demselben Veröffentlichungskanal und erlauben Sie die Quelle erneut nur vorübergehend."
+        },
+        {
+          "title": "Hinweise vor der Nutzung lesen",
+          "body": "Öffnen Sie die App und lesen Sie Bedingungen und Datenschutzhinweis vor der Zustimmung. Die Demo verwendet fiktive Daten; geben Sie dort nie echte Bankzugangsdaten ein. Nur die inoffizielle Banking-App ist für echte Konten vorgesehen, vorbehaltlich der Bankprüfungen und genannten Risiken. Bei einer abweichenden Updatesignatur behalten Sie App und Daten: Erzwingen Sie kein Update durch Deinstallation, da Token-Status und Aufzeichnungen unklarer Vorgänge verloren gehen könnten. Nutzen Sie die separate Demo oder den Projektsupport."
+        }
+      ]
+    },
+    "fr": {
+      "action": "Choisir une application",
+      "title": "Choisissez comment essayer l’application",
+      "intro": "Deux applications Android distinctes. Commencez par la démo hors ligne ou lisez le guide complet et les risques avant de choisir l’application non officielle pour vos comptes réels.",
+      "demoBadge": "HORS LIGNE · AUCUNE OPÉRATION RÉELLE",
+      "liveBadge": "NON OFFICIELLE · ARGENT RÉEL À RISQUE",
+      "demoTitle": "Application de démonstration",
+      "liveTitle": "Application bancaire non officielle",
+      "demoBody": "Essayez des comptes fictifs, des virements locaux et des reçus de test. Cette application ne se connecte pas à la banque, ne demande aucun identifiant bancaire et ne peut déplacer aucun argent réel. Elle ne comprend pas toutes les fonctions avancées des vidéos.",
+      "liveBody": "Client indépendant et expérimental destiné aux comptes réels de Banco Santa Cruz. Il n’est ni développé, ni approuvé, ni recommandé, ni pris en charge par la banque. Les opérations acceptées peuvent affecter de vrais comptes et déplacer de l’argent réel. L’autorisation bancaire et la compatibilité actuelle restent non établies ; la validation avec des comptes personnels est incomplète.",
+      "guideAction": "Lire le guide et les risques",
+      "whyTitle": "Pourquoi télécharger directement un APK ?",
+      "whyBody": "Mot du développeur : je ne peux pas proposer ce projet sur Google Play ou d’autres boutiques car, selon mon interprétation, publier ce client indépendant serait contraire aux conditions générales de Banco Santa Cruz. La banque n’a pas autorisé ce projet. La distribution directe ne résout pas ce conflit et ne vous donne aucune autorisation bancaire. Consultez les conditions de votre compte ; en cas de doute, utilisez les canaux officiels de la banque.",
+      "permissionBody": "Un APK est un fichier d’installation Android. Puisque vous le téléchargez depuis GitHub plutôt qu’une boutique, Android demande une autorisation au navigateur ou gestionnaire de fichiers qui l’ouvre pour installer depuis cette source. Elle concerne cet installateur, pas l’accès bancaire de Santa Cruz Modern. Elle est nécessaire uniquement pour installer ou mettre à jour ; désactivez-la ensuite. Aucun root du téléphone n’est requis.",
+      "securityTitle": "Comment je protège la distribution",
+      "securityBody": "Je développe et distribue cette application en tenant compte de la sécurité. Je n’y ajoute intentionnellement aucun virus, logiciel malveillant, logiciel espion ou code destiné à voler vos informations. Les versions portent la signature numérique de la clé de distribution du projet. Je publie aussi des empreintes SHA-256 pour comparer votre téléchargement au fichier publié.",
+      "verificationBody": "Ces mesures ne constituent pas un audit indépendant ni une garantie que l’application, ses dépendances, votre appareil ou le canal de distribution sont exempts de vulnérabilités ou de compromission malveillante. Une empreinte identique confirme la correspondance avec la version publiée, pas la sécurité du logiciel. Avant de vous connecter, lisez l’avis de confidentialité de l’APK sur les identifiants, le token et les fichiers.",
+      "riskTitle": "Votre choix, votre risque",
+      "riskBody": "L’installation et l’utilisation de l’application bancaire non officielle sont volontaires et à vos propres risques. Des bugs, failles, appareils compromis, modifications ou restrictions bancaires et conflits avec les conditions de la banque peuvent exposer vos identifiants ou données, interrompre l’accès ou causer des pertes financières. La connexion, l’activation du token et les opérations ne sont pas garanties. Conservez l’accès aux canaux officiels et vérifiez les relevés réels de la banque en cas de résultat incertain.",
+      "liabilityBody": "Dans toute la mesure permise par la loi applicable, l’application est fournie « en l’état », sans garantie, et le développeur décline toute responsabilité pour les pertes ou dommages liés à son installation ou à son utilisation, notamment financiers, de données ou d’accès. Cet avis n’exclut aucune responsabilité ni aucun droit qui ne pourrait légalement être exclu ou abandonné.",
+      "guideTitle": "Installer sur Android, étape par étape",
+      "guideIntro": "Pour Android 8.0 ou ultérieur. Les deux APK nécessitent la même autorisation d’installation. Lisez les avertissements supplémentaires sur les comptes réels avant de télécharger l’édition non officielle.",
+      "screensNote": "Captures réelles d’un émulateur Android 15 en anglais avec un APK de démo. Le texte, le navigateur et la présentation peuvent varier sur votre téléphone. Touchez une image pour l’agrandir. Aucun compte ni aucune opération bancaire réels.",
+      "protectBody": "Gardez Google Play Protect activé. Si Android propose une analyse, laissez-la se terminer et consultez le résultat. Si l’application est signalée comme dangereuse, arrêtez et contactez le projet ; ne désactivez pas les protections et ne contournez pas cet avertissement. Si une règle de l’appareil ou la Protection Avancée bloque l’installation, utilisez les canaux bancaires officiels.",
+      "downloadTitle": "Télécharger l’APK bancaire non officiel",
+      "downloadBody": "Continuez uniquement après avoir lu l’avis d’indépendance, le guide, l’avis de confidentialité et les risques, et si vous choisissez de les assumer. Le téléchargement ne vaut ni approbation bancaire ni renonciation aux droits protégés par la loi.",
+      "downloadAction": "Télécharger l’APK bancaire non officiel",
+      "checksumLabel": "Empreinte SHA-256 publiée",
+      "sourcesLabel": "Guides Android : installation et protection",
+      "backLabel": "Retour à la visite de l’application",
+      "steps": [
+        {
+          "title": "Choisir et vérifier l’APK",
+          "body": "Utilisez uniquement les liens de cette page vers la version GitHub du projet. Vérifiez l’édition, la version et le nom du fichier, puis comparez son empreinte SHA-256 avec SHA256SUMS de la même version. En cas de différence, n’installez pas. Chaque téléchargement fait environ 77 Mo ; l’installation demande de l’espace supplémentaire."
+        },
+        {
+          "title": "Ouvrir le fichier téléchargé",
+          "body": "Sur votre téléphone Android, ouvrez l’APK depuis les téléchargements du navigateur ou un gestionnaire de fichiers. Si Android bloque cette source, choisissez Paramètres dans le message. Vous pouvez aussi rechercher « Installation d’applications inconnues » dans les paramètres (souvent Applications → Accès spécial), puis sélectionner le navigateur ou gestionnaire qui ouvre l’APK."
+        },
+        {
+          "title": "Autoriser temporairement cette seule source",
+          "body": "Lisez l’avertissement Android. Si vous souhaitez continuer, activez « Autoriser cette source » pour le navigateur ou gestionnaire concerné. L’image montre un navigateur d’exemple. N’autorisez pas d’autres sources. Revenez à l’APK."
+        },
+        {
+          "title": "Vérifier l’installateur et installer",
+          "body": "Vérifiez Santa Cruz Modern et la bonne édition de l’APK, puis touchez Installer. Les images utilisent le paquet de démo séparé. L’édition bancaire peut agir sur de vraies données et de l’argent réel, pas la démo. Laissez finir les analyses ; arrêtez en cas d’avertissement d’application dangereuse."
+        },
+        {
+          "title": "Désactiver à nouveau l’autorisation",
+          "body": "Après l’installation, revenez au même écran et désactivez « Autoriser cette source ». L’application installée peut toujours fonctionner. Pour une mise à jour, utilisez le même canal de versions du projet et répétez l’autorisation temporaire."
+        },
+        {
+          "title": "Lire les avis avant utilisation",
+          "body": "Ouvrez l’application et lisez les conditions et l’avis de confidentialité avant d’accepter. La démo utilise des données fictives : n’y saisissez jamais de vrais identifiants bancaires. Seule l’application bancaire non officielle vise les comptes réels, sous réserve des contrôles bancaires et des risques décrits. Si une mise à jour a une signature incompatible, conservez l’application et ses données : ne la désinstallez pas pour forcer l’installation, car l’état du token et les traces d’opérations incertaines pourraient être perdus. Utilisez la démo séparée ou contactez le projet."
+        }
+      ]
+    },
+    "ru": {
+      "action": "Выбрать приложение",
+      "title": "Выберите, как попробовать приложение",
+      "intro": "Два отдельных приложения Android. Начните с офлайн-демо или прочитайте полное руководство и описание рисков перед выбором неофициального приложения для реальных счетов.",
+      "demoBadge": "ОФЛАЙН · БЕЗ РЕАЛЬНЫХ ОПЕРАЦИЙ",
+      "liveBadge": "НЕОФИЦИАЛЬНО · РИСК ДЛЯ ДЕНЕГ",
+      "demoTitle": "Демоприложение",
+      "liveTitle": "Неофициальное банковское приложение",
+      "demoBody": "Вымышленные счета, локальные переводы и тестовые квитанции. Приложение не подключается к банку, не требует банковских учётных данных и не может перемещать реальные деньги. Оно не включает все расширенные функции из видео.",
+      "liveBody": "Независимый экспериментальный клиент для подключения к реальным счетам Banco Santa Cruz. Банк его не разрабатывает, не одобряет, не рекомендует и не поддерживает. Успешные операции могут затронуть реальные счета и деньги. Разрешение банка и текущая совместимость остаются неподтверждёнными; проверка на личных счетах не завершена.",
+      "guideAction": "Прочитать руководство и риски",
+      "whyTitle": "Почему APK загружается напрямую?",
+      "whyBody": "От разработчика: я не могу разместить этот проект в Google Play или других магазинах, поскольку, по моему пониманию, публикация независимого клиента противоречила бы условиям Banco Santa Cruz. Банк не разрешал этот проект. Прямая загрузка не устраняет противоречие и не даёт вам разрешения банка. Ознакомьтесь с условиями вашего счёта; при сомнениях пользуйтесь официальными каналами банка.",
+      "permissionBody": "APK — установочный файл Android. При загрузке с GitHub вместо магазина Android требует разрешение на установку для браузера или файлового менеджера, открывающего файл. Это разрешение для установщика, а не банковский доступ для Santa Cruz Modern. Оно нужно только для установки или обновления; затем отключите его. Root-доступ не требуется.",
+      "securityTitle": "Как я защищаю выпуск",
+      "securityBody": "Я разрабатываю и распространяю приложение с учётом безопасности. Я не добавляю намеренно вирусы, вредоносное или шпионское ПО и код для кражи ваших данных. Выпуски подписаны цифровой подписью с ключом распространения проекта; я публикую суммы SHA-256 для сравнения загрузки с выпущенным файлом.",
+      "verificationBody": "Эти меры не являются независимым аудитом или гарантией отсутствия уязвимостей и злонамеренной компрометации приложения, зависимостей, устройства или канала распространения. Совпадение суммы подтверждает соответствие опубликованному файлу, но не безопасность ПО. Перед входом прочитайте уведомление о конфиденциальности APK об учётных данных, токене и файлах.",
+      "riskTitle": "Ваш выбор, ваш риск",
+      "riskBody": "Установка и использование неофициального банковского приложения добровольны и осуществляются на ваш риск. Ошибки, уязвимости, взлом устройства, изменения или ограничения банка и противоречия его условиям могут привести к утечке учётных или личных данных, потере доступа и денег. Работа входа, активации токена и операций не гарантируется. Сохраняйте доступ к официальным каналам и проверяйте фактические записи банка при неопределённом результате.",
+      "liabilityBody": "В максимальной степени, разрешённой применимым законом, приложение предоставляется «как есть», без гарантий, а разработчик отказывается от ответственности за убытки и ущерб от установки или использования, включая потерю денег, данных и доступа. Уведомление не исключает ответственность и права, которые нельзя исключить или от которых нельзя отказаться по закону.",
+      "guideTitle": "Установка на Android по шагам",
+      "guideIntro": "Для Android 8.0 и новее. Оба APK требуют одинакового разрешения на установку. Перед загрузкой неофициальной версии прочитайте дополнительные предупреждения о реальном банкинге.",
+      "screensNote": "Настоящие снимки экрана эмулятора Android 15 на английском с демо-APK. Текст, браузер и оформление вашего телефона могут отличаться. Нажмите на изображение для увеличения. Реальные счета и операции не используются.",
+      "protectBody": "Оставьте Google Play Protect включённым. Дождитесь завершения предложенной проверки и прочитайте результат. Если приложение признано вредоносным, остановитесь и свяжитесь с проектом; не отключайте защиту и не обходите предупреждение. Если установка запрещена политикой устройства или Расширенной защитой, используйте официальные каналы банка.",
+      "downloadTitle": "Загрузить неофициальный банковский APK",
+      "downloadBody": "Продолжайте, только если прочитали уведомление о независимости, руководство, уведомление о конфиденциальности и рисках и решили принять эти риски. Загрузка не означает одобрения банка или отказа от защищённых законом прав.",
+      "downloadAction": "Загрузить неофициальный банковский APK",
+      "checksumLabel": "Опубликованная сумма SHA-256",
+      "sourcesLabel": "Руководства Android по установке и защите",
+      "backLabel": "Вернуться к обзору приложения",
+      "steps": [
+        {
+          "title": "Выбрать и проверить APK",
+          "body": "Используйте только ссылки с этой страницы на выпуск проекта в GitHub. Проверьте редакцию, версию и имя файла, затем сравните SHA-256 загрузки с SHA256SUMS того же выпуска. При несовпадении не устанавливайте. Каждое приложение требует около 77 МБ для загрузки и дополнительное место для установки."
+        },
+        {
+          "title": "Открыть загруженный файл",
+          "body": "На телефоне Android откройте APK в загрузках браузера или файловом менеджере. Если Android блокирует источник, нажмите «Настройки» в уведомлении. Также можно найти «Установка неизвестных приложений» в настройках (обычно Приложения → Специальный доступ) и выбрать браузер или файловый менеджер, открывающий APK."
+        },
+        {
+          "title": "Временно разрешить только этот источник",
+          "body": "Прочитайте предупреждение Android. Если решили продолжить, включите «Разрешить из этого источника» для выбранного браузера или файлового менеджера. На снимке показан пример браузера. Не разрешайте другие источники. Вернитесь к APK."
+        },
+        {
+          "title": "Проверить установщик и установить",
+          "body": "Проверьте название Santa Cruz Modern и нужную редакцию APK, затем нажмите «Установить». На снимках используется отдельный демопакет. Банковская версия может работать с реальными данными и деньгами, демо — нет. Дождитесь проверок безопасности; остановитесь при предупреждении о вредоносном приложении."
+        },
+        {
+          "title": "Снова отключить разрешение",
+          "body": "После установки вернитесь на тот же экран и отключите «Разрешить из этого источника». Установленное приложение продолжит работать. Для обновлений используйте тот же канал выпусков проекта и снова выдавайте разрешение лишь временно."
+        },
+        {
+          "title": "Прочитать уведомления перед использованием",
+          "body": "Откройте приложение и прочитайте условия и уведомление о конфиденциальности до согласия. В демо вымышленные данные: никогда не вводите там реальные банковские учётные данные. Только неофициальная банковская версия предназначена для реальных счетов с учётом проверок банка и описанных рисков. При несовместимой подписи обновления сохраните приложение и данные: не удаляйте его ради установки, иначе можно потерять состояние токена и записи неопределённых операций. Используйте отдельное демо или обратитесь в поддержку проекта."
+        }
+      ]
+    },
+    "uk": {
+      "action": "Вибрати застосунок",
+      "title": "Виберіть, як спробувати застосунок",
+      "intro": "Два окремі застосунки Android. Почніть з офлайн-демо або прочитайте повний посібник та опис ризиків перед вибором неофіційного застосунку для реальних рахунків.",
+      "demoBadge": "ОФЛАЙН · БЕЗ РЕАЛЬНИХ ОПЕРАЦІЙ",
+      "liveBadge": "НЕОФІЦІЙНО · РИЗИК ДЛЯ ГРОШЕЙ",
+      "demoTitle": "Демонстраційний застосунок",
+      "liveTitle": "Неофіційний банківський застосунок",
+      "demoBody": "Вигадані рахунки, локальні перекази та тестові квитанції. Застосунок не підключається до банку, не потребує банківських облікових даних і не може переміщувати реальні гроші. Він не містить усіх розширених функцій із відео.",
+      "liveBody": "Незалежний експериментальний клієнт для підключення до реальних рахунків Banco Santa Cruz. Банк його не розробляє, не схвалює, не рекомендує й не підтримує. Успішні операції можуть впливати на реальні рахунки та гроші. Дозвіл банку й поточна сумісність залишаються непідтвердженими; перевірку на особистих рахунках не завершено.",
+      "guideAction": "Прочитати посібник і ризики",
+      "whyTitle": "Чому APK завантажується напряму?",
+      "whyBody": "Від розробника: я не можу розмістити цей проєкт у Google Play або інших магазинах, оскільки, за моїм розумінням, публікація незалежного клієнта суперечила б умовам Banco Santa Cruz. Банк не дозволяв цей проєкт. Пряме розповсюдження не усуває суперечності й не надає вам дозволу банку. Прочитайте умови вашого рахунку; якщо сумніваєтеся, користуйтеся офіційними каналами банку.",
+      "permissionBody": "APK — інсталяційний файл Android. Під час завантаження з GitHub замість магазину Android вимагає дозвіл на встановлення для браузера чи файлового менеджера, що відкриває файл. Це дозвіл для інсталятора, а не банківський доступ для Santa Cruz Modern. Він потрібен лише для встановлення чи оновлення; потім вимкніть його. Root-доступ не потрібен.",
+      "securityTitle": "Як я захищаю випуск",
+      "securityBody": "Я розробляю й розповсюджую застосунок з урахуванням безпеки. Я не додаю навмисно вірусів, шкідливого чи шпигунського ПЗ або коду для викрадення ваших даних. Випуски мають цифровий підпис ключем розповсюдження проєкту; я публікую суми SHA-256 для порівняння завантаження з опублікованим файлом.",
+      "verificationBody": "Ці заходи не є незалежним аудитом чи гарантією відсутності вразливостей або зловмисного втручання в застосунок, залежності, пристрій чи канал розповсюдження. Збіг суми підтверджує відповідність опублікованому файлу, а не безпеку ПЗ. Перед входом прочитайте повідомлення про конфіденційність APK щодо облікових даних, токена й файлів.",
+      "riskTitle": "Ваш вибір, ваш ризик",
+      "riskBody": "Встановлення та використання неофіційного банківського застосунку добровільні й здійснюються на ваш ризик. Помилки, вразливості, злам пристрою, зміни чи обмеження банку й суперечності його умовам можуть спричинити витік облікових або особистих даних, втрату доступу чи грошей. Робота входу, активації токена й операцій не гарантується. Зберігайте доступ до офіційних каналів і перевіряйте фактичні записи банку за невизначеного результату.",
+      "liabilityBody": "У максимальному обсязі, дозволеному чинним законом, застосунок надається «як є», без гарантій, а розробник відмовляється від відповідальності за збитки чи шкоду від встановлення або використання, зокрема втрату грошей, даних і доступу. Повідомлення не виключає відповідальності чи прав, які не можна виключити або від яких не можна відмовитися за законом.",
+      "guideTitle": "Встановлення на Android крок за кроком",
+      "guideIntro": "Для Android 8.0 і новіших. Обидва APK потребують однакового дозволу на встановлення. Перед завантаженням неофіційної версії прочитайте додаткові попередження про реальний банкінг.",
+      "screensNote": "Справжні знімки екрана емулятора Android 15 англійською з демо-APK. Текст, браузер і вигляд вашого телефона можуть відрізнятися. Натисніть зображення для збільшення. Реальні рахунки й операції не використовуються.",
+      "protectBody": "Залиште Google Play Protect увімкненим. Дочекайтеся завершення запропонованої перевірки та прочитайте результат. Якщо застосунок визначено як шкідливий, зупиніться й зв’яжіться з проєктом; не вимикайте захист і не обходьте попередження. Якщо встановлення заборонено політикою пристрою або Розширеним захистом, користуйтеся офіційними каналами банку.",
+      "downloadTitle": "Завантажити неофіційний банківський APK",
+      "downloadBody": "Продовжуйте, лише якщо прочитали повідомлення про незалежність, посібник, повідомлення про конфіденційність і ризики та вирішили прийняти ці ризики. Завантаження не означає схвалення банком або відмови від захищених законом прав.",
+      "downloadAction": "Завантажити неофіційний банківський APK",
+      "checksumLabel": "Опублікована сума SHA-256",
+      "sourcesLabel": "Посібники Android щодо встановлення й захисту",
+      "backLabel": "Повернутися до огляду застосунку",
+      "steps": [
+        {
+          "title": "Вибрати й перевірити APK",
+          "body": "Використовуйте лише посилання цієї сторінки на випуск проєкту в GitHub. Перевірте редакцію, версію та ім’я файлу, потім порівняйте SHA-256 завантаження з SHA256SUMS того самого випуску. За невідповідності не встановлюйте. Кожен застосунок потребує близько 77 МБ для завантаження й додаткового місця для встановлення."
+        },
+        {
+          "title": "Відкрити завантажений файл",
+          "body": "На телефоні Android відкрийте APK у завантаженнях браузера чи файловому менеджері. Якщо Android блокує джерело, натисніть «Налаштування» в повідомленні. Також можна знайти «Встановлення невідомих застосунків» у налаштуваннях (зазвичай Застосунки → Спеціальний доступ) і вибрати браузер чи файловий менеджер, що відкриває APK."
+        },
+        {
+          "title": "Тимчасово дозволити лише це джерело",
+          "body": "Прочитайте попередження Android. Якщо вирішили продовжити, увімкніть «Дозволити з цього джерела» для відповідного браузера чи файлового менеджера. На знімку показано приклад браузера. Не дозволяйте інші джерела. Поверніться до APK."
+        },
+        {
+          "title": "Перевірити інсталятор і встановити",
+          "body": "Перевірте назву Santa Cruz Modern та потрібну редакцію APK, потім натисніть «Встановити». На знімках використано окремий демопакет. Банківська версія може працювати зі справжніми даними та грошима, демо — ні. Дочекайтеся перевірок безпеки; зупиніться за попередження про шкідливий застосунок."
+        },
+        {
+          "title": "Знову вимкнути дозвіл",
+          "body": "Після встановлення поверніться на той самий екран і вимкніть «Дозволити з цього джерела». Встановлений застосунок і надалі працюватиме. Для оновлень використовуйте той самий канал випусків проєкту й знову надавайте дозвіл лише тимчасово."
+        },
+        {
+          "title": "Прочитати повідомлення перед використанням",
+          "body": "Відкрийте застосунок і прочитайте умови й повідомлення про конфіденційність перед згодою. У демо вигадані дані: ніколи не вводьте там справжні банківські облікові дані. Лише неофіційна банківська версія призначена для реальних рахунків з урахуванням перевірок банку й описаних ризиків. За несумісного підпису оновлення збережіть застосунок і дані: не видаляйте його заради встановлення, інакше можна втратити стан токена й записи невизначених операцій. Використовуйте окреме демо або зверніться до підтримки проєкту."
+        }
+      ]
+    },
+    "pt": {
+      "action": "Escolher um app",
+      "title": "Escolha como experimentar",
+      "intro": "Dois apps Android separados. Comece pela demo offline ou leia o guia completo e os riscos antes de escolher o app não oficial para contas reais.",
+      "demoBadge": "OFFLINE · SEM TRANSAÇÕES REAIS",
+      "liveBadge": "NÃO OFICIAL · DINHEIRO REAL EM RISCO",
+      "demoTitle": "App de demonstração",
+      "liveTitle": "App bancário não oficial",
+      "demoBody": "Experimente contas fictícias, transferências locais e comprovantes de teste. Este app não se conecta ao banco, não precisa de credenciais bancárias e não pode movimentar dinheiro real. Ele não inclui todos os recursos avançados dos vídeos.",
+      "liveBody": "Cliente independente e experimental destinado a contas reais do Banco Santa Cruz. O banco não o desenvolve, aprova, endossa nem oferece suporte. Operações aceitas podem afetar contas e movimentar dinheiro real. A autorização do banco e a compatibilidade atual continuam sem confirmação; a validação com contas pessoais está incompleta.",
+      "guideAction": "Ler o guia e os riscos",
+      "whyTitle": "Por que baixar um APK diretamente?",
+      "whyBody": "Do desenvolvedor: não posso oferecer este projeto no Google Play ou em outras lojas porque, no meu entendimento, publicar este cliente independente entraria em conflito com os termos e condições do Banco Santa Cruz. O banco não autorizou este projeto. A distribuição direta não resolve esse conflito nem concede autorização do banco. Leia os termos da sua conta; em caso de dúvida, use os canais oficiais do banco.",
+      "permissionBody": "Um APK é um arquivo de instalação do Android. Ao baixá-lo do GitHub em vez de uma loja, o Android exige permissão para o navegador ou gerenciador de arquivos que o abre instalar apps dessa fonte. É uma permissão para esse instalador, não acesso bancário para o Santa Cruz Modern. Ela só é necessária para instalar ou atualizar; desative-a depois. Não é necessário fazer root no celular.",
+      "securityTitle": "Como protejo a versão distribuída",
+      "securityBody": "Desenvolvo e distribuo este aplicativo com atenção à segurança. Não incluo intencionalmente vírus, malware, spyware ou código destinado a roubar suas informações. As versões são assinadas digitalmente com a chave de distribuição do projeto, e publico somas SHA-256 para comparar seu download com o arquivo lançado.",
+      "verificationBody": "Essas medidas não são uma auditoria de segurança independente nem garantem que o app, suas dependências, seu dispositivo ou o canal de distribuição estejam livres de vulnerabilidades ou comprometimento malicioso. Uma soma correspondente confirma que o arquivo coincide com a versão publicada; não prova que o software é seguro. Leia o aviso de privacidade do APK sobre credenciais, token e arquivos antes de entrar.",
+      "riskTitle": "Sua escolha, seu risco",
+      "riskBody": "A instalação e o uso do app bancário não oficial são voluntários e por sua conta e risco. Bugs, vulnerabilidades, dispositivos comprometidos, mudanças ou restrições do banco e conflitos com seus termos podem expor credenciais ou dados pessoais, interromper o acesso ou causar perdas financeiras. Não há garantia de que login, ativação do token ou transações funcionem. Mantenha acesso aos canais oficiais e consulte os registros reais do banco quando um resultado for incerto.",
+      "liabilityBody": "Na máxima extensão permitida pela lei aplicável, o aplicativo é fornecido “no estado em que se encontra”, sem garantias, e o desenvolvedor se exime de responsabilidade por perdas ou danos decorrentes da instalação ou uso, incluindo perdas financeiras, de dados e interrupções de acesso. Este aviso não exclui responsabilidades ou direitos que não possam ser legalmente excluídos ou renunciados.",
+      "guideTitle": "Instalar no Android, passo a passo",
+      "guideIntro": "Para Android 8.0 ou posterior. Os dois APKs exigem a mesma permissão de instalação. Leia os avisos adicionais sobre contas reais antes de baixar a edição não oficial.",
+      "screensNote": "Capturas reais de um emulador Android 15 em inglês com um APK de demo. O texto, navegador e layout do seu celular podem variar. Toque em uma imagem para ampliar. Nenhuma conta ou transação bancária real é usada.",
+      "protectBody": "Mantenha o Google Play Protect ativado. Se o Android oferecer uma verificação, deixe-a terminar e confira o resultado. Se o app for identificado como nocivo, pare e entre em contato com o projeto; não desative proteções nem ignore esse aviso. Se uma política do dispositivo ou a Proteção Avançada bloquear a instalação, use os canais bancários oficiais.",
+      "downloadTitle": "Baixar o APK bancário não oficial",
+      "downloadBody": "Continue somente se leu o aviso de independência, o guia, o aviso de privacidade e os riscos e decidiu assumi-los. O download não representa aprovação do banco nem renúncia a direitos protegidos por lei.",
+      "downloadAction": "Baixar APK bancário não oficial",
+      "checksumLabel": "SHA-256 publicado",
+      "sourcesLabel": "Guias de instalação e proteção do Android",
+      "backLabel": "Voltar ao tour do app",
+      "steps": [
+        {
+          "title": "Escolha e confira seu APK",
+          "body": "Use apenas os links desta página para a versão do projeto no GitHub. Confira edição, versão e nome do arquivo; compare seu SHA-256 com SHA256SUMS da mesma versão. Se não coincidirem, não instale. Cada app precisa de cerca de 77 MB para baixar e espaço adicional para instalar."
+        },
+        {
+          "title": "Abra o arquivo baixado",
+          "body": "No celular Android, abra o APK pelos downloads do navegador ou por um gerenciador de arquivos. Se o Android bloquear essa fonte, toque em Configurações no aviso. Você também pode buscar “Instalar apps desconhecidos” nas configurações (geralmente Apps → Acesso especial) e escolher o navegador ou gerenciador que abriu o APK."
+        },
+        {
+          "title": "Permita só essa fonte, temporariamente",
+          "body": "Leia o aviso do Android. Se decidir continuar, ative “Permitir desta fonte” para o navegador ou gerenciador específico. A captura mostra um navegador de exemplo. Não habilite outras fontes. Volte ao APK para continuar."
+        },
+        {
+          "title": "Confira o instalador e instale",
+          "body": "Confira Santa Cruz Modern e a edição correta do APK; toque em Instalar. As capturas usam o pacote separado de demo. A edição bancária pode operar com dados e dinheiro reais; a demo não. Deixe as verificações terminarem; pare se houver um aviso de app nocivo."
+        },
+        {
+          "title": "Desative novamente a permissão",
+          "body": "Depois da instalação, volte à mesma tela e desative “Permitir desta fonte”. O app instalado continuará funcionando. Para atualizar, baixe pelo mesmo canal de versões do projeto e repita a permissão temporária."
+        },
+        {
+          "title": "Leia os avisos antes de usar",
+          "body": "Abra o app e leia os termos e o aviso de privacidade antes de aceitar. A demo usa dados fictícios: nunca digite credenciais bancárias reais nela. Só o app bancário não oficial se destina a contas reais, sujeito às verificações do banco e aos riscos descritos. Se uma atualização tiver assinatura incompatível, preserve o app e seus dados: não o desinstale para forçar a instalação, pois o estado do token e registros de operações incertas podem ser perdidos. Use a demo separada ou contate o suporte do projeto."
+        }
+      ]
+    }
+  }
+}

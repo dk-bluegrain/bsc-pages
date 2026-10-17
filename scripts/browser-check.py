@@ -17,7 +17,8 @@ with sync_playwright() as p:
    response=page.goto(a.url+lang+'/');assert response.ok
    assert page.locator('html').get_attribute('lang')==lang
    assert '1.12.1' in page.locator('header .brand small').inner_text()
-   assert page.locator('a[href*="v1.12.1-preview.1"][href$="-demo.apk"]').count()==2
+   assert page.locator('.hero a[href$="/download/"]').count()==1
+   assert page.locator('a[href$=".apk"]').count()==0
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth'),(lang,width,'overflow')
    assert page.locator('video[autoplay]').count()==0
    assert page.locator('video').count()==0
@@ -63,7 +64,40 @@ with sync_playwright() as p:
     page.locator('#video-overview').evaluate('(v)=>v.pause()')
     video=page.locator('#video-overview');video.evaluate('(v)=>v.load()');video.evaluate('(v)=>new Promise(resolve=>{if(v.readyState>=1)resolve();else v.addEventListener("loadedmetadata",resolve,{once:true})})');assert video.evaluate('(v)=>v.duration')>=60
     video.evaluate('(v)=>v.play()');page.wait_for_timeout(300);assert not video.evaluate('(v)=>v.paused');video.evaluate('(v)=>v.pause()')
-   assert page.locator('a[href$="-demo.apk"]').count()==2 and page.locator('a[href$="-live.apk"]').count()==1
+   media_requests.clear()
+   page.goto(a.url+lang+'/')
+   page.locator('.hero a[href$="/download/"]').click()
+   assert urlsplit(page.url).path.endswith('/'+lang+'/download/')
+   assert page.locator('.download-choices article').count()==2
+   if width==390:
+    assert page.locator('.download-jump').is_visible()
+    assert page.locator('.download-jump a').count()==2
+   assert page.locator('a[href$="-demo.apk"]').count()==1 and page.locator('a[href$="-live.apk"]').count()==1
+   assert page.locator('.live-choice a').get_attribute('href')=='#live-guide'
+   assert page.locator('#live-download a[href$="-live.apk"]').count()==1
+   assert not page.evaluate('document.documentElement.scrollWidth > innerWidth'),(lang,width,'download overflow')
+   assert page.locator('.install-guide>li').count()==6
+   assert page.locator('.install-shot').count()==4
+   assert all(link.get_attribute('href').endswith('/download/') for link in page.locator('.languages a').all())
+   assert page.locator('link[rel="canonical"]').get_attribute('href').endswith('/'+lang+'/download/')
+   assert page.locator('.checksums code').count()==4
+   page.locator('.live-choice a').click()
+   assert page.url.endswith('#live-guide')
+   shot=page.locator('.install-shot').first
+   shot.focus();page.keyboard.press('Enter')
+   assert page.locator('dialog').evaluate('(d)=>d.open')
+   page.locator('dialog img').wait_for(state='visible')
+   page.wait_for_function('()=>document.querySelector("dialog img").naturalWidth===540')
+   page.keyboard.press('Escape')
+   assert shot.evaluate('(e)=>e===document.activeElement')
+   for img in page.locator('.install-shot img').all():
+    img.scroll_into_view_if_needed()
+    img.evaluate('(i)=>i.decode()')
+   if (lang,width) in (('en',1440),('en',390),('ru',390),('de',820)):
+    page.goto(a.url+lang+'/download/')
+    page.screenshot(path=str(a.output/f'download-{lang}-{width}.png'),full_page=True)
+   assert not media_requests,('Download guide requested media',lang,width,media_requests)
+
    page.goto(a.url+lang+'/privacy/');assert page.locator('h1').inner_text();assert not page.evaluate('document.documentElement.scrollWidth > innerWidth')
    page.get_by_role('link',name='GitHub',exact=True).first.wait_for()
    results.append({'language':lang,'width':width,'passed':True});page.close()
@@ -74,8 +108,12 @@ with sync_playwright() as p:
  assert page.locator('video').count()==0
  assert page.locator('[data-play-video="video-overview"]').get_attribute('href').split('?')[0].endswith('overview.mp4')
  assert page.locator('#history [data-play-video]').is_visible()
+ page.goto(a.url+'en/download/')
+ assert page.locator('a[href$="-demo.apk"]').count()==1 and page.locator('a[href$="-live.apk"]').count()==1
+ assert page.locator('.install-guide>li').count()==6
+ assert page.locator('.risk-notice').is_visible()
  page.close()
  browser.close()
 assert not errors,errors
 (a.output/'results.json').write_text(json.dumps(results,indent=2)+'\n')
-print('Browser checks passed:',len(results),'language/viewport combinations; no media before Play, keyboard playback, player isolation, speed, JPG previews without JavaScript, dialogs, chapters, transcripts, privacy and downloads.')
+print('Browser checks passed:',len(results),'language/viewport combinations; no media before Play, keyboard playback, player isolation, speed, JPG previews without JavaScript, dialogs, chapters, transcripts, privacy, edition choice, illustrated guides and versioned downloads.')

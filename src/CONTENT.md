@@ -24,7 +24,7 @@ Cyrillic text and typographic apostrophes as UTF-8.
 | `intro` | Hero paragraph | Introduces both offline demo and experimental banking edition. |
 | `demoTitle` | Demo download-card heading | The basic downloadable offline demo. |
 | `demoBody` | Demo download-card description and edition comparison | Lists basic local features, fictional data and lack of bank connection; explicitly excludes a promise of every advanced flow. |
-| `demoAction` | Demo APK download link | Downloads the demo, not installation or account opening. |
+| `demoAction` | Demo APK download link on the dedicated download page | Downloads the demo, not installation or account opening. |
 | `liveTitle` | Banking download-card heading | Always visibly experimental. |
 | `liveBody` | Banking download-card description and edition comparison | Configuration restored, bank authorization and owner-account validation unresolved, current compatibility unestablished. |
 | `liveAction` | Banking APK download link | Always visibly experimental; not an official-bank download. |
@@ -133,3 +133,11 @@ The visible headline, benefit rows and chapter introductions now come from
 privacy copy stays in content.json. The main video and narrative show specific
 native interactions rather than asserting unverified original-app absences.
 No performance numbers or new live-compatibility claims are introduced.
+
+## Dedicated download page
+
+Landing-page edition actions now open `/<language>/download/` instead of APKs.
+Hero navigation uses `download-copy.json`; see `DOWNLOAD-COPY.md` for its full
+per-key context. Actual demo and unofficial banking APK links appear only there.
+The live link follows the disclosures and illustrated guide. Existing versioned
+release assets, Android terms and privacy notices stay authoritative.

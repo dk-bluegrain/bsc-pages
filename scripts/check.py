@@ -7,6 +7,19 @@ import hashlib,json,re,subprocess
 ROOT=Path(__file__).resolve().parents[1];DOCS=ROOT/'docs'
 captions=json.loads((ROOT/'src/transcripts.json').read_text())['languages'] if (ROOT/'src/transcripts.json').exists() else json.loads((ROOT/'src/captions.json').read_text())['languages']
 content=json.loads((ROOT/'src/content.json').read_text())['languages'];assert set(content)=={'es','en','de','fr','ru','uk','pt'}
+download_copy=json.loads((ROOT/'src/download-copy.json').read_text())
+downloads=json.loads((ROOT/'src/downloads.json').read_text())
+assert set(download_copy['languages'])==set(content)
+for lang,copy in download_copy['languages'].items():
+ assert set(copy)==set(download_copy['context'])==set(download_copy['languages']['es'])
+ assert all(isinstance(v,str) and v.strip() for key,v in copy.items() if key!='steps')
+ assert len(copy['steps'])==6 and all(set(step)=={'title','body'} and all(step.values()) for step in copy['steps'])
+ if lang!='en':
+  assert all(copy[key]!=download_copy['languages']['en'][key] for key in copy if key!='steps'),(lang,'English fallback')
+install_provenance=json.loads((DOCS/'media/install/provenance.json').read_text())
+for filename,info in install_provenance['screenshots'].items():
+ assert hashlib.sha256((DOCS/'media/install'/filename).read_bytes()).hexdigest()==info['sha256']
+assert install_provenance['apk']['sha256']==downloads['demo']['sha256']
 media=json.loads((ROOT/'src/media.json').read_text())
 scene_captions=json.loads((ROOT/'src/scene-captions.json').read_text())['languages']
 assert all(set(v)==set(scene_captions['es']) for v in scene_captions.values())
@@ -53,13 +66,24 @@ class Page(HTMLParser):
 for lang,c in content.items():
  assert c.keys()==content['es'].keys()
  assert len(c['chapters'])==13 and [x['id'] for x in c['chapters']]==[x['id'] for x in content['es']['chapters']]
- for path in (DOCS/lang/'index.html',DOCS/lang/'privacy/index.html') + ((DOCS/'index.html',) if lang=='es' else ()):
+ for path in (DOCS/lang/'index.html',DOCS/lang/'privacy/index.html',DOCS/lang/'download/index.html') + ((DOCS/'index.html',) if lang=='es' else ()):
   s=path.read_text();p=Page();p.feed(s)
   assert f'<html lang="{lang}">' in s and not p.forms
   assert len(p.ids)==len(set(p.ids))
-  if path.parent.name!= 'privacy':
+  if path.parent.name not in ('privacy','download'):
    assert p.video==p.templates==p.previews==14 and p.tracks==98
    assert all(f'/narrated/{lang}/' in src for src in p.sources),'Page must use its own narrated language'
+   assert not any(urlsplit(ref).path.endswith('.apk') for ref in p.refs),'Landing pages must show the edition choice before APK downloads'
+   assert f'href="{"./" if path==DOCS/"index.html" else "../"}{lang}/download/"' in s
+  if path.parent.name=='download':
+   assert p.video==p.templates==p.previews==0
+   assert {'demo','live-guide','installation','live-download'}<=set(p.ids)
+   assert sum(ref.endswith('-demo.apk') for ref in p.refs)==1
+   assert sum(ref.endswith('-live.apk') for ref in p.refs)==1
+   assert s.index('id="live-guide"')<s.index('class="download-section risk-notice"')<s.index('id="installation"')<s.index('id="live-download"')
+   assert all(data['sha256'] in s and data['filename'] in s for data in downloads.values())
+   assert sum('/media/install/' in ref for ref in p.refs)==8
+   assert f'href="../../{lang}/download/"' in s
   for ref in p.refs:
    u=urlsplit(ref)
    if u.scheme or u.netloc:

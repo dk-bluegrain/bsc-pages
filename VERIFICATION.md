@@ -1,5 +1,38 @@
 # Feature-first website and native media verification
 
+## Edition choice and illustrated installation guide
+
+The tour's download actions lead to a separate localized `/download/` page.
+Demo and unofficial banking choices are distinct; on mobile, two quick links
+keep both choices visible before the full cards. The banking APK link appears
+after developer-attributed publication rationale, security limits, own-risk and
+qualified liability notices, APK privacy and six installation steps.
+
+Four unmodified Android 15 emulator captures show the actual blocked-source
+prompt, source permission enabled, native demo installer and permission disabled
+after installation. They use explicit serial `emulator-5590`, an ephemeral
+read-only QA emulator, DuckDuckGo 5.298.1 and the existing signed demo APK.
+No personal phone, banking credentials or real bank operation was used.
+Capture hashes and source details are in `docs/media/install/provenance.json`.
+English example screens are explicitly disclosed in all seven page languages.
+
+Local verification covers all seven catalogues and routes, download ordering,
+unchanged release filenames and hashes, screenshot provenance, local assets and
+file budgets. Chromium covers 21 language/viewport combinations, edition routing,
+mobile quick links, screenshot decoding, keyboard dialogs/focus return, matching
+language/canonical routes, zero video requests on download pages and access
+without JavaScript. The existing eight unit tests and the Android translation
+checker (1,029 entries in seven languages) pass. Desktop/mobile English and
+sampled German/Russian layouts received visual review.
+
+Both existing public APKs match their published SHA-256 values. This is a
+website-only change; Android resources, APKs, signing keys and release tags are
+unchanged. The security statement describes developer intent and verifiable
+release safeguards, not an independent audit or virus-free guarantee. The BSC
+terms conflict is the owner's stated rationale, not an independently established
+legal conclusion. No native-speaker or legal certification is claimed.
+
+
 ## Current narrated presentation
 
 The quicker edit removes idle hold frames while keeping recorded actions at
