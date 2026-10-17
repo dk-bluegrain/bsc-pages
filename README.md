@@ -196,8 +196,10 @@ python3 scripts/publish.py --website-only \
   --apk-directory /absolute/private-source/distribution
 ```
 
-Current APKs are 1.12.1 (28), tag `v1.12.1-preview.1`. Changing signing keys prevents
+Current APKs are 1.12.2 (29), tag `v1.12.2-preview.1`. Changing signing keys prevents
 updates over existing installations; preserve the retained private key and owner
 state. The `.demo` package coexists with the ordinary live package. The explicitly
 requested experimental live binary carries shared client configuration, while
 both repositories exclude the private configuration files.
+
+`src/release.json` pins the current version, code, release tag, merged app source and signing certificate. `src/downloads.json` contains exact APK sizes and SHA-256 hashes. Installation illustrations and walkthrough provenance remain pinned to their original 1.12.1 captures.

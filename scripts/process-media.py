@@ -2,12 +2,13 @@
 """Encode approved native captures, posters, localized captions and a 104-second overview."""
 import argparse,json,math,subprocess,tempfile,shutil,hashlib
 from pathlib import Path
+from translation_catalog import load_catalog
 p=argparse.ArgumentParser();p.add_argument('--captures',type=Path,action='append',required=True);p.add_argument('--chapter',action='append');p.add_argument('--captions-only',action='store_true');a=p.parse_args()
 ROOT=Path(__file__).resolve().parents[1];MEDIA=ROOT/'docs/media';MEDIA.mkdir(parents=True,exist_ok=True)
-scene_captions=json.loads((ROOT/'src/scene-captions.json').read_text())['languages']
-scenario_captions=json.loads((ROOT/'src/scenario-captions.json').read_text())['languages'] if (ROOT/'src/scenario-captions.json').exists() else {}
+scene_captions=load_catalog(ROOT/'src/scene-captions.json')['languages']
+scenario_captions=load_catalog(ROOT/'src/scenario-captions.json')['languages'] if (ROOT/'src/scenario-captions.json').exists() else {}
 transcripts=json.loads((ROOT/'src/transcripts.json').read_text())['languages'] if a.chapter and (ROOT/'src/transcripts.json').exists() else {lang:{} for lang in scene_captions}
-content=json.loads((ROOT/'src/content.json').read_text())['languages'];captions=json.loads((ROOT/'src/captions.json').read_text())['languages']
+content=load_catalog(ROOT/'src/content.json')['languages'];captions=load_catalog(ROOT/'src/captions.json')['languages']
 ids=[c['id'] for c in content['es']['chapters']];requested=a.chapter or ids
 assert len(requested)==len(set(requested)) and set(requested)<=set(ids),'Unknown/repeated chapter'
 policy=json.loads((ROOT/'src/video-scripts.json').read_text());script_hash=hashlib.sha256((ROOT/'src/video-scripts.json').read_bytes()).hexdigest()

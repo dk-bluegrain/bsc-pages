@@ -1,3 +1,36 @@
+# Translation update and signed app release — 1.12.2 (29)
+
+Five sequential translation review/fix passes ran in separate agents across the
+Android interface and website. Adjacent comments identify display context,
+actions, source references and argument/data boundaries in all seven languages.
+Website metadata is validated and stripped before rendering/media processing.
+
+The authoritative app source is merged at
+`ab11715dcc734e88e14b956e0b2163473f110f16`, tagged `v1.12.2` in the private
+`dk-bluegrain/bsc` repository. Its release verification records 1,046 translation
+entries, 23 Python tests, 281 JVM tests per debug/demo/live variant, and 22 language
+integration tests at each of normal and 150% text size. Both signed editions pass
+lint, package isolation, signature/ZIP alignment and native 16 KiB alignment.
+They update over the exact previously published 1.12.1 APKs with the retained
+signing certificate. Offline demo/live startup checks use an explicit disposable
+emulator, no banking credentials and no real operations.
+
+Current version, code, tag, merged source, certificate and historical capture
+pins live in `src/release.json`; exact APK filenames, sizes and SHA-256 hashes
+live in `src/downloads.json`. Release assets include both APKs, `SHA256SUMS`,
+release notes and a machine-readable release manifest. The existing installer
+screenshots and feature videos retain their genuine 1.12.1 provenance; localized
+installation copy makes that distinction explicit.
+
+Website build, all 16 unit tests and full static/media checks pass. Final
+Chromium validation covers 21 language/viewport combinations and 98 localized
+players, native captions against all transcript cues, lazy playback, keyboard
+focus, edition routing, installation guides, privacy and no-JavaScript links.
+
+No native-speaker/legal certification, live-account compatibility or bank
+approval is established by these checks. Earlier sections below retain their
+historical validation scope and artifact identities.
+
 # Feature-first website and native media verification
 
 ## Edition choice and illustrated installation guide

@@ -1,0 +1,20 @@
+{
+  "version": "1.12.2",
+  "versionCode": 29,
+  "tag": "v1.12.2-preview.1",
+  "appSourceRepository": "https://github.com/dk-bluegrain/bsc",
+  "appSourceCommit": "ab11715dcc734e88e14b956e0b2163473f110f16",
+  "signingCertificateSHA256": "ee060319af55793ea750a3f9b0dc4f372a2ba072812d664416a704548f8f5ecd",
+  "installationIllustrations": {
+    "releaseTag": "v1.12.1-preview.1",
+    "apk": {
+      "filename": "santa-cruz-modern-1.12.1-live.apk",
+      "sha256": "1a791c5fc1cd0a6bbb4624f5e3ac193e3e4cd5dea467312fc669cc99fa8002b3"
+    }
+  },
+  "walkthroughs": {
+    "appVersion": "1.12.1 (28)",
+    "distributionSourceCommit": "b9064724b95753a6adf404d3da3c54bbf9e6f50d"
+  },
+  "appSourceTag": "v1.12.2"
+}
