@@ -1,178 +1,324 @@
-# Video scripts — revision 3
+# Feature-first native videos — revision 4
 
-These scripts are written before the retake. Each numbered beat states what the viewer should understand and where the operator must wait. The executable timing policy is `scripts/capture/video-scripts.json`.
+Write and review this script before recording. The main tour demonstrates fewer
+steps and clearer decisions through the actual UI. It does not claim unsupported
+original-app feature absences or use competitive slogans. Lead with SMS arrival,
+automatic fill and continuation; do not substitute a static filled field.
 
-## Shared recording rules
+No repeated login: only authentication and device-setup chapters may contain it.
+Every other scene starts in an authenticated native feature; fixture sign-in is
+quiet and excluded from published footage and screenshot selection. No demo test-
+code typing in the financial feature videos. All required bank SMS steps show
+arrival/approval, automatic fill and the actual continuation. Financial operations,
+combined questions and enrollment retain their real explicit Verify step.
 
-- Spanish native UI, fictional identities/documents and fake transports only.
-- Opening context: 5 s. Before ordinary actions: 1.5 s. After navigation: at least 3.5 s.
-- Financial/recipient reviews and receipts: 8 s. Consent, loss/theft warnings and uncertain outcomes: 10 s where specified.
-- SMS assistance is enabled, with one-message Android consent available, in every recording except initial pre-choice onboarding. Only the settings scene disables and restores it. SMS delivery is preset to SMS in every recording. Only the configuration scene changes it temporarily and restores SMS.
-- SMS code fields remain empty for 3 s, receive only a synthetic Android autofill callback, then remain filled for 5.5 s before explicit Verify. Keyboard autofill never submits. One-message consent may auto-verify an SMS-only login, shown separately and explicitly as a synthetic result.
-- Offline demo code 123456 and generated Token BSC codes are not SMS; do not relabel them.
-- Skip repeated authentication setup outside login/verification. Paste long QR payloads once; type only short human-readable inputs.
-- Every scene ends with a 6 s hold on its actual native result before the test activity closes.
-- Caption timing follows recorded hold/scene events, with special cues during SMS arrival, filled-code review and configuration.
+Overview: approximately 109 seconds, silent at native speed. First 14 seconds show
+approved SMS-only login; next 18 show financial SMS fill, Verify and receipt. Then
+11 seven-second native examples: language choice, registration continuation,
+balance privacy/currencies, history search, PDF pages, service payment result,
+recipient review, masked card copying, token, QR request and SMS settings. Use the
+machine script's exact scene/event anchors. Do not crop an input ring halfway or
+choose login frames for unrelated flows. A short contextual caption accompanies
+each real interaction. Synthetic SMS/biometric/bank callbacks are identified;
+never draw a fake Android approval prompt or fake a bank result.
+
+The demo and advanced simulated interface are explained once near the main video
+and in edition details. Scripts/captions should lead with user benefits, keeping
+meaningful approval, money-review, unsupported-card-service and uncertain-outcome
+boundaries accurate. Full numbers stay masked to their last four digits.
+
+## Pacing and capture rules
+
+5-second opening; 1.5 seconds before ordinary actions; 3.5 seconds after
+navigation. SMS fields remain empty for 3 seconds, then filled for 5.5 seconds.
+Reviews/receipts hold 8 seconds; important consent and uncertain-result states
+hold 10–12 seconds. No speedup. All code-entry sequences show real callbacks,
+not a typed code or a static screenshot. A 1.8-second fake bank response delay
+makes the SMS-only automatic continuation legible without changing production.
 
 ## first-use
 
 Understand the independent-app notice before accepting anything.
 
-Privacy before consent. Open the privacy policy; hold the opening explanation for 10 seconds. Return without accepting.
+Entry: Authentication/setup only.
 
-Terms are a separate choice. Open terms; hold for 10 seconds. Return; pause 5 seconds with Continue disabled. Check agreement, pause 5 seconds, then Continue. Show the optional SMS choice, enable it after its reading hold, and end on the login form backed by the capture-only non-network client. Do not record a missing-integration setup error as the normal completion.
+### first-use-01 — Privacy before consent
 
-Language selection. Open the language list, hold 6 seconds, choose Spanish, and hold the selected setting for 5 seconds.
+Open the privacy policy; hold the opening explanation for 10 seconds. Return without accepting.
 
-Capture fixtures: `FirstUseNoticeTest.privacyIsAvailableBeforeTermsAndNeverAcceptsThem`, `FirstUseNoticeTest.bankingStaysBlockedUntilTermsOpenedAndExplicitlyAcceptedThenAcceptancePersists`, `ShowcaseExtraTest.languageSelection`.
+### first-use-02 — Terms are a separate choice
+
+Open terms; hold for 10 seconds. Return; pause 5 seconds with Continue disabled. Check agreement, pause 5 seconds, then Continue.
+
+### first-use-03 — Language selection
+
+Open the language list, hold 6 seconds, choose Spanish, and hold the selected setting for 5 seconds.
+
+Fixtures:
+
+- `FirstUseNoticeTest.privacyIsAvailableBeforeTermsAndNeverAcceptsThem`.
+- `FirstUseNoticeTest.bankingStaysBlockedUntilTermsOpenedAndExplicitlyAcceptedThenAcceptancePersists`.
+- `ShowcaseExtraTest.languageSelection`.
 
 ## login
 
 Distinguish local remembered access, simulated biometrics, and bank approval.
 
-First remembered login. Show the remember checkbox and explain local biometric protection. Type fictional credentials slowly; hold 5 seconds before login. Pause 8 seconds on the resulting accounts.
+Entry: Authentication/setup only.
 
-Biometric unlock. Show the prefilled identity and simulated unlock for 6 seconds. Approve the fixture callback, then hold the resulting account list for 8 seconds.
+### login-01 — SMS arrives; access continues
 
-SMS without typing a code. With remembered SMS delivery already selected, leave the empty code field visible for 3 seconds. Inject only the synthetic Android autofill callback. Hold the filled field for 5 seconds; no login replay is allowed yet. Tap Verify, then hold the result for 8 seconds.
+Begin on the pending SMS field after credentials were supplied off-camera. Hold empty field 3 seconds; explain the synthetic one-message approval without fabricating an Android dialog. Deliver approved fake SMS; capture automatic verification and the resulting accounts. No keyboard typing or extra Verify tap.
 
-Capture fixtures: `LiveScreenTest.rememberingCredentialsDefaultsOnAndRequiresBiometricSaveBeforeLogin`, `LiveScreenTest.savedLoginWaitsForBiometricsThenSubmitsAutomatically`, `LiveScreenTest.rememberedSmsChannelRequestsDeliveryThenWaitsForExplicitVerification`.
+### login-02 — Remembered biometric access
+
+Show saved access once; approve the clearly simulated biometric callback and hold the resulting native accounts. Do not replay credentials or pretend bank approval was bypassed.
+
+Fixtures:
+
+- `LiveScreenTest.approvedSmsMessageCompletesOnlyTheCurrentSmsLoginWithoutAnExtraVerifyTap` — SMS autofill required.
+- `LiveScreenTest.savedLoginWaitsForBiometricsThenSubmitsAutomatically`.
 
 ## verification
 
 Show the independent security steps and who controls each outcome.
 
-Question plus SMS. Enter only the fictional security answer. Leave SMS code empty for 3 seconds; autofill it; hold 5 seconds before Verify. Assert no submission happened during autofill.
+Entry: Authentication/setup only.
 
-Device approval. Show the unapproved-device screen for 10 seconds. Do not claim registration or account access.
+### verification-01 — Question plus SMS
 
-Required setup. Show the password requirements; enter fictional values. Hold mismatch feedback for 5 seconds, then correct it. Hold review for 8 seconds; explicitly submit and explain the return to login for 8 seconds.
+Enter only the fictional security answer. Leave SMS code empty for 3 seconds; autofill it; hold 5 seconds before Verify. Assert no submission happened during autofill.
 
-Capture fixtures: `LiveScreenTest.systemSmsAutofillKeepsCombinedQuestionAndWaitsForVerify`, `LiveScreenTest.untrustedDeviceCannotFetchAccountsOrEnrollSilently`, `LoginPrerequisitesScreenTest.requiredPasswordIsConfirmedAndReturnsToLoginWithoutReadingAccounts`.
+### verification-02 — Registration return stays inside the app
+
+Show device registration requirement, pause 10 seconds on consent. Request registration explicitly. Explain required fresh login, pause 6 seconds on biometric re-entry fixture. Approve biometric callback and hold accounts 8 seconds. No password is retained for silent replay.
+
+Fixtures:
+
+- `LiveScreenTest.systemSmsAutofillKeepsCombinedQuestionAndWaitsForVerify` — SMS autofill required.
+- `LiveScreenTest.registrationResumesThroughBiometricsWithoutExitingOrReusingPassword`.
 
 ## accounts
 
 Read balances and currency before taking action.
 
-Orient. Start at fictional account overview, not another login. Hold for 5 seconds.
+Entry: Already in the feature; login excluded from exported footage.
 
-Privacy. Hide balances, hold 5 seconds; reveal, hold 5 seconds.
+### accounts-01 — Orient
 
-Separate currencies. Choose USD and hold 6 seconds. Return to DOP and hold 6 seconds.
+Start at fictional account overview, not another login. Hold for 5 seconds.
 
-Scroll and details. Show real swipe direction; pause after each scroll. Open account details and hold account identity/currency/actions for 8 seconds.
+### accounts-02 — Privacy
 
-Capture fixtures: `ShowcaseExtraTest.accountsAndPrivacy`.
+Hide balances, hold 5 seconds; reveal, hold 5 seconds.
+
+### accounts-03 — Separate currencies
+
+Choose USD and hold 6 seconds. Return to DOP and hold 6 seconds.
+
+### accounts-04 — Scroll and details
+
+Show real swipe direction; pause after each scroll. Open account details and hold account identity/currency/actions for 8 seconds.
+
+Fixtures:
+
+- `ShowcaseExtraTest.accountsAndPrivacy`.
 
 ## history
 
 Understand visible records and what the CSV contains.
 
-Read/search/filter. Start already signed into the fake bank. Reveal account identity, search and filter with 4-second pauses after changed results.
+Entry: Already in the feature; login excluded from exported footage.
 
-Export. Open the demo CSV Sharesheet, hold 8 seconds, then return. Do not claim an external recipient received it.
+### history-01 — Read/search/filter
 
-Capture fixtures: `LiveScreenTest.loadedHistorySearchDirectionAndAccountDetailsWorkWithoutExtraBankCalls`, `ShowcaseExtraTest.csvExport`.
+Start already signed into the fake bank. Reveal account identity, search and filter with 4-second pauses after changed results.
+
+### history-02 — Export
+
+Open the demo CSV Sharesheet, hold 8 seconds, then return. Do not claim an external recipient received it.
+
+Fixtures:
+
+- `LiveScreenTest.loadedHistorySearchDirectionAndAccountDetailsWorkWithoutExtraBankCalls`.
+- `ShowcaseExtraTest.csvExport`.
 
 ## statements
 
 Separate viewing, sharing, and persistent saving.
 
-Catalogue. Hold available/unavailable periods for 6 seconds before opening.
+Entry: Already in the feature; login excluded from exported footage.
 
-PDF. Hold the synthetic PDF for 8 seconds. Pause 5 seconds after page/zoom actions. Explain sharing is explicit.
+### statements-01 — Catalogue
 
-Save selection. Select available periods and hold the selection for 6 seconds. Press Save selected. Explain the folder callback is simulated; pause 5 seconds before it and 8 seconds after successful synthetic writes.
+Hold available/unavailable periods for 6 seconds before opening.
 
-Capture fixtures: `StatementsScreenTest.listDoesNotDownloadUntilSelectedAndViewerPagesAndSharesOriginalPdf`, `StatementSavingScreenTest.bulkSelectionDoesNotDownloadUntilFolderChosenAndKeepsExactBytesAndNames`.
+### statements-02 — PDF
+
+Hold the synthetic PDF for 8 seconds. Pause 5 seconds after page/zoom actions. Explain sharing is explicit.
+
+### statements-03 — Save selection
+
+Select available periods and hold the selection for 6 seconds. Press Save selected. Explain the folder callback is simulated; pause 5 seconds before it and 8 seconds after successful synthetic writes.
+
+Fixtures:
+
+- `StatementsScreenTest.listDoesNotDownloadUntilSelectedAndViewerPagesAndSharesOriginalPdf`.
+- `StatementSavingScreenTest.bulkSelectionDoesNotDownloadUntilFolderChosenAndKeepsExactBytesAndNames`.
 
 ## transfers
 
 Make the review, money confirmation and SMS verification readable.
 
-Offline own-account example. Show source/destination, amount and currency. Hold review 8 seconds. Show a wrong DEMO code once, explain for 6 seconds; correct with DEMO code 123456, then hold the fictional receipt 8 seconds. Demo codes are not SMS.
+Entry: Already in the feature; login excluded from exported footage.
 
-Advanced bank/SMS example. Start in an authenticated fake transfer form. Select recipient/amount, hold quote review 8 seconds, then hold the real-money confirmation dialog for 8 seconds. After confirmation, show empty SMS field 3 seconds, autofill without typing, hold filled field 5 seconds. Tap Verify explicitly; hold the fake-bank receipt 8 seconds.
+### transfers-01 — Own accounts, SMS assisted
 
-Recipient search. Show the pending/read/search/selection distinction; do not submit a bank transfer.
+Start in the authenticated native transfer form, with no login footage. Select exact payer/payee, enter amount and show readable quote/fees and a separate money confirmation. Show the empty SMS field, let it fill automatically, pause to read, then explicitly Verify and hold the fake-bank receipt. No manual bank code or offline test-code detour.
 
-Saved-recipient demo. Show same-bank and other-bank offline examples as separate cases, each with an 8-second review/receipt. Local test authorization is explicitly distinct from SMS.
+### transfers-02 — Same bank, SMS assisted
 
-Capture fixtures: `BankingFlowTest.transferRequiresCorrectAuthorizationAndPersistsOnceAcrossActivityRestart`, `AutomaticOperationCodeTest.transferRetainsExplicitReviewThenFillsSmsAndWaitsForVerify`, `LiveScreenTest.beneficiaryPreloadWaitsOnlyWhenPickerOpensAndSearchSelectsExactRecipient`, `ShowcaseExtraTest.savedBeneficiaryTransfers`.
+Start in the authenticated native transfer form, with no login footage. Select exact payer/payee, enter amount and show readable quote/fees and a separate money confirmation. Show the empty SMS field, let it fill automatically, pause to read, then explicitly Verify and hold the fake-bank receipt. No manual bank code or offline test-code detour.
+
+### transfers-03 — Other bank, SMS assisted
+
+Start in the authenticated native transfer form, with no login footage. Select exact payer/payee, enter amount and show readable quote/fees and a separate money confirmation. Show the empty SMS field, let it fill automatically, pause to read, then explicitly Verify and hold the fake-bank receipt. No manual bank code or offline test-code detour.
+
+### transfers-04 — Search the exact recipient
+
+Begin at authenticated accounts. Open the destination picker and search by recipient name or digits. Pause on the exact matching recipient; no login and no transfer submission in this search-only example.
+
+Fixtures:
+
+- `ShowcaseMoneyUxTest.ownAccountsSms` — SMS autofill required.
+- `ShowcaseMoneyUxTest.sameBankSms` — SMS autofill required.
+- `ShowcaseMoneyUxTest.otherBankSms` — SMS autofill required.
+- `LiveScreenTest.beneficiaryPreloadWaitsOnlyWhenPickerOpensAndSearchSelectsExactRecipient`.
 
 ## payments
 
 Review the service and amount before authorization.
 
-Offline service. Hold bill/amount review 8 seconds and fictional receipt 8 seconds; the DEMO code remains a local test code.
+Entry: Already in the feature; login excluded from exported footage.
 
-Advanced SMS. Start in the fake-bank payment form. Read review and money confirmation for 8 seconds each. Empty SMS field 3 seconds, autofill callback, filled field 5 seconds, explicit Verify, fake receipt 8 seconds.
+### payments-01 — Service payment with autofill
 
-Capture fixtures: `BankingFlowTest.servicePaymentReviewDoesNotDebitUntilConfirmed`, `AutomaticOperationCodeTest.paymentRetainsExplicitReviewThenFillsSmsAndWaitsForVerify`.
+Begin in the payment form, without login. Read the bank-supplied service/card balance and select the amount. Hold review and separate money confirmation, then show empty SMS, automatic fill, readable filled field, explicit Verify and the fictional receipt. Never type a bank or demo code.
+
+### payments-02 — Credit-card payment with autofill
+
+Begin in the payment form, without login. Read the bank-supplied service/card balance and select the amount. Hold review and separate money confirmation, then show empty SMS, automatic fill, readable filled field, explicit Verify and the fictional receipt. Never type a bank or demo code.
+
+Fixtures:
+
+- `ShowcaseMoneyUxTest.servicePaymentSms` — SMS autofill required.
+- `ShowcaseMoneyUxTest.creditCardPaymentSms` — SMS autofill required.
 
 ## beneficiaries
 
 A scanned/pasted recipient is not automatically validated or saved.
 
-Code review. Paste the long fictional recipient payload as one paste, not dozens of seconds of character typing. Hold the decoded recipient/currency for 8 seconds before continuation.
+Entry: Already in the feature; login excluded from exported footage.
 
-Deletion with SMS. Read deletion review for 8 seconds; confirm separately. Use SMS autofill only, hold before Verify, then explain the fake bank response for 8 seconds.
+### beneficiaries-01 — Code review
 
-Local save. Create a clearly fictional other-bank recipient locally, then hold the saved result for 8 seconds. This is a separate offline scene.
+Paste the long fictional recipient payload as one paste, not dozens of seconds of character typing. Hold the decoded recipient/currency for 8 seconds before continuation.
 
-Capture fixtures: `LiveScreenTest.scannedOtherBankRecipientPrefillsBeneficiaryFormWithoutValidatingOrSavingAutomatically`, `AutomaticOperationCodeTest.beneficiaryDeletionRetainsReviewAndExplicitSmsVerification`, `ShowcaseExtraTest.saveFictionalBeneficiary`.
+### beneficiaries-02 — Deletion with SMS
+
+Read deletion review for 8 seconds; confirm separately. Use SMS autofill only, hold before Verify, then explain the fake bank response for 8 seconds.
+
+### beneficiaries-03 — Local save
+
+Create a clearly fictional other-bank recipient locally, then hold the saved result for 8 seconds. This is a separate offline scene.
+
+Fixtures:
+
+- `LiveScreenTest.scannedOtherBankRecipientPrefillsBeneficiaryFormWithoutValidatingOrSavingAutomatically`.
+- `AutomaticOperationCodeTest.beneficiaryDeletionRetainsReviewAndExplicitSmsVerification` — SMS autofill required.
+- `ShowcaseExtraTest.saveFictionalBeneficiary`.
 
 ## cards
 
-Understand the useful read-only fields and implementation boundary.
+Useful masked card details and explicit copy, without unsupported service requests.
 
-1. Open a card from the native fake-bank catalogue. Hold status, linked product and balances for 8 seconds.
-2. Reveal exact bank identifier and copy it; hold 8 seconds. Explain an identifier is distinct from a card number. Show the holder name only when supplied. Keep the card number masked to its last four digits throughout, including after opening details or copying. Copy may use a complete supplied value, but never display or reconstruct it. Confirm the full number is absent from the captured frames.
-3. Open Manage card. Hold the unimplemented-services explanation for 12 seconds. No activation/blocking/report/travel API is called. Explain official-channel handoffs and urgent loss/theft action.
-4. Return to details and hold 6 seconds.
+Entry: Already in the feature; login excluded from exported footage.
 
-Capture fixture: `LiveCardsScreenTest.cardServicesExplainUnavailabilityWithoutAdministrationRequests`.
+### cards-01 — Read-only details and unavailable services
+
+Begin at authenticated cards, not login. Open details; show supplied holder and identifier. Keep the card number masked to its last four digits before, during and after explicit copying. Hold the unimplemented-services information for 12 seconds, then return to details. No card-write request.
+
+Fixtures:
+
+- `LiveCardsScreenTest.cardServicesExplainUnavailabilityWithoutAdministrationRequests`.
 
 ## token
 
 Consent and bank approval precede any active code.
 
-Contract and proof. Hold synthetic contract 10 seconds. Hold consent explanation 8 seconds before enrollment. Hold pending proof 10 seconds; a fixture approval is explicitly simulated.
+Entry: Already in the feature; login excluded from exported footage.
 
-Active and unlink. Hold generated fictitious code/status 8 seconds. Hold unlink confirmation 8 seconds before accepting, and explain result for 8 seconds.
+### token-01 — Contract and proof
 
-SMS enrollment step. A separate fake enrollment challenge uses SMS autofill, never typed SMS. Show empty/filled/Verify as in other banking scenes. Do not claim this scenario itself completed enrollment. A generated Token BSC code remains a token, not an SMS.
+Hold synthetic contract 10 seconds. Hold consent explanation 8 seconds before enrollment. Hold pending proof 10 seconds; a fixture approval is explicitly simulated.
 
-Capture fixtures: `NativeTokenScreenTest.contractConsentAndBankProofPrecedeCodeDisplayAndUnlinkNeedsConfirmation`, `NativeTokenScreenTest.nativeTokenSmsAutofillStillRequiresVerify`.
+### token-02 — Active and unlink
+
+Hold generated fictitious code/status 8 seconds. Hold unlink confirmation 8 seconds before accepting, and explain result for 8 seconds.
+
+### token-03 — SMS enrollment step
+
+A separate fake enrollment challenge uses SMS autofill, never typed SMS. Show empty/filled/Verify as in other banking scenes. Do not claim this scenario itself completed enrollment. A generated Token BSC code remains a token, not an SMS.
+
+Fixtures:
+
+- `NativeTokenScreenTest.contractConsentAndBankProofPrecedeCodeDisplayAndUnlinkNeedsConfirmation`.
+- `NativeTokenScreenTest.nativeTokenSmsAutofillStillRequiresVerify` — SMS autofill required.
 
 ## qr
 
 Review the request before sharing or acting on it.
 
-Create and save. Hold account versus payment-request modes; type short fictional purpose/amount readably. Hold completed QR card/details 8 seconds. Demonstrate save cancellation and retry without pretending a bank payment occurred.
+Entry: Already in the feature; login excluded from exported footage.
 
-Scanner review. Hold injected decoded amount/purpose/currency 8 seconds before explicit recipient review. No real camera capture is claimed.
+### qr-01 — Create and save
 
-Print. Hold Android print preview 8 seconds, return without claiming physical printing.
+Hold account versus payment-request modes; type short fictional purpose/amount readably. Hold completed QR card/details 8 seconds. Demonstrate save cancellation and retry without pretending a bank payment occurred.
 
-Capture fixtures: `RecipientShareScreenTest.savePreservesSelectedRequestAndCancelAllowsRetry`, `RecipientScanScreenTest.paymentRequestShowsAmountAndPurposeBeforeExplicitRecipientReview`, `RecipientShareScreenTest.printOpensAndroidPrintPreview`.
+### qr-02 — Scanner review
+
+Hold injected decoded amount/purpose/currency 8 seconds before explicit recipient review. No real camera capture is claimed.
+
+### qr-03 — Print
+
+Hold Android print preview 8 seconds, return without claiming physical printing.
+
+Fixtures:
+
+- `RecipientShareScreenTest.savePreservesSelectedRequestAndCancelAllowsRetry`.
+- `RecipientScanScreenTest.paymentRequestShowsAmountAndPurposeBeforeExplicitRecipientReview`.
+- `RecipientShareScreenTest.printOpensAndroidPrintPreview`.
 
 ## settings
 
-Read the SMS assistance explanation for 10 seconds. Disable the actual assistance switch, hold 6 seconds; enable it again, hold 8 seconds. Show delivery preference Ask for 6 seconds and Email for 6 seconds; restore SMS for 8 seconds. Assistance and delivery are separate settings. All subsequent recordings retain assistance enabled and SMS selected.
+Show configuration once, restore SMS, and preserve uncertain outcomes.
 
-Show profile, security, help and logout with readable pauses. For an uncertain operation, hold history and its reconciliation acknowledgment for 10 seconds before checking it. Confirm explicitly and hold result 8 seconds; this neither repeats nor cancels the earlier operation.
+Entry: Already in the feature; login excluded from exported footage.
 
-Capture fixtures: `ShowcaseSmsSettingsTest.deliveryPreferenceReturnsToSms`, `ShowcaseExtraTest.settingsProfileHelpAndLogout`, `LiveScreenTest.moneyReconciliationNeedsLoadedHistoryAndFreshCheckedConfirmation`.
+### settings-01 — Delivery configuration
 
-## Overview
+Read one-message SMS consent guidance for 10 seconds. Switch SMS assistance off and hold 6 seconds; switch back on and hold 8 seconds. Then demonstrate Ask and Email delivery preferences with 6-second pauses and restore SMS delivery. All other chapters keep assistance enabled, except the initial pre-choice onboarding scene.
 
-104 seconds: thirteen 8-second excerpts in chapter order. Prefer an already visible review, result, or SMS-filled field; preserve a short reading pause. Avoid cuts through tap rings or partial confirmations. No sped-up footage.
+### settings-02 — Demo settings
 
-## Revision 3 additions before final retakes
+Show profile, security, help and logout with 6-second explanation holds.
 
-- First-use acceptance now leads to an SMS assistance choice; hold its disclosure 8 seconds before enabling. Declining remains supported and does not block login.
-- Login adds a separate **synthetic one-message consent result** scene. Hold the pending code screen for 8 seconds, approve the fake consent callback, then hold the automatically completed SMS-only login for 8 seconds. Never draw a fake Android consent dialog or suggest system keyboard autofill has the same submission behavior.
-- Verification adds device registration followed by fresh biometric login inside the app. Hold registration disclosure 10 seconds and biometric re-entry 6 seconds; no credentials are silently replayed.
-- Settings demonstrates the actual SMS-assistance switch: disable, hold 6 seconds, enable, hold 8 seconds. Show delivery preferences separately and restore SMS.
-- Live card administration scenes from revision 2 are superseded by read-only details and an unavailable-services explanation. No simulated loss/theft/travel operations appear in the final publication.
+### settings-03 — Uncertain operation
+
+Hold the blocked state/history for 10 seconds. Read reconciliation acknowledgement for 10 seconds before checking it. Confirm explicitly and hold result 8 seconds. Never imply retrying, cancelling or reversing the old operation.
+
+Fixtures:
+
+- `ShowcaseSmsSettingsTest.deliveryPreferenceReturnsToSms`.
+- `ShowcaseExtraTest.settingsProfileHelpAndLogout`.
+- `LiveScreenTest.moneyReconciliationNeedsLoadedHistoryAndFreshCheckedConfirmation`.

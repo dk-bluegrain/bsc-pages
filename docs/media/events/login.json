@@ -3,403 +3,240 @@
     "width": 540,
     "height": 1200
   },
-  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Rings are synchronized in the input action inside Android, not reconstructed in post-production.",
+  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Android records each actual input and native marker. A persistent one-second overlay follows those same events across native window handoffs.",
   "events": [
     {
       "type": "scene-start",
-      "timeSeconds": 0.15,
-      "epochMs": 1792192076135,
+      "timeSeconds": 0,
+      "epochMs": 1792198652313,
       "scenario": 1,
       "preferredMedium": "SMS"
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 0.231,
+      "epochMs": 1792198652594,
+      "scenario": 1,
+      "file": "screen-000.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 0.288,
-      "epochMs": 1792192076273,
+      "timeSeconds": 0.231,
+      "epochMs": 1792198652594,
       "scenario": 1,
       "cue": "opening",
       "durationMs": 5000
     },
     {
-      "type": "typing",
-      "timeSeconds": 6.902,
-      "epochMs": 1792192082887,
+      "type": "screenshot",
+      "timeSeconds": 5.338,
+      "epochMs": 1792198657701,
       "scenario": 1,
-      "characters": 9,
-      "action": "live-username"
+      "file": "screen-001.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 5.424,
+      "epochMs": 1792198657787,
+      "scenario": 1,
+      "file": "screen-002.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 8.853,
-      "epochMs": 1792192084838,
+      "timeSeconds": 5.425,
+      "epochMs": 1792198657788,
       "scenario": 1,
-      "cue": "read",
-      "durationMs": 2000
+      "cue": "sms-wait",
+      "durationMs": 3000
     },
     {
-      "type": "typing",
-      "timeSeconds": 12.464,
-      "epochMs": 1792192088449,
+      "type": "screenshot",
+      "timeSeconds": 8.523,
+      "epochMs": 1792198660886,
       "scenario": 1,
-      "characters": 13,
-      "action": "live-password"
+      "file": "screen-003.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 8.612,
+      "epochMs": 1792198660975,
+      "scenario": 1,
+      "file": "screen-004.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 15.243,
-      "epochMs": 1792192091228,
+      "timeSeconds": 8.612,
+      "epochMs": 1792198660975,
       "scenario": 1,
-      "cue": "read",
-      "durationMs": 2000
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 17.47,
-      "epochMs": 1792192093455,
-      "scenario": 1,
-      "cue": "verify",
+      "cue": "sms-consent",
       "durationMs": 4000
     },
     {
-      "type": "tap",
-      "timeSeconds": 21.664,
-      "epochMs": 1792192097649,
+      "type": "screenshot",
+      "timeSeconds": 12.719,
+      "epochMs": 1792198665082,
       "scenario": 1,
-      "x": 270.0,
-      "y": 702.25
+      "file": "screen-005.png"
+    },
+    {
+      "type": "sms-autofill",
+      "timeSeconds": 12.98,
+      "epochMs": 1792198665343,
+      "scenario": 1,
+      "method": "synthetic one-message consent result",
+      "manualTyping": false
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 13.17,
+      "epochMs": 1792198665533,
+      "scenario": 1,
+      "file": "screen-006.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 22.841,
-      "epochMs": 1792192098826,
+      "timeSeconds": 13.17,
+      "epochMs": 1792198665533,
       "scenario": 1,
-      "cue": "verify",
-      "durationMs": 8000
+      "cue": "sms-login",
+      "durationMs": 2000
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 15.271,
+      "epochMs": 1792198667634,
+      "scenario": 1,
+      "file": "screen-007.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 15.691,
+      "epochMs": 1792198668054,
+      "scenario": 1,
+      "file": "screen-008.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 31.78,
-      "epochMs": 1792192107765,
+      "timeSeconds": 15.691,
+      "epochMs": 1792198668054,
       "scenario": 1,
       "cue": "read",
       "durationMs": 6000
     },
     {
-      "type": "scene-end",
-      "timeSeconds": 37.884,
-      "epochMs": 1792192113869,
+      "type": "screenshot",
+      "timeSeconds": 21.783,
+      "epochMs": 1792198674146,
       "scenario": 1,
-      "preferredMedium": "SMS"
+      "file": "screen-009.png"
     },
     {
-      "type": "configuration",
-      "timeSeconds": 36.852,
-      "epochMs": 1792192118336,
-      "scenario": 2,
+      "type": "scene-end",
+      "timeSeconds": 21.784,
+      "epochMs": 1792198674147,
+      "scenario": 1,
       "preferredMedium": "SMS"
     },
     {
       "type": "scene-start",
-      "timeSeconds": 38.15,
-      "epochMs": 1792192119634,
+      "timeSeconds": 21.867,
+      "epochMs": 1792197398672,
       "scenario": 2,
       "preferredMedium": "SMS"
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 21.981,
+      "epochMs": 1792197398836,
+      "scenario": 2,
+      "file": "screen-000.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 38.401,
-      "epochMs": 1792192119885,
+      "timeSeconds": 21.982,
+      "epochMs": 1792197398837,
       "scenario": 2,
       "cue": "opening",
       "durationMs": 5000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 27.083,
+      "epochMs": 1792197403938,
+      "scenario": 2,
+      "file": "screen-001.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 27.169,
+      "epochMs": 1792197404024,
+      "scenario": 2,
+      "file": "screen-002.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 43.592,
-      "epochMs": 1792192125076,
+      "timeSeconds": 27.17,
+      "epochMs": 1792197404025,
       "scenario": 2,
       "cue": "read",
       "durationMs": 6000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 33.304,
+      "epochMs": 1792197410159,
+      "scenario": 2,
+      "file": "screen-003.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 34.128,
+      "epochMs": 1792197410983,
+      "scenario": 2,
+      "file": "screen-004.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 49.956,
-      "epochMs": 1792192131440,
+      "timeSeconds": 34.13,
+      "epochMs": 1792197410985,
       "scenario": 2,
       "cue": "receipt",
       "durationMs": 8000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 42.235,
+      "epochMs": 1792197419090,
+      "scenario": 2,
+      "file": "screen-005.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 42.327,
+      "epochMs": 1792197419182,
+      "scenario": 2,
+      "file": "screen-006.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 58.176,
-      "epochMs": 1792192139660,
+      "timeSeconds": 42.327,
+      "epochMs": 1792197419182,
       "scenario": 2,
       "cue": "read",
       "durationMs": 6000
     },
     {
-      "type": "scene-end",
-      "timeSeconds": 64.282,
-      "epochMs": 1792192145766,
+      "type": "screenshot",
+      "timeSeconds": 48.433,
+      "epochMs": 1792197425288,
       "scenario": 2,
-      "preferredMedium": "SMS"
-    },
-    {
-      "type": "configuration",
-      "timeSeconds": 62.839,
-      "epochMs": 1792192589566,
-      "scenario": 3,
-      "preferredMedium": "SMS"
-    },
-    {
-      "type": "scene-start",
-      "timeSeconds": 64.55,
-      "epochMs": 1792192591277,
-      "scenario": 3,
-      "preferredMedium": "SMS"
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 64.73,
-      "epochMs": 1792192591457,
-      "scenario": 3,
-      "cue": "opening",
-      "durationMs": 5000
-    },
-    {
-      "type": "typing",
-      "timeSeconds": 71.33,
-      "epochMs": 1792192598057,
-      "scenario": 3,
-      "characters": 9,
-      "action": "live-username"
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 73.022,
-      "epochMs": 1792192599749,
-      "scenario": 3,
-      "cue": "read",
-      "durationMs": 2000
-    },
-    {
-      "type": "typing",
-      "timeSeconds": 76.614,
-      "epochMs": 1792192603341,
-      "scenario": 3,
-      "characters": 13,
-      "action": "live-password"
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 79.413,
-      "epochMs": 1792192606140,
-      "scenario": 3,
-      "cue": "read",
-      "durationMs": 2000
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 81.625,
-      "epochMs": 1792192608352,
-      "scenario": 3,
-      "cue": "verify",
-      "durationMs": 4000
-    },
-    {
-      "type": "tap",
-      "timeSeconds": 85.713,
-      "epochMs": 1792192612440,
-      "scenario": 3,
-      "x": 270.0,
-      "y": 702.25
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 86.804,
-      "epochMs": 1792192613531,
-      "scenario": 3,
-      "cue": "verify",
-      "durationMs": 8000
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 94.985,
-      "epochMs": 1792192621712,
-      "scenario": 3,
-      "cue": "sms-wait",
-      "durationMs": 3000
-    },
-    {
-      "type": "sms-autofill",
-      "timeSeconds": 98.114,
-      "epochMs": 1792192624841,
-      "scenario": 3,
-      "method": "synthetic Android autofill callback",
-      "manualTyping": false
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 98.259,
-      "epochMs": 1792192624986,
-      "scenario": 3,
-      "cue": "sms-filled",
-      "durationMs": 5500
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 104.007,
-      "epochMs": 1792192630734,
-      "scenario": 3,
-      "cue": "verify",
-      "durationMs": 4000
-    },
-    {
-      "type": "tap",
-      "timeSeconds": 108.097,
-      "epochMs": 1792192634824,
-      "scenario": 3,
-      "x": 270.0,
-      "y": 1100.25
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 108.711,
-      "epochMs": 1792192635438,
-      "scenario": 3,
-      "cue": "verify",
-      "durationMs": 8000
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 116.879,
-      "epochMs": 1792192643606,
-      "scenario": 3,
-      "cue": "read",
-      "durationMs": 6000
+      "file": "screen-007.png"
     },
     {
       "type": "scene-end",
-      "timeSeconds": 122.963,
-      "epochMs": 1792192649690,
-      "scenario": 3,
-      "preferredMedium": "SMS"
-    },
-    {
-      "type": "configuration",
-      "timeSeconds": 121.436,
-      "epochMs": 1792191548862,
-      "scenario": 4,
-      "preferredMedium": "SMS"
-    },
-    {
-      "type": "scene-start",
-      "timeSeconds": 123.217,
-      "epochMs": 1792191550643,
-      "scenario": 4,
-      "preferredMedium": "SMS"
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 123.44,
-      "epochMs": 1792191550866,
-      "scenario": 4,
-      "cue": "opening",
-      "durationMs": 5000
-    },
-    {
-      "type": "typing",
-      "timeSeconds": 130.054,
-      "epochMs": 1792191557480,
-      "scenario": 4,
-      "characters": 9,
-      "action": "live-username"
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 132.026,
-      "epochMs": 1792191559452,
-      "scenario": 4,
-      "cue": "read",
-      "durationMs": 2000
-    },
-    {
-      "type": "typing",
-      "timeSeconds": 135.664,
-      "epochMs": 1792191563090,
-      "scenario": 4,
-      "characters": 13,
-      "action": "live-password"
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 138.616,
-      "epochMs": 1792191566042,
-      "scenario": 4,
-      "cue": "read",
-      "durationMs": 2000
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 140.914,
-      "epochMs": 1792191568340,
-      "scenario": 4,
-      "cue": "verify",
-      "durationMs": 4000
-    },
-    {
-      "type": "tap",
-      "timeSeconds": 145.03,
-      "epochMs": 1792191572456,
-      "scenario": 4,
-      "x": 270.0,
-      "y": 702.25
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 146.26,
-      "epochMs": 1792191573686,
-      "scenario": 4,
-      "cue": "verify",
-      "durationMs": 8000
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 154.45,
-      "epochMs": 1792191581876,
-      "scenario": 4,
-      "cue": "sms-consent",
-      "durationMs": 8000
-    },
-    {
-      "type": "sms-autofill",
-      "timeSeconds": 162.693,
-      "epochMs": 1792191590119,
-      "scenario": 4,
-      "method": "synthetic one-message consent result",
-      "manualTyping": false
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 162.776,
-      "epochMs": 1792191590202,
-      "scenario": 4,
-      "cue": "sms-login",
-      "durationMs": 8000
-    },
-    {
-      "type": "hold",
-      "timeSeconds": 171.023,
-      "epochMs": 1792191598449,
-      "scenario": 4,
-      "cue": "read",
-      "durationMs": 6000
-    },
-    {
-      "type": "scene-end",
-      "timeSeconds": 177.123,
-      "epochMs": 1792191604549,
-      "scenario": 4,
+      "timeSeconds": 48.434,
+      "epochMs": 1792197425289,
+      "scenario": 2,
       "preferredMedium": "SMS"
     }
   ]

@@ -1,53 +1,53 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:07.883
-Premier usage fictif : confidentialité, conditions, langue et aide SMS facultative avec accord par message.
+00:00:00.000 --> 00:00:13.950
+Le SMS arrive ; après accord pour partager ce message dans Android, le code se remplit et la connexion par SMS seul peut continuer.
 
 2
-00:00:07.933 --> 00:00:15.883
-Connexion simulée : l’accord pour un SMS ne vérifie automatiquement que la connexion par SMS seul ; le clavier garde Vérifier.
+00:00:14.000 --> 00:00:31.950
+Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
 
 3
-00:00:15.933 --> 00:00:23.883
-Question combinée et SMS gardent Vérifier ; approbation de l’appareil et changement de mot de passe restent distincts.
+00:00:32.000 --> 00:00:38.950
+Choisissez votre langue et gardez-la dans toute l’application.
 
 4
-00:00:23.933 --> 00:00:31.883
-Démo hors ligne : comptes fictifs, DOP/USD, masquage des soldes et flèches de défilement tactile.
+00:00:39.000 --> 00:00:45.883
+Après l’enregistrement de l’appareil, poursuivez dans l’application avec l’accès biométrique.
 
 5
-00:00:31.933 --> 00:00:39.816
-Historique bancaire simulé : recherche et filtres ; la démo partage un CSV fictif via Android.
+00:00:45.933 --> 00:00:52.816
+Masquez les soldes d’un geste. Pesos et dollars restent séparés.
 
 6
-00:00:39.866 --> 00:00:47.749
-PDF synthétique : pages, agrandissement, partage et enregistrement d’une sélection dans un dossier simulé.
+00:00:52.866 --> 00:00:59.749
+Retrouvez une opération en saisissant quelques lettres.
 
 7
-00:00:47.799 --> 00:00:55.682
-Virements de démo : code local 123456, pas un SMS. Banque simulée : révision, code SMS rempli par Android et Vérifier.
+00:00:59.799 --> 00:01:06.749
+Parcourez les pages du PDF dans l’application.
 
 8
-00:00:55.732 --> 00:01:03.615
-Paiement de démo avec code local ; paiement bancaire simulé avec code SMS rempli par Android et Vérifier.
+00:01:06.799 --> 00:01:13.749
+Un reçu clair après vérification et autorisation.
 
 9
-00:01:03.665 --> 00:01:11.548
-Code de destinataire, enregistrement local et suppression bancaire simulée avec code SMS rempli et Vérifier.
+00:01:13.799 --> 00:01:20.682
+Lisez les coordonnées du destinataire avant de continuer.
 
 10
-00:01:11.598 --> 00:01:19.481
-Cartes en lecture seule : titulaire/identifiant fournis, numéro complet seulement si fourni ; services informatifs sans modification.
+00:01:20.732 --> 00:01:27.615
+Copiez par une action explicite. Seuls les quatre derniers chiffres restent visibles.
 
 11
-00:01:19.531 --> 00:01:27.481
-Token BSC simulé : contrat et dissociation ; code SMS rempli puis Vérifier. Les codes générés du jeton ne sont pas des SMS.
+00:01:27.665 --> 00:01:34.548
+Votre code Token BSC dans l’application.
 
 12
-00:01:27.531 --> 00:01:35.481
-Demande QR fictive : enregistrement, vérification du destinataire et aperçu d’impression.
+00:01:34.598 --> 00:01:41.481
+Montant, motif et destinataire réunis avant de continuer.
 
 13
-00:01:35.531 --> 00:01:43.481
-Aide SMS désactivée puis réactivée ; canal distinct. Autorisation bancaire et validation du compte de son titulaire restent en suspens.
+00:01:41.531 --> 00:01:48.481
+Choisissez l’aide SMS dans les paramètres. Vous gardez le contrôle.

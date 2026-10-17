@@ -43,3 +43,8 @@ function selectChapter() {
 }
 selectChapter();
 window.addEventListener('hashchange', selectChapter);
+for (const control of document.querySelectorAll('[data-play-overview]')) {
+  control.addEventListener('click', () => {
+    document.getElementById('video-overview')?.play().catch(() => {});
+  });
+}

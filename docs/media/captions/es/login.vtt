@@ -1,85 +1,29 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:17.420
-Acceso bancario simulado: opción de recordar usuario y contraseña, con aprobación biométrica de prueba.
+00:00:00.000 --> 00:00:05.375
+Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.
 
 2
-00:00:17.470 --> 00:00:22.791
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+00:00:05.425 --> 00:00:08.562
+Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
 
 3
-00:00:22.841 --> 00:00:30.791
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+00:00:08.612 --> 00:00:12.562
+La ayuda SMS es opcional. Android pide aprobación para un mensaje, no acceso a la bandeja; puedes continuar manualmente.
 
 4
-00:00:30.841 --> 00:00:38.100
-Acceso bancario simulado: opción de recordar usuario y contraseña, con aprobación biométrica de prueba.
+00:00:12.612 --> 00:00:21.817
+Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.
 
 5
-00:00:38.150 --> 00:00:49.906
+00:00:21.867 --> 00:00:34.080
 Desbloqueo biométrico simulado del acceso guardado; la aprobación del banco es un requisito separado.
 
 6
-00:00:49.956 --> 00:00:57.906
+00:00:34.130 --> 00:00:42.080
 Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
 
 7
-00:00:57.956 --> 00:01:04.500
+00:00:42.130 --> 00:00:48.483
 Desbloqueo biométrico simulado del acceso guardado; la aprobación del banco es un requisito separado.
-
-8
-00:01:04.550 --> 00:01:21.575
-Acceso con banco simulado y SMS autocompletado por Android: el código requiere Verificar de forma expresa.
-
-9
-00:01:21.625 --> 00:01:26.754
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-10
-00:01:26.804 --> 00:01:34.935
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-11
-00:01:34.985 --> 00:01:38.209
-Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
-
-12
-00:01:38.259 --> 00:01:43.957
-El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.
-
-13
-00:01:44.007 --> 00:01:48.661
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-14
-00:01:48.711 --> 00:01:56.661
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-15
-00:01:56.711 --> 00:02:03.167
-Acceso con banco simulado y SMS autocompletado por Android: el código requiere Verificar de forma expresa.
-
-16
-00:02:03.217 --> 00:02:20.864
-Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.
-
-17
-00:02:20.914 --> 00:02:26.210
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-18
-00:02:26.260 --> 00:02:34.400
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-19
-00:02:34.450 --> 00:02:42.726
-La ayuda SMS es opcional. Android pide aprobación para un mensaje, no acceso a la bandeja; puedes continuar manualmente.
-
-20
-00:02:42.776 --> 00:02:50.726
-Aprobación simulada de un mensaje: solo el acceso exclusivamente SMS se verifica automáticamente. Operaciones y preguntas combinadas conservan Verificar.
-
-21
-00:02:50.776 --> 00:02:57.150
-Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.

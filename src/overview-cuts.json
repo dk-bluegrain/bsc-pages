@@ -1,0 +1,34 @@
+{
+  "first-use": {
+    "tapIndex": 3,
+    "selectionReason": "Fixture welcome, settings, language selector, then Spanish choice."
+  },
+  "accounts": {
+    "tapIndex": 0,
+    "selectionReason": "First feature tap hides balances after quiet demo entry."
+  },
+  "statements": {
+    "tapIndex": 1,
+    "selectionReason": "Open period, then actual next-page action."
+  },
+  "cards": {
+    "tapIndex": 3,
+    "selectionReason": "Open preview, open details, copy identifier, then explicitly copy number."
+  },
+  "beneficiaries": {
+    "tapIndex": 4,
+    "selectionReason": "Account, scanner, manual payload, decode, then actual recipient review."
+  },
+  "token": {
+    "occurrence": 4,
+    "selectionReason": "Active-code hold after the second bank-proof check; verify against actual stage captures."
+  },
+  "verification": {
+    "match": "read",
+    "selectionReason": "Final real account read-hold starts after simulated biometric re-entry; begin two seconds earlier to show the transition."
+  },
+  "qr": {
+    "scenario": 2,
+    "selectionReason": "Decoded QR payment request review shows memo, amount and currency together before explicit continuation."
+  }
+}

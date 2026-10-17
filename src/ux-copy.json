@@ -1,0 +1,1124 @@
+{
+  "languages": {
+    "es": {
+      "eyebrow": "Santa Cruz Modern · Android",
+      "headline": "Menos pasos. Más claridad.",
+      "intro": "Un código que se rellena, tus monedas bien separadas y cada importe a la vista antes de confirmar. Mira el recorrido y elige lo que quieres explorar.",
+      "watchLabel": "Ver el recorrido",
+      "benefitsTitle": "Detalles que te facilitan cada paso",
+      "benefitsIntro": "Entra, encuentra lo que buscas y revisa con calma antes de continuar.",
+      "proofLabel": "Ver cómo funciona",
+      "flowTitle": "Ve directo a lo que necesitas",
+      "flowIntro": "Cada capítulo empieza en su tarea: cuentas, documentos y operaciones, sin repetir el acceso en cada video.",
+      "smsSpotlightTitle": "El código, sin copiar.",
+      "smsSpotlightBody": "Con la ayuda SMS opcional, Android pide tu aprobación para compartir un solo mensaje y rellenar el código. El acceso solo por SMS puede continuar automáticamente; en las operaciones revisas y pulsas Verificar.",
+      "mediaNote": "Los videos muestran la interfaz nativa con datos ficticios; los flujos bancarios avanzados y las aprobaciones de Android para compartir un SMS se simulan y se identifican como tales. La demo básica descargable es más sencilla y no incluye todos esos recorridos.",
+      "benefits": [
+        {
+          "id": "sms",
+          "title": "Códigos SMS sin copiar",
+          "body": "Con la ayuda SMS opcional, aprueba compartir un mensaje en Android y el código se rellena sin copiarlo. El acceso solo SMS puede continuar automáticamente; las operaciones conservan Verificar.",
+          "chapter": "login"
+        },
+        {
+          "id": "biometrics",
+          "title": "Tu acceso, con biometría",
+          "body": "Elige recordar usuario y contraseña y desbloquéalos con biometría. Si se pide aprobar el dispositivo o verificar el acceso, ves ese paso por separado.",
+          "chapter": "verification"
+        },
+        {
+          "id": "balances",
+          "title": "Pesos y dólares, bien separados",
+          "body": "Cambia entre DOP y USD sin mezclar los saldos. Oculta los importes cuando prefieras consultar con más privacidad.",
+          "chapter": "accounts"
+        },
+        {
+          "id": "search",
+          "title": "Encuentra sin recorrer toda la lista",
+          "body": "Busca destinatarios por nombre, banco o datos de cuenta y localiza movimientos con búsqueda y filtros. Comprueba el resultado antes de elegirlo.",
+          "chapter": "beneficiaries"
+        },
+        {
+          "id": "statements",
+          "title": "Tus PDF, listos para consultar",
+          "body": "Abre estados de cuenta dentro de la app y recorre sus páginas. Guarda un período o selecciona varios para conservarlos en el destino que elijas.",
+          "chapter": "statements"
+        },
+        {
+          "id": "qr-reviews",
+          "title": "Solicitudes claras, revisiones legibles",
+          "body": "Comparte una solicitud QR con concepto e importe a la vista. Antes de una operación, revisa destinatario, moneda y total y confirma a tu ritmo.",
+          "chapter": "qr"
+        }
+      ],
+      "chapters": {
+        "first-use": {
+          "title": "Empieza en tu idioma",
+          "body": "Lee privacidad y términos antes de aceptar y elige entre siete idiomas. Activa la ayuda SMS opcional o continúa manualmente."
+        },
+        "login": {
+          "title": "Tu código, sin copiarlo",
+          "body": "Con ayuda SMS, aprueba en Android compartir un solo mensaje para que el código se rellene. Solo el acceso exclusivamente SMS puede continuar automáticamente; el autocompletado del teclado conserva Verificar."
+        },
+        "verification": {
+          "title": "Vuelve a entrar con biometría",
+          "body": "Desbloquea el acceso recordado con biometría y sigue el registro de dispositivo dentro de la app cuando se requiera. Las preguntas combinadas conservan Verificar y las comprobaciones externas continúan en el canal indicado."
+        },
+        "accounts": {
+          "title": "Cada moneda, en su lugar",
+          "body": "Consulta DOP y USD por separado y abre el detalle de la cuenta que necesitas. Oculta o muestra los saldos con un toque."
+        },
+        "history": {
+          "title": "Encuentra ese movimiento",
+          "body": "Busca en el historial y filtra entradas o salidas para encontrar el movimiento que necesitas. Comparte los movimientos de la cuenta en CSV cuando quieras."
+        },
+        "statements": {
+          "title": "El estado de cuenta, a mano",
+          "body": "Abre el PDF dentro de la app, cambia de página y amplía el contenido. Guarda uno o varios períodos en el destino que elijas; las copias guardadas permanecen allí."
+        },
+        "transfers": {
+          "title": "Revisa antes de transferir",
+          "body": "Elige origen y destinatario y lee importe, moneda y comisiones antes de confirmar el envío. Cuando llegue el SMS, aprueba compartirlo en Android, revisa el código rellenado y pulsa Verificar."
+        },
+        "payments": {
+          "title": "Paga con los datos a la vista",
+          "body": "Comprueba servicio, cuenta de origen e importe antes de confirmar. El código SMS se rellena tras aprobar el mensaje en Android y tú pulsas Verificar para seguir."
+        },
+        "beneficiaries": {
+          "title": "El destinatario correcto",
+          "body": "Busca y revisa los datos antes de guardar o eliminar un beneficiario. Validar un destinatario no lo guarda automáticamente ni envía dinero."
+        },
+        "cards": {
+          "title": "Tarjetas, con el número protegido",
+          "body": "Consulta los datos recibidos del banco con el número oculto salvo los últimos cuatro dígitos; copiar el número completo exige que el banco lo facilite y que tú lo elijas. La administración de tarjetas no está disponible: aquí encuentras información de los canales oficiales."
+        },
+        "token": {
+          "title": "Tu token, con sus pasos claros",
+          "body": "Lee el contrato y decide sobre inscripción y almacenamiento antes de continuar; la identificación externa se hace en el canal indicado. Los códigos generados por Token BSC no son SMS y la desvinculación requiere confirmación."
+        },
+        "qr": {
+          "title": "Un QR que se entiende",
+          "body": "Crea una solicitud con concepto e importe, revisa sus datos y guarda o imprime el QR. Leer un código permite revisar el destinatario, pero no autoriza un pago."
+        },
+        "settings": {
+          "title": "Tus preferencias, a mano",
+          "body": "Ajusta idioma, ayuda SMS y entrega de códigos, y encuentra perfil, ayuda y cierre de sesión. Si una operación queda incierta, consulta el historial antes de conciliar: conciliar no repite ni cancela la operación."
+        }
+      },
+      "overviewCues": [
+        {
+          "id": "login",
+          "text": "Llega el SMS; tras aprobar compartir ese mensaje en Android, el código se rellena y el acceso solo por SMS puede continuar."
+        },
+        {
+          "id": "transfers",
+          "text": "En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado."
+        },
+        {
+          "id": "first-use",
+          "text": "Elige tu idioma y mantenlo en toda la app."
+        },
+        {
+          "id": "verification",
+          "text": "Tras registrar el dispositivo, continúa dentro de la app con tu acceso biométrico."
+        },
+        {
+          "id": "accounts",
+          "text": "Oculta saldos con un toque. Mantén pesos y dólares separados."
+        },
+        {
+          "id": "history",
+          "text": "Encuentra un movimiento escribiendo unas letras."
+        },
+        {
+          "id": "statements",
+          "text": "Pasa las páginas del PDF dentro de la app."
+        },
+        {
+          "id": "payments",
+          "text": "Un comprobante claro después de revisar y autorizar."
+        },
+        {
+          "id": "beneficiaries",
+          "text": "Lee los datos del destinatario antes de continuar."
+        },
+        {
+          "id": "cards",
+          "text": "Copia con una acción explícita. El número sigue oculto salvo los últimos cuatro dígitos."
+        },
+        {
+          "id": "token",
+          "text": "Tu código Token BSC, dentro de la app."
+        },
+        {
+          "id": "qr",
+          "text": "Importe, concepto y destinatario juntos antes de continuar."
+        },
+        {
+          "id": "settings",
+          "text": "Elige la ayuda SMS en Ajustes. Tú mantienes el control."
+        }
+      ]
+    },
+    "en": {
+      "eyebrow": "Santa Cruz Modern · Android",
+      "headline": "Fewer steps. More clarity.",
+      "intro": "A code that fills, currencies kept distinct, and the amount in view before you confirm. Watch the tour and choose what to explore.",
+      "watchLabel": "Watch the tour",
+      "benefitsTitle": "Useful details at every step",
+      "benefitsIntro": "Get in, find what you need, and take a moment to review before continuing.",
+      "proofLabel": "See how it works",
+      "flowTitle": "Go straight to your task",
+      "flowIntro": "Each chapter starts with its task: accounts, documents and operations, without repeating login in every video.",
+      "smsSpotlightTitle": "Your code. No copying.",
+      "smsSpotlightBody": "With optional SMS assistance, Android asks your approval to share one message and fill the code. SMS-only login can continue automatically; for operations, review it and tap Verify.",
+      "mediaNote": "Videos show the native interface with fictional data; advanced banking flows and Android approval results for sharing an SMS are simulated and labeled. The downloadable basic demo is simpler and does not include every walkthrough.",
+      "benefits": [
+        {
+          "id": "sms",
+          "title": "SMS codes without copying",
+          "body": "With optional SMS assistance, approve sharing one message in Android and the code fills without copying. SMS-only login can continue automatically; operations retain Verify.",
+          "chapter": "login"
+        },
+        {
+          "id": "biometrics",
+          "title": "Unlock remembered access",
+          "body": "Choose to remember your username and password and unlock them with biometrics. If device approval or another login check is required, you see that step separately.",
+          "chapter": "verification"
+        },
+        {
+          "id": "balances",
+          "title": "Pesos and dollars, kept distinct",
+          "body": "Switch between DOP and USD without mixing balances. Hide amounts whenever you want a more private view.",
+          "chapter": "accounts"
+        },
+        {
+          "id": "search",
+          "title": "Find it without reading the whole list",
+          "body": "Search recipients by name, bank or account details, and find transactions with search and filters. Check the result before selecting it.",
+          "chapter": "beneficiaries"
+        },
+        {
+          "id": "statements",
+          "title": "Your PDFs, ready to read",
+          "body": "Open statements in the app and browse their pages. Save one period or select several for the destination you choose.",
+          "chapter": "statements"
+        },
+        {
+          "id": "qr-reviews",
+          "title": "Clear requests, readable reviews",
+          "body": "Share a QR request with its memo and amount in view. Before an operation, review recipient, currency and total, then confirm at your own pace.",
+          "chapter": "qr"
+        }
+      ],
+      "chapters": {
+        "first-use": {
+          "title": "Start in your language",
+          "body": "Read privacy and terms before accepting, and choose from seven languages. Enable optional SMS assistance or continue manually."
+        },
+        "login": {
+          "title": "Your code, without copying",
+          "body": "With SMS assistance, approve sharing one message in Android to fill the code. Only SMS-only login can continue automatically; keyboard autofill retains Verify."
+        },
+        "verification": {
+          "title": "Return with biometrics",
+          "body": "Unlock remembered access with biometrics and follow device registration within the app when required. Combined questions retain Verify, and external checks continue through the indicated channel."
+        },
+        "accounts": {
+          "title": "Each currency in its place",
+          "body": "View DOP and USD separately and open the account details you need. Hide or show balances with a tap."
+        },
+        "history": {
+          "title": "Find that transaction",
+          "body": "Search history and filter incoming or outgoing records to find the transaction you need. Share the account’s transactions as a CSV when you choose."
+        },
+        "statements": {
+          "title": "Your statement within reach",
+          "body": "Open the PDF in the app, turn pages and zoom in. Save one or several periods to your chosen destination; saved copies remain there."
+        },
+        "transfers": {
+          "title": "Review before transferring",
+          "body": "Choose source and recipient, then read amount, currency and fees before confirming the transfer. When SMS arrives, approve sharing it in Android, review the filled code and tap Verify."
+        },
+        "payments": {
+          "title": "Pay with the details in view",
+          "body": "Check the service, source account and amount before confirming. The SMS code fills after Android message approval, and you tap Verify to continue."
+        },
+        "beneficiaries": {
+          "title": "The right recipient",
+          "body": "Search and review details before saving or deleting a beneficiary. Validating a recipient neither saves them automatically nor sends money."
+        },
+        "cards": {
+          "title": "Cards with the number protected",
+          "body": "Read bank-supplied details with the number masked except its last four digits; copying the full number requires the bank to supply it and your explicit choice. Card administration is unavailable; this screen provides official-channel information."
+        },
+        "token": {
+          "title": "Your token, one clear step at a time",
+          "body": "Read the contract and choose enrollment and storage before continuing; external identification uses the indicated channel. Generated Token BSC codes are not SMS, and unlinking requires confirmation."
+        },
+        "qr": {
+          "title": "A QR request you can read",
+          "body": "Create a request with a memo and amount, review its details, then save or print the QR. Reading a code lets you review a recipient but never authorizes payment."
+        },
+        "settings": {
+          "title": "Your preferences within reach",
+          "body": "Set language, SMS assistance and code delivery, and find profile, help and logout. If an outcome is uncertain, check history before reconciliation; reconciliation neither repeats nor cancels the operation."
+        }
+      },
+      "overviewCues": [
+        {
+          "id": "login",
+          "text": "SMS arrives; approve sharing that message in Android, the code fills, and SMS-only login can continue."
+        },
+        {
+          "id": "transfers",
+          "text": "For an operation, approve sharing the SMS in Android: the code fills, you review it and tap Verify before the result."
+        },
+        {
+          "id": "first-use",
+          "text": "Choose your language and keep it throughout the app."
+        },
+        {
+          "id": "verification",
+          "text": "After device registration, continue inside the app with biometric access."
+        },
+        {
+          "id": "accounts",
+          "text": "Hide balances with a tap. Keep pesos and dollars separate."
+        },
+        {
+          "id": "history",
+          "text": "Find a transaction by typing a few letters."
+        },
+        {
+          "id": "statements",
+          "text": "Turn PDF pages inside the app."
+        },
+        {
+          "id": "payments",
+          "text": "A clear receipt after review and authorization."
+        },
+        {
+          "id": "beneficiaries",
+          "text": "Read the recipient’s details before continuing."
+        },
+        {
+          "id": "cards",
+          "text": "Copy explicitly. The card number stays masked to its last four digits."
+        },
+        {
+          "id": "token",
+          "text": "Your Token BSC code, in the app."
+        },
+        {
+          "id": "qr",
+          "text": "Amount, memo and recipient together before you continue."
+        },
+        {
+          "id": "settings",
+          "text": "Choose SMS assistance in Settings. You stay in control."
+        }
+      ]
+    },
+    "de": {
+      "eyebrow": "Santa Cruz Modern · Android",
+      "headline": "Weniger Schritte. Mehr Klarheit.",
+      "intro": "Ein ausgefüllter Code, klar getrennte Währungen und der Betrag im Blick vor jeder Bestätigung. Sehen Sie den Rundgang und wählen Sie Ihr Thema.",
+      "watchLabel": "Rundgang ansehen",
+      "benefitsTitle": "Hilfreiche Details bei jedem Schritt",
+      "benefitsIntro": "Anmelden, das Gesuchte finden und vor dem Fortfahren in Ruhe prüfen.",
+      "proofLabel": "So funktioniert es",
+      "flowTitle": "Direkt zu Ihrer Aufgabe",
+      "flowIntro": "Jedes Kapitel beginnt bei seiner Aufgabe: Konten, Dokumente und Vorgänge, ohne die Anmeldung in jedem Video zu wiederholen.",
+      "smsSpotlightTitle": "Der Code. Ohne Kopieren.",
+      "smsSpotlightBody": "Mit optionaler SMS-Hilfe fragt Android nach Ihrer Freigabe für eine Nachricht und füllt den Code aus. Die reine SMS-Anmeldung kann automatisch fortfahren; bei Vorgängen prüfen Sie und wählen Prüfen.",
+      "mediaNote": "Die Videos zeigen die native Oberfläche mit fiktiven Daten; erweiterte Bankabläufe und Android-Freigaben zum Teilen einer SMS sind simuliert und so gekennzeichnet. Die einfache Demo zum Herunterladen enthält nicht alle gezeigten Abläufe.",
+      "benefits": [
+        {
+          "id": "sms",
+          "title": "SMS-Codes ohne Kopieren",
+          "body": "Geben Sie mit optionaler SMS-Hilfe eine Nachricht in Android frei und lassen Sie den Code ausfüllen, ohne ihn zu kopieren. Nur die reine SMS-Anmeldung kann automatisch fortfahren; Vorgänge behalten Prüfen bei.",
+          "chapter": "login"
+        },
+        {
+          "id": "biometrics",
+          "title": "Gespeicherten Zugang entsperren",
+          "body": "Speichern Sie Benutzername und Passwort auf Wunsch und entsperren Sie sie biometrisch. Eine nötige Gerätefreigabe oder weitere Anmeldeprüfung erscheint als eigener Schritt.",
+          "chapter": "verification"
+        },
+        {
+          "id": "balances",
+          "title": "Pesos und Dollar klar getrennt",
+          "body": "Wechseln Sie zwischen DOP und USD, ohne Salden zu vermischen. Blenden Sie Beträge aus, wenn Sie mehr Privatsphäre wünschen.",
+          "chapter": "accounts"
+        },
+        {
+          "id": "search",
+          "title": "Finden statt Listen durchlesen",
+          "body": "Suchen Sie Empfänger nach Name, Bank oder Kontodaten und Buchungen mit Suche und Filtern. Prüfen Sie den Treffer vor der Auswahl.",
+          "chapter": "beneficiaries"
+        },
+        {
+          "id": "statements",
+          "title": "Ihre PDFs zum Nachlesen",
+          "body": "Öffnen Sie Kontoauszüge in der App und blättern Sie durch die Seiten. Speichern Sie einen Zeitraum oder wählen Sie mehrere für Ihr gewünschtes Ziel.",
+          "chapter": "statements"
+        },
+        {
+          "id": "qr-reviews",
+          "title": "Klare Anfragen, lesbare Prüfungen",
+          "body": "Teilen Sie eine QR-Anforderung mit sichtbarem Verwendungszweck und Betrag. Prüfen Sie vor einem Vorgang Empfänger, Währung und Summe und bestätigen Sie in Ihrem Tempo.",
+          "chapter": "qr"
+        }
+      ],
+      "chapters": {
+        "first-use": {
+          "title": "In Ihrer Sprache starten",
+          "body": "Lesen Sie Datenschutz und Bedingungen vor der Zustimmung und wählen Sie aus sieben Sprachen. Aktivieren Sie die optionale SMS-Hilfe oder fahren Sie manuell fort."
+        },
+        "login": {
+          "title": "Ihr Code ohne Kopieren",
+          "body": "Geben Sie mit SMS-Hilfe eine Nachricht in Android frei, um den Code auszufüllen. Nur die reine SMS-Anmeldung kann automatisch fortfahren; Tastatur-Autofill behält Prüfen bei."
+        },
+        "verification": {
+          "title": "Mit Biometrie wieder anmelden",
+          "body": "Entsperren Sie gespeicherten Zugang biometrisch und führen Sie nötige Geräteregistrierung in der App fort. Kombinierte Fragen behalten Prüfen bei; externe Prüfungen erfolgen im angegebenen Kanal."
+        },
+        "accounts": {
+          "title": "Jede Währung an ihrem Platz",
+          "body": "Sehen Sie DOP und USD getrennt und öffnen Sie die benötigten Kontodetails. Blenden Sie Salden mit einem Tippen ein oder aus."
+        },
+        "history": {
+          "title": "Diese Buchung finden",
+          "body": "Suchen Sie im Verlauf und filtern Sie Ein- oder Ausgänge, um die gesuchte Buchung zu finden. Teilen Sie die Kontobuchungen bei Bedarf als CSV."
+        },
+        "statements": {
+          "title": "Der Kontoauszug griffbereit",
+          "body": "Öffnen Sie das PDF in der App, blättern Sie und vergrößern Sie den Inhalt. Speichern Sie einen oder mehrere Zeiträume am gewählten Ziel; gespeicherte Kopien bleiben dort."
+        },
+        "transfers": {
+          "title": "Vor der Überweisung prüfen",
+          "body": "Wählen Sie Ausgangskonto und Empfänger und lesen Sie Betrag, Währung und Gebühren vor der Sendebestätigung. Geben Sie die eintreffende SMS in Android frei, prüfen Sie den ausgefüllten Code und wählen Sie Prüfen."
+        },
+        "payments": {
+          "title": "Zahlen mit allen Angaben im Blick",
+          "body": "Prüfen Sie Dienst, Ausgangskonto und Betrag vor der Bestätigung. Der SMS-Code wird nach Nachrichtenfreigabe in Android ausgefüllt; anschließend wählen Sie selbst Prüfen."
+        },
+        "beneficiaries": {
+          "title": "Der richtige Empfänger",
+          "body": "Suchen und prüfen Sie Daten vor dem Speichern oder Löschen eines Begünstigten. Die Empfängerprüfung speichert nicht automatisch und sendet kein Geld."
+        },
+        "cards": {
+          "title": "Kartennummer geschützt",
+          "body": "Die Kartennummer bleibt bis auf die letzten vier Ziffern verdeckt; die vollständige Nummer kopieren Sie nur auf Wunsch, wenn die Bank sie bereitstellt. Die Kartenverwaltung ist nicht verfügbar; hier finden Sie Informationen zu offiziellen Kanälen."
+        },
+        "token": {
+          "title": "Ihr Token mit klaren Schritten",
+          "body": "Lesen Sie den Vertrag und wählen Sie Registrierung und Speicherung vor dem Fortfahren; externe Identifizierung erfolgt im angegebenen Kanal. Erzeugte Token-BSC-Codes sind keine SMS und Trennen erfordert Bestätigung."
+        },
+        "qr": {
+          "title": "Eine lesbare QR-Anforderung",
+          "body": "Erstellen Sie eine Anforderung mit Verwendungszweck und Betrag, prüfen Sie die Angaben und speichern oder drucken Sie den QR. Einen Code zu lesen erlaubt Empfängerprüfung, autorisiert aber keine Zahlung."
+        },
+        "settings": {
+          "title": "Ihre Einstellungen griffbereit",
+          "body": "Wählen Sie Sprache, SMS-Hilfe und Codezustellung und finden Sie Profil, Hilfe und Abmeldung. Prüfen Sie bei unklarem Ergebnis vor dem Abgleich den Verlauf; der Abgleich wiederholt oder storniert keinen Vorgang."
+        }
+      },
+      "overviewCues": [
+        {
+          "id": "login",
+          "text": "SMS kommt an; nach Freigabe dieser Nachricht in Android wird der Code ausgefüllt und die reine SMS-Anmeldung kann fortfahren."
+        },
+        {
+          "id": "transfers",
+          "text": "Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen."
+        },
+        {
+          "id": "first-use",
+          "text": "Wählen Sie Ihre Sprache für die gesamte App."
+        },
+        {
+          "id": "verification",
+          "text": "Nach der Geräteregistrierung bleiben Sie in der App und nutzen den biometrischen Zugang."
+        },
+        {
+          "id": "accounts",
+          "text": "Salden mit einem Tippen ausblenden. Pesos und Dollar bleiben getrennt."
+        },
+        {
+          "id": "history",
+          "text": "Finden Sie eine Buchung mit wenigen Buchstaben."
+        },
+        {
+          "id": "statements",
+          "text": "Blättern Sie im PDF direkt in der App."
+        },
+        {
+          "id": "payments",
+          "text": "Ein klarer Beleg nach Prüfung und Freigabe."
+        },
+        {
+          "id": "beneficiaries",
+          "text": "Prüfen Sie die Empfängerdaten, bevor Sie fortfahren."
+        },
+        {
+          "id": "cards",
+          "text": "Kopieren nur auf Wunsch. Sichtbar bleiben nur die letzten vier Ziffern der Kartennummer."
+        },
+        {
+          "id": "token",
+          "text": "Ihr Token-BSC-Code direkt in der App."
+        },
+        {
+          "id": "qr",
+          "text": "Betrag, Verwendungszweck und Empfänger vor dem Fortfahren gemeinsam prüfen."
+        },
+        {
+          "id": "settings",
+          "text": "Wählen Sie die SMS-Hilfe in den Einstellungen. Sie behalten die Kontrolle."
+        }
+      ]
+    },
+    "fr": {
+      "eyebrow": "Santa Cruz Modern · Android",
+      "headline": "Moins d’étapes. Plus de clarté.",
+      "intro": "Un code rempli, des devises distinctes et le montant sous les yeux avant de confirmer. Regardez la visite et choisissez ce que vous souhaitez explorer.",
+      "watchLabel": "Voir la visite",
+      "benefitsTitle": "Des détails utiles à chaque étape",
+      "benefitsIntro": "Connectez-vous, trouvez ce qu’il vous faut et prenez le temps de vérifier avant de continuer.",
+      "proofLabel": "Voir comment cela fonctionne",
+      "flowTitle": "Allez directement à votre tâche",
+      "flowIntro": "Chaque chapitre commence par sa tâche : comptes, documents et opérations, sans répéter la connexion dans chaque vidéo.",
+      "smsSpotlightTitle": "Votre code, sans le copier.",
+      "smsSpotlightBody": "Avec l’aide SMS facultative, Android demande votre accord pour partager un message et remplir le code. La connexion par SMS seul peut continuer automatiquement ; pour les opérations, relisez puis appuyez sur Vérifier.",
+      "mediaNote": "Les vidéos montrent l’interface native avec des données fictives ; les parcours bancaires avancés et les accords Android de partage d’un SMS sont simulés et signalés. La démo de base téléchargeable est plus simple et ne comprend pas tous ces parcours.",
+      "benefits": [
+        {
+          "id": "sms",
+          "title": "Des codes SMS sans copier",
+          "body": "Avec l’aide SMS facultative, autorisez le partage d’un message dans Android pour remplir le code sans le copier. La connexion par SMS seul peut continuer automatiquement ; les opérations gardent Vérifier.",
+          "chapter": "login"
+        },
+        {
+          "id": "biometrics",
+          "title": "Déverrouillez l’accès mémorisé",
+          "body": "Choisissez de mémoriser votre nom d’utilisateur et votre mot de passe et déverrouillez-les par biométrie. L’approbation de l’appareil ou une autre vérification de connexion apparaît comme une étape distincte.",
+          "chapter": "verification"
+        },
+        {
+          "id": "balances",
+          "title": "Pesos et dollars bien distincts",
+          "body": "Passez de DOP à USD sans mélanger les soldes. Masquez les montants lorsque vous préférez une consultation plus discrète.",
+          "chapter": "accounts"
+        },
+        {
+          "id": "search",
+          "title": "Trouvez sans lire toute la liste",
+          "body": "Recherchez des destinataires par nom, banque ou compte, et des opérations avec recherche et filtres. Vérifiez le résultat avant de le sélectionner.",
+          "chapter": "beneficiaries"
+        },
+        {
+          "id": "statements",
+          "title": "Vos PDF prêts à consulter",
+          "body": "Ouvrez les relevés dans l’application et parcourez leurs pages. Enregistrez une période ou sélectionnez-en plusieurs vers la destination choisie.",
+          "chapter": "statements"
+        },
+        {
+          "id": "qr-reviews",
+          "title": "Des demandes claires, des révisions lisibles",
+          "body": "Partagez une demande QR avec motif et montant visibles. Avant une opération, vérifiez destinataire, devise et total, puis confirmez à votre rythme.",
+          "chapter": "qr"
+        }
+      ],
+      "chapters": {
+        "first-use": {
+          "title": "Commencez dans votre langue",
+          "body": "Lisez confidentialité et conditions avant d’accepter et choisissez parmi sept langues. Activez l’aide SMS facultative ou continuez manuellement."
+        },
+        "login": {
+          "title": "Votre code sans copier",
+          "body": "Avec l’aide SMS, autorisez le partage d’un message dans Android pour remplir le code. Seule la connexion par SMS seul peut continuer automatiquement ; le remplissage du clavier garde Vérifier."
+        },
+        "verification": {
+          "title": "Reconnectez-vous par biométrie",
+          "body": "Déverrouillez l’accès mémorisé par biométrie et poursuivez l’inscription de l’appareil dans l’application si nécessaire. Les questions combinées gardent Vérifier et les contrôles externes passent par le canal indiqué."
+        },
+        "accounts": {
+          "title": "Chaque devise à sa place",
+          "body": "Consultez DOP et USD séparément et ouvrez les détails du compte souhaité. Masquez ou affichez les soldes d’un geste."
+        },
+        "history": {
+          "title": "Retrouvez cette opération",
+          "body": "Recherchez dans l’historique et filtrez entrées ou sorties pour retrouver l’opération souhaitée. Partagez les opérations du compte en CSV quand vous le souhaitez."
+        },
+        "statements": {
+          "title": "Le relevé à portée de main",
+          "body": "Ouvrez le PDF dans l’application, changez de page et agrandissez le contenu. Enregistrez une ou plusieurs périodes à la destination choisie ; les copies enregistrées y restent."
+        },
+        "transfers": {
+          "title": "Vérifiez avant le virement",
+          "body": "Choisissez compte débité et destinataire, puis lisez montant, devise et frais avant de confirmer l’envoi. À réception du SMS, autorisez son partage dans Android, relisez le code rempli et appuyez sur Vérifier."
+        },
+        "payments": {
+          "title": "Payez avec les détails sous les yeux",
+          "body": "Vérifiez service, compte débité et montant avant de confirmer. Le code SMS se remplit après accord pour le message dans Android, puis vous appuyez sur Vérifier pour continuer."
+        },
+        "beneficiaries": {
+          "title": "Le bon destinataire",
+          "body": "Recherchez et vérifiez les données avant d’enregistrer ou de supprimer un bénéficiaire. Valider un destinataire ne l’enregistre pas automatiquement et n’envoie pas d’argent."
+        },
+        "cards": {
+          "title": "Le numéro de carte protégé",
+          "body": "Consultez les données bancaires avec le numéro masqué sauf ses quatre derniers chiffres ; copier le numéro complet exige qu’il soit fourni par la banque et votre choix explicite. L’administration des cartes est indisponible ; cet écran renseigne sur les canaux officiels."
+        },
+        "token": {
+          "title": "Votre jeton, des étapes claires",
+          "body": "Lisez le contrat et choisissez inscription et stockage avant de continuer ; l’identification externe utilise le canal indiqué. Les codes générés par Token BSC ne sont pas des SMS et la dissociation exige confirmation."
+        },
+        "qr": {
+          "title": "Une demande QR lisible",
+          "body": "Créez une demande avec motif et montant, vérifiez ses données et enregistrez ou imprimez le QR. Lire un code permet de vérifier un destinataire, sans autoriser un paiement."
+        },
+        "settings": {
+          "title": "Vos préférences à portée de main",
+          "body": "Réglez langue, aide SMS et réception des codes, et retrouvez profil, aide et déconnexion. Si un résultat est incertain, vérifiez l’historique avant le rapprochement ; celui-ci ne répète ni n’annule l’opération."
+        }
+      },
+      "overviewCues": [
+        {
+          "id": "login",
+          "text": "Le SMS arrive ; après accord pour partager ce message dans Android, le code se remplit et la connexion par SMS seul peut continuer."
+        },
+        {
+          "id": "transfers",
+          "text": "Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat."
+        },
+        {
+          "id": "first-use",
+          "text": "Choisissez votre langue et gardez-la dans toute l’application."
+        },
+        {
+          "id": "verification",
+          "text": "Après l’enregistrement de l’appareil, poursuivez dans l’application avec l’accès biométrique."
+        },
+        {
+          "id": "accounts",
+          "text": "Masquez les soldes d’un geste. Pesos et dollars restent séparés."
+        },
+        {
+          "id": "history",
+          "text": "Retrouvez une opération en saisissant quelques lettres."
+        },
+        {
+          "id": "statements",
+          "text": "Parcourez les pages du PDF dans l’application."
+        },
+        {
+          "id": "payments",
+          "text": "Un reçu clair après vérification et autorisation."
+        },
+        {
+          "id": "beneficiaries",
+          "text": "Lisez les coordonnées du destinataire avant de continuer."
+        },
+        {
+          "id": "cards",
+          "text": "Copiez par une action explicite. Seuls les quatre derniers chiffres restent visibles."
+        },
+        {
+          "id": "token",
+          "text": "Votre code Token BSC dans l’application."
+        },
+        {
+          "id": "qr",
+          "text": "Montant, motif et destinataire réunis avant de continuer."
+        },
+        {
+          "id": "settings",
+          "text": "Choisissez l’aide SMS dans les paramètres. Vous gardez le contrôle."
+        }
+      ]
+    },
+    "ru": {
+      "eyebrow": "Santa Cruz Modern · Android",
+      "headline": "Меньше шагов. Больше ясности.",
+      "intro": "Код заполняется, валюты не смешиваются, а сумма видна до подтверждения. Посмотрите обзор и выберите нужный сценарий.",
+      "watchLabel": "Смотреть обзор",
+      "benefitsTitle": "Полезные детали на каждом шаге",
+      "benefitsIntro": "Войдите, найдите нужное и спокойно проверьте данные перед продолжением.",
+      "proofLabel": "Посмотреть, как это работает",
+      "flowTitle": "Сразу к вашей задаче",
+      "flowIntro": "Каждая глава начинается со своей задачи: счета, документы и операции без повторного входа в каждом видео.",
+      "smsSpotlightTitle": "Код — без копирования.",
+      "smsSpotlightBody": "С необязательной помощью SMS Android просит вас разрешить передачу одного сообщения и заполняет код. Вход только по SMS может продолжиться автоматически; в операциях проверьте код и нажмите «Проверить».",
+      "mediaNote": "Видео показывают нативный интерфейс с вымышленными данными; расширенные банковские сценарии и результаты согласия на передачу SMS в Android имитируются и помечены. Загружаемая базовая демоверсия проще и включает не все эти сценарии.",
+      "benefits": [
+        {
+          "id": "sms",
+          "title": "SMS-коды без копирования",
+          "body": "С необязательной помощью SMS разрешите передать одно сообщение в Android, и код заполнится без копирования. Вход только по SMS может продолжиться автоматически; операции сохраняют «Проверить».",
+          "chapter": "login"
+        },
+        {
+          "id": "biometrics",
+          "title": "Разблокируйте сохранённый доступ",
+          "body": "По желанию сохраните имя пользователя и пароль и разблокируйте их биометрией. Одобрение устройства и другие проверки входа показаны отдельными шагами, когда они нужны.",
+          "chapter": "verification"
+        },
+        {
+          "id": "balances",
+          "title": "Песо и доллары раздельно",
+          "body": "Переключайтесь между DOP и USD, не смешивая остатки. Скройте суммы, когда хотите просмотреть данные более приватно.",
+          "chapter": "accounts"
+        },
+        {
+          "id": "search",
+          "title": "Находите без просмотра всего списка",
+          "body": "Ищите получателей по имени, банку или данным счёта, а операции — поиском и фильтрами. Проверьте результат перед выбором.",
+          "chapter": "beneficiaries"
+        },
+        {
+          "id": "statements",
+          "title": "Ваши PDF готовы к просмотру",
+          "body": "Открывайте выписки в приложении и листайте страницы. Сохраните один период или выберите несколько для нужного места назначения.",
+          "chapter": "statements"
+        },
+        {
+          "id": "qr-reviews",
+          "title": "Понятные запросы и проверка деталей",
+          "body": "Делитесь QR-запросом с видимыми назначением и суммой. Перед операцией проверьте получателя, валюту и итог и подтвердите без спешки.",
+          "chapter": "qr"
+        }
+      ],
+      "chapters": {
+        "first-use": {
+          "title": "Начните на своём языке",
+          "body": "Прочитайте конфиденциальность и условия перед согласием и выберите один из семи языков. Включите необязательную помощь SMS или продолжите вручную."
+        },
+        "login": {
+          "title": "Ваш код без копирования",
+          "body": "С помощью SMS разрешите Android передать одно сообщение для заполнения кода. Автоматически продолжиться может лишь вход только по SMS; автозаполнение клавиатуры сохраняет «Проверить»."
+        },
+        "verification": {
+          "title": "Войдите снова с биометрией",
+          "body": "Разблокируйте сохранённый доступ биометрией и при необходимости продолжите регистрацию устройства в приложении. Составные вопросы сохраняют «Проверить», а внешние проверки проходят в указанном канале."
+        },
+        "accounts": {
+          "title": "Каждая валюта на своём месте",
+          "body": "Просматривайте DOP и USD отдельно и открывайте данные нужного счёта. Скрывайте или показывайте остатки одним нажатием."
+        },
+        "history": {
+          "title": "Найдите ту самую операцию",
+          "body": "Ищите в истории и фильтруйте поступления или списания, чтобы найти нужную операцию. Поделитесь операциями счёта в CSV, когда понадобится."
+        },
+        "statements": {
+          "title": "Выписка под рукой",
+          "body": "Откройте PDF в приложении, листайте и увеличивайте содержимое. Сохраните один или несколько периодов в выбранное место; сохранённые копии останутся там."
+        },
+        "transfers": {
+          "title": "Проверьте перед переводом",
+          "body": "Выберите счёт списания и получателя, прочитайте сумму, валюту и комиссию перед подтверждением отправки. Когда придёт SMS, разрешите передать его в Android, проверьте заполненный код и нажмите «Проверить»."
+        },
+        "payments": {
+          "title": "Платите с деталями перед глазами",
+          "body": "Проверьте услугу, счёт списания и сумму перед подтверждением. SMS-код заполнится после согласия на сообщение в Android, затем вы сами нажимаете «Проверить»."
+        },
+        "beneficiaries": {
+          "title": "Нужный получатель",
+          "body": "Найдите и проверьте данные перед сохранением или удалением получателя. Проверка получателя не сохраняет его автоматически и не отправляет деньги."
+        },
+        "cards": {
+          "title": "Номер карты защищён",
+          "body": "Просматривайте данные банка с номером, скрытым кроме последних четырёх цифр; полный номер копируется лишь по явному выбору, если банк его передал. Управление картами недоступно; здесь приведена информация об официальных каналах."
+        },
+        "token": {
+          "title": "Ваш токен с понятными шагами",
+          "body": "Прочитайте договор и выберите подключение и хранение перед продолжением; внешняя идентификация проходит в указанном канале. Коды Token BSC не являются SMS, а отключение требует подтверждения."
+        },
+        "qr": {
+          "title": "QR-запрос, который можно прочитать",
+          "body": "Создайте запрос с назначением и суммой, проверьте данные и сохраните или распечатайте QR. Чтение кода позволяет проверить получателя, но не авторизует платёж."
+        },
+        "settings": {
+          "title": "Ваши настройки под рукой",
+          "body": "Настройте язык, помощь SMS и доставку кодов, найдите профиль, помощь и выход. При неопределённом результате проверьте историю перед сверкой; сверка не повторяет и не отменяет операцию."
+        }
+      },
+      "overviewCues": [
+        {
+          "id": "login",
+          "text": "Приходит SMS; после согласия передать его в Android код заполняется, и вход только по SMS может продолжиться."
+        },
+        {
+          "id": "transfers",
+          "text": "В операции разрешите Android передать SMS: код заполнится, проверьте его и нажмите «Проверить» перед результатом."
+        },
+        {
+          "id": "first-use",
+          "text": "Выберите язык для всего приложения."
+        },
+        {
+          "id": "verification",
+          "text": "После регистрации устройства продолжайте в приложении с биометрическим входом."
+        },
+        {
+          "id": "accounts",
+          "text": "Скрывайте остатки одним нажатием. Песо и доллары показаны отдельно."
+        },
+        {
+          "id": "history",
+          "text": "Найдите операцию, введя несколько букв."
+        },
+        {
+          "id": "statements",
+          "text": "Листайте PDF прямо в приложении."
+        },
+        {
+          "id": "payments",
+          "text": "Понятная квитанция после проверки и подтверждения."
+        },
+        {
+          "id": "beneficiaries",
+          "text": "Прочитайте данные получателя перед продолжением."
+        },
+        {
+          "id": "cards",
+          "text": "Копирование — только по вашему действию. Видны лишь последние четыре цифры карты."
+        },
+        {
+          "id": "token",
+          "text": "Ваш код Token BSC — в приложении."
+        },
+        {
+          "id": "qr",
+          "text": "Сумма, назначение и получатель вместе перед продолжением."
+        },
+        {
+          "id": "settings",
+          "text": "Выберите помощь с SMS в настройках. Управление остаётся у вас."
+        }
+      ]
+    },
+    "uk": {
+      "eyebrow": "Santa Cruz Modern · Android",
+      "headline": "Менше кроків. Більше ясності.",
+      "intro": "Код заповнюється, валюти не змішуються, а суму видно до підтвердження. Перегляньте огляд і виберіть потрібний сценарій.",
+      "watchLabel": "Дивитися огляд",
+      "benefitsTitle": "Корисні деталі на кожному кроці",
+      "benefitsIntro": "Увійдіть, знайдіть потрібне й спокійно перевірте дані перед продовженням.",
+      "proofLabel": "Переглянути, як це працює",
+      "flowTitle": "Одразу до вашого завдання",
+      "flowIntro": "Кожна глава починається зі свого завдання: рахунки, документи й операції без повторного входу в кожному відео.",
+      "smsSpotlightTitle": "Код — без копіювання.",
+      "smsSpotlightBody": "З необов’язковою допомогою SMS Android просить вас дозволити передавання одного повідомлення й заповнює код. Вхід лише за SMS може продовжитися автоматично; в операціях перевірте код і натисніть «Перевірити».",
+      "mediaNote": "Відео показують нативний інтерфейс із вигаданими даними; розширені банківські сценарії та результати дозволу на передавання SMS в Android імітовані й позначені. Базова демоверсія для завантаження простіша й містить не всі ці сценарії.",
+      "benefits": [
+        {
+          "id": "sms",
+          "title": "SMS-коди без копіювання",
+          "body": "З необов’язковою допомогою SMS дозвольте передати одне повідомлення в Android, і код заповниться без копіювання. Вхід лише за SMS може продовжитися автоматично; операції зберігають «Перевірити».",
+          "chapter": "login"
+        },
+        {
+          "id": "biometrics",
+          "title": "Розблокуйте збережений доступ",
+          "body": "За бажанням збережіть ім’я користувача й пароль та розблокуйте їх біометрією. Схвалення пристрою й інші перевірки входу показані окремими кроками, коли вони потрібні.",
+          "chapter": "verification"
+        },
+        {
+          "id": "balances",
+          "title": "Песо й долари окремо",
+          "body": "Перемикайтеся між DOP і USD, не змішуючи залишки. Приховайте суми, коли хочете переглянути дані приватніше.",
+          "chapter": "accounts"
+        },
+        {
+          "id": "search",
+          "title": "Знаходьте без перегляду всього списку",
+          "body": "Шукайте одержувачів за ім’ям, банком чи даними рахунку, а операції — пошуком і фільтрами. Перевірте результат перед вибором.",
+          "chapter": "beneficiaries"
+        },
+        {
+          "id": "statements",
+          "title": "Ваші PDF готові до перегляду",
+          "body": "Відкривайте виписки в застосунку й гортайте сторінки. Збережіть один період або виберіть кілька для потрібного місця призначення.",
+          "chapter": "statements"
+        },
+        {
+          "id": "qr-reviews",
+          "title": "Зрозумілі запити й перевірка деталей",
+          "body": "Діліться QR-запитом із видимими призначенням і сумою. Перед операцією перевірте одержувача, валюту й підсумок та підтвердьте без поспіху.",
+          "chapter": "qr"
+        }
+      ],
+      "chapters": {
+        "first-use": {
+          "title": "Почніть своєю мовою",
+          "body": "Прочитайте конфіденційність та умови перед згодою й виберіть одну із семи мов. Увімкніть необов’язкову допомогу SMS або продовжте вручну."
+        },
+        "login": {
+          "title": "Ваш код без копіювання",
+          "body": "З допомогою SMS дозвольте Android передати одне повідомлення для заповнення коду. Автоматично продовжитися може лише вхід за SMS; автозаповнення клавіатури зберігає «Перевірити»."
+        },
+        "verification": {
+          "title": "Увійдіть знову з біометрією",
+          "body": "Розблокуйте збережений доступ біометрією й за потреби продовжте реєстрацію пристрою в застосунку. Складені запитання зберігають «Перевірити», а зовнішні перевірки проходять у вказаному каналі."
+        },
+        "accounts": {
+          "title": "Кожна валюта на своєму місці",
+          "body": "Переглядайте DOP і USD окремо й відкривайте дані потрібного рахунку. Приховуйте чи показуйте залишки одним натисканням."
+        },
+        "history": {
+          "title": "Знайдіть ту саму операцію",
+          "body": "Шукайте в історії й фільтруйте надходження чи списання, щоб знайти потрібну операцію. Поділіться операціями рахунку в CSV, коли знадобиться."
+        },
+        "statements": {
+          "title": "Виписка під рукою",
+          "body": "Відкрийте PDF у застосунку, гортайте й збільшуйте вміст. Збережіть один або кілька періодів у вибране місце; збережені копії залишаться там."
+        },
+        "transfers": {
+          "title": "Перевірте перед переказом",
+          "body": "Виберіть рахунок списання й одержувача, прочитайте суму, валюту та комісію перед підтвердженням надсилання. Коли надійде SMS, дозвольте передати його в Android, перевірте заповнений код і натисніть «Перевірити»."
+        },
+        "payments": {
+          "title": "Платіть із деталями перед очима",
+          "body": "Перевірте послугу, рахунок списання й суму перед підтвердженням. SMS-код заповниться після згоди на повідомлення в Android, потім ви самі натискаєте «Перевірити»."
+        },
+        "beneficiaries": {
+          "title": "Потрібний одержувач",
+          "body": "Знайдіть і перевірте дані перед збереженням чи видаленням одержувача. Перевірка одержувача не зберігає його автоматично й не надсилає гроші."
+        },
+        "cards": {
+          "title": "Номер картки захищено",
+          "body": "Переглядайте дані банку з номером, прихованим крім останніх чотирьох цифр; повний номер копіюється лише за явним вибором, якщо банк його передав. Керування картками недоступне; тут наведено інформацію про офіційні канали."
+        },
+        "token": {
+          "title": "Ваш токен зі зрозумілими кроками",
+          "body": "Прочитайте договір і виберіть підключення та зберігання перед продовженням; зовнішня ідентифікація проходить у вказаному каналі. Коди Token BSC не є SMS, а від’єднання потребує підтвердження."
+        },
+        "qr": {
+          "title": "QR-запит, який можна прочитати",
+          "body": "Створіть запит із призначенням і сумою, перевірте дані та збережіть чи надрукуйте QR. Читання коду дає змогу перевірити одержувача, але не авторизує платіж."
+        },
+        "settings": {
+          "title": "Ваші налаштування під рукою",
+          "body": "Налаштуйте мову, допомогу SMS і доставку кодів, знайдіть профіль, допомогу й вихід. За невизначеного результату перевірте історію перед звіркою; звірка не повторює й не скасовує операцію."
+        }
+      },
+      "overviewCues": [
+        {
+          "id": "login",
+          "text": "Надходить SMS; після згоди передати його в Android код заповнюється, і вхід лише за SMS може продовжитися."
+        },
+        {
+          "id": "transfers",
+          "text": "В операції дозвольте Android передати SMS: код заповниться, перевірте його й натисніть «Перевірити» перед результатом."
+        },
+        {
+          "id": "first-use",
+          "text": "Виберіть мову для всього застосунку."
+        },
+        {
+          "id": "verification",
+          "text": "Після реєстрації пристрою продовжуйте в застосунку з біометричним входом."
+        },
+        {
+          "id": "accounts",
+          "text": "Приховуйте залишки одним натисканням. Песо й долари показано окремо."
+        },
+        {
+          "id": "history",
+          "text": "Знайдіть операцію, ввівши кілька літер."
+        },
+        {
+          "id": "statements",
+          "text": "Гортайте PDF безпосередньо в застосунку."
+        },
+        {
+          "id": "payments",
+          "text": "Зрозуміла квитанція після перевірки та підтвердження."
+        },
+        {
+          "id": "beneficiaries",
+          "text": "Прочитайте дані одержувача перед продовженням."
+        },
+        {
+          "id": "cards",
+          "text": "Копіювання — лише за вашою дією. Видно тільки останні чотири цифри картки."
+        },
+        {
+          "id": "token",
+          "text": "Ваш код Token BSC — у застосунку."
+        },
+        {
+          "id": "qr",
+          "text": "Сума, призначення й одержувач разом перед продовженням."
+        },
+        {
+          "id": "settings",
+          "text": "Виберіть допомогу з SMS у налаштуваннях. Керування залишається у вас."
+        }
+      ]
+    },
+    "pt": {
+      "eyebrow": "Santa Cruz Modern · Android",
+      "headline": "Menos passos. Mais clareza.",
+      "intro": "Um código preenchido, moedas bem separadas e o valor à vista antes de confirmar. Veja o passeio e escolha o que deseja explorar.",
+      "watchLabel": "Ver o passeio",
+      "benefitsTitle": "Detalhes úteis a cada passo",
+      "benefitsIntro": "Entre, encontre o que precisa e confira com calma antes de continuar.",
+      "proofLabel": "Veja como funciona",
+      "flowTitle": "Vá direto à sua tarefa",
+      "flowIntro": "Cada capítulo começa na sua tarefa: contas, documentos e operações, sem repetir o acesso em cada vídeo.",
+      "smsSpotlightTitle": "O código, sem copiar.",
+      "smsSpotlightBody": "Com a ajuda SMS opcional, o Android pede sua aprovação para compartilhar uma mensagem e preencher o código. O acesso só por SMS pode continuar automaticamente; nas operações, confira e toque em Verificar.",
+      "mediaNote": "Os vídeos mostram a interface nativa com dados fictícios; os fluxos bancários avançados e as aprovações do Android para compartilhar um SMS são simulados e identificados. A demonstração básica para download é mais simples e não inclui todos esses passeios.",
+      "benefits": [
+        {
+          "id": "sms",
+          "title": "Códigos SMS sem copiar",
+          "body": "Com a ajuda SMS opcional, aprove compartilhar uma mensagem no Android e o código é preenchido sem copiar. O acesso só por SMS pode continuar automaticamente; as operações mantêm Verificar.",
+          "chapter": "login"
+        },
+        {
+          "id": "biometrics",
+          "title": "Desbloqueie o acesso salvo",
+          "body": "Escolha lembrar usuário e senha e desbloqueie-os com biometria. Se houver aprovação do dispositivo ou outra verificação de acesso, você verá essa etapa separadamente.",
+          "chapter": "verification"
+        },
+        {
+          "id": "balances",
+          "title": "Pesos e dólares bem separados",
+          "body": "Alterne entre DOP e USD sem misturar os saldos. Oculte os valores quando quiser consultar com mais privacidade.",
+          "chapter": "accounts"
+        },
+        {
+          "id": "search",
+          "title": "Encontre sem percorrer toda a lista",
+          "body": "Pesquise destinatários por nome, banco ou dados de conta e encontre transações com pesquisa e filtros. Confira o resultado antes de selecionar.",
+          "chapter": "beneficiaries"
+        },
+        {
+          "id": "statements",
+          "title": "Seus PDFs prontos para consultar",
+          "body": "Abra extratos no aplicativo e percorra as páginas. Salve um período ou selecione vários para o destino que escolher.",
+          "chapter": "statements"
+        },
+        {
+          "id": "qr-reviews",
+          "title": "Solicitações claras, revisões legíveis",
+          "body": "Compartilhe uma solicitação QR com descrição e valor à vista. Antes de uma operação, confira destinatário, moeda e total e confirme no seu ritmo.",
+          "chapter": "qr"
+        }
+      ],
+      "chapters": {
+        "first-use": {
+          "title": "Comece no seu idioma",
+          "body": "Leia privacidade e termos antes de aceitar e escolha entre sete idiomas. Ative a ajuda SMS opcional ou continue manualmente."
+        },
+        "login": {
+          "title": "Seu código sem copiar",
+          "body": "Com a ajuda SMS, aprove compartilhar uma mensagem no Android para preencher o código. Só o acesso exclusivamente SMS pode continuar automaticamente; o preenchimento do teclado mantém Verificar."
+        },
+        "verification": {
+          "title": "Volte a entrar com biometria",
+          "body": "Desbloqueie o acesso salvo com biometria e siga o registro do dispositivo dentro do aplicativo quando necessário. Perguntas combinadas mantêm Verificar e verificações externas seguem pelo canal indicado."
+        },
+        "accounts": {
+          "title": "Cada moeda no seu lugar",
+          "body": "Consulte DOP e USD separadamente e abra os detalhes da conta desejada. Oculte ou mostre os saldos com um toque."
+        },
+        "history": {
+          "title": "Encontre aquela transação",
+          "body": "Pesquise no histórico e filtre entradas ou saídas para encontrar a transação desejada. Compartilhe as transações da conta em CSV quando quiser."
+        },
+        "statements": {
+          "title": "O extrato à mão",
+          "body": "Abra o PDF no aplicativo, mude de página e amplie o conteúdo. Salve um ou vários períodos no destino escolhido; as cópias salvas permanecem lá."
+        },
+        "transfers": {
+          "title": "Confira antes de transferir",
+          "body": "Escolha origem e destinatário e leia valor, moeda e tarifas antes de confirmar o envio. Quando o SMS chegar, aprove compartilhá-lo no Android, confira o código preenchido e toque em Verificar."
+        },
+        "payments": {
+          "title": "Pague com os dados à vista",
+          "body": "Confira serviço, conta de origem e valor antes de confirmar. O código SMS é preenchido após aprovar a mensagem no Android e você toca em Verificar para prosseguir."
+        },
+        "beneficiaries": {
+          "title": "O destinatário certo",
+          "body": "Pesquise e confira os dados antes de salvar ou excluir um beneficiário. Validar um destinatário não o salva automaticamente nem envia dinheiro."
+        },
+        "cards": {
+          "title": "Cartões com o número protegido",
+          "body": "Consulte dados recebidos do banco com o número oculto, exceto os últimos quatro dígitos; copiar o número completo exige que o banco o forneça e sua escolha explícita. A administração de cartões não está disponível; aqui há informações dos canais oficiais."
+        },
+        "token": {
+          "title": "Seu token com etapas claras",
+          "body": "Leia o contrato e escolha inscrição e armazenamento antes de continuar; a identificação externa usa o canal indicado. Códigos gerados pelo Token BSC não são SMS e desvincular exige confirmação."
+        },
+        "qr": {
+          "title": "Uma solicitação QR legível",
+          "body": "Crie uma solicitação com descrição e valor, confira os dados e salve ou imprima o QR. Ler um código permite conferir o destinatário, mas não autoriza um pagamento."
+        },
+        "settings": {
+          "title": "Suas preferências à mão",
+          "body": "Ajuste idioma, ajuda SMS e entrega de códigos e encontre perfil, ajuda e saída. Se o resultado for incerto, confira o histórico antes de conciliar; a conciliação não repete nem cancela a operação."
+        }
+      },
+      "overviewCues": [
+        {
+          "id": "login",
+          "text": "O SMS chega; após aprovar compartilhar a mensagem no Android, o código é preenchido e o acesso só por SMS pode continuar."
+        },
+        {
+          "id": "transfers",
+          "text": "Na operação, aprove compartilhar o SMS no Android: o código é preenchido, você confere e toca em Verificar antes do resultado."
+        },
+        {
+          "id": "first-use",
+          "text": "Escolha seu idioma e mantenha-o em todo o aplicativo."
+        },
+        {
+          "id": "verification",
+          "text": "Após registrar o dispositivo, continue no aplicativo com acesso biométrico."
+        },
+        {
+          "id": "accounts",
+          "text": "Oculte saldos com um toque. Pesos e dólares ficam separados."
+        },
+        {
+          "id": "history",
+          "text": "Encontre uma transação digitando algumas letras."
+        },
+        {
+          "id": "statements",
+          "text": "Passe as páginas do PDF dentro do aplicativo."
+        },
+        {
+          "id": "payments",
+          "text": "Um comprovante claro após revisão e autorização."
+        },
+        {
+          "id": "beneficiaries",
+          "text": "Leia os dados do destinatário antes de continuar."
+        },
+        {
+          "id": "cards",
+          "text": "Copie por uma ação explícita. Apenas os últimos quatro dígitos do cartão ficam visíveis."
+        },
+        {
+          "id": "token",
+          "text": "Seu código Token BSC, dentro do aplicativo."
+        },
+        {
+          "id": "qr",
+          "text": "Valor, descrição e destinatário juntos antes de continuar."
+        },
+        {
+          "id": "settings",
+          "text": "Escolha a ajuda SMS nas configurações. Você mantém o controle."
+        }
+      ]
+    }
+  }
+}

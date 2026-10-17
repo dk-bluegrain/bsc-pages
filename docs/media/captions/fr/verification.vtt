@@ -1,69 +1,45 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:10.647
+00:00:00.000 --> 00:00:10.544
 Banque simulée : question de sécurité et SMS restent distincts ; remplir le code conserve Vérifier.
 
 2
-00:00:10.697 --> 00:00:14.012
+00:00:10.594 --> 00:00:13.849
 Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
 
 3
-00:00:14.062 --> 00:00:19.808
+00:00:13.899 --> 00:00:19.603
 Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
 
 4
-00:00:19.858 --> 00:00:25.203
+00:00:19.653 --> 00:00:24.445
 Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
 
 5
-00:00:25.253 --> 00:00:33.203
+00:00:24.495 --> 00:00:32.445
 Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
 
 6
-00:00:33.253 --> 00:00:39.700
+00:00:32.495 --> 00:00:38.817
 Banque simulée : question de sécurité et SMS restent distincts ; remplir le code conserve Vérifier.
 
 7
-00:00:39.750 --> 00:00:45.110
-Banque simulée : appareil non approuvé nécessitant l’inscription, sans accès aux comptes ni inscription silencieuse.
+00:00:38.867 --> 00:00:44.093
+Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.
 
 8
-00:00:45.160 --> 00:00:55.110
+00:00:44.143 --> 00:00:50.093
 Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
 
 9
-00:00:55.160 --> 00:01:01.385
-Banque simulée : appareil non approuvé nécessitant l’inscription, sans accès aux comptes ni inscription silencieuse.
+00:00:50.143 --> 00:01:02.299
+Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.
 
 10
-00:01:01.435 --> 00:01:11.385
+00:01:02.349 --> 00:01:08.299
 Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
 
 11
-00:01:11.435 --> 00:01:23.233
-Banque simulée : appareil non approuvé nécessitant l’inscription, sans accès aux comptes ni inscription silencieuse.
-
-12
-00:01:23.283 --> 00:02:06.500
-Changement de mot de passe requis avec banque simulée : revoir l’écart et confirmer avant de revenir à la connexion.
-
-13
-00:02:06.550 --> 00:02:11.841
-Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.
-
-14
-00:02:11.891 --> 00:02:17.841
-Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
-
-15
-00:02:17.891 --> 00:02:29.740
-Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.
-
-16
-00:02:29.790 --> 00:02:35.740
-Lisez le texte et ses conséquences. Ouvrir les conditions, la confidentialité ou un contrat ne vaut pas acceptation.
-
-17
-00:02:35.790 --> 00:02:42.350
+00:01:08.349 --> 00:01:15.083
 Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.

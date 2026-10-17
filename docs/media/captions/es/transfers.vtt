@@ -1,129 +1,129 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:27.541
-Demo básica: transferencia entre cuentas propias, revisión y código local de prueba 123456; no es un SMS.
+00:00:00.000 --> 00:00:24.847
+En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado.
 
 2
-00:00:27.591 --> 00:00:35.541
+00:00:24.897 --> 00:00:33.086
 Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
 3
-00:00:35.591 --> 00:00:41.353
-Demo básica: transferencia entre cuentas propias, revisión y código local de prueba 123456; no es un SMS.
-
-4
-00:00:41.403 --> 00:00:47.819
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-5
-00:00:47.869 --> 00:00:55.819
-Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
-
-6
-00:00:55.869 --> 00:01:01.629
-Demo básica: transferencia entre cuentas propias, revisión y código local de prueba 123456; no es un SMS.
-
-7
-00:01:01.679 --> 00:01:07.401
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-8
-00:01:07.451 --> 00:01:15.401
-Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
-
-9
-00:01:15.451 --> 00:01:24.233
-Demo básica: transferencia entre cuentas propias, revisión y código local de prueba 123456; no es un SMS.
-
-10
-00:01:24.283 --> 00:01:48.783
-Transferencia con banco simulado: revisión, confirmación separada y SMS autocompletado por Android con Verificar expreso.
-
-11
-00:01:48.833 --> 00:01:57.064
+00:00:33.136 --> 00:00:40.117
 Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
+4
+00:00:40.167 --> 00:00:48.298
+Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
+
+5
+00:00:48.348 --> 00:00:56.786
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+6
+00:00:56.836 --> 00:01:00.481
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+7
+00:01:00.531 --> 00:01:03.707
+Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
+
+8
+00:01:03.757 --> 00:01:09.438
+El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.
+
+9
+00:01:09.488 --> 00:01:15.387
+Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+
+10
+00:01:15.437 --> 00:01:23.387
+Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
+
+11
+00:01:23.437 --> 00:01:54.654
+En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado.
+
 12
-00:01:57.114 --> 00:02:03.784
+00:01:54.704 --> 00:02:02.879
 Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
 13
-00:02:03.834 --> 00:02:11.966
+00:02:02.929 --> 00:02:09.635
 Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
 14
-00:02:12.016 --> 00:02:20.451
-La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+00:02:09.685 --> 00:02:17.829
+Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
 15
-00:02:20.501 --> 00:02:24.140
+00:02:17.879 --> 00:02:26.326
 La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
 
 16
-00:02:24.190 --> 00:02:27.377
-Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
+00:02:26.376 --> 00:02:30.190
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
 
 17
-00:02:27.427 --> 00:02:33.190
-El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.
+00:02:30.240 --> 00:02:33.462
+Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
 
 18
-00:02:33.240 --> 00:02:38.732
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
+00:02:33.512 --> 00:02:39.190
+El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.
 
 19
-00:02:38.782 --> 00:02:46.732
-Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
+00:02:39.240 --> 00:02:45.015
+Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
 
 20
-00:02:46.782 --> 00:02:53.433
-Transferencia con banco simulado: revisión, confirmación separada y SMS autocompletado por Android con Verificar expreso.
+00:02:45.065 --> 00:02:53.015
+Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
 
 21
-00:02:53.483 --> 00:03:41.767
-Banco simulado: buscar y elegir un beneficiario sin enviar una transferencia en este caso.
+00:02:53.065 --> 00:03:24.357
+En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado.
 
 22
-00:03:41.817 --> 00:04:11.997
-Demo básica: transferencias a beneficiarios guardados del mismo y otro banco, con código local 123456, no SMS.
+00:03:24.407 --> 00:03:32.564
+Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
 23
-00:04:12.047 --> 00:04:19.997
+00:03:32.614 --> 00:03:39.207
 Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
 24
-00:04:20.047 --> 00:04:25.346
-Demo básica: transferencias a beneficiarios guardados del mismo y otro banco, con código local 123456, no SMS.
-
-25
-00:04:25.396 --> 00:04:31.209
-Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
-
-26
-00:04:31.259 --> 00:04:39.209
-Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
-
-27
-00:04:39.259 --> 00:05:11.584
-Demo básica: transferencias a beneficiarios guardados del mismo y otro banco, con código local 123456, no SMS.
-
-28
-00:05:11.634 --> 00:05:19.584
+00:03:39.257 --> 00:03:47.404
 Revisa los detalles antes de continuar. Abrir esta pantalla no autoriza una operación.
 
-29
-00:05:19.634 --> 00:05:24.916
-Demo básica: transferencias a beneficiarios guardados del mismo y otro banco, con código local 123456, no SMS.
+25
+00:03:47.454 --> 00:03:55.885
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
 
-30
-00:05:24.966 --> 00:05:30.602
+26
+00:03:55.935 --> 00:03:59.571
+La confirmación es un paso separado. Esta demostración no envía instrucciones al banco real.
+
+27
+00:03:59.621 --> 00:04:02.817
+Se espera un SMS ficticio. La ayuda opcional pide aprobar un solo mensaje; no concede acceso a la bandeja SMS.
+
+28
+00:04:02.867 --> 00:04:08.497
+El teclado o Android ha autocompletado un código ficticio. Revísalo y pulsa Verificar; esta vía no lo envía automáticamente.
+
+29
+00:04:08.547 --> 00:04:13.876
 Revisa antes de continuar. El autocompletado del teclado no envía el código; el acceso solo por SMS tiene un consentimiento separado.
 
-31
-00:05:30.652 --> 00:05:38.602
+30
+00:04:13.926 --> 00:04:21.876
 Resultado de prueba con datos ficticios; no demuestra que se haya completado una operación bancaria real.
 
+31
+00:04:21.926 --> 00:04:28.283
+En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado.
+
 32
-00:05:38.652 --> 00:05:52.617
-Demo básica: transferencias a beneficiarios guardados del mismo y otro banco, con código local 123456, no SMS.
+00:04:28.333 --> 00:05:16.950
+Banco simulado: buscar y elegir un beneficiario sin enviar una transferencia en este caso.

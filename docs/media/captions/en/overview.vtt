@@ -1,53 +1,53 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:07.883
-Fictional first use: privacy, terms, language and optional SMS assistance with per-message approval.
+00:00:00.000 --> 00:00:13.950
+SMS arrives; approve sharing that message in Android, the code fills, and SMS-only login can continue.
 
 2
-00:00:07.933 --> 00:00:15.883
-Simulated login: approved one-message sharing auto-verifies only SMS-only login; keyboard autofill retains Verify.
+00:00:14.000 --> 00:00:31.950
+For an operation, approve sharing the SMS in Android: the code fills, you review it and tap Verify before the result.
 
 3
-00:00:15.933 --> 00:00:23.883
-Combined question plus SMS retains Verify; device approval and password change remain separate steps.
+00:00:32.000 --> 00:00:38.950
+Choose your language and keep it throughout the app.
 
 4
-00:00:23.933 --> 00:00:31.883
-Offline demo: fictional accounts, DOP/USD, balance privacy and swipe-direction arrows.
+00:00:39.000 --> 00:00:45.883
+After device registration, continue inside the app with biometric access.
 
 5
-00:00:31.933 --> 00:00:39.816
-Simulated banking history: search and filters; the demo shares a fictional CSV through Android.
+00:00:45.933 --> 00:00:52.816
+Hide balances with a tap. Keep pesos and dollars separate.
 
 6
-00:00:39.866 --> 00:00:47.749
-Synthetic PDF: pages, zoom, sharing and selected-period saving with a simulated folder.
+00:00:52.866 --> 00:00:59.749
+Find a transaction by typing a few letters.
 
 7
-00:00:47.799 --> 00:00:55.682
-Demo transfers: local code 123456, not SMS. Simulated bank: review, Android autofill of the SMS code and Verify.
+00:00:59.799 --> 00:01:06.749
+Turn PDF pages inside the app.
 
 8
-00:00:55.732 --> 00:01:03.615
-Demo payment with a local code; simulated bank payment with Android autofill of the SMS code and Verify.
+00:01:06.799 --> 00:01:13.749
+A clear receipt after review and authorization.
 
 9
-00:01:03.665 --> 00:01:11.548
-Recipient code, local save and simulated bank deletion with SMS code autofill and Verify.
+00:01:13.799 --> 00:01:20.682
+Read the recipient’s details before continuing.
 
 10
-00:01:11.598 --> 00:01:19.481
-Read-only cards: bank-supplied holder/identifier, full number only if supplied; informational services make no changes.
+00:01:20.732 --> 00:01:27.615
+Copy explicitly. The card number stays masked to its last four digits.
 
 11
-00:01:19.531 --> 00:01:27.481
-Simulated Token BSC: contract and unlinking; SMS code autofill then Verify. Generated token codes are not SMS.
+00:01:27.665 --> 00:01:34.548
+Your Token BSC code, in the app.
 
 12
-00:01:27.531 --> 00:01:35.481
-Fictional QR request: saving, recipient review and print preview.
+00:01:34.598 --> 00:01:41.481
+Amount, memo and recipient together before you continue.
 
 13
-00:01:35.531 --> 00:01:43.481
-SMS assistance off then on; delivery is separate. Bank authorization and owner-account validation remain unresolved.
+00:01:41.531 --> 00:01:48.481
+Choose SMS assistance in Settings. You stay in control.

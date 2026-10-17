@@ -1,109 +1,109 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:06.408
+00:00:00.000 --> 00:00:05.502
 Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.
 
 2
-00:00:06.458 --> 00:00:16.408
+00:00:05.552 --> 00:00:15.502
 A ajuda opcional usa consentimento Android para uma mensagem, sem acesso à caixa de SMS. O preenchimento do teclado espera Verificar.
 
 3
-00:00:16.458 --> 00:00:23.125
+00:00:15.552 --> 00:00:21.957
 Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.
 
 4
-00:00:23.175 --> 00:00:29.125
+00:00:22.007 --> 00:00:27.957
 A ajuda SMS é desativada apenas nesta cena de ajustes, depois reativada. O teclado e a entrada manual continuam disponíveis.
 
 5
-00:00:29.175 --> 00:00:34.849
+00:00:28.007 --> 00:00:33.549
 Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.
 
 6
-00:00:34.899 --> 00:00:42.849
+00:00:33.599 --> 00:00:41.549
 A ajuda SMS está ativada. O Android pede aprovação por mensagem; só o acesso exclusivamente por SMS aprovado se verifica automaticamente.
 
 7
-00:00:42.899 --> 00:00:49.417
+00:00:41.599 --> 00:00:47.328
 Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.
 
 8
-00:00:49.467 --> 00:00:55.417
+00:00:47.378 --> 00:00:53.328
 Perguntar permite escolher entre os canais oferecidos pelo banco. Não altera o preenchimento automático do Android.
 
 9
-00:00:55.467 --> 00:01:01.441
+00:00:53.378 --> 00:00:58.951
 Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.
 
 10
-00:01:01.491 --> 00:01:07.441
+00:00:59.001 --> 00:01:04.951
 E-mail define o canal preferido, quando oferecido. Depois, SMS é restaurado para os outros passeios.
 
 11
-00:01:07.491 --> 00:01:13.411
+00:01:05.001 --> 00:01:10.688
 Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.
 
 12
-00:01:13.461 --> 00:01:21.411
+00:01:10.738 --> 00:01:18.688
 SMS é o canal bancário preferido, quando oferecido; não é um interruptor universal de preenchimento automático.
 
 13
-00:01:21.461 --> 00:01:28.167
+00:01:18.738 --> 00:01:25.150
 Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.
 
 14
-00:01:28.217 --> 00:02:42.233
+00:01:25.200 --> 00:02:39.883
 Demonstração básica: perfil, segurança, ajuda e encerramento da sessão de teste; apenas dados fictícios.
 
 15
-00:02:42.283 --> 00:02:59.350
+00:02:39.933 --> 00:02:56.964
 Resultado incerto com banco simulado: histórico e nova confirmação de conciliação, sem repetir nem cancelar a operação.
 
 16
-00:02:59.400 --> 00:03:07.929
+00:02:57.014 --> 00:03:06.265
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 17
-00:03:07.979 --> 00:03:16.128
+00:03:06.315 --> 00:03:14.468
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 18
-00:03:16.178 --> 00:03:25.014
+00:03:14.518 --> 00:03:23.288
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 19
-00:03:25.064 --> 00:03:33.014
+00:03:23.338 --> 00:03:31.288
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 20
-00:03:33.064 --> 00:03:38.609
+00:03:31.338 --> 00:03:36.924
 Resultado incerto com banco simulado: histórico e nova confirmação de conciliação, sem repetir nem cancelar a operação.
 
 21
-00:03:38.659 --> 00:03:47.968
+00:03:36.974 --> 00:03:45.668
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 22
-00:03:48.018 --> 00:03:56.249
+00:03:45.718 --> 00:03:53.876
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 23
-00:03:56.299 --> 00:04:04.562
+00:03:53.926 --> 00:04:02.288
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 24
-00:04:04.612 --> 00:04:12.762
+00:04:02.338 --> 00:04:10.472
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 25
-00:04:12.812 --> 00:04:21.190
+00:04:10.522 --> 00:04:18.943
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 26
-00:04:21.240 --> 00:04:29.190
+00:04:18.993 --> 00:04:26.943
 Resultado incerto: confira o histórico real antes de conciliar. A conciliação não repete nem cancela a operação.
 
 27
-00:04:29.240 --> 00:04:35.550
+00:04:26.993 --> 00:04:33.350
 Resultado incerto com banco simulado: histórico e nova confirmação de conciliação, sem repetir nem cancelar a operação.

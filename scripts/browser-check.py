@@ -17,10 +17,18 @@ with sync_playwright() as p:
    assert page.locator('a[href*="v1.12.1-preview.1"][href$="-demo.apk"]').count()==2
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth'),(lang,width,'overflow')
    assert page.locator('video[autoplay]').count()==0
+   assert page.locator('video').first.get_attribute('id')=='video-overview'
+   assert page.locator('.benefit').count()==6
+   assert page.locator('.sms-frames [data-enlarge]').count()==2
+   assert page.locator('.chapter-list a').first.get_attribute('href')=='#login'
+   assert page.locator('main').inner_text().find(page.locator('h1').inner_text())>=0
+   if width==1440:
+    bounds=page.locator('#video-overview').bounding_box();assert bounds['y']<height and bounds['x']>width/2
+
    page.locator('.phone').focus();page.keyboard.press('Enter');assert page.locator('dialog').evaluate('(d)=>d.open')
    page.keyboard.press('Escape');assert not page.locator('dialog').evaluate('(d)=>d.open')
    assert page.locator('.phone').evaluate('(e)=>e===document.activeElement')
-   page.locator('.chapter-list a').nth(4).click();page.locator('#history').wait_for(state='visible');assert not page.locator('#first-use').is_visible()
+   page.locator('.chapter-list a[href="#history"]').click();page.locator('#history').wait_for(state='visible');assert not page.locator('#first-use').is_visible()
    page.locator('#speed-history').select_option('0.75');assert page.locator('#video-history').evaluate('(v)=>v.playbackRate')==0.75
    page.locator('#history details summary').click();assert page.locator('#history details').get_attribute('open') is not None
    shot=page.locator('#history .shot-button').first;shot.click();assert page.locator('dialog').evaluate('(d)=>d.open');page.keyboard.press('Escape')
@@ -31,6 +39,9 @@ with sync_playwright() as p:
    if width==390 and lang=='es':page.screenshot(path=str(a.output/'mobile.png'),full_page=True)
    if width==1440 and lang=='en':page.goto(a.url+'en/');page.screenshot(path=str(a.output/'desktop.png'))
    if width==820:
+    page.locator('[data-play-overview]').click();page.wait_for_timeout(300)
+    assert not page.locator('#video-overview').evaluate('(v)=>v.paused')
+    page.locator('#video-overview').evaluate('(v)=>v.pause()')
     video=page.locator('#video-overview');video.evaluate('(v)=>v.load()');video.evaluate('(v)=>new Promise(resolve=>{if(v.readyState>=1)resolve();else v.addEventListener("loadedmetadata",resolve,{once:true})})');assert video.evaluate('(v)=>v.duration')>=90
     video.evaluate('(v)=>v.play()');page.wait_for_timeout(300);assert not video.evaluate('(v)=>v.paused');video.evaluate('(v)=>v.pause()')
    assert page.locator('a[href$="-demo.apk"]').count()==2 and page.locator('a[href$="-live.apk"]').count()==1

@@ -80,19 +80,19 @@
         "La demo básica no tiene conciliación bancaria; autorización del banco y validación con la cuenta de su titular siguen pendientes."
       ],
       "overview": [
-        "Primer uso ficticio: privacidad, términos, idioma y elección opcional de ayuda SMS con aprobación por mensaje.",
-        "Acceso simulado: aprobar un SMS verifica automáticamente solo el acceso exclusivamente SMS; el teclado conserva Verificar.",
-        "Pregunta combinada y SMS conservan Verificar; la aprobación del dispositivo y el cambio de contraseña son pasos distintos.",
-        "Demo sin conexión: cuentas ficticias, DOP/USD, privacidad de saldos y flechas de deslizamiento.",
-        "Historial bancario simulado: búsqueda y filtros; la demo comparte un CSV ficticio mediante Android.",
-        "PDF sintético: páginas, ampliación, compartir y guardado por selección con carpeta simulada.",
-        "Transferencias de demo: código 123456, no SMS. Banco simulado: revisión, código SMS autocompletado por Android y Verificar.",
-        "Pago de demo con código local; pago bancario simulado con código SMS autocompletado mediante Android y Verificar.",
-        "Código de destinatario, guardado local y eliminación bancaria simulada con código SMS autocompletado y Verificar.",
-        "Tarjetas de solo lectura: titular e identificador del banco, número completo solo si se facilita; servicios informativos sin cambios.",
-        "Token BSC simulado: contrato y desvinculación; SMS con autocompletado y Verificar. El código generado del token no es SMS.",
-        "Solicitud QR ficticia: guardado, revisión del destinatario y vista previa de impresión.",
-        "Ayuda SMS: desactivar y reactivar; entrega bancaria aparte. Autorización del banco y validación con la cuenta de su titular pendientes."
+        "Llega el SMS; tras aprobar compartir ese mensaje en Android, el código se rellena y el acceso solo por SMS puede continuar.",
+        "En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado.",
+        "Elige tu idioma y mantenlo en toda la app.",
+        "Tras registrar el dispositivo, continúa dentro de la app con tu acceso biométrico.",
+        "Oculta saldos con un toque. Mantén pesos y dólares separados.",
+        "Encuentra un movimiento escribiendo unas letras.",
+        "Pasa las páginas del PDF dentro de la app.",
+        "Un comprobante claro después de revisar y autorizar.",
+        "Lee los datos del destinatario antes de continuar.",
+        "Copia con una acción explícita. El número sigue oculto salvo los últimos cuatro dígitos.",
+        "Tu código Token BSC, dentro de la app.",
+        "Importe, concepto y destinatario juntos antes de continuar.",
+        "Elige la ayuda SMS en Ajustes. Tú mantienes el control."
       ]
     },
     "en": {
@@ -175,19 +175,19 @@
         "The basic demo lacks bank reconciliation; bank authorization and owner-account validation remain unresolved."
       ],
       "overview": [
-        "Fictional first use: privacy, terms, language and optional SMS assistance with per-message approval.",
-        "Simulated login: approved one-message sharing auto-verifies only SMS-only login; keyboard autofill retains Verify.",
-        "Combined question plus SMS retains Verify; device approval and password change remain separate steps.",
-        "Offline demo: fictional accounts, DOP/USD, balance privacy and swipe-direction arrows.",
-        "Simulated banking history: search and filters; the demo shares a fictional CSV through Android.",
-        "Synthetic PDF: pages, zoom, sharing and selected-period saving with a simulated folder.",
-        "Demo transfers: local code 123456, not SMS. Simulated bank: review, Android autofill of the SMS code and Verify.",
-        "Demo payment with a local code; simulated bank payment with Android autofill of the SMS code and Verify.",
-        "Recipient code, local save and simulated bank deletion with SMS code autofill and Verify.",
-        "Read-only cards: bank-supplied holder/identifier, full number only if supplied; informational services make no changes.",
-        "Simulated Token BSC: contract and unlinking; SMS code autofill then Verify. Generated token codes are not SMS.",
-        "Fictional QR request: saving, recipient review and print preview.",
-        "SMS assistance off then on; delivery is separate. Bank authorization and owner-account validation remain unresolved."
+        "SMS arrives; approve sharing that message in Android, the code fills, and SMS-only login can continue.",
+        "For an operation, approve sharing the SMS in Android: the code fills, you review it and tap Verify before the result.",
+        "Choose your language and keep it throughout the app.",
+        "After device registration, continue inside the app with biometric access.",
+        "Hide balances with a tap. Keep pesos and dollars separate.",
+        "Find a transaction by typing a few letters.",
+        "Turn PDF pages inside the app.",
+        "A clear receipt after review and authorization.",
+        "Read the recipient’s details before continuing.",
+        "Copy explicitly. The card number stays masked to its last four digits.",
+        "Your Token BSC code, in the app.",
+        "Amount, memo and recipient together before you continue.",
+        "Choose SMS assistance in Settings. You stay in control."
       ]
     },
     "de": {
@@ -270,19 +270,19 @@
         "Der einfachen Demo fehlt der Bankabgleich; Bankgenehmigung und Prüfung mit einem Konto des Inhabers bleiben ungeklärt."
       ],
       "overview": [
-        "Fiktiver Erststart: Datenschutz, Bedingungen, Sprache und optionale SMS-Hilfe mit Freigabe je Nachricht.",
-        "Simulierte Anmeldung: Freigabe einer SMS prüft nur die reine SMS-Anmeldung automatisch; Tastatur-Autofill behält Prüfen.",
-        "Kombinierte Frage und SMS behalten Prüfen; Gerätefreigabe und Passwortänderung bleiben getrennte Schritte.",
-        "Offline-Demo: fiktive Konten, DOP/USD, ausgeblendete Salden und Pfeile für die Wischrichtung.",
-        "Simulierter Bankverlauf: Suche und Filter; die Demo teilt eine fiktive CSV über Android.",
-        "Künstlich erstelltes PDF: Seiten, Vergrößerung, Teilen und Auswahl speichern mit simuliertem Ordner.",
-        "Demo-Überweisungen: lokaler Code 123456, keine SMS. Simulierte Bank: Prüfung, von Android ausgefüllter SMS-Code und Prüfen.",
-        "Demo-Zahlung mit lokalem Code; simulierte Bankzahlung mit durch Android ausgefülltem SMS-Code und Prüfen.",
-        "Empfängercode, lokales Speichern und simulierte Löschung bei der Bank mit automatisch ausgefülltem SMS-Code und Prüfen.",
-        "Karten nur lesbar: Inhaber/Kennung von der Bank, volle Nummer nur bei Lieferung; Dienste informieren ohne Änderungen.",
-        "Simulierter Token BSC: Vertrag und Trennen; SMS-Code automatisch ausfüllen, dann Prüfen. Erzeugte Token-Codes sind keine SMS.",
-        "Fiktive QR-Anforderung: Speichern, Empfängerprüfung und Druckvorschau.",
-        "SMS-Hilfe aus und wieder an; Zustellung getrennt. Bankgenehmigung und Prüfung des Inhaberkontos bleiben ungeklärt."
+        "SMS kommt an; nach Freigabe dieser Nachricht in Android wird der Code ausgefüllt und die reine SMS-Anmeldung kann fortfahren.",
+        "Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen.",
+        "Wählen Sie Ihre Sprache für die gesamte App.",
+        "Nach der Geräteregistrierung bleiben Sie in der App und nutzen den biometrischen Zugang.",
+        "Salden mit einem Tippen ausblenden. Pesos und Dollar bleiben getrennt.",
+        "Finden Sie eine Buchung mit wenigen Buchstaben.",
+        "Blättern Sie im PDF direkt in der App.",
+        "Ein klarer Beleg nach Prüfung und Freigabe.",
+        "Prüfen Sie die Empfängerdaten, bevor Sie fortfahren.",
+        "Kopieren nur auf Wunsch. Sichtbar bleiben nur die letzten vier Ziffern der Kartennummer.",
+        "Ihr Token-BSC-Code direkt in der App.",
+        "Betrag, Verwendungszweck und Empfänger vor dem Fortfahren gemeinsam prüfen.",
+        "Wählen Sie die SMS-Hilfe in den Einstellungen. Sie behalten die Kontrolle."
       ]
     },
     "fr": {
@@ -365,19 +365,19 @@
         "La démo de base n’a pas de rapprochement bancaire ; autorisation bancaire et validation du compte de son titulaire restent en suspens."
       ],
       "overview": [
-        "Premier usage fictif : confidentialité, conditions, langue et aide SMS facultative avec accord par message.",
-        "Connexion simulée : l’accord pour un SMS ne vérifie automatiquement que la connexion par SMS seul ; le clavier garde Vérifier.",
-        "Question combinée et SMS gardent Vérifier ; approbation de l’appareil et changement de mot de passe restent distincts.",
-        "Démo hors ligne : comptes fictifs, DOP/USD, masquage des soldes et flèches de défilement tactile.",
-        "Historique bancaire simulé : recherche et filtres ; la démo partage un CSV fictif via Android.",
-        "PDF synthétique : pages, agrandissement, partage et enregistrement d’une sélection dans un dossier simulé.",
-        "Virements de démo : code local 123456, pas un SMS. Banque simulée : révision, code SMS rempli par Android et Vérifier.",
-        "Paiement de démo avec code local ; paiement bancaire simulé avec code SMS rempli par Android et Vérifier.",
-        "Code de destinataire, enregistrement local et suppression bancaire simulée avec code SMS rempli et Vérifier.",
-        "Cartes en lecture seule : titulaire/identifiant fournis, numéro complet seulement si fourni ; services informatifs sans modification.",
-        "Token BSC simulé : contrat et dissociation ; code SMS rempli puis Vérifier. Les codes générés du jeton ne sont pas des SMS.",
-        "Demande QR fictive : enregistrement, vérification du destinataire et aperçu d’impression.",
-        "Aide SMS désactivée puis réactivée ; canal distinct. Autorisation bancaire et validation du compte de son titulaire restent en suspens."
+        "Le SMS arrive ; après accord pour partager ce message dans Android, le code se remplit et la connexion par SMS seul peut continuer.",
+        "Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.",
+        "Choisissez votre langue et gardez-la dans toute l’application.",
+        "Après l’enregistrement de l’appareil, poursuivez dans l’application avec l’accès biométrique.",
+        "Masquez les soldes d’un geste. Pesos et dollars restent séparés.",
+        "Retrouvez une opération en saisissant quelques lettres.",
+        "Parcourez les pages du PDF dans l’application.",
+        "Un reçu clair après vérification et autorisation.",
+        "Lisez les coordonnées du destinataire avant de continuer.",
+        "Copiez par une action explicite. Seuls les quatre derniers chiffres restent visibles.",
+        "Votre code Token BSC dans l’application.",
+        "Montant, motif et destinataire réunis avant de continuer.",
+        "Choisissez l’aide SMS dans les paramètres. Vous gardez le contrôle."
       ]
     },
     "ru": {
@@ -460,19 +460,19 @@
         "В базовой демоверсии нет банковской сверки; разрешение банка и проверка со счётом его владельца остаются нерешёнными."
       ],
       "overview": [
-        "Вымышленный первый запуск: конфиденциальность, условия, язык и необязательная помощь SMS с согласием на каждое сообщение.",
-        "Имитация входа: согласие на SMS автоматически проверяет лишь вход только по SMS; клавиатура сохраняет «Проверить».",
-        "Составной вопрос и SMS сохраняют «Проверить»; одобрение устройства и смена пароля — отдельные шаги.",
-        "Демоверсия без банка: вымышленные счета, DOP/USD, скрытие остатков и стрелки направления свайпов.",
-        "Имитация банковской истории: поиск и фильтры; демоверсия отправляет вымышленный CSV через меню Android.",
-        "Искусственный PDF: страницы, масштаб, отправка и сохранение выбранных периодов в имитируемую папку.",
-        "Переводы в демоверсии: локальный код 123456, не SMS. Имитация банка: проверка, автозаполнение SMS-кода Android и «Проверить».",
-        "Платёж в демоверсии с локальным кодом; имитация банковского платежа с автозаполнением SMS-кода Android и «Проверить».",
-        "Код получателя, локальное сохранение и имитация удаления в банке с автозаполнением SMS-кода и «Проверить».",
-        "Карты только для чтения: владелец/идентификатор от банка, полный номер лишь при получении; сервисы информируют без изменений.",
-        "Имитация Token BSC: договор и отключение; автозаполнение SMS-кода и «Проверить». Сгенерированные коды токена — не SMS.",
-        "Вымышленный QR-запрос: сохранение, проверка получателя и предварительный просмотр печати.",
-        "Помощь SMS отключается и включается; доставка отдельно. Разрешение банка и проверка счёта владельца остаются нерешёнными."
+        "Приходит SMS; после согласия передать его в Android код заполняется, и вход только по SMS может продолжиться.",
+        "В операции разрешите Android передать SMS: код заполнится, проверьте его и нажмите «Проверить» перед результатом.",
+        "Выберите язык для всего приложения.",
+        "После регистрации устройства продолжайте в приложении с биометрическим входом.",
+        "Скрывайте остатки одним нажатием. Песо и доллары показаны отдельно.",
+        "Найдите операцию, введя несколько букв.",
+        "Листайте PDF прямо в приложении.",
+        "Понятная квитанция после проверки и подтверждения.",
+        "Прочитайте данные получателя перед продолжением.",
+        "Копирование — только по вашему действию. Видны лишь последние четыре цифры карты.",
+        "Ваш код Token BSC — в приложении.",
+        "Сумма, назначение и получатель вместе перед продолжением.",
+        "Выберите помощь с SMS в настройках. Управление остаётся у вас."
       ]
     },
     "uk": {
@@ -555,19 +555,19 @@
         "У базовій демоверсії немає банківської звірки; дозвіл банку й перевірка з рахунком його власника залишаються невирішеними."
       ],
       "overview": [
-        "Вигаданий перший запуск: конфіденційність, умови, мова й необов’язкова допомога SMS зі згодою на кожне повідомлення.",
-        "Імітація входу: згода на SMS автоматично перевіряє лише вхід за SMS; клавіатура зберігає «Перевірити».",
-        "Складене запитання та SMS зберігають «Перевірити»; схвалення пристрою й зміна пароля — окремі кроки.",
-        "Демоверсія без банку: вигадані рахунки, DOP/USD, приховування залишків і стрілки напрямку свайпів.",
-        "Імітація банківської історії: пошук і фільтри; демоверсія надсилає вигаданий CSV через меню Android.",
-        "Штучний PDF: сторінки, масштаб, надсилання та збереження вибраних періодів в імітовану папку.",
-        "Перекази в демоверсії: локальний код 123456, не SMS. Імітація банку: перевірка, автозаповнення SMS-коду Android і «Перевірити».",
-        "Платіж у демоверсії з локальним кодом; імітація банківського платежу з автозаповненням SMS-коду Android і «Перевірити».",
-        "Код одержувача, локальне збереження й імітація видалення в банку з автозаповненням SMS-коду і «Перевірити».",
-        "Картки лише для читання: власник/ідентифікатор від банку, повний номер тільки після отримання; сервіси інформують без змін.",
-        "Імітація Token BSC: договір і від’єднання; автозаповнення SMS-коду й «Перевірити». Створені коди токена — не SMS.",
-        "Вигаданий QR-запит: збереження, перевірка одержувача й попередній перегляд друку.",
-        "Допомога SMS вимикається й вмикається; доставка окремо. Дозвіл банку й перевірка рахунку власника залишаються невирішеними."
+        "Надходить SMS; після згоди передати його в Android код заповнюється, і вхід лише за SMS може продовжитися.",
+        "В операції дозвольте Android передати SMS: код заповниться, перевірте його й натисніть «Перевірити» перед результатом.",
+        "Виберіть мову для всього застосунку.",
+        "Після реєстрації пристрою продовжуйте в застосунку з біометричним входом.",
+        "Приховуйте залишки одним натисканням. Песо й долари показано окремо.",
+        "Знайдіть операцію, ввівши кілька літер.",
+        "Гортайте PDF безпосередньо в застосунку.",
+        "Зрозуміла квитанція після перевірки та підтвердження.",
+        "Прочитайте дані одержувача перед продовженням.",
+        "Копіювання — лише за вашою дією. Видно тільки останні чотири цифри картки.",
+        "Ваш код Token BSC — у застосунку.",
+        "Сума, призначення й одержувач разом перед продовженням.",
+        "Виберіть допомогу з SMS у налаштуваннях. Керування залишається у вас."
       ]
     },
     "pt": {
@@ -650,19 +650,19 @@
         "A demonstração básica não tem conciliação bancária; autorização do banco e validação com a conta de seu titular seguem pendentes."
       ],
       "overview": [
-        "Primeiro uso fictício: privacidade, termos, idioma e ajuda SMS opcional com aprovação por mensagem.",
-        "Acesso simulado: aprovar um SMS só verifica automaticamente o acesso exclusivamente SMS; o teclado mantém Verificar.",
-        "Pergunta combinada e SMS mantêm Verificar; aprovação do dispositivo e troca de senha são passos distintos.",
-        "Demonstração offline: contas fictícias, DOP/USD, privacidade dos saldos e setas de deslizamento.",
-        "Histórico bancário simulado: pesquisa e filtros; a demonstração compartilha um CSV fictício pelo Android.",
-        "PDF sintético: páginas, ampliação, compartilhamento e salvamento de seleção com pasta simulada.",
-        "Transferências de demonstração: código local 123456, não SMS. Banco simulado: revisão, código SMS preenchido pelo Android e Verificar.",
-        "Pagamento de demonstração com código local; pagamento bancário simulado com código SMS preenchido pelo Android e Verificar.",
-        "Código de destinatário, salvamento local e exclusão bancária simulada com código SMS preenchido e Verificar.",
-        "Cartões só para leitura: titular/identificador do banco, número completo só se fornecido; serviços informam sem alterações.",
-        "Token BSC simulado: contrato e desvinculação; código SMS preenchido e Verificar. Códigos gerados pelo token não são SMS.",
-        "Solicitação QR fictícia: salvamento, revisão do destinatário e visualização de impressão.",
-        "Ajuda SMS desativada e reativada; entrega separada. Autorização do banco e validação com a conta de seu titular seguem pendentes."
+        "O SMS chega; após aprovar compartilhar a mensagem no Android, o código é preenchido e o acesso só por SMS pode continuar.",
+        "Na operação, aprove compartilhar o SMS no Android: o código é preenchido, você confere e toca em Verificar antes do resultado.",
+        "Escolha seu idioma e mantenha-o em todo o aplicativo.",
+        "Após registrar o dispositivo, continue no aplicativo com acesso biométrico.",
+        "Oculte saldos com um toque. Pesos e dólares ficam separados.",
+        "Encontre uma transação digitando algumas letras.",
+        "Passe as páginas do PDF dentro do aplicativo.",
+        "Um comprovante claro após revisão e autorização.",
+        "Leia os dados do destinatário antes de continuar.",
+        "Copie por uma ação explícita. Apenas os últimos quatro dígitos do cartão ficam visíveis.",
+        "Seu código Token BSC, dentro do aplicativo.",
+        "Valor, descrição e destinatário juntos antes de continuar.",
+        "Escolha a ajuda SMS nas configurações. Você mantém o controle."
       ]
     }
   }

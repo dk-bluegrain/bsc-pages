@@ -14,7 +14,7 @@ policy=json.loads((ROOT/'src/video-scripts.json').read_text());script_hash=hashl
 expected={c['id']:len(c['scenes']) for c in policy['chapters']};approved={}
 for folder in a.captures:
  for metadata in sorted(folder.glob('*/complete.json')):
-  info=json.loads(metadata.read_text());assert info['passed'] and info['fictional'] and info['nativeTapOverlay'] and info.get('inputMarkerVersion')==2 and info.get('storyboardRevision')==3 and info.get('smsPreference')=='SMS' and info.get('manualBankSmsTyping') is False and (info['chapter']=='first-use' or info.get('smsAssistanceEnabled') is True), 'Capture requires synchronized input markers'
+  info=json.loads(metadata.read_text());assert info['passed'] and info['fictional'] and info['nativeTapOverlay'] and info.get('inputMarkerVersion')==2 and info.get('storyboardRevision')==policy['revision'] and info.get('recordingMode')=='recording' and info.get('smsPreference')=='SMS' and info.get('manualBankSmsTyping') is False and (info['chapter']=='first-use' or info.get('smsAssistanceEnabled') is True), 'Capture requires synchronized input markers'
   approved[(info['chapter'],info['scenario'])]=(metadata.parent,info)
 def run(*args):subprocess.run(list(args),check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
 def probe(path):return float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',str(path)]))
@@ -112,7 +112,7 @@ def vtt(id,duration,events):
   transcripts[lang][id]=list(dict.fromkeys(text for _,_,text in cues))
 
 manifest=json.loads((ROOT/'src/media.json').read_text()) if a.chapter and (ROOT/'src/media.json').exists() else {}
-SOURCE_COMMIT='b9064724b95753a6adf404d3da3c54bbf9e6f50d'
+SOURCE_COMMIT='5587f6acc142ddc7e3b0e80f37ace6bf06a6cb67'
 if a.captions_only:
  provenance_path=MEDIA/'provenance.json'
  provenance=json.loads(provenance_path.read_text());provenance['sourceCommit']=SOURCE_COMMIT
@@ -132,14 +132,14 @@ with tempfile.TemporaryDirectory(prefix='bsc-media-') as temp:
   assert [key[1] for key,pair in selections]==list(range(1,expected[id]+1)), 'Missing scripted scene for '+id
   assert all(pair[1]['scriptSha256']==script_hash for key,pair in selections),'Capture script mismatch for '+id
   for old in MEDIA.glob(f'{id}-*.jpg'):old.unlink()
-  clips=[];events=[];shots=[];sources=[];offset=0
+  clips=[];events=[];shots=[];sources=[];featured={};offset=0
   for (_,index),(folder,info) in selections:
    raw=folder/'raw.mp4';source_events=[json.loads(s) for s in (folder/'captures/events.jsonl').read_text().splitlines()] if (folder/'captures/events.jsonl').exists() else []
    raw_duration=probe(raw)
    alignment,first_ring=align_first_ring(raw,source_events,info['recordingStartEpochMs'])
    opening=next(e for e in source_events if e['type']=='scene-start')
    ending=next(e for e in reversed(source_events) if e['type']=='scene-end')
-   start=max(0,(opening['epochMs']-info['recordingStartEpochMs'])/1000+alignment-.15)
+   start=max(0,(opening['epochMs']-info['recordingStartEpochMs'])/1000+alignment+.05)
    end=min(raw_duration,(ending['epochMs']-info['recordingStartEpochMs'])/1000+alignment+.1);duration=end-start
    # Ring overlays are rendered in Android at the actual touch, retained in the footage.
    clip=temp/f'{id}-{index}.mp4'
@@ -147,22 +147,33 @@ with tempfile.TemporaryDirectory(prefix='bsc-media-') as temp:
    actual_duration=probe(clip)
    for e in source_events:
     t=(e['epochMs']-info['recordingStartEpochMs'])/1000+alignment-start+offset
-    if 0<=t<=offset+actual_duration:
+    if e['type']=='scene-start':t=offset
+    if offset<=t<=offset+actual_duration:
      item={'type':e['type'],'timeSeconds':round(t,3),'epochMs':e['epochMs'],'scenario':index}
      for key in ('x','y','endX','endY'):
       if key in e:item[key]=round(e[key]/2,2)
      if 'characters' in e:item['characters']=e['characters']
-     for key in ('cue','durationMs','method','manualTyping','preferredMedium','action'):
+     for key in ('cue','durationMs','method','manualTyping','preferredMedium','action','file'):
       if key in e:item[key]=e[key]
      events.append(item)
    images=sorted((folder/'captures').glob('screen-*.png'))
    if images:
-    # Select a few actual captured screens per segment; no generated banking UI.
     picks=sorted(set([min(1,len(images)-1),len(images)//2,max(0,len(images)-1)]))
+    cue_files={}
+    for cue in ('sms-wait','sms-filled','sms-login','review','receipt','token','cards-readonly','settings-enabled'):
+     hold=next((e for e in source_events if e['type']=='hold' and e.get('cue')==cue),None)
+     if hold:
+      frame=next((e for e in reversed(source_events) if e['type']=='screenshot' and e['epochMs']<=hold['epochMs']),None)
+      if frame and (folder/'captures'/frame['file']) in images:
+       cue_files[cue]=images.index(folder/'captures'/frame['file'])
+    picks=sorted(set(picks+[pos for cue,pos in cue_files.items() if cue in ('sms-wait','sms-filled','sms-login')]))
+    names={}
     for pos in picks:
-     name=f'{id}-{len(shots)+1:02d}.jpg'
+     name=f'{id}-{len(shots)+1:02d}.jpg';names[pos]=name
      run('ffmpeg','-hide_banner','-loglevel','error','-y','-i',str(images[pos]),'-vf','scale=540:-2','-frames:v','1','-q:v','3',str(MEDIA/name));shots.append(name)
-   sources.append({'test':info['test'],'emulator':info['emulator'],'passed':True,'scenario':index,'scriptSha256':info['scriptSha256'],'smsPreference':info['smsPreference'],'smsAssistanceEnabled':info.get('smsAssistanceEnabled',False),'captureBuildSha256':info.get('captureBuildSha256'),'smsAutofillEvents':info['smsAutofillEvents'],'requiresSmsAutofill':info['requiresSmsAutofill'],'firstNativeRingVideoTime':first_ring,'eventAlignmentOffset':round(alignment,3),'trimStart':round(start,3),'duration':round(actual_duration,3)})
+    for cue,pos in cue_files.items():
+     if pos in names and cue not in featured:featured[cue]=names[pos]
+   sources.append({'test':info['test'],'emulator':info['emulator'],'passed':True,'scenario':index,'scriptSha256':info['scriptSha256'],'smsPreference':info['smsPreference'],'smsAssistanceEnabled':info.get('smsAssistanceEnabled',False),'captureBuildSha256':info.get('captureBuildSha256'),'smsAutofillEvents':info['smsAutofillEvents'],'requiresSmsAutofill':info['requiresSmsAutofill'],'loginInputEvents':info.get('loginInputEvents'),'recordingMode':info.get('recordingMode'),'firstNativeRingVideoTime':first_ring,'eventAlignmentOffset':round(alignment,3),'trimStart':round(start,3),'duration':round(actual_duration,3)})
    offset+=actual_duration
   concat=temp/f'{id}.txt';concat.write_text(''.join("file '"+str(c)+"'\n" for c in clips))
   target=MEDIA/f'{id}.mp4'
@@ -171,39 +182,49 @@ with tempfile.TemporaryDirectory(prefix='bsc-media-') as temp:
   run('ffmpeg','-hide_banner','-loglevel','error','-y','-f','concat','-safe','0','-i',str(concat),'-vf',f'tpad=stop_mode=clone:stop_duration=30,ass={touch_overlay}','-t',str(max(30,offset)),'-an','-c:v','libx264','-preset','veryfast','-crf','24','-pix_fmt','yuv420p','-movflags','+faststart',str(target))
   duration=probe(target);poster=MEDIA/f'{id}.jpg';shutil.copy2(MEDIA/shots[min(1,len(shots)-1)],poster)
   (MEDIA/'events').mkdir(exist_ok=True);(MEDIA/'events'/f'{id}.json').write_text(json.dumps({'coordinateSpace':{'width':540,'height':1200},'timing':'Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Android records each actual input and native marker. A persistent one-second overlay follows those same events across native window handoffs.','events':events},indent=2)+'\n')
-  manifest[id]={'duration':round(duration,3),'durationLabel':f'{int(duration)//60}:{int(duration)%60:02d}','screenshots':shots,'sources':sources,'fictional':True,'nativeTapOverlay':True,'persistentFinalMarkers':True,'storyboardRevision':3,'smsPreference':'SMS','scriptSha256':script_hash,'assetRevision':hashlib.sha256((MEDIA/f'{id}.mp4').read_bytes()).hexdigest()[:12]}
+  manifest[id]={'duration':round(duration,3),'durationLabel':f'{int(duration)//60}:{int(duration)%60:02d}','screenshots':shots,'featuredFrames':featured,'sources':sources,'fictional':True,'nativeTapOverlay':True,'persistentFinalMarkers':True,'storyboardRevision':policy['revision'],'smsPreference':'SMS','scriptSha256':script_hash,'assetRevision':hashlib.sha256((MEDIA/f'{id}.mp4').read_bytes()).hexdigest()[:12]}
   vtt(id,duration,events);print(id,manifest[id]['durationLabel'],flush=True)
  ready=all(manifest.get(id,{}).get('storyboardRevision')==policy['revision'] and (manifest[id].get('scriptSha256') or manifest[id].get('assetRevision')) in (script_hash,script_hash[:12]) and len(manifest[id].get('sources',[]))==expected[id] for id in ids)
  if ready:
-  # Overview: thirteen8-second segments in the documented chapter order, no speedup.
+  # The overview is an authored UX narrative, led by complete SMS transitions.
   overview=[];overview_events=[];excerpts=[]
-  for id in ids:
-   source=MEDIA/f'{id}.mp4';duration=manifest[id]['duration'];clip=temp/f'overview-{id}.mp4'
-   starts=json.loads((ROOT/'src/overview-starts.json').read_text()) if (ROOT/'src/overview-starts.json').exists() else {}
+  cuts=json.loads((ROOT/'src/overview-cuts.json').read_text()) if (ROOT/'src/overview-cuts.json').exists() else {}
+  for specification in policy['overview']['excerpts']:
+   specification=dict(specification,**cuts.get(specification['chapter'],{}))
+   id=specification['chapter'];source=MEDIA/f'{id}.mp4';duration=manifest[id]['duration'];clip=temp/f'overview-{id}.mp4'
    chapter_events=json.loads((MEDIA/'events'/f'{id}.json').read_text())['events']
-   preferred_hold=next((e for e in chapter_events if e['type']=='hold' and e.get('cue')=='sms-filled'),None)
-   if preferred_hold is None:preferred_hold=next((e for e in chapter_events if e['type']=='hold' and e.get('cue') in ('review','consent','receipt','configuration') and e.get('durationMs',0)>=8000),None)
-   preferred=min(max(0,preferred_hold['timeSeconds'] if preferred_hold else starts.get(id,duration*.3)),duration-8)
+   eligible=[e for e in chapter_events if e.get('scenario')==specification['scenario'] and e['type']==specification['eventType']]
+   match=specification.get('match')
+   if specification.get('tapIndex') is not None:
+    anchor=eligible[specification['tapIndex']]
+   else:
+    matching=[e for e in eligible if match is None or e.get('action')==match or e.get('cue')==match]
+    assert matching,'Missing authored overview anchor: '+str(specification)
+    anchor=matching[specification.get('occurrence',0)]
+   length=specification['seconds']
+   scene_start=sum(s['duration'] for s in manifest[id]['sources'] if s['scenario']<specification['scenario'])
+   scene_length=next(s['duration'] for s in manifest[id]['sources'] if s['scenario']==specification['scenario'])
+   scene_end=scene_start+scene_length;assert length<=scene_length
+   latest=max(scene_start,scene_end-length-.1)
+   preferred=min(max(scene_start,anchor['timeSeconds']-specification['beforeSeconds']),latest)
+   inputs=[e['timeSeconds'] for e in chapter_events if e['type'] in ('tap','swipe')]
    start=preferred
-   for step in range(81):
-    delta=(step+1)//2*.1*(1 if step%2 else -1)
-    candidate=min(max(0,preferred+delta),duration-8)
-    inputs=[e['timeSeconds'] for e in chapter_events if e['type'] in ('tap','swipe')]
-    if not any(0<candidate-t<1.05 or 7.0<t-candidate<8.05 for t in inputs):
-     start=candidate;break
-   run('ffmpeg','-hide_banner','-loglevel','error','-y','-ss',str(start),'-i',str(source),'-t','8','-an','-c:v','libx264','-preset','veryfast','-crf','24','-pix_fmt','yuv420p','-movflags','+faststart',str(clip))
+   for delta in [0,.1,-.1,.2,-.2,.3,-.3]:
+    candidate=min(max(scene_start,preferred+delta),latest)
+    if not any(0<candidate-t<1.05 or length-1<t-candidate<length+.05 for t in inputs):start=candidate;break
+   run('ffmpeg','-hide_banner','-loglevel','error','-y','-ss',str(start),'-i',str(source),'-t',str(length),'-an','-c:v','libx264','-preset','veryfast','-crf','24','-pix_fmt','yuv420p','-movflags','+faststart',str(clip))
    actual=probe(clip);position=sum(e['duration'] for e in excerpts)
-   excerpts.append({'chapter':id,'start':round(start,3),'duration':round(actual,3),'overviewStart':round(position,3)})
+   excerpts.append({'chapter':id,'scenario':specification['scenario'],'anchorType':specification['eventType'],'anchorTime':anchor['timeSeconds'],'start':round(start,3),'duration':round(actual,3),'overviewStart':round(position,3),'sourceSceneStart':round(scene_start,3),'sourceSceneEnd':round(scene_end,3)})
    for event in chapter_events:
-    if start<=event['timeSeconds']<start+actual:
-     overview_events.append(dict(event,timeSeconds=round(event['timeSeconds']-start+position,3),sourceChapter=id))
+    if start<=event['timeSeconds']<start+actual:overview_events.append(dict(event,timeSeconds=round(event['timeSeconds']-start+position,3),sourceChapter=id))
    overview.append(clip)
   concat=temp/'overview.txt';concat.write_text(''.join("file '"+str(c)+"'\n" for c in overview))
   run('ffmpeg','-hide_banner','-loglevel','error','-y','-f','concat','-safe','0','-i',str(concat),'-c','copy','-movflags','+faststart',str(MEDIA/'overview.mp4'))
   (MEDIA/'events/overview.json').write_text(json.dumps({'coordinateSpace':{'width':540,'height':1200},'events':overview_events},indent=2)+'\n')
-  duration=probe(MEDIA/'overview.mp4');shutil.copy2(MEDIA/'accounts.jpg',MEDIA/'overview.jpg');manifest['overview']={'duration':round(duration,3),'durationLabel':'1:44','chapters':ids,'excerpts':excerpts,'fictional':True,'storyboardRevision':3,'assetRevision':hashlib.sha256((MEDIA/'overview.mp4').read_bytes()).hexdigest()[:12]};vtt('overview',duration,overview_events)
+  duration=probe(MEDIA/'overview.mp4');poster=manifest['transfers'].get('featuredFrames',{}).get('sms-filled','login.jpg');shutil.copy2(MEDIA/poster,MEDIA/'overview.jpg')
+  manifest['overview']={'duration':round(duration,3),'durationLabel':f'{int(duration)//60}:{int(duration)%60:02d}','chapters':policy['overview']['chapterOrder'],'excerpts':excerpts,'fictional':True,'storyboardRevision':policy['revision'],'assetRevision':hashlib.sha256((MEDIA/'overview.mp4').read_bytes()).hexdigest()[:12]};vtt('overview',duration,overview_events)
   shutil.copy2(MEDIA/'accounts-01.jpg',MEDIA/'hero.jpg')
 (ROOT/'src/transcripts.json').write_text(json.dumps({'languages':transcripts},ensure_ascii=False,indent=2)+'\n')
 (ROOT/'src/media.json').write_text(json.dumps(manifest,indent=2)+'\n')
-(MEDIA/'provenance.json').write_text(json.dumps({'appVersion':'1.12.1 (28)','sourceCommit':SOURCE_COMMIT,'sourceRepository':'https://github.com/dk-bluegrain/bsc','capture':'Scripted native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only. Capture-only QA builds are identified by each source APK digest; distribution hashes are listed separately in downloads.json.','storyboardRevision':3,'smsPolicy':'SMS assistance enabled outside initial pre-choice onboarding and the settings off/on demonstration; SMS delivery restored after configuration. Fake keyboard autofill retains Verify; a separate synthetic one-message consent result completes only SMS-only login automatically. Offline demo and generated token codes are distinct.','audio':'Silent: no music or narration.','security':'Only a disposable QA checkout permits screenshots. Distribution live screens retain FLAG_SECURE.','notEvidenceOf':'Bank authorization, owner-account validation, current live compatibility, or inclusion of all advanced flows in the basic demo.','chapters':manifest},indent=2)+'\n')
+(MEDIA/'provenance.json').write_text(json.dumps({'appVersion':'1.12.1 (28)','sourceCommit':SOURCE_COMMIT,'distributionSourceCommit':'b9064724b95753a6adf404d3da3c54bbf9e6f50d','sourceRepository':'https://github.com/dk-bluegrain/bsc','capture':'Scripted native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only. Capture-only QA builds are identified by each source APK digest; distribution hashes are listed separately in downloads.json.','storyboardRevision':policy['revision'],'smsPolicy':'SMS assistance enabled outside initial pre-choice onboarding and the settings off/on demonstration; SMS delivery restored after configuration. Fake keyboard autofill retains Verify; a separate synthetic one-message consent result completes only SMS-only login automatically. Offline demo and generated token codes are distinct.','audio':'Silent: no music or narration.','security':'Only a disposable QA checkout permits screenshots. Distribution live screens retain FLAG_SECURE.','notEvidenceOf':'Bank authorization, owner-account validation, current live compatibility, or inclusion of all advanced flows in the basic demo.','chapters':manifest},indent=2)+'\n')
 print('Scripted chapters exported; overview ready:',ready)

@@ -1,61 +1,61 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:32.144
+00:00:00.000 --> 00:00:32.277
 Banco simulado: colar código de destinatário, revisar e preencher dados, sem validar ou salvar automaticamente.
 
 2
-00:00:32.194 --> 00:00:36.971
+00:00:32.327 --> 00:00:36.945
 Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 3
-00:00:37.021 --> 00:00:44.971
+00:00:36.995 --> 00:00:44.945
 Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 4
-00:00:45.021 --> 00:00:51.500
+00:00:44.995 --> 00:00:51.350
 Banco simulado: colar código de destinatário, revisar e preencher dados, sem validar ou salvar automaticamente.
 
 5
-00:00:51.550 --> 00:01:02.652
+00:00:51.400 --> 00:01:02.327
 Exclusão de beneficiário com banco simulado: revisão, confirmação separada, código SMS preenchido e Verificar explícito.
 
 6
-00:01:02.702 --> 00:01:09.183
+00:01:02.377 --> 00:01:09.101
 Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 7
-00:01:09.233 --> 00:01:17.377
+00:01:09.151 --> 00:01:17.320
 Confira os detalhes antes de continuar. Abrir esta tela não autoriza uma operação.
 
 8
-00:01:17.427 --> 00:01:25.848
+00:01:17.370 --> 00:01:25.853
 A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.
 
 9
-00:01:25.898 --> 00:01:34.027
+00:01:25.903 --> 00:01:34.028
 A confirmação é uma etapa separada. Esta demonstração não envia instruções ao banco real.
 
 10
-00:01:34.077 --> 00:01:37.291
+00:01:34.078 --> 00:01:37.312
 Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.
 
 11
-00:01:37.341 --> 00:01:42.994
+00:01:37.362 --> 00:01:43.012
 O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.
 
 12
-00:01:43.044 --> 00:01:48.450
+00:01:43.062 --> 00:01:48.354
 Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
 
 13
-00:01:48.500 --> 00:01:56.450
+00:01:48.404 --> 00:01:56.354
 Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.
 
 14
-00:01:56.500 --> 00:02:02.967
+00:01:56.404 --> 00:02:02.683
 Exclusão de beneficiário com banco simulado: revisão, confirmação separada, código SMS preenchido e Verificar explícito.
 
 15
-00:02:03.017 --> 00:03:11.883
+00:02:02.733 --> 00:03:09.883
 Demonstração básica: criar e salvar localmente beneficiário fictício de outro banco, sem validação bancária real.

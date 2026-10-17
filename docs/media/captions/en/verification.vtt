@@ -1,69 +1,45 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:10.647
+00:00:00.000 --> 00:00:10.544
 Simulated banking: security question and SMS stay separate; code autofill retains explicit Verify.
 
 2
-00:00:10.697 --> 00:00:14.012
+00:00:10.594 --> 00:00:13.849
 A fictional SMS is expected. Optional assistance asks approval for one message; it grants no inbox access.
 
 3
-00:00:14.062 --> 00:00:19.808
+00:00:13.899 --> 00:00:19.603
 Android or the keyboard autofilled a fictional code. Review it and tap Verify; this route does not submit automatically.
 
 4
-00:00:19.858 --> 00:00:25.203
+00:00:19.653 --> 00:00:24.445
 Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
 
 5
-00:00:25.253 --> 00:00:33.203
+00:00:24.495 --> 00:00:32.445
 Review before continuing. Keyboard autofill does not submit a code; SMS-only login has a separate consent flow.
 
 6
-00:00:33.253 --> 00:00:39.700
+00:00:32.495 --> 00:00:38.817
 Simulated banking: security question and SMS stay separate; code autofill retains explicit Verify.
 
 7
-00:00:39.750 --> 00:00:45.110
-Simulated banking: an unapproved device needs registration, with no account access or silent enrollment.
+00:00:38.867 --> 00:00:44.093
+Simulated device registration and fresh biometric login inside the app; no silent password replay.
 
 8
-00:00:45.160 --> 00:00:55.110
+00:00:44.143 --> 00:00:50.093
 Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
 
 9
-00:00:55.160 --> 00:01:01.385
-Simulated banking: an unapproved device needs registration, with no account access or silent enrollment.
+00:00:50.143 --> 00:01:02.299
+Simulated device registration and fresh biometric login inside the app; no silent password replay.
 
 10
-00:01:01.435 --> 00:01:11.385
+00:01:02.349 --> 00:01:08.299
 Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
 
 11
-00:01:11.435 --> 00:01:23.233
-Simulated banking: an unapproved device needs registration, with no account access or silent enrollment.
-
-12
-00:01:23.283 --> 00:02:06.500
-Required password change with a fake bank: review the mismatch and confirm before returning to login.
-
-13
-00:02:06.550 --> 00:02:11.841
-Simulated device registration and fresh biometric login inside the app; no silent password replay.
-
-14
-00:02:11.891 --> 00:02:17.841
-Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
-
-15
-00:02:17.891 --> 00:02:29.740
-Simulated device registration and fresh biometric login inside the app; no silent password replay.
-
-16
-00:02:29.790 --> 00:02:35.740
-Read the text and its consequences. Opening terms, privacy or a contract does not indicate acceptance.
-
-17
-00:02:35.790 --> 00:02:42.350
+00:01:08.349 --> 00:01:15.083
 Simulated device registration and fresh biometric login inside the app; no silent password replay.

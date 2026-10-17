@@ -1,129 +1,129 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:27.541
-Démo de base : virement entre comptes, révision et code local de test 123456 ; ce n’est pas un SMS.
+00:00:00.000 --> 00:00:24.847
+Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
 
 2
-00:00:27.591 --> 00:00:35.541
+00:00:24.897 --> 00:00:33.086
 Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
 
 3
-00:00:35.591 --> 00:00:41.353
-Démo de base : virement entre comptes, révision et code local de test 123456 ; ce n’est pas un SMS.
-
-4
-00:00:41.403 --> 00:00:47.819
-Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
-
-5
-00:00:47.869 --> 00:00:55.819
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
-
-6
-00:00:55.869 --> 00:01:01.629
-Démo de base : virement entre comptes, révision et code local de test 123456 ; ce n’est pas un SMS.
-
-7
-00:01:01.679 --> 00:01:07.401
-Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
-
-8
-00:01:07.451 --> 00:01:15.401
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
-
-9
-00:01:15.451 --> 00:01:24.233
-Démo de base : virement entre comptes, révision et code local de test 123456 ; ce n’est pas un SMS.
-
-10
-00:01:24.283 --> 00:01:48.783
-Virement bancaire simulé : révision, confirmation distincte et code SMS rempli par Android avec Vérifier explicite.
-
-11
-00:01:48.833 --> 00:01:57.064
+00:00:33.136 --> 00:00:40.117
 Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
 
+4
+00:00:40.167 --> 00:00:48.298
+Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
+
+5
+00:00:48.348 --> 00:00:56.786
+La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
+
+6
+00:00:56.836 --> 00:01:00.481
+La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
+
+7
+00:01:00.531 --> 00:01:03.707
+Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
+
+8
+00:01:03.757 --> 00:01:09.438
+Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
+
+9
+00:01:09.488 --> 00:01:15.387
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+
+10
+00:01:15.437 --> 00:01:23.387
+Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
+
+11
+00:01:23.437 --> 00:01:54.654
+Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
+
 12
-00:01:57.114 --> 00:02:03.784
+00:01:54.704 --> 00:02:02.879
 Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
 
 13
-00:02:03.834 --> 00:02:11.966
+00:02:02.929 --> 00:02:09.635
 Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
 
 14
-00:02:12.016 --> 00:02:20.451
-La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
+00:02:09.685 --> 00:02:17.829
+Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
 
 15
-00:02:20.501 --> 00:02:24.140
+00:02:17.879 --> 00:02:26.326
 La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
 
 16
-00:02:24.190 --> 00:02:27.377
-Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
+00:02:26.376 --> 00:02:30.190
+La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
 
 17
-00:02:27.427 --> 00:02:33.190
-Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
+00:02:30.240 --> 00:02:33.462
+Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
 
 18
-00:02:33.240 --> 00:02:38.732
-Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
+00:02:33.512 --> 00:02:39.190
+Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
 
 19
-00:02:38.782 --> 00:02:46.732
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
+00:02:39.240 --> 00:02:45.015
+Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
 
 20
-00:02:46.782 --> 00:02:53.433
-Virement bancaire simulé : révision, confirmation distincte et code SMS rempli par Android avec Vérifier explicite.
+00:02:45.065 --> 00:02:53.015
+Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
 
 21
-00:02:53.483 --> 00:03:41.767
-Banque simulée : rechercher et choisir un bénéficiaire sans envoyer de virement dans ce cas.
+00:02:53.065 --> 00:03:24.357
+Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
 
 22
-00:03:41.817 --> 00:04:11.997
-Démo de base : virements vers des bénéficiaires enregistrés de la même banque ou d’une autre, avec code local 123456, pas un SMS.
+00:03:24.407 --> 00:03:32.564
+Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
 
 23
-00:04:12.047 --> 00:04:19.997
+00:03:32.614 --> 00:03:39.207
 Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
 
 24
-00:04:20.047 --> 00:04:25.346
-Démo de base : virements vers des bénéficiaires enregistrés de la même banque ou d’une autre, avec code local 123456, pas un SMS.
-
-25
-00:04:25.396 --> 00:04:31.209
-Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
-
-26
-00:04:31.259 --> 00:04:39.209
-Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
-
-27
-00:04:39.259 --> 00:05:11.584
-Démo de base : virements vers des bénéficiaires enregistrés de la même banque ou d’une autre, avec code local 123456, pas un SMS.
-
-28
-00:05:11.634 --> 00:05:19.584
+00:03:39.257 --> 00:03:47.404
 Vérifiez les détails avant de continuer. Ouvrir cet écran n’autorise aucune opération.
 
-29
-00:05:19.634 --> 00:05:24.916
-Démo de base : virements vers des bénéficiaires enregistrés de la même banque ou d’une autre, avec code local 123456, pas un SMS.
+25
+00:03:47.454 --> 00:03:55.885
+La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
 
-30
-00:05:24.966 --> 00:05:30.602
+26
+00:03:55.935 --> 00:03:59.571
+La confirmation est une étape distincte. Cette démonstration n’envoie aucune instruction à la banque réelle.
+
+27
+00:03:59.621 --> 00:04:02.817
+Un SMS fictif est attendu. L’aide facultative demande l’accord pour un message, sans accès à la boîte SMS.
+
+28
+00:04:02.867 --> 00:04:08.497
+Android ou le clavier a rempli un code fictif. Relisez-le et appuyez sur Vérifier ; cette voie ne transmet rien automatiquement.
+
+29
+00:04:08.547 --> 00:04:13.876
 Vérifiez avant de continuer. Le remplissage du clavier ne transmet pas le code ; la connexion par SMS seul a un consentement distinct.
 
-31
-00:05:30.652 --> 00:05:38.602
+30
+00:04:13.926 --> 00:04:21.876
 Résultat de test avec données fictives ; il ne prouve pas qu’une opération bancaire réelle a abouti.
 
+31
+00:04:21.926 --> 00:04:28.283
+Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
+
 32
-00:05:38.652 --> 00:05:52.617
-Démo de base : virements vers des bénéficiaires enregistrés de la même banque ou d’une autre, avec code local 123456, pas un SMS.
+00:04:28.333 --> 00:05:16.950
+Banque simulée : rechercher et choisir un bénéficiaire sans envoyer de virement dans ce cas.

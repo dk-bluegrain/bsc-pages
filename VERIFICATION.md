@@ -1,41 +1,52 @@
-# Verification
+# Feature-first website and native media verification
 
-Android 1.12.1 (28): 281 JVM tests passed per debug/demo/live variant. Four
-targeted card and language Android cases passed, including PAN masking before
-and after details/copying, exact clipboard values, app-switch privacy and all
-seven languages at normal and 150% text size. Signed builds, lint and variant
-boundary checks passed. Signed APK installation and offline startup passed,
-and installed hashes match both distribution files. No personal credentials or banking
-operations were used. Detailed private source evidence:
-https://github.com/dk-bluegrain/bsc/blob/main/publishing/CARD-MASKING-VERIFICATION.md
+The redesigned showcase puts the main video beside the introduction, followed by
+six concrete UX benefits, actual SMS empty/filled frames and task-first chapters.
+It demonstrates implemented interactions without asserting unsupported feature
+absences in the original app. The full tour covers all 13 groups in about 1:48,
+starting with SMS-only automatic login and financial SMS fill/Verify/receipt.
 
-All 34 approved revision-3 fictional capture scenarios passed. Scripts preceded
-retakes and specify reading pauses, with longer holds for consent, reviews,
-receipts and uncertain outcomes. SMS assistance is enabled except for initial
-pre-choice onboarding and the configuration off/on example. SMS-only automatic
-login uses a labeled synthetic approval result; operation codes retain Verify.
-Fourteen silent H.264 videos include an approximately 104-second overview;
-98 WebVTT tracks match the seven-language transcripts. Actual input coordinates
-and timestamps accompany the footage. Native-ring calibration and persistent
-vector rings preserve tap visibility through window changes. Complex chapters
-may exceed 120 seconds for readability. The card chapter and overview were retaken/regenerated for 1.12.1 and visually
-reviewed; only the last four digits are displayed, including during copying.
-Unchanged chapters retain their prior approved fictional captures and review.
+All 30 revision-4 native scenarios passed on explicitly selected disposable
+emulators. All nine required bank-SMS scenes record automatic-fill callbacks;
+none types a bank or demo code. SMS assistance stays enabled except the documented
+initial pre-choice and settings off/on cases. Login entry events are absent from
+non-authentication/setup chapters, and quiet setup is excluded from exported
+footage and galleries. Financial examples use native fake-bank state machines.
+Five new financial fixture rehearsals and 21 tooling tests passed.
 
-Static routes, local assets, privacy links, versioned downloads, codec/audio,
-fast-start metadata, caption timing/parity, event bounds and deployment budgets
-passed. The docs deployment is approximately 21.5 MiB. Browser checks passed all
-21 language/viewport combinations (390, 820, 1440 px), including keyboard dialogs,
-focus restoration, chapters, speed, transcripts, playback, privacy and downloads.
+The first SMS clip was retaken after visual review found a fixture-clock progress
+hold obscuring its result. The final clip shows the empty field, filled-code
+verification and authenticated accounts; the next shows empty/filled SMS,
+explicit Verify and receipt. Overview checks require those actual result holds
+and prohibit cuts spilling into the next scenario. No production delay or banking
+control changed. Synthetic approval results are disclosed, not drawn as fake
+Android dialogs. Card numbers stay masked to the last four digits.
 
-Bank authorization, owner-account validation, actual owner-device SMS consent
-and current live compatibility remain unresolved. These checks do not certify
-linguistic/legal correctness. No Play submission.
+Every chapter received sampled visual review; every final tour excerpt was
+reviewed, with denser transition review for both leading SMS sequences. Captions
+in all seven languages match actual scene/hold timing and transcripts. The main
+seven-second cues describe the visible interaction rather than listing unrelated
+features. Android sharing uses labeled QA-only targets and makes no delivery claim;
+PDF saving callbacks and decoded QR input remain explicitly synthetic fixtures.
+
+Static routes, local links, privacy, versioned downloads, 14 silent H.264 videos,
+98 caption tracks, fast-start metadata, event bounds, source provenance, exclusion
+rules and file budgets pass. The complete Pages deployment is approximately
+20.6 MiB. Browser checks cover seven languages at 390, 820 and 1440 px: layout,
+keyboard dialogs/focus, chapter links, user-started tour, playback/speed,
+transcripts, media, privacy and APK links.
+
+Production APKs remain 1.12.1 (28), built from b906472 and signed with the retained
+distribution key. Their prior verification remains applicable: 281 JVM tests per
+debug/demo/live variant, targeted Android/card/language checks, build/lint and
+Play credential boundaries, signed offline startup and exact installed hashes.
+Current changes affect website content and capture tooling only. Capture source
+and distribution source commits are recorded separately in media provenance.
+
+All identities, bank transports and documents in recordings are fictional. Bank
+authorization, current live compatibility, real owner-device SMS consent and
+owner-account validation remain unresolved. No independent legal/native-speaker
+certification or Google Play submission is claimed.
 
 Machine-readable results: [verification.json](docs/verification.json).
-Repeatable commands: [README.md](README.md).
-
-The supplementary screenshot run through recording helpers stopped because a
-tap overlay had no focused window. The ordinary Android language fixture was
-rerun successfully and all 56 screenshots were retained and reviewed. Signed
-startup/hash evidence is retained outside source in the final masking smoke run.
+Repeatable commands: [README.md](README.md) and [VIDEO-SCRIPTS.md](VIDEO-SCRIPTS.md).

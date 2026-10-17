@@ -8,7 +8,7 @@ Uses the existing gh login; no credentials are written into this repository.
 import argparse,hashlib,json,subprocess,time,urllib.request,urllib.parse,concurrent.futures
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];REPO='dk-bluegrain/bsc-pages';TAG='v1.12.1-preview.1';SITE='https://dk-bluegrain.github.io/bsc-pages/'
-p=argparse.ArgumentParser();p.add_argument('--apk-directory',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--apk-directory',type=Path,required=True);p.add_argument('--website-only',action='store_true');a=p.parse_args()
 def gh(*args):return subprocess.check_output(['gh',*args],cwd=ROOT,text=True)
 def api(path,*args):return gh('api',path,*args)
 subprocess.run(['python3','scripts/check.py'],cwd=ROOT,check=True)
@@ -21,9 +21,16 @@ for data in downloads.values():
  path=a.apk_directory/data['filename'];assert hashlib.sha256(path.read_bytes()).hexdigest()==data['sha256'];assets.append(str(path.resolve()))
 checksums=a.apk_directory/'SHA256SUMS';assert checksums.is_file();assets.append(str(checksums.resolve()));assets.append(str(ROOT/'RELEASE-NOTES.md'))
 # Push only the verified source tag; Pages remains on the old main until assets are public.
-subprocess.run(['git','push','origin',f'{expected_commit}:refs/tags/{TAG}'],cwd=ROOT,check=True)
+if not a.website_only:subprocess.run(['git','push','origin',f'{expected_commit}:refs/tags/{TAG}'],cwd=ROOT,check=True)
 release=subprocess.run(['gh','release','view',TAG,'--repo',REPO,'--json','assets,url,isDraft'],capture_output=True,text=True)
-if release.returncode:
+if a.website_only:
+ assert release.returncode==0,'Existing public release required for a website-only update'
+ data=json.loads(release.stdout);assert not data['isDraft'],'Publish the APK release first'
+ by_name={item['name']:item for item in data['assets']}
+ for asset in assets:
+  path=Path(asset);item=by_name[path.name]
+  assert item.get('state')=='uploaded' and item.get('digest')=='sha256:'+hashlib.sha256(path.read_bytes()).hexdigest(),'Existing release asset differs: '+path.name
+elif release.returncode:
  subprocess.run(['gh','release','create',TAG,*assets,'--repo',REPO,'--target','main','--prerelease','--title','Santa Cruz Modern 1.12.1 — independent preview','--notes-file',str(ROOT/'RELEASE-NOTES.md')],check=True)
 else:
  data=json.loads(release.stdout);existing={x['name'] for x in data['assets']}

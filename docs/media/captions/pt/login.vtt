@@ -1,85 +1,29 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:17.420
-Acesso bancário simulado: opção de lembrar usuário e senha, com aprovação biométrica de teste.
+00:00:00.000 --> 00:00:05.375
+Aprovação simulada de uma mensagem: mostra a verificação automática só do acesso exclusivamente por SMS, não do preenchimento do teclado.
 
 2
-00:00:17.470 --> 00:00:22.791
-Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+00:00:05.425 --> 00:00:08.562
+Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.
 
 3
-00:00:22.841 --> 00:00:30.791
-Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
+00:00:08.612 --> 00:00:12.562
+A ajuda SMS é opcional. O Android pede aprovação para uma mensagem, sem acesso à caixa de SMS; a entrada manual continua disponível.
 
 4
-00:00:30.841 --> 00:00:38.100
-Acesso bancário simulado: opção de lembrar usuário e senha, com aprovação biométrica de teste.
+00:00:12.612 --> 00:00:21.817
+Aprovação simulada de uma mensagem: mostra a verificação automática só do acesso exclusivamente por SMS, não do preenchimento do teclado.
 
 5
-00:00:38.150 --> 00:00:49.906
+00:00:21.867 --> 00:00:34.080
 Desbloqueio biométrico simulado do acesso salvo; a aprovação bancária continua sendo um requisito separado.
 
 6
-00:00:49.956 --> 00:00:57.906
+00:00:34.130 --> 00:00:42.080
 Resultado de teste com dados fictícios; não comprova que uma operação bancária real foi concluída.
 
 7
-00:00:57.956 --> 00:01:04.500
+00:00:42.130 --> 00:00:48.483
 Desbloqueio biométrico simulado do acesso salvo; a aprovação bancária continua sendo um requisito separado.
-
-8
-00:01:04.550 --> 00:01:21.575
-Acesso com banco simulado e código SMS preenchido pelo Android: Verificar continua sendo explícito.
-
-9
-00:01:21.625 --> 00:01:26.754
-Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
-
-10
-00:01:26.804 --> 00:01:34.935
-Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
-
-11
-00:01:34.985 --> 00:01:38.209
-Um SMS fictício é esperado. A ajuda opcional pede aprovação para uma mensagem, sem acesso à caixa de SMS.
-
-12
-00:01:38.259 --> 00:01:43.957
-O Android ou teclado preencheu um código fictício. Confira e toque em Verificar; esta via não envia automaticamente.
-
-13
-00:01:44.007 --> 00:01:48.661
-Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
-
-14
-00:01:48.711 --> 00:01:56.661
-Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
-
-15
-00:01:56.711 --> 00:02:03.167
-Acesso com banco simulado e código SMS preenchido pelo Android: Verificar continua sendo explícito.
-
-16
-00:02:03.217 --> 00:02:20.864
-Aprovação simulada de uma mensagem: mostra a verificação automática só do acesso exclusivamente por SMS, não do preenchimento do teclado.
-
-17
-00:02:20.914 --> 00:02:26.210
-Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
-
-18
-00:02:26.260 --> 00:02:34.400
-Confira antes de continuar. O preenchimento do teclado não envia o código; o acesso só por SMS tem consentimento separado.
-
-19
-00:02:34.450 --> 00:02:42.726
-A ajuda SMS é opcional. O Android pede aprovação para uma mensagem, sem acesso à caixa de SMS; a entrada manual continua disponível.
-
-20
-00:02:42.776 --> 00:02:50.726
-Aprovação simulada de uma mensagem: só o acesso exclusivamente SMS se verifica automaticamente. Operações e perguntas combinadas mantêm Verificar.
-
-21
-00:02:50.776 --> 00:02:57.150
-Aprovação simulada de uma mensagem: mostra a verificação automática só do acesso exclusivamente por SMS, não do preenchimento do teclado.

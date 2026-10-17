@@ -251,3 +251,26 @@ and this appended schema/context note.
 The 1.12.1 card retake keeps full numbers out of visible and accessibility text.
 The cards-readonly cue documents last-four masking in all seven languages; explicit
 copying remains separate. The overview uses the retaken masked card footage.
+
+## Revision 4: feature-first narrative
+
+`ux-copy.json` supplies the main tour cues in the authored order: SMS login,
+financial SMS, first-use language, registration continuation, accounts, history,
+statements, payments, recipients, masked cards, token, QR and settings. The first
+14-second excerpt shows the approved automatic login transition; the next
+18 seconds preserve money-code autofill and explicit Verify. All remaining
+excerpts show a useful actual interaction, with no repeated login setup.
+
+Financial chapter scenes use `ShowcaseMoneyUxTest` and fake transports, never the
+offline demo test-code path. Every required SMS shows empty/wait, callback fill,
+readable filled state and continuation. A synthetic bank-response delay makes
+automatic login legible; this is not a production delay or a fabricated Android
+dialog. Overview cuts resolve against real event anchors in overview-cuts.json.
+Gallery/spotlight SMS images are taken from actual recorded hold events.
+
+Scenario cue positions follow revision-4 scene selection: login-01 approved SMS,
+login-02 saved biometrics; verification-01 combined question/SMS, verification-02
+registration re-entry; transfers-01/02/03 own/same/other-bank SMS flows and
+transfers-04 recipient search; payments-01 service SMS and payments-02 card SMS.
+Other chapter IDs retain their existing meanings. Scripts are written before
+recording; a fast fixture rehearsal cannot become publishable media.

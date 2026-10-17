@@ -1,109 +1,109 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:06.408
+00:00:00.000 --> 00:00:05.502
 Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
 
 2
-00:00:06.458 --> 00:00:16.408
+00:00:05.552 --> 00:00:15.502
 Optional assistance uses Android consent for one message, not inbox access. Keyboard autofill still waits for Verify.
 
 3
-00:00:16.458 --> 00:00:23.125
+00:00:15.552 --> 00:00:21.957
 Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
 
 4
-00:00:23.175 --> 00:00:29.125
+00:00:22.007 --> 00:00:27.957
 SMS assistance is switched off only in this settings scene, then restored on. Keyboard and manual entry remain available.
 
 5
-00:00:29.175 --> 00:00:34.849
+00:00:28.007 --> 00:00:33.549
 Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
 
 6
-00:00:34.899 --> 00:00:42.849
+00:00:33.599 --> 00:00:41.549
 SMS assistance is on. Android requests per-message approval; only an approved SMS-only login auto-verifies.
 
 7
-00:00:42.899 --> 00:00:49.417
+00:00:41.599 --> 00:00:47.328
 Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
 
 8
-00:00:49.467 --> 00:00:55.417
+00:00:47.378 --> 00:00:53.328
 Ask lets you choose a channel when the bank offers alternatives. It does not change Android autofill.
 
 9
-00:00:55.467 --> 00:01:01.441
+00:00:53.378 --> 00:00:58.951
 Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
 
 10
-00:01:01.491 --> 00:01:07.441
+00:00:59.001 --> 00:01:04.951
 Email sets the preferred delivery channel when offered. SMS is restored afterwards for the other walkthroughs.
 
 11
-00:01:07.491 --> 00:01:13.411
+00:01:05.001 --> 00:01:10.688
 Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
 
 12
-00:01:13.461 --> 00:01:21.411
+00:01:10.738 --> 00:01:18.688
 SMS is the preferred bank-code delivery channel when offered; this is not a universal autofill switch.
 
 13
-00:01:21.461 --> 00:01:28.167
+00:01:18.738 --> 00:01:25.150
 Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.
 
 14
-00:01:28.217 --> 00:02:42.233
+00:01:25.200 --> 00:02:39.883
 Basic demo: profile, security, help and test-session logout; fictional data only.
 
 15
-00:02:42.283 --> 00:02:59.350
+00:02:39.933 --> 00:02:56.964
 Fake-bank uncertain outcome: history and fresh reconciliation acknowledgement; no repeat or cancellation of the operation.
 
 16
-00:02:59.400 --> 00:03:07.929
+00:02:57.014 --> 00:03:06.265
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 17
-00:03:07.979 --> 00:03:16.128
+00:03:06.315 --> 00:03:14.468
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 18
-00:03:16.178 --> 00:03:25.014
+00:03:14.518 --> 00:03:23.288
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 19
-00:03:25.064 --> 00:03:33.014
+00:03:23.338 --> 00:03:31.288
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 20
-00:03:33.064 --> 00:03:38.609
+00:03:31.338 --> 00:03:36.924
 Fake-bank uncertain outcome: history and fresh reconciliation acknowledgement; no repeat or cancellation of the operation.
 
 21
-00:03:38.659 --> 00:03:47.968
+00:03:36.974 --> 00:03:45.668
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 22
-00:03:48.018 --> 00:03:56.249
+00:03:45.718 --> 00:03:53.876
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 23
-00:03:56.299 --> 00:04:04.562
+00:03:53.926 --> 00:04:02.288
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 24
-00:04:04.612 --> 00:04:12.762
+00:04:02.338 --> 00:04:10.472
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 25
-00:04:12.812 --> 00:04:21.190
+00:04:10.522 --> 00:04:18.943
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 26
-00:04:21.240 --> 00:04:29.190
+00:04:18.993 --> 00:04:26.943
 Uncertain outcome: check actual history before reconciliation. Reconciliation neither repeats nor cancels the operation.
 
 27
-00:04:29.240 --> 00:04:35.550
+00:04:26.993 --> 00:04:33.350
 Fake-bank uncertain outcome: history and fresh reconciliation acknowledgement; no repeat or cancellation of the operation.

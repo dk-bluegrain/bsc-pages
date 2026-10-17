@@ -15,6 +15,16 @@ policy=json.loads((ROOT/'src/video-scripts.json').read_text())
 scenario_captions=json.loads((ROOT/'src/scenario-captions.json').read_text())['languages']
 expected_keys={f"{c['id']}-{i:02d}" for c in policy['chapters'] for i in range(1,len(c['scenes'])+1)}
 assert set(scenario_captions)==set(content)
+ux=json.loads((ROOT/'src/ux-copy.json').read_text())['languages']
+assert set(ux)==set(content)
+assert policy['revision']==4 and len(policy['overview']['excerpts'])==13
+for lang,copy in ux.items():
+ assert copy.keys()==ux['es'].keys() and len(copy['benefits'])==6
+ assert set(copy['chapters'])=={c['id'] for c in policy['chapters']}
+ assert [c['id'] for c in copy['overviewCues']]==policy['overview']['chapterOrder']
+ assert all(0<len(c['text'])<=160 for c in copy['overviewCues'])
+ assert all(b['chapter'] in copy['chapters'] for b in copy['benefits'])
+
 for lang,values in scenario_captions.items():
  assert set(values)==expected_keys and all(0<len(text)<=160 for text in values.values())
 
@@ -50,10 +60,11 @@ for lang,c in content.items():
    assert target.is_relative_to(DOCS.resolve()),(path,ref)
    assert target.is_file() or (target/'index.html').is_file(),f'Missing asset/link: {path} {ref}'
 for id,info in media.items():
- assert info.get('storyboardRevision')==3
+ assert info.get('storyboardRevision')==policy['revision']
  if id!='overview':
   assert info.get('smsPreference')=='SMS'
   assert all(len(s.get('captureBuildSha256',''))==64 and (id=='first-use' or s.get('smsAssistanceEnabled') is True) for s in info['sources'])
+  assert all(s.get('recordingMode')=='recording' and (id in ('first-use','login','verification') or s.get('loginInputEvents')==0) for s in info['sources'])
   assert all(s.get('smsPreference')=='SMS' and (not s.get('requiresSmsAutofill') or s.get('smsAutofillEvents',0)>0) for s in info['sources'])
  path=DOCS/'media'/f'{id}.mp4';assert path.stat().st_size<100*1024*1024
  result=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(path)]))
@@ -77,6 +88,22 @@ for id,info in media.items():
    assert previous<=begin<end<=duration+.1,(lang,id,begin,end,duration)
    previous=end
   assert all(cue in vtt for cue in captions[lang][id]),'Captions differ from source transcript'
+overview_events=json.loads((DOCS/'media/events/overview.json').read_text())['events']
+for chapter in ('login','transfers'):
+ assert any(e['type']=='sms-autofill' and e.get('sourceChapter')==chapter for e in overview_events),('Overview omits actual SMS autofill',chapter)
+assert media['overview']['chapters']==policy['overview']['chapterOrder']
+assert media['overview']['chapters'][:2]==['login','transfers']
+for cut in media['overview']['excerpts']:
+ assert cut['start']>=cut['sourceSceneStart'] and cut['start']+cut['duration']<=cut['sourceSceneEnd']+.05,'Overview may not spill into the next scenario'
+for chapter,result_cue in [('login','read'),('transfers','receipt')]:
+ sms_time=next(e['timeSeconds'] for e in overview_events if e['type']=='sms-autofill' and e.get('sourceChapter')==chapter)
+ assert any(e['type']=='hold' and e.get('sourceChapter')==chapter and e.get('cue')==result_cue and e['timeSeconds']>sms_time for e in overview_events),('SMS excerpt must include its actual result',chapter)
+for id in ('transfers','payments'):
+ assert all(source['requiresSmsAutofill'] for source in media[id]['sources'] if 'ShowcaseMoneyUxTest' in source['test'])
+ assert not any('BankingFlowTest' in source['test'] for source in media[id]['sources'])
+assert {'sms-wait','sms-filled'}<=set(media['transfers']['featuredFrames'])
+for chapter,start,end in [('login',0,14.2),('transfers',13,32.2)]:
+ assert any(e['type']=='sms-autofill' and e.get('sourceChapter')==chapter and start<=e['timeSeconds']<=end for e in overview_events)
 size=sum(p.stat().st_size for p in DOCS.rglob('*') if p.is_file());assert size<250*1024*1024
 for p in ROOT.rglob('*'):
  if not p.is_file() or '.git' in p.parts:continue

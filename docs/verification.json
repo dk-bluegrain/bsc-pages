@@ -1,21 +1,27 @@
 {
   "version": "1.12.1 (28)",
-  "sourceCommit": "b9064724b95753a6adf404d3da3c54bbf9e6f50d",
-  "recordedAt": "2026-10-17T00:25:36.730913+00:00",
+  "sourceCommit": "5587f6acc142ddc7e3b0e80f37ace6bf06a6cb67",
+  "recordedAt": "2026-10-17T00:59:56.709015+00:00",
   "capture": {
-    "scenarios": 34,
+    "scenarios": 30,
     "failures": 0,
     "fictionalDataOnly": true,
     "fakeBankTransportsOnly": true,
     "realBankOperations": false,
     "videos": 14,
-    "overviewSeconds": 103.533,
+    "overviewSeconds": 108.533,
     "captionTracks": 98,
-    "storyboardRevision": 3,
-    "retakenChapters": [
-      "cards"
+    "storyboardRevision": 4,
+    "requiredSmsScenes": 9,
+    "automaticSmsCallbacks": 9,
+    "manualBankSmsTyping": false,
+    "nonAuthenticationLoginInputEvents": 0,
+    "allChaptersRetaken": true,
+    "overviewStartsWith": [
+      "SMS-only automatic login",
+      "Financial SMS fill, explicit Verify and receipt"
     ],
-    "regeneratedOverview": true
+    "overviewScenarioBoundariesChecked": true
   },
   "websiteBrowserChecks": [
     {
@@ -148,7 +154,8 @@
       }
     },
     "signedDemoAndLiveOfflineStartup": "passed",
-    "installedApkHashesMatch": true
+    "installedApkHashesMatch": true,
+    "productionApksChanged": false
   },
   "limits": {
     "individualMediaBytes": 104857600,
@@ -160,5 +167,11 @@
     "Current live compatibility",
     "Native-speaker certification",
     "Owner-device real SMS recognition and Android consent"
-  ]
+  ],
+  "distributionSourceCommit": "b9064724b95753a6adf404d3da3c54bbf9e6f50d",
+  "captureTooling": {
+    "financialFixtureRehearsals": 5,
+    "toolTests": 21,
+    "result": "passed"
+  }
 }

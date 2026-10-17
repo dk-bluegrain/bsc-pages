@@ -1,129 +1,129 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:27.541
-Einfache Demo: eigene Überweisung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.
+00:00:00.000 --> 00:00:24.847
+Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen.
 
 2
-00:00:27.591 --> 00:00:35.541
+00:00:24.897 --> 00:00:33.086
 Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 3
-00:00:35.591 --> 00:00:41.353
-Einfache Demo: eigene Überweisung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.
-
-4
-00:00:41.403 --> 00:00:47.819
-Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
-
-5
-00:00:47.869 --> 00:00:55.819
-Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
-
-6
-00:00:55.869 --> 00:01:01.629
-Einfache Demo: eigene Überweisung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.
-
-7
-00:01:01.679 --> 00:01:07.401
-Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
-
-8
-00:01:07.451 --> 00:01:15.401
-Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
-
-9
-00:01:15.451 --> 00:01:24.233
-Einfache Demo: eigene Überweisung, Prüfung und lokaler Testcode 123456; dies ist keine SMS.
-
-10
-00:01:24.283 --> 00:01:48.783
-Simulierte Überweisung: Prüfung, gesonderte Bestätigung und durch Android ausgefüllter SMS-Code mit ausdrücklichem Prüfen.
-
-11
-00:01:48.833 --> 00:01:57.064
+00:00:33.136 --> 00:00:40.117
 Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
+4
+00:00:40.167 --> 00:00:48.298
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
+
+5
+00:00:48.348 --> 00:00:56.786
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+6
+00:00:56.836 --> 00:01:00.481
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+7
+00:01:00.531 --> 00:01:03.707
+Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+
+8
+00:01:03.757 --> 00:01:09.438
+Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
+
+9
+00:01:09.488 --> 00:01:15.387
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+
+10
+00:01:15.437 --> 00:01:23.387
+Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
+
+11
+00:01:23.437 --> 00:01:54.654
+Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen.
+
 12
-00:01:57.114 --> 00:02:03.784
+00:01:54.704 --> 00:02:02.879
 Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 13
-00:02:03.834 --> 00:02:11.966
+00:02:02.929 --> 00:02:09.635
 Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 14
-00:02:12.016 --> 00:02:20.451
-Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+00:02:09.685 --> 00:02:17.829
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 15
-00:02:20.501 --> 00:02:24.140
+00:02:17.879 --> 00:02:26.326
 Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
 
 16
-00:02:24.190 --> 00:02:27.377
-Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+00:02:26.376 --> 00:02:30.190
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
 
 17
-00:02:27.427 --> 00:02:33.190
-Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
+00:02:30.240 --> 00:02:33.462
+Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
 
 18
-00:02:33.240 --> 00:02:38.732
-Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
+00:02:33.512 --> 00:02:39.190
+Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
 
 19
-00:02:38.782 --> 00:02:46.732
-Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
+00:02:39.240 --> 00:02:45.015
+Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
 
 20
-00:02:46.782 --> 00:02:53.433
-Simulierte Überweisung: Prüfung, gesonderte Bestätigung und durch Android ausgefüllter SMS-Code mit ausdrücklichem Prüfen.
+00:02:45.065 --> 00:02:53.015
+Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
 
 21
-00:02:53.483 --> 00:03:41.767
-Simulierte Bank: Begünstigte suchen und auswählen, ohne in diesem Fall eine Überweisung zu senden.
+00:02:53.065 --> 00:03:24.357
+Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen.
 
 22
-00:03:41.817 --> 00:04:11.997
-Einfache Demo: Überweisungen an gespeicherte Begünstigte derselben/anderer Banken, mit lokalem Code 123456, keiner SMS.
+00:03:24.407 --> 00:03:32.564
+Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 23
-00:04:12.047 --> 00:04:19.997
+00:03:32.614 --> 00:03:39.207
 Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
 24
-00:04:20.047 --> 00:04:25.346
-Einfache Demo: Überweisungen an gespeicherte Begünstigte derselben/anderer Banken, mit lokalem Code 123456, keiner SMS.
-
-25
-00:04:25.396 --> 00:04:31.209
-Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
-
-26
-00:04:31.259 --> 00:04:39.209
-Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
-
-27
-00:04:39.259 --> 00:05:11.584
-Einfache Demo: Überweisungen an gespeicherte Begünstigte derselben/anderer Banken, mit lokalem Code 123456, keiner SMS.
-
-28
-00:05:11.634 --> 00:05:19.584
+00:03:39.257 --> 00:03:47.404
 Prüfen Sie die Details vor dem Fortfahren. Das Öffnen dieser Ansicht autorisiert keinen Vorgang.
 
-29
-00:05:19.634 --> 00:05:24.916
-Einfache Demo: Überweisungen an gespeicherte Begünstigte derselben/anderer Banken, mit lokalem Code 123456, keiner SMS.
+25
+00:03:47.454 --> 00:03:55.885
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
 
-30
-00:05:24.966 --> 00:05:30.602
+26
+00:03:55.935 --> 00:03:59.571
+Die Bestätigung erfolgt gesondert. Diese Vorführung sendet keine Anweisungen an die echte Bank.
+
+27
+00:03:59.621 --> 00:04:02.817
+Eine fiktive SMS wird erwartet. Optionale Hilfe verlangt Zustimmung für eine Nachricht, ohne Zugriff auf den Posteingang.
+
+28
+00:04:02.867 --> 00:04:08.497
+Android oder die Tastatur hat einen fiktiven Code ausgefüllt. Prüfen Sie ihn und wählen Sie Prüfen; dieser Weg sendet nicht automatisch.
+
+29
+00:04:08.547 --> 00:04:13.876
 Vor dem Fortfahren prüfen. Tastatur-Autofill sendet keinen Code; reine SMS-Anmeldung hat einen eigenen Zustimmungsablauf.
 
-31
-00:05:30.652 --> 00:05:38.602
+30
+00:04:13.926 --> 00:04:21.876
 Testergebnis mit fiktiven Daten; es belegt keinen abgeschlossenen echten Bankvorgang.
 
+31
+00:04:21.926 --> 00:04:28.283
+Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen.
+
 32
-00:05:38.652 --> 00:05:52.617
-Einfache Demo: Überweisungen an gespeicherte Begünstigte derselben/anderer Banken, mit lokalem Code 123456, keiner SMS.
+00:04:28.333 --> 00:05:16.950
+Simulierte Bank: Begünstigte suchen und auswählen, ohne in diesem Fall eine Überweisung zu senden.

@@ -125,3 +125,11 @@ and privacy paragraphs. It does not certify native-speaker review, legal review,
 video completeness or visual fit. Captions/transcripts must be written from the
 actual footage; chapter introductions are not claimed to be verbatim video
 transcripts. Website changes do not modify Android resource catalogues.
+
+## Feature-led revision
+
+The visible headline, benefit rows and chapter introductions now come from
+`ux-copy.json`, with context in `UX-COPY.md`. Legacy edition, installation and
+privacy copy stays in content.json. The main video and narrative show specific
+native interactions rather than asserting unverified original-app absences.
+No performance numbers or new live-compatibility claims are introduced.

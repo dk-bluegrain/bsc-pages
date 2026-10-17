@@ -7,151 +7,305 @@
   "events": [
     {
       "type": "scene-start",
-      "timeSeconds": 0.15,
-      "epochMs": 1792196515401,
+      "timeSeconds": 0,
+      "epochMs": 1792197774974,
       "scenario": 1,
       "preferredMedium": "SMS"
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 0.202,
+      "epochMs": 1792197775226,
+      "scenario": 1,
+      "file": "screen-000.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 0.419,
-      "epochMs": 1792196515670,
+      "timeSeconds": 0.202,
+      "epochMs": 1792197775226,
       "scenario": 1,
       "cue": "opening",
       "durationMs": 5000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 5.309,
+      "epochMs": 1792197780333,
+      "scenario": 1,
+      "file": "screen-001.png"
+    },
+    {
       "type": "tap",
-      "timeSeconds": 7.038,
-      "epochMs": 1792196522289,
+      "timeSeconds": 6.817,
+      "epochMs": 1792197781841,
       "scenario": 1,
       "x": 123.75,
-      "y": 634.0
+      "y": 601.5
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 7.597,
+      "epochMs": 1792197782621,
+      "scenario": 1,
+      "file": "screen-002.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 7.36,
-      "epochMs": 1792196522611,
+      "timeSeconds": 7.598,
+      "epochMs": 1792197782622,
       "scenario": 1,
       "cue": "navigation",
       "durationMs": 3500
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 11.181,
+      "epochMs": 1792197786205,
+      "scenario": 1,
+      "file": "screen-003.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 11.272,
+      "epochMs": 1792197786296,
+      "scenario": 1,
+      "file": "screen-004.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 11.058,
-      "epochMs": 1792196526309,
+      "timeSeconds": 11.273,
+      "epochMs": 1792197786297,
       "scenario": 1,
       "cue": "cards-readonly",
       "durationMs": 5000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 16.358,
+      "epochMs": 1792197791382,
+      "scenario": 1,
+      "file": "screen-005.png"
+    },
+    {
       "type": "tap",
-      "timeSeconds": 16.143,
-      "epochMs": 1792196531394,
+      "timeSeconds": 16.361,
+      "epochMs": 1792197791385,
       "scenario": 1,
       "x": 270.0,
-      "y": 678.75
+      "y": 646.25
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 16.662,
+      "epochMs": 1792197791686,
+      "scenario": 1,
+      "file": "screen-006.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 16.47,
-      "epochMs": 1792196531721,
+      "timeSeconds": 16.667,
+      "epochMs": 1792197791691,
       "scenario": 1,
       "cue": "cards-readonly",
       "durationMs": 8000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 24.781,
+      "epochMs": 1792197799805,
+      "scenario": 1,
+      "file": "screen-007.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 24.931,
+      "epochMs": 1792197799955,
+      "scenario": 1,
+      "file": "screen-008.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 24.691,
-      "epochMs": 1792196539942,
+      "timeSeconds": 24.931,
+      "epochMs": 1792197799955,
       "scenario": 1,
       "cue": "cards-readonly",
       "durationMs": 5000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 30.024,
+      "epochMs": 1792197805048,
+      "scenario": 1,
+      "file": "screen-009.png"
+    },
+    {
       "type": "tap",
-      "timeSeconds": 29.78,
-      "epochMs": 1792196545031,
+      "timeSeconds": 30.028,
+      "epochMs": 1792197805052,
       "scenario": 1,
       "x": 270.0,
-      "y": 657.75
+      "y": 625.25
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 30.717,
+      "epochMs": 1792197805741,
+      "scenario": 1,
+      "file": "screen-010.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 30.167,
-      "epochMs": 1792196545418,
+      "timeSeconds": 30.717,
+      "epochMs": 1792197805741,
       "scenario": 1,
       "cue": "cards-readonly",
       "durationMs": 8000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 38.826,
+      "epochMs": 1792197813850,
+      "scenario": 1,
+      "file": "screen-011.png"
+    },
+    {
       "type": "tap",
-      "timeSeconds": 39.796,
-      "epochMs": 1792196555047,
+      "timeSeconds": 40.342,
+      "epochMs": 1792197815366,
       "scenario": 1,
       "x": 270.0,
-      "y": 911.25
+      "y": 878.75
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 40.93,
+      "epochMs": 1792197815954,
+      "scenario": 1,
+      "file": "screen-012.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 40.156,
-      "epochMs": 1792196555407,
+      "timeSeconds": 40.93,
+      "epochMs": 1792197815954,
       "scenario": 1,
       "cue": "navigation",
       "durationMs": 3500
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 44.543,
+      "epochMs": 1792197819567,
+      "scenario": 1,
+      "file": "screen-013.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 44.637,
+      "epochMs": 1792197819661,
+      "scenario": 1,
+      "file": "screen-014.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 43.836,
-      "epochMs": 1792196559087,
+      "timeSeconds": 44.637,
+      "epochMs": 1792197819661,
       "scenario": 1,
       "cue": "cards-readonly",
       "durationMs": 8000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 52.749,
+      "epochMs": 1792197827773,
+      "scenario": 1,
+      "file": "screen-015.png"
+    },
+    {
       "type": "tap",
-      "timeSeconds": 54.969,
-      "epochMs": 1792196570220,
+      "timeSeconds": 55.788,
+      "epochMs": 1792197830812,
       "scenario": 1,
       "x": 270.0,
       "y": 1105.5
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 56.075,
+      "epochMs": 1792197831099,
+      "scenario": 1,
+      "file": "screen-016.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 55.328,
-      "epochMs": 1792196570579,
+      "timeSeconds": 56.076,
+      "epochMs": 1792197831100,
       "scenario": 1,
       "cue": "cards-readonly",
       "durationMs": 12000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 68.193,
+      "epochMs": 1792197843217,
+      "scenario": 1,
+      "file": "screen-017.png"
+    },
+    {
       "type": "tap",
-      "timeSeconds": 68.948,
-      "epochMs": 1792196584199,
+      "timeSeconds": 69.703,
+      "epochMs": 1792197844727,
       "scenario": 1,
       "x": 47.75,
-      "y": 108.75
+      "y": 76.25
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 70.761,
+      "epochMs": 1792197845785,
+      "scenario": 1,
+      "file": "screen-018.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 69.53,
-      "epochMs": 1792196584781,
+      "timeSeconds": 70.762,
+      "epochMs": 1792197845786,
       "scenario": 1,
       "cue": "navigation",
       "durationMs": 3500
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 74.348,
+      "epochMs": 1792197849372,
+      "scenario": 1,
+      "file": "screen-019.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 74.44,
+      "epochMs": 1792197849464,
+      "scenario": 1,
+      "file": "screen-020.png"
+    },
+    {
       "type": "hold",
-      "timeSeconds": 73.26,
-      "epochMs": 1792196588511,
+      "timeSeconds": 74.44,
+      "epochMs": 1792197849464,
       "scenario": 1,
       "cue": "read",
       "durationMs": 6000
     },
     {
+      "type": "screenshot",
+      "timeSeconds": 80.541,
+      "epochMs": 1792197855565,
+      "scenario": 1,
+      "file": "screen-021.png"
+    },
+    {
       "type": "scene-end",
-      "timeSeconds": 79.364,
-      "epochMs": 1792196594615,
+      "timeSeconds": 80.542,
+      "epochMs": 1792197855566,
       "scenario": 1,
       "preferredMedium": "SMS"
     }
