@@ -1,53 +1,89 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.434
-Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
+00:00:00.250 --> 00:00:02.962
+Virez de l’argent entre vos comptes.
 
 2
-00:00:21.330 --> 00:00:25.746
-Vérifiez les détails. Rien n’est encore autorisé.
+00:00:05.830 --> 00:00:08.278
+Choisissez le destinataire.
 
 3
-00:00:37.848 --> 00:00:41.040
-Vérifiez, puis confirmez séparément.
+00:00:15.778 --> 00:00:17.770
+Saisissez le montant.
 
 4
-00:00:53.321 --> 00:00:57.161
-L’autoremplissage du clavier exige toujours Vérifier.
+00:00:21.530 --> 00:00:25.202
+Vérifiez le destinataire, le montant et les frais.
 
 5
-00:00:57.737 --> 00:01:01.313
-Un résultat de test, avec des données fictives.
+00:00:34.381 --> 00:00:36.421
+Confirmez le virement.
 
 6
-00:01:28.937 --> 00:01:33.353
-Vérifiez les détails. Rien n’est encore autorisé.
+00:00:43.963 --> 00:00:46.099
+Code SMS rempli.
 
 7
-00:01:45.179 --> 00:01:48.371
-Vérifiez, puis confirmez séparément.
+00:00:48.455 --> 00:00:50.567
+Appuyez sur Vérifier.
 
 8
-00:02:00.873 --> 00:02:04.713
-L’autoremplissage du clavier exige toujours Vérifier.
+00:00:53.137 --> 00:00:55.585
+Vérifiez le reçu du virement.
 
 9
-00:02:05.165 --> 00:02:08.741
-Un résultat de test, avec des données fictives.
+00:01:00.900 --> 00:01:03.636
+Virez vers un compte Santa Cruz.
 
 10
-00:02:36.440 --> 00:02:40.856
-Vérifiez les détails. Rien n’est encore autorisé.
+00:01:16.230 --> 00:01:18.222
+Saisissez le montant.
 
 11
-00:02:52.554 --> 00:02:55.746
-Vérifiez, puis confirmez séparément.
+00:01:21.937 --> 00:01:25.609
+Vérifiez le destinataire, le montant et les frais.
 
 12
-00:03:11.826 --> 00:03:15.402
-Un résultat de test, avec des données fictives.
+00:01:34.579 --> 00:01:36.619
+Confirmez le virement.
 
 13
-00:03:21.833 --> 00:03:27.377
-Banque simulée : rechercher et choisir un bénéficiaire sans envoyer de virement dans ce cas.
+00:01:39.273 --> 00:01:41.385
+Appuyez sur Vérifier.
+
+14
+00:01:43.832 --> 00:01:46.280
+Vérifiez le reçu du virement.
+
+15
+00:01:51.634 --> 00:01:53.914
+Virez vers une autre banque.
+
+16
+00:02:06.769 --> 00:02:08.761
+Saisissez le montant.
+
+17
+00:02:12.507 --> 00:02:16.179
+Vérifiez le destinataire, le montant et les frais.
+
+18
+00:02:24.954 --> 00:02:26.994
+Confirmez le virement.
+
+19
+00:02:30.114 --> 00:02:32.226
+Appuyez sur Vérifier.
+
+20
+00:02:34.226 --> 00:02:36.674
+Vérifiez le reçu du virement.
+
+21
+00:03:04.105 --> 00:03:06.649
+Saisissez un terme à rechercher.
+
+22
+00:03:10.504 --> 00:03:12.952
+Choisissez le destinataire.

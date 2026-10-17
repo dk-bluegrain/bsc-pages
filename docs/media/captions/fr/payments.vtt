@@ -1,33 +1,57 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:05.098
-Service, compte et montant visibles avant de confirmer et vérifier le paiement.
+00:00:00.250 --> 00:00:02.842
+Payez une facture de service.
 
 2
-00:00:25.987 --> 00:00:30.403
-Vérifiez les détails. Rien n’est encore autorisé.
+00:00:10.401 --> 00:00:12.513
+Choisissez le service.
 
 3
-00:00:42.790 --> 00:00:45.982
-Vérifiez, puis confirmez séparément.
+00:00:19.784 --> 00:00:21.776
+Saisissez le montant.
 
 4
-00:01:02.270 --> 00:01:05.846
-Un résultat de test, avec des données fictives.
+00:00:25.587 --> 00:00:29.259
+Vérifiez le destinataire, le montant et les frais.
 
 5
-00:01:33.957 --> 00:01:38.373
-Vérifiez les détails. Rien n’est encore autorisé.
+00:00:38.724 --> 00:00:40.692
+Confirmez le paiement.
 
 6
-00:01:50.036 --> 00:01:53.228
-Vérifiez, puis confirmez séparément.
+00:00:48.187 --> 00:00:50.323
+Code SMS rempli.
 
 7
-00:02:05.607 --> 00:02:09.447
-L’autoremplissage du clavier exige toujours Vérifier.
+00:00:52.633 --> 00:00:54.745
+Appuyez sur Vérifier.
 
 8
-00:02:09.865 --> 00:02:13.441
-Un résultat de test, avec des données fictives.
+00:00:56.804 --> 00:00:59.180
+Vérifiez le reçu du paiement.
+
+9
+00:01:04.100 --> 00:01:06.572
+Réglez une carte de crédit.
+
+10
+00:01:19.129 --> 00:01:21.121
+Saisissez le montant.
+
+11
+00:01:25.290 --> 00:01:28.962
+Vérifiez le destinataire, le montant et les frais.
+
+12
+00:01:37.770 --> 00:01:39.738
+Confirmez le paiement.
+
+13
+00:01:42.340 --> 00:01:44.452
+Appuyez sur Vérifier.
+
+14
+00:01:46.569 --> 00:01:48.945
+Vérifiez le reçu du paiement.

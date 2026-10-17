@@ -5,7 +5,21 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
 p=argparse.ArgumentParser();p.add_argument('--url',default='http://127.0.0.1:8765/');p.add_argument('--browser');p.add_argument('--output',type=Path,default=Path('/tmp/bsc-browser-check'));a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True)
-results=[];errors=[]
+transcripts=json.loads((Path(__file__).resolve().parents[1]/'src/transcripts.json').read_text())['languages']
+results=[];errors=[];caption_results=[]
+def check_captions(page,id,lang):
+ video=page.locator('#video-'+id)
+ page.wait_for_function('(id)=>{const v=document.getElementById("video-"+id);return v.readyState>=2 && [...v.textTracks].some(t=>t.mode==="showing" && t.cues?.length)}',arg=id)
+ tracks=video.evaluate('(v)=>[...v.textTracks].filter(t=>t.mode==="showing").map(t=>({language:t.language,text:[...t.cues].map(c=>c.text)}))')
+ assert tracks==[{'language':lang,'text':transcripts[lang][id]}],(lang,id,'browser captions do not match transcript',tracks)
+ # Play from the start so this also works with the documented non-range local server.
+ assert f'/narrated/{lang}/{id}.mp4' in video.evaluate('(v)=>v.currentSrc')
+ assert not video.evaluate('(v)=>v.muted')
+ video.evaluate('(v)=>{v.pause();v.currentTime=0;return v.play()}')
+ page.wait_for_function('(id)=>{const v=document.getElementById("video-"+id);return v.currentTime>0 && v.webkitAudioDecodedByteCount>0 && v.webkitDecodedFrameCount>0 && [...v.textTracks].some(t=>t.mode==="showing" && t.activeCues?.length)}',arg=id)
+ assert video.evaluate('(v)=>[...v.textTracks].find(t=>t.mode==="showing").activeCues[0].text')==transcripts[lang][id][0]
+ video.evaluate('(v)=>v.pause()')
+ caption_results.append({'language':lang,'chapter':id,'cues':len(transcripts[lang][id]),'passed':True})
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True,executable_path=a.browser,args=['--no-sandbox'])
  for width,height in ((390,844),(820,1180),(1440,1000)):
@@ -26,7 +40,9 @@ with sync_playwright() as p:
    assert page.locator('[data-play-video]').first.get_attribute('data-play-video')=='video-overview'
    page.locator('[data-play-video="video-overview"] img').wait_for(state='visible')
    assert page.locator('[data-play-video="video-overview"] img').evaluate('(i)=>i.complete && i.naturalWidth>0')
+   assert page.locator('[data-play-video="video-overview"] img').get_attribute('src')==page.locator('#template-video-overview').evaluate('(t)=>t.content.querySelector("video").getAttribute("poster")')
    assert not media_requests,('Media loaded before Play',lang,width,media_requests)
+   assert page.locator('.media-context details p').all_text_contents()==transcripts[lang]['overview'],(lang,width,'overview transcript')
    assert page.locator('.benefit').count()==6
    assert page.locator('.sms-frames [data-enlarge]').count()==2
    assert page.locator('.chapter-list a').first.get_attribute('href')=='#login'
@@ -44,6 +60,10 @@ with sync_playwright() as p:
    # Each chapter is directly addressable and its footage/captions are real files.
    for link in page.locator('.chapter-list a').all():
     id=link.get_attribute('href')[1:];page.evaluate('(id)=>location.hash=id',id);page.locator('#'+id).wait_for(state='visible')
+    page.locator('#'+id+' details').evaluate('(d)=>d.open=true')
+    image=page.locator('[data-play-video="video-'+id+'"] img');image.evaluate('(i)=>i.decode()')
+    assert image.get_attribute('src')==page.locator('#template-video-'+id).evaluate('(t)=>t.content.querySelector("video").getAttribute("poster")')
+    assert page.locator('#'+id+' details p').all_text_contents()==transcripts[lang][id],(lang,width,id,'rendered transcript')
     assert page.locator('#template-video-'+id).evaluate('(t)=>t.content.querySelector("source").getAttribute("src")').split('?')[0].endswith(f'/narrated/{lang}/{id}.mp4')
    assert not media_requests,('Browsing chapters loaded media',lang,width,media_requests)
    if width==390 and lang=='es':page.screenshot(path=str(a.output/'mobile.png'),full_page=True)
@@ -64,6 +84,12 @@ with sync_playwright() as p:
     page.locator('#video-overview').evaluate('(v)=>v.pause()')
     video=page.locator('#video-overview');video.evaluate('(v)=>v.load()');video.evaluate('(v)=>new Promise(resolve=>{if(v.readyState>=1)resolve();else v.addEventListener("loadedmetadata",resolve,{once:true})})');assert video.evaluate('(v)=>v.duration')>=60
     video.evaluate('(v)=>v.play()');page.wait_for_timeout(300);assert not video.evaluate('(v)=>v.paused');video.evaluate('(v)=>v.pause()')
+    check_captions(page,'overview',lang)
+    for chapter in transcripts[lang]:
+     if chapter=='overview':continue
+     page.evaluate('(id)=>location.hash=id',chapter);page.locator('#'+chapter).wait_for(state='visible')
+     if not page.locator('#video-'+chapter).count():page.locator('[data-play-video="video-'+chapter+'"]').click()
+     check_captions(page,chapter,lang)
    media_requests.clear()
    page.goto(a.url+lang+'/')
    page.locator('.hero a[href$="/download/"]').click()
@@ -117,5 +143,6 @@ with sync_playwright() as p:
  page.close()
  browser.close()
 assert not errors,errors
+(a.output/'captions.json').write_text(json.dumps(caption_results,indent=2)+'\n')
 (a.output/'results.json').write_text(json.dumps(results,indent=2)+'\n')
-print('Browser checks passed:',len(results),'language/viewport combinations; no media before Play, keyboard playback, player isolation, speed, JPG previews without JavaScript, dialogs, chapters, transcripts, privacy, edition choice, illustrated guides and versioned downloads.')
+print('Browser checks passed:',len(results),'language/viewport combinations;',len(caption_results),'localized players with native captions matching all rendered transcript cues; no media before Play, keyboard playback, player isolation, speed, JPG previews without JavaScript, dialogs, chapters, transcripts, privacy, edition choice, illustrated guides and versioned downloads.')

@@ -3,7 +3,7 @@
     "width": 540,
     "height": 1200
   },
-  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Android records each actual input and native marker. A persistent one-second overlay follows those same events across native window handoffs. Presentation cuts remove idle hold frames only; sourceTimeSeconds preserves the pinned input timeline.",
+  "timing": "Epoch events retained; MP4 offsets aligned to the first observed native ring at30fps. Android records each actual input and native marker. A persistent one-second overlay follows those same events across native window handoffs. Presentation edits shorten idle holds and omit explicitly reviewed repeated steps, failed setup and unavailable controls; originalEvents and excludedEvents preserve complete source evidence.",
   "events": [
     {
       "type": "scene-start",
@@ -11,6 +11,7 @@
       "epochMs": 1792197774974,
       "scenario": 1,
       "preferredMedium": "SMS",
+      "sourceEventIndex": 0,
       "sourceTimeSeconds": 0
     },
     {
@@ -19,6 +20,7 @@
       "epochMs": 1792197775226,
       "scenario": 1,
       "file": "screen-000.png",
+      "sourceEventIndex": 1,
       "sourceTimeSeconds": 0.202
     },
     {
@@ -27,339 +29,707 @@
       "epochMs": 1792197775226,
       "scenario": 1,
       "cue": "opening",
-      "durationMs": 3467,
+      "durationMs": 2000,
+      "sourceEventIndex": 2,
       "sourceTimeSeconds": 0.202,
       "sourceDurationMs": 5000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 3.776,
+      "timeSeconds": 2.309,
       "epochMs": 1792197780333,
       "scenario": 1,
       "file": "screen-001.png",
+      "sourceEventIndex": 3,
       "sourceTimeSeconds": 5.309
     },
     {
       "type": "tap",
-      "timeSeconds": 5.284,
+      "timeSeconds": 3.817,
       "epochMs": 1792197781841,
       "scenario": 1,
       "x": 123.75,
       "y": 601.5,
+      "sourceEventIndex": 4,
       "sourceTimeSeconds": 6.817
     },
     {
       "type": "screenshot",
-      "timeSeconds": 6.064,
+      "timeSeconds": 4.597,
       "epochMs": 1792197782621,
       "scenario": 1,
       "file": "screen-002.png",
+      "sourceEventIndex": 5,
       "sourceTimeSeconds": 7.597
     },
     {
       "type": "hold",
-      "timeSeconds": 6.065,
+      "timeSeconds": 4.598,
       "epochMs": 1792197782622,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 2433,
+      "durationMs": 3167,
+      "sourceEventIndex": 6,
       "sourceTimeSeconds": 7.598,
       "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 8.581,
+      "timeSeconds": 7.848,
       "epochMs": 1792197786205,
       "scenario": 1,
       "file": "screen-003.png",
+      "sourceEventIndex": 7,
       "sourceTimeSeconds": 11.181
     },
     {
       "type": "screenshot",
-      "timeSeconds": 8.672,
+      "timeSeconds": 7.939,
       "epochMs": 1792197786296,
       "scenario": 1,
       "file": "screen-004.png",
+      "sourceEventIndex": 8,
       "sourceTimeSeconds": 11.272
     },
     {
       "type": "hold",
-      "timeSeconds": 8.673,
+      "timeSeconds": 7.94,
       "epochMs": 1792197786297,
       "scenario": 1,
       "cue": "cards-readonly",
-      "durationMs": 3467,
+      "durationMs": 3000,
+      "sourceEventIndex": 9,
       "sourceTimeSeconds": 11.273,
       "sourceDurationMs": 5000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 12.225,
+      "timeSeconds": 11.025,
       "epochMs": 1792197791382,
       "scenario": 1,
       "file": "screen-005.png",
+      "sourceEventIndex": 10,
       "sourceTimeSeconds": 16.358
     },
     {
       "type": "tap",
-      "timeSeconds": 12.228,
+      "timeSeconds": 11.028,
       "epochMs": 1792197791385,
       "scenario": 1,
       "x": 270.0,
       "y": 646.25,
+      "sourceEventIndex": 11,
       "sourceTimeSeconds": 16.361
     },
     {
       "type": "screenshot",
-      "timeSeconds": 12.529,
+      "timeSeconds": 11.329,
       "epochMs": 1792197791686,
       "scenario": 1,
       "file": "screen-006.png",
+      "sourceEventIndex": 12,
       "sourceTimeSeconds": 16.662
     },
     {
       "type": "hold",
-      "timeSeconds": 12.534,
+      "timeSeconds": 11.334,
       "epochMs": 1792197791691,
       "scenario": 1,
       "cue": "cards-readonly",
-      "durationMs": 5467,
+      "durationMs": 3000,
+      "sourceEventIndex": 13,
       "sourceTimeSeconds": 16.667,
       "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 18.114,
+      "timeSeconds": 14.448,
       "epochMs": 1792197799805,
       "scenario": 1,
       "file": "screen-007.png",
+      "sourceEventIndex": 14,
       "sourceTimeSeconds": 24.781
     },
     {
       "type": "screenshot",
-      "timeSeconds": 18.264,
+      "timeSeconds": 14.598,
       "epochMs": 1792197799955,
       "scenario": 1,
       "file": "screen-008.png",
+      "sourceEventIndex": 15,
       "sourceTimeSeconds": 24.931
     },
     {
       "type": "hold",
-      "timeSeconds": 18.264,
+      "timeSeconds": 14.598,
       "epochMs": 1792197799955,
       "scenario": 1,
       "cue": "cards-readonly",
-      "durationMs": 3467,
+      "durationMs": 3000,
+      "sourceEventIndex": 16,
       "sourceTimeSeconds": 24.931,
       "sourceDurationMs": 5000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 21.824,
+      "timeSeconds": 17.691,
       "epochMs": 1792197805048,
       "scenario": 1,
       "file": "screen-009.png",
+      "sourceEventIndex": 17,
       "sourceTimeSeconds": 30.024
     },
     {
       "type": "tap",
-      "timeSeconds": 21.828,
+      "timeSeconds": 17.695,
       "epochMs": 1792197805052,
       "scenario": 1,
       "x": 270.0,
       "y": 625.25,
+      "sourceEventIndex": 18,
       "sourceTimeSeconds": 30.028
     },
     {
       "type": "screenshot",
-      "timeSeconds": 22.517,
+      "timeSeconds": 18.384,
       "epochMs": 1792197805741,
       "scenario": 1,
       "file": "screen-010.png",
+      "sourceEventIndex": 19,
       "sourceTimeSeconds": 30.717
     },
     {
       "type": "hold",
-      "timeSeconds": 22.517,
+      "timeSeconds": 18.384,
       "epochMs": 1792197805741,
       "scenario": 1,
       "cue": "cards-readonly",
-      "durationMs": 5467,
+      "durationMs": 3000,
+      "sourceEventIndex": 20,
       "sourceTimeSeconds": 30.717,
       "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 28.093,
+      "timeSeconds": 21.493,
       "epochMs": 1792197813850,
       "scenario": 1,
       "file": "screen-011.png",
+      "sourceEventIndex": 21,
       "sourceTimeSeconds": 38.826
     },
     {
       "type": "tap",
-      "timeSeconds": 29.609,
+      "timeSeconds": 23.009,
       "epochMs": 1792197815366,
       "scenario": 1,
       "x": 270.0,
       "y": 878.75,
+      "sourceEventIndex": 22,
       "sourceTimeSeconds": 40.342
     },
     {
       "type": "screenshot",
-      "timeSeconds": 30.197,
+      "timeSeconds": 23.597,
       "epochMs": 1792197815954,
       "scenario": 1,
       "file": "screen-012.png",
+      "sourceEventIndex": 23,
       "sourceTimeSeconds": 40.93
     },
     {
       "type": "hold",
-      "timeSeconds": 30.197,
+      "timeSeconds": 23.597,
       "epochMs": 1792197815954,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 2433,
+      "durationMs": 2033,
+      "sourceEventIndex": 24,
       "sourceTimeSeconds": 40.93,
       "sourceDurationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 32.743,
+      "timeSeconds": 25.743,
       "epochMs": 1792197819567,
       "scenario": 1,
       "file": "screen-013.png",
+      "sourceEventIndex": 25,
       "sourceTimeSeconds": 44.543
     },
     {
       "type": "screenshot",
-      "timeSeconds": 32.837,
+      "timeSeconds": 25.837,
       "epochMs": 1792197819661,
       "scenario": 1,
       "file": "screen-014.png",
+      "sourceEventIndex": 26,
       "sourceTimeSeconds": 44.637
     },
     {
       "type": "hold",
-      "timeSeconds": 32.837,
+      "timeSeconds": 25.837,
       "epochMs": 1792197819661,
       "scenario": 1,
       "cue": "cards-readonly",
-      "durationMs": 5467,
+      "durationMs": 3000,
+      "sourceEventIndex": 27,
       "sourceTimeSeconds": 44.637,
       "sourceDurationMs": 8000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 38.416,
+      "timeSeconds": 28.949,
       "epochMs": 1792197827773,
       "scenario": 1,
       "file": "screen-015.png",
+      "sourceEventIndex": 28,
       "sourceTimeSeconds": 52.749
+    }
+  ],
+  "originalEvents": [
+    {
+      "type": "scene-start",
+      "timeSeconds": 0,
+      "epochMs": 1792197774974,
+      "scenario": 1,
+      "preferredMedium": "SMS"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 0.202,
+      "epochMs": 1792197775226,
+      "scenario": 1,
+      "file": "screen-000.png"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 0.202,
+      "epochMs": 1792197775226,
+      "scenario": 1,
+      "cue": "opening",
+      "durationMs": 5000
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 5.309,
+      "epochMs": 1792197780333,
+      "scenario": 1,
+      "file": "screen-001.png"
     },
     {
       "type": "tap",
-      "timeSeconds": 41.455,
+      "timeSeconds": 6.817,
+      "epochMs": 1792197781841,
+      "scenario": 1,
+      "x": 123.75,
+      "y": 601.5
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 7.597,
+      "epochMs": 1792197782621,
+      "scenario": 1,
+      "file": "screen-002.png"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 7.598,
+      "epochMs": 1792197782622,
+      "scenario": 1,
+      "cue": "navigation",
+      "durationMs": 3500
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 11.181,
+      "epochMs": 1792197786205,
+      "scenario": 1,
+      "file": "screen-003.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 11.272,
+      "epochMs": 1792197786296,
+      "scenario": 1,
+      "file": "screen-004.png"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 11.273,
+      "epochMs": 1792197786297,
+      "scenario": 1,
+      "cue": "cards-readonly",
+      "durationMs": 5000
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 16.358,
+      "epochMs": 1792197791382,
+      "scenario": 1,
+      "file": "screen-005.png"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 16.361,
+      "epochMs": 1792197791385,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 646.25
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 16.662,
+      "epochMs": 1792197791686,
+      "scenario": 1,
+      "file": "screen-006.png"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 16.667,
+      "epochMs": 1792197791691,
+      "scenario": 1,
+      "cue": "cards-readonly",
+      "durationMs": 8000
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 24.781,
+      "epochMs": 1792197799805,
+      "scenario": 1,
+      "file": "screen-007.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 24.931,
+      "epochMs": 1792197799955,
+      "scenario": 1,
+      "file": "screen-008.png"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 24.931,
+      "epochMs": 1792197799955,
+      "scenario": 1,
+      "cue": "cards-readonly",
+      "durationMs": 5000
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 30.024,
+      "epochMs": 1792197805048,
+      "scenario": 1,
+      "file": "screen-009.png"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 30.028,
+      "epochMs": 1792197805052,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 625.25
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 30.717,
+      "epochMs": 1792197805741,
+      "scenario": 1,
+      "file": "screen-010.png"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 30.717,
+      "epochMs": 1792197805741,
+      "scenario": 1,
+      "cue": "cards-readonly",
+      "durationMs": 8000
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 38.826,
+      "epochMs": 1792197813850,
+      "scenario": 1,
+      "file": "screen-011.png"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 40.342,
+      "epochMs": 1792197815366,
+      "scenario": 1,
+      "x": 270.0,
+      "y": 878.75
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 40.93,
+      "epochMs": 1792197815954,
+      "scenario": 1,
+      "file": "screen-012.png"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 40.93,
+      "epochMs": 1792197815954,
+      "scenario": 1,
+      "cue": "navigation",
+      "durationMs": 3500
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 44.543,
+      "epochMs": 1792197819567,
+      "scenario": 1,
+      "file": "screen-013.png"
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 44.637,
+      "epochMs": 1792197819661,
+      "scenario": 1,
+      "file": "screen-014.png"
+    },
+    {
+      "type": "hold",
+      "timeSeconds": 44.637,
+      "epochMs": 1792197819661,
+      "scenario": 1,
+      "cue": "cards-readonly",
+      "durationMs": 8000
+    },
+    {
+      "type": "screenshot",
+      "timeSeconds": 52.749,
+      "epochMs": 1792197827773,
+      "scenario": 1,
+      "file": "screen-015.png"
+    },
+    {
+      "type": "tap",
+      "timeSeconds": 55.788,
       "epochMs": 1792197830812,
       "scenario": 1,
       "x": 270.0,
-      "y": 1105.5,
-      "sourceTimeSeconds": 55.788
+      "y": 1105.5
     },
     {
       "type": "screenshot",
-      "timeSeconds": 41.742,
+      "timeSeconds": 56.075,
       "epochMs": 1792197831099,
       "scenario": 1,
-      "file": "screen-016.png",
-      "sourceTimeSeconds": 56.075
+      "file": "screen-016.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 41.743,
+      "timeSeconds": 56.076,
       "epochMs": 1792197831100,
       "scenario": 1,
       "cue": "cards-readonly",
-      "durationMs": 8200,
-      "sourceTimeSeconds": 56.076,
-      "sourceDurationMs": 12000
+      "durationMs": 12000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 50.06,
+      "timeSeconds": 68.193,
       "epochMs": 1792197843217,
       "scenario": 1,
-      "file": "screen-017.png",
-      "sourceTimeSeconds": 68.193
+      "file": "screen-017.png"
     },
     {
       "type": "tap",
-      "timeSeconds": 51.57,
+      "timeSeconds": 69.703,
       "epochMs": 1792197844727,
       "scenario": 1,
       "x": 47.75,
-      "y": 76.25,
-      "sourceTimeSeconds": 69.703
+      "y": 76.25
     },
     {
       "type": "screenshot",
-      "timeSeconds": 52.628,
+      "timeSeconds": 70.761,
       "epochMs": 1792197845785,
       "scenario": 1,
-      "file": "screen-018.png",
-      "sourceTimeSeconds": 70.761
+      "file": "screen-018.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 52.629,
+      "timeSeconds": 70.762,
       "epochMs": 1792197845786,
       "scenario": 1,
       "cue": "navigation",
-      "durationMs": 2433,
-      "sourceTimeSeconds": 70.762,
-      "sourceDurationMs": 3500
+      "durationMs": 3500
     },
     {
       "type": "screenshot",
-      "timeSeconds": 55.148,
+      "timeSeconds": 74.348,
       "epochMs": 1792197849372,
       "scenario": 1,
-      "file": "screen-019.png",
-      "sourceTimeSeconds": 74.348
+      "file": "screen-019.png"
     },
     {
       "type": "screenshot",
-      "timeSeconds": 55.24,
+      "timeSeconds": 74.44,
       "epochMs": 1792197849464,
       "scenario": 1,
-      "file": "screen-020.png",
-      "sourceTimeSeconds": 74.44
+      "file": "screen-020.png"
     },
     {
       "type": "hold",
-      "timeSeconds": 55.24,
+      "timeSeconds": 74.44,
       "epochMs": 1792197849464,
       "scenario": 1,
       "cue": "read",
-      "durationMs": 4133,
-      "sourceTimeSeconds": 74.44,
-      "sourceDurationMs": 6000
+      "durationMs": 6000
     },
     {
       "type": "screenshot",
-      "timeSeconds": 59.474,
+      "timeSeconds": 80.541,
       "epochMs": 1792197855565,
       "scenario": 1,
-      "file": "screen-021.png",
-      "sourceTimeSeconds": 80.541
+      "file": "screen-021.png"
     },
     {
       "type": "scene-end",
-      "timeSeconds": 59.475,
+      "timeSeconds": 80.542,
       "epochMs": 1792197855566,
       "scenario": 1,
-      "preferredMedium": "SMS",
-      "sourceTimeSeconds": 80.542
+      "preferredMedium": "SMS"
+    }
+  ],
+  "excludedEvents": [
+    {
+      "sourceEventIndex": 29,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "tap",
+        "timeSeconds": 55.788,
+        "epochMs": 1792197830812,
+        "scenario": 1,
+        "x": 270.0,
+        "y": 1105.5
+      }
+    },
+    {
+      "sourceEventIndex": 30,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "screenshot",
+        "timeSeconds": 56.075,
+        "epochMs": 1792197831099,
+        "scenario": 1,
+        "file": "screen-016.png"
+      }
+    },
+    {
+      "sourceEventIndex": 31,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "hold",
+        "timeSeconds": 56.076,
+        "epochMs": 1792197831100,
+        "scenario": 1,
+        "cue": "cards-readonly",
+        "durationMs": 12000
+      }
+    },
+    {
+      "sourceEventIndex": 32,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "screenshot",
+        "timeSeconds": 68.193,
+        "epochMs": 1792197843217,
+        "scenario": 1,
+        "file": "screen-017.png"
+      }
+    },
+    {
+      "sourceEventIndex": 33,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "tap",
+        "timeSeconds": 69.703,
+        "epochMs": 1792197844727,
+        "scenario": 1,
+        "x": 47.75,
+        "y": 76.25
+      }
+    },
+    {
+      "sourceEventIndex": 34,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "screenshot",
+        "timeSeconds": 70.761,
+        "epochMs": 1792197845785,
+        "scenario": 1,
+        "file": "screen-018.png"
+      }
+    },
+    {
+      "sourceEventIndex": 35,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "hold",
+        "timeSeconds": 70.762,
+        "epochMs": 1792197845786,
+        "scenario": 1,
+        "cue": "navigation",
+        "durationMs": 3500
+      }
+    },
+    {
+      "sourceEventIndex": 36,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "screenshot",
+        "timeSeconds": 74.348,
+        "epochMs": 1792197849372,
+        "scenario": 1,
+        "file": "screen-019.png"
+      }
+    },
+    {
+      "sourceEventIndex": 37,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "screenshot",
+        "timeSeconds": 74.44,
+        "epochMs": 1792197849464,
+        "scenario": 1,
+        "file": "screen-020.png"
+      }
+    },
+    {
+      "sourceEventIndex": 38,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "hold",
+        "timeSeconds": 74.44,
+        "epochMs": 1792197849464,
+        "scenario": 1,
+        "cue": "read",
+        "durationMs": 6000
+      }
+    },
+    {
+      "sourceEventIndex": 39,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "screenshot",
+        "timeSeconds": 80.541,
+        "epochMs": 1792197855565,
+        "scenario": 1,
+        "file": "screen-021.png"
+      }
+    },
+    {
+      "sourceEventIndex": 40,
+      "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised.",
+      "event": {
+        "type": "scene-end",
+        "timeSeconds": 80.542,
+        "epochMs": 1792197855566,
+        "scenario": 1,
+        "preferredMedium": "SMS"
+      }
     }
   ]
 }

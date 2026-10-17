@@ -1,21 +1,57 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.602
-Simulierte Bank: Empfängercode einfügen, prüfen und vorausfüllen, ohne automatisch zu validieren oder zu speichern.
+00:00:16.680 --> 00:00:19.440
+Fügen Sie den Empfängercode ein.
 
 2
-00:00:40.300 --> 00:00:49.252
-Simuliertes Löschen eines Bankbegünstigten: Prüfung, eigene Bestätigung, ausgefüllter SMS-Code und ausdrückliches Prüfen.
+00:00:23.560 --> 00:00:26.896
+Prüfen Sie Konto und Währung des Empfängers.
 
 3
-00:00:59.270 --> 00:01:02.822
-Erst prüfen, dann gesondert bestätigen.
+00:00:27.658 --> 00:00:29.722
+Tippen Sie auf Weiter.
 
 4
-00:01:21.037 --> 00:01:24.277
-Ein Testergebnis mit fiktiven Daten.
+00:00:34.920 --> 00:00:38.136
+Entfernen Sie einen gespeicherten Empfänger.
 
 5
-00:01:30.966 --> 00:01:38.694
-Einfache Demo: fiktiven Begünstigten einer anderen Bank lokal anlegen und speichern, ohne echte Bankprüfung.
+00:00:45.603 --> 00:00:48.267
+Bestätigen Sie das Entfernen.
+
+6
+00:00:55.147 --> 00:00:57.715
+SMS-Code ausgefüllt.
+
+7
+00:00:59.562 --> 00:01:02.010
+Tippen Sie auf Bestätigen.
+
+8
+00:01:03.704 --> 00:01:06.440
+Prüfen Sie die Antwort zur Löschung.
+
+9
+00:01:11.366 --> 00:01:15.014
+Fügen Sie einen Empfänger einer anderen Bank hinzu.
+
+10
+00:01:34.440 --> 00:01:37.128
+Geben Sie den Empfängernamen ein.
+
+11
+00:01:42.691 --> 00:01:44.827
+Geben Sie die Bank ein.
+
+12
+00:01:49.612 --> 00:01:52.156
+Geben Sie die Kontonummer ein.
+
+13
+00:01:55.194 --> 00:01:57.882
+Tippen Sie auf Empfänger speichern.
+
+14
+00:02:02.842 --> 00:02:05.122
+Empfänger gespeichert.

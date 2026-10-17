@@ -32,6 +32,7 @@ def image_button(file,title,prefix,revision,classes='shot-button',loading='lazy'
 
 def video(id,lang,prefix,c):
     info=MEDIA[id]; revision=info['assetRevision']
+    poster_revision=hashlib.sha256((DOCS/'media'/f'{id}.jpg').read_bytes()).hexdigest()[:12]
     tracks=''.join(f'<track kind="captions" srclang="{code}" label="{E(value["name"])}" src="{prefix}media/captions/{code}/{id}.vtt?v={hashlib.sha256((DOCS/"media/captions"/code/f"{id}.vtt").read_bytes()).hexdigest()[:12]}"'+(' default' if code==lang else '')+'>' for code,value in LANGS.items())
     title=c['overviewTitle'] if id=='overview' else UX[lang]['chapters'][id]['title']
     watch=UX[lang]['watchLabel' if id=='overview' else 'proofLabel']
@@ -43,7 +44,7 @@ def video(id,lang,prefix,c):
     size=(DOCS/'media'/playback).stat().st_size/1_000_000
     # Templates are inert: neither MP4 nor caption tracks can load before a click.
     # The JPG link also opens the native MP4 player when JavaScript is disabled.
-    return f'''<div class="video-shell"><a class="video-preview" data-play-video="video-{id}" href="{playback_url}" aria-label="{E(watch)} · {E(title)}"><img loading="{loading}" width="540" height="1200" src="{prefix}media/{id}.jpg?v={revision}" alt=""><span class="video-play"><span aria-hidden="true">▶</span>{E(watch)}</span></a><template id="template-video-{id}"><video id="video-{id}" width="540" height="1200" controls playsinline preload="none" poster="{prefix}media/{id}.jpg?v={revision}" aria-label="{E(title)}"><source src="{playback_url}" type="video/mp4">{tracks}</video></template></div><div class="video-tools"><span class="meta">{info['durationLabel']} · MP4 · {size:.2f} MB</span><label for="speed-{id}">{E(c['speedLabel'])}</label><select id="speed-{id}" data-speed="video-{id}"><option value="0.5">0.5×</option><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></div>'''
+    return f'''<div class="video-shell"><a class="video-preview" data-play-video="video-{id}" href="{playback_url}" aria-label="{E(watch)} · {E(title)}"><img loading="{loading}" width="540" height="1200" src="{prefix}media/{id}.jpg?v={poster_revision}" alt=""><span class="video-play"><span aria-hidden="true">▶</span>{E(watch)}</span></a><template id="template-video-{id}"><video id="video-{id}" width="540" height="1200" controls playsinline preload="none" poster="{prefix}media/{id}.jpg?v={poster_revision}" aria-label="{E(title)}"><source src="{playback_url}" type="video/mp4">{tracks}</video></template></div><div class="video-tools"><span class="meta">{info['durationLabel']} · MP4 · {size:.2f} MB</span><label for="speed-{id}">{E(c['speedLabel'])}</label><select id="speed-{id}" data-speed="video-{id}"><option value="0.5">0.5×</option><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></div>'''
 
 def transcript(id,lang,c):
     return f'<details><summary>{E(c["transcriptLabel"])}</summary>'+''.join(f'<p>{E(text)}</p>' for text in CAPTIONS[lang][id])+'</details>'

@@ -1,21 +1,57 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:07.954
-Banque simulée : coller un code de destinataire, revoir et préremplir, sans validation ni enregistrement automatique.
+00:00:16.680 --> 00:00:19.392
+Collez le code du destinataire.
 
 2
-00:00:40.300 --> 00:00:48.028
-Suppression de bénéficiaire simulée : révision, confirmation distincte, code SMS rempli et Vérifier explicite.
+00:00:23.560 --> 00:00:26.920
+Vérifiez le compte et la devise du destinataire.
 
 3
-00:00:59.270 --> 00:01:02.462
-Vérifiez, puis confirmez séparément.
+00:00:27.658 --> 00:00:29.938
+Appuyez sur Continuer.
 
 4
-00:01:21.037 --> 00:01:24.613
-Un résultat de test, avec des données fictives.
+00:00:34.920 --> 00:00:37.944
+Supprimez un destinataire enregistré.
 
 5
-00:01:30.966 --> 00:01:38.430
-Démo de base : créer et enregistrer localement un bénéficiaire fictif d’une autre banque, sans validation bancaire réelle.
+00:00:45.603 --> 00:00:47.835
+Confirmez la suppression.
+
+6
+00:00:55.147 --> 00:00:57.283
+Code SMS rempli.
+
+7
+00:00:59.562 --> 00:01:01.674
+Appuyez sur Vérifier.
+
+8
+00:01:03.704 --> 00:01:06.560
+Vérifiez la réponse à la suppression.
+
+9
+00:01:11.366 --> 00:01:14.414
+Ajoutez un destinataire d’une autre banque.
+
+10
+00:01:34.440 --> 00:01:37.176
+Saisissez le nom du destinataire.
+
+11
+00:01:42.691 --> 00:01:44.707
+Saisissez la banque.
+
+12
+00:01:49.612 --> 00:01:52.180
+Saisissez le numéro de compte.
+
+13
+00:01:55.194 --> 00:01:58.266
+Appuyez sur Enregistrer le destinataire.
+
+14
+00:02:02.842 --> 00:02:05.218
+Destinataire enregistré.

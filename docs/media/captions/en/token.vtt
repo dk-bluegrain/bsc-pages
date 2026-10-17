@@ -1,29 +1,37 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:10.042
-Simulated Token BSC: contract, consent, test approval, generated code and unlinking. The generated code is not SMS.
+00:00:04.021 --> 00:00:06.781
+Read the Token BSC contract.
 
 2
-00:00:26.160 --> 00:00:29.064
-Review, then confirm separately.
+00:00:15.764 --> 00:00:18.404
+Accept the contract to enroll.
 
 3
-00:00:37.695 --> 00:00:40.599
-A token code is not an SMS.
+00:00:23.672 --> 00:00:26.168
+Request token activation.
 
 4
-00:01:30.234 --> 00:01:38.634
-Simulated token enrollment: Android SMS-code autofill and explicit Verify; this case does not establish completed enrollment.
+00:00:31.188 --> 00:00:34.020
+Check approval to view your token code.
 
 5
-00:01:56.370 --> 00:01:59.274
-Review, then confirm separately.
+00:00:39.519 --> 00:00:41.511
+Unlink this token.
 
 6
-00:02:14.333 --> 00:02:17.333
-Keyboard autofill still needs Verify.
+00:00:50.032 --> 00:00:51.904
+Token unlinked.
 
 7
-00:02:18.591 --> 00:02:21.735
-A test result, using fictional data.
+00:00:53.677 --> 00:00:56.989
+Verify token activation by SMS.
+
+8
+00:01:00.994 --> 00:01:03.106
+SMS code filled.
+
+9
+00:01:05.400 --> 00:01:07.272
+Tap Verify.

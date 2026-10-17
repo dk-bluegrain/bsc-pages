@@ -274,3 +274,38 @@ registration re-entry; transfers-01/02/03 own/same/other-bank SMS flows and
 transfers-04 recipient search; payments-01 service SMS and payments-02 card SMS.
 Other chapter IDs retain their existing meanings. Scripts are written before
 recording; a fast fixture rehearsal cannot become publishable media.
+
+## Concise narrated presentation
+
+Final narration, subtitles and transcripts now use `narration-actions.json`.
+Its `phrases` entries keep context adjacent to all seven translations. Each
+`timelines` array follows the actual scenario or overview-excerpt order. A cue
+selects a recorded event type and ordinal, optionally narrowed by hold cue;
+negative ordinals count from the end. Overview `group-start` anchors are excerpt
+boundaries. These instructions describe a user action at its own recorded stage.
+
+Generic opening/navigation/read descriptions and repeated simulation disclaimers
+are not spoken. Page disclosures retain simulation scope. Successful synthetic
+file saves and recipient removal can be named after their result; a money receipt
+is described as a receipt because the UI asks the user to check final history.
+The SMS code is never described as typed when the source records autofill.
+SMS-only approved-message login has no invented Verify tap; combined questions,
+financial operations and token enrollment retain their recorded Verify action.
+
+Regenerate with `scripts/narrate-media.py` from its pinned original capture source,
+then build the HTML. The same scheduled speech cues produce all localized VTT
+tracks, verbatim ordered transcripts and the embedded self-hosted narration.
+Every authored cue is mandatory and bounded by its next task cue/scene. Missing
+anchors or speech that does not fit fail generation. Unit tests validate all
+recorded anchors and preserve speech windows through idle trimming. Final media
+regeneration, native-language wording review and visual alignment are separate
+required verification steps; source tests alone do not prove them.
+
+
+`editorial-cuts.json` documents repeated QA attempts excluded from presentation.
+Action ordinals always resolve against the untouched source before exclusions;
+no narration may anchor inside an omitted interval. Every original event remains
+archived and excluded events carry their exact source index and reason. Token
+SMS activation skips the contract steps already shown in its first case. The
+settings chapter keeps one complete acknowledgement flow and its recorded-review
+result. QR Save remains an action instruction, without an invented save outcome.

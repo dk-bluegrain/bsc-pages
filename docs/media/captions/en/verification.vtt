@@ -1,9 +1,21 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:07.330
-Simulated banking: security question and SMS stay separate; code autofill retains explicit Verify.
+00:00:03.857 --> 00:00:06.257
+Enter your security answer.
 
 2
-00:00:29.367 --> 00:00:36.111
-Simulated device registration and fresh biometric login inside the app; no silent password replay.
+00:00:09.893 --> 00:00:12.005
+SMS code filled.
+
+3
+00:00:14.420 --> 00:00:16.292
+Tap Verify.
+
+4
+00:00:27.710 --> 00:00:29.918
+Register this device.
+
+5
+00:00:38.296 --> 00:00:41.440
+Unlock saved access with biometrics.

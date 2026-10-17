@@ -1,0 +1,66 @@
+{
+  "revision": 2,
+  "sourceRef": "91f22e0031683e2ab6616be70a37abe72720d566",
+  "context": "Whole-frame source exclusions for reviewed repeated steps, failed setup and unavailable controls. Anchors resolve before exclusions. Retained native actions keep recorded speed and markers. All unique reviews, consent and final verification remain. Original events are archived with explicit reasons; end is exclusive.",
+  "chapters": {
+    "settings": [
+      {
+        "start": 185.06666666666666,
+        "end": 225.0,
+        "reason": "Repeated open, acknowledge, cancel attempt. Same unresolved history screen before and after; retain the later complete open, acknowledge, confirm sequence."
+      }
+    ],
+    "token": [
+      {
+        "start": 57.93333333333333,
+        "end": 80.66666666666667,
+        "reason": "First Consult verification returns the unchanged pending screen and repeats long holds. Retain the later consult that receives approval and shows the token code."
+      },
+      {
+        "start": 127.06666666666666,
+        "end": 170.4,
+        "reason": "Second activation case repeats the same contract, consent and enrollment already shown completely in the first case. Start the alternative SMS case at its native activation tap with consent already checked; retain empty SMS, autofill and Verify."
+      }
+    ],
+    "qr": [
+      {
+        "start": 9.8,
+        "end": 19.8,
+        "reason": "Initial account-QR save attempt returns unchanged without a confirmed save. Retain request creation and its Save QR action; never claim a file was saved."
+      }
+    ],
+    "transfers": [
+      {
+        "start": 146.8,
+        "end": 159.2,
+        "reason": "Second transfer repeats the first walkthrough SMS waiting and autofill. Keep its own recipient, amount, fee review, confirmation dialog and consent; resume on filled code before its native Verify tap and actual receipt."
+      },
+      {
+        "start": 236.8,
+        "end": 248.53333333333333,
+        "reason": "Third transfer repeats the first walkthrough SMS waiting and autofill. Keep its distinct bank/recipient, amount, fee review, confirmation dialog and consent; resume on filled code before native Verify and actual receipt."
+      }
+    ],
+    "payments": [
+      {
+        "start": 152.8,
+        "end": 165.0,
+        "reason": "Card payment repeats the service payment SMS waiting and autofill. Keep card selection, amount, fee review, confirmation dialog and consent; resume on filled code before native Verify and actual receipt."
+      }
+    ],
+    "beneficiaries": [
+      {
+        "start": 51.4,
+        "end": 58.666666666666664,
+        "reason": "Deletion scenario starts on an unrelated failed list-refresh modal from fixture setup. Omit that error and dismissal; start on the actual recipient removal form and preserve review, confirmation, SMS, Verify and bank result."
+      }
+    ],
+    "cards": [
+      {
+        "start": 53.2,
+        "end": 80.66666666666667,
+        "reason": "Remove the unavailable card-services screen, its inert controls and return navigation. Preserve actual card detail reveal and both copy actions; no unavailable capability is advertised."
+      }
+    ]
+  }
+}

@@ -1,9 +1,21 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:09.202
-Banco simulado: pregunta de seguridad y SMS son pasos separados; autocompletar el código conserva Verificar.
+00:00:03.857 --> 00:00:07.001
+Escribe tu respuesta de seguridad.
 
 2
-00:00:29.367 --> 00:00:37.359
-Registro de dispositivo y nuevo acceso biométrico simulados dentro de la app; no se reutiliza la contraseña en silencio.
+00:00:09.893 --> 00:00:13.085
+Código SMS completado.
+
+3
+00:00:14.420 --> 00:00:16.532
+Toca Verificar.
+
+4
+00:00:27.710 --> 00:00:30.614
+Registra este dispositivo.
+
+5
+00:00:38.296 --> 00:00:42.064
+Desbloquea el acceso guardado con biometría.

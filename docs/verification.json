@@ -175,48 +175,847 @@
     "result": "passed"
   },
   "presentation": {
-    "verifiedAt": "2026-10-17T01:41:16.423485+00:00",
+    "verifiedAt": "2026-10-17T04:11:10.672360+00:00",
     "sourceWebsiteCommit": "91f22e0031683e2ab6616be70a37abe72720d566",
+    "scope": "Current local six-pass website/media edit; not published.",
+    "featureGroups": 13,
+    "independentSequentialReviewPasses": 6,
     "pacedVideos": 14,
     "narratedVideos": 98,
     "captionTracks": 98,
-    "speechCuesPerLanguage": 67,
+    "speechCuesPerLanguage": 133,
+    "totalLocalizedSpeechCues": 931,
     "originalSeconds": 1979.398,
-    "editedSeconds": 1502.134,
-    "overviewSeconds": 91.8,
-    "unitTests": 8,
+    "editedSeconds": 1195.732,
+    "overviewSeconds": 92.6,
+    "removedIdleSeconds": 596.598,
+    "removedNonessentialOrRepeatedSeconds": 187.067,
+    "actionsAtOriginalSpeed": true,
+    "unitTests": 13,
     "browserCases": 21,
+    "browserLocalizedPlayers": 98,
+    "browserLoadedCues": 931,
+    "browserCaptionChecks": [
+      {
+        "language": "es",
+        "chapter": "overview",
+        "cues": 16,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "first-use",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "login",
+        "cues": 4,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "verification",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "accounts",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "history",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "statements",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "transfers",
+        "cues": 22,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "payments",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "beneficiaries",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "cards",
+        "cues": 2,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "token",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "qr",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "es",
+        "chapter": "settings",
+        "cues": 12,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "overview",
+        "cues": 16,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "first-use",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "login",
+        "cues": 4,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "verification",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "accounts",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "history",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "statements",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "transfers",
+        "cues": 22,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "payments",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "beneficiaries",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "cards",
+        "cues": 2,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "token",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "qr",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "en",
+        "chapter": "settings",
+        "cues": 12,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "overview",
+        "cues": 16,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "first-use",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "login",
+        "cues": 4,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "verification",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "accounts",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "history",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "statements",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "transfers",
+        "cues": 22,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "payments",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "beneficiaries",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "cards",
+        "cues": 2,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "token",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "qr",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "de",
+        "chapter": "settings",
+        "cues": 12,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "overview",
+        "cues": 16,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "first-use",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "login",
+        "cues": 4,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "verification",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "accounts",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "history",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "statements",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "transfers",
+        "cues": 22,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "payments",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "beneficiaries",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "cards",
+        "cues": 2,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "token",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "qr",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "fr",
+        "chapter": "settings",
+        "cues": 12,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "overview",
+        "cues": 16,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "first-use",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "login",
+        "cues": 4,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "verification",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "accounts",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "history",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "statements",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "transfers",
+        "cues": 22,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "payments",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "beneficiaries",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "cards",
+        "cues": 2,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "token",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "qr",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "ru",
+        "chapter": "settings",
+        "cues": 12,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "overview",
+        "cues": 16,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "first-use",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "login",
+        "cues": 4,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "verification",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "accounts",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "history",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "statements",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "transfers",
+        "cues": 22,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "payments",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "beneficiaries",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "cards",
+        "cues": 2,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "token",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "qr",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "uk",
+        "chapter": "settings",
+        "cues": 12,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "overview",
+        "cues": 16,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "first-use",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "login",
+        "cues": 4,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "verification",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "accounts",
+        "cues": 5,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "history",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "statements",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "transfers",
+        "cues": 22,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "payments",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "beneficiaries",
+        "cues": 14,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "cards",
+        "cues": 2,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "token",
+        "cues": 9,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "qr",
+        "cues": 7,
+        "passed": true
+      },
+      {
+        "language": "pt",
+        "chapter": "settings",
+        "cues": 12,
+        "passed": true
+      }
+    ],
+    "browserChecks": "passed",
     "staticChecks": "passed",
+    "browserCoverage": [
+      "7 languages at 390, 820 and 1440 pixels",
+      "all rendered transcripts equal ordered canonical actions",
+      "all 98 localized players decode video and audio at 820 pixels",
+      "all 931 native loaded cues equal transcripts and actual playing cue shown",
+      "lazy media loading, keyboard controls, selected speed and player isolation",
+      "no-JavaScript links, download and privacy routes"
+    ],
+    "visualCoverage": {
+      "encodedVideoContactSheets": 15,
+      "encodedVideoFrames": 155,
+      "allVideoCueSheetsReviewed": true,
+      "localizedMobileAndDesktopCaptionAndTranscriptCaptures": 14,
+      "changedRemovalResponseScreenshots": 7,
+      "beneficiaryCueSheetRefreshedFrames": 16
+    },
+    "audioLevelScope": "FFmpeg volumedetect on each current narrated overview AAC track; levels are dBFS, SHA-256 identifies the measured MP4.",
     "audioLevels": {
       "es": {
-        "meanDb": -19.8,
-        "peakDb": -1.8
+        "meanDb": -21.9,
+        "peakDb": -1.4,
+        "mp4Sha256": "a6526b1e83c28439dc6680e6e6f2571f04deef2832eabd29d59c04dedca10bad"
       },
       "en": {
-        "meanDb": -21.0,
-        "peakDb": -1.5
+        "meanDb": -23.5,
+        "peakDb": -1.1,
+        "mp4Sha256": "defb20ac2cdb0f2a77653680c45b97ab5e9fcb402e53809d0664f38eee5f9395"
       },
       "de": {
-        "meanDb": -20.2,
-        "peakDb": -1.5
+        "meanDb": -22.3,
+        "peakDb": -1.5,
+        "mp4Sha256": "b6d0577a45dec517826888000cf4ac3ee993d73d9e39fb76a0c0ad071471c0ca"
       },
       "fr": {
-        "meanDb": -20.7,
-        "peakDb": -2.0
+        "meanDb": -22.9,
+        "peakDb": -1.5,
+        "mp4Sha256": "11808839d0e3f3bbf5ed5d8e3405cb587024ad189994549071a810529356d534"
       },
       "ru": {
-        "meanDb": -20.3,
-        "peakDb": -1.5
+        "meanDb": -21.9,
+        "peakDb": -1.4,
+        "mp4Sha256": "abcd6cb5baf201ea1c39ec0f2f8ff79566c422f2a4fc023a06327f84d3877465"
       },
       "uk": {
-        "meanDb": -20.3,
-        "peakDb": -1.5
+        "meanDb": -21.9,
+        "peakDb": -1.3,
+        "mp4Sha256": "9528442017575804c74000164440e11c66acbf90ad3d7bab616710bf15a671eb"
       },
       "pt": {
-        "meanDb": -20.1,
-        "peakDb": -2.2
+        "meanDb": -22.3,
+        "peakDb": -1.5,
+        "mp4Sha256": "6a56e1bc3e8226a9d0874daef103f270bba074fe9ee356af57b0cf0ae04fcdbe"
       }
     },
+    "sourceEvidenceSha256": {
+      "src/media.json": "fb79dfa8715a6f356fc8b01127ae9f866f61733b40095a2b197106a219472cd1",
+      "src/narration-actions.json": "6bd3084f913125137d7e5fbe5611f047e0b01f46dff4d5a6a6ce4e5146d0726f",
+      "src/editorial-cuts.json": "20904443ae6cba19488953df2474b9890055f06b32762bcc57d56681ebbafa91",
+      "src/transcripts.json": "d41bc9461ef1bb550c5a85d0a1aa08bdde38e73748ac00ba7dccb4ed25fe309c",
+      "docs/media/provenance.json": "0a38f587a95fbf253b36083feb243ec2b316115988f9d21e46afd49228d6db0d"
+    },
+    "largestNarratedBytes": 2118480,
+    "speechProvider": "Microsoft Edge neural TTS via edge-tts 7.3.1",
+    "visitorSpeechServiceRequests": false,
+    "productionApksChanged": false,
+    "browserEvidenceReuse": {
+      "unchangedLocalizedPlayers": 91,
+      "retestedLocalizedPlayers": 7,
+      "basis": "SHA-256 equality of each unchanged MP4 and VTT against the 237-file post-pass5 acceptance snapshot. All seven changed beneficiary players were retested at the changed removal-response cue. All14 rendered transcripts per language were checked again.",
+      "changedPlayerChecks": [
+        {
+          "language": "es",
+          "chapter": "beneficiaries",
+          "cues": 14,
+          "changedAction": "removal-response",
+          "activeText": "Revisa la respuesta a la eliminación.",
+          "nativeCueTime": 63.940132,
+          "videoDecodedBytes": 57238,
+          "audioDecodedBytes": 8139,
+          "mp4Sha256": "3943a457d82cfce6d63cdbc26b5a4fe157da37cd8d45e843f128f1089d5ac024",
+          "all14RenderedTranscriptsExact": true,
+          "passed": true
+        },
+        {
+          "language": "en",
+          "chapter": "beneficiaries",
+          "cues": 14,
+          "changedAction": "removal-response",
+          "activeText": "Check the removal response.",
+          "nativeCueTime": 63.933551,
+          "videoDecodedBytes": 57238,
+          "audioDecodedBytes": 4179,
+          "mp4Sha256": "f38ac66b27a408c35e77f712c12d49bf8d5876034f6581331ad8120a2083755b",
+          "all14RenderedTranscriptsExact": true,
+          "passed": true
+        },
+        {
+          "language": "de",
+          "chapter": "beneficiaries",
+          "cues": 14,
+          "changedAction": "removal-response",
+          "activeText": "Prüfen Sie die Antwort zur Löschung.",
+          "nativeCueTime": 63.931784,
+          "videoDecodedBytes": 57238,
+          "audioDecodedBytes": 4519,
+          "mp4Sha256": "5f6b01a4f552039780c91f53aaaea0cdeebb85425063ffaca77b5510558dd59b",
+          "all14RenderedTranscriptsExact": true,
+          "passed": true
+        },
+        {
+          "language": "fr",
+          "chapter": "beneficiaries",
+          "cues": 14,
+          "changedAction": "removal-response",
+          "activeText": "Vérifiez la réponse à la suppression.",
+          "nativeCueTime": 63.935393,
+          "videoDecodedBytes": 57238,
+          "audioDecodedBytes": 7484,
+          "mp4Sha256": "7bc5e34270d2f209268a88ca5a6001049f5a44f36876e012638420f7d60f58db",
+          "all14RenderedTranscriptsExact": true,
+          "passed": true
+        },
+        {
+          "language": "ru",
+          "chapter": "beneficiaries",
+          "cues": 14,
+          "changedAction": "removal-response",
+          "activeText": "Проверьте ответ на удаление.",
+          "nativeCueTime": 63.935993,
+          "videoDecodedBytes": 57238,
+          "audioDecodedBytes": 6394,
+          "mp4Sha256": "433928fdf960d988d4d44fe2f13541df5ca5dcbc528754070a420aebc38b6790",
+          "all14RenderedTranscriptsExact": true,
+          "passed": true
+        },
+        {
+          "language": "uk",
+          "chapter": "beneficiaries",
+          "cues": 14,
+          "changedAction": "removal-response",
+          "activeText": "Перевірте відповідь на видалення.",
+          "nativeCueTime": 63.938333,
+          "videoDecodedBytes": 57238,
+          "audioDecodedBytes": 4542,
+          "mp4Sha256": "54c16f4c48a1fe5aa86c5d7b4b20e2b0493e44b4577d9515e94228a710c57020",
+          "all14RenderedTranscriptsExact": true,
+          "passed": true
+        },
+        {
+          "language": "pt",
+          "chapter": "beneficiaries",
+          "cues": 14,
+          "changedAction": "removal-response",
+          "activeText": "Confira a resposta à remoção.",
+          "nativeCueTime": 63.931135,
+          "videoDecodedBytes": 57238,
+          "audioDecodedBytes": 5199,
+          "mp4Sha256": "c8a43fe44a9af91868e0eae3b37ecbe487044b2c3dfa5627c8d6f97c2e6fa085",
+          "all14RenderedTranscriptsExact": true,
+          "passed": true
+        }
+      ]
+    },
+    "changedResponseCueAudioLevels": {
+      "es": {
+        "mp4Sha256": "3943a457d82cfce6d63cdbc26b5a4fe157da37cd8d45e843f128f1089d5ac024",
+        "meanDb": -18.6,
+        "peakDb": -3.1
+      },
+      "en": {
+        "mp4Sha256": "f38ac66b27a408c35e77f712c12d49bf8d5876034f6581331ad8120a2083755b",
+        "meanDb": -17.1,
+        "peakDb": -1.2
+      },
+      "de": {
+        "mp4Sha256": "5f6b01a4f552039780c91f53aaaea0cdeebb85425063ffaca77b5510558dd59b",
+        "meanDb": -19.9,
+        "peakDb": -4.0
+      },
+      "fr": {
+        "mp4Sha256": "7bc5e34270d2f209268a88ca5a6001049f5a44f36876e012638420f7d60f58db",
+        "meanDb": -19.2,
+        "peakDb": -2.8
+      },
+      "ru": {
+        "mp4Sha256": "433928fdf960d988d4d44fe2f13541df5ca5dcbc528754070a420aebc38b6790",
+        "meanDb": -18.7,
+        "peakDb": -2.7
+      },
+      "uk": {
+        "mp4Sha256": "54c16f4c48a1fe5aa86c5d7b4b20e2b0493e44b4577d9515e94228a710c57020",
+        "meanDb": -18.7,
+        "peakDb": -3.9
+      },
+      "pt": {
+        "mp4Sha256": "c8a43fe44a9af91868e0eae3b37ecbe487044b2c3dfa5627c8d6f97c2e6fa085",
+        "meanDb": -19.8,
+        "peakDb": -3.4
+      }
+    },
+    "changedResponseCueAudioScope": "FFmpeg volumedetect over each updated removal-response speech interval; non-silent, unclipped AAC audio in all seven languages.",
+    "finalRenderedTranscriptLayoutCases": 21,
+    "browserEvidenceScope": "Pass5 full21 viewport/locale suite and98 players. Pass6 repeated all21 rendered-transcript/layout cases after final correction;91 unchanged MP4/VTT pairs retain pass5 playback evidence, and7 changed beneficiary players were retested at the changed native response cue.",
+    "publicationVerification": "scripts/publish.py anonymously compares every deployed document and both versioned APK downloads after pushing the verified commit.",
+    "deploymentBytes": 102740632,
+    "videoPreviews": {
+      "count": 14,
+      "source": "Reviewed frames from the exact final native video masters",
+      "manifest": "media/posters.json",
+      "manifestSha256": "0de039516a92e29727a39b721d2cb172d0934d5e99516f78cfca90067f3761fe",
+      "dimensions": [
+        540,
+        1200
+      ],
+      "browserCases": 21,
+      "allPreviewsDecoded": true,
+      "requestsBeforePlay": {
+        "video": 0,
+        "captions": 0
+      },
+      "contentHashedUrls": true,
+      "allMobileAndDesktopFramesVisuallyReviewed": true
+    }
+  },
+  "historicalPresentationMeasurements": {
+    "scope": "Earlier narrated edit (67 cues per language, 1502.134 seconds). These measurements do not describe the current six-pass edit.",
+    "verifiedAt": "2026-10-17T01:41:16.423485+00:00",
+    "speechCuesPerLanguage": 67,
+    "editedSeconds": 1502.134,
     "slowNetwork": {
       "downloadBytesPerSecond": 50000,
       "latencyMs": 400,
@@ -231,11 +1030,7 @@
       "sourceRef": "91f22e0031683e2ab6616be70a37abe72720d566",
       "identicalFiles": 19,
       "passed": true
-    },
-    "largestNarratedBytes": 2117927,
-    "speechProvider": "Microsoft Edge neural TTS via edge-tts 7.3.1",
-    "visitorSpeechServiceRequests": false,
-    "productionApksChanged": false,
-    "published": false
-  }
+    }
+  },
+  "historicalEvidenceScope": "capture, captureTooling and android describe earlier native capture/release checks; no Android build, owner-account validation or production APK change was performed in the six website/media review passes."
 }

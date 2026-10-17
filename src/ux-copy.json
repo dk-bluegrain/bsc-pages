@@ -90,7 +90,7 @@
         },
         "cards": {
           "title": "Tarjetas, con el número protegido",
-          "body": "Consulta los datos recibidos del banco con el número oculto salvo los últimos cuatro dígitos; copiar el número completo exige que el banco lo facilite y que tú lo elijas. La administración de tarjetas no está disponible: aquí encuentras información de los canales oficiales."
+          "body": "Abre los datos de la tarjeta. Toca Copiar."
         },
         "token": {
           "title": "Tu token, con sus pasos claros",
@@ -250,7 +250,7 @@
         },
         "cards": {
           "title": "Cards with the number protected",
-          "body": "Read bank-supplied details with the number masked except its last four digits; copying the full number requires the bank to supply it and your explicit choice. Card administration is unavailable; this screen provides official-channel information."
+          "body": "Open card details. Tap Copy."
         },
         "token": {
           "title": "Your token, one clear step at a time",
@@ -410,7 +410,7 @@
         },
         "cards": {
           "title": "Kartennummer geschützt",
-          "body": "Die Kartennummer bleibt bis auf die letzten vier Ziffern verdeckt; die vollständige Nummer kopieren Sie nur auf Wunsch, wenn die Bank sie bereitstellt. Die Kartenverwaltung ist nicht verfügbar; hier finden Sie Informationen zu offiziellen Kanälen."
+          "body": "Öffnen Sie die Kartendetails. Tippen Sie auf Kopieren."
         },
         "token": {
           "title": "Ihr Token mit klaren Schritten",
@@ -570,7 +570,7 @@
         },
         "cards": {
           "title": "Le numéro de carte protégé",
-          "body": "Consultez les données bancaires avec le numéro masqué sauf ses quatre derniers chiffres ; copier le numéro complet exige qu’il soit fourni par la banque et votre choix explicite. L’administration des cartes est indisponible ; cet écran renseigne sur les canaux officiels."
+          "body": "Ouvrez les détails de la carte. Appuyez sur Copier."
         },
         "token": {
           "title": "Votre jeton, des étapes claires",
@@ -730,7 +730,7 @@
         },
         "cards": {
           "title": "Номер карты защищён",
-          "body": "Просматривайте данные банка с номером, скрытым кроме последних четырёх цифр; полный номер копируется лишь по явному выбору, если банк его передал. Управление картами недоступно; здесь приведена информация об официальных каналах."
+          "body": "Откройте данные карты. Нажмите «Копировать»."
         },
         "token": {
           "title": "Ваш токен с понятными шагами",
@@ -890,7 +890,7 @@
         },
         "cards": {
           "title": "Номер картки захищено",
-          "body": "Переглядайте дані банку з номером, прихованим крім останніх чотирьох цифр; повний номер копіюється лише за явним вибором, якщо банк його передав. Керування картками недоступне; тут наведено інформацію про офіційні канали."
+          "body": "Відкрийте дані картки. Натисніть «Копіювати»."
         },
         "token": {
           "title": "Ваш токен зі зрозумілими кроками",
@@ -1050,7 +1050,7 @@
         },
         "cards": {
           "title": "Cartões com o número protegido",
-          "body": "Consulte dados recebidos do banco com o número oculto, exceto os últimos quatro dígitos; copiar o número completo exige que o banco o forneça e sua escolha explícita. A administração de cartões não está disponível; aqui há informações dos canais oficiais."
+          "body": "Abra os dados do cartão. Toque em Copiar."
         },
         "token": {
           "title": "Seu token com etapas claras",

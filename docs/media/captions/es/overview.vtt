@@ -1,53 +1,65 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:10.162
-Llega el SMS; tras aprobar compartir ese mensaje en Android, el código se rellena y el acceso solo por SMS puede continuar.
+00:00:00.250 --> 00:00:04.018
+Permite compartir este SMS para entrar.
 
 2
-00:00:11.767 --> 00:00:21.343
-En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado.
+00:00:08.024 --> 00:00:11.600
+Listo. Ya entraste.
 
 3
-00:00:25.433 --> 00:00:29.033
-Elige tu idioma y mantenlo en toda la app.
+00:00:14.767 --> 00:00:17.959
+Código SMS completado.
 
 4
-00:00:31.233 --> 00:00:37.161
-Tras registrar el dispositivo, continúa dentro de la app con tu acceso biométrico.
+00:00:19.325 --> 00:00:21.437
+Toca Verificar.
 
 5
-00:00:37.766 --> 00:00:43.790
-Oculta saldos con un toque. Mantén pesos y dólares separados.
+00:00:24.074 --> 00:00:27.458
+Revisa el comprobante de la transferencia.
 
 6
-00:00:44.633 --> 00:00:48.521
-Encuentra un movimiento escribiendo unas letras.
+00:00:30.100 --> 00:00:32.188
+Elige Español.
 
 7
-00:00:51.566 --> 00:00:55.214
-Pasa las páginas del PDF dentro de la app.
+00:00:33.900 --> 00:00:37.668
+Desbloquea el acceso guardado con biometría.
 
 8
-00:00:57.366 --> 00:01:01.350
-Un comprobante claro después de revisar y autorizar.
+00:00:41.433 --> 00:00:44.313
+Toca para ocultar los saldos.
 
 9
-00:01:02.499 --> 00:01:06.459
-Lee los datos del destinatario antes de continuar.
+00:00:46.899 --> 00:00:49.227
+Escribe qué buscar.
 
 10
-00:01:07.565 --> 00:01:13.805
-Copia con un toque. Solo se ven los últimos cuatro dígitos de la tarjeta.
+00:00:54.832 --> 00:00:57.448
+Toca la página siguiente.
 
 11
-00:01:14.432 --> 00:01:18.272
-Tu código Token BSC, dentro de la app.
+00:00:58.766 --> 00:01:01.670
+Revisa el comprobante del pago.
 
 12
-00:01:19.031 --> 00:01:24.047
-Importe, concepto y destinatario juntos antes de continuar.
+00:01:06.469 --> 00:01:10.189
+Revisa los datos del destinatario importado.
 
 13
-00:01:25.098 --> 00:01:31.266
-Elige la ayuda SMS en Ajustes. Tú mantienes el control.
+00:01:12.632 --> 00:01:14.552
+Toca Copiar.
+
+14
+00:01:17.165 --> 00:01:20.549
+Usa tu código de Token BSC.
+
+15
+00:01:21.498 --> 00:01:25.722
+Revisa el monto, el concepto y el destinatario.
+
+16
+00:01:28.298 --> 00:01:31.658
+Activa la asistencia SMS.

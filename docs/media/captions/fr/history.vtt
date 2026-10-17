@@ -1,9 +1,29 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:06.994
-Historique bancaire simulé : afficher le compte, rechercher des opérations et filtrer entrées et sorties.
+00:00:04.003 --> 00:00:05.875
+Ouvrez le compte.
 
 2
-00:00:37.167 --> 00:00:44.655
-CSV fictif de la démo de base : examiner les options de partage Android sans envoyer à un destinataire externe.
+00:00:08.788 --> 00:00:11.404
+Ouvrez l’historique des opérations.
+
+3
+00:00:18.393 --> 00:00:20.937
+Saisissez un terme à rechercher.
+
+4
+00:00:24.004 --> 00:00:26.668
+Filtrez les entrées ou les sorties.
+
+5
+00:00:39.412 --> 00:00:41.284
+Ouvrez le compte.
+
+6
+00:00:44.208 --> 00:00:46.824
+Ouvrez l’historique des opérations.
+
+7
+00:00:49.655 --> 00:00:53.423
+Appuyez sur Exporter CSV pour ouvrir le partage.

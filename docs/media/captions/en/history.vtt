@@ -1,9 +1,29 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:07.378
-Simulated banking history: reveal the account, search transactions and filter incoming/outgoing records.
+00:00:04.003 --> 00:00:05.875
+Open the account.
 
 2
-00:00:37.167 --> 00:00:43.935
-Basic demo’s fictional CSV: inspect Android sharing options without sending to an external recipient.
+00:00:08.788 --> 00:00:11.188
+Open transaction history.
+
+3
+00:00:18.393 --> 00:00:20.409
+Enter a search term.
+
+4
+00:00:24.004 --> 00:00:27.388
+Filter incoming or outgoing transactions.
+
+5
+00:00:39.412 --> 00:00:41.284
+Open the account.
+
+6
+00:00:44.208 --> 00:00:46.608
+Open transaction history.
+
+7
+00:00:49.655 --> 00:00:53.231
+Tap Export CSV to open sharing options.

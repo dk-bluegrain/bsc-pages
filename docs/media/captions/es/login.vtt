@@ -1,13 +1,17 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:09.994
-Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.
+00:00:04.712 --> 00:00:08.480
+Permite compartir este SMS para entrar.
 
 2
-00:00:16.634 --> 00:00:23.834
-Desbloqueo biométrico simulado del acceso guardado; la aprobación del banco es un requisito separado.
+00:00:11.791 --> 00:00:15.367
+Listo. Ya entraste.
 
 3
-00:00:25.497 --> 00:00:29.361
-Resultado de prueba, con datos ficticios.
+00:00:16.634 --> 00:00:20.402
+Desbloquea el acceso guardado con biometría.
+
+4
+00:00:25.630 --> 00:00:29.206
+Listo. Ya entraste.

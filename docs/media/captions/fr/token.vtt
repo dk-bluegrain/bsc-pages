@@ -1,29 +1,37 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:10.138
-Token BSC simulé : contrat, consentement, approbation de test, code généré et dissociation. Le code généré n’est pas un SMS.
+00:00:04.021 --> 00:00:06.853
+Lisez le contrat Token BSC.
 
 2
-00:00:26.160 --> 00:00:29.352
-Vérifiez, puis confirmez séparément.
+00:00:15.764 --> 00:00:18.596
+Acceptez le contrat pour vous inscrire.
 
 3
-00:00:37.695 --> 00:00:40.623
-Un code de jeton n’est pas un SMS.
+00:00:23.672 --> 00:00:26.432
+Demandez l’activation du token.
 
 4
-00:01:30.234 --> 00:01:37.866
-Inscription de jeton simulée : code SMS rempli par Android et Vérifier explicite ; ce cas ne prouve pas une inscription achevée.
+00:00:31.188 --> 00:00:35.004
+Vérifiez l’approbation pour afficher votre code token.
 
 5
-00:01:56.370 --> 00:01:59.562
-Vérifiez, puis confirmez séparément.
+00:00:39.519 --> 00:00:41.703
+Dissociez ce token.
 
 6
-00:02:14.333 --> 00:02:18.173
-L’autoremplissage du clavier exige toujours Vérifier.
+00:00:50.032 --> 00:00:52.048
+Token dissocié.
 
 7
-00:02:18.591 --> 00:02:22.167
-Un résultat de test, avec des données fictives.
+00:00:53.677 --> 00:00:57.109
+Vérifiez l’activation du token par SMS.
+
+8
+00:01:00.994 --> 00:01:03.130
+Code SMS rempli.
+
+9
+00:01:05.400 --> 00:01:07.512
+Appuyez sur Vérifier.

@@ -1,13 +1,29 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.410
-Fictional account/request QR: review, cancel saving and retry with a simulated destination; this is not payment.
+00:00:06.171 --> 00:00:08.523
+Create a payment request.
 
 2
-00:00:51.567 --> 00:00:58.743
-Simulated QR read: review a fictional request’s amount, memo and recipient; no real camera capture.
+00:00:11.877 --> 00:00:14.301
+Enter what the payment is for.
 
 3
-00:01:09.633 --> 00:01:15.369
-Fictional QR: Android print preview and return, without claiming a physical printout.
+00:00:20.054 --> 00:00:21.926
+Enter the amount.
+
+4
+00:00:26.773 --> 00:00:28.765
+Tap Save QR.
+
+5
+00:00:42.175 --> 00:00:45.367
+Check the amount, purpose and recipient.
+
+6
+00:00:46.649 --> 00:00:48.521
+Tap Continue.
+
+7
+00:00:58.008 --> 00:01:00.528
+Tap Print to preview the QR.

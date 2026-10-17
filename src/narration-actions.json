@@ -1,0 +1,2115 @@
+{
+  "revision": 2,
+  "context": "Concise user actions tied to recorded source events. Scope/simulation disclosures live beside the players; only demonstrated outcomes are named. Ordinals are scoped to a recorded scenario (or overview excerpt). Negative ordinals count backwards. Never generate narration from generic hold descriptions.",
+  "phrases": {
+    "privacy": {
+      "context": "First use: tap opens the policy without accepting terms.",
+      "text": {
+        "en": "Open the privacy policy.",
+        "es": "Abre la política de privacidad.",
+        "de": "Öffnen Sie die Datenschutzerklärung.",
+        "fr": "Ouvrez la politique de confidentialité.",
+        "ru": "Откройте политику конфиденциальности.",
+        "uk": "Відкрийте політику конфіденційності.",
+        "pt": "Abra a política de privacidade."
+      }
+    },
+    "back": {
+      "context": "Return from a document or screen; no implied acceptance.",
+      "text": {
+        "en": "Tap Back.",
+        "es": "Toca Volver.",
+        "de": "Tippen Sie auf Zurück.",
+        "fr": "Appuyez sur Retour.",
+        "ru": "Нажмите «Назад».",
+        "uk": "Натисніть «Назад».",
+        "pt": "Toque em Voltar."
+      }
+    },
+    "terms": {
+      "context": "First use: open terms before making a separate acceptance choice.",
+      "text": {
+        "en": "Read the terms.",
+        "es": "Lee los términos.",
+        "de": "Lesen Sie die Bedingungen.",
+        "fr": "Lisez les conditions.",
+        "ru": "Прочитайте условия.",
+        "uk": "Прочитайте умови.",
+        "pt": "Leia os termos."
+      }
+    },
+    "agree": {
+      "context": "First use: explicit checkbox selection after terms were opened.",
+      "text": {
+        "en": "Check the agreement box.",
+        "es": "Marca la casilla de aceptación.",
+        "de": "Markieren Sie das Zustimmungsfeld.",
+        "fr": "Cochez la case d’acceptation.",
+        "ru": "Отметьте согласие с условиями.",
+        "uk": "Позначте згоду з умовами.",
+        "pt": "Marque a caixa de aceitação."
+      }
+    },
+    "continue": {
+      "context": "Explicit continuation tap; never implies SMS verification.",
+      "text": {
+        "en": "Tap Continue.",
+        "es": "Toca Continuar.",
+        "de": "Tippen Sie auf Weiter.",
+        "fr": "Appuyez sur Continuer.",
+        "ru": "Нажмите «Продолжить».",
+        "uk": "Натисніть «Продовжити».",
+        "pt": "Toque em Continuar."
+      }
+    },
+    "assistance": {
+      "context": "First-use optional assistance selection, before any particular SMS.",
+      "text": {
+        "en": "Choose whether to enable SMS assistance.",
+        "es": "Elige si quieres activar la asistencia SMS.",
+        "de": "Wählen Sie, ob Sie die SMS-Hilfe aktivieren.",
+        "fr": "Choisissez d’activer ou non l’aide SMS.",
+        "ru": "Выберите, включать ли помощь с SMS.",
+        "uk": "Виберіть, чи вмикати допомогу з SMS.",
+        "pt": "Escolha se deseja ativar a assistência SMS."
+      }
+    },
+    "settings": {
+      "context": "Navigation opens More/settings.",
+      "text": {
+        "en": "Open Settings.",
+        "es": "Abre Ajustes.",
+        "de": "Öffnen Sie die Einstellungen.",
+        "fr": "Ouvrez les réglages.",
+        "ru": "Откройте настройки.",
+        "uk": "Відкрийте налаштування.",
+        "pt": "Abra as configurações."
+      }
+    },
+    "language": {
+      "context": "Open the language selector; language changes only after selection.",
+      "text": {
+        "en": "Tap Language.",
+        "es": "Toca Idioma.",
+        "de": "Tippen Sie auf Sprache.",
+        "fr": "Appuyez sur Langue.",
+        "ru": "Нажмите «Язык».",
+        "uk": "Натисніть «Мова».",
+        "pt": "Toque em Idioma."
+      }
+    },
+    "spanish": {
+      "context": "Select Spanish in the displayed language picker.",
+      "text": {
+        "en": "Choose Spanish.",
+        "es": "Elige Español.",
+        "de": "Wählen Sie Spanisch.",
+        "fr": "Choisissez Espagnol.",
+        "ru": "Выберите испанский.",
+        "uk": "Виберіть іспанську.",
+        "pt": "Escolha Espanhol."
+      }
+    },
+    "sms-approval": {
+      "context": "Synthetic approved one-message result; no physical Android prompt claimed.",
+      "text": {
+        "en": "Allow sharing this SMS to sign in.",
+        "es": "Permite compartir este SMS para entrar.",
+        "de": "Geben Sie diese SMS zum Anmelden frei.",
+        "fr": "Autorisez le partage de ce SMS pour vous connecter.",
+        "ru": "Разрешите передать это SMS для входа.",
+        "uk": "Дозвольте передати це SMS для входу.",
+        "pt": "Permita compartilhar este SMS para entrar."
+      }
+    },
+    "signed-in": {
+      "context": "Accounts shown after automatic approved-message login or simulated biometrics.",
+      "text": {
+        "en": "Done. You’re signed in.",
+        "es": "Listo. Ya entraste.",
+        "de": "Fertig. Sie sind angemeldet.",
+        "fr": "C’est fait. Vous êtes connecté.",
+        "ru": "Готово. Вход выполнен.",
+        "uk": "Готово. Вхід виконано.",
+        "pt": "Pronto. Você entrou."
+      }
+    },
+    "biometric": {
+      "context": "Saved credentials: simulated biometric callback, identified in page scope.",
+      "text": {
+        "en": "Unlock saved access with biometrics.",
+        "es": "Desbloquea el acceso guardado con biometría.",
+        "de": "Entsperren Sie den gespeicherten Zugang biometrisch.",
+        "fr": "Déverrouillez l’accès enregistré par biométrie.",
+        "ru": "Подтвердите сохранённый вход биометрией.",
+        "uk": "Підтвердьте збережений вхід біометрією.",
+        "pt": "Desbloqueie o acesso salvo com biometria."
+      }
+    },
+    "security-answer": {
+      "context": "Only the security answer is typed; the SMS code later autofills.",
+      "text": {
+        "en": "Enter your security answer.",
+        "es": "Escribe tu respuesta de seguridad.",
+        "de": "Geben Sie Ihre Sicherheitsantwort ein.",
+        "fr": "Saisissez votre réponse de sécurité.",
+        "ru": "Введите ответ на контрольный вопрос.",
+        "uk": "Введіть відповідь на контрольне запитання.",
+        "pt": "Digite sua resposta de segurança."
+      }
+    },
+    "code-filled": {
+      "context": "Actual SMS autofill callback has occurred; explicit Verify stays separate.",
+      "text": {
+        "en": "SMS code filled.",
+        "es": "Código SMS completado.",
+        "de": "SMS-Code ausgefüllt.",
+        "fr": "Code SMS rempli.",
+        "ru": "Код из SMS подставлен.",
+        "uk": "Код із SMS підставлено.",
+        "pt": "Código SMS preenchido."
+      }
+    },
+    "verify": {
+      "context": "Explicit Verify tap at recorded input; no claim of final success.",
+      "text": {
+        "en": "Tap Verify.",
+        "es": "Toca Verificar.",
+        "de": "Tippen Sie auf Bestätigen.",
+        "fr": "Appuyez sur Vérifier.",
+        "ru": "Нажмите «Подтвердить».",
+        "uk": "Натисніть «Підтвердити».",
+        "pt": "Toque em Verificar."
+      }
+    },
+    "register-device": {
+      "context": "Device registration requested explicitly after reading consent.",
+      "text": {
+        "en": "Register this device.",
+        "es": "Registra este dispositivo.",
+        "de": "Registrieren Sie dieses Gerät.",
+        "fr": "Enregistrez cet appareil.",
+        "ru": "Зарегистрируйте это устройство.",
+        "uk": "Зареєструйте цей пристрій.",
+        "pt": "Registre este dispositivo."
+      }
+    },
+    "hide-balances": {
+      "context": "Privacy button hides displayed balances.",
+      "text": {
+        "en": "Tap to hide balances.",
+        "es": "Toca para ocultar los saldos.",
+        "de": "Tippen Sie, um Guthaben auszublenden.",
+        "fr": "Appuyez pour masquer les soldes.",
+        "ru": "Нажмите, чтобы скрыть остатки.",
+        "uk": "Натисніть, щоб приховати залишки.",
+        "pt": "Toque para ocultar os saldos."
+      }
+    },
+    "show-balances": {
+      "context": "Same privacy button reveals displayed balances.",
+      "text": {
+        "en": "Tap again to show balances.",
+        "es": "Toca otra vez para mostrar los saldos.",
+        "de": "Tippen Sie erneut, um Guthaben einzublenden.",
+        "fr": "Appuyez à nouveau pour afficher les soldes.",
+        "ru": "Нажмите ещё раз, чтобы показать остатки.",
+        "uk": "Натисніть ще раз, щоб показати залишки.",
+        "pt": "Toque novamente para mostrar os saldos."
+      }
+    },
+    "usd": {
+      "context": "Select USD currency tab.",
+      "text": {
+        "en": "Choose USD.",
+        "es": "Elige USD.",
+        "de": "Wählen Sie USD.",
+        "fr": "Choisissez USD.",
+        "ru": "Выберите USD.",
+        "uk": "Виберіть USD.",
+        "pt": "Escolha USD."
+      }
+    },
+    "dop": {
+      "context": "Select DOP currency tab.",
+      "text": {
+        "en": "Choose DOP.",
+        "es": "Elige DOP.",
+        "de": "Wählen Sie DOP.",
+        "fr": "Choisissez DOP.",
+        "ru": "Выберите DOP.",
+        "uk": "Виберіть DOP.",
+        "pt": "Escolha DOP."
+      }
+    },
+    "account": {
+      "context": "Select displayed account and open detail.",
+      "text": {
+        "en": "Open the account.",
+        "es": "Abre la cuenta.",
+        "de": "Öffnen Sie das Konto.",
+        "fr": "Ouvrez le compte.",
+        "ru": "Откройте счёт.",
+        "uk": "Відкрийте рахунок.",
+        "pt": "Abra a conta."
+      }
+    },
+    "history": {
+      "context": "Open account history from account detail.",
+      "text": {
+        "en": "Open transaction history.",
+        "es": "Abre el historial de movimientos.",
+        "de": "Öffnen Sie den Transaktionsverlauf.",
+        "fr": "Ouvrez l’historique des opérations.",
+        "ru": "Откройте историю операций.",
+        "uk": "Відкрийте історію операцій.",
+        "pt": "Abra o histórico de transações."
+      }
+    },
+    "search": {
+      "context": "Search input accepts a transaction description or recipient name; no name-only restriction.",
+      "text": {
+        "en": "Enter a search term.",
+        "es": "Escribe qué buscar.",
+        "de": "Geben Sie einen Suchbegriff ein.",
+        "fr": "Saisissez un terme à rechercher.",
+        "ru": "Введите поисковый запрос.",
+        "uk": "Введіть пошуковий запит.",
+        "pt": "Digite um termo de busca."
+      }
+    },
+    "filter": {
+      "context": "Recorded transaction-direction filter choice.",
+      "text": {
+        "en": "Filter incoming or outgoing transactions.",
+        "es": "Filtra entradas o salidas.",
+        "de": "Filtern Sie Ein- oder Ausgänge.",
+        "fr": "Filtrez les entrées ou les sorties.",
+        "ru": "Отфильтруйте входящие или исходящие операции.",
+        "uk": "Відфільтруйте вхідні або вихідні операції.",
+        "pt": "Filtre entradas ou saídas."
+      }
+    },
+    "csv": {
+      "context": "CSV opens Android Sharesheet, then returns without external send.",
+      "text": {
+        "en": "Tap Export CSV to open sharing options.",
+        "es": "Toca Exportar CSV para ver cómo compartirlo.",
+        "de": "Tippen Sie auf CSV exportieren, um die Freigabe zu öffnen.",
+        "fr": "Appuyez sur Exporter CSV pour ouvrir le partage.",
+        "ru": "Нажмите «Экспорт CSV», чтобы выбрать способ отправки.",
+        "uk": "Натисніть «Експорт CSV», щоб вибрати спосіб надсилання.",
+        "pt": "Toque em Exportar CSV para abrir as opções de compartilhamento."
+      }
+    },
+    "statement": {
+      "context": "Selected available period opens synthetic PDF.",
+      "text": {
+        "en": "Choose a statement period.",
+        "es": "Elige un período del estado de cuenta.",
+        "de": "Wählen Sie einen Auszugszeitraum.",
+        "fr": "Choisissez une période de relevé.",
+        "ru": "Выберите период выписки.",
+        "uk": "Виберіть період виписки.",
+        "pt": "Escolha um período do extrato."
+      }
+    },
+    "next-page": {
+      "context": "PDF next page button; not scrolling an unrelated screen.",
+      "text": {
+        "en": "Tap the next page.",
+        "es": "Toca la página siguiente.",
+        "de": "Tippen Sie auf die nächste Seite.",
+        "fr": "Appuyez sur la page suivante.",
+        "ru": "Откройте следующую страницу.",
+        "uk": "Відкрийте наступну сторінку.",
+        "pt": "Toque na próxima página."
+      }
+    },
+    "zoom": {
+      "context": "PDF zoom control.",
+      "text": {
+        "en": "Tap to zoom.",
+        "es": "Toca para ampliar.",
+        "de": "Tippen Sie zum Vergrößern.",
+        "fr": "Appuyez pour agrandir.",
+        "ru": "Нажмите, чтобы увеличить.",
+        "uk": "Натисніть, щоб збільшити.",
+        "pt": "Toque para ampliar."
+      }
+    },
+    "share-pdf": {
+      "context": "Explicit share intent for the selected PDF; no recipient delivery claim.",
+      "text": {
+        "en": "Tap Share PDF.",
+        "es": "Toca Compartir PDF.",
+        "de": "Tippen Sie auf PDF teilen.",
+        "fr": "Appuyez sur Partager le PDF.",
+        "ru": "Нажмите «Поделиться PDF».",
+        "uk": "Натисніть «Поділитися PDF».",
+        "pt": "Toque em Compartilhar PDF."
+      }
+    },
+    "select-statements": {
+      "context": "Bulk save selection of available periods.",
+      "text": {
+        "en": "Select the statements to save.",
+        "es": "Selecciona los estados de cuenta que quieres guardar.",
+        "de": "Wählen Sie die zu speichernden Auszüge.",
+        "fr": "Sélectionnez les relevés à enregistrer.",
+        "ru": "Выберите выписки для сохранения.",
+        "uk": "Виберіть виписки для збереження.",
+        "pt": "Selecione os extratos para salvar."
+      }
+    },
+    "save-selected": {
+      "context": "Save selected opens folder selection; destination callback simulated.",
+      "text": {
+        "en": "Tap Save selected, then choose a folder.",
+        "es": "Toca Guardar seleccionados y elige una carpeta.",
+        "de": "Tippen Sie auf Auswahl speichern und wählen Sie einen Ordner.",
+        "fr": "Appuyez sur Enregistrer la sélection, puis choisissez un dossier.",
+        "ru": "Нажмите «Сохранить выбранное» и выберите папку.",
+        "uk": "Натисніть «Зберегти вибране» та виберіть папку.",
+        "pt": "Toque em Salvar selecionados e escolha uma pasta."
+      }
+    },
+    "saved-statements": {
+      "context": "Actual successful synthetic file writes shown.",
+      "text": {
+        "en": "Statements saved.",
+        "es": "Estados de cuenta guardados.",
+        "de": "Auszüge gespeichert.",
+        "fr": "Relevés enregistrés.",
+        "ru": "Выписки сохранены.",
+        "uk": "Виписки збережено.",
+        "pt": "Extratos salvos."
+      }
+    },
+    "own-transfer": {
+      "context": "Scene intent: own-account transfer, source already selected.",
+      "text": {
+        "en": "Transfer between your accounts.",
+        "es": "Transfiere entre tus cuentas.",
+        "de": "Überweisen Sie zwischen Ihren Konten.",
+        "fr": "Virez de l’argent entre vos comptes.",
+        "ru": "Переведите между своими счетами.",
+        "uk": "Перекажіть між своїми рахунками.",
+        "pt": "Transfira entre suas contas."
+      }
+    },
+    "same-bank": {
+      "context": "Scene intent: same-bank recipient transfer.",
+      "text": {
+        "en": "Transfer to a Santa Cruz account.",
+        "es": "Transfiere a una cuenta Santa Cruz.",
+        "de": "Überweisen Sie auf ein Santa-Cruz-Konto.",
+        "fr": "Virez vers un compte Santa Cruz.",
+        "ru": "Переведите на счёт Santa Cruz.",
+        "uk": "Перекажіть на рахунок Santa Cruz.",
+        "pt": "Transfira para uma conta Santa Cruz."
+      }
+    },
+    "other-bank": {
+      "context": "Scene intent: interbank recipient transfer.",
+      "text": {
+        "en": "Transfer to another bank.",
+        "es": "Transfiere a otro banco.",
+        "de": "Überweisen Sie an eine andere Bank.",
+        "fr": "Virez vers une autre banque.",
+        "ru": "Переведите в другой банк.",
+        "uk": "Перекажіть до іншого банку.",
+        "pt": "Transfira para outro banco."
+      }
+    },
+    "recipient": {
+      "context": "Destination picker selection.",
+      "text": {
+        "en": "Choose the recipient.",
+        "es": "Elige el destinatario.",
+        "de": "Wählen Sie den Empfänger.",
+        "fr": "Choisissez le destinataire.",
+        "ru": "Выберите получателя.",
+        "uk": "Виберіть одержувача.",
+        "pt": "Escolha o destinatário."
+      }
+    },
+    "amount": {
+      "context": "Actual amount entry in payment/transfer/request form.",
+      "text": {
+        "en": "Enter the amount.",
+        "es": "Escribe el monto.",
+        "de": "Geben Sie den Betrag ein.",
+        "fr": "Saisissez le montant.",
+        "ru": "Введите сумму.",
+        "uk": "Введіть суму.",
+        "pt": "Digite o valor."
+      }
+    },
+    "review-money": {
+      "context": "Actual pre-submission review shows recipient, amount and fees.",
+      "text": {
+        "en": "Check the recipient, amount and fees.",
+        "es": "Revisa el destinatario, el monto y las comisiones.",
+        "de": "Prüfen Sie Empfänger, Betrag und Gebühren.",
+        "fr": "Vérifiez le destinataire, le montant et les frais.",
+        "ru": "Проверьте получателя, сумму и комиссии.",
+        "uk": "Перевірте одержувача, суму та комісії.",
+        "pt": "Confira o destinatário, o valor e as tarifas."
+      }
+    },
+    "confirm-transfer": {
+      "context": "Separate explicit money-confirmation tap.",
+      "text": {
+        "en": "Confirm the transfer.",
+        "es": "Confirma la transferencia.",
+        "de": "Bestätigen Sie die Überweisung.",
+        "fr": "Confirmez le virement.",
+        "ru": "Подтвердите перевод.",
+        "uk": "Підтвердьте переказ.",
+        "pt": "Confirme a transferência."
+      }
+    },
+    "service-payment": {
+      "context": "Intent for service-payment scene, not credit-card payment.",
+      "text": {
+        "en": "Pay a service bill.",
+        "es": "Paga un servicio.",
+        "de": "Bezahlen Sie eine Servicerechnung.",
+        "fr": "Payez une facture de service.",
+        "ru": "Оплатите услугу.",
+        "uk": "Оплатіть послугу.",
+        "pt": "Pague uma conta de serviço."
+      }
+    },
+    "card-payment": {
+      "context": "Intent for credit-card-payment scene.",
+      "text": {
+        "en": "Pay a credit card.",
+        "es": "Paga una tarjeta de crédito.",
+        "de": "Bezahlen Sie eine Kreditkarte.",
+        "fr": "Réglez une carte de crédit.",
+        "ru": "Оплатите кредитную карту.",
+        "uk": "Оплатіть кредитну картку.",
+        "pt": "Pague um cartão de crédito."
+      }
+    },
+    "confirm-payment": {
+      "context": "Separate explicit money-confirmation tap for payment.",
+      "text": {
+        "en": "Confirm the payment.",
+        "es": "Confirma el pago.",
+        "de": "Bestätigen Sie die Zahlung.",
+        "fr": "Confirmez le paiement.",
+        "ru": "Подтвердите платёж.",
+        "uk": "Підтвердьте платіж.",
+        "pt": "Confirme o pagamento."
+      }
+    },
+    "paste-recipient": {
+      "context": "Single actual paste of long fictional recipient code.",
+      "text": {
+        "en": "Paste the recipient code.",
+        "es": "Pega el código del destinatario.",
+        "de": "Fügen Sie den Empfängercode ein.",
+        "fr": "Collez le code du destinataire.",
+        "ru": "Вставьте код получателя.",
+        "uk": "Вставте код одержувача.",
+        "pt": "Cole o código do destinatário."
+      }
+    },
+    "review-recipient": {
+      "context": "Decoded recipient screen, before explicit continuation; not saved.",
+      "text": {
+        "en": "Check the recipient’s account and currency.",
+        "es": "Revisa la cuenta y la moneda del destinatario.",
+        "de": "Prüfen Sie Konto und Währung des Empfängers.",
+        "fr": "Vérifiez le compte et la devise du destinataire.",
+        "ru": "Проверьте счёт и валюту получателя.",
+        "uk": "Перевірте рахунок і валюту одержувача.",
+        "pt": "Confira a conta e a moeda do destinatário."
+      }
+    },
+    "delete-recipient": {
+      "context": "Explicit deletion intent in recipient list.",
+      "text": {
+        "en": "Remove a saved recipient.",
+        "es": "Elimina un destinatario guardado.",
+        "de": "Entfernen Sie einen gespeicherten Empfänger.",
+        "fr": "Supprimez un destinataire enregistré.",
+        "ru": "Удалите сохранённого получателя.",
+        "uk": "Видаліть збереженого одержувача.",
+        "pt": "Remova um destinatário salvo."
+      }
+    },
+    "confirm-delete": {
+      "context": "Separate deletion confirmation before SMS.",
+      "text": {
+        "en": "Confirm removal.",
+        "es": "Confirma la eliminación.",
+        "de": "Bestätigen Sie das Entfernen.",
+        "fr": "Confirmez la suppression.",
+        "ru": "Подтвердите удаление.",
+        "uk": "Підтвердьте видалення.",
+        "pt": "Confirme a remoção."
+      }
+    },
+    "add-recipient": {
+      "context": "Separate offline local beneficiary creation.",
+      "text": {
+        "en": "Add a recipient from another bank.",
+        "es": "Añade un destinatario de otro banco.",
+        "de": "Fügen Sie einen Empfänger einer anderen Bank hinzu.",
+        "fr": "Ajoutez un destinataire d’une autre banque.",
+        "ru": "Добавьте получателя из другого банка.",
+        "uk": "Додайте одержувача з іншого банку.",
+        "pt": "Adicione um destinatário de outro banco."
+      }
+    },
+    "recipient-name": {
+      "context": "Actual beneficiary name entry.",
+      "text": {
+        "en": "Enter the recipient’s name.",
+        "es": "Escribe el nombre del destinatario.",
+        "de": "Geben Sie den Empfängernamen ein.",
+        "fr": "Saisissez le nom du destinataire.",
+        "ru": "Введите имя получателя.",
+        "uk": "Введіть ім’я одержувача.",
+        "pt": "Digite o nome do destinatário."
+      }
+    },
+    "bank-name": {
+      "context": "Actual beneficiary bank entry.",
+      "text": {
+        "en": "Enter the bank.",
+        "es": "Escribe el banco.",
+        "de": "Geben Sie die Bank ein.",
+        "fr": "Saisissez la banque.",
+        "ru": "Введите банк.",
+        "uk": "Введіть банк.",
+        "pt": "Digite o banco."
+      }
+    },
+    "account-number": {
+      "context": "Actual fictional account-number entry; no SMS code typing.",
+      "text": {
+        "en": "Enter the account number.",
+        "es": "Escribe el número de cuenta.",
+        "de": "Geben Sie die Kontonummer ein.",
+        "fr": "Saisissez le numéro de compte.",
+        "ru": "Введите номер счёта.",
+        "uk": "Введіть номер рахунку.",
+        "pt": "Digite o número da conta."
+      }
+    },
+    "save-recipient": {
+      "context": "Explicit local save tap.",
+      "text": {
+        "en": "Tap Save recipient.",
+        "es": "Toca Guardar destinatario.",
+        "de": "Tippen Sie auf Empfänger speichern.",
+        "fr": "Appuyez sur Enregistrer le destinataire.",
+        "ru": "Нажмите «Сохранить получателя».",
+        "uk": "Натисніть «Зберегти одержувача».",
+        "pt": "Toque em Salvar destinatário."
+      }
+    },
+    "recipient-saved": {
+      "context": "Local offline saved beneficiary visible.",
+      "text": {
+        "en": "Recipient saved.",
+        "es": "Destinatario guardado.",
+        "de": "Empfänger gespeichert.",
+        "fr": "Destinataire enregistré.",
+        "ru": "Получатель сохранён.",
+        "uk": "Одержувача збережено.",
+        "pt": "Destinatário salvo."
+      }
+    },
+    "card-details": {
+      "context": "Open supplied read-only card detail.",
+      "text": {
+        "en": "Open card details.",
+        "es": "Abre los detalles de la tarjeta.",
+        "de": "Öffnen Sie die Kartendetails.",
+        "fr": "Ouvrez les détails de la carte.",
+        "ru": "Откройте сведения о карте.",
+        "uk": "Відкрийте відомості про картку.",
+        "pt": "Abra os detalhes do cartão."
+      }
+    },
+    "copy-card": {
+      "context": "Tap the recorded Copy action on card details. The visible card number remains masked; do not imply a reveal or a different clipboard result.",
+      "text": {
+        "es": "Toca Copiar.",
+        "en": "Tap Copy.",
+        "de": "Tippen Sie auf Kopieren.",
+        "fr": "Appuyez sur Copier.",
+        "ru": "Нажмите «Копировать».",
+        "uk": "Натисніть «Копіювати».",
+        "pt": "Toque em Copiar."
+      }
+    },
+    "card-services": {
+      "context": "Actual informational unavailable-services screen; no administration claim.",
+      "text": {
+        "en": "Card services are unavailable here.",
+        "es": "Los servicios de tarjeta no están disponibles aquí.",
+        "de": "Kartendienste sind hier nicht verfügbar.",
+        "fr": "Les services de carte sont indisponibles ici.",
+        "ru": "Управление картой здесь недоступно.",
+        "uk": "Керування карткою тут недоступне.",
+        "pt": "Os serviços do cartão não estão disponíveis aqui."
+      }
+    },
+    "token-contract": {
+      "context": "Token enrollment contract opens before acceptance.",
+      "text": {
+        "en": "Read the Token BSC contract.",
+        "es": "Lee el contrato de Token BSC.",
+        "de": "Lesen Sie den Token-BSC-Vertrag.",
+        "fr": "Lisez le contrat Token BSC.",
+        "ru": "Прочитайте договор Token BSC.",
+        "uk": "Прочитайте договір Token BSC.",
+        "pt": "Leia o contrato do Token BSC."
+      }
+    },
+    "token-consent": {
+      "context": "Explicit token-contract checkbox selection.",
+      "text": {
+        "en": "Accept the contract to enroll.",
+        "es": "Acepta el contrato para activar el token.",
+        "de": "Stimmen Sie dem Vertrag zur Registrierung zu.",
+        "fr": "Acceptez le contrat pour vous inscrire.",
+        "ru": "Примите договор для подключения токена.",
+        "uk": "Прийміть договір для підключення токена.",
+        "pt": "Aceite o contrato para ativar o token."
+      }
+    },
+    "token-enroll": {
+      "context": "Explicit token enrollment action, approval still pending.",
+      "text": {
+        "en": "Request token activation.",
+        "es": "Solicita activar el token.",
+        "de": "Fordern Sie die Token-Aktivierung an.",
+        "fr": "Demandez l’activation du token.",
+        "ru": "Запросите активацию токена.",
+        "uk": "Запросіть активацію токена.",
+        "pt": "Solicite a ativação do token."
+      }
+    },
+    "token-approval": {
+      "context": "Token activation: tap Consult verification; the recorded bank response opens the token-code screen. Does not claim approval before the bank response.",
+      "text": {
+        "en": "Check approval to view your token code.",
+        "es": "Consulta la aprobación para ver tu código token.",
+        "de": "Prüfen Sie die Freigabe für Ihren Token-Code.",
+        "fr": "Vérifiez l’approbation pour afficher votre code token.",
+        "ru": "Проверьте одобрение, чтобы увидеть код токена.",
+        "uk": "Перевірте схвалення, щоб побачити код токена.",
+        "pt": "Consulte a aprovação para ver seu código token."
+      }
+    },
+    "token-code": {
+      "context": "Actual generated token code state; distinct from SMS.",
+      "text": {
+        "en": "Use your Token BSC code.",
+        "es": "Usa tu código de Token BSC.",
+        "de": "Verwenden Sie Ihren Token-BSC-Code.",
+        "fr": "Utilisez votre code Token BSC.",
+        "ru": "Используйте код Token BSC.",
+        "uk": "Використовуйте код Token BSC.",
+        "pt": "Use seu código Token BSC."
+      }
+    },
+    "token-unlink": {
+      "context": "Unlink intent before confirmation.",
+      "text": {
+        "en": "Unlink this token.",
+        "es": "Desvincula este token.",
+        "de": "Trennen Sie diesen Token.",
+        "fr": "Dissociez ce token.",
+        "ru": "Отключите этот токен.",
+        "uk": "Відключіть цей токен.",
+        "pt": "Desvincule este token."
+      }
+    },
+    "token-unlinked": {
+      "context": "Actual local unlink confirmation after explicit confirm.",
+      "text": {
+        "en": "Token unlinked.",
+        "es": "Token desvinculado.",
+        "de": "Token getrennt.",
+        "fr": "Token dissocié.",
+        "ru": "Токен отключён.",
+        "uk": "Токен відключено.",
+        "pt": "Token desvinculado."
+      }
+    },
+    "qr-request": {
+      "context": "Switch account QR to payment-request mode.",
+      "text": {
+        "en": "Create a payment request.",
+        "es": "Crea una solicitud de pago.",
+        "de": "Erstellen Sie eine Zahlungsanfrage.",
+        "fr": "Créez une demande de paiement.",
+        "ru": "Создайте запрос на оплату.",
+        "uk": "Створіть запит на оплату.",
+        "pt": "Crie uma solicitação de pagamento."
+      }
+    },
+    "purpose": {
+      "context": "Actual payment request service/purpose entry.",
+      "text": {
+        "en": "Enter what the payment is for.",
+        "es": "Escribe el concepto del pago.",
+        "de": "Geben Sie den Zahlungszweck ein.",
+        "fr": "Saisissez le motif du paiement.",
+        "ru": "Введите назначение платежа.",
+        "uk": "Введіть призначення платежу.",
+        "pt": "Digite o motivo do pagamento."
+      }
+    },
+    "save-qr": {
+      "context": "QR PNG save action; picker callback synthetic.",
+      "text": {
+        "en": "Tap Save QR.",
+        "es": "Toca Guardar QR.",
+        "de": "Tippen Sie auf QR speichern.",
+        "fr": "Appuyez sur Enregistrer le QR.",
+        "ru": "Нажмите «Сохранить QR».",
+        "uk": "Натисніть «Зберегти QR».",
+        "pt": "Toque em Salvar QR."
+      }
+    },
+    "review-request": {
+      "context": "Actual decoded request review before recipient continuation; no payment.",
+      "text": {
+        "en": "Check the amount, purpose and recipient.",
+        "es": "Revisa el monto, el concepto y el destinatario.",
+        "de": "Prüfen Sie Betrag, Zweck und Empfänger.",
+        "fr": "Vérifiez le montant, le motif et le destinataire.",
+        "ru": "Проверьте сумму, назначение и получателя.",
+        "uk": "Перевірте суму, призначення й одержувача.",
+        "pt": "Confira o valor, o motivo e o destinatário."
+      }
+    },
+    "print-preview": {
+      "context": "Actual Android preview; no physical printing completion.",
+      "text": {
+        "en": "Tap Print to preview the QR.",
+        "es": "Toca Imprimir para ver la vista previa del QR.",
+        "de": "Tippen Sie auf Drucken für die QR-Vorschau.",
+        "fr": "Appuyez sur Imprimer pour prévisualiser le QR.",
+        "ru": "Нажмите «Печать» для предпросмотра QR.",
+        "uk": "Натисніть «Друк» для перегляду QR.",
+        "pt": "Toque em Imprimir para visualizar o QR."
+      }
+    },
+    "sms-off": {
+      "context": "Actual settings switch off, restored on later.",
+      "text": {
+        "en": "Turn SMS assistance off.",
+        "es": "Desactiva la asistencia SMS.",
+        "de": "Schalten Sie die SMS-Hilfe aus.",
+        "fr": "Désactivez l’aide SMS.",
+        "ru": "Выключите помощь с SMS.",
+        "uk": "Вимкніть допомогу з SMS.",
+        "pt": "Desative a assistência SMS."
+      }
+    },
+    "sms-on": {
+      "context": "Actual settings switch on, separate from delivery preference chips.",
+      "text": {
+        "en": "Turn SMS assistance on.",
+        "es": "Activa la asistencia SMS.",
+        "de": "Schalten Sie die SMS-Hilfe ein.",
+        "fr": "Activez l’aide SMS.",
+        "ru": "Включите помощь с SMS.",
+        "uk": "Увімкніть допомогу з SMS.",
+        "pt": "Ative a assistência SMS."
+      }
+    },
+    "delivery-ask": {
+      "context": "Ask delivery preference, unrelated to SMS assistance toggle.",
+      "text": {
+        "en": "Choose Ask for code delivery.",
+        "es": "Elige Preguntar para recibir códigos.",
+        "de": "Wählen Sie Nachfragen für die Code-Zustellung.",
+        "fr": "Choisissez Demander pour recevoir les codes.",
+        "ru": "Выберите «Спрашивать» для доставки кодов.",
+        "uk": "Виберіть «Запитувати» для доставки кодів.",
+        "pt": "Escolha Perguntar para receber códigos."
+      }
+    },
+    "delivery-email": {
+      "context": "Email delivery preference, no inbox/autofill implication.",
+      "text": {
+        "en": "Choose Email for code delivery.",
+        "es": "Elige Correo para recibir códigos.",
+        "de": "Wählen Sie E-Mail für die Code-Zustellung.",
+        "fr": "Choisissez E-mail pour recevoir les codes.",
+        "ru": "Выберите почту для доставки кодов.",
+        "uk": "Виберіть пошту для доставки кодів.",
+        "pt": "Escolha E-mail para receber códigos."
+      }
+    },
+    "delivery-sms": {
+      "context": "Restore SMS preference; does not change assistance toggle.",
+      "text": {
+        "en": "Choose SMS for code delivery.",
+        "es": "Elige SMS para recibir códigos.",
+        "de": "Wählen Sie SMS für die Code-Zustellung.",
+        "fr": "Choisissez SMS pour recevoir les codes.",
+        "ru": "Выберите SMS для доставки кодов.",
+        "uk": "Виберіть SMS для доставки кодів.",
+        "pt": "Escolha SMS para receber códigos."
+      }
+    },
+    "profile": {
+      "context": "Actual offline profile screen opened.",
+      "text": {
+        "en": "Open your profile.",
+        "es": "Abre tu perfil.",
+        "de": "Öffnen Sie Ihr Profil.",
+        "fr": "Ouvrez votre profil.",
+        "ru": "Откройте свой профиль.",
+        "uk": "Відкрийте свій профіль.",
+        "pt": "Abra seu perfil."
+      }
+    },
+    "security": {
+      "context": "Actual offline security screen opened.",
+      "text": {
+        "en": "Open Security.",
+        "es": "Abre Seguridad.",
+        "de": "Öffnen Sie Sicherheit.",
+        "fr": "Ouvrez Sécurité.",
+        "ru": "Откройте раздел «Безопасность».",
+        "uk": "Відкрийте розділ «Безпека».",
+        "pt": "Abra Segurança."
+      }
+    },
+    "help": {
+      "context": "Actual offline help screen opened.",
+      "text": {
+        "en": "Open Help.",
+        "es": "Abre Ayuda.",
+        "de": "Öffnen Sie Hilfe.",
+        "fr": "Ouvrez Aide.",
+        "ru": "Откройте помощь.",
+        "uk": "Відкрийте допомогу.",
+        "pt": "Abra Ajuda."
+      }
+    },
+    "logout": {
+      "context": "Explicit test-session logout confirmation.",
+      "text": {
+        "en": "Confirm sign out.",
+        "es": "Confirma cerrar sesión.",
+        "de": "Bestätigen Sie das Abmelden.",
+        "fr": "Confirmez la déconnexion.",
+        "ru": "Подтвердите выход.",
+        "uk": "Підтвердьте вихід.",
+        "pt": "Confirme a saída."
+      }
+    },
+    "uncertain": {
+      "context": "Uncertain-operation screen; never claim retry/cancel/reversal.",
+      "text": {
+        "en": "Check history before resolving an uncertain result.",
+        "es": "Revisa el historial antes de resolver un resultado incierto.",
+        "de": "Prüfen Sie den Verlauf bei einem unklaren Ergebnis.",
+        "fr": "Vérifiez l’historique avant de résoudre un résultat incertain.",
+        "ru": "При неопределённом результате сначала проверьте историю.",
+        "uk": "За невизначеного результату спочатку перевірте історію.",
+        "pt": "Confira o histórico antes de resolver um resultado incerto."
+      }
+    },
+    "reconcile": {
+      "context": "Fresh acknowledgement only after loaded history; operation neither retried nor cancelled.",
+      "text": {
+        "en": "Acknowledge only after checking the bank’s result.",
+        "es": "Confirma solo después de comprobar el resultado del banco.",
+        "de": "Bestätigen Sie erst nach Prüfung des Bankergebnisses.",
+        "fr": "Confirmez seulement après avoir vérifié le résultat bancaire.",
+        "ru": "Подтвердите только после проверки результата в банке.",
+        "uk": "Підтвердьте лише після перевірки результату в банку.",
+        "pt": "Confirme somente após verificar o resultado do banco."
+      }
+    },
+    "transfer-receipt": {
+      "context": "Native bank-response receipt is an acknowledgement; it does not unconditionally establish final transaction completion.",
+      "text": {
+        "en": "Check the transfer receipt.",
+        "es": "Revisa el comprobante de la transferencia.",
+        "de": "Prüfen Sie den Überweisungsbeleg.",
+        "fr": "Vérifiez le reçu du virement.",
+        "ru": "Проверьте квитанцию перевода.",
+        "uk": "Перевірте квитанцію переказу.",
+        "pt": "Confira o comprovante da transferência."
+      }
+    },
+    "payment-receipt": {
+      "context": "Native bank-response receipt is an acknowledgement; it does not unconditionally establish final payment completion.",
+      "text": {
+        "en": "Check the payment receipt.",
+        "es": "Revisa el comprobante del pago.",
+        "de": "Prüfen Sie den Zahlungsbeleg.",
+        "fr": "Vérifiez le reçu du paiement.",
+        "ru": "Проверьте квитанцию платежа.",
+        "uk": "Перевірте квитанцію платежу.",
+        "pt": "Confira o comprovante do pagamento."
+      }
+    },
+    "review-recorded": {
+      "context": "Settings: final bank-result acknowledgement completed; native banner records review and explicitly does not resend or cancel the previous operation. This is not a payment-success claim.",
+      "text": {
+        "en": "Review recorded.",
+        "es": "Revisión registrada.",
+        "de": "Prüfung gespeichert.",
+        "fr": "Vérification enregistrée.",
+        "ru": "Проверка записана.",
+        "uk": "Перевірку записано.",
+        "pt": "Revisão registrada."
+      }
+    },
+    "token-sms": {
+      "context": "Second token activation case: common contract and consent were demonstrated in the first case. This native activation tap begins the alternative SMS verification flow; no code submission is implied.",
+      "text": {
+        "en": "Verify token activation by SMS.",
+        "es": "Verifica la activación del token por SMS.",
+        "de": "Bestätigen Sie die Token-Aktivierung per SMS.",
+        "fr": "Vérifiez l’activation du token par SMS.",
+        "ru": "Подтвердите активацию токена по SMS.",
+        "uk": "Підтвердьте активацію токена через SMS.",
+        "pt": "Verifique a ativação do token por SMS."
+      }
+    },
+    "service": {
+      "context": "Select the registered service from the service dropdown, after switching to Services.",
+      "text": {
+        "en": "Choose the service.",
+        "es": "Elige el servicio.",
+        "de": "Wählen Sie den Dienst.",
+        "fr": "Choisissez le service.",
+        "ru": "Выберите услугу.",
+        "uk": "Виберіть послугу.",
+        "pt": "Escolha o serviço."
+      }
+    },
+    "imported-recipient": {
+      "context": "Overview shows imported details in an incomplete new-beneficiary form, not completed recipient validation.",
+      "text": {
+        "en": "Check the imported recipient details.",
+        "es": "Revisa los datos del destinatario importado.",
+        "de": "Prüfen Sie die importierten Empfängerdaten.",
+        "fr": "Vérifiez les coordonnées du destinataire importé.",
+        "ru": "Проверьте импортированные данные получателя.",
+        "uk": "Перевірте імпортовані дані одержувача.",
+        "pt": "Confira os dados do destinatário importado."
+      }
+    },
+    "removal-response": {
+      "context": "Native bank deletion acknowledgement after Verify. Empty single-delete response proves an acknowledgement only; direct the user to check it without claiming confirmed removal.",
+      "text": {
+        "en": "Check the removal response.",
+        "es": "Revisa la respuesta a la eliminación.",
+        "de": "Prüfen Sie die Antwort zur Löschung.",
+        "fr": "Vérifiez la réponse à la suppression.",
+        "ru": "Проверьте ответ на удаление.",
+        "uk": "Перевірте відповідь на видалення.",
+        "pt": "Confira a resposta à remoção."
+      }
+    }
+  },
+  "timelines": {
+    "first-use": [
+      [
+        {
+          "key": "privacy",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "back",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        }
+      ],
+      [
+        {
+          "key": "terms",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "agree",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        },
+        {
+          "key": "continue",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        },
+        {
+          "key": "assistance",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "sms-consent"
+          }
+        }
+      ],
+      [
+        {
+          "key": "settings",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "language",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        },
+        {
+          "key": "spanish",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        }
+      ]
+    ],
+    "login": [
+      [
+        {
+          "key": "sms-approval",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "sms-consent"
+          }
+        },
+        {
+          "key": "signed-in",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "read"
+          }
+        }
+      ],
+      [
+        {
+          "key": "biometric",
+          "anchor": {
+            "type": "scene-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "signed-in",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "receipt"
+          }
+        }
+      ]
+    ],
+    "verification": [
+      [
+        {
+          "key": "security-answer",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "code-filled",
+          "anchor": {
+            "type": "sms-autofill",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "cue": "verify",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "register-device",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "consent"
+          }
+        },
+        {
+          "key": "biometric",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        }
+      ]
+    ],
+    "accounts": [
+      [
+        {
+          "key": "hide-balances",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "show-balances",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "usd",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        },
+        {
+          "key": "dop",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        },
+        {
+          "key": "account",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 5
+          }
+        }
+      ]
+    ],
+    "history": [
+      [
+        {
+          "key": "account",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "history",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "search",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "filter",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        }
+      ],
+      [
+        {
+          "key": "account",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "history",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "csv",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        }
+      ]
+    ],
+    "statements": [
+      [
+        {
+          "key": "statement",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "next-page",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "zoom",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        },
+        {
+          "key": "share-pdf",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        }
+      ],
+      [
+        {
+          "key": "select-statements",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "save-selected",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "saved-statements",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "read"
+          }
+        }
+      ]
+    ],
+    "transfers": [
+      [
+        {
+          "key": "own-transfer",
+          "anchor": {
+            "type": "scene-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "recipient",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "amount",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "review-money",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "review"
+          }
+        },
+        {
+          "key": "confirm-transfer",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "confirm"
+          }
+        },
+        {
+          "key": "code-filled",
+          "anchor": {
+            "type": "sms-autofill",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "cue": "verify",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "transfer-receipt",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "receipt"
+          }
+        }
+      ],
+      [
+        {
+          "key": "same-bank",
+          "anchor": {
+            "type": "scene-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "amount",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "review-money",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "review"
+          }
+        },
+        {
+          "key": "confirm-transfer",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "confirm"
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "verify"
+          }
+        },
+        {
+          "key": "transfer-receipt",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "receipt"
+          }
+        }
+      ],
+      [
+        {
+          "key": "other-bank",
+          "anchor": {
+            "type": "scene-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "amount",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "review-money",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "review"
+          }
+        },
+        {
+          "key": "confirm-transfer",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "confirm"
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "verify"
+          }
+        },
+        {
+          "key": "transfer-receipt",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "receipt"
+          }
+        }
+      ],
+      [
+        {
+          "key": "search",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "recipient",
+          "anchor": {
+            "type": "tap",
+            "occurrence": -1
+          }
+        }
+      ]
+    ],
+    "payments": [
+      [
+        {
+          "key": "service-payment",
+          "anchor": {
+            "type": "scene-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "service",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "amount",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "review-money",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "review"
+          }
+        },
+        {
+          "key": "confirm-payment",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "confirm"
+          }
+        },
+        {
+          "key": "code-filled",
+          "anchor": {
+            "type": "sms-autofill",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "cue": "verify",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "payment-receipt",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "receipt"
+          }
+        }
+      ],
+      [
+        {
+          "key": "card-payment",
+          "anchor": {
+            "type": "scene-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "amount",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "review-money",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "review"
+          }
+        },
+        {
+          "key": "confirm-payment",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "confirm"
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "cue": "verify",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "payment-receipt",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "receipt"
+          }
+        }
+      ]
+    ],
+    "beneficiaries": [
+      [
+        {
+          "key": "paste-recipient",
+          "anchor": {
+            "type": "paste",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "review-recipient",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "review"
+          }
+        },
+        {
+          "key": "continue",
+          "anchor": {
+            "type": "tap",
+            "occurrence": -1
+          }
+        }
+      ],
+      [
+        {
+          "key": "delete-recipient",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "navigation"
+          }
+        },
+        {
+          "key": "confirm-delete",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "confirm"
+          }
+        },
+        {
+          "key": "code-filled",
+          "anchor": {
+            "type": "sms-autofill",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "cue": "verify",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "removal-response",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "receipt"
+          }
+        }
+      ],
+      [
+        {
+          "key": "add-recipient",
+          "anchor": {
+            "type": "scene-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "recipient-name",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "bank-name",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "account-number",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 3
+          }
+        },
+        {
+          "key": "save-recipient",
+          "anchor": {
+            "type": "tap",
+            "occurrence": -1
+          }
+        },
+        {
+          "key": "recipient-saved",
+          "anchor": {
+            "type": "hold",
+            "occurrence": -1,
+            "cue": "read"
+          }
+        }
+      ]
+    ],
+    "cards": [
+      [
+        {
+          "key": "card-details",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "copy-card",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        }
+      ]
+    ],
+    "token": [
+      [
+        {
+          "key": "token-contract",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "token-consent",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        },
+        {
+          "key": "token-enroll",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        },
+        {
+          "key": "token-approval",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 6
+          }
+        },
+        {
+          "key": "token-unlink",
+          "anchor": {
+            "type": "tap",
+            "occurrence": -2
+          }
+        },
+        {
+          "key": "token-unlinked",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "read"
+          }
+        }
+      ],
+      [
+        {
+          "key": "token-sms",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        },
+        {
+          "key": "code-filled",
+          "anchor": {
+            "type": "sms-autofill",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "cue": "verify",
+            "occurrence": 1
+          }
+        }
+      ]
+    ],
+    "qr": [
+      [
+        {
+          "key": "qr-request",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "purpose",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "amount",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "save-qr",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        }
+      ],
+      [
+        {
+          "key": "review-request",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "review"
+          }
+        },
+        {
+          "key": "continue",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "print-preview",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        }
+      ]
+    ],
+    "settings": [
+      [
+        {
+          "key": "sms-off",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "sms-on",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "delivery-ask",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 3
+          }
+        },
+        {
+          "key": "delivery-email",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        },
+        {
+          "key": "delivery-sms",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 5
+          }
+        }
+      ],
+      [
+        {
+          "key": "profile",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 2
+          }
+        },
+        {
+          "key": "security",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 4
+          }
+        },
+        {
+          "key": "help",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 6
+          }
+        },
+        {
+          "key": "logout",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 9
+          }
+        }
+      ],
+      [
+        {
+          "key": "uncertain",
+          "anchor": {
+            "type": "scene-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "reconcile",
+          "anchor": {
+            "type": "hold",
+            "cue": "uncertain",
+            "occurrence": 7
+          }
+        },
+        {
+          "key": "review-recorded",
+          "anchor": {
+            "type": "hold",
+            "cue": "uncertain",
+            "occurrence": 10
+          }
+        }
+      ]
+    ],
+    "overview": [
+      [
+        {
+          "key": "sms-approval",
+          "anchor": {
+            "type": "group-start",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "signed-in",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "read"
+          }
+        }
+      ],
+      [
+        {
+          "key": "code-filled",
+          "anchor": {
+            "type": "sms-autofill",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "verify",
+          "anchor": {
+            "type": "hold",
+            "cue": "verify",
+            "occurrence": 1
+          }
+        },
+        {
+          "key": "transfer-receipt",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "receipt"
+          }
+        }
+      ],
+      [
+        {
+          "key": "spanish",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "biometric",
+          "anchor": {
+            "type": "group-start",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "hide-balances",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "search",
+          "anchor": {
+            "type": "typing",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "next-page",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "payment-receipt",
+          "anchor": {
+            "type": "group-start",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "imported-recipient",
+          "anchor": {
+            "type": "hold",
+            "occurrence": 1,
+            "cue": "review"
+          }
+        }
+      ],
+      [
+        {
+          "key": "copy-card",
+          "anchor": {
+            "type": "tap",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "token-code",
+          "anchor": {
+            "type": "group-start",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "review-request",
+          "anchor": {
+            "type": "group-start",
+            "occurrence": 1
+          }
+        }
+      ],
+      [
+        {
+          "key": "sms-on",
+          "anchor": {
+            "type": "group-start",
+            "occurrence": 1
+          }
+        }
+      ]
+    ]
+  }
+}

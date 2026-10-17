@@ -1,29 +1,37 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:10.690
-Simulierter Token BSC: Vertrag, Zustimmung, Testfreigabe, erzeugter Code und Trennen. Der erzeugte Code ist keine SMS.
+00:00:04.021 --> 00:00:07.093
+Lesen Sie den Token-BSC-Vertrag.
 
 2
-00:00:26.160 --> 00:00:29.712
-Erst prüfen, dann gesondert bestätigen.
+00:00:15.764 --> 00:00:19.244
+Stimmen Sie dem Vertrag zur Registrierung zu.
 
 3
-00:00:37.695 --> 00:00:40.719
-Ein Token-Code ist keine SMS.
+00:00:23.672 --> 00:00:26.840
+Fordern Sie die Token-Aktivierung an.
 
 4
-00:01:30.234 --> 00:01:39.378
-Simulierte Token-Registrierung: Android füllt SMS-Code aus, dann ausdrücklich Prüfen; kein Nachweis abgeschlossener Registrierung.
+00:00:31.188 --> 00:00:34.572
+Prüfen Sie die Freigabe für Ihren Token-Code.
 
 5
-00:01:56.370 --> 00:01:59.922
-Erst prüfen, dann gesondert bestätigen.
+00:00:39.519 --> 00:00:41.967
+Trennen Sie diesen Token.
 
 6
-00:02:14.333 --> 00:02:18.077
-Tastatur-Autofill erfordert weiterhin Prüfen.
+00:00:50.032 --> 00:00:52.000
+Token getrennt.
 
 7
-00:02:18.591 --> 00:02:21.831
-Ein Testergebnis mit fiktiven Daten.
+00:00:53.677 --> 00:00:57.589
+Bestätigen Sie die Token-Aktivierung per SMS.
+
+8
+00:01:00.994 --> 00:01:03.562
+SMS-Code ausgefüllt.
+
+9
+00:01:05.400 --> 00:01:07.848
+Tippen Sie auf Bestätigen.

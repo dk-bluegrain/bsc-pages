@@ -1,0 +1,132 @@
+{
+  "revision": 1,
+  "frames": {
+    "first-use": {
+      "source": "first-use.mp4",
+      "sourceSha256": "7284205bcd74c5520e756a5eb0781b2884c9e319f6c9bec64159ffd09399cf8b",
+      "timeSeconds": 74.5,
+      "context": "Language picker with all seven choices visible; no notice wall or acceptance implied.",
+      "poster": "first-use.jpg",
+      "sha256": "03e004ce8f281617d578fd17b0779f806df78d0438c0b2b856d7cc2549b824e1",
+      "bytes": 28280
+    },
+    "login": {
+      "source": "login.mp4",
+      "sourceSha256": "b62b4b7e24b6812d31349484c78538db3b0fd788a7737feb1da6f3673e993d76",
+      "timeSeconds": 6.8,
+      "context": "Clean SMS login code-entry screen before automatic verification; no loading overlay.",
+      "poster": "login.jpg",
+      "sha256": "03a7018e77dfae0d47ee3036144e753525492f50444e008dfaa2b4cd87abb0ec",
+      "bytes": 73658
+    },
+    "verification": {
+      "source": "verification.mp4",
+      "sourceSha256": "272cc0167f1d9fcc3f7459a1461c5616b8aeea7568472c6d3c15d6f203f27b82",
+      "timeSeconds": 36.0,
+      "context": "Explicit device-registration confirmation, with the native request and cancel actions.",
+      "poster": "verification.jpg",
+      "sha256": "f8d594ced991453fc47e157633388b6a7b9b743afe6ad3c6f18dccf936cbdeff",
+      "bytes": 40102
+    },
+    "accounts": {
+      "source": "accounts.mp4",
+      "sourceSha256": "cd6e93826c4b7e0132ff5b9d80bd76453605dc70a087c056d81efb834a1ea1b0",
+      "timeSeconds": 13.8,
+      "context": "Home balances and recent activity, visible DOP amounts and masked account numbers.",
+      "poster": "accounts.jpg",
+      "sha256": "3baf2c002c2a6795e75512d6b7c971be05eaa826a6e2978a7b81e616a3bad2a9",
+      "bytes": 57938
+    },
+    "history": {
+      "source": "history.mp4",
+      "sourceSha256": "9715abea32c51baac2e2696e85ee2d3cbf856e7f48d5dbc753c6fd8ca062d0b3",
+      "timeSeconds": 31.8,
+      "context": "Filtered transaction search result after the keyboard and tap marker disappear.",
+      "poster": "history.jpg",
+      "sha256": "f5845dfb8c9ec01850befd70c70ed0352e076c022214bd73900f75a301d3b339",
+      "bytes": 51534
+    },
+    "statements": {
+      "source": "statements.mp4",
+      "sourceSha256": "010a714a57d86162ed3085c9819ac10fadf6c2b04e4b55365742021712b84eb7",
+      "timeSeconds": 3.5,
+      "context": "Statement-period catalogue with PDF actions, rather than a mostly blank synthetic PDF page.",
+      "poster": "statements.jpg",
+      "sha256": "5c42849b25f752ede1d96707ea46b7c8b46733e6619b8848e183db26e075dc5a",
+      "bytes": 53856
+    },
+    "transfers": {
+      "source": "transfers.mp4",
+      "sourceSha256": "703da1d22b284568ef7ff9c6d48810ac7e86b92c89c61a4e27a6f0f80d72fabc",
+      "timeSeconds": 25.0,
+      "context": "Transfer review showing source, recipient, amount and fees before confirmation; no dark confirmation overlay.",
+      "poster": "transfers.jpg",
+      "sha256": "a2291a36e8a1e3b6d8726a8ed7a2ebde609b6ffcf2505dfa1c1e9dc7f9528ded",
+      "bytes": 49211
+    },
+    "payments": {
+      "source": "payments.mp4",
+      "sourceSha256": "9d16ba29fe868df76b43773a85d5cd3f7ea3895bc32c5bb86d97571aa562e646",
+      "timeSeconds": 29.3,
+      "context": "Payment review showing source, payee, amount and fees; no confirmation overlay.",
+      "poster": "payments.jpg",
+      "sha256": "dc2d11c929c411f308dd277d105bcab7a2e40706b301914d2dd3cf2fa8dc1358",
+      "bytes": 46825
+    },
+    "beneficiaries": {
+      "source": "beneficiaries.mp4",
+      "sourceSha256": "37d99d411aeb26801e6d5ca1c35d5884a7ad193d1506ec907e1c29b27426941b",
+      "timeSeconds": 25.7,
+      "context": "Readable recipient review with account, bank and currency; no pasted JSON or keyboard.",
+      "poster": "beneficiaries.jpg",
+      "sha256": "9beae4c1e3d735a83e77c8a57c0e5116bbfe7298e2fa08179ce29708c466f39b",
+      "bytes": 44359
+    },
+    "cards": {
+      "source": "cards.mp4",
+      "sourceSha256": "c07a36cfc7a3fdd1f1cac23ac13785dcef635a121f1090a50a102a9b096e9b2f",
+      "timeSeconds": 13.0,
+      "context": "Revealed card details and Copy controls; card number stays masked to its last four digits.",
+      "poster": "cards.jpg",
+      "sha256": "b78674828c3fb8bc61ebfffc59f4c5f0da611c2386a688415edc78d398ceb6fe",
+      "bytes": 39123
+    },
+    "token": {
+      "source": "token.mp4",
+      "sourceSha256": "db6657a1e715dd14462effb797ff4cd45df6fc4b607fbc2f75a3aed65f25d3ed",
+      "timeSeconds": 35.7,
+      "context": "Active fictional Token BSC code after approval; no pending-enrollment or contract screen.",
+      "poster": "token.jpg",
+      "sha256": "217482b83a21f8b360f0108256bc68326484ed564a5a75ebfc4a31157c668ceb",
+      "bytes": 22809
+    },
+    "qr": {
+      "source": "qr.mp4",
+      "sourceSha256": "137a6f29d15bed9a71da8d762b401dac41ba0ec02af3e8d69121ea9ded9cb8c6",
+      "timeSeconds": 3.5,
+      "context": "Complete account QR and share/save/print controls with no numeric keyboard.",
+      "poster": "qr.jpg",
+      "sha256": "c4965da915dad50b66c8d59551febab627d01d2e5c6dc0bdc90ec8cbd19b9428",
+      "bytes": 67475
+    },
+    "settings": {
+      "source": "settings.mp4",
+      "sourceSha256": "4cdf3818d03a29df54cc52efb5716b311e260c16cd69793ef0ed1dba2deae917",
+      "timeSeconds": 47.0,
+      "context": "SMS assistance enabled and SMS delivery selected, with actual settings controls visible.",
+      "poster": "settings.jpg",
+      "sha256": "d52d4ce94f6b7ea2279915244ba32b0aae16ece60a86746b61019a842a8cd2fc",
+      "bytes": 97048
+    },
+    "overview": {
+      "source": "overview.mp4",
+      "sourceSha256": "f7208f85e662e0e326f20f195d7f8f99ceff6b1b41bf24991600d4e3bbf542e6",
+      "timeSeconds": 39.6,
+      "context": "Native home dashboard with visible balances, card and recent activity before the privacy toggle.",
+      "poster": "overview.jpg",
+      "sha256": "0905972370dc3f8b7d506253662babe1ff1d2010440226ebb6da37a3f23bc79a",
+      "bytes": 54918
+    }
+  },
+  "policySha256": "c52029525e016b6b80adf3c555b1d65511ed529c98485b64ba18d448656c0c2e"
+}

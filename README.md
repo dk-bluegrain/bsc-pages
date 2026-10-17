@@ -14,8 +14,13 @@ and owner-account validation remain unresolved. No Google Play submission.
 ## Build and preview
 
 Requires Python3, FFmpeg and FFprobe; HTML generation uses the Python standard
-library. Optional voice generation uses `requirements-media.txt`. Approved media
-is canonical in `docs/media/`; HTML generation preserves it.
+library. Optional voice generation uses `requirements-media.txt`. Approved
+media is canonical in `docs/media/`; HTML generation preserves it. Preview
+images use reviewed frames from the final video masters, pinned in `src/poster-
+frames.json`; `python3 scripts/refresh-posters.py` reproduces them. After a
+video edit, review and update its frame selection before refreshing. The
+checker rejects stale frame pins, and preview URLs include the image hash so
+browsers discard old thumbnails.
 
 ```sh
 python3 scripts/build.py
@@ -49,6 +54,8 @@ The site has no banking login, credential collection, analytics or backend.
   screenshots.
 - `src/content.json` and `src/CONTENT.md`: edition/download, support, installation
   and privacy copy. Original-app feature absences are not inferred or invented.
+- `src/narration-actions.json`: canonical seven-language spoken actions, with
+  per-phrase context and explicit event anchors for every final video.
 - `src/captions.json`, `src/scenario-captions.json`, `src/scene-captions.json` and
   `src/CAPTIONS.md`: localized scene and reading-hold cues, with scope/context.
   `src/transcripts.json` is generated from the actual timed cues.
@@ -75,16 +82,21 @@ Revision 4 starts non-authentication videos inside the feature. Quiet fixture
 sign-in happens before `scene-start` and is excluded from the export/gallery.
 Metadata and static checks reject login input events outside authentication/setup.
 Financial feature videos use native fake-bank SMS flows; no typed offline demo
-code substitutes for SMS autofill. Every required SMS shows an empty field, the
-actual automatic-fill callback, a readable filled state and continuation. SMS-only
+code substitutes for SMS autofill. The first SMS walkthrough shows an empty field, the actual automatic-fill
+callback, a readable filled state and continuation. Later transfer/payment
+variants omit the repeated wait/autofill footage and resume on the filled code
+before their own explicit Verify tap; each variant retains its review,
+confirmation and actual bank result. SMS-only
 login can continue after approved one-message sharing; financial and combined-
 question flows retain explicit Verify. Assistance is enabled except initial
 pre-choice onboarding and the explicit settings off/on demonstration.
 
 Source capture pauses are intentional: opening 5 s, navigation 3.5 s, SMS empty 3 s and filled
 5.5 s, review/receipt 8 s, important consent/uncertain outcomes 10–12 s. The native
-UI stays at normal speed. Presentation exports shorten idle holds while preserving
-every recorded action, its touch marker and readable SMS/review states. A synthetic bank-response delay makes the automatic
+UI stays at normal speed. Presentation exports shorten idle holds and remove explicitly reviewed repeated
+steps, failed setup and unavailable controls in `src/editorial-cuts.json`. Retained native actions keep their
+touch markers and readable SMS/review states. Original events and reasoned
+exclusions remain in the event provenance. A synthetic bank-response delay makes the automatic
 login transition legible without changing production timing. The main tour leads
 with complete SMS-login and financial-fill/Verify sequences, then useful native
 interactions across all 13 groups; its total stays between 90 and 120 seconds.
@@ -151,8 +163,11 @@ python3 -m venv /tmp/bsc-pages-qa
 Checks cover all seven languages at 390, 820 and 1440 px: responsive layout,
 keyboard dialogs/focus, task anchors, no video/caption requests before Play,
 keyboard-started playback, speed selection before playback, the user-started tour,
-single-player playback, JPG/MP4 links without JavaScript, transcripts, privacy and
-versioned downloads. Use
+single-player playback, JPG/MP4 links without JavaScript, every rendered transcript
+against its canonical ordered actions, privacy and versioned downloads. At 820 px,
+all 98 localized players decode video and audio with the selected page language’s
+native captions; each complete caption sequence matches its transcript and an
+actual playing cue is checked. Use
 `--url https://dk-bluegrain.github.io/bsc-pages/` for anonymous public verification.
 Static checks additionally verify all local assets, 14 silent videos, 98 timed
 caption tracks, actual SMS events in the leading tour segments, login exclusions,

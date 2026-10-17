@@ -1,13 +1,17 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.098
-A simulated one-message approval result demonstrates automatic verification of SMS-only login, not keyboard autofill.
+00:00:04.712 --> 00:00:07.664
+Allow sharing this SMS to sign in.
 
 2
-00:00:16.634 --> 00:00:22.586
-Simulated biometric unlock of saved access; bank approval is a separate requirement.
+00:00:11.791 --> 00:00:14.815
+Done. You’re signed in.
 
 3
-00:00:25.497 --> 00:00:28.641
-A test result, using fictional data.
+00:00:16.634 --> 00:00:19.778
+Unlock saved access with biometrics.
+
+4
+00:00:25.630 --> 00:00:28.654
+Done. You’re signed in.

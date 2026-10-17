@@ -1,33 +1,57 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:05.266
-Service, account and amount in view before confirming and verifying payment.
+00:00:00.250 --> 00:00:02.218
+Pay a service bill.
 
 2
-00:00:25.987 --> 00:00:30.355
-Review the details. Nothing is authorized yet.
+00:00:10.401 --> 00:00:12.321
+Choose the service.
 
 3
-00:00:42.790 --> 00:00:45.694
-Review, then confirm separately.
+00:00:19.784 --> 00:00:21.656
+Enter the amount.
 
 4
-00:01:02.270 --> 00:01:05.414
-A test result, using fictional data.
+00:00:25.587 --> 00:00:28.611
+Check the recipient, amount and fees.
 
 5
-00:01:33.957 --> 00:01:38.325
-Review the details. Nothing is authorized yet.
+00:00:38.724 --> 00:00:40.740
+Confirm the payment.
 
 6
-00:01:50.036 --> 00:01:52.940
-Review, then confirm separately.
+00:00:48.187 --> 00:00:50.299
+SMS code filled.
 
 7
-00:02:05.607 --> 00:02:08.607
-Keyboard autofill still needs Verify.
+00:00:52.633 --> 00:00:54.505
+Tap Verify.
 
 8
-00:02:09.865 --> 00:02:13.009
-A test result, using fictional data.
+00:00:56.804 --> 00:00:58.964
+Check the payment receipt.
+
+9
+00:01:04.100 --> 00:01:06.020
+Pay a credit card.
+
+10
+00:01:19.129 --> 00:01:21.001
+Enter the amount.
+
+11
+00:01:25.290 --> 00:01:28.314
+Check the recipient, amount and fees.
+
+12
+00:01:37.770 --> 00:01:39.786
+Confirm the payment.
+
+13
+00:01:42.340 --> 00:01:44.212
+Tap Verify.
+
+14
+00:01:46.569 --> 00:01:48.729
+Check the payment receipt.

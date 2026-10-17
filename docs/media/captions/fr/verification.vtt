@@ -1,9 +1,21 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:07.066
-Banque simulée : question de sécurité et SMS restent distincts ; remplir le code conserve Vérifier.
+00:00:03.857 --> 00:00:06.905
+Saisissez votre réponse de sécurité.
 
 2
-00:00:29.367 --> 00:00:36.639
-Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe.
+00:00:09.893 --> 00:00:12.029
+Code SMS rempli.
+
+3
+00:00:14.420 --> 00:00:16.532
+Appuyez sur Vérifier.
+
+4
+00:00:27.710 --> 00:00:30.110
+Enregistrez cet appareil.
+
+5
+00:00:38.296 --> 00:00:41.632
+Déverrouillez l’accès enregistré par biométrie.

@@ -26,8 +26,8 @@ unchanged release filenames and hashes, installation screenshot provenance, loca
 file budgets. Chromium covers 21 language/viewport combinations, edition routing,
 mobile quick links, screenshot decoding, keyboard dialogs/focus return, matching
 language/canonical routes, zero video requests on download pages and access
-without JavaScript. The existing eight unit tests and the Android translation
-checker (1,029 entries in seven languages) pass. Desktop/mobile English and
+without JavaScript. At that installation-guide baseline, eight unit tests and the Android
+translation checker (1,029 entries in seven languages) passed. Desktop/mobile English and
 sampled German/Russian layouts received visual review.
 
 Both existing public APKs match their published SHA-256 values. This is a
@@ -40,64 +40,133 @@ legal conclusion. No native-speaker or legal certification is claimed.
 
 ## Current narrated presentation
 
-The quicker edit removes idle hold frames while keeping recorded actions at
-normal speed. The original 14 exports total 1,979.398 seconds; the edited exports
-total 1,502.134 seconds, 24.1% shorter. Individual chapters are 20.9–28.7% shorter.
-The tour changes from 108.533 to 91.8 seconds (about 1:32).
+Six sequential, independent agent passes reviewed and corrected the videos,
+spoken actions, captions, transcripts and browser presentation. The final edit
+keeps all 13 feature groups and the overview. The 14 original exports total
+1,979.398 seconds; the current exports total 1,195.732 seconds, 39.6% shorter.
+Explicit reviewed cuts remove 187.067 seconds of repeated or nonessential footage;
+idle holds account for another 596.598 seconds. Retained native actions run at
+original speed. The overview is 92.6 seconds (about 1:33).
 
-Every video has narration in all seven page languages: 98 H.264/AAC MP4s, with
-67 synchronized speech cues per language and matching captions/transcripts. Edge
-neural voices were generated with `edge-tts==7.3.1`; no paid account/API key was
-used. The site serves pre-rendered local media and downloads only the selected
-language after Play. Voice choices, alternatives, scope and regeneration commands
-are in [VIDEO-SCRIPTS.md](VIDEO-SCRIPTS.md#narrated-presentation) and [README.md](README.md).
+Narration uses concise intent and actions, such as “Enter the amount,” “Tap
+Verify” and “Check the transfer receipt.” Each instruction is tied to a recorded
+event. No authored instruction may be silently dropped to fit speech. Distinct
+transfer/payment variants retain their review, confirmation, Verify and bank
+result; repeated waiting/autofill is omitted after the first complete example.
+Unavailable card controls, failed setup and abandoned repeated attempts are cut.
+Result wording follows the actual recorded outcome. Financial receipts are not
+narrated as unconditional transaction completion.
 
-The voiced English tour is 1.27 MB. The largest voiced file in any language is
-2.12 MB; the complete deployment is approximately 105.5 MiB, below the 250 MiB
-budget. Displayed durations below omit fractional seconds; sizes use decimal MB.
+All seven page languages have 14 H.264/AAC videos: 98 narrated MP4s, 98 WebVTT
+tracks and 133 synchronized cues per language (931 total). Ordered transcripts
+match every timed cue, including consequential actions repeated in distinct flows.
+Edge neural voices use `edge-tts==7.3.1`; no paid account/API key was used. Visitors
+receive pre-rendered local media in the selected language after Play. Reproduction
+is documented in [VIDEO-SCRIPTS.md](VIDEO-SCRIPTS.md#narrated-presentation) and
+[README.md](README.md).
 
-| Video | Original | Edited | Voiced English MB |
+The voiced English overview is 1.17 MB; the largest narrated file is 2.12 MB.
+The complete deployment is approximately 98.0 MiB, below the 250 MiB budget.
+Durations below omit fractional seconds; sizes use decimal MB.
+
+| Video | Original | Current | Voiced English MB |
 | --- | --- | --- | --- |
-| Overview | 1:48 | 1:31 | 1.27 |
-| Login | 0:48 | 0:35 | 0.45 |
-| Accounts | 1:01 | 0:48 | 0.38 |
-| History | 1:27 | 1:08 | 0.58 |
-| Transfers | 5:17 | 4:01 | 2.07 |
-| Payments | 3:04 | 2:19 | 1.23 |
-| Statements | 1:25 | 1:04 | 0.46 |
-| QR | 1:46 | 1:23 | 0.63 |
-| Beneficiaries | 3:09 | 2:27 | 1.14 |
-| Cards | 1:20 | 0:59 | 0.33 |
-| Token | 3:28 | 2:28 | 0.81 |
-| Settings | 4:33 | 3:25 | 1.72 |
-| Device setup | 1:15 | 0:56 | 0.68 |
-| First use | 2:31 | 1:52 | 0.99 |
+| Overview | 1:48 | 1:32 | 1.17 |
+| Login | 0:48 | 0:33 | 0.41 |
+| Accounts | 1:01 | 0:45 | 0.40 |
+| History | 1:27 | 1:04 | 0.61 |
+| Transfers | 5:17 | 3:17 | 2.07 |
+| Payments | 3:04 | 1:53 | 1.21 |
+| Statements | 1:25 | 0:58 | 0.47 |
+| QR | 1:46 | 1:05 | 0.55 |
+| Beneficiaries | 3:09 | 2:06 | 1.05 |
+| Cards | 1:20 | 0:29 | 0.21 |
+| Token | 3:28 | 1:16 | 0.53 |
+| Settings | 4:33 | 2:33 | 1.40 |
+| Device setup | 1:15 | 0:49 | 0.64 |
+| First use | 2:31 | 1:29 | 0.99 |
 
-Verification performed locally:
+Current verification:
 
-- Eight unit tests passed for protected action windows, hold budgets, overlapping
-  holds, translation lengths, scene boundaries and optional narration deadlines.
-- All 21 language/viewport browser combinations passed, including zero MP4/VTT
-  requests before Play, keyboard playback, the correct localized MP4, decoded
-  unmuted audio in seven languages, playback isolation and no-JavaScript links.
-- Static checks passed for all 14 paced masters, 98 narrated MP4s and 98 caption
-  tracks: language tags, durations, ordered speech cues, hashes, fast-start metadata,
-  retained input events, edited event mapping, provenance and file budgets.
-- All seven voiced tours decoded with non-silent audio and peaks between -2.2
-  and -1.5 dBFS. These measurements do not replace native-speaker listening review.
-- At simulated 50,000 download bytes/second (400 kbps) with 400 ms latency,
-  voiced playback began 6.49 seconds after Play. Initial load requested one JPG
-  and no MP4 or captions; only the English MP4 was requested after the click.
-  This is a local Chromium simulation, not a hosting/device guarantee.
-- Regenerating the tour from the pinned unedited source preserved all 19 tested
-  media, caption, manifest and event hashes. Partial raw caption regeneration is
-  rejected before it can mix original and edited timelines.
-- Sampled edited-tour frames retain both leading SMS sequences' empty/filled
-  fields and their actual simulated account/receipt results.
+- All 13 unit tests pass for action windows, speech fit, event anchors, exclusions,
+  complete retained/excluded source-event accounting and chronological transcripts.
+- All 21 Chromium language/viewport cases pass at 390, 820 and 1440 px, including
+  every rendered transcript, lazy loading, keyboard playback, speed selection,
+  player isolation, download/privacy routes and no-JavaScript links.
+- All 98 localized players decode video and audio. All 931 browser-loaded native
+  cues exactly match their ordered transcripts; selected-language caption tracks
+  and an actual playing cue pass for every player at 820 px.
+- Static checks cover all 14 silent masters, 98 narrated videos and 98 caption
+  tracks: canonical action order/text, catalogue and editorial-policy hashes,
+  source-event archives, language/timing, fast-start encoding and file budgets.
+- Actual decoded speech fits every mandatory window in all seven languages.
+  The tightest window is Spanish QR review: 4.224 s within 4.255 s available.
+- All 14 final cue sheets received visual review. Fifteen contact sheets contain
+  155 actual encoded-video frames covering every cue, reviewed cut boundaries and
+  leading overview SMS/results; the beneficiary sheet was regenerated after the
+  final acknowledgement correction. All seven languages received mobile/desktop
+  caption and transcript visual review. “Statements saved” follows the actual
+  2/2 saved result. The bank deletion callback only acknowledges a request;
+  narration now says “Check the removal response” in every language.
+- The seven current overview AAC tracks are non-silent: mean levels range from
+  -23.5 to -21.9 dBFS and peaks from -1.5 to -1.1 dBFS. MP4 hashes accompany these
+  measurements in `docs/verification.json`.
+- Build, Python compilation and `git diff --check` pass. SHA-256 comparison preserves prior browser acceptance for 91 unchanged
+  localized MP4/VTT pairs. All seven changed beneficiary players were retested
+  during the actual removal-response cue, and every rendered transcript was
+  checked again in all seven languages. A final 21-case locale/viewport probe
+  confirms all ordered transcripts and no horizontal overflow after that fix.
 
-Reports and visual samples: `/tmp/bsc-pages-narration-browser-results`.
-These website/media changes have not been published. No production APK or live
-banking behavior changed, and the earlier owner-account validation limits remain.
+The six review passes were:
+
+| Pass | Review and correction |
+| --- | --- |
+| 1 | Replace explanatory narration with event-anchored actions; preserve every chronological cue. |
+| 2 | Fix localized address and truthful outcomes; remove redundant token/QR/settings attempts. |
+| 3 | Measure actual speech, fix overlong Copy wording and regenerate all seven-language media. |
+| 4 | Review every video; correct labels and confirmation timing; cut repeated SMS and unavailable controls; regenerate. |
+| 5 | Review rendered copy and captions; verify all 98 actual localized players and all 931 cues in Chromium. |
+| 6 | Audit current artifacts against native outcome semantics; correct deletion acknowledgement in all languages, regenerate and retest; reconcile final evidence. |
+
+Local evidence is retained under `/tmp/bsc-pages-six-pass/iteration4/`,
+`iteration5/` and `iteration6/`, with independent pass reports at
+`/tmp/bsc-pages-iteration-{1,2,3,4,5,6}.md`. Temporary evidence paths are local
+working records; canonical sources, generated media, provenance and concise
+machine-readable acceptance results remain in the repository.
+
+Earlier 67-cue, 1,502.134-second narration measurements are historical. Their
+slow-network timing and 19-file regeneration comparison are archived separately
+in `historicalPresentationMeasurements` in `docs/verification.json`; neither was
+rerun or attributed to the current edit. The loading audit below likewise
+records the earlier silent-media baseline.
+
+Publication uses `scripts/publish.py` after committing the verified sources and
+media. The publisher compares every anonymously deployed file and both APK
+downloads against local SHA-256 values. The current signed app remains 1.12.1
+(28); changes since that app build affect capture tooling and website media. No
+new Android build or owner-bank validation was needed for these media edits.
+
+## Reviewed video preview images
+
+All 14 images shown before Play were reviewed and replaced with frames from the
+final native videos. Beneficiaries now shows readable recipient details instead
+of pasted JSON. Other previews show clean search results, statement periods,
+review details, an active Token BSC code, a complete QR, language selection and
+the home dashboard. Keyboards, loading states, pending token setup and generic
+confirmation overlays are avoided where a useful clean frame is available.
+
+`src/poster-frames.json` pins each reviewed timestamp and source-video SHA-256.
+`scripts/refresh-posters.py` reproduces the images and `docs/media/posters.json`
+records their hashes. The checker rejects changed source videos or stale images
+until the frame is reviewed again. Preview and player-poster URLs hash the JPG
+itself, so replacing an image invalidates its browser cache independently of the
+video. Narration regeneration also refreshes the reviewed frames.
+
+Chromium checked every preview across seven languages at 390, 820 and 1440 px:
+294 image decodes, matching preview/player posters and current image hashes, with
+zero MP4/VTT requests before Play. All 14 actual preview displays received visual
+review at mobile and desktop sizes. Evidence: `/tmp/bsc-pages-six-pass/posters/`.
+The video, audio, caption and transcript content from the sixth pass is unchanged.
 
 ## Original capture and website baseline
 
@@ -156,11 +225,11 @@ certification or Google Play submission is claimed.
 Machine-readable results: [verification.json](docs/verification.json).
 Repeatable commands: [README.md](README.md) and [VIDEO-SCRIPTS.md](VIDEO-SCRIPTS.md).
 
-## Video loading and size audit
+## Historical video loading and size audit
 
-The published site already uses `preload="none"`: a Chromium network inspection
+At the earlier loading audit, the published site used `preload="none"`: a Chromium network inspection
 confirmed no MP4 requests on entry or while changing chapters. However, its 14
-video posters request 1,035,042 bytes immediately. The local update uses an eager
+video posters request 1,035,042 bytes immediately. That local loading update introduced an eager
 93 KB hero JPG, lazy chapter JPGs and inert player templates. Neither videos nor
 captions can load until Play. JPG links open the MP4 directly without JavaScript.
 Native controls, captions, selected speed and keyboard focus work after playback

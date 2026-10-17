@@ -1,29 +1,37 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:11.962
-Token BSC simulado: contrato, consentimiento, aprobación de prueba, código generado y desvinculación. El código no es SMS.
+00:00:04.021 --> 00:00:07.237
+Lee el contrato de Token BSC.
 
 2
-00:00:26.160 --> 00:00:29.256
-Revisa y confirma por separado.
+00:00:15.764 --> 00:00:19.076
+Acepta el contrato para activar el token.
 
 3
-00:00:37.695 --> 00:00:41.487
-El código del token no es un SMS.
+00:00:23.672 --> 00:00:26.480
+Solicita activar el token.
 
 4
-00:01:30.234 --> 00:01:39.858
-Inscripción de token simulada: SMS autocompletado por Android y Verificar expreso; este caso no acredita inscripción completada.
+00:00:31.188 --> 00:00:35.076
+Consulta la aprobación para ver tu código token.
 
 5
-00:01:56.370 --> 00:01:59.466
-Revisa y confirma por separado.
+00:00:39.519 --> 00:00:42.183
+Desvincula este token.
 
 6
-00:02:14.333 --> 00:02:18.245
-El teclado completa; tú pulsas Verificar.
+00:00:50.032 --> 00:00:52.360
+Token desvinculado.
 
 7
-00:02:18.591 --> 00:02:22.455
-Resultado de prueba, con datos ficticios.
+00:00:53.677 --> 00:00:57.637
+Verifica la activación del token por SMS.
+
+8
+00:01:00.994 --> 00:01:04.186
+Código SMS completado.
+
+9
+00:01:05.400 --> 00:01:07.512
+Toca Verificar.

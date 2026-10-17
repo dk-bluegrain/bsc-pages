@@ -1,33 +1,57 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:05.602
-Serviço, conta e valor à vista antes de confirmar e verificar o pagamento.
+00:00:00.250 --> 00:00:02.698
+Pague uma conta de serviço.
 
 2
-00:00:25.987 --> 00:00:29.779
-Confira os dados. Nada foi autorizado ainda.
+00:00:10.401 --> 00:00:12.417
+Escolha o serviço.
 
 3
-00:00:42.790 --> 00:00:45.766
-Confira e confirme separadamente.
+00:00:19.784 --> 00:00:21.656
+Digite o valor.
 
 4
-00:01:02.270 --> 00:01:05.510
-Resultado de teste, com dados fictícios.
+00:00:25.587 --> 00:00:29.019
+Confira o destinatário, o valor e as tarifas.
 
 5
-00:01:33.957 --> 00:01:37.749
-Confira os dados. Nada foi autorizado ainda.
+00:00:38.724 --> 00:00:40.860
+Confirme o pagamento.
 
 6
-00:01:50.036 --> 00:01:53.012
-Confira e confirme separadamente.
+00:00:48.187 --> 00:00:50.947
+Código SMS preenchido.
 
 7
-00:02:05.607 --> 00:02:09.111
-O teclado preenche; você toca em Verificar.
+00:00:52.633 --> 00:00:54.529
+Toque em Verificar.
 
 8
-00:02:09.865 --> 00:02:13.105
-Resultado de teste, com dados fictícios.
+00:00:56.804 --> 00:00:59.588
+Confira o comprovante do pagamento.
+
+9
+00:01:04.100 --> 00:01:06.428
+Pague um cartão de crédito.
+
+10
+00:01:19.129 --> 00:01:21.001
+Digite o valor.
+
+11
+00:01:25.290 --> 00:01:28.722
+Confira o destinatário, o valor e as tarifas.
+
+12
+00:01:37.770 --> 00:01:39.906
+Confirme o pagamento.
+
+13
+00:01:42.340 --> 00:01:44.236
+Toque em Verificar.
+
+14
+00:01:46.569 --> 00:01:49.353
+Confira o comprovante do pagamento.

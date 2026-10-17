@@ -40,20 +40,43 @@ makes the SMS-only automatic continuation legible without changing production.
 
 The capture rules above describe the original revision-4 recordings. The owner's
 later request for quicker pacing and voice-over authorizes a shorter presentation
-edit. `scripts/narrate-media.py` removes idle hold frames only, using 15 fps frame
-boundaries. It preserves every input, scene transition and SMS callback, with
-1.2 seconds after and 0.6 seconds before protected events. Reviews and consent
+edit. `scripts/narrate-media.py` shortens idle holds and applies reviewed
+`src/editorial-cuts.json` exclusions at 15 fps frame boundaries. Exclusions remove
+repeated steps, failed fixture setup and unavailable card controls. Unique feature
+steps stay visible. Later transfer/payment variants omit the repeated SMS wait
+and autofill after their own confirmation/consent and resume on the filled code,
+before their native Verify tap and actual receipt. The first walkthrough keeps
+the complete empty/autofill/Verify sequence. Retained inputs and SMS callbacks
+keep 1.2 seconds after and 0.6 seconds before protected events during idle trimming. Reviews and consent
 keep readable holds. Native actions run at their original speed; narration is
 generated separately, without time-stretching or truncating the rendered speech.
 
-Each scene has a spoken summary in every language. Optional state descriptions
-are included only when the entire utterance fits that state. Shared cue starts
-reserve enough room for the longest translation, with no overlaps, truncated
-speech or narration crossing into another scene. Captions and transcripts match
-the actual spoken text. Most wording reuses existing localized captions;
-`src/narration-copy.json` contains context-documented concise spoken adaptations.
+Every final spoken cue comes from `src/narration-actions.json`. Each phrase has
+its purpose and all seven translations together; scenario timelines anchor it
+to actual recorded taps, text entry, autofill callbacks or relevant state holds.
+Instructions name the user's action rather than explaining the recording.
+Generic opening, reading and navigation holds have no automatic narration.
+The first task cue marks each scene in metadata; it is not a broad scene summary.
+
+Every authored action must fit before the next instruction and within its scene.
+The longest translation reserves its full speech window before idle frames are
+removed. A missing anchor or an utterance that does not fit fails generation;
+no authored action is silently dropped. Captions match the actual spoken text,
+and transcripts contain every timed cue in chronological order. Repeated scope
+notices belong beside the player; operation results retain their actual meaning.
+A bank-response receipt is not an unconditional completion claim.
+
 Original capture source hashes, excerpt ranges and epoch input events are retained;
-edited events add `sourceTimeSeconds` and presentation metadata records every cut.
+edited events add `sourceTimeSeconds` and `sourceEventIndex`; `originalEvents`
+archives the untouched capture and `excludedEvents` names each omitted event and
+its reason. Presentation metadata records every cut and the editorial-policy hash.
+The settings cancellation/retry, unchanged token approval check, repeated token
+contract introduction, redundant first QR save attempt, unrelated beneficiary
+list-refresh error, repeated financial SMS waits and unavailable card-services
+controls are explicitly excluded.
+No QR save success or financial-operation success is inferred from those attempts.
+The earlier `narration-copy.json` and capture caption catalogues document the old
+presentation and original recording workflow; final narration does not read them.
 
 ### Free voice comparison and selection
 

@@ -1,9 +1,29 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:07.570
-Historial bancario simulado: revelar la cuenta, buscar movimientos y filtrar entradas y salidas.
+00:00:04.003 --> 00:00:06.019
+Abre la cuenta.
 
 2
-00:00:37.167 --> 00:00:45.711
-CSV ficticio de la demo básica: revisar las opciones para compartir de Android sin enviarlo a un destinatario externo.
+00:00:08.788 --> 00:00:11.836
+Abre el historial de movimientos.
+
+3
+00:00:18.393 --> 00:00:20.721
+Escribe qué buscar.
+
+4
+00:00:24.004 --> 00:00:26.836
+Filtra entradas o salidas.
+
+5
+00:00:39.412 --> 00:00:41.428
+Abre la cuenta.
+
+6
+00:00:44.208 --> 00:00:47.256
+Abre el historial de movimientos.
+
+7
+00:00:49.655 --> 00:00:53.807
+Toca Exportar CSV para ver cómo compartirlo.

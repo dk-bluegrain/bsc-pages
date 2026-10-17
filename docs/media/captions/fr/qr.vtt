@@ -1,13 +1,29 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:07.954
-QR fictif de compte/demande : révision, annulation puis nouvel essai d’enregistrement avec destination simulée ; aucun paiement.
+00:00:06.171 --> 00:00:08.547
+Créez une demande de paiement.
 
 2
-00:00:51.567 --> 00:00:59.079
-Lecture QR simulée : revoir montant, motif et destinataire d’une demande fictive ; aucune capture réelle par caméra.
+00:00:11.877 --> 00:00:14.325
+Saisissez le motif du paiement.
 
 3
-00:01:09.633 --> 00:01:15.825
-QR fictif : aperçu d’impression Android et retour, sans affirmer qu’une impression physique a lieu.
+00:00:20.054 --> 00:00:22.046
+Saisissez le montant.
+
+4
+00:00:26.773 --> 00:00:29.557
+Appuyez sur Enregistrer le QR.
+
+5
+00:00:42.175 --> 00:00:46.015
+Vérifiez le montant, le motif et le destinataire.
+
+6
+00:00:46.649 --> 00:00:48.929
+Appuyez sur Continuer.
+
+7
+00:00:58.008 --> 00:01:01.488
+Appuyez sur Imprimer pour prévisualiser le QR.

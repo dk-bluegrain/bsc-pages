@@ -1,13 +1,17 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.170
-Simulierte Freigabe einer Nachricht: automatische Prüfung nur der reinen SMS-Anmeldung, kein Tastatur-Autofill.
+00:00:04.712 --> 00:00:08.048
+Geben Sie diese SMS zum Anmelden frei.
 
 2
-00:00:16.634 --> 00:00:24.050
-Simuliertes biometrisches Entsperren gespeicherter Zugangsdaten; die Bankfreigabe bleibt ein eigener Schritt.
+00:00:11.791 --> 00:00:15.391
+Fertig. Sie sind angemeldet.
 
 3
-00:00:25.497 --> 00:00:28.737
-Ein Testergebnis mit fiktiven Daten.
+00:00:16.634 --> 00:00:20.474
+Entsperren Sie den gespeicherten Zugang biometrisch.
+
+4
+00:00:25.630 --> 00:00:29.230
+Fertig. Sie sind angemeldet.

@@ -1,53 +1,65 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.578
-SMS kommt an; nach Freigabe dieser Nachricht in Android wird der Code ausgefüllt und die reine SMS-Anmeldung kann fortfahren.
+00:00:00.250 --> 00:00:03.586
+Geben Sie diese SMS zum Anmelden frei.
 
 2
-00:00:11.767 --> 00:00:19.855
-Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen.
+00:00:08.024 --> 00:00:11.624
+Fertig. Sie sind angemeldet.
 
 3
-00:00:25.433 --> 00:00:28.601
-Wählen Sie Ihre Sprache für die gesamte App.
+00:00:14.767 --> 00:00:17.335
+SMS-Code ausgefüllt.
 
 4
-00:00:31.233 --> 00:00:36.921
-Nach der Geräteregistrierung bleiben Sie in der App und nutzen den biometrischen Zugang.
+00:00:19.325 --> 00:00:21.773
+Tippen Sie auf Bestätigen.
 
 5
-00:00:37.766 --> 00:00:43.742
-Salden mit einem Tippen ausblenden. Pesos und Dollar bleiben getrennt.
+00:00:24.074 --> 00:00:26.882
+Prüfen Sie den Überweisungsbeleg.
 
 6
-00:00:44.633 --> 00:00:48.137
-Finden Sie eine Buchung mit wenigen Buchstaben.
+00:00:30.100 --> 00:00:32.116
+Wählen Sie Spanisch.
 
 7
-00:00:51.566 --> 00:00:54.662
-Blättern Sie im PDF direkt in der App.
+00:00:33.900 --> 00:00:37.740
+Entsperren Sie den gespeicherten Zugang biometrisch.
 
 8
-00:00:57.366 --> 00:01:00.870
-Ein klarer Beleg nach Prüfung und Freigabe.
+00:00:41.433 --> 00:00:44.937
+Tippen Sie, um Guthaben auszublenden.
 
 9
-00:01:02.499 --> 00:01:06.531
-Prüfen Sie die Empfängerdaten, bevor Sie fortfahren.
+00:00:46.899 --> 00:00:49.563
+Geben Sie einen Suchbegriff ein.
 
 10
-00:01:07.565 --> 00:01:13.397
-Per Tippen kopieren. Nur die letzten vier Kartenziffern bleiben sichtbar.
+00:00:54.832 --> 00:00:57.472
+Tippen Sie auf die nächste Seite.
 
 11
-00:01:14.432 --> 00:01:17.696
-Ihr Token-BSC-Code direkt in der App.
+00:00:58.766 --> 00:01:01.358
+Prüfen Sie den Zahlungsbeleg.
 
 12
-00:01:19.031 --> 00:01:24.479
-Betrag, Verwendungszweck und Empfänger vor dem Fortfahren gemeinsam prüfen.
+00:01:06.469 --> 00:01:09.805
+Prüfen Sie die importierten Empfängerdaten.
 
 13
-00:01:25.098 --> 00:01:31.002
-Wählen Sie die SMS-Hilfe in den Einstellungen. Sie behalten die Kontrolle.
+00:01:12.632 --> 00:01:14.984
+Tippen Sie auf Kopieren.
+
+14
+00:01:17.165 --> 00:01:20.429
+Verwenden Sie Ihren Token-BSC-Code.
+
+15
+00:01:21.498 --> 00:01:24.906
+Prüfen Sie Betrag, Zweck und Empfänger.
+
+16
+00:01:28.298 --> 00:01:31.106
+Schalten Sie die SMS-Hilfe ein.

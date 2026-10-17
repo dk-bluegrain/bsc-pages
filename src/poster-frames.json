@@ -1,0 +1,76 @@
+{
+  "revision": 1,
+  "context": "Reviewed preview frames from final native video masters. Re-review the frame after any video edit. Never choose gallery images by ordinal.",
+  "frames": {
+    "first-use": {
+      "timeSeconds": 74.5,
+      "context": "Language picker with all seven choices visible; no notice wall or acceptance implied.",
+      "sourceSha256": "7284205bcd74c5520e756a5eb0781b2884c9e319f6c9bec64159ffd09399cf8b"
+    },
+    "login": {
+      "timeSeconds": 6.8,
+      "context": "Clean SMS login code-entry screen before automatic verification; no loading overlay.",
+      "sourceSha256": "b62b4b7e24b6812d31349484c78538db3b0fd788a7737feb1da6f3673e993d76"
+    },
+    "verification": {
+      "timeSeconds": 36.0,
+      "context": "Explicit device-registration confirmation, with the native request and cancel actions.",
+      "sourceSha256": "272cc0167f1d9fcc3f7459a1461c5616b8aeea7568472c6d3c15d6f203f27b82"
+    },
+    "accounts": {
+      "timeSeconds": 13.8,
+      "context": "Home balances and recent activity, visible DOP amounts and masked account numbers.",
+      "sourceSha256": "cd6e93826c4b7e0132ff5b9d80bd76453605dc70a087c056d81efb834a1ea1b0"
+    },
+    "history": {
+      "timeSeconds": 31.8,
+      "context": "Filtered transaction search result after the keyboard and tap marker disappear.",
+      "sourceSha256": "9715abea32c51baac2e2696e85ee2d3cbf856e7f48d5dbc753c6fd8ca062d0b3"
+    },
+    "statements": {
+      "timeSeconds": 3.5,
+      "context": "Statement-period catalogue with PDF actions, rather than a mostly blank synthetic PDF page.",
+      "sourceSha256": "010a714a57d86162ed3085c9819ac10fadf6c2b04e4b55365742021712b84eb7"
+    },
+    "transfers": {
+      "timeSeconds": 25.0,
+      "context": "Transfer review showing source, recipient, amount and fees before confirmation; no dark confirmation overlay.",
+      "sourceSha256": "703da1d22b284568ef7ff9c6d48810ac7e86b92c89c61a4e27a6f0f80d72fabc"
+    },
+    "payments": {
+      "timeSeconds": 29.3,
+      "context": "Payment review showing source, payee, amount and fees; no confirmation overlay.",
+      "sourceSha256": "9d16ba29fe868df76b43773a85d5cd3f7ea3895bc32c5bb86d97571aa562e646"
+    },
+    "beneficiaries": {
+      "timeSeconds": 25.7,
+      "context": "Readable recipient review with account, bank and currency; no pasted JSON or keyboard.",
+      "sourceSha256": "37d99d411aeb26801e6d5ca1c35d5884a7ad193d1506ec907e1c29b27426941b"
+    },
+    "cards": {
+      "timeSeconds": 13.0,
+      "context": "Revealed card details and Copy controls; card number stays masked to its last four digits.",
+      "sourceSha256": "c07a36cfc7a3fdd1f1cac23ac13785dcef635a121f1090a50a102a9b096e9b2f"
+    },
+    "token": {
+      "timeSeconds": 35.7,
+      "context": "Active fictional Token BSC code after approval; no pending-enrollment or contract screen.",
+      "sourceSha256": "db6657a1e715dd14462effb797ff4cd45df6fc4b607fbc2f75a3aed65f25d3ed"
+    },
+    "qr": {
+      "timeSeconds": 3.5,
+      "context": "Complete account QR and share/save/print controls with no numeric keyboard.",
+      "sourceSha256": "137a6f29d15bed9a71da8d762b401dac41ba0ec02af3e8d69121ea9ded9cb8c6"
+    },
+    "settings": {
+      "timeSeconds": 47.0,
+      "context": "SMS assistance enabled and SMS delivery selected, with actual settings controls visible.",
+      "sourceSha256": "4cdf3818d03a29df54cc52efb5716b311e260c16cd69793ef0ed1dba2deae917"
+    },
+    "overview": {
+      "timeSeconds": 39.6,
+      "context": "Native home dashboard with visible balances, card and recent activity before the privacy toggle.",
+      "sourceSha256": "f7208f85e662e0e326f20f195d7f8f99ceff6b1b41bf24991600d4e3bbf542e6"
+    }
+  }
+}

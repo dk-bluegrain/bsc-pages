@@ -1,21 +1,57 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:09.010
-Banco simulado: pegar un código de destinatario, revisar y completar datos, sin validar ni guardar automáticamente.
+00:00:16.680 --> 00:00:19.584
+Pega el código del destinatario.
 
 2
-00:00:40.300 --> 00:00:49.732
-Eliminar un beneficiario con banco simulado: revisión, confirmación separada, SMS autocompletado y Verificar expreso.
+00:00:23.560 --> 00:00:27.256
+Revisa la cuenta y la moneda del destinatario.
 
 3
-00:00:59.270 --> 00:01:02.366
-Revisa y confirma por separado.
+00:00:27.658 --> 00:00:29.770
+Toca Continuar.
 
 4
-00:01:21.037 --> 00:01:24.901
-Resultado de prueba, con datos ficticios.
+00:00:34.920 --> 00:00:38.112
+Elimina un destinatario guardado.
 
 5
-00:01:30.966 --> 00:01:39.030
-Demo básica: crear y guardar localmente un beneficiario ficticio de otro banco, sin validación bancaria real.
+00:00:45.603 --> 00:00:48.267
+Confirma la eliminación.
+
+6
+00:00:55.147 --> 00:00:58.339
+Código SMS completado.
+
+7
+00:00:59.562 --> 00:01:01.674
+Toca Verificar.
+
+8
+00:01:03.704 --> 00:01:07.040
+Revisa la respuesta a la eliminación.
+
+9
+00:01:11.366 --> 00:01:14.798
+Añade un destinatario de otro banco.
+
+10
+00:01:34.440 --> 00:01:37.632
+Escribe el nombre del destinatario.
+
+11
+00:01:42.691 --> 00:01:45.019
+Escribe el banco.
+
+12
+00:01:49.612 --> 00:01:52.348
+Escribe el número de cuenta.
+
+13
+00:01:55.194 --> 00:01:57.906
+Toca Guardar destinatario.
+
+14
+00:02:02.842 --> 00:02:05.362
+Destinatario guardado.

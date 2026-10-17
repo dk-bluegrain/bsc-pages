@@ -1,17 +1,49 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.338
-Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.
+00:00:07.840 --> 00:00:10.720
+Schalten Sie die SMS-Hilfe aus.
 
 2
-00:01:02.767 --> 00:01:10.087
-Einfache Demo: Profil, Sicherheit, Hilfe und Abmeldung der Testsitzung; nur fiktive Daten.
+00:00:17.181 --> 00:00:19.989
+Schalten Sie die SMS-Hilfe ein.
 
 3
-00:02:04.500 --> 00:02:13.164
-Unklares Ergebnis bei simulierter Bank: Verlauf und neue Abgleichbestätigung; kein Wiederholen oder Stornieren des Vorgangs.
+00:00:25.793 --> 00:00:29.081
+Wählen Sie Nachfragen für die Code-Zustellung.
 
 4
-00:02:17.914 --> 00:02:23.890
-Prüfen Sie den Verlauf. Ein Abgleich wiederholt oder storniert den Vorgang nicht.
+00:00:34.567 --> 00:00:37.639
+Wählen Sie E-Mail für die Code-Zustellung.
+
+5
+00:00:43.181 --> 00:00:46.421
+Wählen Sie SMS für die Code-Zustellung.
+
+6
+00:01:02.226 --> 00:01:04.434
+Öffnen Sie Ihr Profil.
+
+7
+00:01:14.496 --> 00:01:16.680
+Öffnen Sie Sicherheit.
+
+8
+00:01:27.041 --> 00:01:29.009
+Öffnen Sie Hilfe.
+
+9
+00:01:43.278 --> 00:01:45.942
+Bestätigen Sie das Abmelden.
+
+10
+00:01:53.366 --> 00:01:57.182
+Prüfen Sie den Verlauf bei einem unklaren Ergebnis.
+
+11
+00:02:14.493 --> 00:02:18.429
+Bestätigen Sie erst nach Prüfung des Bankergebnisses.
+
+12
+00:02:26.826 --> 00:02:28.938
+Prüfung gespeichert.

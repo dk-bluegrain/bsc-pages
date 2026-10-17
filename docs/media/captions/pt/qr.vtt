@@ -1,13 +1,29 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.842
-QR fictício de conta ou solicitação: revisão, cancelamento e nova tentativa de salvar com destino simulado; não é pagamento.
+00:00:06.171 --> 00:00:08.979
+Crie uma solicitação de pagamento.
 
 2
-00:00:51.567 --> 00:00:59.607
-Leitura QR simulada: conferir valor, descrição e destinatário de solicitação fictícia; sem captura real de câmera.
+00:00:11.877 --> 00:00:14.493
+Digite o motivo do pagamento.
 
 3
-00:01:09.633 --> 00:01:16.617
-QR fictício: visualização de impressão do Android e retorno, sem afirmar que houve impressão física.
+00:00:20.054 --> 00:00:21.926
+Digite o valor.
+
+4
+00:00:26.773 --> 00:00:29.053
+Toque em Salvar QR.
+
+5
+00:00:42.175 --> 00:00:45.583
+Confira o valor, o motivo e o destinatário.
+
+6
+00:00:46.649 --> 00:00:48.545
+Toque em Continuar.
+
+7
+00:00:58.008 --> 00:01:01.224
+Toque em Imprimir para visualizar o QR.

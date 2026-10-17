@@ -1,13 +1,17 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.242
-Accord simulé pour un seul message : vérification automatique de la connexion par SMS seul, pas du remplissage du clavier.
+00:00:04.712 --> 00:00:08.504
+Autorisez le partage de ce SMS pour vous connecter.
 
 2
-00:00:16.634 --> 00:00:23.210
-Déverrouillage biométrique simulé de l’accès mémorisé ; l’approbation bancaire reste une exigence distincte.
+00:00:11.791 --> 00:00:15.175
+C’est fait. Vous êtes connecté.
 
 3
-00:00:25.497 --> 00:00:29.073
-Un résultat de test, avec des données fictives.
+00:00:16.634 --> 00:00:19.970
+Déverrouillez l’accès enregistré par biométrie.
+
+4
+00:00:25.630 --> 00:00:29.014
+C’est fait. Vous êtes connecté.

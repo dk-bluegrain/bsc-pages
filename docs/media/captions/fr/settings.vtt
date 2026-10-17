@@ -1,17 +1,49 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.482
-Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.
+00:00:07.840 --> 00:00:10.264
+Désactivez l’aide SMS.
 
 2
-00:01:02.767 --> 00:01:09.871
-Démo de base : profil, sécurité, aide et déconnexion de la session de test ; données fictives uniquement.
+00:00:17.181 --> 00:00:19.389
+Activez l’aide SMS.
 
 3
-00:02:04.500 --> 00:02:12.108
-Résultat bancaire simulé incertain : historique et nouvel accord de rapprochement ; aucune répétition ni annulation de l’opération.
+00:00:25.793 --> 00:00:28.841
+Choisissez Demander pour recevoir les codes.
 
 4
-00:02:17.914 --> 00:02:23.626
-Consultez l’historique. Le rapprochement ne répète ni n’annule l’opération.
+00:00:34.567 --> 00:00:37.687
+Choisissez E-mail pour recevoir les codes.
+
+5
+00:00:43.181 --> 00:00:46.469
+Choisissez SMS pour recevoir les codes.
+
+6
+00:01:02.226 --> 00:01:04.314
+Ouvrez votre profil.
+
+7
+00:01:14.496 --> 00:01:16.464
+Ouvrez Sécurité.
+
+8
+00:01:27.041 --> 00:01:28.913
+Ouvrez Aide.
+
+9
+00:01:43.278 --> 00:01:45.630
+Confirmez la déconnexion.
+
+10
+00:01:53.366 --> 00:01:57.350
+Vérifiez l’historique avant de résoudre un résultat incertain.
+
+11
+00:02:14.493 --> 00:02:18.621
+Confirmez seulement après avoir vérifié le résultat bancaire.
+
+12
+00:02:26.826 --> 00:02:29.394
+Vérification enregistrée.

@@ -1,9 +1,29 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:07.426
-Simulierter Bankverlauf: Kontonummer anzeigen, Buchungen suchen und Ein- oder Ausgänge filtern.
+00:00:04.003 --> 00:00:06.139
+Öffnen Sie das Konto.
 
 2
-00:00:37.167 --> 00:00:45.111
-Fiktive CSV der einfachen Demo: Android-Teilen-Auswahl ansehen, ohne an einen externen Empfänger zu senden.
+00:00:08.788 --> 00:00:11.716
+Öffnen Sie den Transaktionsverlauf.
+
+3
+00:00:18.393 --> 00:00:21.057
+Geben Sie einen Suchbegriff ein.
+
+4
+00:00:24.004 --> 00:00:26.836
+Filtern Sie Ein- oder Ausgänge.
+
+5
+00:00:39.412 --> 00:00:41.548
+Öffnen Sie das Konto.
+
+6
+00:00:44.208 --> 00:00:47.136
+Öffnen Sie den Transaktionsverlauf.
+
+7
+00:00:49.655 --> 00:00:54.479
+Tippen Sie auf CSV exportieren, um die Freigabe zu öffnen.

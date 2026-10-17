@@ -21,6 +21,20 @@ for filename,info in install_provenance['screenshots'].items():
  assert hashlib.sha256((DOCS/'media/install'/filename).read_bytes()).hexdigest()==info['sha256']
 assert install_provenance['apk']['sha256']==downloads['live']['sha256']
 media=json.loads((ROOT/'src/media.json').read_text())
+poster_policy=json.loads((ROOT/'src/poster-frames.json').read_text())
+posters=json.loads((DOCS/'media/posters.json').read_text())
+assert set(poster_policy['frames'])==set(posters['frames'])==set(media)
+assert posters['policySha256']==hashlib.sha256((ROOT/'src/poster-frames.json').read_bytes()).hexdigest()
+for id,frame in posters['frames'].items():
+ choice=poster_policy['frames'][id]
+ assert frame['source']==f'{id}.mp4' and frame['poster']==f'{id}.jpg'
+ assert frame['sourceSha256']==choice['sourceSha256']==hashlib.sha256((DOCS/'media'/frame['source']).read_bytes()).hexdigest(),(id,'Re-review preview after video changes')
+ assert frame['timeSeconds']==choice['timeSeconds'] and frame['context']==choice['context']
+ assert choice['context'] and 0<=frame['timeSeconds']<media[id]['duration']
+ poster=DOCS/'media'/frame['poster']
+ assert poster.stat().st_size==frame['bytes'] and hashlib.sha256(poster.read_bytes()).hexdigest()==frame['sha256']
+ dimensions=subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height','-of','csv=p=0',str(poster)]).decode().strip()
+ assert dimensions=='540,1200',(id,'Wrong preview dimensions')
 scene_captions=json.loads((ROOT/'src/scene-captions.json').read_text())['languages']
 assert all(set(v)==set(scene_captions['es']) for v in scene_captions.values())
 assert len(media)==14 and 'overview' in media
@@ -33,6 +47,9 @@ assert set(ux)==set(content)
 spoken=json.loads((ROOT/'src/narration-copy.json').read_text())
 assert set(spoken['languages'])==set(content)
 assert all(set(copy)==set(spoken['context']) for copy in spoken['languages'].values())
+actions=json.loads((ROOT/'src/narration-actions.json').read_text())
+assert set(actions['timelines'])==set(media)
+assert all(p['context'] and set(p['text'])==set(content) for p in actions['phrases'].values())
 audio_languages=dict(es='spa',en='eng',de='deu',fr='fra',ru='rus',uk='ukr',pt='por')
 assert policy['revision']==4 and len(policy['overview']['excerpts'])==13
 for lang,copy in ux.items():
@@ -73,6 +90,8 @@ for lang,c in content.items():
   if path.parent.name not in ('privacy','download'):
    assert p.video==p.templates==p.previews==14 and p.tracks==98
    assert all(f'/narrated/{lang}/' in src for src in p.sources),'Page must use its own narrated language'
+   for id,frame in posters['frames'].items():
+    assert f'media/{id}.jpg?v={frame["sha256"][:12]}' in s,(lang,id,'Preview URL must track image bytes')
    assert not any(urlsplit(ref).path.endswith('.apk') for ref in p.refs),'Landing pages must show the edition choice before APK downloads'
    assert f'href="{"./" if path==DOCS/"index.html" else "../"}{lang}/download/"' in s
   if path.parent.name=='download':
@@ -106,7 +125,7 @@ for id,info in media.items():
   assert all(s.get('smsPreference')=='SMS' and (not s.get('requiresSmsAutofill') or s.get('smsAutofillEvents',0)>0) for s in info['sources'])
  path=DOCS/'media'/f'{id}.mp4';assert path.stat().st_size<100*1024*1024
  result=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(path)]))
- duration=float(result['format']['duration']);assert duration>=29.9
+ duration=float(result['format']['duration']);assert duration>=5
  if id=='overview':assert 60<=duration<=120
  assert next(x for x in result['streams'] if x['codec_type']=='video')['codec_name']=='h264'
  assert not any(x['codec_type']=='audio' for x in result['streams'])
@@ -115,8 +134,29 @@ for id,info in media.items():
  assert all(a['end']<=b['start'] for a,b in zip(cuts,cuts[1:]))
  assert abs(pacing['sourceDuration']-duration-sum(c['end']-c['start'] for c in cuts))<.08
  assert abs(info['duration']-duration)<.01
+ assert info['narration'].get('revision')==2,(id,'Regenerate media from the authored action catalogue')
  assert set(info['narration']['languages'])==set(content)
- events=json.loads((DOCS/'media/events'/f'{id}.json').read_text())['events']
+ event_document=json.loads((DOCS/'media/events'/f'{id}.json').read_text())
+ events=event_document['events']
+ if info['narration'].get('revision',0)>=2:
+  assert info['narration']['copySha256']==hashlib.sha256((ROOT/'src/narration-actions.json').read_bytes()).hexdigest(),(id,'Stale narration copy')
+  editorial_policy=json.loads((ROOT/'src/editorial-cuts.json').read_text())
+  exclusions=pacing['editorialExclusions']
+  assert exclusions==editorial_policy['chapters'].get(id,[])
+  assert pacing['editorialSha256']==hashlib.sha256((ROOT/'src/editorial-cuts.json').read_bytes()).hexdigest()
+  original_events=json.loads(subprocess.check_output(['git','-C',str(ROOT),'show',f"{pacing['sourceRef']}:docs/media/events/{id}.json"]))['events']
+  assert event_document['originalEvents']==original_events,(id,'Original event archive changed')
+  omitted=event_document['excludedEvents']
+  assert sorted([e['sourceEventIndex'] for e in events]+[e['sourceEventIndex'] for e in omitted])==list(range(len(original_events))),(id,'Missing or duplicated event provenance')
+  for item in omitted:
+   original_event=original_events[item['sourceEventIndex']]
+   assert item['event']==original_event
+   assert any(c['start']<=original_event['timeSeconds']<c['end'] and c['reason']==item['reason'] for c in exclusions)
+  for event in events:
+   original_event=original_events[event['sourceEventIndex']]
+   assert event['sourceTimeSeconds']==original_event['timeSeconds']
+   assert all(event[k]==v for k,v in original_event.items() if k not in ('timeSeconds','durationMs'))
+
  for event in events:
   assert 0<=event['timeSeconds']<=duration
   source_time=event['sourceTimeSeconds']
@@ -155,6 +195,14 @@ for id,info in media.items():
    assert previous<=begin<end<=duration+.1,(lang,id,begin,end,duration)
    previous=end
   assert all(cue in vtt for cue in captions[lang][id]),'Captions differ from source transcript'
+  if info['narration'].get('revision',0)>=2:
+   expected_actions=[(scene,a['key']) for scene,group in enumerate(actions['timelines'][id],1) for a in group]
+   assert [(c['scene'],c['action']) for c in speech['cues']]==expected_actions,(id,lang,'Authored actions missing, repeated or reordered')
+   assert all(c['text']==actions['phrases'][c['action']]['text'][lang] for c in speech['cues']),(id,lang,'Speech differs from authored copy')
+   assert captions[lang][id]==[c['text'] for c in speech['cues']],(id,lang,'Transcript order differs from speech')
+   parsed=re.findall(r'([0-9:.]+) --> ([0-9:.]+)\n([^\n]+)',vtt)
+   assert [c[2] for c in parsed]==captions[lang][id],(id,lang,'Caption order differs from speech')
+
 overview_events=json.loads((DOCS/'media/events/overview.json').read_text())['events']
 for chapter in ('login','transfers'):
  assert any(e['type']=='sms-autofill' and e.get('sourceChapter')==chapter for e in overview_events),('Overview omits actual SMS autofill',chapter)

@@ -1,53 +1,65 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:07.618
-SMS arrives; approve sharing that message in Android, the code fills, and SMS-only login can continue.
+00:00:00.250 --> 00:00:03.202
+Allow sharing this SMS to sign in.
 
 2
-00:00:11.767 --> 00:00:19.423
-For an operation, approve sharing the SMS in Android: the code fills, you review it and tap Verify before the result.
+00:00:08.024 --> 00:00:11.048
+Done. You’re signed in.
 
 3
-00:00:25.433 --> 00:00:28.433
-Choose your language and keep it throughout the app.
+00:00:14.767 --> 00:00:16.879
+SMS code filled.
 
 4
-00:00:31.233 --> 00:00:36.441
-After device registration, continue inside the app with biometric access.
+00:00:19.325 --> 00:00:21.197
+Tap Verify.
 
 5
-00:00:37.766 --> 00:00:42.734
-Hide balances with a tap. Keep pesos and dollars separate.
+00:00:24.074 --> 00:00:26.354
+Check the transfer receipt.
 
 6
-00:00:44.633 --> 00:00:47.945
-Find a transaction by typing a few letters.
+00:00:30.100 --> 00:00:31.972
+Choose Spanish.
 
 7
-00:00:51.566 --> 00:00:54.398
-Turn PDF pages inside the app.
+00:00:33.900 --> 00:00:37.044
+Unlock saved access with biometrics.
 
 8
-00:00:57.366 --> 00:01:00.774
-A clear receipt after review and authorization.
+00:00:41.433 --> 00:00:43.737
+Tap to hide balances.
 
 9
-00:01:02.499 --> 00:01:05.859
-Read the recipient’s details before continuing.
+00:00:46.899 --> 00:00:48.915
+Enter a search term.
 
 10
-00:01:07.565 --> 00:01:12.677
-Copy with a tap. Only the last four card digits stay visible.
+00:00:54.832 --> 00:00:56.992
+Tap the next page.
 
 11
-00:01:14.432 --> 00:01:17.504
-Your Token BSC code, in the app.
+00:00:58.766 --> 00:01:00.926
+Check the payment receipt.
 
 12
-00:01:19.031 --> 00:01:23.279
-Amount, memo and recipient together before you continue.
+00:01:06.469 --> 00:01:09.373
+Check the imported recipient details.
 
 13
-00:01:25.098 --> 00:01:30.042
-Choose SMS assistance in Settings. You stay in control.
+00:01:12.632 --> 00:01:14.504
+Tap Copy.
+
+14
+00:01:17.165 --> 00:01:19.709
+Use your Token BSC code.
+
+15
+00:01:21.498 --> 00:01:24.690
+Check the amount, purpose and recipient.
+
+16
+00:01:28.298 --> 00:01:30.818
+Turn SMS assistance on.

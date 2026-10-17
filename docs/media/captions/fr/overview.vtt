@@ -1,53 +1,65 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:08.698
-Le SMS arrive ; après accord pour partager ce message dans Android, le code se remplit et la connexion par SMS seul peut continuer.
+00:00:00.250 --> 00:00:04.042
+Autorisez le partage de ce SMS pour vous connecter.
 
 2
-00:00:11.767 --> 00:00:19.951
-Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.
+00:00:08.024 --> 00:00:11.408
+C’est fait. Vous êtes connecté.
 
 3
-00:00:25.433 --> 00:00:29.081
-Choisissez votre langue et gardez-la dans toute l’application.
+00:00:14.767 --> 00:00:16.903
+Code SMS rempli.
 
 4
-00:00:31.233 --> 00:00:36.729
-Après l’enregistrement de l’appareil, poursuivez dans l’application avec l’accès biométrique.
+00:00:19.325 --> 00:00:21.437
+Appuyez sur Vérifier.
 
 5
-00:00:37.766 --> 00:00:42.950
-Masquez les soldes d’un geste. Pesos et dollars restent séparés.
+00:00:24.074 --> 00:00:26.522
+Vérifiez le reçu du virement.
 
 6
-00:00:44.633 --> 00:00:48.113
-Retrouvez une opération en saisissant quelques lettres.
+00:00:30.100 --> 00:00:32.260
+Choisissez Espagnol.
 
 7
-00:00:51.566 --> 00:00:54.902
-Parcourez les pages du PDF dans l’application.
+00:00:33.900 --> 00:00:37.236
+Déverrouillez l’accès enregistré par biométrie.
 
 8
-00:00:57.366 --> 00:01:01.038
-Un reçu clair après vérification et autorisation.
+00:00:41.433 --> 00:00:43.953
+Appuyez pour masquer les soldes.
 
 9
-00:01:02.499 --> 00:01:06.363
-Lisez les coordonnées du destinataire avant de continuer.
+00:00:46.899 --> 00:00:49.443
+Saisissez un terme à rechercher.
 
 10
-00:01:07.565 --> 00:01:12.725
-Copiez d’un geste. Seuls les quatre derniers chiffres restent visibles.
+00:00:54.832 --> 00:00:57.376
+Appuyez sur la page suivante.
 
 11
-00:01:14.432 --> 00:01:17.744
-Votre code Token BSC dans l’application.
+00:00:58.766 --> 00:01:01.142
+Vérifiez le reçu du paiement.
 
 12
-00:01:19.031 --> 00:01:23.231
-Montant, motif et destinataire réunis avant de continuer.
+00:01:06.469 --> 00:01:09.997
+Vérifiez les coordonnées du destinataire importé.
 
 13
-00:01:25.098 --> 00:01:30.210
-Choisissez l’aide SMS dans les paramètres. Vous gardez le contrôle.
+00:01:12.632 --> 00:01:14.672
+Appuyez sur Copier.
+
+14
+00:01:17.165 --> 00:01:20.141
+Utilisez votre code Token BSC.
+
+15
+00:01:21.498 --> 00:01:25.338
+Vérifiez le montant, le motif et le destinataire.
+
+16
+00:01:28.298 --> 00:01:30.506
+Activez l’aide SMS.

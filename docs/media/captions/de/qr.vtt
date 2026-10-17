@@ -1,13 +1,29 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:09.034
-Fiktiver Konto-/Anforderungs-QR: prüfen, Speichern abbrechen und mit simuliertem Ziel erneut versuchen; keine Zahlung.
+00:00:06.171 --> 00:00:09.171
+Erstellen Sie eine Zahlungsanfrage.
 
 2
-00:00:51.567 --> 00:01:00.711
-Simuliertes QR-Lesen: Betrag, Verwendungszweck und Empfänger einer fiktiven Anforderung prüfen; keine echte Kameraaufnahme.
+00:00:11.877 --> 00:00:14.517
+Geben Sie den Zahlungszweck ein.
 
 3
-00:01:09.633 --> 00:01:16.617
-Fiktiver QR: Android-Druckvorschau und Rückkehr, ohne einen tatsächlichen Ausdruck zu behaupten.
+00:00:20.054 --> 00:00:22.310
+Geben Sie den Betrag ein.
+
+4
+00:00:26.773 --> 00:00:29.269
+Tippen Sie auf QR speichern.
+
+5
+00:00:42.175 --> 00:00:45.583
+Prüfen Sie Betrag, Zweck und Empfänger.
+
+6
+00:00:46.649 --> 00:00:48.713
+Tippen Sie auf Weiter.
+
+7
+00:00:58.008 --> 00:01:01.152
+Tippen Sie auf Drucken für die QR-Vorschau.

@@ -6,6 +6,7 @@ video or accumulates another generation of encoding loss. Speech clips are
 content-addressed in the ignored work directory; only final media is published.
 """
 import argparse
+import copy
 import asyncio
 import hashlib
 import json
@@ -64,7 +65,7 @@ def mapped_time(value, cuts):
     return value - sum(max(0, min(value, end) - start) for start, end in cuts)
 
 
-def idle_cuts(events, duration, groups, minimum_lengths, ratio=.68):
+def idle_cuts(events, duration, groups, minimum_lengths, ratio=.68, protected_windows=()):
     """Remove whole frames only inside holds, away from every recorded action.
 
     Keep at least 1.2 seconds after input, 0.6 before input, and the same guards
@@ -94,6 +95,8 @@ def idle_cuts(events, duration, groups, minimum_lengths, ratio=.68):
                 continue
             if any(point - .6 <= at < point + 1.2 for point in protected):
                 continue
+            if any(a <= at < b for a, b in protected_windows):
+                continue
             removed.add(frame)
             used[group] += 1
             desired -= 1
@@ -106,6 +109,44 @@ def idle_cuts(events, duration, groups, minimum_lengths, ratio=.68):
     return cuts
 
 
+def editorial_cuts(ref, id, duration):
+    """Read reviewed source exclusions; never infer deleted actions from holds."""
+    policy = json.loads((ROOT / 'src/editorial-cuts.json').read_text())
+    assert policy['sourceRef'] == ref, 'Re-review editorial boundaries for a new capture'
+    entries = policy['chapters'].get(id, [])
+    assert all(0 <= c['start'] < c['end'] <= duration and c['reason'] for c in entries)
+    assert all(a['end'] <= b['start'] for a, b in zip(entries, entries[1:]))
+    assert all(abs(c[k] * FPS - round(c[k] * FPS)) < .00001
+               for c in entries for k in ('start', 'end')), 'Edits must use whole frames'
+    return entries
+
+
+def remap_events(document, cuts, exclusions):
+    """Keep original events separately; omit reviewed nonessential footage from playback."""
+    result = copy.deepcopy(document)
+    result['originalEvents'] = copy.deepcopy(document['events'])
+    result['excludedEvents'] = []
+    result['events'] = []
+    for index, original in enumerate(document['events']):
+        at = original['timeSeconds']
+        exclusion = next((c for c in exclusions if c['start'] <= at < c['end']), None)
+        if exclusion:
+            result['excludedEvents'].append({'sourceEventIndex': index, 'reason': exclusion['reason'],
+                                             'event': copy.deepcopy(original)})
+            continue
+        event = copy.deepcopy(original)
+        event['sourceEventIndex'] = index
+        event['sourceTimeSeconds'] = at
+        event['timeSeconds'] = round(mapped_time(at, cuts), 3)
+        if 'durationMs' in event:
+            event['sourceDurationMs'] = event['durationMs']
+            event['durationMs'] = round((mapped_time(at + event['durationMs'] / 1000, cuts)
+                                         - mapped_time(at, cuts)) * 1000)
+        result['events'].append(event)
+    result['timing'] = document.get('timing', '') + (' Presentation edits shorten idle holds and omit explicitly reviewed repeated steps, failed setup and unavailable controls; originalEvents and excludedEvents preserve complete source evidence.')
+    return result
+
+
 def groups_for(id, info, events):
     if id == 'overview':
         starts = [e['overviewStart'] for e in info['excerpts']]
@@ -115,27 +156,49 @@ def groups_for(id, info, events):
 
 
 def narration_candidates(ref, id, groups):
-    tracks = {lang: parse_captions(source_bytes(ref, f'docs/media/captions/{lang}/{id}.vtt').decode())
-              for lang in VOICES}
-    reference = tracks['es']
-    overrides = json.loads((ROOT / 'src/narration-copy.json').read_text())['languages']
-    scene_texts = source_json(ref, 'src/scene-captions.json')['languages']['en']
-    overview = source_json(ref, 'src/media.json')['overview']['excerpts'] if id == 'overview' else []
-    assert all(len(track) == len(reference) for track in tracks.values())
+    """Resolve authored task cues against the pinned capture's actual events.
+
+    Generic opening/read/navigation holds are never spoken. Every selected cue
+    is mandatory: a speech-fit failure must be fixed in copy or pacing instead of
+    silently losing a user action. Captions and speech use this same catalogue.
+    """
+    catalogue = json.loads((ROOT / 'src/narration-actions.json').read_text())
+    timelines = catalogue['timelines'][id]
+    assert len(timelines) == len(groups), f'{id}: scenario count changed'
+    events = source_json(ref, f'docs/media/events/{id}.json')['events']
     result = []
-    seen = set()
-    for index, (begin, end, text) in enumerate(reference):
-        group = next(i for i in reversed(range(len(groups))) if groups[i][0] <= begin + .002)
-        if (group, text) in seen:
-            continue
-        seen.add((group, text))
-        required = not any(cue['group'] == group for cue in result)
-        key = f'overview-{overview[group]["chapter"]}' if overview else ''
-        if not overview:
-            key = next(('scene-' + name for name, text in scene_texts.items() if text == tracks['en'][index][2]), '')
-        result.append({'sourceStart': begin, 'sourceEnd': end, 'group': group,
-                       'required': required,
-                       'text': {lang: overrides[lang].get(key, tracks[lang][index][2]) for lang in VOICES}})
+    for group, ((begin, end), actions) in enumerate(zip(groups, timelines)):
+        assert actions, f'{id}: scene {group + 1} has no task cues'
+        if id == 'overview':
+            scoped = [e for e in events if begin - .002 <= e['timeSeconds'] < end - .002]
+        else:
+            scoped = [e for e in events if e.get('scenario') == group + 1]
+        authored = []
+        for index, action in enumerate(actions):
+            anchor = action['anchor']
+            if anchor['type'] == 'group-start':
+                at = begin
+            else:
+                matches = [e for e in scoped if e['type'] == anchor['type']
+                           and ('cue' not in anchor or e.get('cue') == anchor['cue'])]
+                ordinal = anchor['occurrence']
+                assert ordinal and -len(matches) <= ordinal <= len(matches), (
+                    id, group + 1, action['key'], 'missing recorded anchor', anchor)
+                at = matches[ordinal - 1 if ordinal > 0 else ordinal]['timeSeconds']
+            assert begin - .002 <= at < end, (id, group + 1, action['key'], at)
+            phrase = catalogue['phrases'][action['key']]
+            assert phrase['context'] and set(phrase['text']) == set(VOICES)
+            assert all(isinstance(t, str) and t.strip() and len(t) <= 160
+                       for t in phrase['text'].values()), action['key']
+            authored.append({'sourceStart': max(begin, at), 'group': group,
+                             'required': True, 'summary': index == 0,
+                             'stateBounded': True, 'key': action['key'],
+                             'text': phrase['text']})
+        assert all(a['sourceStart'] < b['sourceStart'] for a, b in zip(authored, authored[1:])), (
+            id, group + 1, 'actions are not chronological')
+        for index, cue in enumerate(authored):
+            cue['sourceEnd'] = authored[index + 1]['sourceStart'] if index + 1 < len(authored) else end
+        result.extend(authored)
     return result
 
 
@@ -193,11 +256,14 @@ def schedule(candidates, groups, cuts, clips):
         # Scene summaries describe the whole scene; specific state explanations
         # must finish while that state is still represented by its source cue.
         deadline = mapped_time(groups[cue['group']][1], cuts) - .1
-        if not cue['required']:
+        if not cue['required'] or cue.get('stateBounded'):
             deadline = min(deadline, mapped_time(cue['sourceEnd'], cuts) + .25)
         if start + maximum > deadline:
             if cue['required']:
-                raise ValueError(f'Narration does not fit scene: {cue["text"]["en"]}')
+                longest = max(lengths, key=lengths.get)
+                raise ValueError(f'Narration does not fit scene: {cue["text"]["en"]} '
+                                 f'(scene {cue["group"] + 1}, {longest} needs {maximum:.3f}s; '
+                                 f'{max(0, deadline - start):.3f}s available)')
             continue
         result.append(dict(cue, start=round(start, 3), lengths=lengths))
         cursor = start + maximum
@@ -227,7 +293,8 @@ def render_language(lang, id, cues, clips, silent, duration, work):
         pcm[offset:offset + len(data)] = data
         timed.append({'start': cue['start'], 'end': round(cue['start'] + len(data) / (SAMPLE_RATE * 2), 3),
                       'sourceStart': cue['sourceStart'], 'sourceEnd': cue['sourceEnd'],
-                      'scene': cue['group'] + 1, 'summary': cue['required'], 'text': text})
+                      'scene': cue['group'] + 1, 'summary': cue.get('summary', cue['required']),
+                      'action': cue.get('key'), 'text': text})
     audio = work / f'{lang}-{id}.wav'
     with wave.open(str(audio), 'wb') as output:
         output.setnchannels(1)
@@ -275,13 +342,21 @@ def main():
                 if (lang, text) not in clips:
                     clips[(lang, text)] = decode_clip(clip_path(cache, VOICES[lang], text))
     for id, (events, groups, candidates) in plans.items():
-        minimums = []
-        for group in range(len(groups)):
-            required = next(cue for cue in candidates if cue['group'] == group and cue['required'])
-            minimums.append(max(len(clips[(lang, text)]) / (SAMPLE_RATE * 2)
-                                for lang, text in required['text'].items()) + .6)
+        # Reserve the whole longest utterance at each original event anchor.
+        # Removing idle frames inside speech would push the next instruction
+        # beyond its action and could otherwise silently omit meaningful steps.
+        exclusions = editorial_cuts(ref, id, original[id]['duration'])
+        editorial = [(c['start'], c['end']) for c in exclusions]
+        assert not any(a <= cue['sourceStart'] < b for cue in candidates for a, b in editorial), (id, 'Narration anchored in excluded attempt')
+        uncut_cues = schedule(candidates, groups, editorial, clips)
+        protected_windows = [(cue['sourceStart'], cue['sourceStart'] + (cue['start'] - mapped_time(cue['sourceStart'], editorial)) + max(cue['lengths'].values()) + .25)
+                             for cue in uncut_cues]
+        minimums = [sum(max(cue['lengths'].values()) + .25 for cue in uncut_cues
+                        if cue['group'] == group) + .35 + sum(max(0, min(b, groups[group][1]) - max(a, groups[group][0])) for a, b in editorial) for group in range(len(groups))]
         cuts = idle_cuts(events['events'], original[id]['duration'], groups, minimums,
-                         ratio=.76 if id == 'overview' else .68)
+                         ratio=.76 if id == 'overview' else .35,
+                         protected_windows=protected_windows + editorial)
+        cuts = sorted(cuts + editorial)
         cues = schedule(candidates, groups, cuts, clips)
         with tempfile.TemporaryDirectory(prefix=id + '-', dir=args.work_dir) as folder:
             work = Path(folder)
@@ -294,28 +369,26 @@ def main():
             info.update(duration=round(duration, 3), durationLabel=f'{int(duration) // 60}:{int(duration) % 60:02d}',
                         assetRevision=digest(silent.read_bytes())[:12])
             info['pacing'] = {'sourceRef': ref, 'sourceDuration': original[id]['duration'],
-                              'removedIdleSeconds': round(sum(b - a for a, b in cuts), 3),
+                              'removedIdleSeconds': round(sum(b - a for a, b in cuts) - sum(b - a for a, b in editorial), 3),
+                              'removedRepeatedSeconds': round(sum(b - a for a, b in editorial), 3),
+                              'editorialExclusions': exclusions,
+                              'editorialSha256': digest((ROOT / 'src/editorial-cuts.json').read_bytes()),
                               'cuts': [{'start': round(a, 6), 'end': round(b, 6)} for a, b in cuts],
                               'actionsAtOriginalSpeed': True}
             info['narration'] = {'engine': 'Microsoft Edge neural TTS via edge-tts 7.3.1',
-                                 'rate': '+5%', 'revision': 1, 'languages': {}}
+                                 'rate': '+5%', 'revision': 2,
+                                 'copySha256': digest((ROOT / 'src/narration-actions.json').read_bytes()),
+                                 'languages': {}}
             for lang, (video, vtt, timed) in outputs.items():
                 path = ROOT / f'docs/media/narrated/{lang}/{id}.mp4'
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_bytes(video.read_bytes())
                 (ROOT / f'docs/media/captions/{lang}/{id}.vtt').write_text(vtt)
-                transcripts['languages'][lang][id] = list(dict.fromkeys(cue['text'] for cue in timed))
+                transcripts['languages'][lang][id] = [cue['text'] for cue in timed]
                 info['narration']['languages'][lang] = {'voice': VOICES[lang], 'file': f'narrated/{lang}/{id}.mp4',
                     'sha256': digest(video.read_bytes()), 'bytes': video.stat().st_size, 'cues': timed}
             (ROOT / f'docs/media/{id}.mp4').write_bytes(silent.read_bytes())
-        for event in events['events']:
-            at = event['timeSeconds']
-            event['sourceTimeSeconds'] = at
-            event['timeSeconds'] = round(mapped_time(at, cuts), 3)
-            if 'durationMs' in event:
-                event['sourceDurationMs'] = event['durationMs']
-                event['durationMs'] = round((mapped_time(at + event['durationMs'] / 1000, cuts) - mapped_time(at, cuts)) * 1000)
-        events['timing'] = events.get('timing', 'Offsets within the original authored overview excerpts.') + ' Presentation cuts remove idle hold frames only; sourceTimeSeconds preserves the pinned input timeline.'
+        events = remap_events(events, cuts, exclusions)
         (ROOT / f'docs/media/events/{id}.json').write_text(json.dumps(events, indent=2) + '\n')
         if id == 'overview':
             for cut in info['excerpts']:
@@ -329,6 +402,8 @@ def main():
         provenance['audio'] = 'Localized synthetic narration in seven languages; self-hosted AAC mono, no music or runtime speech service.'
         (ROOT / 'docs/media/provenance.json').write_text(json.dumps(provenance, ensure_ascii=False, indent=2) + '\n')
         print(f'{id}: {original[id]["duration"]:.1f}s -> {duration:.1f}s; {len(cues)} narration cues, seven languages', flush=True)
+    command('python3', ROOT / 'scripts/refresh-posters.py',
+            *(arg for id in selected for arg in ('--chapter', id)))
 
 
 if __name__ == '__main__':

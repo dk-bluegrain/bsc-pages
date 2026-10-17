@@ -1,17 +1,49 @@
 WEBVTT
 
 1
-00:00:00.250 --> 00:00:10.138
-Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.
+00:00:07.840 --> 00:00:10.936
+Desative a assistência SMS.
 
 2
-00:01:02.767 --> 00:01:10.231
-Demonstração básica: perfil, segurança, ajuda e encerramento da sessão de teste; apenas dados fictícios.
+00:00:17.181 --> 00:00:20.037
+Ative a assistência SMS.
 
 3
-00:02:04.500 --> 00:02:12.516
-Resultado incerto com banco simulado: histórico e nova confirmação de conciliação, sem repetir nem cancelar a operação.
+00:00:25.793 --> 00:00:28.961
+Escolha Perguntar para receber códigos.
 
 4
-00:02:17.914 --> 00:02:22.762
-Confira o histórico. A conciliação não repete nem cancela a operação.
+00:00:34.567 --> 00:00:37.519
+Escolha E-mail para receber códigos.
+
+5
+00:00:43.181 --> 00:00:46.661
+Escolha SMS para receber códigos.
+
+6
+00:01:02.226 --> 00:01:04.122
+Abra seu perfil.
+
+7
+00:01:14.496 --> 00:01:16.368
+Abra Segurança.
+
+8
+00:01:27.041 --> 00:01:28.913
+Abra Ajuda.
+
+9
+00:01:43.278 --> 00:01:45.246
+Confirme a saída.
+
+10
+00:01:53.366 --> 00:01:57.518
+Confira o histórico antes de resolver um resultado incerto.
+
+11
+00:02:14.493 --> 00:02:18.333
+Confirme somente após verificar o resultado do banco.
+
+12
+00:02:26.826 --> 00:02:28.962
+Revisão registrada.

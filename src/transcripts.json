@@ -2,604 +2,1143 @@
   "languages": {
     "es": {
       "first-use": [
-        "Demostración nativa: consultar la privacidad antes de aceptar los términos. No es una sesión bancaria personal.",
-        "Aviso de app independiente, términos y elección opcional de ayuda SMS; abrir un documento no equivale a aceptarlo.",
-        "Demo básica sin conexión: elegir español en el selector de siete idiomas de la app."
+        "Abre la política de privacidad.",
+        "Toca Volver.",
+        "Lee los términos.",
+        "Marca la casilla de aceptación.",
+        "Toca Continuar.",
+        "Elige si quieres activar la asistencia SMS.",
+        "Abre Ajustes.",
+        "Toca Idioma.",
+        "Elige Español."
       ],
       "login": [
-        "Aprobación simulada de un solo mensaje: muestra la verificación automática solo del acceso exclusivamente por SMS, no del teclado.",
-        "Desbloqueo biométrico simulado del acceso guardado; la aprobación del banco es un requisito separado.",
-        "Resultado de prueba, con datos ficticios."
+        "Permite compartir este SMS para entrar.",
+        "Listo. Ya entraste.",
+        "Desbloquea el acceso guardado con biometría.",
+        "Listo. Ya entraste."
       ],
       "verification": [
-        "Banco simulado: pregunta de seguridad y SMS son pasos separados; autocompletar el código conserva Verificar.",
-        "Registro de dispositivo y nuevo acceso biométrico simulados dentro de la app; no se reutiliza la contraseña en silencio."
+        "Escribe tu respuesta de seguridad.",
+        "Código SMS completado.",
+        "Toca Verificar.",
+        "Registra este dispositivo.",
+        "Desbloquea el acceso guardado con biometría."
       ],
       "accounts": [
-        "Demo básica: saldos ficticios, ocultar importes, DOP/USD, deslizamientos y detalles de la cuenta."
+        "Toca para ocultar los saldos.",
+        "Toca otra vez para mostrar los saldos.",
+        "Elige USD.",
+        "Elige DOP.",
+        "Abre la cuenta."
       ],
       "history": [
-        "Historial bancario simulado: revelar la cuenta, buscar movimientos y filtrar entradas y salidas.",
-        "CSV ficticio de la demo básica: revisar las opciones para compartir de Android sin enviarlo a un destinatario externo."
+        "Abre la cuenta.",
+        "Abre el historial de movimientos.",
+        "Escribe qué buscar.",
+        "Filtra entradas o salidas.",
+        "Abre la cuenta.",
+        "Abre el historial de movimientos.",
+        "Toca Exportar CSV para ver cómo compartirlo."
       ],
       "statements": [
-        "Banco simulado: períodos de estados de cuenta y PDF sintético con páginas, ampliación y acción de compartir.",
-        "Guardado bancario simulado: seleccionar PDF sintéticos para una carpeta de destino ficticia."
+        "Elige un período del estado de cuenta.",
+        "Toca la página siguiente.",
+        "Toca para ampliar.",
+        "Toca Compartir PDF.",
+        "Selecciona los estados de cuenta que quieres guardar.",
+        "Toca Guardar seleccionados y elige una carpeta.",
+        "Estados de cuenta guardados."
       ],
       "transfers": [
-        "En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado.",
-        "Revisa los datos. Aún no autorizas la operación.",
-        "Revisa y confirma por separado.",
-        "El teclado completa; tú pulsas Verificar.",
-        "Resultado de prueba, con datos ficticios.",
-        "Banco simulado: buscar y elegir un beneficiario sin enviar una transferencia en este caso."
+        "Transfiere entre tus cuentas.",
+        "Elige el destinatario.",
+        "Escribe el monto.",
+        "Revisa el destinatario, el monto y las comisiones.",
+        "Confirma la transferencia.",
+        "Código SMS completado.",
+        "Toca Verificar.",
+        "Revisa el comprobante de la transferencia.",
+        "Transfiere a una cuenta Santa Cruz.",
+        "Escribe el monto.",
+        "Revisa el destinatario, el monto y las comisiones.",
+        "Confirma la transferencia.",
+        "Toca Verificar.",
+        "Revisa el comprobante de la transferencia.",
+        "Transfiere a otro banco.",
+        "Escribe el monto.",
+        "Revisa el destinatario, el monto y las comisiones.",
+        "Confirma la transferencia.",
+        "Toca Verificar.",
+        "Revisa el comprobante de la transferencia.",
+        "Escribe qué buscar.",
+        "Elige el destinatario."
       ],
       "payments": [
-        "Servicio, cuenta e importe a la vista antes de confirmar y verificar el pago.",
-        "Revisa los datos. Aún no autorizas la operación.",
-        "Revisa y confirma por separado.",
-        "Resultado de prueba, con datos ficticios.",
-        "El teclado completa; tú pulsas Verificar."
+        "Paga un servicio.",
+        "Elige el servicio.",
+        "Escribe el monto.",
+        "Revisa el destinatario, el monto y las comisiones.",
+        "Confirma el pago.",
+        "Código SMS completado.",
+        "Toca Verificar.",
+        "Revisa el comprobante del pago.",
+        "Paga una tarjeta de crédito.",
+        "Escribe el monto.",
+        "Revisa el destinatario, el monto y las comisiones.",
+        "Confirma el pago.",
+        "Toca Verificar.",
+        "Revisa el comprobante del pago."
       ],
       "beneficiaries": [
-        "Banco simulado: pegar un código de destinatario, revisar y completar datos, sin validar ni guardar automáticamente.",
-        "Eliminar un beneficiario con banco simulado: revisión, confirmación separada, SMS autocompletado y Verificar expreso.",
-        "Revisa y confirma por separado.",
-        "Resultado de prueba, con datos ficticios.",
-        "Demo básica: crear y guardar localmente un beneficiario ficticio de otro banco, sin validación bancaria real."
+        "Pega el código del destinatario.",
+        "Revisa la cuenta y la moneda del destinatario.",
+        "Toca Continuar.",
+        "Elimina un destinatario guardado.",
+        "Confirma la eliminación.",
+        "Código SMS completado.",
+        "Toca Verificar.",
+        "Revisa la respuesta a la eliminación.",
+        "Añade un destinatario de otro banco.",
+        "Escribe el nombre del destinatario.",
+        "Escribe el banco.",
+        "Escribe el número de cuenta.",
+        "Toca Guardar destinatario.",
+        "Destinatario guardado."
       ],
       "cards": [
-        "Tarjeta ficticia: titular e identificador recibidos, número oculto salvo los últimos cuatro dígitos; servicios informativos sin cambios."
+        "Abre los detalles de la tarjeta.",
+        "Toca Copiar."
       ],
       "token": [
-        "Token BSC simulado: contrato, consentimiento, aprobación de prueba, código generado y desvinculación. El código no es SMS.",
-        "Revisa y confirma por separado.",
-        "El código del token no es un SMS.",
-        "Inscripción de token simulada: SMS autocompletado por Android y Verificar expreso; este caso no acredita inscripción completada.",
-        "El teclado completa; tú pulsas Verificar.",
-        "Resultado de prueba, con datos ficticios."
+        "Lee el contrato de Token BSC.",
+        "Acepta el contrato para activar el token.",
+        "Solicita activar el token.",
+        "Consulta la aprobación para ver tu código token.",
+        "Desvincula este token.",
+        "Token desvinculado.",
+        "Verifica la activación del token por SMS.",
+        "Código SMS completado.",
+        "Toca Verificar."
       ],
       "qr": [
-        "QR ficticio de cuenta o solicitud: revisar, cancelar el guardado y reintentar con destino simulado; no es un pago.",
-        "Lectura de QR simulada: revisar importe, concepto y destinatario de una solicitud ficticia; sin captura de cámara real.",
-        "QR ficticio: vista previa de impresión de Android y retorno, sin afirmar que haya una impresión física."
+        "Crea una solicitud de pago.",
+        "Escribe el concepto del pago.",
+        "Escribe el monto.",
+        "Toca Guardar QR.",
+        "Revisa el monto, el concepto y el destinatario.",
+        "Toca Continuar.",
+        "Toca Imprimir para ver la vista previa del QR."
       ],
       "settings": [
-        "Ajustes: desactivar y reactivar la ayuda SMS opcional, y elegir aparte Preguntar/Correo/SMS como entrega bancaria.",
-        "Demo básica: perfil, seguridad, ayuda y cierre de sesión de prueba; solo datos ficticios.",
-        "Resultado incierto con banco simulado: historial y nueva confirmación de conciliación; no repite ni cancela la operación.",
-        "Consulta el historial. Conciliar no repite ni cancela la operación."
+        "Desactiva la asistencia SMS.",
+        "Activa la asistencia SMS.",
+        "Elige Preguntar para recibir códigos.",
+        "Elige Correo para recibir códigos.",
+        "Elige SMS para recibir códigos.",
+        "Abre tu perfil.",
+        "Abre Seguridad.",
+        "Abre Ayuda.",
+        "Confirma cerrar sesión.",
+        "Revisa el historial antes de resolver un resultado incierto.",
+        "Confirma solo después de comprobar el resultado del banco.",
+        "Revisión registrada."
       ],
       "overview": [
-        "Llega el SMS; tras aprobar compartir ese mensaje en Android, el código se rellena y el acceso solo por SMS puede continuar.",
-        "En una operación, aprueba compartir el SMS en Android: el código se rellena, lo revisas y pulsas Verificar antes del resultado.",
-        "Elige tu idioma y mantenlo en toda la app.",
-        "Tras registrar el dispositivo, continúa dentro de la app con tu acceso biométrico.",
-        "Oculta saldos con un toque. Mantén pesos y dólares separados.",
-        "Encuentra un movimiento escribiendo unas letras.",
-        "Pasa las páginas del PDF dentro de la app.",
-        "Un comprobante claro después de revisar y autorizar.",
-        "Lee los datos del destinatario antes de continuar.",
-        "Copia con un toque. Solo se ven los últimos cuatro dígitos de la tarjeta.",
-        "Tu código Token BSC, dentro de la app.",
-        "Importe, concepto y destinatario juntos antes de continuar.",
-        "Elige la ayuda SMS en Ajustes. Tú mantienes el control."
+        "Permite compartir este SMS para entrar.",
+        "Listo. Ya entraste.",
+        "Código SMS completado.",
+        "Toca Verificar.",
+        "Revisa el comprobante de la transferencia.",
+        "Elige Español.",
+        "Desbloquea el acceso guardado con biometría.",
+        "Toca para ocultar los saldos.",
+        "Escribe qué buscar.",
+        "Toca la página siguiente.",
+        "Revisa el comprobante del pago.",
+        "Revisa los datos del destinatario importado.",
+        "Toca Copiar.",
+        "Usa tu código de Token BSC.",
+        "Revisa el monto, el concepto y el destinatario.",
+        "Activa la asistencia SMS."
       ]
     },
     "en": {
       "first-use": [
-        "Native demonstration: read privacy before accepting terms. This is not a personal banking session.",
-        "Independent-app notice, terms and optional SMS-assistance choice; opening a document does not accept it.",
-        "Basic offline demo: choose Spanish from the app’s seven-language selector."
+        "Open the privacy policy.",
+        "Tap Back.",
+        "Read the terms.",
+        "Check the agreement box.",
+        "Tap Continue.",
+        "Choose whether to enable SMS assistance.",
+        "Open Settings.",
+        "Tap Language.",
+        "Choose Spanish."
       ],
       "login": [
-        "A simulated one-message approval result demonstrates automatic verification of SMS-only login, not keyboard autofill.",
-        "Simulated biometric unlock of saved access; bank approval is a separate requirement.",
-        "A test result, using fictional data."
+        "Allow sharing this SMS to sign in.",
+        "Done. You’re signed in.",
+        "Unlock saved access with biometrics.",
+        "Done. You’re signed in."
       ],
       "verification": [
-        "Simulated banking: security question and SMS stay separate; code autofill retains explicit Verify.",
-        "Simulated device registration and fresh biometric login inside the app; no silent password replay."
+        "Enter your security answer.",
+        "SMS code filled.",
+        "Tap Verify.",
+        "Register this device.",
+        "Unlock saved access with biometrics."
       ],
       "accounts": [
-        "Basic demo: fictional balances, amount privacy, DOP/USD, swipes and account details."
+        "Tap to hide balances.",
+        "Tap again to show balances.",
+        "Choose USD.",
+        "Choose DOP.",
+        "Open the account."
       ],
       "history": [
-        "Simulated banking history: reveal the account, search transactions and filter incoming/outgoing records.",
-        "Basic demo’s fictional CSV: inspect Android sharing options without sending to an external recipient."
+        "Open the account.",
+        "Open transaction history.",
+        "Enter a search term.",
+        "Filter incoming or outgoing transactions.",
+        "Open the account.",
+        "Open transaction history.",
+        "Tap Export CSV to open sharing options."
       ],
       "statements": [
-        "Simulated banking: statement periods and a synthetic PDF with pages, zoom and an explicit sharing action.",
-        "Simulated statement saving: select synthetic PDFs for a fictional folder destination."
+        "Choose a statement period.",
+        "Tap the next page.",
+        "Tap to zoom.",
+        "Tap Share PDF.",
+        "Select the statements to save.",
+        "Tap Save selected, then choose a folder.",
+        "Statements saved."
       ],
       "transfers": [
-        "For an operation, approve sharing the SMS in Android: the code fills, you review it and tap Verify before the result.",
-        "Review the details. Nothing is authorized yet.",
-        "Review, then confirm separately.",
-        "Keyboard autofill still needs Verify.",
-        "A test result, using fictional data.",
-        "Simulated banking: search for and choose a beneficiary without sending a transfer in this case."
+        "Transfer between your accounts.",
+        "Choose the recipient.",
+        "Enter the amount.",
+        "Check the recipient, amount and fees.",
+        "Confirm the transfer.",
+        "SMS code filled.",
+        "Tap Verify.",
+        "Check the transfer receipt.",
+        "Transfer to a Santa Cruz account.",
+        "Enter the amount.",
+        "Check the recipient, amount and fees.",
+        "Confirm the transfer.",
+        "Tap Verify.",
+        "Check the transfer receipt.",
+        "Transfer to another bank.",
+        "Enter the amount.",
+        "Check the recipient, amount and fees.",
+        "Confirm the transfer.",
+        "Tap Verify.",
+        "Check the transfer receipt.",
+        "Enter a search term.",
+        "Choose the recipient."
       ],
       "payments": [
-        "Service, account and amount in view before confirming and verifying payment.",
-        "Review the details. Nothing is authorized yet.",
-        "Review, then confirm separately.",
-        "A test result, using fictional data.",
-        "Keyboard autofill still needs Verify."
+        "Pay a service bill.",
+        "Choose the service.",
+        "Enter the amount.",
+        "Check the recipient, amount and fees.",
+        "Confirm the payment.",
+        "SMS code filled.",
+        "Tap Verify.",
+        "Check the payment receipt.",
+        "Pay a credit card.",
+        "Enter the amount.",
+        "Check the recipient, amount and fees.",
+        "Confirm the payment.",
+        "Tap Verify.",
+        "Check the payment receipt."
       ],
       "beneficiaries": [
-        "Simulated banking: paste a recipient code, review and prefill details, without automatic validation or saving.",
-        "Fake-bank beneficiary deletion: review, separate confirmation, SMS-code autofill and explicit Verify.",
-        "Review, then confirm separately.",
-        "A test result, using fictional data.",
-        "Basic demo: create and save a fictional other-bank beneficiary locally, without real bank validation."
+        "Paste the recipient code.",
+        "Check the recipient’s account and currency.",
+        "Tap Continue.",
+        "Remove a saved recipient.",
+        "Confirm removal.",
+        "SMS code filled.",
+        "Tap Verify.",
+        "Check the removal response.",
+        "Add a recipient from another bank.",
+        "Enter the recipient’s name.",
+        "Enter the bank.",
+        "Enter the account number.",
+        "Tap Save recipient.",
+        "Recipient saved."
       ],
       "cards": [
-        "Fictional card: supplied holder and identifier, number masked except for the last four digits; services provide information without changes."
+        "Open card details.",
+        "Tap Copy."
       ],
       "token": [
-        "Simulated Token BSC: contract, consent, test approval, generated code and unlinking. The generated code is not SMS.",
-        "Review, then confirm separately.",
-        "A token code is not an SMS.",
-        "Simulated token enrollment: Android SMS-code autofill and explicit Verify; this case does not establish completed enrollment.",
-        "Keyboard autofill still needs Verify.",
-        "A test result, using fictional data."
+        "Read the Token BSC contract.",
+        "Accept the contract to enroll.",
+        "Request token activation.",
+        "Check approval to view your token code.",
+        "Unlink this token.",
+        "Token unlinked.",
+        "Verify token activation by SMS.",
+        "SMS code filled.",
+        "Tap Verify."
       ],
       "qr": [
-        "Fictional account/request QR: review, cancel saving and retry with a simulated destination; this is not payment.",
-        "Simulated QR read: review a fictional request’s amount, memo and recipient; no real camera capture.",
-        "Fictional QR: Android print preview and return, without claiming a physical printout."
+        "Create a payment request.",
+        "Enter what the payment is for.",
+        "Enter the amount.",
+        "Tap Save QR.",
+        "Check the amount, purpose and recipient.",
+        "Tap Continue.",
+        "Tap Print to preview the QR."
       ],
       "settings": [
-        "Settings: switch optional SMS assistance off then on; separately select Ask/Email/SMS bank-code delivery.",
-        "Basic demo: profile, security, help and test-session logout; fictional data only.",
-        "Fake-bank uncertain outcome: history and fresh reconciliation acknowledgement; no repeat or cancellation of the operation.",
-        "Check history first. Reconciliation neither repeats nor cancels the operation."
+        "Turn SMS assistance off.",
+        "Turn SMS assistance on.",
+        "Choose Ask for code delivery.",
+        "Choose Email for code delivery.",
+        "Choose SMS for code delivery.",
+        "Open your profile.",
+        "Open Security.",
+        "Open Help.",
+        "Confirm sign out.",
+        "Check history before resolving an uncertain result.",
+        "Acknowledge only after checking the bank’s result.",
+        "Review recorded."
       ],
       "overview": [
-        "SMS arrives; approve sharing that message in Android, the code fills, and SMS-only login can continue.",
-        "For an operation, approve sharing the SMS in Android: the code fills, you review it and tap Verify before the result.",
-        "Choose your language and keep it throughout the app.",
-        "After device registration, continue inside the app with biometric access.",
-        "Hide balances with a tap. Keep pesos and dollars separate.",
-        "Find a transaction by typing a few letters.",
-        "Turn PDF pages inside the app.",
-        "A clear receipt after review and authorization.",
-        "Read the recipient’s details before continuing.",
-        "Copy with a tap. Only the last four card digits stay visible.",
-        "Your Token BSC code, in the app.",
-        "Amount, memo and recipient together before you continue.",
-        "Choose SMS assistance in Settings. You stay in control."
+        "Allow sharing this SMS to sign in.",
+        "Done. You’re signed in.",
+        "SMS code filled.",
+        "Tap Verify.",
+        "Check the transfer receipt.",
+        "Choose Spanish.",
+        "Unlock saved access with biometrics.",
+        "Tap to hide balances.",
+        "Enter a search term.",
+        "Tap the next page.",
+        "Check the payment receipt.",
+        "Check the imported recipient details.",
+        "Tap Copy.",
+        "Use your Token BSC code.",
+        "Check the amount, purpose and recipient.",
+        "Turn SMS assistance on."
       ]
     },
     "de": {
       "first-use": [
-        "Native Vorführung: Datenschutz vor Zustimmung zu Bedingungen lesen. Keine persönliche Banksitzung.",
-        "Unabhängigkeitshinweis, Bedingungen und optionale SMS-Hilfe; ein Dokument zu öffnen bedeutet keine Zustimmung.",
-        "Einfache Offline-Demo: Spanisch in der Sprachauswahl mit sieben Sprachen wählen."
+        "Öffnen Sie die Datenschutzerklärung.",
+        "Tippen Sie auf Zurück.",
+        "Lesen Sie die Bedingungen.",
+        "Markieren Sie das Zustimmungsfeld.",
+        "Tippen Sie auf Weiter.",
+        "Wählen Sie, ob Sie die SMS-Hilfe aktivieren.",
+        "Öffnen Sie die Einstellungen.",
+        "Tippen Sie auf Sprache.",
+        "Wählen Sie Spanisch."
       ],
       "login": [
-        "Simulierte Freigabe einer Nachricht: automatische Prüfung nur der reinen SMS-Anmeldung, kein Tastatur-Autofill.",
-        "Simuliertes biometrisches Entsperren gespeicherter Zugangsdaten; die Bankfreigabe bleibt ein eigener Schritt.",
-        "Ein Testergebnis mit fiktiven Daten."
+        "Geben Sie diese SMS zum Anmelden frei.",
+        "Fertig. Sie sind angemeldet.",
+        "Entsperren Sie den gespeicherten Zugang biometrisch.",
+        "Fertig. Sie sind angemeldet."
       ],
       "verification": [
-        "Simulierte Bank: Sicherheitsfrage und SMS bleiben getrennt; automatisches Ausfüllen behält Prüfen bei.",
-        "Simulierte Geräteregistrierung und neue biometrische Anmeldung in der App; keine stille Passwortwiederverwendung."
+        "Geben Sie Ihre Sicherheitsantwort ein.",
+        "SMS-Code ausgefüllt.",
+        "Tippen Sie auf Bestätigen.",
+        "Registrieren Sie dieses Gerät.",
+        "Entsperren Sie den gespeicherten Zugang biometrisch."
       ],
       "accounts": [
-        "Einfache Demo: fiktive Salden, Beträge ausblenden, DOP/USD, Wischgesten und Kontodetails."
+        "Tippen Sie, um Guthaben auszublenden.",
+        "Tippen Sie erneut, um Guthaben einzublenden.",
+        "Wählen Sie USD.",
+        "Wählen Sie DOP.",
+        "Öffnen Sie das Konto."
       ],
       "history": [
-        "Simulierter Bankverlauf: Kontonummer anzeigen, Buchungen suchen und Ein- oder Ausgänge filtern.",
-        "Fiktive CSV der einfachen Demo: Android-Teilen-Auswahl ansehen, ohne an einen externen Empfänger zu senden."
+        "Öffnen Sie das Konto.",
+        "Öffnen Sie den Transaktionsverlauf.",
+        "Geben Sie einen Suchbegriff ein.",
+        "Filtern Sie Ein- oder Ausgänge.",
+        "Öffnen Sie das Konto.",
+        "Öffnen Sie den Transaktionsverlauf.",
+        "Tippen Sie auf CSV exportieren, um die Freigabe zu öffnen."
       ],
       "statements": [
-        "Simulierte Bank: Auszugszeiträume und künstliches PDF mit Seiten, Vergrößerung und ausdrücklicher Teilen-Aktion.",
-        "Simuliertes Speichern von Auszügen: künstliche PDFs für einen fiktiven Zielordner auswählen."
+        "Wählen Sie einen Auszugszeitraum.",
+        "Tippen Sie auf die nächste Seite.",
+        "Tippen Sie zum Vergrößern.",
+        "Tippen Sie auf PDF teilen.",
+        "Wählen Sie die zu speichernden Auszüge.",
+        "Tippen Sie auf Auswahl speichern und wählen Sie einen Ordner.",
+        "Auszüge gespeichert."
       ],
       "transfers": [
-        "Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen.",
-        "Prüfen Sie die Angaben. Noch ist nichts autorisiert.",
-        "Erst prüfen, dann gesondert bestätigen.",
-        "Tastatur-Autofill erfordert weiterhin Prüfen.",
-        "Ein Testergebnis mit fiktiven Daten.",
-        "Simulierte Bank: Begünstigte suchen und auswählen, ohne in diesem Fall eine Überweisung zu senden."
+        "Überweisen Sie zwischen Ihren Konten.",
+        "Wählen Sie den Empfänger.",
+        "Geben Sie den Betrag ein.",
+        "Prüfen Sie Empfänger, Betrag und Gebühren.",
+        "Bestätigen Sie die Überweisung.",
+        "SMS-Code ausgefüllt.",
+        "Tippen Sie auf Bestätigen.",
+        "Prüfen Sie den Überweisungsbeleg.",
+        "Überweisen Sie auf ein Santa-Cruz-Konto.",
+        "Geben Sie den Betrag ein.",
+        "Prüfen Sie Empfänger, Betrag und Gebühren.",
+        "Bestätigen Sie die Überweisung.",
+        "Tippen Sie auf Bestätigen.",
+        "Prüfen Sie den Überweisungsbeleg.",
+        "Überweisen Sie an eine andere Bank.",
+        "Geben Sie den Betrag ein.",
+        "Prüfen Sie Empfänger, Betrag und Gebühren.",
+        "Bestätigen Sie die Überweisung.",
+        "Tippen Sie auf Bestätigen.",
+        "Prüfen Sie den Überweisungsbeleg.",
+        "Geben Sie einen Suchbegriff ein.",
+        "Wählen Sie den Empfänger."
       ],
       "payments": [
-        "Dienst, Konto und Betrag vor dem Bestätigen und Prüfen der Zahlung im Blick.",
-        "Prüfen Sie die Angaben. Noch ist nichts autorisiert.",
-        "Erst prüfen, dann gesondert bestätigen.",
-        "Ein Testergebnis mit fiktiven Daten.",
-        "Tastatur-Autofill erfordert weiterhin Prüfen."
+        "Bezahlen Sie eine Servicerechnung.",
+        "Wählen Sie den Dienst.",
+        "Geben Sie den Betrag ein.",
+        "Prüfen Sie Empfänger, Betrag und Gebühren.",
+        "Bestätigen Sie die Zahlung.",
+        "SMS-Code ausgefüllt.",
+        "Tippen Sie auf Bestätigen.",
+        "Prüfen Sie den Zahlungsbeleg.",
+        "Bezahlen Sie eine Kreditkarte.",
+        "Geben Sie den Betrag ein.",
+        "Prüfen Sie Empfänger, Betrag und Gebühren.",
+        "Bestätigen Sie die Zahlung.",
+        "Tippen Sie auf Bestätigen.",
+        "Prüfen Sie den Zahlungsbeleg."
       ],
       "beneficiaries": [
-        "Simulierte Bank: Empfängercode einfügen, prüfen und vorausfüllen, ohne automatisch zu validieren oder zu speichern.",
-        "Simuliertes Löschen eines Bankbegünstigten: Prüfung, eigene Bestätigung, ausgefüllter SMS-Code und ausdrückliches Prüfen.",
-        "Erst prüfen, dann gesondert bestätigen.",
-        "Ein Testergebnis mit fiktiven Daten.",
-        "Einfache Demo: fiktiven Begünstigten einer anderen Bank lokal anlegen und speichern, ohne echte Bankprüfung."
+        "Fügen Sie den Empfängercode ein.",
+        "Prüfen Sie Konto und Währung des Empfängers.",
+        "Tippen Sie auf Weiter.",
+        "Entfernen Sie einen gespeicherten Empfänger.",
+        "Bestätigen Sie das Entfernen.",
+        "SMS-Code ausgefüllt.",
+        "Tippen Sie auf Bestätigen.",
+        "Prüfen Sie die Antwort zur Löschung.",
+        "Fügen Sie einen Empfänger einer anderen Bank hinzu.",
+        "Geben Sie den Empfängernamen ein.",
+        "Geben Sie die Bank ein.",
+        "Geben Sie die Kontonummer ein.",
+        "Tippen Sie auf Empfänger speichern.",
+        "Empfänger gespeichert."
       ],
       "cards": [
-        "Fiktive Karte: übermittelte Inhaberdaten und Kennung, Nummer bis auf die letzten vier Ziffern verdeckt; Dienste informieren ohne Änderungen."
+        "Öffnen Sie die Kartendetails.",
+        "Tippen Sie auf Kopieren."
       ],
       "token": [
-        "Simulierter Token BSC: Vertrag, Zustimmung, Testfreigabe, erzeugter Code und Trennen. Der erzeugte Code ist keine SMS.",
-        "Erst prüfen, dann gesondert bestätigen.",
-        "Ein Token-Code ist keine SMS.",
-        "Simulierte Token-Registrierung: Android füllt SMS-Code aus, dann ausdrücklich Prüfen; kein Nachweis abgeschlossener Registrierung.",
-        "Tastatur-Autofill erfordert weiterhin Prüfen.",
-        "Ein Testergebnis mit fiktiven Daten."
+        "Lesen Sie den Token-BSC-Vertrag.",
+        "Stimmen Sie dem Vertrag zur Registrierung zu.",
+        "Fordern Sie die Token-Aktivierung an.",
+        "Prüfen Sie die Freigabe für Ihren Token-Code.",
+        "Trennen Sie diesen Token.",
+        "Token getrennt.",
+        "Bestätigen Sie die Token-Aktivierung per SMS.",
+        "SMS-Code ausgefüllt.",
+        "Tippen Sie auf Bestätigen."
       ],
       "qr": [
-        "Fiktiver Konto-/Anforderungs-QR: prüfen, Speichern abbrechen und mit simuliertem Ziel erneut versuchen; keine Zahlung.",
-        "Simuliertes QR-Lesen: Betrag, Verwendungszweck und Empfänger einer fiktiven Anforderung prüfen; keine echte Kameraaufnahme.",
-        "Fiktiver QR: Android-Druckvorschau und Rückkehr, ohne einen tatsächlichen Ausdruck zu behaupten."
+        "Erstellen Sie eine Zahlungsanfrage.",
+        "Geben Sie den Zahlungszweck ein.",
+        "Geben Sie den Betrag ein.",
+        "Tippen Sie auf QR speichern.",
+        "Prüfen Sie Betrag, Zweck und Empfänger.",
+        "Tippen Sie auf Weiter.",
+        "Tippen Sie auf Drucken für die QR-Vorschau."
       ],
       "settings": [
-        "Einstellungen: optionale SMS-Hilfe aus und wieder an; Nachfragen/E-Mail/SMS wählt getrennt die Bankzustellung.",
-        "Einfache Demo: Profil, Sicherheit, Hilfe und Abmeldung der Testsitzung; nur fiktive Daten.",
-        "Unklares Ergebnis bei simulierter Bank: Verlauf und neue Abgleichbestätigung; kein Wiederholen oder Stornieren des Vorgangs.",
-        "Prüfen Sie den Verlauf. Ein Abgleich wiederholt oder storniert den Vorgang nicht."
+        "Schalten Sie die SMS-Hilfe aus.",
+        "Schalten Sie die SMS-Hilfe ein.",
+        "Wählen Sie Nachfragen für die Code-Zustellung.",
+        "Wählen Sie E-Mail für die Code-Zustellung.",
+        "Wählen Sie SMS für die Code-Zustellung.",
+        "Öffnen Sie Ihr Profil.",
+        "Öffnen Sie Sicherheit.",
+        "Öffnen Sie Hilfe.",
+        "Bestätigen Sie das Abmelden.",
+        "Prüfen Sie den Verlauf bei einem unklaren Ergebnis.",
+        "Bestätigen Sie erst nach Prüfung des Bankergebnisses.",
+        "Prüfung gespeichert."
       ],
       "overview": [
-        "SMS kommt an; nach Freigabe dieser Nachricht in Android wird der Code ausgefüllt und die reine SMS-Anmeldung kann fortfahren.",
-        "Bei Vorgängen SMS in Android freigeben: Code ausfüllen, prüfen und vor dem Ergebnis ausdrücklich Prüfen wählen.",
-        "Wählen Sie Ihre Sprache für die gesamte App.",
-        "Nach der Geräteregistrierung bleiben Sie in der App und nutzen den biometrischen Zugang.",
-        "Salden mit einem Tippen ausblenden. Pesos und Dollar bleiben getrennt.",
-        "Finden Sie eine Buchung mit wenigen Buchstaben.",
-        "Blättern Sie im PDF direkt in der App.",
-        "Ein klarer Beleg nach Prüfung und Freigabe.",
-        "Prüfen Sie die Empfängerdaten, bevor Sie fortfahren.",
-        "Per Tippen kopieren. Nur die letzten vier Kartenziffern bleiben sichtbar.",
-        "Ihr Token-BSC-Code direkt in der App.",
-        "Betrag, Verwendungszweck und Empfänger vor dem Fortfahren gemeinsam prüfen.",
-        "Wählen Sie die SMS-Hilfe in den Einstellungen. Sie behalten die Kontrolle."
+        "Geben Sie diese SMS zum Anmelden frei.",
+        "Fertig. Sie sind angemeldet.",
+        "SMS-Code ausgefüllt.",
+        "Tippen Sie auf Bestätigen.",
+        "Prüfen Sie den Überweisungsbeleg.",
+        "Wählen Sie Spanisch.",
+        "Entsperren Sie den gespeicherten Zugang biometrisch.",
+        "Tippen Sie, um Guthaben auszublenden.",
+        "Geben Sie einen Suchbegriff ein.",
+        "Tippen Sie auf die nächste Seite.",
+        "Prüfen Sie den Zahlungsbeleg.",
+        "Prüfen Sie die importierten Empfängerdaten.",
+        "Tippen Sie auf Kopieren.",
+        "Verwenden Sie Ihren Token-BSC-Code.",
+        "Prüfen Sie Betrag, Zweck und Empfänger.",
+        "Schalten Sie die SMS-Hilfe ein."
       ]
     },
     "fr": {
       "first-use": [
-        "Démonstration native : lire la confidentialité avant d’accepter les conditions. Aucune session bancaire personnelle.",
-        "Avis d’indépendance, conditions et choix de l’aide SMS facultative ; ouvrir un document ne vaut pas acceptation.",
-        "Démo de base hors ligne : choisir l’espagnol dans le sélecteur des sept langues de l’application."
+        "Ouvrez la politique de confidentialité.",
+        "Appuyez sur Retour.",
+        "Lisez les conditions.",
+        "Cochez la case d’acceptation.",
+        "Appuyez sur Continuer.",
+        "Choisissez d’activer ou non l’aide SMS.",
+        "Ouvrez les réglages.",
+        "Appuyez sur Langue.",
+        "Choisissez Espagnol."
       ],
       "login": [
-        "Accord simulé pour un seul message : vérification automatique de la connexion par SMS seul, pas du remplissage du clavier.",
-        "Déverrouillage biométrique simulé de l’accès mémorisé ; l’approbation bancaire reste une exigence distincte.",
-        "Un résultat de test, avec des données fictives."
+        "Autorisez le partage de ce SMS pour vous connecter.",
+        "C’est fait. Vous êtes connecté.",
+        "Déverrouillez l’accès enregistré par biométrie.",
+        "C’est fait. Vous êtes connecté."
       ],
       "verification": [
-        "Banque simulée : question de sécurité et SMS restent distincts ; remplir le code conserve Vérifier.",
-        "Inscription d’appareil et nouvelle connexion biométrique simulées dans l’application, sans réutilisation silencieuse du mot de passe."
+        "Saisissez votre réponse de sécurité.",
+        "Code SMS rempli.",
+        "Appuyez sur Vérifier.",
+        "Enregistrez cet appareil.",
+        "Déverrouillez l’accès enregistré par biométrie."
       ],
       "accounts": [
-        "Démo de base : soldes fictifs, montants masqués, DOP/USD, gestes de défilement et détails du compte."
+        "Appuyez pour masquer les soldes.",
+        "Appuyez à nouveau pour afficher les soldes.",
+        "Choisissez USD.",
+        "Choisissez DOP.",
+        "Ouvrez le compte."
       ],
       "history": [
-        "Historique bancaire simulé : afficher le compte, rechercher des opérations et filtrer entrées et sorties.",
-        "CSV fictif de la démo de base : examiner les options de partage Android sans envoyer à un destinataire externe."
+        "Ouvrez le compte.",
+        "Ouvrez l’historique des opérations.",
+        "Saisissez un terme à rechercher.",
+        "Filtrez les entrées ou les sorties.",
+        "Ouvrez le compte.",
+        "Ouvrez l’historique des opérations.",
+        "Appuyez sur Exporter CSV pour ouvrir le partage."
       ],
       "statements": [
-        "Banque simulée : périodes de relevés et PDF synthétique avec pages, agrandissement et partage explicite.",
-        "Enregistrement de relevés simulé : sélectionner des PDF synthétiques pour un dossier de destination fictif."
+        "Choisissez une période de relevé.",
+        "Appuyez sur la page suivante.",
+        "Appuyez pour agrandir.",
+        "Appuyez sur Partager le PDF.",
+        "Sélectionnez les relevés à enregistrer.",
+        "Appuyez sur Enregistrer la sélection, puis choisissez un dossier.",
+        "Relevés enregistrés."
       ],
       "transfers": [
-        "Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.",
-        "Vérifiez les détails. Rien n’est encore autorisé.",
-        "Vérifiez, puis confirmez séparément.",
-        "L’autoremplissage du clavier exige toujours Vérifier.",
-        "Un résultat de test, avec des données fictives.",
-        "Banque simulée : rechercher et choisir un bénéficiaire sans envoyer de virement dans ce cas."
+        "Virez de l’argent entre vos comptes.",
+        "Choisissez le destinataire.",
+        "Saisissez le montant.",
+        "Vérifiez le destinataire, le montant et les frais.",
+        "Confirmez le virement.",
+        "Code SMS rempli.",
+        "Appuyez sur Vérifier.",
+        "Vérifiez le reçu du virement.",
+        "Virez vers un compte Santa Cruz.",
+        "Saisissez le montant.",
+        "Vérifiez le destinataire, le montant et les frais.",
+        "Confirmez le virement.",
+        "Appuyez sur Vérifier.",
+        "Vérifiez le reçu du virement.",
+        "Virez vers une autre banque.",
+        "Saisissez le montant.",
+        "Vérifiez le destinataire, le montant et les frais.",
+        "Confirmez le virement.",
+        "Appuyez sur Vérifier.",
+        "Vérifiez le reçu du virement.",
+        "Saisissez un terme à rechercher.",
+        "Choisissez le destinataire."
       ],
       "payments": [
-        "Service, compte et montant visibles avant de confirmer et vérifier le paiement.",
-        "Vérifiez les détails. Rien n’est encore autorisé.",
-        "Vérifiez, puis confirmez séparément.",
-        "Un résultat de test, avec des données fictives.",
-        "L’autoremplissage du clavier exige toujours Vérifier."
+        "Payez une facture de service.",
+        "Choisissez le service.",
+        "Saisissez le montant.",
+        "Vérifiez le destinataire, le montant et les frais.",
+        "Confirmez le paiement.",
+        "Code SMS rempli.",
+        "Appuyez sur Vérifier.",
+        "Vérifiez le reçu du paiement.",
+        "Réglez une carte de crédit.",
+        "Saisissez le montant.",
+        "Vérifiez le destinataire, le montant et les frais.",
+        "Confirmez le paiement.",
+        "Appuyez sur Vérifier.",
+        "Vérifiez le reçu du paiement."
       ],
       "beneficiaries": [
-        "Banque simulée : coller un code de destinataire, revoir et préremplir, sans validation ni enregistrement automatique.",
-        "Suppression de bénéficiaire simulée : révision, confirmation distincte, code SMS rempli et Vérifier explicite.",
-        "Vérifiez, puis confirmez séparément.",
-        "Un résultat de test, avec des données fictives.",
-        "Démo de base : créer et enregistrer localement un bénéficiaire fictif d’une autre banque, sans validation bancaire réelle."
+        "Collez le code du destinataire.",
+        "Vérifiez le compte et la devise du destinataire.",
+        "Appuyez sur Continuer.",
+        "Supprimez un destinataire enregistré.",
+        "Confirmez la suppression.",
+        "Code SMS rempli.",
+        "Appuyez sur Vérifier.",
+        "Vérifiez la réponse à la suppression.",
+        "Ajoutez un destinataire d’une autre banque.",
+        "Saisissez le nom du destinataire.",
+        "Saisissez la banque.",
+        "Saisissez le numéro de compte.",
+        "Appuyez sur Enregistrer le destinataire.",
+        "Destinataire enregistré."
       ],
       "cards": [
-        "Carte fictive : titulaire et identifiant fournis, seuls les quatre derniers chiffres du numéro sont visibles ; services sans modification."
+        "Ouvrez les détails de la carte.",
+        "Appuyez sur Copier."
       ],
       "token": [
-        "Token BSC simulé : contrat, consentement, approbation de test, code généré et dissociation. Le code généré n’est pas un SMS.",
-        "Vérifiez, puis confirmez séparément.",
-        "Un code de jeton n’est pas un SMS.",
-        "Inscription de jeton simulée : code SMS rempli par Android et Vérifier explicite ; ce cas ne prouve pas une inscription achevée.",
-        "L’autoremplissage du clavier exige toujours Vérifier.",
-        "Un résultat de test, avec des données fictives."
+        "Lisez le contrat Token BSC.",
+        "Acceptez le contrat pour vous inscrire.",
+        "Demandez l’activation du token.",
+        "Vérifiez l’approbation pour afficher votre code token.",
+        "Dissociez ce token.",
+        "Token dissocié.",
+        "Vérifiez l’activation du token par SMS.",
+        "Code SMS rempli.",
+        "Appuyez sur Vérifier."
       ],
       "qr": [
-        "QR fictif de compte/demande : révision, annulation puis nouvel essai d’enregistrement avec destination simulée ; aucun paiement.",
-        "Lecture QR simulée : revoir montant, motif et destinataire d’une demande fictive ; aucune capture réelle par caméra.",
-        "QR fictif : aperçu d’impression Android et retour, sans affirmer qu’une impression physique a lieu."
+        "Créez une demande de paiement.",
+        "Saisissez le motif du paiement.",
+        "Saisissez le montant.",
+        "Appuyez sur Enregistrer le QR.",
+        "Vérifiez le montant, le motif et le destinataire.",
+        "Appuyez sur Continuer.",
+        "Appuyez sur Imprimer pour prévisualiser le QR."
       ],
       "settings": [
-        "Réglages : désactiver puis réactiver l’aide SMS facultative ; Demander/E-mail/SMS choisit séparément le canal bancaire.",
-        "Démo de base : profil, sécurité, aide et déconnexion de la session de test ; données fictives uniquement.",
-        "Résultat bancaire simulé incertain : historique et nouvel accord de rapprochement ; aucune répétition ni annulation de l’opération.",
-        "Consultez l’historique. Le rapprochement ne répète ni n’annule l’opération."
+        "Désactivez l’aide SMS.",
+        "Activez l’aide SMS.",
+        "Choisissez Demander pour recevoir les codes.",
+        "Choisissez E-mail pour recevoir les codes.",
+        "Choisissez SMS pour recevoir les codes.",
+        "Ouvrez votre profil.",
+        "Ouvrez Sécurité.",
+        "Ouvrez Aide.",
+        "Confirmez la déconnexion.",
+        "Vérifiez l’historique avant de résoudre un résultat incertain.",
+        "Confirmez seulement après avoir vérifié le résultat bancaire.",
+        "Vérification enregistrée."
       ],
       "overview": [
-        "Le SMS arrive ; après accord pour partager ce message dans Android, le code se remplit et la connexion par SMS seul peut continuer.",
-        "Pour une opération, autorisez le SMS dans Android : le code se remplit, vous le relisez puis appuyez sur Vérifier avant le résultat.",
-        "Choisissez votre langue et gardez-la dans toute l’application.",
-        "Après l’enregistrement de l’appareil, poursuivez dans l’application avec l’accès biométrique.",
-        "Masquez les soldes d’un geste. Pesos et dollars restent séparés.",
-        "Retrouvez une opération en saisissant quelques lettres.",
-        "Parcourez les pages du PDF dans l’application.",
-        "Un reçu clair après vérification et autorisation.",
-        "Lisez les coordonnées du destinataire avant de continuer.",
-        "Copiez d’un geste. Seuls les quatre derniers chiffres restent visibles.",
-        "Votre code Token BSC dans l’application.",
-        "Montant, motif et destinataire réunis avant de continuer.",
-        "Choisissez l’aide SMS dans les paramètres. Vous gardez le contrôle."
+        "Autorisez le partage de ce SMS pour vous connecter.",
+        "C’est fait. Vous êtes connecté.",
+        "Code SMS rempli.",
+        "Appuyez sur Vérifier.",
+        "Vérifiez le reçu du virement.",
+        "Choisissez Espagnol.",
+        "Déverrouillez l’accès enregistré par biométrie.",
+        "Appuyez pour masquer les soldes.",
+        "Saisissez un terme à rechercher.",
+        "Appuyez sur la page suivante.",
+        "Vérifiez le reçu du paiement.",
+        "Vérifiez les coordonnées du destinataire importé.",
+        "Appuyez sur Copier.",
+        "Utilisez votre code Token BSC.",
+        "Vérifiez le montant, le motif et le destinataire.",
+        "Activez l’aide SMS."
       ]
     },
     "ru": {
       "first-use": [
-        "Нативный показ: конфиденциальность до принятия условий. Это не личный банковский сеанс.",
-        "Уведомление о независимости, условия и выбор необязательной помощи SMS; открытие документа не означает согласия.",
-        "Базовая демоверсия без банка: выбор испанского из семи языков приложения."
+        "Откройте политику конфиденциальности.",
+        "Нажмите «Назад».",
+        "Прочитайте условия.",
+        "Отметьте согласие с условиями.",
+        "Нажмите «Продолжить».",
+        "Выберите, включать ли помощь с SMS.",
+        "Откройте настройки.",
+        "Нажмите «Язык».",
+        "Выберите испанский."
       ],
       "login": [
-        "Имитация согласия на одно сообщение: автоматическая проверка лишь входа только по SMS, а не автозаполнения клавиатуры.",
-        "Имитация биометрической разблокировки сохранённого доступа; одобрение банка остаётся отдельным требованием.",
-        "Тестовый результат с вымышленными данными."
+        "Разрешите передать это SMS для входа.",
+        "Готово. Вход выполнен.",
+        "Подтвердите сохранённый вход биометрией.",
+        "Готово. Вход выполнен."
       ],
       "verification": [
-        "Имитация банка: секретный вопрос и SMS остаются отдельными шагами; автозаполнение сохраняет «Проверить».",
-        "Имитация регистрации устройства и нового биометрического входа внутри приложения, без скрытого повторного использования пароля."
+        "Введите ответ на контрольный вопрос.",
+        "Код из SMS подставлен.",
+        "Нажмите «Подтвердить».",
+        "Зарегистрируйте это устройство.",
+        "Подтвердите сохранённый вход биометрией."
       ],
       "accounts": [
-        "Базовая демоверсия: вымышленные остатки, скрытие сумм, DOP/USD, свайпы и сведения о счёте."
+        "Нажмите, чтобы скрыть остатки.",
+        "Нажмите ещё раз, чтобы показать остатки.",
+        "Выберите USD.",
+        "Выберите DOP.",
+        "Откройте счёт."
       ],
       "history": [
-        "Имитация банковской истории: показать счёт, искать операции и фильтровать поступления и списания.",
-        "Вымышленный CSV базовой демоверсии: просмотр меню отправки Android без отправки внешнему получателю."
+        "Откройте счёт.",
+        "Откройте историю операций.",
+        "Введите поисковый запрос.",
+        "Отфильтруйте входящие или исходящие операции.",
+        "Откройте счёт.",
+        "Откройте историю операций.",
+        "Нажмите «Экспорт CSV», чтобы выбрать способ отправки."
       ],
       "statements": [
-        "Имитация банка: периоды выписок и искусственный PDF со страницами, масштабом и явной отправкой.",
-        "Имитация сохранения выписок: выбрать искусственные PDF для вымышленной папки назначения."
+        "Выберите период выписки.",
+        "Откройте следующую страницу.",
+        "Нажмите, чтобы увеличить.",
+        "Нажмите «Поделиться PDF».",
+        "Выберите выписки для сохранения.",
+        "Нажмите «Сохранить выбранное» и выберите папку.",
+        "Выписки сохранены."
       ],
       "transfers": [
-        "В операции разрешите Android передать SMS: код заполнится, проверьте его и нажмите «Проверить» перед результатом.",
-        "Проверьте данные. Операция ещё не разрешена.",
-        "Проверьте, затем подтвердите отдельно.",
-        "После заполнения клавиатурой нажмите «Проверить».",
-        "Тестовый результат с вымышленными данными.",
-        "Имитация банка: поиск и выбор получателя без отправки перевода в этом сценарии."
+        "Переведите между своими счетами.",
+        "Выберите получателя.",
+        "Введите сумму.",
+        "Проверьте получателя, сумму и комиссии.",
+        "Подтвердите перевод.",
+        "Код из SMS подставлен.",
+        "Нажмите «Подтвердить».",
+        "Проверьте квитанцию перевода.",
+        "Переведите на счёт Santa Cruz.",
+        "Введите сумму.",
+        "Проверьте получателя, сумму и комиссии.",
+        "Подтвердите перевод.",
+        "Нажмите «Подтвердить».",
+        "Проверьте квитанцию перевода.",
+        "Переведите в другой банк.",
+        "Введите сумму.",
+        "Проверьте получателя, сумму и комиссии.",
+        "Подтвердите перевод.",
+        "Нажмите «Подтвердить».",
+        "Проверьте квитанцию перевода.",
+        "Введите поисковый запрос.",
+        "Выберите получателя."
       ],
       "payments": [
-        "Услуга, счёт и сумма видны перед подтверждением и проверкой платежа.",
-        "Проверьте данные. Операция ещё не разрешена.",
-        "Проверьте, затем подтвердите отдельно.",
-        "Тестовый результат с вымышленными данными.",
-        "После заполнения клавиатурой нажмите «Проверить»."
+        "Оплатите услугу.",
+        "Выберите услугу.",
+        "Введите сумму.",
+        "Проверьте получателя, сумму и комиссии.",
+        "Подтвердите платёж.",
+        "Код из SMS подставлен.",
+        "Нажмите «Подтвердить».",
+        "Проверьте квитанцию платежа.",
+        "Оплатите кредитную карту.",
+        "Введите сумму.",
+        "Проверьте получателя, сумму и комиссии.",
+        "Подтвердите платёж.",
+        "Нажмите «Подтвердить».",
+        "Проверьте квитанцию платежа."
       ],
       "beneficiaries": [
-        "Имитация банка: вставка кода получателя, проверка и заполнение данных, без автоматической валидации или сохранения.",
-        "Имитация удаления получателя: проверка, отдельное подтверждение, автозаполнение SMS-кода и явное «Проверить».",
-        "Проверьте, затем подтвердите отдельно.",
-        "Тестовый результат с вымышленными данными.",
-        "Базовая демоверсия: создание и локальное сохранение вымышленного получателя другого банка, без реальной банковской проверки."
+        "Вставьте код получателя.",
+        "Проверьте счёт и валюту получателя.",
+        "Нажмите «Продолжить».",
+        "Удалите сохранённого получателя.",
+        "Подтвердите удаление.",
+        "Код из SMS подставлен.",
+        "Нажмите «Подтвердить».",
+        "Проверьте ответ на удаление.",
+        "Добавьте получателя из другого банка.",
+        "Введите имя получателя.",
+        "Введите банк.",
+        "Введите номер счёта.",
+        "Нажмите «Сохранить получателя».",
+        "Получатель сохранён."
       ],
       "cards": [
-        "Вымышленная карта: владелец и идентификатор от банка, видны только последние четыре цифры номера; сервисы информируют без изменений."
+        "Откройте сведения о карте.",
+        "Нажмите «Копировать»."
       ],
       "token": [
-        "Имитация Token BSC: договор, согласие, тестовое одобрение, созданный код и отключение. Созданный код — не SMS.",
-        "Проверьте, затем подтвердите отдельно.",
-        "Код токена — это не SMS.",
-        "Имитация подключения токена: автозаполнение SMS-кода Android и явное «Проверить»; сценарий не доказывает завершение подключения.",
-        "После заполнения клавиатурой нажмите «Проверить».",
-        "Тестовый результат с вымышленными данными."
+        "Прочитайте договор Token BSC.",
+        "Примите договор для подключения токена.",
+        "Запросите активацию токена.",
+        "Проверьте одобрение, чтобы увидеть код токена.",
+        "Отключите этот токен.",
+        "Токен отключён.",
+        "Подтвердите активацию токена по SMS.",
+        "Код из SMS подставлен.",
+        "Нажмите «Подтвердить»."
       ],
       "qr": [
-        "Вымышленный QR счёта или запроса: проверка, отмена сохранения и повтор с имитацией места; это не платёж.",
-        "Имитация чтения QR: проверка суммы, назначения и получателя вымышленного запроса; без реальной съёмки камерой.",
-        "Вымышленный QR: предварительный просмотр печати Android и возврат, без утверждения о физической распечатке."
+        "Создайте запрос на оплату.",
+        "Введите назначение платежа.",
+        "Введите сумму.",
+        "Нажмите «Сохранить QR».",
+        "Проверьте сумму, назначение и получателя.",
+        "Нажмите «Продолжить».",
+        "Нажмите «Печать» для предпросмотра QR."
       ],
       "settings": [
-        "Настройки: отключить и включить необязательную помощь SMS; Спрашивать/Почта/SMS отдельно выбирает банковскую доставку.",
-        "Базовая демоверсия: профиль, безопасность, помощь и выход из тестового сеанса; только вымышленные данные.",
-        "Неопределённый результат с имитацией банка: история и новое подтверждение сверки, без повтора или отмены операции.",
-        "Сначала проверьте историю. Сверка не повторяет и не отменяет операцию."
+        "Выключите помощь с SMS.",
+        "Включите помощь с SMS.",
+        "Выберите «Спрашивать» для доставки кодов.",
+        "Выберите почту для доставки кодов.",
+        "Выберите SMS для доставки кодов.",
+        "Откройте свой профиль.",
+        "Откройте раздел «Безопасность».",
+        "Откройте помощь.",
+        "Подтвердите выход.",
+        "При неопределённом результате сначала проверьте историю.",
+        "Подтвердите только после проверки результата в банке.",
+        "Проверка записана."
       ],
       "overview": [
-        "Приходит SMS; после согласия передать его в Android код заполняется, и вход только по SMS может продолжиться.",
-        "В операции разрешите Android передать SMS: код заполнится, проверьте его и нажмите «Проверить» перед результатом.",
-        "Выберите язык для всего приложения.",
-        "После регистрации устройства продолжайте в приложении с биометрическим входом.",
-        "Скрывайте остатки одним нажатием. Песо и доллары показаны отдельно.",
-        "Найдите операцию, введя несколько букв.",
-        "Листайте PDF прямо в приложении.",
-        "Понятная квитанция после проверки и подтверждения.",
-        "Прочитайте данные получателя перед продолжением.",
-        "Копируйте одним нажатием. Видны лишь последние четыре цифры карты.",
-        "Ваш код Token BSC — в приложении.",
-        "Сумма, назначение и получатель вместе перед продолжением.",
-        "Выберите помощь с SMS в настройках. Управление остаётся у вас."
+        "Разрешите передать это SMS для входа.",
+        "Готово. Вход выполнен.",
+        "Код из SMS подставлен.",
+        "Нажмите «Подтвердить».",
+        "Проверьте квитанцию перевода.",
+        "Выберите испанский.",
+        "Подтвердите сохранённый вход биометрией.",
+        "Нажмите, чтобы скрыть остатки.",
+        "Введите поисковый запрос.",
+        "Откройте следующую страницу.",
+        "Проверьте квитанцию платежа.",
+        "Проверьте импортированные данные получателя.",
+        "Нажмите «Копировать».",
+        "Используйте код Token BSC.",
+        "Проверьте сумму, назначение и получателя.",
+        "Включите помощь с SMS."
       ]
     },
     "uk": {
       "first-use": [
-        "Нативний показ: конфіденційність до прийняття умов. Це не особистий банківський сеанс.",
-        "Повідомлення про незалежність, умови й вибір необов’язкової допомоги SMS; відкриття документа не означає згоди.",
-        "Базова демоверсія без банку: вибір іспанської із семи мов застосунку."
+        "Відкрийте політику конфіденційності.",
+        "Натисніть «Назад».",
+        "Прочитайте умови.",
+        "Позначте згоду з умовами.",
+        "Натисніть «Продовжити».",
+        "Виберіть, чи вмикати допомогу з SMS.",
+        "Відкрийте налаштування.",
+        "Натисніть «Мова».",
+        "Виберіть іспанську."
       ],
       "login": [
-        "Імітація згоди на одне повідомлення: автоматична перевірка лише входу за SMS, а не автозаповнення клавіатури.",
-        "Імітація біометричного розблокування збереженого доступу; схвалення банку лишається окремою вимогою.",
-        "Тестовий результат із вигаданими даними."
+        "Дозвольте передати це SMS для входу.",
+        "Готово. Вхід виконано.",
+        "Підтвердьте збережений вхід біометрією.",
+        "Готово. Вхід виконано."
       ],
       "verification": [
-        "Імітація банку: таємне запитання й SMS лишаються окремими кроками; автозаповнення зберігає «Перевірити».",
-        "Імітація реєстрації пристрою й нового біометричного входу в застосунку, без прихованого повторного використання пароля."
+        "Введіть відповідь на контрольне запитання.",
+        "Код із SMS підставлено.",
+        "Натисніть «Підтвердити».",
+        "Зареєструйте цей пристрій.",
+        "Підтвердьте збережений вхід біометрією."
       ],
       "accounts": [
-        "Базова демоверсія: вигадані залишки, приховування сум, DOP/USD, свайпи й відомості про рахунок."
+        "Натисніть, щоб приховати залишки.",
+        "Натисніть ще раз, щоб показати залишки.",
+        "Виберіть USD.",
+        "Виберіть DOP.",
+        "Відкрийте рахунок."
       ],
       "history": [
-        "Імітація банківської історії: показати рахунок, шукати операції та фільтрувати надходження й списання.",
-        "Вигаданий CSV базової демоверсії: перегляд меню надсилання Android без надсилання зовнішньому одержувачу."
+        "Відкрийте рахунок.",
+        "Відкрийте історію операцій.",
+        "Введіть пошуковий запит.",
+        "Відфільтруйте вхідні або вихідні операції.",
+        "Відкрийте рахунок.",
+        "Відкрийте історію операцій.",
+        "Натисніть «Експорт CSV», щоб вибрати спосіб надсилання."
       ],
       "statements": [
-        "Імітація банку: періоди виписок і штучний PDF зі сторінками, масштабом та явним надсиланням.",
-        "Імітація збереження виписок: вибрати штучні PDF для вигаданої папки призначення."
+        "Виберіть період виписки.",
+        "Відкрийте наступну сторінку.",
+        "Натисніть, щоб збільшити.",
+        "Натисніть «Поділитися PDF».",
+        "Виберіть виписки для збереження.",
+        "Натисніть «Зберегти вибране» та виберіть папку.",
+        "Виписки збережено."
       ],
       "transfers": [
-        "В операції дозвольте Android передати SMS: код заповниться, перевірте його й натисніть «Перевірити» перед результатом.",
-        "Перевірте дані. Операцію ще не дозволено.",
-        "Перевірте, потім підтвердьте окремо.",
-        "Після заповнення клавіатурою натисніть «Перевірити».",
-        "Тестовий результат із вигаданими даними.",
-        "Імітація банку: пошук і вибір одержувача без надсилання переказу в цьому сценарії."
+        "Перекажіть між своїми рахунками.",
+        "Виберіть одержувача.",
+        "Введіть суму.",
+        "Перевірте одержувача, суму та комісії.",
+        "Підтвердьте переказ.",
+        "Код із SMS підставлено.",
+        "Натисніть «Підтвердити».",
+        "Перевірте квитанцію переказу.",
+        "Перекажіть на рахунок Santa Cruz.",
+        "Введіть суму.",
+        "Перевірте одержувача, суму та комісії.",
+        "Підтвердьте переказ.",
+        "Натисніть «Підтвердити».",
+        "Перевірте квитанцію переказу.",
+        "Перекажіть до іншого банку.",
+        "Введіть суму.",
+        "Перевірте одержувача, суму та комісії.",
+        "Підтвердьте переказ.",
+        "Натисніть «Підтвердити».",
+        "Перевірте квитанцію переказу.",
+        "Введіть пошуковий запит.",
+        "Виберіть одержувача."
       ],
       "payments": [
-        "Послугу, рахунок і суму видно перед підтвердженням і перевіркою платежу.",
-        "Перевірте дані. Операцію ще не дозволено.",
-        "Перевірте, потім підтвердьте окремо.",
-        "Тестовий результат із вигаданими даними.",
-        "Після заповнення клавіатурою натисніть «Перевірити»."
+        "Оплатіть послугу.",
+        "Виберіть послугу.",
+        "Введіть суму.",
+        "Перевірте одержувача, суму та комісії.",
+        "Підтвердьте платіж.",
+        "Код із SMS підставлено.",
+        "Натисніть «Підтвердити».",
+        "Перевірте квитанцію платежу.",
+        "Оплатіть кредитну картку.",
+        "Введіть суму.",
+        "Перевірте одержувача, суму та комісії.",
+        "Підтвердьте платіж.",
+        "Натисніть «Підтвердити».",
+        "Перевірте квитанцію платежу."
       ],
       "beneficiaries": [
-        "Імітація банку: вставлення коду одержувача, перевірка й заповнення даних, без автоматичної валідації чи збереження.",
-        "Імітація видалення одержувача: перевірка, окреме підтвердження, автозаповнення SMS-коду та явне «Перевірити».",
-        "Перевірте, потім підтвердьте окремо.",
-        "Тестовий результат із вигаданими даними.",
-        "Базова демоверсія: створення й локальне збереження вигаданого одержувача іншого банку, без реальної банківської перевірки."
+        "Вставте код одержувача.",
+        "Перевірте рахунок і валюту одержувача.",
+        "Натисніть «Продовжити».",
+        "Видаліть збереженого одержувача.",
+        "Підтвердьте видалення.",
+        "Код із SMS підставлено.",
+        "Натисніть «Підтвердити».",
+        "Перевірте відповідь на видалення.",
+        "Додайте одержувача з іншого банку.",
+        "Введіть ім’я одержувача.",
+        "Введіть банк.",
+        "Введіть номер рахунку.",
+        "Натисніть «Зберегти одержувача».",
+        "Одержувача збережено."
       ],
       "cards": [
-        "Вигадана картка: власник та ідентифікатор від банку, видно лише останні чотири цифри номера; сервіси інформують без змін."
+        "Відкрийте відомості про картку.",
+        "Натисніть «Копіювати»."
       ],
       "token": [
-        "Імітація Token BSC: договір, згода, тестове схвалення, створений код і від’єднання. Створений код — не SMS.",
-        "Перевірте, потім підтвердьте окремо.",
-        "Код токена — це не SMS.",
-        "Імітація підключення токена: автозаповнення SMS-коду Android і явне «Перевірити»; сценарій не доводить завершення підключення.",
-        "Після заповнення клавіатурою натисніть «Перевірити».",
-        "Тестовий результат із вигаданими даними."
+        "Прочитайте договір Token BSC.",
+        "Прийміть договір для підключення токена.",
+        "Запросіть активацію токена.",
+        "Перевірте схвалення, щоб побачити код токена.",
+        "Відключіть цей токен.",
+        "Токен відключено.",
+        "Підтвердьте активацію токена через SMS.",
+        "Код із SMS підставлено.",
+        "Натисніть «Підтвердити»."
       ],
       "qr": [
-        "Вигаданий QR рахунку чи запиту: перевірка, скасування збереження й повтор з імітацією місця; це не платіж.",
-        "Імітація читання QR: перевірка суми, призначення й одержувача вигаданого запиту; без справжнього знімання камерою.",
-        "Вигаданий QR: попередній перегляд друку Android і повернення, без твердження про фізичний видрук."
+        "Створіть запит на оплату.",
+        "Введіть призначення платежу.",
+        "Введіть суму.",
+        "Натисніть «Зберегти QR».",
+        "Перевірте суму, призначення й одержувача.",
+        "Натисніть «Продовжити».",
+        "Натисніть «Друк» для перегляду QR."
       ],
       "settings": [
-        "Налаштування: вимкнути й увімкнути необов’язкову допомогу SMS; Запитувати/Пошта/SMS окремо вибирає банківську доставку.",
-        "Базова демоверсія: профіль, безпека, допомога й вихід із тестового сеансу; лише вигадані дані.",
-        "Невизначений результат з імітацією банку: історія й нове підтвердження звірки, без повторення чи скасування операції.",
-        "Спочатку перевірте історію. Звірка не повторює та не скасовує операцію."
+        "Вимкніть допомогу з SMS.",
+        "Увімкніть допомогу з SMS.",
+        "Виберіть «Запитувати» для доставки кодів.",
+        "Виберіть пошту для доставки кодів.",
+        "Виберіть SMS для доставки кодів.",
+        "Відкрийте свій профіль.",
+        "Відкрийте розділ «Безпека».",
+        "Відкрийте допомогу.",
+        "Підтвердьте вихід.",
+        "За невизначеного результату спочатку перевірте історію.",
+        "Підтвердьте лише після перевірки результату в банку.",
+        "Перевірку записано."
       ],
       "overview": [
-        "Надходить SMS; після згоди передати його в Android код заповнюється, і вхід лише за SMS може продовжитися.",
-        "В операції дозвольте Android передати SMS: код заповниться, перевірте його й натисніть «Перевірити» перед результатом.",
-        "Виберіть мову для всього застосунку.",
-        "Після реєстрації пристрою продовжуйте в застосунку з біометричним входом.",
-        "Приховуйте залишки одним натисканням. Песо й долари показано окремо.",
-        "Знайдіть операцію, ввівши кілька літер.",
-        "Гортайте PDF безпосередньо в застосунку.",
-        "Зрозуміла квитанція після перевірки та підтвердження.",
-        "Прочитайте дані одержувача перед продовженням.",
-        "Копіюйте одним натисканням. Видно лише останні чотири цифри картки.",
-        "Ваш код Token BSC — у застосунку.",
-        "Сума, призначення й одержувач разом перед продовженням.",
-        "Виберіть допомогу з SMS у налаштуваннях. Керування залишається у вас."
+        "Дозвольте передати це SMS для входу.",
+        "Готово. Вхід виконано.",
+        "Код із SMS підставлено.",
+        "Натисніть «Підтвердити».",
+        "Перевірте квитанцію переказу.",
+        "Виберіть іспанську.",
+        "Підтвердьте збережений вхід біометрією.",
+        "Натисніть, щоб приховати залишки.",
+        "Введіть пошуковий запит.",
+        "Відкрийте наступну сторінку.",
+        "Перевірте квитанцію платежу.",
+        "Перевірте імпортовані дані одержувача.",
+        "Натисніть «Копіювати».",
+        "Використовуйте код Token BSC.",
+        "Перевірте суму, призначення й одержувача.",
+        "Увімкніть допомогу з SMS."
       ]
     },
     "pt": {
       "first-use": [
-        "Demonstração nativa: ler a privacidade antes de aceitar os termos. Não é uma sessão bancária pessoal.",
-        "Aviso de aplicativo independente, termos e escolha da ajuda SMS opcional; abrir um documento não significa aceitar.",
-        "Demonstração básica offline: escolher espanhol no seletor de sete idiomas do aplicativo."
+        "Abra a política de privacidade.",
+        "Toque em Voltar.",
+        "Leia os termos.",
+        "Marque a caixa de aceitação.",
+        "Toque em Continuar.",
+        "Escolha se deseja ativar a assistência SMS.",
+        "Abra as configurações.",
+        "Toque em Idioma.",
+        "Escolha Espanhol."
       ],
       "login": [
-        "Aprovação simulada de uma mensagem: mostra a verificação automática só do acesso exclusivamente por SMS, não do preenchimento do teclado.",
-        "Desbloqueio biométrico simulado do acesso salvo; a aprovação bancária continua sendo um requisito separado.",
-        "Resultado de teste, com dados fictícios."
+        "Permita compartilhar este SMS para entrar.",
+        "Pronto. Você entrou.",
+        "Desbloqueie o acesso salvo com biometria.",
+        "Pronto. Você entrou."
       ],
       "verification": [
-        "Banco simulado: pergunta de segurança e SMS continuam separados; preencher o código mantém Verificar.",
-        "Registro de dispositivo e novo acesso biométrico simulados no aplicativo, sem reutilizar a senha silenciosamente."
+        "Digite sua resposta de segurança.",
+        "Código SMS preenchido.",
+        "Toque em Verificar.",
+        "Registre este dispositivo.",
+        "Desbloqueie o acesso salvo com biometria."
       ],
       "accounts": [
-        "Demonstração básica: saldos fictícios, ocultar valores, DOP/USD, deslizamentos e detalhes da conta."
+        "Toque para ocultar os saldos.",
+        "Toque novamente para mostrar os saldos.",
+        "Escolha USD.",
+        "Escolha DOP.",
+        "Abra a conta."
       ],
       "history": [
-        "Histórico bancário simulado: revelar a conta, pesquisar transações e filtrar entradas e saídas.",
-        "CSV fictício da demonstração básica: conferir opções de compartilhamento Android sem enviar a destinatário externo."
+        "Abra a conta.",
+        "Abra o histórico de transações.",
+        "Digite um termo de busca.",
+        "Filtre entradas ou saídas.",
+        "Abra a conta.",
+        "Abra o histórico de transações.",
+        "Toque em Exportar CSV para abrir as opções de compartilhamento."
       ],
       "statements": [
-        "Banco simulado: períodos de extratos e PDF sintético com páginas, ampliação e ação explícita de compartilhar.",
-        "Salvamento simulado de extratos: selecionar PDFs sintéticos para uma pasta de destino fictícia."
+        "Escolha um período do extrato.",
+        "Toque na próxima página.",
+        "Toque para ampliar.",
+        "Toque em Compartilhar PDF.",
+        "Selecione os extratos para salvar.",
+        "Toque em Salvar selecionados e escolha uma pasta.",
+        "Extratos salvos."
       ],
       "transfers": [
-        "Na operação, aprove compartilhar o SMS no Android: o código é preenchido, você confere e toca em Verificar antes do resultado.",
-        "Confira os dados. Nada foi autorizado ainda.",
-        "Confira e confirme separadamente.",
-        "O teclado preenche; você toca em Verificar.",
-        "Resultado de teste, com dados fictícios.",
-        "Banco simulado: pesquisar e escolher um beneficiário sem enviar transferência neste caso."
+        "Transfira entre suas contas.",
+        "Escolha o destinatário.",
+        "Digite o valor.",
+        "Confira o destinatário, o valor e as tarifas.",
+        "Confirme a transferência.",
+        "Código SMS preenchido.",
+        "Toque em Verificar.",
+        "Confira o comprovante da transferência.",
+        "Transfira para uma conta Santa Cruz.",
+        "Digite o valor.",
+        "Confira o destinatário, o valor e as tarifas.",
+        "Confirme a transferência.",
+        "Toque em Verificar.",
+        "Confira o comprovante da transferência.",
+        "Transfira para outro banco.",
+        "Digite o valor.",
+        "Confira o destinatário, o valor e as tarifas.",
+        "Confirme a transferência.",
+        "Toque em Verificar.",
+        "Confira o comprovante da transferência.",
+        "Digite um termo de busca.",
+        "Escolha o destinatário."
       ],
       "payments": [
-        "Serviço, conta e valor à vista antes de confirmar e verificar o pagamento.",
-        "Confira os dados. Nada foi autorizado ainda.",
-        "Confira e confirme separadamente.",
-        "Resultado de teste, com dados fictícios.",
-        "O teclado preenche; você toca em Verificar."
+        "Pague uma conta de serviço.",
+        "Escolha o serviço.",
+        "Digite o valor.",
+        "Confira o destinatário, o valor e as tarifas.",
+        "Confirme o pagamento.",
+        "Código SMS preenchido.",
+        "Toque em Verificar.",
+        "Confira o comprovante do pagamento.",
+        "Pague um cartão de crédito.",
+        "Digite o valor.",
+        "Confira o destinatário, o valor e as tarifas.",
+        "Confirme o pagamento.",
+        "Toque em Verificar.",
+        "Confira o comprovante do pagamento."
       ],
       "beneficiaries": [
-        "Banco simulado: colar código de destinatário, revisar e preencher dados, sem validar ou salvar automaticamente.",
-        "Exclusão de beneficiário com banco simulado: revisão, confirmação separada, código SMS preenchido e Verificar explícito.",
-        "Confira e confirme separadamente.",
-        "Resultado de teste, com dados fictícios.",
-        "Demonstração básica: criar e salvar localmente beneficiário fictício de outro banco, sem validação bancária real."
+        "Cole o código do destinatário.",
+        "Confira a conta e a moeda do destinatário.",
+        "Toque em Continuar.",
+        "Remova um destinatário salvo.",
+        "Confirme a remoção.",
+        "Código SMS preenchido.",
+        "Toque em Verificar.",
+        "Confira a resposta à remoção.",
+        "Adicione um destinatário de outro banco.",
+        "Digite o nome do destinatário.",
+        "Digite o banco.",
+        "Digite o número da conta.",
+        "Toque em Salvar destinatário.",
+        "Destinatário salvo."
       ],
       "cards": [
-        "Cartão fictício: titular e identificador fornecidos, número oculto exceto os últimos quatro dígitos; serviços informativos sem alterações."
+        "Abra os detalhes do cartão.",
+        "Toque em Copiar."
       ],
       "token": [
-        "Token BSC simulado: contrato, consentimento, aprovação de teste, código gerado e desvinculação. O código gerado não é SMS.",
-        "Confira e confirme separadamente.",
-        "O código do token não é um SMS.",
-        "Inscrição simulada de token: código SMS preenchido pelo Android e Verificar explícito; este caso não comprova inscrição concluída.",
-        "O teclado preenche; você toca em Verificar.",
-        "Resultado de teste, com dados fictícios."
+        "Leia o contrato do Token BSC.",
+        "Aceite o contrato para ativar o token.",
+        "Solicite a ativação do token.",
+        "Consulte a aprovação para ver seu código token.",
+        "Desvincule este token.",
+        "Token desvinculado.",
+        "Verifique a ativação do token por SMS.",
+        "Código SMS preenchido.",
+        "Toque em Verificar."
       ],
       "qr": [
-        "QR fictício de conta ou solicitação: revisão, cancelamento e nova tentativa de salvar com destino simulado; não é pagamento.",
-        "Leitura QR simulada: conferir valor, descrição e destinatário de solicitação fictícia; sem captura real de câmera.",
-        "QR fictício: visualização de impressão do Android e retorno, sem afirmar que houve impressão física."
+        "Crie uma solicitação de pagamento.",
+        "Digite o motivo do pagamento.",
+        "Digite o valor.",
+        "Toque em Salvar QR.",
+        "Confira o valor, o motivo e o destinatário.",
+        "Toque em Continuar.",
+        "Toque em Imprimir para visualizar o QR."
       ],
       "settings": [
-        "Configurações: desativar e reativar a ajuda SMS opcional; Perguntar/E-mail/SMS escolhe separadamente a entrega bancária.",
-        "Demonstração básica: perfil, segurança, ajuda e encerramento da sessão de teste; apenas dados fictícios.",
-        "Resultado incerto com banco simulado: histórico e nova confirmação de conciliação, sem repetir nem cancelar a operação.",
-        "Confira o histórico. A conciliação não repete nem cancela a operação."
+        "Desative a assistência SMS.",
+        "Ative a assistência SMS.",
+        "Escolha Perguntar para receber códigos.",
+        "Escolha E-mail para receber códigos.",
+        "Escolha SMS para receber códigos.",
+        "Abra seu perfil.",
+        "Abra Segurança.",
+        "Abra Ajuda.",
+        "Confirme a saída.",
+        "Confira o histórico antes de resolver um resultado incerto.",
+        "Confirme somente após verificar o resultado do banco.",
+        "Revisão registrada."
       ],
       "overview": [
-        "O SMS chega; após aprovar compartilhar a mensagem no Android, o código é preenchido e o acesso só por SMS pode continuar.",
-        "Na operação, aprove compartilhar o SMS no Android: o código é preenchido, você confere e toca em Verificar antes do resultado.",
-        "Escolha seu idioma e mantenha-o em todo o aplicativo.",
-        "Após registrar o dispositivo, continue no aplicativo com acesso biométrico.",
-        "Oculte saldos com um toque. Pesos e dólares ficam separados.",
-        "Encontre uma transação digitando algumas letras.",
-        "Passe as páginas do PDF dentro do aplicativo.",
-        "Um comprovante claro após revisão e autorização.",
-        "Leia os dados do destinatário antes de continuar.",
-        "Copie com um toque. Só os quatro últimos dígitos ficam visíveis.",
-        "Seu código Token BSC, dentro do aplicativo.",
-        "Valor, descrição e destinatário juntos antes de continuar.",
-        "Escolha a ajuda SMS nas configurações. Você mantém o controle."
+        "Permita compartilhar este SMS para entrar.",
+        "Pronto. Você entrou.",
+        "Código SMS preenchido.",
+        "Toque em Verificar.",
+        "Confira o comprovante da transferência.",
+        "Escolha Espanhol.",
+        "Desbloqueie o acesso salvo com biometria.",
+        "Toque para ocultar os saldos.",
+        "Digite um termo de busca.",
+        "Toque na próxima página.",
+        "Confira o comprovante do pagamento.",
+        "Confira os dados do destinatário importado.",
+        "Toque em Copiar.",
+        "Use seu código Token BSC.",
+        "Confira o valor, o motivo e o destinatário.",
+        "Ative a assistência SMS."
       ]
     }
   }
