@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """Check static routes, offline assets, media limits, captions and download boundaries."""
 from pathlib import Path
+from translation_catalog import load_catalog, check_catalog_contexts
+from html import escape as E
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import hashlib,json,re,subprocess
 ROOT=Path(__file__).resolve().parents[1];DOCS=ROOT/'docs'
-captions=json.loads((ROOT/'src/transcripts.json').read_text())['languages'] if (ROOT/'src/transcripts.json').exists() else json.loads((ROOT/'src/captions.json').read_text())['languages']
-content=json.loads((ROOT/'src/content.json').read_text())['languages'];assert set(content)=={'es','en','de','fr','ru','uk','pt'}
-download_copy=json.loads((ROOT/'src/download-copy.json').read_text())
+check_catalog_contexts(ROOT/'src')
+captions=json.loads((ROOT/'src/transcripts.json').read_text())['languages'] if (ROOT/'src/transcripts.json').exists() else load_catalog(ROOT/'src/captions.json')['languages']
+content=load_catalog(ROOT/'src/content.json')['languages'];assert set(content)=={'es','en','de','fr','ru','uk','pt'}
+download_copy=load_catalog(ROOT/'src/download-copy.json')
 downloads=json.loads((ROOT/'src/downloads.json').read_text())
 assert set(download_copy['languages'])==set(content)
 for lang,copy in download_copy['languages'].items():
@@ -19,7 +22,12 @@ for lang,copy in download_copy['languages'].items():
 install_provenance=json.loads((DOCS/'media/install/provenance.json').read_text())
 for filename,info in install_provenance['screenshots'].items():
  assert hashlib.sha256((DOCS/'media/install'/filename).read_bytes()).hexdigest()==info['sha256']
-assert install_provenance['apk']['sha256']==downloads['live']['sha256']
+release=json.loads((ROOT/'src/release.json').read_text())
+assert re.fullmatch(r'[0-9a-f]{40}', release['appSourceCommit'] or ''), 'Pin merged app source before publication'
+assert release['tag']==f"v{release['version']}-preview.1" and release['versionCode']==29
+assert install_provenance['apk']==release['installationIllustrations']['apk'], 'Historical installation evidence changed'
+for edition,item in downloads.items():
+ assert item['filename']==f"santa-cruz-modern-{release['version']}-{edition}.apk" and re.fullmatch(r'[0-9a-f]{64}', item['sha256'])
 media=json.loads((ROOT/'src/media.json').read_text())
 poster_policy=json.loads((ROOT/'src/poster-frames.json').read_text())
 posters=json.loads((DOCS/'media/posters.json').read_text())
@@ -35,16 +43,16 @@ for id,frame in posters['frames'].items():
  assert poster.stat().st_size==frame['bytes'] and hashlib.sha256(poster.read_bytes()).hexdigest()==frame['sha256']
  dimensions=subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height','-of','csv=p=0',str(poster)]).decode().strip()
  assert dimensions=='540,1200',(id,'Wrong preview dimensions')
-scene_captions=json.loads((ROOT/'src/scene-captions.json').read_text())['languages']
+scene_captions=load_catalog(ROOT/'src/scene-captions.json')['languages']
 assert all(set(v)==set(scene_captions['es']) for v in scene_captions.values())
 assert len(media)==14 and 'overview' in media
 policy=json.loads((ROOT/'src/video-scripts.json').read_text())
-scenario_captions=json.loads((ROOT/'src/scenario-captions.json').read_text())['languages']
+scenario_captions=load_catalog(ROOT/'src/scenario-captions.json')['languages']
 expected_keys={f"{c['id']}-{i:02d}" for c in policy['chapters'] for i in range(1,len(c['scenes'])+1)}
 assert set(scenario_captions)==set(content)
-ux=json.loads((ROOT/'src/ux-copy.json').read_text())['languages']
+ux=load_catalog(ROOT/'src/ux-copy.json')['languages']
 assert set(ux)==set(content)
-spoken=json.loads((ROOT/'src/narration-copy.json').read_text())
+spoken=load_catalog(ROOT/'src/narration-copy.json')
 assert set(spoken['languages'])==set(content)
 assert all(set(copy)==set(spoken['context']) for copy in spoken['languages'].values())
 actions=json.loads((ROOT/'src/narration-actions.json').read_text())
@@ -86,6 +94,9 @@ for lang,c in content.items():
  for path in (DOCS/lang/'index.html',DOCS/lang/'privacy/index.html',DOCS/lang/'download/index.html') + ((DOCS/'index.html',) if lang=='es' else ()):
   s=path.read_text();p=Page();p.feed(s)
   assert f'<html lang="{lang}">' in s and not p.forms
+  assert f'<nav class="languages" aria-label="{E(c["languageNavLabel"])}">' in s, (lang, 'Language navigation accessible name')
+  description=c['privacyIntro'] if path.parent.name=='privacy' else download_copy['languages'][lang]['intro'] if path.parent.name=='download' else ux[lang]['intro']
+  assert f'<meta name="description" content="{E(description)}">' in s, (lang, path, 'Route-specific localized description')
   assert len(p.ids)==len(set(p.ids))
   if path.parent.name not in ('privacy','download'):
    assert p.video==p.templates==p.previews==14 and p.tracks==98
@@ -95,6 +106,7 @@ for lang,c in content.items():
    assert not any(urlsplit(ref).path.endswith('.apk') for ref in p.refs),'Landing pages must show the edition choice before APK downloads'
    assert f'href="{"./" if path==DOCS/"index.html" else "../"}{lang}/download/"' in s
   if path.parent.name=='download':
+   assert f'https://support.google.com/android/answer/9457058?hl={lang}">{E(download_copy["languages"][lang]["androidHelpLabel"])} ↗</a>' in s, (lang, 'Android help link label')
    assert p.video==p.templates==p.previews==0
    assert {'demo','live-guide','installation','live-download'}<=set(p.ids)
    assert sum(ref.endswith('-demo.apk') for ref in p.refs)==1
@@ -108,7 +120,7 @@ for lang,c in content.items():
    u=urlsplit(ref)
    if u.scheme or u.netloc:
     assert u.scheme in ('https','mailto'),f'Unexpected remote URI {path} {ref}'
-    if '/releases/download/' in ref:assert '/v1.12.1-preview.1/' in ref
+    if '/releases/download/' in ref:assert f"/{release['tag']}/" in ref
     continue
    if not u.path:
     if u.fragment:assert u.fragment in p.ids, (path,ref)

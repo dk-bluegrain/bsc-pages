@@ -1,5 +1,14 @@
 # Caption copy and recording context
 
+Source caption fields now carry adjacent `_fieldContext` English metadata in
+all seven languages, including a separate comment for each string-list item.
+Each comment identifies the recorded context, display stage, source and absence
+of interpolation arguments. The catalogue loader strips metadata before media
+processing; `scripts/check.py` verifies coverage and mirrored context. Final
+transcripts/WebVTT are generated from the timed `narration-actions.json` phrases,
+whose existing per-phrase context stays adjacent to the seven translations.
+Never edit generated text independently of its spoken/timed source.
+
 The current recording specification is
 `/extra/dkropachev/bsc-distribution/publishing/VIDEO-SCRIPTS.md`, revision 3,
 with executable policy in `scripts/capture/video-scripts.json`. These scripts

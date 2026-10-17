@@ -7,17 +7,37 @@ catalogues have the same keys, chapter identifiers and section order. Language
 names are autonyms. Use Spanish as the default; use each catalogue on its own
 addressable page and matching privacy page.
 
-This file is the shared context catalogue for every string in all seven
-languages. JSON has no comments, so the context sits here rather than in XML
-comments. These are website assets, not Android string resources. They contain
+Each translated JSON field has an immediately preceding `_fieldContext` English
+comment stored as metadata, mirrored in all seven languages. Primitive string
+lists have a parallel array of item-specific comments beside the list. Each
+comment identifies Context, Display, Source and Args. This document supplies
+additional shared guidance. These are website assets, not Android string resources. They contain
 no formatted placeholders, bank-supplied personal data or user-generated text.
 Do not turn prose into HTML without escaping it. Preserve punctuation, accents,
 Cyrillic text and typographic apostrophes as UTF-8.
+
+`scripts/translation_catalog.py` strips only the reserved `_…Context` metadata
+before build/media consumers read catalogue fields; comments never render or
+become captions/speech. `scripts/check.py` checks complete adjacent coverage,
+list item counts, the four comment sections and exact English-context agreement
+across locales. Stable `id` and `chapter` routing fields are not translations.
+Keep comments next to their text when editing/reordering a catalogue. Legacy
+fields explicitly identify their current lack of rendering. Generated
+`transcripts.json` and WebVTT are derived from final timed narration actions;
+edit their source phrases and regenerate rather than translating outputs apart.
+
+The website's pinned recordings/distribution source is separate from the sibling
+Android development checkout. In particular, the recorded optional one-message
+SMS approval and SMS-only automatic-login behavior must be interpreted using
+the recording provenance and `CAPTIONS.md`, not inferred from an unrelated
+checkout's system-autofill-only implementation. A language review must preserve
+that boundary and does not establish APK/account compatibility.
 
 ## Rendering context for every key
 
 | Key | Context and display | Meaning and constraints |
 | --- | --- | --- |
+| `languageNavLabel` | Header language-navigation accessible name on all routes | Names the screen-reader landmark; translate into the page language, unlike the link autonyms. |
 | `name` | Persistent language-selector option | Native language name; never translate it into the current page's language. |
 | `title` | Document title and app introduction | Independent BSC app showcase; no bank endorsement claim. |
 | `tagline` | Short hero heading | App positioning, not a promise of compatibility or financial performance. |
@@ -44,7 +64,7 @@ Cyrillic text and typographic apostrophes as UTF-8.
 | `installSteps[2]` | Third ordered installation step | Android installation permission applies to the downloading app; disable it afterwards. No promise of identical Android UI wording. |
 | `installSteps[3]` | Fourth ordered installation step | Read app notices and terms; demo fictional, bank controls remain. |
 | `installSteps[4]` | Fifth ordered installation step | Banking APK retains `com.santacruz.modern` but uses the dedicated distribution signing key. It cannot update an existing Santa Cruz Modern installation with a different signature. If Android blocks the update, preserve the existing app and its data and use the separate demo or contact support. Never recommend uninstalling to resolve this mismatch: token state and uncertain-operation markers could be lost. This refers to Santa Cruz Modern, not an official bank app. |
-| `versionLabel` | Label beside release version | Version comes from build metadata: currently 1.12.0 (27). This string is only the label. |
+| `versionLabel` | Label beside release version | Version comes from build metadata. This string is only the label; never embed a hardcoded release number. |
 | `privacyLabel` | Matching-language privacy-page link | Link to that locale's privacy page, not to a generic untranslated page. |
 | `supportLabel` | Support heading/link | App help and feedback, not bank support. |
 | `supportBody` | Support paragraph | Preserves actual project contact; forbids sending credentials, codes, identity documents or account details; sends banking issues to official channels. |
@@ -81,7 +101,7 @@ feature. None of the copy asserts current live-bank compatibility.
 | `payments` | Services and credit cards, source account, amount, review and bank authorization; demo test receipts are not money movement. |
 | `beneficiaries` | Lookup/validation, review, save and deletion. Validation is neither saving nor money authorization. Basic demo uses fictional recipients. |
 | `cards` | Read-only bank-supplied fields, bank identifiers and explicit copying of supplied full numbers; numbers always show only the last four digits; unimplemented administration explains the limit with official handoffs, no card-write API request. |
-| `token` | Contract reading, enrollment/storage consent, verification, code generation, unlinking and official identity handoff; basic demo has no banking-token enrollment/generation. |
+| `token` | Contract reading, one explicit checkbox jointly accepting the bank contract and encrypted seed storage, then a separate Activate action; verification, code generation, unlinking and official identity handoff. Basic demo has no banking-token enrollment/generation. |
 | `qr` | Account/recipient sharing, payment-request context, scanning/manual entry, recipient review, saving and printing where supported. QR never authorizes writes or money. Unsupported third-party formats remain unsupported. Do not interpret a shareable account QR as a universal bank payment request. |
 | `settings` | Language/profile/demo settings, help, logout, and explicit reconciliation after actual bank history/status checking. Reconciliation neither repeats nor cancels prior operations. |
 

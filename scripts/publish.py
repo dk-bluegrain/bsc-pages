@@ -7,7 +7,7 @@ Uses the existing gh login; no credentials are written into this repository.
 """
 import argparse,hashlib,json,subprocess,time,urllib.request,urllib.parse,concurrent.futures
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1];REPO='dk-bluegrain/bsc-pages';TAG='v1.12.1-preview.1';SITE='https://dk-bluegrain.github.io/bsc-pages/'
+ROOT=Path(__file__).resolve().parents[1];REPO='dk-bluegrain/bsc-pages';RELEASE_INFO=json.loads((ROOT/'src/release.json').read_text());TAG=RELEASE_INFO['tag'];SITE='https://dk-bluegrain.github.io/bsc-pages/'
 p=argparse.ArgumentParser();p.add_argument('--apk-directory',type=Path,required=True);p.add_argument('--website-only',action='store_true');a=p.parse_args()
 def gh(*args):return subprocess.check_output(['gh',*args],cwd=ROOT,text=True)
 def api(path,*args):return gh('api',path,*args)
@@ -31,7 +31,7 @@ if a.website_only:
   path=Path(asset);item=by_name[path.name]
   assert item.get('state')=='uploaded' and item.get('digest')=='sha256:'+hashlib.sha256(path.read_bytes()).hexdigest(),'Existing release asset differs: '+path.name
 elif release.returncode:
- subprocess.run(['gh','release','create',TAG,*assets,'--repo',REPO,'--target','main','--prerelease','--title','Santa Cruz Modern 1.12.1 — independent preview','--notes-file',str(ROOT/'RELEASE-NOTES.md')],check=True)
+ subprocess.run(['gh','release','create',TAG,*assets,'--repo',REPO,'--target','main','--prerelease','--title',f"Santa Cruz Modern {RELEASE_INFO['version']} — independent preview",'--notes-file',str(ROOT/'RELEASE-NOTES.md')],check=True)
 else:
  data=json.loads(release.stdout);existing={x['name'] for x in data['assets']}
  missing=[p for p in assets if Path(p).name not in existing]

@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Generate the benefit-led, seven-language static showcase and privacy pages."""
 from pathlib import Path
+from translation_catalog import load_catalog
 from html import escape as E
 import json, shutil, hashlib
 ROOT=Path(__file__).resolve().parents[1]; DOCS=ROOT/'docs'
-LANGS=json.loads((ROOT/'src/content.json').read_text())['languages']
-UX=json.loads((ROOT/'src/ux-copy.json').read_text())['languages']
-DOWNLOAD=json.loads((ROOT/'src/download-copy.json').read_text())['languages']
+LANGS=load_catalog(ROOT/'src/content.json')['languages']
+UX=load_catalog(ROOT/'src/ux-copy.json')['languages']
+DOWNLOAD=load_catalog(ROOT/'src/download-copy.json')['languages']
 DOWNLOADS=json.loads((ROOT/'src/downloads.json').read_text())
-VERSION='1.12.1'; CODE=28; TAG='v1.12.1-preview.1'; BASE='https://dk-bluegrain.github.io/bsc-pages'
+RELEASE_INFO=json.loads((ROOT/'src/release.json').read_text())
+VERSION=RELEASE_INFO['version']; CODE=RELEASE_INFO['versionCode']; TAG=RELEASE_INFO['tag']; BASE='https://dk-bluegrain.github.io/bsc-pages'
 RELEASE=f'https://github.com/dk-bluegrain/bsc-pages/releases/download/{TAG}'
 ORDER=['login','accounts','history','transfers','payments','statements','qr','beneficiaries','cards','token','settings','verification','first-use']
 CAPTIONS=json.loads((ROOT/'src/transcripts.json').read_text())['languages']
@@ -19,9 +21,9 @@ for name in ('style.css','site.js','mark.svg'): shutil.copy2(ROOT/'src'/name,DOC
 ASSETS={name:hashlib.sha256((ROOT/'src'/name).read_bytes()).hexdigest()[:12] for name in ('style.css','site.js')}
 
 def languages(lang,prefix,section=''):
-    label=dict(es='Idioma',en='Language',de='Sprache',fr='Langue',ru='Язык',uk='Мова',pt='Idioma')[lang]
+    label=LANGS[lang]['languageNavLabel']
     links=''.join(f'<a lang="{code}" hreflang="{code}" href="{prefix}{code}/{section}"'+(' aria-current="page"' if code==lang else '')+f'>{E(value["name"])}</a>' for code,value in LANGS.items())
-    return f'<nav class="languages" aria-label="{label}">{links}</nav>'
+    return f'<nav class="languages" aria-label="{E(label)}">{links}</nav>'
 
 def header(lang,prefix,section=''):
     return f'<header><div class="wrap header"><a class="brand" href="{prefix}{lang}/"><img width="38" height="38" src="{prefix}assets/mark.svg" alt=""><span>Santa Cruz Modern<small>Android · {VERSION}</small></span></a>{languages(lang,prefix,section)}</div></header>'
@@ -97,7 +99,7 @@ def download_page(lang,prefix):
 <section id="live-guide" class="download-section"><h2>{E(d['whyTitle'])}</h2><p>{E(d['whyBody'])}</p><p>{E(d['permissionBody'])}</p></section>
 <section class="download-section"><h2>{E(d['securityTitle'])}</h2><p>{E(d['securityBody'])}</p><p>{E(d['verificationBody'])}</p><div class="checksums"><h3>{E(d['checksumLabel'])} · {VERSION} ({CODE})</h3>{checksums}<p><a href="{RELEASE}/SHA256SUMS">SHA256SUMS ↗</a> · <a href="https://github.com/dk-bluegrain/bsc-pages/releases/tag/{TAG}">GitHub Release ↗</a></p></div><p><a href="{prefix}privacy/app/{lang}.html">Android APK · {E(c['privacyLabel'])}</a></p></section>
 <section class="download-section risk-notice"><h2>{E(d['riskTitle'])}</h2><p>{E(d['riskBody'])}</p><p>{E(d['liabilityBody'])}</p></section>
-<section id="installation" class="download-section"><h2>{E(d['guideTitle'])}</h2><p>{E(d['guideIntro'])}</p><p class="subtle">{E(d['screensNote'])}</p><ol class="install-guide">{''.join(steps)}</ol><p class="warning">{E(d['protectBody'])}</p><p>{E(d['sourcesLabel'])}: <a href="https://support.google.com/android/answer/9457058?hl={lang}">Android Help ↗</a> · <a href="https://support.google.com/googleplay/answer/2812853?hl={lang}">Google Play Protect ↗</a></p></section>
+<section id="installation" class="download-section"><h2>{E(d['guideTitle'])}</h2><p>{E(d['guideIntro'])}</p><p class="subtle">{E(d['screensNote'])}</p><ol class="install-guide">{''.join(steps)}</ol><p class="warning">{E(d['protectBody'])}</p><p>{E(d['sourcesLabel'])}: <a href="https://support.google.com/android/answer/9457058?hl={lang}">{E(d['androidHelpLabel'])} ↗</a> · <a href="https://support.google.com/googleplay/answer/2812853?hl={lang}">Google Play Protect ↗</a></p></section>
 <section id="live-download" class="download-section final-download"><span class="edition-badge">{E(d['liveBadge'])}</span><h2>{E(d['downloadTitle'])}</h2><p>{E(d['downloadBody'])}</p><a class="button" href="{live}">{E(d['downloadAction'])} ↗</a><p><a href="{prefix}privacy/app/{lang}.html">Android APK · {E(c['privacyLabel'])}</a></p><p class="subtle">{E(c['versionLabel'])} {VERSION} ({CODE}) · <a href="{RELEASE}/SHA256SUMS">SHA-256</a></p></section>
 <section class="download-section support"><h2>{E(c['supportLabel'])}</h2><p>{E(c['supportBody'])}</p><a href="https://github.com/dk-bluegrain/bsc-pages/issues">GitHub ↗</a></section></main><dialog aria-label="{E(c['screenshotsLabel'])}"><img alt=""><button type="button">{E(c['closeLabel'])}</button></dialog>'''
 
@@ -107,7 +109,7 @@ def page(lang,prefix,section=''):
     if section=='download/':
         body=download_page(lang,prefix);title=DOWNLOAD[lang]['title'];description=DOWNLOAD[lang]['intro']
     elif section=='privacy/':
-        title=c['privacyTitle']
+        title=c['privacyTitle'];description=c['privacyIntro']
         body=f'<main id="main" class="wrap policy"><a href="../../{lang}/">← Santa Cruz Modern</a><h1>{E(c["privacyTitle"])}</h1><p>{E(c["privacyIntro"])}</p>'+''.join(f'<h2>{E(s["title"])}</h2><p>{E(s["body"])}</p>' for s in c['privacySections'])+f'<p><a href="{prefix}privacy/app/{lang}.html">Android APK · {E(c["privacyLabel"])}</a></p><p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub · {E(c["privacyLabel"])}</a></p><p class="meta">2026-10-16 · {VERSION} ({CODE})</p></main>'
     else:body=main_page(lang,prefix)
     footer=f'<footer><div class="wrap footer"><span>© 2026 Santa Cruz Modern · Android</span><div class="footer-links"><a href="{prefix}{lang}/privacy/">{E(c["privacyLabel"])}</a><a href="https://github.com/dk-bluegrain/bsc-pages">GitHub</a><a href="{RELEASE}/SHA256SUMS">SHA-256</a></div></div></footer>'

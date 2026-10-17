@@ -6,6 +6,7 @@ from urllib.parse import urlsplit
 from playwright.sync_api import sync_playwright
 p=argparse.ArgumentParser();p.add_argument('--url',default='http://127.0.0.1:8765/');p.add_argument('--browser');p.add_argument('--output',type=Path,default=Path('/tmp/bsc-browser-check'));a=p.parse_args();a.output.mkdir(parents=True,exist_ok=True)
 transcripts=json.loads((Path(__file__).resolve().parents[1]/'src/transcripts.json').read_text())['languages']
+release=json.loads((Path(__file__).resolve().parents[1]/'src/release.json').read_text())
 results=[];errors=[];caption_results=[]
 def check_captions(page,id,lang):
  video=page.locator('#video-'+id)
@@ -30,7 +31,7 @@ with sync_playwright() as p:
    page.on('request',lambda request:media_requests.append(urlsplit(request.url).path) if urlsplit(request.url).path.endswith(('.mp4','.vtt')) else None)
    response=page.goto(a.url+lang+'/');assert response.ok
    assert page.locator('html').get_attribute('lang')==lang
-   assert '1.12.1' in page.locator('header .brand small').inner_text()
+   assert release['version'] in page.locator('header .brand small').inner_text()
    assert page.locator('.hero a[href$="/download/"]').count()==1
    assert page.locator('a[href$=".apk"]').count()==0
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth'),(lang,width,'overflow')

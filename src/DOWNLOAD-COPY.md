@@ -2,7 +2,10 @@
 
 `download-copy.json` contains complete Spanish (authoritative meaning), English,
 German, French, Russian, Ukrainian and Brazilian Portuguese catalogues. Its
-`context` map accompanies every key in all seven languages. Values are plain
+`context` map supplies shared guidance, and adjacent `_fieldContext` comments
+document every translated field, including each installation step title/body,
+in all seven languages. The loader removes comment metadata before rendering;
+the checker verifies its coverage, adjacency and agreement. Values are plain
 text, have no arguments and are escaped by `scripts/build.py`. No bank-provided
 text or personal data is translated or rewritten. These are website catalogues;
 Android XML resources and their acceptance flow are unchanged.
@@ -21,11 +24,12 @@ Android XML resources and their acceptance flow are unchanged.
 | `riskTitle`, `riskBody` | Prominent own-risk notice including financial/data loss, access, bank changes/restrictions and terms conflicts. No guarantee of login/token/transaction compatibility. |
 | `liabilityBody` | As-is/no-warranty and liability disclaimer only to the extent permitted by applicable law; preserves non-waivable rights and liabilities. Not an enforceability guarantee or independent legal review. |
 | `guideTitle`, `guideIntro` | Installation heading and Android 8+ scope. Both APKs require source permission; unofficial live use needs additional disclosures. |
-| `screensNote` | Actual English Android 15 installation captures: downloaded live APK, source warning, temporary source permission, Santa Cruz Modern installer and permission revoked. Explains that File Manager is the app opening the APK: the source permission belongs to the browser/file manager, not Santa Cruz Modern. Wording varies by device; tap to enlarge. |
+| `screensNote` | Actual English Android 15 installation captures: downloaded live APK, source warning, temporary source permission, Santa Cruz Modern installer and permission revoked. Explains that File Manager is the app opening the APK: the source permission belongs to the browser/file manager, not Santa Cruz Modern. Wording varies by device; tap to enlarge. Captures retain their original 1.12.1 provenance; current release links are separate. |
 | `steps[*].title`, `steps[*].body` | Six numbered installation steps, with screenshots beside the matching steps: verify the release/edition/hash; open APK/find source settings; temporarily allow only that installer; review/install and respect scans; revoke permission; read app terms and preserve existing app/token/uncertain-operation state on signing mismatch. No suggestion to uninstall to fix a mismatch. |
 | `protectBody` | Keep Play Protect enabled, review scans, stop on harmful-app detection, and respect managed-device/Advanced Protection restrictions. Never instructs bypassing these controls. |
 | `downloadTitle`, `downloadBody`, `downloadAction` | Real-banking APK download appears after disclosures and guide. Voluntary informed choice, no bank approval or legally protected rights waiver. Not an acceptance form or proof of consent. |
-| `checksumLabel` | Visible hashes and filenames from existing `downloads.json`; no manually copied digest or new release. |
+| `checksumLabel` | Visible hashes and filenames from existing `downloads.json`; derived from the current signed release manifest. |
+| `androidHelpLabel` | Visible external link beside Google Play Protect below the installation steps; opens official Android installation help with the page language in `hl`. Translate Help; keep Android. |
 | `sourcesLabel` | External primary-source Android installation/Play Protect help, localized via supported `hl` query. |
 | `backLabel` | Return to matching-language tour. The header language selector stays on the download route. |
 
