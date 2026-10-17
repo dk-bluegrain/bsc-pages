@@ -112,7 +112,11 @@ def vtt(id,duration,events):
   transcripts[lang][id]=list(dict.fromkeys(text for _,_,text in cues))
 
 manifest=json.loads((ROOT/'src/media.json').read_text()) if a.chapter and (ROOT/'src/media.json').exists() else {}
+SOURCE_COMMIT='6ee13357218005e84c3719d5ac5ff7714af83390'
 if a.captions_only:
+ provenance_path=MEDIA/'provenance.json'
+ provenance=json.loads(provenance_path.read_text());provenance['sourceCommit']=SOURCE_COMMIT
+ provenance_path.write_text(json.dumps(provenance,indent=2)+'\n')
  manifest=json.loads((ROOT/'src/media.json').read_text())
  for id in requested + ([] if a.chapter else ['overview']):
   events=json.loads((MEDIA/'events'/f'{id}.json').read_text())['events']
@@ -201,5 +205,5 @@ with tempfile.TemporaryDirectory(prefix='bsc-media-') as temp:
   shutil.copy2(MEDIA/'accounts-01.jpg',MEDIA/'hero.jpg')
 (ROOT/'src/transcripts.json').write_text(json.dumps({'languages':transcripts},ensure_ascii=False,indent=2)+'\n')
 (ROOT/'src/media.json').write_text(json.dumps(manifest,indent=2)+'\n')
-(MEDIA/'provenance.json').write_text(json.dumps({'appVersion':'1.12.0 (27)','sourceCommit':'6ee13357218005e84c3719d5ac5ff7714af83390','sourceRepository':'https://github.com/dk-bluegrain/bsc','capture':'Scripted native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only. Capture-only QA builds are identified by each source APK digest; distribution hashes are listed separately in downloads.json.','storyboardRevision':3,'smsPolicy':'SMS assistance enabled outside initial pre-choice onboarding and the settings off/on demonstration; SMS delivery restored after configuration. Fake keyboard autofill retains Verify; a separate synthetic one-message consent result completes only SMS-only login automatically. Offline demo and generated token codes are distinct.','audio':'Silent: no music or narration.','security':'Only a disposable QA checkout permits screenshots. Distribution live screens retain FLAG_SECURE.','notEvidenceOf':'Bank authorization, owner-account validation, current live compatibility, or inclusion of all advanced flows in the basic demo.','chapters':manifest},indent=2)+'\n')
+(MEDIA/'provenance.json').write_text(json.dumps({'appVersion':'1.12.0 (27)','sourceCommit':SOURCE_COMMIT,'sourceRepository':'https://github.com/dk-bluegrain/bsc','capture':'Scripted native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only. Capture-only QA builds are identified by each source APK digest; distribution hashes are listed separately in downloads.json.','storyboardRevision':3,'smsPolicy':'SMS assistance enabled outside initial pre-choice onboarding and the settings off/on demonstration; SMS delivery restored after configuration. Fake keyboard autofill retains Verify; a separate synthetic one-message consent result completes only SMS-only login automatically. Offline demo and generated token codes are distinct.','audio':'Silent: no music or narration.','security':'Only a disposable QA checkout permits screenshots. Distribution live screens retain FLAG_SECURE.','notEvidenceOf':'Bank authorization, owner-account validation, current live compatibility, or inclusion of all advanced flows in the basic demo.','chapters':manifest},indent=2)+'\n')
 print('Scripted chapters exported; overview ready:',ready)

@@ -1,6 +1,6 @@
 {
   "appVersion": "1.12.0 (27)",
-  "sourceCommit": "c8aea0f34a05311ce9a76270b7f5e251468b8728",
+  "sourceCommit": "6ee13357218005e84c3719d5ac5ff7714af83390",
   "sourceRepository": "https://github.com/dk-bluegrain/bsc",
   "capture": "Scripted native Android instrumentation; fictional identities, synthetic PDFs and fake bank transports only. Capture-only QA builds are identified by each source APK digest; distribution hashes are listed separately in downloads.json.",
   "storyboardRevision": 3,
