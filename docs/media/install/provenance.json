@@ -1,0 +1,42 @@
+{
+  "captureDate": "2026-10-16",
+  "device": "Android 15 API 35, disposable read-only bsc-distribution-check-api35 emulator; explicit serial emulator-5590",
+  "resolution": [
+    540,
+    1200
+  ],
+  "language": "en",
+  "sourceApp": {
+    "name": "File Manager",
+    "package": "org.fossify.filemanager",
+    "version": "1.6.2",
+    "source": "https://github.com/FossifyOrg/File-Manager/releases/tag/1.6.2"
+  },
+  "apk": {
+    "filename": "santa-cruz-modern-1.12.1-live.apk",
+    "sha256": "1a791c5fc1cd0a6bbb4624f5e3ac193e3e4cd5dea467312fc669cc99fa8002b3"
+  },
+  "method": "Unmodified adb screencap PNGs. Existing public release APK copied into the emulator Downloads folder and opened with File Manager. Installation completed, source permission revoked, app not launched. No account, credentials, bank requests, real transactions or owner phone used.",
+  "screenshots": {
+    "download.png": {
+      "meaning": "Santa Cruz Modern live APK in the Downloads folder",
+      "sha256": "810d529cf46fff8c6e71a9772a7c1ffc62ebd636e0bc20a91b7002fc26368cc7"
+    },
+    "open-apk.png": {
+      "meaning": "Android warning that the source cannot install unknown apps, with Settings action",
+      "sha256": "d3b528abb891730dae1471cd43df273bdffd931f0d36f2a8052219145800e214"
+    },
+    "allow-source.png": {
+      "meaning": "Allow from this source enabled for the File Manager opening the APK",
+      "sha256": "17d002f7a74050c2e8e97ee24cb2f139de47f1fd5f26ee3b661c058daf3a380e"
+    },
+    "install.png": {
+      "meaning": "Native Android installation confirmation naming Santa Cruz Modern",
+      "sha256": "e3e903bba73b8a992aa33ac2347c11623be60c8814b96836b19ec3df846d9961"
+    },
+    "disable-source.png": {
+      "meaning": "Allow from this source disabled after installation",
+      "sha256": "8b731d91306e7fc3ecfe9a4dfde8f8a7bc2aac83c1c4b5ce2a782dbaa9fff530"
+    }
+  }
+}

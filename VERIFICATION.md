@@ -8,17 +8,21 @@ keep both choices visible before the full cards. The banking APK link appears
 after developer-attributed publication rationale, security limits, own-risk and
 qualified liability notices, APK privacy and six installation steps.
 
-The download guide shows four actual Santa Cruz Modern screenshots from the
-existing showcase: opening independence notice, fictional accounts, simulated
-bank history and demo profile. Screens are in Spanish, explicitly disclosed in
-all seven languages, and use fictional data/fake transports. They establish no
-live account access. The gallery is separate from the six text-only Android
-installation steps. Browser/installer screenshots have been removed.
-Existing media provenance remains in `docs/media/provenance.json` and
-`src/media.json`; no capture or APK was rebuilt for this correction.
+Five real Android 15 screenshots illustrate the installation instructions:
+the Santa Cruz Modern live APK in Downloads, Android's blocked-source prompt,
+source permission enabled for the file manager, the native Santa Cruz Modern
+installer, and that permission disabled after installation. Source permission
+names the app opening the APK, not the app being installed; all seven languages
+now explain this explicitly. No app dashboard or feature gallery appears here.
+
+Captures use explicit serial `emulator-5590`, a disposable read-only QA emulator,
+and File Manager 1.6.2 to open the existing signed live APK. The APK was copied
+into the emulator's Downloads folder and installed without launching it, logging
+in or contacting the bank. No personal phone or bank data was used. Source and
+image hashes are recorded in `docs/media/install/provenance.json`.
 
 Local verification covers all seven catalogues and routes, download ordering,
-unchanged release filenames and hashes, native screenshot sources, local assets and
+unchanged release filenames and hashes, installation screenshot provenance, local assets and
 file budgets. Chromium covers 21 language/viewport combinations, edition routing,
 mobile quick links, screenshot decoding, keyboard dialogs/focus return, matching
 language/canonical routes, zero video requests on download pages and access
