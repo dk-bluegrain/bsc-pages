@@ -39,6 +39,7 @@ with sync_playwright() as p:
    assert page.locator('[data-play-video]').count()==14
    assert page.locator('[data-play-video]').first.get_attribute('data-play-video')=='video-overview'
    page.locator('[data-play-video="video-overview"] img').wait_for(state='visible')
+   page.wait_for_function('()=>{const i=document.querySelector("[data-play-video=video-overview] img");return i?.complete && i.naturalWidth>0}')
    assert page.locator('[data-play-video="video-overview"] img').evaluate('(i)=>i.complete && i.naturalWidth>0')
    assert page.locator('[data-play-video="video-overview"] img').get_attribute('src')==page.locator('#template-video-overview').evaluate('(t)=>t.content.querySelector("video").getAttribute("poster")')
    assert not media_requests,('Media loaded before Play',lang,width,media_requests)
@@ -61,7 +62,9 @@ with sync_playwright() as p:
    for link in page.locator('.chapter-list a').all():
     id=link.get_attribute('href')[1:];page.evaluate('(id)=>location.hash=id',id);page.locator('#'+id).wait_for(state='visible')
     page.locator('#'+id+' details').evaluate('(d)=>d.open=true')
-    image=page.locator('[data-play-video="video-'+id+'"] img');image.evaluate('(i)=>i.decode()')
+    image=page.locator('[data-play-video="video-'+id+'"] img');image.scroll_into_view_if_needed()
+    page.wait_for_function('(id)=>{const i=document.querySelector(`[data-play-video="video-${id}"] img`);return i?.complete && i.naturalWidth>0}',arg=id)
+    image.evaluate('(i)=>i.decode()')
     assert image.get_attribute('src')==page.locator('#template-video-'+id).evaluate('(t)=>t.content.querySelector("video").getAttribute("poster")')
     assert page.locator('#'+id+' details p').all_text_contents()==transcripts[lang][id],(lang,width,id,'rendered transcript')
     assert page.locator('#template-video-'+id).evaluate('(t)=>t.content.querySelector("source").getAttribute("src")').split('?')[0].endswith(f'/narrated/{lang}/{id}.mp4')
