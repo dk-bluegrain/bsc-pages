@@ -29,16 +29,21 @@ for lang,values in scenario_captions.items():
  assert set(values)==expected_keys and all(0<len(text)<=160 for text in values.values())
 
 class Page(HTMLParser):
- def __init__(self):super().__init__();self.refs=[];self.video=0;self.tracks=0;self.forms=0;self.ids=[]
+ def __init__(self):super().__init__();self.refs=[];self.video=0;self.tracks=0;self.forms=0;self.ids=[];self.templates=0;self.inert=0;self.previews=0
  def handle_starttag(self,tag,attrs):
   d=dict(attrs)
+  if tag=='template':self.inert+=1;self.templates+=1
   for key in ('href','src','poster','data-enlarge'):
    if key in d:self.refs.append(d[key])
   if 'id' in d:self.ids.append(d['id'])
   if tag=='video':
-   self.video+=1;assert 'autoplay' not in d and 'controls' in d and 'playsinline' in d
-  if tag=='track':self.tracks+=1
+   self.video+=1;assert self.inert and 'autoplay' not in d and 'controls' in d and 'playsinline' in d and d.get('preload')=='none'
+  if tag=='source':assert self.inert,'Video source must stay in an inert template until Play'
+  if tag=='track':self.tracks+=1;assert self.inert
+  if 'data-play-video' in d:self.previews+=1;assert tag=='a' and '.mp4?' in d.get('href','')
   self.forms+=tag in ('form','input','iframe')
+ def handle_endtag(self,tag):
+  if tag=='template':self.inert-=1
 for lang,c in content.items():
  assert c.keys()==content['es'].keys()
  assert len(c['chapters'])==13 and [x['id'] for x in c['chapters']]==[x['id'] for x in content['es']['chapters']]
@@ -46,7 +51,7 @@ for lang,c in content.items():
   s=path.read_text();p=Page();p.feed(s)
   assert f'<html lang="{lang}">' in s and not p.forms
   assert len(p.ids)==len(set(p.ids))
-  if path.parent.name!= 'privacy':assert p.video==14 and p.tracks==98
+  if path.parent.name!= 'privacy':assert p.video==p.templates==p.previews==14 and p.tracks==98
   for ref in p.refs:
    u=urlsplit(ref)
    if u.scheme or u.netloc:

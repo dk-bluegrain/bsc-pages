@@ -24,10 +24,12 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory docs
 
 Routes are `/<language>/` and `/<language>/privacy/`; `/` renders Spanish. Chapter
 anchors stay shareable and persist when changing languages. The language selector
-remains available while scrolling. Videos never autoplay: a visible tour button
-starts playback only after a click. Native controls, playback speed, seven caption
-tracks, transcripts and keyboard-accessible screenshot dialogs are available.
-Without JavaScript all chapter content and native video controls remain readable.
+remains available while scrolling. JPG previews appear before playback; chapter
+previews load lazily. Video players and caption tracks stay in inert templates
+until a visitor clicks Play, so browsing chapters requests no video data. Native
+controls, playback speed, seven caption tracks, transcripts and keyboard-accessible
+screenshot dialogs are available. Each video displays its file size. Without
+JavaScript the JPG links open MP4s directly and all chapter content remains readable.
 
 The site has no banking login, credential collection, analytics or backend.
 
@@ -116,8 +118,10 @@ python3 -m venv /tmp/bsc-pages-qa
 ```
 
 Checks cover all seven languages at 390, 820 and 1440 px: responsive layout,
-keyboard dialogs/focus, task anchors, the user-started tour, playback/speed,
-transcripts, privacy and versioned downloads. Use
+keyboard dialogs/focus, task anchors, no video/caption requests before Play,
+keyboard-started playback, speed selection before playback, the user-started tour,
+single-player playback, JPG/MP4 links without JavaScript, transcripts, privacy and
+versioned downloads. Use
 `--url https://dk-bluegrain.github.io/bsc-pages/` for anonymous public verification.
 Static checks additionally verify all local assets, 14 silent videos, 98 timed
 caption tracks, actual SMS events in the leading tour segments, login exclusions,

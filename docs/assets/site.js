@@ -15,11 +15,35 @@ if (dialog) {
   dialog.addEventListener('close', () => trigger?.focus());
 }
 for (const select of document.querySelectorAll('[data-speed]')) {
-  select.addEventListener('change', () => { document.getElementById(select.dataset.speed).playbackRate = Number(select.value); });
+  select.addEventListener('change', () => {
+    const video = document.getElementById(select.dataset.speed);
+    if (video) video.playbackRate = Number(select.value);
+  });
 }
-for (const video of document.querySelectorAll('video')) {
-  video.addEventListener('play', () => {
-    for (const other of document.querySelectorAll('video')) if (other !== video) other.pause();
+function playVideo(id) {
+  let video = document.getElementById(id);
+  if (!video) {
+    const template = document.getElementById('template-' + id);
+    if (!template) return;
+    video = template.content.firstElementChild.cloneNode(true);
+    const preview = template.parentElement.querySelector('[data-play-video]');
+    preview.hidden = true;
+    template.before(video);
+    video.addEventListener('play', () => {
+      for (const other of document.querySelectorAll('video')) if (other !== video) other.pause();
+    });
+    const speed = document.querySelector(`[data-speed="${id}"]`);
+    video.playbackRate = Number(speed.value);
+  }
+  video.tabIndex = 0;
+  video.focus({preventScroll: true});
+  // Native controls retain loading/error feedback and allow retry after failure.
+  video.play().catch(() => {});
+}
+for (const preview of document.querySelectorAll('[data-play-video]')) {
+  preview.addEventListener('click', event => {
+    event.preventDefault();
+    playVideo(preview.dataset.playVideo);
   });
 }
 const chapters = [...document.querySelectorAll('.chapter')];
@@ -45,6 +69,6 @@ selectChapter();
 window.addEventListener('hashchange', selectChapter);
 for (const control of document.querySelectorAll('[data-play-overview]')) {
   control.addEventListener('click', () => {
-    document.getElementById('video-overview')?.play().catch(() => {});
+    playVideo('video-overview');
   });
 }
