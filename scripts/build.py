@@ -77,15 +77,14 @@ def download_page(lang,prefix):
     # APK links live here so that every landing-page path presents the edition choice.
     demo=f'{RELEASE}/{DOWNLOADS["demo"]["filename"]}'
     live=f'{RELEASE}/{DOWNLOADS["live"]["filename"]}'
-    images={1:'open-apk.png',2:'allow-source.png',3:'install.png',4:'disable-source.png'}
-    steps=[]
-    for index,step in enumerate(d['steps']):
-        shot=''
-        if index in images:
-            file=images[index]
-            revision=hashlib.sha256((DOCS/'media/install'/file).read_bytes()).hexdigest()[:12]
-            shot=image_button('install/'+file,step['title'],prefix,revision,'install-shot')
-        steps.append(f'<li><div><h3>{E(step["title"])}</h3><p>{E(step["body"])}</p></div>{shot}</li>')
+    screenshots=[('first-use','first-use-01.jpg'),('accounts','accounts-01.jpg'),('history','history-03.jpg'),('settings','first-use-09.jpg')]
+    gallery=[]
+    for chapter,file in screenshots:
+        title=next(item['title'] for item in c['chapters'] if item['id']==chapter)
+        revision=hashlib.sha256((DOCS/'media'/file).read_bytes()).hexdigest()[:12]
+        shot=image_button(file,title,prefix,revision,'app-shot')
+        gallery.append(f'<figure>{shot}<figcaption>{E(title)}</figcaption></figure>')
+    steps=[f'<li><div><h3>{E(step["title"])}</h3><p>{E(step["body"])}</p></div></li>' for step in d['steps']]
     checksums=''.join(f'<div><strong>{E(d[edition+"Title"])}</strong><code>{E(data["filename"])}</code><code>{data["sha256"]}</code></div>' for edition,data in DOWNLOADS.items())
     return f'''<main id="main" class="wrap downloads">
 <a class="text-link" href="{prefix}{lang}/">← {E(d['backLabel'])}</a>
@@ -93,10 +92,10 @@ def download_page(lang,prefix):
 <nav class="download-jump" aria-label="{E(d['action'])}"><a href="#demo">01 · {E(d['demoTitle'])} ↓</a><a href="#banking-choice">02 · {E(d['liveTitle'])} ↓</a></nav>
 <div class="edition-grid download-choices"><article id="demo" class="edition demo-choice"><span class="edition-badge">{E(d['demoBadge'])}</span><h2>{E(d['demoTitle'])}</h2><p>{E(d['demoBody'])}</p><a class="button" href="{demo}">{E(c['demoAction'])} ↗</a><a class="text-link" href="#installation">{E(d['guideTitle'])} ↓</a></article>
 <article id="banking-choice" class="edition live-choice"><span class="edition-badge">{E(d['liveBadge'])}</span><h2>{E(d['liveTitle'])}</h2><p>{E(d['liveBody'])}</p><a class="button secondary" href="#live-guide">{E(d['guideAction'])} ↓</a></article></div>
-<section id="live-guide" class="download-section"><h2>{E(d['whyTitle'])}</h2><p>{E(d['whyBody'])}</p><p>{E(d['permissionBody'])}</p></section>
+<section id="live-guide" class="download-section"><h2>{E(d['whyTitle'])}</h2><p>{E(d['whyBody'])}</p><h3>{E(c['screenshotsLabel'])}</h3><p class="subtle">{E(d['screensNote'])}</p><div class="download-gallery">{''.join(gallery)}</div><p>{E(d['permissionBody'])}</p></section>
 <section class="download-section"><h2>{E(d['securityTitle'])}</h2><p>{E(d['securityBody'])}</p><p>{E(d['verificationBody'])}</p><div class="checksums"><h3>{E(d['checksumLabel'])} · {VERSION} ({CODE})</h3>{checksums}<p><a href="{RELEASE}/SHA256SUMS">SHA256SUMS ↗</a> · <a href="https://github.com/dk-bluegrain/bsc-pages/releases/tag/{TAG}">GitHub Release ↗</a></p></div><p><a href="{prefix}privacy/app/{lang}.html">Android APK · {E(c['privacyLabel'])}</a></p></section>
 <section class="download-section risk-notice"><h2>{E(d['riskTitle'])}</h2><p>{E(d['riskBody'])}</p><p>{E(d['liabilityBody'])}</p></section>
-<section id="installation" class="download-section"><h2>{E(d['guideTitle'])}</h2><p>{E(d['guideIntro'])}</p><p class="subtle">{E(d['screensNote'])}</p><ol class="install-guide">{''.join(steps)}</ol><p class="warning">{E(d['protectBody'])}</p><p>{E(d['sourcesLabel'])}: <a href="https://support.google.com/android/answer/9457058?hl={lang}">Android Help ↗</a> · <a href="https://support.google.com/googleplay/answer/2812853?hl={lang}">Google Play Protect ↗</a></p></section>
+<section id="installation" class="download-section"><h2>{E(d['guideTitle'])}</h2><p>{E(d['guideIntro'])}</p><ol class="install-guide">{''.join(steps)}</ol><p class="warning">{E(d['protectBody'])}</p><p>{E(d['sourcesLabel'])}: <a href="https://support.google.com/android/answer/9457058?hl={lang}">Android Help ↗</a> · <a href="https://support.google.com/googleplay/answer/2812853?hl={lang}">Google Play Protect ↗</a></p></section>
 <section id="live-download" class="download-section final-download"><span class="edition-badge">{E(d['liveBadge'])}</span><h2>{E(d['downloadTitle'])}</h2><p>{E(d['downloadBody'])}</p><a class="button" href="{live}">{E(d['downloadAction'])} ↗</a><p><a href="{prefix}privacy/app/{lang}.html">Android APK · {E(c['privacyLabel'])}</a></p><p class="subtle">{E(c['versionLabel'])} {VERSION} ({CODE}) · <a href="{RELEASE}/SHA256SUMS">SHA-256</a></p></section>
 <section class="download-section support"><h2>{E(c['supportLabel'])}</h2><p>{E(c['supportBody'])}</p><a href="https://github.com/dk-bluegrain/bsc-pages/issues">GitHub ↗</a></section></main><dialog aria-label="{E(c['screenshotsLabel'])}"><img alt=""><button type="button">{E(c['closeLabel'])}</button></dialog>'''
 

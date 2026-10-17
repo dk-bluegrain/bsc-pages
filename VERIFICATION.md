@@ -8,16 +8,17 @@ keep both choices visible before the full cards. The banking APK link appears
 after developer-attributed publication rationale, security limits, own-risk and
 qualified liability notices, APK privacy and six installation steps.
 
-Four unmodified Android 15 emulator captures show the actual blocked-source
-prompt, source permission enabled, native demo installer and permission disabled
-after installation. They use explicit serial `emulator-5590`, an ephemeral
-read-only QA emulator, DuckDuckGo 5.298.1 and the existing signed demo APK.
-No personal phone, banking credentials or real bank operation was used.
-Capture hashes and source details are in `docs/media/install/provenance.json`.
-English example screens are explicitly disclosed in all seven page languages.
+The download guide shows four actual Santa Cruz Modern screenshots from the
+existing showcase: opening independence notice, fictional accounts, simulated
+bank history and demo profile. Screens are in Spanish, explicitly disclosed in
+all seven languages, and use fictional data/fake transports. They establish no
+live account access. The gallery is separate from the six text-only Android
+installation steps. Browser/installer screenshots have been removed.
+Existing media provenance remains in `docs/media/provenance.json` and
+`src/media.json`; no capture or APK was rebuilt for this correction.
 
 Local verification covers all seven catalogues and routes, download ordering,
-unchanged release filenames and hashes, screenshot provenance, local assets and
+unchanged release filenames and hashes, native screenshot sources, local assets and
 file budgets. Chromium covers 21 language/viewport combinations, edition routing,
 mobile quick links, screenshot decoding, keyboard dialogs/focus return, matching
 language/canonical routes, zero video requests on download pages and access

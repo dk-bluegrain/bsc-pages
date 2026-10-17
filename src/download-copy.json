@@ -21,7 +21,7 @@
     "liabilityBody": "As-is/warranty/liability disclaimer only as permitted by law; preserves non-waivable rights and liability.",
     "guideTitle": "Illustrated installation section heading and demo-card link to that section.",
     "guideIntro": "Android 8+ scope, source permission for both APKs, additional live-bank disclosures.",
-    "screensNote": "Actual English Android 15 emulator screenshots using demo APK; device-dependent presentation; tap to enlarge; no real banking data.",
+    "screensNote": "Gallery of actual Santa Cruz Modern captures from the existing showcase: Spanish opening notice, fictional accounts/history and profile. Demo/fake bank data, no proof of live access; tap to enlarge. Separate from text-only Android installation instructions.",
     "protectBody": "Keep Play Protect on; allow scans; stop on harmful warning or policy block, use official banking; never bypass protections.",
     "downloadTitle": "Heading for real-banking APK offered after disclosures and guide.",
     "downloadBody": "Voluntary informed-choice explanation; no bank approval or waiver of protected rights, not an acceptance form.",
@@ -29,7 +29,7 @@
     "checksumLabel": "Heading for published filenames and digests from unchanged release metadata.",
     "sourcesLabel": "Label for official Android and Google Play Protect help references.",
     "backLabel": "Navigation to matching-language app tour.",
-    "steps": "Six ordered installation steps. Each title/body has the context documented in DOWNLOAD-COPY.md; images beside steps 2–5 are real English Android 15 captures. No arguments or bank/user text."
+    "steps": "Six ordered text-only Android installation steps. Each title/body has the context documented in DOWNLOAD-COPY.md; no arguments or bank/user text. App screenshots appear in a separate gallery, not as installer or browser instructions."
   },
   "languages": {
     "es": {
@@ -54,7 +54,7 @@
       "liabilityBody": "En la máxima medida permitida por la ley aplicable, la aplicación se ofrece «tal cual», sin garantías, y el desarrollador excluye su responsabilidad por pérdidas o daños derivados de su instalación o uso, incluidas pérdidas económicas, de datos e interrupciones de acceso. Este aviso no excluye responsabilidades ni derechos que legalmente no puedan excluirse o renunciarse.",
       "guideTitle": "Instalar en Android, paso a paso",
       "guideIntro": "Para Android 8.0 o posterior. Ambas apps requieren el mismo permiso de instalación. Lee las advertencias adicionales sobre banca real antes de descargar la edición no oficial.",
-      "screensNote": "Capturas reales de un emulador Android 15 en inglés con un APK de demo. El texto, navegador y diseño de tu teléfono pueden variar. Toca una imagen para ampliarla. No se usan cuentas ni operaciones bancarias reales.",
+      "screensNote": "Capturas de Santa Cruz Modern en español: aviso inicial, cuentas, movimientos y perfil. Usan datos ficticios y transportes bancarios simulados; no son prueba de acceso a cuentas reales. Toca una imagen para ampliarla.",
       "protectBody": "Mantén Google Play Protect activado. Si Android ofrece un análisis, deja que termine y revisa el resultado. Si detecta la app como dañina, detente y contacta al proyecto; no desactives protecciones ni omitas esa advertencia. Si una política del dispositivo o la Protección Avanzada bloquea la instalación, usa los canales bancarios oficiales.",
       "downloadTitle": "Descargar el APK bancario no oficial",
       "downloadBody": "Continúa solo si has leído el aviso de independencia, la guía de instalación, el aviso de privacidad y los riesgos, y decides asumirlos. La descarga no implica aprobación del banco ni renuncia a derechos protegidos por ley.",
@@ -73,11 +73,11 @@
         },
         {
           "title": "Permite solo esa fuente, temporalmente",
-          "body": "Lee la advertencia de Android. Si decides continuar, activa “Permitir desde esta fuente” para ese navegador o gestor. La captura muestra un navegador de ejemplo. No habilites otras fuentes. Vuelve al APK para continuar."
+          "body": "Lee la advertencia de Android. Si decides continuar, activa “Permitir desde esta fuente” para ese navegador o gestor. No habilites otras fuentes. Vuelve al APK para continuar."
         },
         {
           "title": "Revisa el instalador e instala",
-          "body": "Comprueba que elegiste Santa Cruz Modern y la edición correcta del APK; toca Instalar. Las capturas usan el paquete separado de demo. La edición bancaria puede operar con datos y dinero reales; la demo no. Deja que termine cualquier análisis; detente si aparece una advertencia de app dañina."
+          "body": "Comprueba que elegiste Santa Cruz Modern y la edición correcta del APK; toca Instalar. La edición bancaria puede operar con datos y dinero reales; la demo no. Deja que termine cualquier análisis; detente si aparece una advertencia de app dañina."
         },
         {
           "title": "Desactiva de nuevo el permiso",
@@ -111,7 +111,7 @@
       "liabilityBody": "To the fullest extent permitted by applicable law, the application is provided “as is”, without warranties, and the developer disclaims liability for losses or damage arising from its installation or use, including financial loss, data loss and interrupted access. This notice does not exclude liability or rights that cannot lawfully be excluded or waived.",
       "guideTitle": "Install on Android, step by step",
       "guideIntro": "For Android 8.0 or later. The same installation permission applies to both APKs. Read the additional real-banking disclosures above before downloading the unofficial edition.",
-      "screensNote": "Actual Android 15 emulator screenshots, shown in English with a demo APK. Your phone’s wording, browser and layout may differ. Tap an image to enlarge it. No bank account or real transaction is used.",
+      "screensNote": "Santa Cruz Modern screenshots in Spanish: opening notice, accounts, transaction history and profile. They use fictional data and simulated bank connections; they do not establish access to real accounts. Tap an image to enlarge it.",
       "protectBody": "Keep Google Play Protect enabled. If Android offers a scan, let it complete and review the result. If the app is flagged as harmful, stop and contact the project; do not disable protections or bypass a harmful-app warning. If device policy or Advanced Protection blocks installation, use official banking channels.",
       "downloadTitle": "Download the unofficial banking APK",
       "downloadBody": "Continue only if you have read the independence notice, installation guide, privacy notice and risks, and choose to accept those risks. Downloading does not establish bank approval or waive rights protected by law.",
@@ -130,11 +130,11 @@
         },
         {
           "title": "Allow only this source, temporarily",
-          "body": "Read Android’s warning. If you choose to continue, enable “Allow from this source” for the specific browser or file manager. The screenshot shows an example browser. Do not enable unrelated sources. Return to the APK to continue."
+          "body": "Read Android’s warning. If you choose to continue, enable “Allow from this source” for the specific browser or file manager. Do not enable unrelated sources. Return to the APK to continue."
         },
         {
           "title": "Review the installer and install",
-          "body": "Check that you selected Santa Cruz Modern and the correct APK edition, then tap Install. The screenshots use the separate demo package. A banking installation can work with real data and money; the demo cannot. Allow any security scan to finish; stop if a harmful-app warning appears."
+          "body": "Check that you selected Santa Cruz Modern and the correct APK edition, then tap Install. A banking installation can work with real data and money; the demo cannot. Allow any security scan to finish; stop if a harmful-app warning appears."
         },
         {
           "title": "Turn the installation permission back off",
@@ -168,7 +168,7 @@
       "liabilityBody": "Soweit gesetzlich zulässig, wird die Anwendung ohne Gewähr bereitgestellt und der Entwickler schließt die Haftung für Schäden oder Verluste aus Installation oder Nutzung aus, einschließlich finanzieller Verluste, Datenverlust und Zugangsunterbrechungen. Gesetzlich nicht ausschließbare Haftung und unverzichtbare Rechte bleiben unberührt.",
       "guideTitle": "Installation unter Android, Schritt für Schritt",
       "guideIntro": "Für Android ab 8.0. Beide APKs benötigen dieselbe Installationsberechtigung. Lesen Sie vor dem Download der inoffiziellen Edition die zusätzlichen Hinweise zum echten Banking.",
-      "screensNote": "Echte Aufnahmen eines Android-15-Emulators auf Englisch mit einer Demo-APK. Texte, Browser und Darstellung auf Ihrem Gerät können abweichen. Bilder lassen sich antippen und vergrößern. Keine echten Bankkonten oder Transaktionen.",
+      "screensNote": "Screenshots von Santa Cruz Modern auf Spanisch: Start-Hinweis, Konten, Buchungen und Profil. Sie zeigen fiktive Daten und simulierte Bankverbindungen und belegen keinen Zugang zu echten Konten. Zum Vergrößern antippen.",
       "protectBody": "Lassen Sie Google Play Protect eingeschaltet. Lassen Sie eine angebotene Prüfung abschließen und lesen Sie das Ergebnis. Wird die App als schädlich erkannt, brechen Sie ab und kontaktieren Sie das Projekt; deaktivieren Sie keine Schutzfunktionen und umgehen Sie keine Schadsoftwarewarnung. Blockieren Geräterichtlinien oder Erweiterter Schutz die Installation, nutzen Sie offizielle Bankkanäle.",
       "downloadTitle": "Inoffizielle Banking-APK herunterladen",
       "downloadBody": "Fahren Sie nur fort, wenn Sie Unabhängigkeitshinweis, Installationsanleitung, Datenschutzhinweis und Risiken gelesen haben und diese Risiken eingehen möchten. Der Download ist keine Bankgenehmigung und kein Verzicht auf gesetzlich geschützte Rechte.",
@@ -187,11 +187,11 @@
         },
         {
           "title": "Nur diese Quelle vorübergehend erlauben",
-          "body": "Lesen Sie die Android-Warnung. Wenn Sie fortfahren möchten, aktivieren Sie „Dieser Quelle vertrauen“ für den betreffenden Browser oder Dateimanager. Das Bild zeigt einen Beispielbrowser. Aktivieren Sie keine anderen Quellen. Kehren Sie zur APK zurück."
+          "body": "Lesen Sie die Android-Warnung. Wenn Sie fortfahren möchten, aktivieren Sie „Dieser Quelle vertrauen“ für den betreffenden Browser oder Dateimanager. Aktivieren Sie keine anderen Quellen. Kehren Sie zur APK zurück."
         },
         {
           "title": "Installationsdialog prüfen und installieren",
-          "body": "Prüfen Sie Santa Cruz Modern und die richtige APK-Edition, dann wählen Sie Installieren. Die Bilder zeigen das separate Demo-Paket. Die Banking-Edition kann echte Daten und Geld betreffen, die Demo nicht. Lassen Sie Sicherheitsprüfungen abschließen; brechen Sie bei einer Schadsoftwarewarnung ab."
+          "body": "Prüfen Sie Santa Cruz Modern und die richtige APK-Edition, dann wählen Sie Installieren. Die Banking-Edition kann echte Daten und Geld betreffen, die Demo nicht. Lassen Sie Sicherheitsprüfungen abschließen; brechen Sie bei einer Schadsoftwarewarnung ab."
         },
         {
           "title": "Installationsberechtigung wieder ausschalten",
@@ -225,7 +225,7 @@
       "liabilityBody": "Dans toute la mesure permise par la loi applicable, l’application est fournie « en l’état », sans garantie, et le développeur décline toute responsabilité pour les pertes ou dommages liés à son installation ou à son utilisation, notamment financiers, de données ou d’accès. Cet avis n’exclut aucune responsabilité ni aucun droit qui ne pourrait légalement être exclu ou abandonné.",
       "guideTitle": "Installer sur Android, étape par étape",
       "guideIntro": "Pour Android 8.0 ou ultérieur. Les deux APK nécessitent la même autorisation d’installation. Lisez les avertissements supplémentaires sur les comptes réels avant de télécharger l’édition non officielle.",
-      "screensNote": "Captures réelles d’un émulateur Android 15 en anglais avec un APK de démo. Le texte, le navigateur et la présentation peuvent varier sur votre téléphone. Touchez une image pour l’agrandir. Aucun compte ni aucune opération bancaire réels.",
+      "screensNote": "Captures de Santa Cruz Modern en espagnol : avis initial, comptes, historique et profil. Elles utilisent des données fictives et des connexions bancaires simulées ; elles ne prouvent aucun accès à des comptes réels. Touchez une image pour l’agrandir.",
       "protectBody": "Gardez Google Play Protect activé. Si Android propose une analyse, laissez-la se terminer et consultez le résultat. Si l’application est signalée comme dangereuse, arrêtez et contactez le projet ; ne désactivez pas les protections et ne contournez pas cet avertissement. Si une règle de l’appareil ou la Protection Avancée bloque l’installation, utilisez les canaux bancaires officiels.",
       "downloadTitle": "Télécharger l’APK bancaire non officiel",
       "downloadBody": "Continuez uniquement après avoir lu l’avis d’indépendance, le guide, l’avis de confidentialité et les risques, et si vous choisissez de les assumer. Le téléchargement ne vaut ni approbation bancaire ni renonciation aux droits protégés par la loi.",
@@ -244,11 +244,11 @@
         },
         {
           "title": "Autoriser temporairement cette seule source",
-          "body": "Lisez l’avertissement Android. Si vous souhaitez continuer, activez « Autoriser cette source » pour le navigateur ou gestionnaire concerné. L’image montre un navigateur d’exemple. N’autorisez pas d’autres sources. Revenez à l’APK."
+          "body": "Lisez l’avertissement Android. Si vous souhaitez continuer, activez « Autoriser cette source » pour le navigateur ou gestionnaire concerné. N’autorisez pas d’autres sources. Revenez à l’APK."
         },
         {
           "title": "Vérifier l’installateur et installer",
-          "body": "Vérifiez Santa Cruz Modern et la bonne édition de l’APK, puis touchez Installer. Les images utilisent le paquet de démo séparé. L’édition bancaire peut agir sur de vraies données et de l’argent réel, pas la démo. Laissez finir les analyses ; arrêtez en cas d’avertissement d’application dangereuse."
+          "body": "Vérifiez Santa Cruz Modern et la bonne édition de l’APK, puis touchez Installer. L’édition bancaire peut agir sur de vraies données et de l’argent réel, pas la démo. Laissez finir les analyses ; arrêtez en cas d’avertissement d’application dangereuse."
         },
         {
           "title": "Désactiver à nouveau l’autorisation",
@@ -282,7 +282,7 @@
       "liabilityBody": "В максимальной степени, разрешённой применимым законом, приложение предоставляется «как есть», без гарантий, а разработчик отказывается от ответственности за убытки и ущерб от установки или использования, включая потерю денег, данных и доступа. Уведомление не исключает ответственность и права, которые нельзя исключить или от которых нельзя отказаться по закону.",
       "guideTitle": "Установка на Android по шагам",
       "guideIntro": "Для Android 8.0 и новее. Оба APK требуют одинакового разрешения на установку. Перед загрузкой неофициальной версии прочитайте дополнительные предупреждения о реальном банкинге.",
-      "screensNote": "Настоящие снимки экрана эмулятора Android 15 на английском с демо-APK. Текст, браузер и оформление вашего телефона могут отличаться. Нажмите на изображение для увеличения. Реальные счета и операции не используются.",
+      "screensNote": "Снимки Santa Cruz Modern на испанском: начальное уведомление, счета, история операций и профиль. Используются вымышленные данные и имитация связи с банком; это не подтверждение доступа к реальным счетам. Нажмите на изображение для увеличения.",
       "protectBody": "Оставьте Google Play Protect включённым. Дождитесь завершения предложенной проверки и прочитайте результат. Если приложение признано вредоносным, остановитесь и свяжитесь с проектом; не отключайте защиту и не обходите предупреждение. Если установка запрещена политикой устройства или Расширенной защитой, используйте официальные каналы банка.",
       "downloadTitle": "Загрузить неофициальный банковский APK",
       "downloadBody": "Продолжайте, только если прочитали уведомление о независимости, руководство, уведомление о конфиденциальности и рисках и решили принять эти риски. Загрузка не означает одобрения банка или отказа от защищённых законом прав.",
@@ -301,11 +301,11 @@
         },
         {
           "title": "Временно разрешить только этот источник",
-          "body": "Прочитайте предупреждение Android. Если решили продолжить, включите «Разрешить из этого источника» для выбранного браузера или файлового менеджера. На снимке показан пример браузера. Не разрешайте другие источники. Вернитесь к APK."
+          "body": "Прочитайте предупреждение Android. Если решили продолжить, включите «Разрешить из этого источника» для выбранного браузера или файлового менеджера. Не разрешайте другие источники. Вернитесь к APK."
         },
         {
           "title": "Проверить установщик и установить",
-          "body": "Проверьте название Santa Cruz Modern и нужную редакцию APK, затем нажмите «Установить». На снимках используется отдельный демопакет. Банковская версия может работать с реальными данными и деньгами, демо — нет. Дождитесь проверок безопасности; остановитесь при предупреждении о вредоносном приложении."
+          "body": "Проверьте название Santa Cruz Modern и нужную редакцию APK, затем нажмите «Установить». Банковская версия может работать с реальными данными и деньгами, демо — нет. Дождитесь проверок безопасности; остановитесь при предупреждении о вредоносном приложении."
         },
         {
           "title": "Снова отключить разрешение",
@@ -339,7 +339,7 @@
       "liabilityBody": "У максимальному обсязі, дозволеному чинним законом, застосунок надається «як є», без гарантій, а розробник відмовляється від відповідальності за збитки чи шкоду від встановлення або використання, зокрема втрату грошей, даних і доступу. Повідомлення не виключає відповідальності чи прав, які не можна виключити або від яких не можна відмовитися за законом.",
       "guideTitle": "Встановлення на Android крок за кроком",
       "guideIntro": "Для Android 8.0 і новіших. Обидва APK потребують однакового дозволу на встановлення. Перед завантаженням неофіційної версії прочитайте додаткові попередження про реальний банкінг.",
-      "screensNote": "Справжні знімки екрана емулятора Android 15 англійською з демо-APK. Текст, браузер і вигляд вашого телефона можуть відрізнятися. Натисніть зображення для збільшення. Реальні рахунки й операції не використовуються.",
+      "screensNote": "Знімки Santa Cruz Modern іспанською: початкове повідомлення, рахунки, історія операцій і профіль. Використано вигадані дані й імітацію зв’язку з банком; це не підтверджує доступ до реальних рахунків. Натисніть зображення для збільшення.",
       "protectBody": "Залиште Google Play Protect увімкненим. Дочекайтеся завершення запропонованої перевірки та прочитайте результат. Якщо застосунок визначено як шкідливий, зупиніться й зв’яжіться з проєктом; не вимикайте захист і не обходьте попередження. Якщо встановлення заборонено політикою пристрою або Розширеним захистом, користуйтеся офіційними каналами банку.",
       "downloadTitle": "Завантажити неофіційний банківський APK",
       "downloadBody": "Продовжуйте, лише якщо прочитали повідомлення про незалежність, посібник, повідомлення про конфіденційність і ризики та вирішили прийняти ці ризики. Завантаження не означає схвалення банком або відмови від захищених законом прав.",
@@ -358,11 +358,11 @@
         },
         {
           "title": "Тимчасово дозволити лише це джерело",
-          "body": "Прочитайте попередження Android. Якщо вирішили продовжити, увімкніть «Дозволити з цього джерела» для відповідного браузера чи файлового менеджера. На знімку показано приклад браузера. Не дозволяйте інші джерела. Поверніться до APK."
+          "body": "Прочитайте попередження Android. Якщо вирішили продовжити, увімкніть «Дозволити з цього джерела» для відповідного браузера чи файлового менеджера. Не дозволяйте інші джерела. Поверніться до APK."
         },
         {
           "title": "Перевірити інсталятор і встановити",
-          "body": "Перевірте назву Santa Cruz Modern та потрібну редакцію APK, потім натисніть «Встановити». На знімках використано окремий демопакет. Банківська версія може працювати зі справжніми даними та грошима, демо — ні. Дочекайтеся перевірок безпеки; зупиніться за попередження про шкідливий застосунок."
+          "body": "Перевірте назву Santa Cruz Modern та потрібну редакцію APK, потім натисніть «Встановити». Банківська версія може працювати зі справжніми даними та грошима, демо — ні. Дочекайтеся перевірок безпеки; зупиніться за попередження про шкідливий застосунок."
         },
         {
           "title": "Знову вимкнути дозвіл",
@@ -396,7 +396,7 @@
       "liabilityBody": "Na máxima extensão permitida pela lei aplicável, o aplicativo é fornecido “no estado em que se encontra”, sem garantias, e o desenvolvedor se exime de responsabilidade por perdas ou danos decorrentes da instalação ou uso, incluindo perdas financeiras, de dados e interrupções de acesso. Este aviso não exclui responsabilidades ou direitos que não possam ser legalmente excluídos ou renunciados.",
       "guideTitle": "Instalar no Android, passo a passo",
       "guideIntro": "Para Android 8.0 ou posterior. Os dois APKs exigem a mesma permissão de instalação. Leia os avisos adicionais sobre contas reais antes de baixar a edição não oficial.",
-      "screensNote": "Capturas reais de um emulador Android 15 em inglês com um APK de demo. O texto, navegador e layout do seu celular podem variar. Toque em uma imagem para ampliar. Nenhuma conta ou transação bancária real é usada.",
+      "screensNote": "Capturas do Santa Cruz Modern em espanhol: aviso inicial, contas, histórico e perfil. Usam dados fictícios e conexões bancárias simuladas; não comprovam acesso a contas reais. Toque em uma imagem para ampliar.",
       "protectBody": "Mantenha o Google Play Protect ativado. Se o Android oferecer uma verificação, deixe-a terminar e confira o resultado. Se o app for identificado como nocivo, pare e entre em contato com o projeto; não desative proteções nem ignore esse aviso. Se uma política do dispositivo ou a Proteção Avançada bloquear a instalação, use os canais bancários oficiais.",
       "downloadTitle": "Baixar o APK bancário não oficial",
       "downloadBody": "Continue somente se leu o aviso de independência, o guia, o aviso de privacidade e os riscos e decidiu assumi-los. O download não representa aprovação do banco nem renúncia a direitos protegidos por lei.",
@@ -415,11 +415,11 @@
         },
         {
           "title": "Permita só essa fonte, temporariamente",
-          "body": "Leia o aviso do Android. Se decidir continuar, ative “Permitir desta fonte” para o navegador ou gerenciador específico. A captura mostra um navegador de exemplo. Não habilite outras fontes. Volte ao APK para continuar."
+          "body": "Leia o aviso do Android. Se decidir continuar, ative “Permitir desta fonte” para o navegador ou gerenciador específico. Não habilite outras fontes. Volte ao APK para continuar."
         },
         {
           "title": "Confira o instalador e instale",
-          "body": "Confira Santa Cruz Modern e a edição correta do APK; toque em Instalar. As capturas usam o pacote separado de demo. A edição bancária pode operar com dados e dinheiro reais; a demo não. Deixe as verificações terminarem; pare se houver um aviso de app nocivo."
+          "body": "Confira Santa Cruz Modern e a edição correta do APK; toque em Instalar. A edição bancária pode operar com dados e dinheiro reais; a demo não. Deixe as verificações terminarem; pare se houver um aviso de app nocivo."
         },
         {
           "title": "Desative novamente a permissão",

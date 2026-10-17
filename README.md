@@ -45,7 +45,7 @@ The site has no banking login, credential collection, analytics or backend.
   SMS spotlight, task-focused chapter intros and ordered main-video cues.
 - `src/download-copy.json` and `src/DOWNLOAD-COPY.md`: seven-language edition
   choices, developer-attributed publication rationale, security/risk notices and
-  six installation steps with real English Android 15 emulator screenshots.
+  six text installation steps and a gallery of Santa Cruz Modern screens.
 - `src/content.json` and `src/CONTENT.md`: edition/download, support, installation
   and privacy copy. Original-app feature absences are not inferred or invented.
 - `src/captions.json`, `src/scenario-captions.json`, `src/scene-captions.json` and

@@ -77,20 +77,22 @@ with sync_playwright() as p:
    assert page.locator('#live-download a[href$="-live.apk"]').count()==1
    assert not page.evaluate('document.documentElement.scrollWidth > innerWidth'),(lang,width,'download overflow')
    assert page.locator('.install-guide>li').count()==6
-   assert page.locator('.install-shot').count()==4
+   assert page.locator('#live-guide .app-shot').count()==4
+   assert page.locator('.install-guide img').count()==0
+   assert all('/media/install/' not in img.get_attribute('src') for img in page.locator('.app-shot img').all())
    assert all(link.get_attribute('href').endswith('/download/') for link in page.locator('.languages a').all())
    assert page.locator('link[rel="canonical"]').get_attribute('href').endswith('/'+lang+'/download/')
    assert page.locator('.checksums code').count()==4
    page.locator('.live-choice a').click()
    assert page.url.endswith('#live-guide')
-   shot=page.locator('.install-shot').first
+   shot=page.locator('.app-shot').first
    shot.focus();page.keyboard.press('Enter')
    assert page.locator('dialog').evaluate('(d)=>d.open')
    page.locator('dialog img').wait_for(state='visible')
    page.wait_for_function('()=>document.querySelector("dialog img").naturalWidth===540')
    page.keyboard.press('Escape')
    assert shot.evaluate('(e)=>e===document.activeElement')
-   for img in page.locator('.install-shot img').all():
+   for img in page.locator('.app-shot img').all():
     img.scroll_into_view_if_needed()
     img.evaluate('(i)=>i.decode()')
    if (lang,width) in (('en',1440),('en',390),('ru',390),('de',820)):

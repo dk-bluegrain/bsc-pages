@@ -16,10 +16,6 @@ for lang,copy in download_copy['languages'].items():
  assert len(copy['steps'])==6 and all(set(step)=={'title','body'} and all(step.values()) for step in copy['steps'])
  if lang!='en':
   assert all(copy[key]!=download_copy['languages']['en'][key] for key in copy if key!='steps'),(lang,'English fallback')
-install_provenance=json.loads((DOCS/'media/install/provenance.json').read_text())
-for filename,info in install_provenance['screenshots'].items():
- assert hashlib.sha256((DOCS/'media/install'/filename).read_bytes()).hexdigest()==info['sha256']
-assert install_provenance['apk']['sha256']==downloads['demo']['sha256']
 media=json.loads((ROOT/'src/media.json').read_text())
 scene_captions=json.loads((ROOT/'src/scene-captions.json').read_text())['languages']
 assert all(set(v)==set(scene_captions['es']) for v in scene_captions.values())
@@ -82,7 +78,11 @@ for lang,c in content.items():
    assert sum(ref.endswith('-live.apk') for ref in p.refs)==1
    assert s.index('id="live-guide"')<s.index('class="download-section risk-notice"')<s.index('id="installation"')<s.index('id="live-download"')
    assert all(data['sha256'] in s and data['filename'] in s for data in downloads.values())
-   assert sum('/media/install/' in ref for ref in p.refs)==8
+   assert not any('/media/install/' in ref for ref in p.refs)
+   assert s.count('class="app-shot"')==4
+   for file in ('first-use-01.jpg','accounts-01.jpg','history-03.jpg','first-use-09.jpg'):
+    assert sum(urlsplit(ref).path.endswith('/'+file) for ref in p.refs)==2
+    assert any(file in chapter['screenshots'] for chapter in media.values())
    assert f'href="../../{lang}/download/"' in s
   for ref in p.refs:
    u=urlsplit(ref)
